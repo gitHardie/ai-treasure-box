@@ -332,7 +332,7 @@ def cmd_run(args):
 
 
 def _load_collected_items(source_id: str) -> List[Dict[str, Any]]:
-    """加载某个源的最新采集结果"""
+    """加载某个源的最新采集结果，并为每个item注入source字段"""
     source_dir = DATA_DIR / "tools" / source_id
     if not source_dir.exists():
         return []
@@ -344,7 +344,13 @@ def _load_collected_items(source_id: str) -> List[Dict[str, Any]]:
     try:
         with open(json_files[0], "r", encoding="utf-8") as f:
             data = json.load(f)
-        return data.get("items", [])
+        items = data.get("items", [])
+        # 为每个item注入source（采集文件顶层有source，但item本身可能没有）
+        file_source = data.get("source", source_id)
+        for item in items:
+            if not item.get("source"):
+                item["source"] = file_source
+        return items
     except (json.JSONDecodeError, IOError):
         return []
 
