@@ -101,7 +101,9 @@ class AIAnalyzer:
             for i, tool in enumerate(tools):
                 name = tool.get("name", "unknown")
                 logger.info(f"  Local analyzing [{i + 1}/{len(tools)}]: {name}")
-                result = self._analyze_local(tool)
+                analysis = self._analyze_local(tool)
+                # 合并原始工具数据 + 分析结果
+                result = {**tool, **analysis}
                 result["tool_id"] = tool.get("id", "")
                 all_results.append(result)
 
@@ -262,15 +264,18 @@ class AIAnalyzer:
                 idx = item.get("index", len(analysis_map) + 1)
                 analysis_map[idx] = item
 
-        # 匹配回每个工具
+        # 匹配回每个工具 - 合并原始数据 + 分析结果
         for idx, tool in enumerate(tools, 1):
             analysis = analysis_map.get(idx)
             if analysis and isinstance(analysis, dict):
-                result = dict(analysis)
+                analysis_result = dict(analysis)
             else:
                 # 降级到本地分析
-                result = self._analyze_local(tool)
+                analysis_result = self._analyze_local(tool)
 
+            # 关键：合并原始工具数据（name, url, source, id等）+ 分析结果
+            result = {**tool, **analysis_result}
+            result["id"] = tool.get("id", "")
             result["tool_id"] = tool.get("id", "")
             results.append(result)
 
@@ -290,7 +295,9 @@ class AIAnalyzer:
 
     def _fallback_local(self, tool: Dict) -> Dict:
         """本地分析降级方案"""
-        result = self._analyze_local(tool)
+        analysis = self._analyze_local(tool)
+        result = {**tool, **analysis}
+        result["id"] = tool.get("id", "")
         result["tool_id"] = tool.get("id", "")
         return result
 
