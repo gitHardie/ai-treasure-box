@@ -61,7 +61,7 @@ class AIAnalyzer:
 
         try:
             resp = requests.post(
-                "https://api.coze.cn/v3/workflow/run",
+                "https://api.coze.cn/v1/workflow/run",
                 headers={
                     "Authorization": f"Bearer {self.coze_api_key}",
                     "Content-Type": "application/json"
@@ -76,19 +76,30 @@ class AIAnalyzer:
             if resp.status_code == 200:
                 result = resp.json()
                 if result.get("code") == 0:
-                    # Coze v3 API: data 是 JSON 字符串，内含 {"output": "..."}
-                    data_str = result.get("data", "")
-                    if isinstance(data_str, str):
-                        data_obj = json.loads(data_str)
+                    # Coze v1 workflow API: data 可能是字符串或对象
+                    raw_data = result.get("data")
+                    
+                    # 如果 data 是字符串，尝试 JSON 解析
+                    if isinstance(raw_data, str):
+                        try:
+                            data_obj = json.loads(raw_data)
+                        except (json.JSONDecodeError, TypeError):
+                            # 可能是纯文本输出，直接作为 analysis
+                            data_obj = {"ai_analysis": raw_data}
                     else:
-                        data_obj = data_str
+                        data_obj = raw_data if isinstance(raw_data, dict) else {}
 
                     # 提取 output 字段（结束节点的输出值）
-                    output_str = data_obj.get("output", "")
-                    if isinstance(output_str, str):
-                        analysis = json.loads(output_str)
+                    output_val = data_obj.get("output", data_obj)
+                    if isinstance(output_val, str):
+                        try:
+                            analysis = json.loads(output_val)
+                        except (json.JSONDecodeError, TypeError):
+                            analysis = {"ai_analysis": output_val, "ai_confidence": 0.5}
+                    elif isinstance(output_val, dict):
+                        analysis = output_val
                     else:
-                        analysis = output_str
+                        analysis = data_obj
 
                     logger.info(f"  Coze analysis OK for: {tool_data.get('name', '?')}")
                     return analysis

@@ -27,12 +27,14 @@ class Collector(BaseCollector):
         url = self.config.get("url", "http://export.arxiv.org/api/query")
 
         try:
-            resp = self.fetch(url, params={
-                "search_query": params.get("search_query", "cat:cs.AI"),
-                "max_results": params.get("max_results", 50),
-                "sortBy": params.get("sortBy", "submittedDate"),
-                "sortOrder": "descending",
-            })
+            # Build URL manually to avoid double-encoding of search_query
+            # ArXiv uses + for AND, OR for OR - must not be %2B encoded
+            search_query = params.get("search_query", "cat:cs.AI")
+            max_results = params.get("max_results", 50)
+            sort_by = params.get("sortBy", "submittedDate")
+            
+            full_url = f"{url}?search_query={search_query}&start=0&max_results={max_results}&sortBy={sort_by}&sortOrder=descending"
+            resp = self.fetch(full_url)
 
             # 解析Atom XML
             root = ET.fromstring(resp.content)

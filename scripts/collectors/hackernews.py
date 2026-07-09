@@ -22,12 +22,14 @@ class Collector(BaseCollector):
         url = self.config.get("url", "https://hn.algolia.com/api/v1/search")
 
         try:
-            resp = self.fetch_json(url, params={
+            # 构建请求参数 - numericFilters 用逗号分隔字符串格式
+            req_params = {
                 "query": params.get("query", "AI OR LLM OR GPT"),
                 "tags": params.get("tags", "story"),
                 "hitsPerPage": params.get("hitsPerPage", 30),
-                "numericFilters": "points>20",
-            })
+            }
+            
+            resp = self.fetch_json(url, params=req_params)
 
             hits = resp.get("hits", [])
             for hit in hits:

@@ -72,7 +72,7 @@ sources:
     type: api
     tier: 1
     schedule: "0 0 * * 1"
-    enabled: true
+    enabled: false  # 采集器未实现，暂时禁用
     parser: lmsys.py
     category: "文本生成"
     is_china_source: false
@@ -222,7 +222,7 @@ sources:
     tier: 2
     url: "https://theresanaiforthat.com"
     schedule: "0 6 * * *"
-    enabled: true
+    enabled: false  # 采集器未实现
     parser: tafit.py
     category: "其他"
     is_china_source: false

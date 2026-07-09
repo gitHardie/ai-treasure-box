@@ -30,8 +30,7 @@ class Collector(BaseCollector):
                 resp = self.fetch_json(url, params={
                     "sort": sort_by,
                     "limit": limit,
-                    "filter": task,
-                    "full": "true",
+                    "pipeline_tag": task,
                 })
 
                 for model in resp:

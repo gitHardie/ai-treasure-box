@@ -27,10 +27,8 @@ class Collector(BaseCollector):
             "ai-writing",
             "ai-image",
             "ai-video",
-            "ai-audio",
             "ai-code",
             "ai-design",
-            "ai-productivity",
         ]
 
         base_url = self.config.get("url", "https://ai-bot.cn")
