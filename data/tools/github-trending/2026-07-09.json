@@ -1,7 +1,9 @@
 {
   "source": "github-trending",
   "source_name": "GitHub Trending",
-  "collected_at": "2026-07-09T17:34:46.903857+00:00",
+  "collected_at": "2026-07-09T18:18:33.237046+00:00",
+  "mode": "discovery",
+  "fetch_limit": 50,
   "count": 33,
   "items": [
     {
@@ -10,8 +12,8 @@
       "url": "https://github.com/MadsLorentzen/ai-job-search",
       "description": "AI-powered job application framework built on Claude Code. Fork it, fill in your profile, and let Claude evaluate jobs, tailor CVs, write cover letters, and prepare you for interviews.",
       "language": "TypeScript",
-      "stars": 18107,
-      "forks": 5284,
+      "stars": 18217,
+      "forks": 5319,
       "stars_in_period": 3728,
       "period": "daily",
       "topics": [],
@@ -20,30 +22,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "daily",
-      "category": "代码开发",
-      "subcategory": "开发辅助",
-      "license_tier": "paid",
-      "license_type": "",
-      "tags": {
-        "function": [
-          "文本生成",
-          "搜索"
-        ],
-        "scenario": [],
-        "attribute": [],
-        "tech": [
-          "Claude"
-        ],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "ai-job-search 属于代码开发领域，付费产品。ai-powered job application framework built on claude code. fork it, fill in your profile, and let claude evaluate jobs, tailor cvs, write cover letters, and prepare you for interviews.",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:25.949388+00:00"
+      "_period": "daily"
     },
     {
       "name": "U3-SDK",
@@ -51,8 +30,8 @@
       "url": "https://github.com/SmartlyDressedGames/U3-SDK",
       "description": "Source code for Unturned, a free open-world zombie survival sandbox game.",
       "language": "C#",
-      "stars": 1907,
-      "forks": 239,
+      "stars": 1917,
+      "forks": 240,
       "stars_in_period": 541,
       "period": "daily",
       "topics": [],
@@ -61,27 +40,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "daily",
-      "category": "代码开发",
-      "subcategory": "开发辅助",
-      "license_tier": "free",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [
-          "免费"
-        ],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "U3-SDK 属于代码开发领域，免费工具。source code for unturned, a free open-world zombie survival sandbox game.",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:26.197479+00:00"
+      "_period": "daily"
     },
     {
       "name": "agent-skills",
@@ -89,8 +48,8 @@
       "url": "https://github.com/addyosmani/agent-skills",
       "description": "Production-grade engineering skills for AI coding agents.",
       "language": "JavaScript",
-      "stars": 75658,
-      "forks": 8135,
+      "stars": 75684,
+      "forks": 8139,
       "stars_in_period": 2582,
       "period": "daily",
       "topics": [],
@@ -99,25 +58,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "daily",
-      "category": "其他",
-      "subcategory": "",
-      "license_tier": "paid",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "agent-skills 属于其他领域，付费产品。production-grade engineering skills for ai coding agents.",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:26.687416+00:00"
+      "_period": "daily"
     },
     {
       "name": "awesome-design-md",
@@ -125,9 +66,9 @@
       "url": "https://github.com/VoltAgent/awesome-design-md",
       "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
       "language": "",
-      "stars": 99377,
-      "forks": 11559,
-      "stars_in_period": 1569,
+      "stars": 99396,
+      "forks": 11563,
+      "stars_in_period": 1233,
       "period": "daily",
       "topics": [],
       "platform": [
@@ -135,29 +76,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "daily",
-      "category": "设计创意",
-      "subcategory": "",
-      "license_tier": "paid",
-      "license_type": "",
-      "tags": {
-        "function": [
-          "数据分析"
-        ],
-        "scenario": [
-          "设计工作"
-        ],
-        "attribute": [],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "awesome-design-md 属于设计创意领域，付费产品。a collection of design.md files analysis by popular brand design systems. drop one into your project and let coding agents generate a matching ui.",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:26.930077+00:00"
+      "_period": "daily"
     },
     {
       "name": "OfficeCLI",
@@ -165,8 +84,8 @@
       "url": "https://github.com/iOfficeAI/OfficeCLI",
       "description": "OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
       "language": "C#",
-      "stars": 13193,
-      "forks": 898,
+      "stars": 13217,
+      "forks": 900,
       "stars_in_period": 1923,
       "period": "daily",
       "topics": [],
@@ -175,31 +94,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "daily",
-      "category": "办公效率",
-      "subcategory": "办公助手",
-      "license_tier": "free",
-      "license_type": "",
-      "tags": {
-        "function": [
-          "自动化"
-        ],
-        "scenario": [
-          "日常办公"
-        ],
-        "attribute": [
-          "免费"
-        ],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "OfficeCLI 属于办公效率领域，免费工具。officecli is the first and best office suite purpose-built for ai agents to read, edit, and automate word, excel, and powerpoint files. free, open-source, single binary, no office installation require...",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:27.447534+00:00"
+      "_period": "daily"
     },
     {
       "name": "DesktopCommanderMCP",
@@ -207,8 +102,8 @@
       "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
       "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
       "language": "TypeScript",
-      "stars": 6531,
-      "forks": 766,
+      "stars": 6540,
+      "forks": 773,
       "stars_in_period": 185,
       "period": "daily",
       "topics": [],
@@ -217,29 +112,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "daily",
-      "category": "开发工具",
-      "subcategory": "",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [
-          "搜索"
-        ],
-        "scenario": [],
-        "attribute": [],
-        "tech": [
-          "Claude"
-        ],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "DesktopCommanderMCP 属于开发工具领域，定价未知。this is mcp server for claude that gives it terminal control, file system search and diff file editing capabilities",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:27.937800+00:00"
+      "_period": "daily"
     },
     {
       "name": "claude-cookbooks",
@@ -247,8 +120,8 @@
       "url": "https://github.com/anthropics/claude-cookbooks",
       "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
       "language": "Jupyter Notebook",
-      "stars": 47017,
-      "forks": 5549,
+      "stars": 47035,
+      "forks": 5552,
       "stars_in_period": 194,
       "period": "daily",
       "topics": [],
@@ -257,27 +130,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "daily",
-      "category": "其他",
-      "subcategory": "",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [
-          "Claude"
-        ],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "claude-cookbooks 属于其他领域，定价未知。a collection of notebooks/recipes showcasing some fun and effective ways of using claude.",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:28.187738+00:00"
+      "_period": "daily"
     },
     {
       "name": "pentagi",
@@ -285,7 +138,7 @@
       "url": "https://github.com/vxcontrol/pentagi",
       "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
       "language": "Go",
-      "stars": 19241,
+      "stars": 19256,
       "forks": 2611,
       "stars_in_period": 543,
       "period": "daily",
@@ -295,25 +148,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "daily",
-      "category": "其他",
-      "subcategory": "",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "pentagi 属于其他领域，定价未知。fully autonomous ai agents system capable of performing complex penetration testing tasks",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:28.731365+00:00"
+      "_period": "daily"
     },
     {
       "name": "crawl4ai",
@@ -321,8 +156,8 @@
       "url": "https://github.com/unclecode/crawl4ai",
       "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here:https://discord.gg/jP8KfhDhyN",
       "language": "Python",
-      "stars": 71728,
-      "forks": 7373,
+      "stars": 71735,
+      "forks": 7374,
       "stars_in_period": 195,
       "period": "daily",
       "topics": [],
@@ -331,25 +166,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "daily",
-      "category": "文本生成",
-      "subcategory": "通用文本",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "crawl4ai 属于文本生成领域，定价未知。🚀🤖 crawl4ai: open-source llm friendly web crawler & scraper. don't be shy, join here:https://discord.gg/jp8kfhdhyn",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:29.226653+00:00"
+      "_period": "daily"
     },
     {
       "name": "How-To-Secure-A-Linux-Server",
@@ -357,9 +174,9 @@
       "url": "https://github.com/imthenachoman/How-To-Secure-A-Linux-Server",
       "description": "An evolving how-to guide for securing a Linux server.",
       "language": "",
-      "stars": 28955,
-      "forks": 1933,
-      "stars_in_period": 399,
+      "stars": 28971,
+      "forks": 1935,
+      "stars_in_period": 306,
       "period": "daily",
       "topics": [],
       "platform": [
@@ -367,25 +184,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "daily",
-      "category": "设计创意",
-      "subcategory": "",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "How-To-Secure-A-Linux-Server 属于设计创意领域，定价未知。an evolving how-to guide for securing a linux server.",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:29.470434+00:00"
+      "_period": "daily"
     },
     {
       "name": "autoremesher",
@@ -393,7 +192,7 @@
       "url": "https://github.com/huxingyi/autoremesher",
       "description": "Automatic quad remeshing tool",
       "language": "C++",
-      "stars": 2276,
+      "stars": 2284,
       "forks": 168,
       "stars_in_period": 405,
       "period": "daily",
@@ -403,25 +202,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "daily",
-      "category": "其他",
-      "subcategory": "",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "autoremesher 属于其他领域，定价未知。automatic quad remeshing tool",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:29.712671+00:00"
+      "_period": "daily"
     },
     {
       "name": "claude-video",
@@ -429,8 +210,8 @@
       "url": "https://github.com/bradautomates/claude-video",
       "description": "Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to Claude.",
       "language": "Python",
-      "stars": 6537,
-      "forks": 756,
+      "stars": 6552,
+      "forks": 758,
       "stars_in_period": 727,
       "period": "daily",
       "topics": [],
@@ -439,29 +220,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "daily",
-      "category": "代码开发",
-      "subcategory": "开发辅助",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [
-          "视频生成"
-        ],
-        "scenario": [],
-        "attribute": [],
-        "tech": [
-          "Claude"
-        ],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "claude-video 属于代码开发领域，定价未知。give claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it all to claude.",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:30.204419+00:00"
+      "_period": "daily"
     },
     {
       "name": "prisma",
@@ -469,8 +228,8 @@
       "url": "https://github.com/prisma/prisma",
       "description": "Next-generation ORM for Node.js & TypeScript | PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB",
       "language": "TypeScript",
-      "stars": 46828,
-      "forks": 2299,
+      "stars": 46840,
+      "forks": 2311,
       "stars_in_period": 373,
       "period": "daily",
       "topics": [],
@@ -479,25 +238,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "daily",
-      "category": "其他",
-      "subcategory": "",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "prisma 属于其他领域，定价未知。next-generation orm for node.js & typescript | postgresql, mysql, mariadb, sql server, sqlite, mongodb and cockroachdb",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:30.720992+00:00"
+      "_period": "daily"
     },
     {
       "name": "pocket-tts",
@@ -505,8 +246,8 @@
       "url": "https://github.com/kyutai-labs/pocket-tts",
       "description": "A TTS that fits in your CPU (and pocket)",
       "language": "Python",
-      "stars": 6858,
-      "forks": 691,
+      "stars": 6871,
+      "forks": 693,
       "stars_in_period": 273,
       "period": "daily",
       "topics": [],
@@ -515,27 +256,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "daily",
-      "category": "音视频",
-      "subcategory": "",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [
-          "语音合成"
-        ],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "pocket-tts 属于音视频领域，定价未知。a tts that fits in your cpu (and pocket)",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:31.228842+00:00"
+      "_period": "daily"
     },
     {
       "name": "system_prompts_leaks",
@@ -543,8 +264,8 @@
       "url": "https://github.com/asgeirtj/system_prompts_leaks",
       "description": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
       "language": "JavaScript",
-      "stars": 54942,
-      "forks": 8944,
+      "stars": 54972,
+      "forks": 8964,
       "stars_in_period": 1135,
       "period": "daily",
       "topics": [],
@@ -553,32 +274,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "daily",
-      "category": "文本生成",
-      "subcategory": "聊天助手",
-      "license_tier": "paid",
-      "license_type": "",
-      "tags": {
-        "function": [
-          "对话"
-        ],
-        "scenario": [
-          "设计工作"
-        ],
-        "attribute": [],
-        "tech": [
-          "Claude",
-          "Gemini"
-        ],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "system_prompts_leaks 属于文本生成领域，付费产品。extracted system prompts from anthropic - claude fable 5, opus 4.8, claude code, claude design. openai - chatgpt 5.5 thinking, gpt 5.5 instant, codex. google - gemini 3.5 flash, 3.1 pro, antigravity. ...",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:31.720802+00:00"
+      "_period": "daily"
     },
     {
       "name": "meetily",
@@ -586,8 +282,8 @@
       "url": "https://github.com/Zackriya-Solutions/meetily",
       "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai -https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows.",
       "language": "Rust",
-      "stars": 22105,
-      "forks": 2202,
+      "stars": 22123,
+      "forks": 2211,
       "stars_in_period": 8366,
       "period": "weekly",
       "topics": [],
@@ -596,29 +292,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "weekly",
-      "category": "音视频",
-      "subcategory": "",
-      "license_tier": "paid",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [
-          "本地部署"
-        ],
-        "tech": [
-          "Llama"
-        ],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "meetily 属于音视频领域，付费产品。privacy first, ai meeting assistant with 4x faster parakeet/whisper live transcription, speaker diarization, and ollama summarization built on rust. 100% local processing. no cloud required. meetily (...",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:32.213410+00:00"
+      "_period": "weekly"
     },
     {
       "name": "strix",
@@ -626,8 +300,8 @@
       "url": "https://github.com/usestrix/strix",
       "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
       "language": "Python",
-      "stars": 39498,
-      "forks": 4022,
+      "stars": 39522,
+      "forks": 4041,
       "stars_in_period": 10274,
       "period": "weekly",
       "topics": [],
@@ -636,25 +310,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "weekly",
-      "category": "数据分析",
-      "subcategory": "数据分析",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "strix 属于数据分析领域，定价未知。open-source ai penetration testing tool to find and fix your app’s vulnerabilities.",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:32.713352+00:00"
+      "_period": "weekly"
     },
     {
       "name": "astryx",
@@ -662,8 +318,8 @@
       "url": "https://github.com/facebook/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "stars": 7413,
-      "forks": 495,
+      "stars": 7430,
+      "forks": 509,
       "stars_in_period": 4943,
       "period": "weekly",
       "topics": [],
@@ -672,29 +328,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "weekly",
-      "category": "设计创意",
-      "subcategory": "",
-      "license_tier": "free",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [
-          "设计工作"
-        ],
-        "attribute": [
-          "开源"
-        ],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "astryx 属于设计创意领域，免费工具。an open source design system that's fully customizable and agent ready",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:33.036751+00:00"
+      "_period": "weekly"
     },
     {
       "name": "codex-plugin-cc",
@@ -702,8 +336,8 @@
       "url": "https://github.com/openai/codex-plugin-cc",
       "description": "Use Codex from Claude Code to review code or delegate tasks.",
       "language": "JavaScript",
-      "stars": 27105,
-      "forks": 1642,
+      "stars": 27119,
+      "forks": 1651,
       "stars_in_period": 4890,
       "period": "weekly",
       "topics": [],
@@ -712,29 +346,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "weekly",
-      "category": "代码开发",
-      "subcategory": "代码审查",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [
-          "浏览器插件"
-        ],
-        "tech": [
-          "Claude"
-        ],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "codex-plugin-cc 属于代码开发领域，定价未知。use codex from claude code to review code or delegate tasks.",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:33.284591+00:00"
+      "_period": "weekly"
     },
     {
       "name": "herdr",
@@ -742,8 +354,8 @@
       "url": "https://github.com/ogulcancelik/herdr",
       "description": "agent multiplexer that lives in your terminal.",
       "language": "Rust",
-      "stars": 14717,
-      "forks": 846,
+      "stars": 14729,
+      "forks": 855,
       "stars_in_period": 4754,
       "period": "weekly",
       "topics": [],
@@ -752,25 +364,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "weekly",
-      "category": "开发工具",
-      "subcategory": "",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "herdr 属于开发工具领域，定价未知。agent multiplexer that lives in your terminal.",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:33.527686+00:00"
+      "_period": "weekly"
     },
     {
       "name": "page-agent",
@@ -778,8 +372,8 @@
       "url": "https://github.com/alibaba/page-agent",
       "description": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
       "language": "TypeScript",
-      "stars": 25439,
-      "forks": 2197,
+      "stars": 25451,
+      "forks": 2218,
       "stars_in_period": 4295,
       "period": "weekly",
       "topics": [],
@@ -788,25 +382,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "weekly",
-      "category": "设计创意",
-      "subcategory": "",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "page-agent 属于设计创意领域，定价未知。javascript in-page gui agent. control web interfaces with natural language.",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:33.770470+00:00"
+      "_period": "weekly"
     },
     {
       "name": "OmniRoute",
@@ -814,8 +390,8 @@
       "url": "https://github.com/diegosouzapw/OmniRoute",
       "description": "Never stop coding. Free AI gateway: one endpoint, 231+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA.",
       "language": "TypeScript",
-      "stars": 14189,
-      "forks": 2078,
+      "stars": 14203,
+      "forks": 2087,
       "stars_in_period": 4424,
       "period": "weekly",
       "topics": [],
@@ -824,32 +400,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "weekly",
-      "category": "代码开发",
-      "subcategory": "代码补全",
-      "license_tier": "free",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [
-          "API服务",
-          "免费"
-        ],
-        "tech": [
-          "Multi-modal",
-          "Claude",
-          "Gemini"
-        ],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "OmniRoute 属于代码开发领域，免费工具。never stop coding. free ai gateway: one endpoint, 231+ providers (50+ free), connect claude code, codex, cursor, cline & copilot to free claude/gpt/gemini. rtk+caveman stacked compression saves 15-95%...",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:34.023892+00:00"
+      "_period": "weekly"
     },
     {
       "name": "CubeSandbox",
@@ -857,8 +408,8 @@
       "url": "https://github.com/TencentCloud/CubeSandbox",
       "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents.",
       "language": "Rust",
-      "stars": 9278,
-      "forks": 769,
+      "stars": 9295,
+      "forks": 786,
       "stars_in_period": 2106,
       "period": "weekly",
       "topics": [],
@@ -867,25 +418,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "weekly",
-      "category": "其他",
-      "subcategory": "",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "CubeSandbox 属于其他领域，定价未知。instant, concurrent, secure & lightweight sandbox for ai agents.",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:34.267460+00:00"
+      "_period": "weekly"
     },
     {
       "name": "skills",
@@ -893,7 +426,7 @@
       "url": "https://github.com/dotnet/skills",
       "description": "Repository for skills to assist AI coding agents with .NET and C#",
       "language": "C#",
-      "stars": 4471,
+      "stars": 4473,
       "forks": 329,
       "stars_in_period": 840,
       "period": "weekly",
@@ -903,25 +436,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "weekly",
-      "category": "其他",
-      "subcategory": "",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "skills 属于其他领域，定价未知。repository for skills to assist ai coding agents with .net and c#",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:34.760359+00:00"
+      "_period": "weekly"
     },
     {
       "name": "orca",
@@ -929,8 +444,8 @@
       "url": "https://github.com/stablyai/orca",
       "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
       "language": "TypeScript",
-      "stars": 14924,
-      "forks": 1014,
+      "stars": 14942,
+      "forks": 1029,
       "stars_in_period": 3953,
       "period": "weekly",
       "topics": [],
@@ -939,27 +454,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "weekly",
-      "category": "数据分析",
-      "subcategory": "数据分析",
-      "license_tier": "paid",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [
-          "移动端"
-        ],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "orca 属于数据分析领域，付费产品。orca is the ade for working with a fleet of parallel agents. run any coding agent with your own subscription. available on desktop and mobile.",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:35.025057+00:00"
+      "_period": "weekly"
     },
     {
       "name": "speech-to-speech",
@@ -967,8 +462,8 @@
       "url": "https://github.com/huggingface/speech-to-speech",
       "description": "Build local voice agents with open-source models",
       "language": "Python",
-      "stars": 5803,
-      "forks": 704,
+      "stars": 5812,
+      "forks": 713,
       "stars_in_period": 736,
       "period": "weekly",
       "topics": [],
@@ -977,27 +472,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "weekly",
-      "category": "音视频",
-      "subcategory": "",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [
-          "语音合成"
-        ],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "speech-to-speech 属于音视频领域，定价未知。build local voice agents with open-source models",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:35.532941+00:00"
+      "_period": "weekly"
     },
     {
       "name": "cs249r_book",
@@ -1005,8 +480,8 @@
       "url": "https://github.com/harvard-edge/cs249r_book",
       "description": "Machine Learning Systems",
       "language": "Python",
-      "stars": 27206,
-      "forks": 3250,
+      "stars": 27217,
+      "forks": 3262,
       "stars_in_period": 2085,
       "period": "weekly",
       "topics": [],
@@ -1015,27 +490,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "weekly",
-      "category": "教育培训",
-      "subcategory": "",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [
-          "教育学习"
-        ],
-        "attribute": [],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "cs249r_book 属于教育培训领域，定价未知。machine learning systems",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:36.023864+00:00"
+      "_period": "weekly"
     },
     {
       "name": "ai-berkshire",
@@ -1043,8 +498,8 @@
       "url": "https://github.com/xbtlin/ai-berkshire",
       "description": "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.",
       "language": "Python",
-      "stars": 12306,
-      "forks": 1622,
+      "stars": 12317,
+      "forks": 1635,
       "stars_in_period": 3960,
       "period": "weekly",
       "topics": [],
@@ -1053,32 +508,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "weekly",
-      "category": "代码开发",
-      "subcategory": "开发辅助",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [
-          "数据分析",
-          "搜索"
-        ],
-        "scenario": [
-          "学术研究"
-        ],
-        "attribute": [],
-        "tech": [
-          "Claude"
-        ],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "ai-berkshire 属于代码开发领域，定价未知。ai 时代的伯克希尔：基于 claude code / codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多agent并行研究。| ai-era berkshire: a value investing research framework built for claude code / codex. 4 masters' methodologies + multi-ag...",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:36.279367+00:00"
+      "_period": "weekly"
     },
     {
       "name": "RuView",
@@ -1086,8 +516,8 @@
       "url": "https://github.com/ruvnet/RuView",
       "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
       "language": "Rust",
-      "stars": 79593,
-      "forks": 10706,
+      "stars": 79606,
+      "forks": 10709,
       "stars_in_period": 3011,
       "period": "weekly",
       "topics": [],
@@ -1096,27 +526,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "weekly",
-      "category": "代码开发",
-      "subcategory": "开发辅助",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [
-          "视频生成"
-        ],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "RuView 属于代码开发领域，定价未知。π ruview turns commodity wifi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:36.531895+00:00"
+      "_period": "weekly"
     },
     {
       "name": "daisyui",
@@ -1124,7 +534,7 @@
       "url": "https://github.com/saadeghi/daisyui",
       "description": "🌼 🌼 🌼 🌼 🌼  The most popular, free and open-source Tailwind CSS component library",
       "language": "Svelte",
-      "stars": 41495,
+      "stars": 41499,
       "forks": 1649,
       "stars_in_period": 241,
       "period": "weekly",
@@ -1134,27 +544,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "weekly",
-      "category": "设计创意",
-      "subcategory": "",
-      "license_tier": "free",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [
-          "免费"
-        ],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "daisyui 属于设计创意领域，免费工具。🌼 🌼 🌼 🌼 🌼  the most popular, free and open-source tailwind css component library",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:36.775841+00:00"
+      "_period": "weekly"
     },
     {
       "name": "immich",
@@ -1162,7 +552,7 @@
       "url": "https://github.com/immich-app/immich",
       "description": "High performance self-hosted photo and video management solution.",
       "language": "TypeScript",
-      "stars": 107054,
+      "stars": 107060,
       "forks": 6142,
       "stars_in_period": 2099,
       "period": "weekly",
@@ -1172,29 +562,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "weekly",
-      "category": "代码开发",
-      "subcategory": "开发辅助",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [
-          "视频生成"
-        ],
-        "scenario": [],
-        "attribute": [
-          "本地部署"
-        ],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "immich 属于代码开发领域，定价未知。high performance self-hosted photo and video management solution.",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:37.282345+00:00"
+      "_period": "weekly"
     },
     {
       "name": "CodexBar",
@@ -1202,7 +570,7 @@
       "url": "https://github.com/steipete/CodexBar",
       "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
       "language": "Swift",
-      "stars": 17335,
+      "stars": 17336,
       "forks": 1414,
       "stars_in_period": 1643,
       "period": "weekly",
@@ -1212,27 +580,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "weekly",
-      "category": "代码开发",
-      "subcategory": "开发辅助",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [
-          "Claude"
-        ],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "CodexBar 属于代码开发领域，定价未知。show usage stats for openai codex and claude code, without having to login.",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:37.778841+00:00"
+      "_period": "weekly"
     },
     {
       "name": "video-use",
@@ -1240,8 +588,8 @@
       "url": "https://github.com/browser-use/video-use",
       "description": "Edit videos with coding agents",
       "language": "Python",
-      "stars": 16219,
-      "forks": 1889,
+      "stars": 16231,
+      "forks": 1899,
       "stars_in_period": 3054,
       "period": "weekly",
       "topics": [],
@@ -1250,28 +598,7 @@
       ],
       "license": "",
       "type": "github_project",
-      "_period": "weekly",
-      "category": "代码开发",
-      "subcategory": "开发辅助",
-      "license_tier": "unknown",
-      "license_type": "",
-      "tags": {
-        "function": [
-          "视频生成"
-        ],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
-        "quality": [
-          "新星"
-        ]
-      },
-      "ai_analysis": "video-use 属于代码开发领域，定价未知。edit videos with coding agents",
-      "ai_confidence": 0.6,
-      "is_china_tool": false,
-      "health_status": "unknown",
-      "analyzed_at": "2026-07-09T17:44:38.021335+00:00"
+      "_period": "weekly"
     }
-  ],
-  "analyzed_at": "2026-07-09T17:44:38.021349+00:00"
+  ]
 }

@@ -1,0 +1,671 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-07-09T18:21:33.785679+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
+      "title": "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
+      "url": "https://arxiv.org/abs/2607.07708v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07708v1",
+      "description": "Structure-property relationships are foundational to biology, chemistry and materials science, where function, reactivity and physical response emerge from spatial, chemical and periodic organization. Mechanistically explaining these relationships requires interpreting structural evidence through scientific principles and physical constraints, from stereochemistry and bonding to symmetry, energetics and periodic order. However, applying artificial intelligence to this process presents a joint ch",
+      "authors": [
+        "Chen Tang",
+        "Yizhou Wang",
+        "Jianyu Wu",
+        "Lintao Wang",
+        "Shixiang Tang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CE",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.07708v1",
+      "published_at": "2026-07-08T17:59:59Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Co-LMLM: Continuous-Query Limited Memory Language Models",
+      "title": "Co-LMLM: Continuous-Query Limited Memory Language Models",
+      "url": "https://arxiv.org/abs/2607.07707v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07707v1",
+      "description": "Limited memory language models (LMLMs) externalize factual knowledge during pretraining to a knowledge base (KB), rather than memorizing it in their weights. During generation, the model then fetches knowledge from the KB as needed. This recently introduced paradigm provides multiple advantages, including knowledge control capabilities that remain beyond conventional LLMs. We propose continuous-query LMLM (CO-LMLM), where the KB pairs continuous keys with textual knowledge values, a significant ",
+      "authors": [
+        "Yair Feldman",
+        "Linxi Zhao",
+        "Nathan Godey",
+        "Dongyoung Go",
+        "Yilun Hua"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.07707v1",
+      "published_at": "2026-07-08T17:59:45Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "The Key to Going Linear: Analysis-Driven Transformer Linearization",
+      "title": "The Key to Going Linear: Analysis-Driven Transformer Linearization",
+      "url": "https://arxiv.org/abs/2607.07706v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07706v1",
+      "description": "The quadratic cost of causal self-attention severely bottlenecks long-context transformer inference. While numerous post hoc linearization pipelines exist, it is difficult to identify which components preserve model quality. This work isolates the effect of state update design in a strict frozen-backbone regime. We show that softmax relies on key-dependent, rank-1 orthogonal projections, elucidating why delta-style networks outperform purely gated accumulation. We identify a potential source of ",
+      "authors": [
+        "Anna Kuzina",
+        "Paul N. Whatmough",
+        "Babak Ehteshami Bejnordi"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.07706v1",
+      "published_at": "2026-07-08T17:59:09Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "From Noisy Traces to Root Causes: Structural Trajectory Analysis and Causal Extraction for Agent Optimization",
+      "title": "From Noisy Traces to Root Causes: Structural Trajectory Analysis and Causal Extraction for Agent Optimization",
+      "url": "https://arxiv.org/abs/2607.07702v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07702v1",
+      "description": "The optimization of long-horizon agents increasingly relies on reflection-based mechanisms, where a large language model (LLM) acts as an optimizer to diagnose agent failures and improve agent policies. However, real execution traces are difficult to use directly for optimization: large trace collections are often redundant and heterogeneous, making optimization inefficient and prone to overfitting to low-value failures; meanwhile, each individual trajectory also contains many irrelevant steps, ",
+      "authors": [
+        "Ying Chang",
+        "Jiahang Xu",
+        "Xuan Feng",
+        "Chenyuan Yang",
+        "Peng Cheng"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2607.07702v1",
+      "published_at": "2026-07-08T17:57:27Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass",
+      "title": "Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass",
+      "url": "https://arxiv.org/abs/2607.07696v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07696v1",
+      "description": "Analytical workloads operating on data stored in external database systems face a fundamental bottleneck: data access is guarded entirely by the database driver, like JDBC or ODBC, forcing all reads through query execution and other driver layers that are not designed for bulk columnar analytics. We present Jailbreak, an approach that bypasses the database engine entirely by reading storage files directly and materializing data as in-memory columnar buffers. Jailbreak's key insight is that datab",
+      "authors": [
+        "Victor Giannakouris",
+        "Immanuel Trummer"
+      ],
+      "categories": [
+        "cs.DB",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.07696v1",
+      "published_at": "2026-07-08T17:55:00Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety",
+      "title": "Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety",
+      "url": "https://arxiv.org/abs/2607.07695v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07695v1",
+      "description": "We introduce institutional red-teaming, an evaluation methodology for testing deployment rules in multi-agent AI: hold the agents, objectives, and task state fixed, vary only one rule, and attribute the resulting change in collective behavior to that rule. We instantiate the methodology in IABench-CA, a consequence-allocation benchmark spanning 228 contexts, five canonical rules, and seven model populations (33,924 games), with a normative cooperative reference and auto-labelled reasoning traces",
+      "authors": [
+        "Yujiao Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.GT",
+        "cs.MA"
+      ],
+      "arxiv_id": "2607.07695v1",
+      "published_at": "2026-07-08T17:53:56Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF",
+      "title": "Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF",
+      "url": "https://arxiv.org/abs/2607.07693v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07693v1",
+      "description": "Reinforcement learning from human feedback (RLHF) has emerged as a powerful paradigm for aligning generative models with human preferences. However, applying RLHF to diffusion models remains highly feedback inefficient, as existing approaches typically require large amounts of human or reward model evaluations. This limitation reduces the practicality of diffusion RLHF in realworld settings where feedback is the primary bottleneck. In this paper, we propose two complementary strategies that subs",
+      "authors": [
+        "Eric Zhu",
+        "Abhinav Shrivastava",
+        "Soumik Mukhopadhyay"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "arxiv_id": "2607.07693v1",
+      "published_at": "2026-07-08T17:49:49Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Agon: Competitive Cross-Model RL with Implicit Rival Grading of Reasoning",
+      "title": "Agon: Competitive Cross-Model RL with Implicit Rival Grading of Reasoning",
+      "url": "https://arxiv.org/abs/2607.07690v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07690v1",
+      "description": "Reinforcement learning from verifiable rewards (e.g. GRPO) is the engine behind today's reasoning models, yet it grades only the final answer. On hard problems this trains models to write more rather than to think better, since the trace itself is never graded and no label for good thinking exists. We introduce Agon, which makes two competing models each other's graders. Both attempt the same problem; in alternating roles, one drafts a solution and the other reads it while solving, and each is r",
+      "authors": [
+        "Vladislav Beliaev"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2607.07690v1",
+      "published_at": "2026-07-08T17:49:14Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ECGLight: Compute-Light Framework For Paper ECG Digitization and Myocardial Infarction Screening",
+      "title": "ECGLight: Compute-Light Framework For Paper ECG Digitization and Myocardial Infarction Screening",
+      "url": "https://arxiv.org/abs/2607.07683v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07683v1",
+      "description": "Electrocardiography (ECG) is one of the most widely used tests for diagnosing cardiovascular disease. Yet several remote clinics still utilize paper ECG printouts for their analysis due to limited connectivity and computational capacity. As a result, vast numbers of physical ECGs obtained in remote areas still remain incapable of being accessed by contemporary artificial-intelligence (AI)-based decision support as they require high computational resources or strong high-speed internet connectivi",
+      "authors": [
+        "Shreyasvi Natraj",
+        "Cyrus Achtari",
+        "Felice Gragnano",
+        "Andrea Milzi",
+        "Marco Valgimigli"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.07683v1",
+      "published_at": "2026-07-08T17:42:00Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Neural Operator-enabled Topology-informed Evolutionary Strategy for PDE-Constrained Optimization",
+      "title": "Neural Operator-enabled Topology-informed Evolutionary Strategy for PDE-Constrained Optimization",
+      "url": "https://arxiv.org/abs/2607.07682v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07682v1",
+      "description": "The inverse design of physical systems governed by partial differential equations is computationally demanding due to the high dimensionality and non-convexity of design spaces. Generative models for inverse design often lack robustness and transferability, whereas evolutionary strategies are robust but struggle in high-dimensional spaces. This paper introduces a Neural Operator-enabled Topology-informed Evolutionary Strategy (NOTES) that integrates dimensionality reduction, representation learn",
+      "authors": [
+        "Xiangming Huang",
+        "Guannan Zhang",
+        "Lu Lu",
+        "Raphaël Pestourie"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.07682v1",
+      "published_at": "2026-07-08T17:41:56Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Any-Dimensional Learning by Sampling",
+      "title": "Any-Dimensional Learning by Sampling",
+      "url": "https://arxiv.org/abs/2607.07680v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07680v1",
+      "description": "Many machine learning models are defined for inputs of different sizes, such as point clouds containing different numbers of points, sequences of tokens of different lengths, and graphs on different numbers of nodes. Such models are trained on finitely-many examples of necessarily limited sizes. How well do these models generalize from inputs of small size to larger inputs of size not seen during training? Furthermore, evaluating such models on large inputs is often expensive. How can we sketch ",
+      "authors": [
+        "Eitan Levin",
+        "Venkat Chandrasekaran"
+      ],
+      "categories": [
+        "math.ST",
+        "cs.LG",
+        "math.PR"
+      ],
+      "arxiv_id": "2607.07680v1",
+      "published_at": "2026-07-08T17:38:29Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "How Data Shapes RoPE Frequency Usage: From Positional Scale Matching to Length Generalization",
+      "title": "How Data Shapes RoPE Frequency Usage: From Positional Scale Matching to Length Generalization",
+      "url": "https://arxiv.org/abs/2607.07678v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07678v1",
+      "description": "Rotary Position Embeddings (RoPE) provide transformers with a fixed grid of positional frequencies, yet trained models use these frequencies highly non-uniformly. We study what determines this frequency usage and propose a data-centered explanation: RoPE frequencies are selected to match the relative-distance structure of the training data. Viewing each frequency as a positional lens, we formalize a field-resolution tradeoff and show that, for a data-induced dependency profile of width $W$, the ",
+      "authors": [
+        "Xinyi Wu",
+        "Siyuan Liu",
+        "Ali Jadbabaie"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.07678v1",
+      "published_at": "2026-07-08T17:38:14Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SkillCenter: A Large-Scale Source-Grounded Skill Library for Autonomous AI Agents",
+      "title": "SkillCenter: A Large-Scale Source-Grounded Skill Library for Autonomous AI Agents",
+      "url": "https://arxiv.org/abs/2607.07676v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07676v1",
+      "description": "Autonomous AI agents can execute complex tasks with limited human review, yet they often lack the grounded operational knowledge to make their outputs not just executable but correct, secure, and maintainable. We introduce SkillCenter, to our knowledge the largest open skill library for agents by total count: 216,938 structured skills across 24 domain bundles. A SkillGate-filtered pipeline contributes 114,565 source-grounded skills from peer-reviewed journals, ArXiv, and over 24,000 technical so",
+      "authors": [
+        "Tianming Sha",
+        "Yue Zhao",
+        "Lichao Sun",
+        "Yushun Dong"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.07676v1",
+      "published_at": "2026-07-08T17:34:28Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Max Out GRPO Signal: Adaptive Trace Prefix Control for Hard Reasoning Problems",
+      "title": "Max Out GRPO Signal: Adaptive Trace Prefix Control for Hard Reasoning Problems",
+      "url": "https://arxiv.org/abs/2607.07674v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07674v1",
+      "description": "Group Relative Policy Optimization (GRPO) stalls on a model's hardest problems: when no rollout in a group succeeds, the group-relative advantages vanish and the problem contributes no gradient, wasting the frontier examples we most want to learn from. Prepending a correct prefix of a reference solution raises the success rate, making prefix length a continuous knob on difficulty. Concurrent methods set the knob once; AdaPrefix-GRPO turns it into a feedback controller: throughout training it adj",
+      "authors": [
+        "Vladislav Beliaev"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "arxiv_id": "2607.07674v1",
+      "published_at": "2026-07-08T17:32:58Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "MedPMC: A Systematic Framework for Scaling High-Fidelity Medical Multimodal Data for Foundation Models",
+      "title": "MedPMC: A Systematic Framework for Scaling High-Fidelity Medical Multimodal Data for Foundation Models",
+      "url": "https://arxiv.org/abs/2607.07673v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07673v1",
+      "description": "Medicine is inherently multimodal, requiring clinicians to synthesize information across diverse data streams. Yet the development of multimodal foundation models is constrained by limited access to large-scale, high-quality clinical data. Although PubMed Central (PMC) offers a complementary source of expert-authored image-text data, existing PMC-derived resources remain limited in fidelity, reproducibility, and clinical validation. We introduce MedPMC, an automated, continuously updatable frame",
+      "authors": [
+        "Hyunjae Kim",
+        "Dain Kim",
+        "Pan Xiao",
+        "Serina S. Applebaum",
+        "Younjoon Chung"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.07673v1",
+      "published_at": "2026-07-08T17:26:49Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "PeTeR: Post-Training Robustification of Probabilistic Circuits",
+      "title": "PeTeR: Post-Training Robustification of Probabilistic Circuits",
+      "url": "https://arxiv.org/abs/2607.07671v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07671v1",
+      "description": "Probabilistic circuits (PCs) can model complex joint distributions while supporting exact and efficient computation of many inference queries. However, standard likelihood-based PC learning is vulnerable to overfitting and fragile generalization when confronted with data noise, small sample sizes, or distribution shifts. This can be mitigated using distributionally-robust optimization which consider worst-case distributions within a Wasserstein ball of the empirical distribution, but current met",
+      "authors": [
+        "Adrian Ciotinga",
+        "Yeming Dai",
+        "YooJung Choi"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.07671v1",
+      "published_at": "2026-07-08T17:25:20Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Does Bielik Know What It Doesn't Know? Activation Dispersion Separates Entity Familiarity from Factual Reliability Across Model Scale",
+      "title": "Does Bielik Know What It Doesn't Know? Activation Dispersion Separates Entity Familiarity from Factual Reliability Across Model Scale",
+      "url": "https://arxiv.org/abs/2607.07670v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07670v1",
+      "description": "Large language models hallucinate most about entities they have never seen. We ask whether a model's activations betray entity familiarity before a single answer token is generated, and whether that signal predicts the factual reliability of the answers. On four Polish Bielik models (1.5B-11B parameters), we probe four entity domains (athletes, cities, writers, musicians), each with 42 well-known, 42 obscure-but-real, and 42 fabricated entities addressed by a one-sentence question (504 prompts p",
+      "authors": [
+        "Grzegorz Brzezinka"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.07670v1",
+      "published_at": "2026-07-08T17:24:43Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "DiaLLM: An Investigation into the Robustness-Generation Gap in English Dialect Adaptation",
+      "title": "DiaLLM: An Investigation into the Robustness-Generation Gap in English Dialect Adaptation",
+      "url": "https://arxiv.org/abs/2607.07669v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07669v1",
+      "description": "Large language models increasingly \\emph{understand} dialectal English, yet still \\emph{produce} only standard, US-leaning English, leaving dialectal generation, the harder half of the problem, largely unaddressed. We introduce \\textbf{DiaLLM}, which continually pretrains three open-weight language model families on the International Corpus of English and applies implicit and explicit post-training paradigms, each combined with three model alignment strategies, giving the first controlled compar",
+      "authors": [
+        "Jordan Painter",
+        "Dipankar Srirag",
+        "Adarsh Kappiyath",
+        "Diptesh Kanojia",
+        "Aditya Joshi"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.07669v1",
+      "published_at": "2026-07-08T17:24:27Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Guidance Breaks the Fitted Operator: A Terminal-Fitted Repair for Classifier-Free Guidance",
+      "title": "Guidance Breaks the Fitted Operator: A Terminal-Fitted Repair for Classifier-Free Guidance",
+      "url": "https://arxiv.org/abs/2607.07665v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07665v1",
+      "description": "Classifier-free guidance (CFG) is the standard way to strengthen class-conditioning in diffusion and flow-matching samplers, yet at large guidance it oversaturates and destabilizes, symptoms practitioners suppress with more steps or limited-interval schedules. We analyze CFG through an asymptotic-preserving, numerical-analysis lens. Building on a recent result that the deterministic DDIM step is the unique fitted operator for the unguided terminal layer, exact on the final small-sigma stretch of",
+      "authors": [
+        "Shiheng Zhang"
+      ],
+      "categories": [
+        "cs.LG",
+        "math.NA"
+      ],
+      "arxiv_id": "2607.07665v1",
+      "published_at": "2026-07-08T17:21:51Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops",
+      "title": "Recursive Self-Improvement in AI: From Bounded Self-Refinement to Autonomous Research Loops",
+      "url": "https://arxiv.org/abs/2607.07663v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07663v1",
+      "description": "AI systems increasingly participate in their own improvement: revising their outputs, adapting their own harnesses during deployment, training on data they generate, and, increasingly, conducting AI research itself. This literature is described under a vocabulary (\"self-refine,\" \"self-reward,\" \"self-play,\" \"self-evolve\") that conflates fundamentally different ambitions. We survey 1,250 arXiv papers (2024-2026) along two axes: what the system improves -- its behavior in deployment, its policy thr",
+      "authors": [
+        "Mingguang Chen",
+        "Licheng Wang",
+        "Bo Qu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.07663v1",
+      "published_at": "2026-07-08T17:19:50Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "RL Post-Training Builds Compositional Reasoning Strategies",
+      "title": "RL Post-Training Builds Compositional Reasoning Strategies",
+      "url": "https://arxiv.org/abs/2607.07646v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07646v1",
+      "description": "Does RL post-training merely amplify primitive skills already latent in a base model, or can it compose primitive skills into new higher-level strategies? We study this question in a fully observable rewrite-grammar environment where the pretraining distribution is known and every generated rewrite can be audited. A Transformer is pretrained on primitive symbol-rewrite chains and post-trained on a Trace-based reasoning task with only a binary final-answer reward. RL solves held-out problems that",
+      "authors": [
+        "Azwar Abdulsalam",
+        "Nishil Patel",
+        "Andrew Saxe"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2607.07646v1",
+      "published_at": "2026-07-08T17:04:42Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ALER-TI: Aligned Latent Embedding Retrieval for Time Series Imputation",
+      "title": "ALER-TI: Aligned Latent Embedding Retrieval for Time Series Imputation",
+      "url": "https://arxiv.org/abs/2607.07640v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07640v1",
+      "description": "Deep learning has significantly advanced time series imputation, yet most existing architectures primarily rely on localized temporal context within the corrupted input sequence. This reliance can be limiting in real-world scenarios, where time series often exhibit non-stationary dynamics, weak temporal correlations, and infrequent patterns that are difficult to reconstruct from nearby observations alone. In this paper, we propose ALER-TI, Aligned Latent Embedding Retrieval for Time Series Imput",
+      "authors": [
+        "Xuan-Thong Truong",
+        "Trung-Kien Le",
+        "Tung Kieu",
+        "Thi-Thu Nguyen",
+        "Nhat-Hai Nguyen"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.07640v1",
+      "published_at": "2026-07-08T16:59:38Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "An optimal control approach for neural network architecture adaptation with a posteriori error estimation",
+      "title": "An optimal control approach for neural network architecture adaptation with a posteriori error estimation",
+      "url": "https://arxiv.org/abs/2607.07637v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07637v1",
+      "description": "This work presents a novel approach for adapting neural network architecture along the depth based on a posteriori error estimation. By formulating neural network training as a continuous-time optimal control problem, we derive rigorous error estimates that quantify how approximation error distributes across network layers. This error decomposition enables a principled depth adaptation strategy: new layers are inserted at locations of maximum estimated error, allowing the network to efficiently ",
+      "authors": [
+        "C G Krishnanunni",
+        "Thomas Scott",
+        "Tan Bui-Thanh"
+      ],
+      "categories": [
+        "cs.LG",
+        "math.NA",
+        "math.OC"
+      ],
+      "arxiv_id": "2607.07637v1",
+      "published_at": "2026-07-08T16:55:16Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "QCNN with Rough Path Signature Kernels",
+      "title": "QCNN with Rough Path Signature Kernels",
+      "url": "https://arxiv.org/abs/2607.07634v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07634v1",
+      "description": "Time series analysis plays a vital role across a wide range of scientific and engineering domains but poses substantial computational challenges. A major difficulty arises from the time reparameterization invariance of time series data, which complicates the extraction of meaningful temporal features. In this work, we address the problem of time series classification by exploring the application of quantum computation techniques. We propose a hybrid quantum-classical architecture that integrates",
+      "authors": [
+        "Leonardo Nogueira Falabella",
+        "Vasily Sazonov"
+      ],
+      "categories": [
+        "quant-ph",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.07634v1",
+      "published_at": "2026-07-08T16:50:46Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Future Confidence Distillation in Large Language Models",
+      "title": "Future Confidence Distillation in Large Language Models",
+      "url": "https://arxiv.org/abs/2607.07626v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07626v1",
+      "description": "Reliable confidence estimation is essential for deploying large language models (LLMs) in confidence-aware systems, where downstream decisions such as retrieval, tool use, and adaptive computation depend on accurately estimating answer reliability. Existing approaches, however, largely treat confidence as a property of completed responses, overlooking how confidence-related information evolves throughout the answering process. In this work, we investigate confidence from a temporal perspective b",
+      "authors": [
+        "Sahil Kale"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.07626v1",
+      "published_at": "2026-07-08T16:43:11Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Higher-Order Geometric Updates for Levenberg-Marquardt Method via Riemann Normal Coordinates",
+      "title": "Higher-Order Geometric Updates for Levenberg-Marquardt Method via Riemann Normal Coordinates",
+      "url": "https://arxiv.org/abs/2607.07623v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07623v1",
+      "description": "Nonlinear least-squares optimization is central to regression, physics-informed neural networks, and other machine-learning tasks. Such problems have a natural geometric interpretation, model predictions form a manifold in data space, while the chosen parameterization can introduce parameter-effects curvature that becomes a dominant source of nonlinearity. This exposes a limitation of the Levenberg-Marquardt (LM) method, its tangent-space step is applied as a straight update in parameter coordin",
+      "authors": [
+        "Jianing Liu",
+        "Dong H. Zhang"
+      ],
+      "categories": [
+        "cs.LG",
+        "math.NA",
+        "physics.chem-ph",
+        "physics.comp-ph",
+        "physics.data-an"
+      ],
+      "arxiv_id": "2607.07623v1",
+      "published_at": "2026-07-08T16:39:03Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Towards Agentic AI Governance: A Preliminary Assessment",
+      "title": "Towards Agentic AI Governance: A Preliminary Assessment",
+      "url": "https://arxiv.org/abs/2607.07612v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07612v1",
+      "description": "Artificial intelligence is rapidly evolving from generative systems to agentic AI capable of autonomously planning and executing tasks. Widely characterized as the Year of Agentic AI, 2025 marked accelerated development and deployment, introducing new ethical and governance challenges. This paper presents a systematic review of the emerging literature on agentic AI governance. Our analysis identifies features that distinguish agentic AI from traditional systems and why it warrants targeted gover",
+      "authors": [
+        "Mubarak Raji",
+        "Masooda Bashir"
+      ],
+      "categories": [
+        "cs.CY",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.07612v1",
+      "published_at": "2026-07-08T16:29:18Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Asymmetric Focal Loss Improves Graph Neural Network Prediction of Drug-Drug Interactions",
+      "title": "Asymmetric Focal Loss Improves Graph Neural Network Prediction of Drug-Drug Interactions",
+      "url": "https://arxiv.org/abs/2607.07611v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07611v1",
+      "description": "Background: Graph neural networks improve computational prediction of polypharmacy side effects, but standard binary cross-entropy training allocates equal capacity to well-classified and difficult examples, potentially missing clinically significant interactions. We evaluated whether an asymmetric focal objective could improve multi-relational drug-drug interaction (DDI) prediction by emphasizing difficult positive interactions. Methods: ClinicalFocal loss was integrated into a relation-aware g",
+      "authors": [
+        "Faranak Hatami",
+        "Mousa Moradi"
+      ],
+      "categories": [
+        "cs.LG",
+        "physics.comp-ph"
+      ],
+      "arxiv_id": "2607.07611v1",
+      "published_at": "2026-07-08T16:28:57Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "CARLA-GS: Decoupling Representation, Reasoning, and Physics Simulation for Autonomous Driving Corner-Case Synthesis",
+      "title": "CARLA-GS: Decoupling Representation, Reasoning, and Physics Simulation for Autonomous Driving Corner-Case Synthesis",
+      "url": "https://arxiv.org/abs/2607.07601v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07601v1",
+      "description": "Safety evaluation for autonomous driving is dominated by rare, safety-critical interactions, motivating simulators that can deliberately synthesize corner cases with photorealistic observations. Corner-case generation is inherently a multi-source problem spanning visual representation, scene reasoning, and vehicle trajectory generation and control. Prior knowledge- and model-based approaches typically focus on scene or trajectory components in isolation, while diffusion-based methods attempt end",
+      "authors": [
+        "Kaicong Huang",
+        "Meng Ma",
+        "Ruimin Ke"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.07601v1",
+      "published_at": "2026-07-08T16:20:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Multi-Class vs. Multi-Label BERT for CVE-to-CWE Mapping: How Taxonomy Structure Shapes the Errors",
+      "title": "Multi-Class vs. Multi-Label BERT for CVE-to-CWE Mapping: How Taxonomy Structure Shapes the Errors",
+      "url": "https://arxiv.org/abs/2607.07573v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07573v1",
+      "description": "Assigning Common Weakness Enumeration (CWE) categories to Common Vulnerabilities and Exposures (CVE) records remains an important but largely manual step in vulnerability analysis. We study this task as a text classification problem and compare two modelling choices: a \\emph{multi-class} formulation that predicts a single CWE per CVE and a \\emph{multi-label} formulation that allows multiple assignments. Three transformer encoders (BERT Base, SecureBERT, and CySecBERT) are evaluated on three nest",
+      "authors": [
+        "Ana Schwengber Kelm",
+        "Christian Bockermann",
+        "Jörg Frochte"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CR"
+      ],
+      "arxiv_id": "2607.07573v1",
+      "published_at": "2026-07-08T16:01:21Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
