@@ -31,7 +31,7 @@ class AIAnalyzer:
     HEALTH_LEVELS = ["active", "moderate", "dormant", "archived"]
 
     def __init__(self, coze_api_key: Optional[str] = None, workflow_id: Optional[str] = None):
-        self.coze_api_key = coze_api_key or os.environ.get("AI_BOX_COZE", "")
+        self.coze_api_key = coze_api_key or os.environ.get("COZE_API_KEY", "") or os.environ.get("AI_BOX_COZE", "")
         self.workflow_id = workflow_id or os.environ.get("COZE_WORKFLOW_ID", "")
         self.use_coze = bool(self.coze_api_key and self.workflow_id)
 
@@ -61,7 +61,7 @@ class AIAnalyzer:
 
         try:
             resp = requests.post(
-                "https://api.coze.cn/v1/workflow/run",
+                "https://api.coze.cn/v3/workflow/run",
                 headers={
                     "Authorization": f"Bearer {self.coze_api_key}",
                     "Content-Type": "application/json"
@@ -70,13 +70,32 @@ class AIAnalyzer:
                     "workflow_id": self.workflow_id,
                     "parameters": {"input": prompt}
                 },
-                timeout=60
+                timeout=120
             )
 
             if resp.status_code == 200:
                 result = resp.json()
                 if result.get("code") == 0:
-                    return json.loads(result["data"])
+                    # Coze v3 API: data 是 JSON 字符串，内含 {"output": "..."}
+                    data_str = result.get("data", "")
+                    if isinstance(data_str, str):
+                        data_obj = json.loads(data_str)
+                    else:
+                        data_obj = data_str
+
+                    # 提取 output 字段（结束节点的输出值）
+                    output_str = data_obj.get("output", "")
+                    if isinstance(output_str, str):
+                        analysis = json.loads(output_str)
+                    else:
+                        analysis = output_str
+
+                    logger.info(f"  Coze analysis OK for: {tool_data.get('name', '?')}")
+                    return analysis
+                else:
+                    logger.warning(f"Coze workflow error: code={result.get('code')}, msg={result.get('msg')}")
+            else:
+                logger.warning(f"Coze API HTTP {resp.status_code}: {resp.text[:200]}")
         except Exception as e:
             logger.warning(f"Coze analysis failed: {e}, falling back to local analysis")
 

@@ -251,7 +251,7 @@ def _create_analyzer() -> AIAnalyzer:
     自动从环境变量读取配置，支持Coze工作流和本地降级
     """
     return AIAnalyzer(
-        coze_api_key=os.environ.get("AI_BOX_COZE", ""),
+        coze_api_key=os.environ.get("COZE_API_KEY", "") or os.environ.get("AI_BOX_COZE", ""),
         workflow_id=os.environ.get("COZE_WORKFLOW_ID", ""),
     )
 
