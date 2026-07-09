@@ -1,6 +1,6 @@
 """
-AI百宝箱 - 数据模型定义
-五维标签体系 + 完整数据Schema
+AI百宝箱 - 数据模型定义 v2
+五维标签体系 + 健康度追踪 + AI分析 + 国内工具支持
 """
 from dataclasses import dataclass, field, asdict
 from typing import List, Optional, Dict, Any
@@ -15,7 +15,7 @@ FUNCTION_TAGS = [
     "文本生成", "图像生成", "视频生成", "音频生成", "代码生成",
     "数据分析", "文档处理", "翻译", "搜索", "对话",
     "图像编辑", "视频编辑", "音频编辑", "PPT制作", "写作辅助",
-    "设计辅助", "编程辅助", "数据分析", "客服机器人", "教育工具",
+    "设计辅助", "编程辅助", "客服机器人", "教育工具",
     "办公效率", "营销工具", "SEO工具", "社交媒体", "电商工具",
     "开发工具", "测试工具", "部署工具", "监控工具", "安全工具",
     "数据标注", "模型训练", "模型评估", "向量数据库", "RAG",
@@ -52,6 +52,31 @@ QUALITY_TAGS = [
     "热门", "新星", "经典", "小众精品", "实验性",
     "高活跃", "低活跃", "已停更", "即将上线", "Beta",
     "口碑好", "争议中", "推荐", "待验证", "独家",
+]
+
+# ===== 许可/定价维度 =====
+LICENSE_TIER = {
+    "open-source": "完全开源",
+    "freemium": "免费限量",
+    "free": "完全免费",
+    "paid": "纯付费",
+    "source-available": "源码可见",
+    "unknown": "未知",
+}
+
+# ===== 健康度等级 =====
+HEALTH_STATUS = {
+    "active": "活跃（30天内更新）",
+    "moderate": "一般（30-180天）",
+    "dormant": "沉寂（180天-1年）",
+    "archived": "归档（>1年）",
+}
+
+# ===== 一级分类体系 =====
+CATEGORY_L1 = [
+    "文本生成", "图像创作", "代码开发", "数据分析",
+    "音视频", "办公效率", "学术研究", "开发工具",
+    "设计创意", "营销推广", "教育培训", "其他",
 ]
 
 
@@ -98,7 +123,7 @@ class ToolStats:
 
 @dataclass
 class Tool:
-    """AI工具/项目 核心数据模型"""
+    """AI工具/项目 核心数据模型 v2"""
     # === 基础信息 ===
     id: str                                    # 唯一标识 = source + "_" + slug
     name: str                                  # 工具名称
@@ -120,17 +145,37 @@ class Tool:
     # === 五维标签 ===
     tags: Tags = field(default_factory=Tags)
 
-    # === 元数据 ===
-    category: str = ""                         # 主分类
-    subcategory: str = ""                      # 子分类
+    # === 分类体系（两级） ===
+    category: str = ""                         # 一级分类
+    subcategory: str = ""                      # 二级分类
+
+    # === 许可/定价维度 ===
+    license_tier: str = "unknown"              # open-source/freemium/free/paid/source-available
+    license_type: str = ""                     # 具体许可证：MIT/Apache/GPL等
+    pricing: str = ""                          # 定价模式（保留兼容）
+    pricing_detail: str = ""                   # 定价详情
+
+    # === 平台与语言 ===
     language: List[str] = field(default_factory=list)    # 支持语言
     platform: List[str] = field(default_factory=list)    # 平台
-    pricing: str = ""                          # 定价模式
-    pricing_detail: str = ""                   # 定价详情
-    license: str = ""                          # 开源协议
 
     # === 统计 ===
     stats: Optional[ToolStats] = None
+
+    # === 健康度追踪 ===
+    health_status: str = "unknown"             # active/moderate/dormant/archived
+    last_updated: str = ""                     # 最后更新时间 ISO8601
+    last_checked: str = ""                     # 最后一次采集检查时间
+    star_history: List[Dict[str, Any]] = field(default_factory=list)  # [{date, stars}]
+
+    # === AI分析结果 ===
+    ai_analysis: str = ""                      # Coze工作流分析摘要
+    ai_confidence: float = 0.0                 # AI分析置信度 0-1
+    ai_analyzed_at: str = ""                   # 最后AI分析时间
+
+    # === 国内工具标识 ===
+    is_china_tool: bool = False                # 是否国内工具
+    china_features: Optional[Dict[str, Any]] = None  # 国内特性：注册门槛、中文支持等
 
     # === 关联 ===
     related_tools: List[str] = field(default_factory=list)  # 关联工具ID
@@ -138,7 +183,6 @@ class Tool:
 
     # === 时间戳 ===
     first_seen: str = ""                       # 首次发现时间 ISO8601
-    last_updated: str = ""                     # 最后更新时间
     collected_at: str = ""                     # 本次采集时间
     content_hash: str = ""                     # 内容指纹(用于变更检测)
 
@@ -147,8 +191,31 @@ class Tool:
 
     def compute_hash(self) -> str:
         """计算内容指纹，用于检测变更"""
-        content = f"{self.name}|{self.description}|{self.url}|{self.pricing}"
+        content = f"{self.name}|{self.description}|{self.url}|{self.license_tier}"
         return hashlib.md5(content.encode()).hexdigest()
+
+    def update_health_status(self):
+        """根据最后更新时间计算健康度"""
+        if not self.last_updated:
+            self.health_status = "unknown"
+            return
+        
+        try:
+            from datetime import datetime, timezone
+            updated = datetime.fromisoformat(self.last_updated.replace('Z', '+00:00'))
+            now = datetime.now(timezone.utc)
+            days = (now - updated).days
+            
+            if days <= 30:
+                self.health_status = "active"
+            elif days <= 180:
+                self.health_status = "moderate"
+            elif days <= 365:
+                self.health_status = "dormant"
+            else:
+                self.health_status = "archived"
+        except:
+            self.health_status = "unknown"
 
     def to_dict(self) -> Dict:
         d = {
@@ -169,16 +236,25 @@ class Tool:
             "tags": self.tags.to_dict(),
             "category": self.category,
             "subcategory": self.subcategory,
-            "language": self.language,
-            "platform": self.platform,
+            "license_tier": self.license_tier,
+            "license_type": self.license_type,
             "pricing": self.pricing,
             "pricing_detail": self.pricing_detail,
-            "license": self.license,
+            "language": self.language,
+            "platform": self.platform,
             "stats": asdict(self.stats) if self.stats else None,
+            "health_status": self.health_status,
+            "last_updated": self.last_updated,
+            "last_checked": self.last_checked,
+            "star_history": self.star_history,
+            "ai_analysis": self.ai_analysis,
+            "ai_confidence": self.ai_confidence,
+            "ai_analyzed_at": self.ai_analyzed_at,
+            "is_china_tool": self.is_china_tool,
+            "china_features": self.china_features,
             "related_tools": self.related_tools,
             "parent_tool": self.parent_tool,
             "first_seen": self.first_seen,
-            "last_updated": self.last_updated,
             "collected_at": self.collected_at,
             "content_hash": self.content_hash,
             "raw_data": self.raw_data,
@@ -219,16 +295,25 @@ class Tool:
             tags=Tags.from_dict(tags_data),
             category=data.get("category", ""),
             subcategory=data.get("subcategory", ""),
-            language=data.get("language", []),
-            platform=data.get("platform", []),
+            license_tier=data.get("license_tier", "unknown"),
+            license_type=data.get("license_type", ""),
             pricing=data.get("pricing", ""),
             pricing_detail=data.get("pricing_detail", ""),
-            license=data.get("license", ""),
+            language=data.get("language", []),
+            platform=data.get("platform", []),
             stats=ToolStats(**stats_data) if stats_data else None,
+            health_status=data.get("health_status", "unknown"),
+            last_updated=data.get("last_updated", ""),
+            last_checked=data.get("last_checked", ""),
+            star_history=data.get("star_history", []),
+            ai_analysis=data.get("ai_analysis", ""),
+            ai_confidence=data.get("ai_confidence", 0.0),
+            ai_analyzed_at=data.get("ai_analyzed_at", ""),
+            is_china_tool=data.get("is_china_tool", False),
+            china_features=data.get("china_features"),
             related_tools=data.get("related_tools", []),
             parent_tool=data.get("parent_tool"),
             first_seen=data.get("first_seen", ""),
-            last_updated=data.get("last_updated", ""),
             collected_at=data.get("collected_at", ""),
             content_hash=data.get("content_hash", ""),
             raw_data=data.get("raw_data", {}),
