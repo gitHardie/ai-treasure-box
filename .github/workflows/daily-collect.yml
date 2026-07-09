@@ -1,0 +1,131 @@
+# AI百宝箱 - 数据采集与分析流水线
+name: daily-collect
+
+on:
+  schedule:
+    # UTC时间，对应北京时间 +8
+    - cron: '0 18 * * *'    # 北京时间 02:00 - Tier2网页采集
+    - cron: '0 22 * * *'    # 北京时间 06:00 - ArXiv论文
+    - cron: '0 */6 * * *'   # 每6小时 - GitHub Trending + HyperAI
+    - cron: '0 */8 * * *'   # 每8小时 - HuggingFace + Reddit
+    - cron: '0 16 * * 1'    # 每周一 北京时间 00:00 - LMSYS排名
+  workflow_dispatch:         # 手动触发
+    inputs:
+      source:
+        description: '指定数据源ID（留空则全部）'
+        required: false
+        type: string
+      tier:
+        description: '指定层级 1/2/3（留空则全部）'
+        required: false
+        type: string
+      skip_analysis:
+        description: '跳过AI分析'
+        required: false
+        type: boolean
+        default: false
+
+env:
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0  # 完整历史用于git diff
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run collection
+        env:
+          COZE_API_KEY: ${{ secrets.COZE_API_KEY }}
+          COZE_API_BASE: ${{ secrets.COZE_API_BASE }}
+          ANALYZER_BOT_ID: ${{ secrets.ANALYZER_BOT_ID }}
+        run: |
+          SOURCE_ARG=""
+          TIER_ARG=""
+          
+          if [ -n "${{ inputs.source }}" ]; then
+            SOURCE_ARG="--source ${{ inputs.source }}"
+          fi
+          
+          if [ -n "${{ inputs.tier }}" ]; then
+            TIER_ARG="--tier ${{ inputs.tier }}"
+          fi
+          
+          cd scripts
+          python main.py collect $SOURCE_ARG $TIER_ARG
+
+      - name: Run AI analysis
+        if: ${{ !inputs.skip_analysis }}
+        env:
+          COZE_API_KEY: ${{ secrets.COZE_API_KEY }}
+          COZE_API_BASE: ${{ secrets.COZE_API_BASE }}
+          ANALYZER_BOT_ID: ${{ secrets.ANALYZER_BOT_ID }}
+        run: |
+          cd scripts
+          python main.py analyze
+
+      - name: Generate daily snapshot
+        run: |
+          cd scripts
+          python main.py snapshot
+
+      - name: Commit and push data
+        run: |
+          git config user.name "AI Treasure Box Bot"
+          git config user.email "bot@afterai.tech"
+          git add data/
+          
+          # 检查是否有变更
+          if git diff --cached --quiet; then
+            echo "No data changes to commit"
+          else
+            git commit -m "📊 Daily update: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
+
+  deploy-site:
+    needs: collect
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build site
+        run: |
+          cd site
+          npm install
+          npm run build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/dist
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

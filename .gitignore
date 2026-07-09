@@ -1,0 +1,38 @@
+# Dependencies
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+*.env
+
+# Data (track everything, data IS the product)
+# Only ignore truly large/unnecessary files
+data/**/*.log
+data/**/*.tmp
+
+# Build
+site/dist/
+site/node_modules/
+
+# Logs
+*.log
+logs/

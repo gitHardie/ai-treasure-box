@@ -1,0 +1,148 @@
+# AI百宝箱 - 数据源配置
+# 分层优先级：Tier1=API直连, Tier2=RSS/网页, Tier3=社区
+
+sources:
+  # ===== Tier 1: API直连（最稳定） =====
+  - id: github-trending
+    name: GitHub Trending
+    type: api
+    tier: 1
+    url: "https://github.com/trending"
+    schedule: "0 */6 * * *"
+    enabled: true
+    parser: github_trending.py
+    tags_source: [language, topic, stars]
+
+  - id: huggingface-models
+    name: HuggingFace Models
+    type: api
+    tier: 1
+    url: "https://huggingface.co/api/models"
+    schedule: "0 */8 * * *"
+    enabled: true
+    parser: huggingface.py
+    params:
+      sort: trending
+      limit: 100
+
+  - id: huggingface-spaces
+    name: HuggingFace Spaces
+    type: api
+    tier: 1
+    url: "https://huggingface.co/api/spaces"
+    schedule: "0 */8 * * *"
+    enabled: true
+    parser: huggingface_spaces.py
+    params:
+      sort: trending
+      limit: 50
+
+  - id: lmsys-leaderboard
+    name: LMSYS Chatbot Arena
+    type: api
+    tier: 1
+    schedule: "0 0 * * 1"
+    enabled: true
+    parser: lmsys.py
+
+  - id: producthunt-ai
+    name: Product Hunt AI
+    type: web
+    tier: 1
+    url: "https://www.producthunt.com/topics/artificial-intelligence"
+    schedule: "0 0 * * *"
+    enabled: true
+    parser: producthunt.py
+
+  - id: arxiv-ai
+    name: ArXiv AI Papers
+    type: api
+    tier: 1
+    url: "http://export.arxiv.org/api/query"
+    schedule: "0 6 * * *"
+    enabled: true
+    parser: arxiv.py
+    params:
+      search_query: "cat:cs.AI+OR+cat:cs.LG+OR+cat:cs.CL"
+      max_results: 50
+      sortBy: submittedDate
+
+  - id: hackernews-ai
+    name: Hacker News AI
+    type: api
+    tier: 1
+    url: "https://hn.algolia.com/api/v1/search"
+    schedule: "0 */4 * * *"
+    enabled: true
+    parser: hackernews.py
+    params:
+      query: "AI OR LLM OR GPT"
+      tags: story
+      hitsPerPage: 30
+
+  # ===== Tier 2: 网页采集 =====
+  - id: aishenqi
+    name: AI神器集
+    type: web
+    tier: 2
+    url: "https://aishenqi.net"
+    schedule: "0 2 * * *"
+    enabled: true
+    parser: aishenqi.py
+
+  - id: aigcrank
+    name: AI工具排行榜
+    type: web
+    tier: 2
+    url: "https://aigcrank.cn"
+    schedule: "0 3 * * *"
+    enabled: true
+    parser: aigcrank.py
+
+  - id: hyperai
+    name: HyperAI
+    type: rss
+    tier: 2
+    url: "https://hyper.ai/feed"
+    schedule: "0 */6 * * *"
+    enabled: true
+    parser: hyperai.py
+
+  - id: aibot
+    name: AI-Bot.cn
+    type: web
+    tier: 2
+    url: "https://ai-bot.cn"
+    schedule: "0 3 * * *"
+    enabled: true
+    parser: aibot.py
+
+  - id: aig123
+    name: AIG123
+    type: web
+    tier: 2
+    url: "https://aig123.com"
+    schedule: "0 4 * * *"
+    enabled: true
+    parser: aig123.py
+
+  # ===== Tier 3: 社区 =====
+  - id: reddit-ai
+    name: Reddit AI
+    type: web
+    tier: 3
+    url: "https://www.reddit.com/r/artificial/hot.json"
+    schedule: "0 */8 * * *"
+    enabled: true
+    parser: reddit.py
+
+global:
+  retry_times: 3
+  retry_delay: 30
+  request_timeout: 30
+  user_agent: "AI-Treasure-Box/1.0"
+  rate_limit:
+    requests_per_minute: 10
+  dedup:
+    strategy: "url+title"
+    similarity_threshold: 0.85
