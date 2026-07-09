@@ -36,6 +36,7 @@ jobs:
       - name: Run collection
         env:
           COZE_API_KEY: ${{ secrets.AI_BOX_COZE }}
+          COZE_WORKFLOW_ID: ${{ secrets.COZE_WORKFLOW_ID }}
         run: |
           SOURCE_ARG=""
           [ -n "${{ inputs.source }}" ] && SOURCE_ARG="--source ${{ inputs.source }}"
@@ -44,6 +45,7 @@ jobs:
         if: ${{ !inputs.skip_analysis }}
         env:
           COZE_API_KEY: ${{ secrets.AI_BOX_COZE }}
+          COZE_WORKFLOW_ID: ${{ secrets.COZE_WORKFLOW_ID }}
         run: cd scripts && python main.py analyze || echo "Analysis done with warnings"
       - run: cd scripts && python main.py snapshot || echo "Snapshot done with warnings"
       - name: Commit data
