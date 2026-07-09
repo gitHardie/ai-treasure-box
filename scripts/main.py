@@ -9,6 +9,7 @@ import logging
 import argparse
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Dict, List, Any
 
 # 确保scripts目录在path中
 sys.path.insert(0, str(Path(__file__).parent))
