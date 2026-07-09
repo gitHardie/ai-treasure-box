@@ -2,30 +2,28 @@ name: daily-collect
 
 on:
   schedule:
-    - cron: '0 18 * * *'
-    - cron: '0 22 * * *'
-    - cron: '0 */6 * * *'
+    - cron: '0 18 * * *'  # 每天UTC 18:00 (北京凌晨2:00)
   workflow_dispatch:
     inputs:
-      source:
-        description: '指定数据源ID'
+      mode:
+        description: '运行模式: discovery/health_check/deep_update'
         required: false
         type: string
-      skip_analysis:
-        description: '跳过AI分析'
+        default: 'auto'
+      source:
+        description: '指定数据源ID（可选）'
         required: false
-        type: boolean
-        default: false
+        type: string
 
 env:
   PYTHON_VERSION: '3.11'
 
 jobs:
-  collect:
+  collect-and-analyze:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v5
@@ -33,29 +31,34 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'pip'
       - run: pip install -r requirements.txt
-      - name: Run collection
+
+      - name: Run pipeline
         env:
           COZE_API_KEY: ${{ secrets.AI_BOX_COZE }}
           COZE_WORKFLOW_ID: ${{ secrets.COZE_WORKFLOW_ID }}
         run: |
-          SOURCE_ARG=""
-          [ -n "${{ inputs.source }}" ] && SOURCE_ARG="--source ${{ inputs.source }}"
-          cd scripts && python main.py collect $SOURCE_ARG || echo "Collection done with warnings"
-      - name: Run AI analysis
-        if: ${{ !inputs.skip_analysis }}
-        env:
-          COZE_API_KEY: ${{ secrets.AI_BOX_COZE }}
-          COZE_WORKFLOW_ID: ${{ secrets.COZE_WORKFLOW_ID }}
-        run: cd scripts && python main.py analyze || echo "Analysis done with warnings"
-      - run: cd scripts && python main.py snapshot || echo "Snapshot done with warnings"
-      - name: Commit data
+          cd scripts
+          MODE_ARG="${{ inputs.mode }}"
+          SOURCE_ARG="${{ inputs.source }}"
+          if [ "$MODE_ARG" = "auto" ] || [ -z "$MODE_ARG" ]; then
+            python main.py run
+          elif [ -n "$SOURCE_ARG" ]; then
+            python main.py discover --source "$SOURCE_ARG"
+            python main.py analyze
+            python main.py deploy
+          else
+            python main.py run --mode "$MODE_ARG"
+          fi
+
+      - name: Commit and push
         run: |
           git config user.name "AI Treasure Box Bot"
           git config user.email "bot@afterai.tech"
           git add data/
           git diff --cached --quiet || (git commit -m "📊 Data update: $(date -u +'%Y-%m-%d %H:%M UTC')" && git push)
 
-  deploy:
+  deploy-site:
+    needs: collect-and-analyze
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -65,10 +68,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Build and deploy site
+      - name: Build and deploy
         run: |
           mkdir -p site/public/data
-          cp -r data/* site/public/data/ 2>/dev/null || true
+          cp -r data/site/* site/public/data/ 2>/dev/null || true
           cd site && npm install && npm run build
           cd dist
           git init

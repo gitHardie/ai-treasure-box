@@ -1,6 +1,9 @@
 """
-AI百宝箱 - 采集器基类
-所有采集器继承此类
+AI百宝箱 - 采集器基类 v2
+
+新增：
+  - fetch_limit 支持：从配置读取每次采集限制数量
+  - save_results 增加时间戳和模式标记
 """
 import os
 import json
@@ -26,9 +29,11 @@ class BaseCollector(ABC):
         self.global_config = global_config or {}
         self.source_id = source_config["id"]
         self.source_name = source_config["name"]
+        self.fetch_limit = source_config.get("fetch_limit", 0)  # 0 表示不限制
+        self.schedule_mode = source_config.get("schedule_mode", "discovery")
         self.session = requests.Session()
         self.session.headers.update({
-            "User-Agent": self.global_config.get("user_agent", "AI-Treasure-Box/1.0"),
+            "User-Agent": self.global_config.get("user_agent", "AI-Treasure-Box/2.0"),
             "Accept": "text/html,application/json,*/*",
         })
         self.data_dir = Path(__file__).parent.parent.parent / "data"
@@ -46,7 +51,7 @@ class BaseCollector(ABC):
     def fetch(self, url: str, **kwargs) -> requests.Response:
         """带重试和限流的HTTP请求"""
         retries = self.global_config.get("retry_times", 3)
-        delay = self.global_config.get("retry_delay", 30)
+        delay = self.global_config.get("retry_delay", 15)
         timeout = self.global_config.get("request_timeout", 30)
 
         for attempt in range(retries):
@@ -77,10 +82,25 @@ class BaseCollector(ABC):
                 result.append(item)
         return result
 
-    def save_results(self, items: List[Dict], date_str: str = None):
-        """保存采集结果"""
+    def apply_fetch_limit(self, items: List[Dict]) -> List[Dict]:
+        """应用采集数量限制"""
+        if self.fetch_limit and self.fetch_limit > 0 and len(items) > self.fetch_limit:
+            logger.info(f"[{self.source_id}] Applying fetch_limit: {len(items)} -> {self.fetch_limit}")
+            return items[:self.fetch_limit]
+        return items
+
+    def save_results(self, items: List[Dict], date_str: str = None, mode: str = None):
+        """
+        保存采集结果
+        
+        增加：
+          - mode 标记（discovery/health_check/deep_update）
+          - fetch_limit 信息
+        """
         if not date_str:
             date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        if not mode:
+            mode = self.schedule_mode
 
         output_dir = self.tools_dir / self.source_id
         output_dir.mkdir(parents=True, exist_ok=True)
@@ -91,6 +111,8 @@ class BaseCollector(ABC):
                 "source": self.source_id,
                 "source_name": self.source_name,
                 "collected_at": datetime.now(timezone.utc).isoformat(),
+                "mode": mode,
+                "fetch_limit": self.fetch_limit,
                 "count": len(items),
                 "items": items,
             }, f, ensure_ascii=False, indent=2)
@@ -113,14 +135,17 @@ class BaseCollector(ABC):
             deduped = self.dedup_by_url(raw_items)
             logger.info(f"[{self.source_id}] Collected {len(raw_items)} items, {len(deduped)} after dedup")
 
-            # 保存
-            filepath = self.save_results(deduped)
+            # 应用数量限制
+            limited = self.apply_fetch_limit(deduped)
+
+            # 保存（带模式标记）
+            filepath = self.save_results(limited, mode=self.schedule_mode)
 
             elapsed = time.time() - start_time
             return {
                 "success": True,
                 "source": self.source_id,
-                "count": len(deduped),
+                "count": len(limited),
                 "elapsed_seconds": round(elapsed, 2),
                 "output_file": str(filepath),
             }

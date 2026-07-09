@@ -1,9 +1,17 @@
 """
-AI分析管道 - 使用Coze工作流对工具进行独立分析
+AI分析管道 v2 - 支持批量处理
+
+核心改动：
+  - 支持批量打包20个工具调Coze工作流
+  - 批次间自动暂停避免限流
+  - 保留所有本地分析逻辑作为降级方案
+
 不盲信源头描述，独立判断工具的真实功能、定价、活跃度
 """
 import json
 import os
+import re
+import time
 import logging
 import hashlib
 from typing import List, Dict, Any, Optional
@@ -15,7 +23,7 @@ logger = logging.getLogger(__name__)
 
 
 class AIAnalyzer:
-    """AI分析器 - 对采集到的工具进行深度分析"""
+    """AI分析器 - 对采集到的工具进行深度分析（支持批量）"""
 
     # 一级分类体系
     CATEGORIES = [
@@ -30,10 +38,13 @@ class AIAnalyzer:
     # 健康度等级
     HEALTH_LEVELS = ["active", "moderate", "dormant", "archived"]
 
-    def __init__(self, coze_api_key: Optional[str] = None, workflow_id: Optional[str] = None):
+    def __init__(self, coze_api_key: Optional[str] = None, workflow_id: Optional[str] = None,
+                 batch_size: int = 20, batch_timeout: int = 120):
         self.coze_api_key = coze_api_key or os.environ.get("COZE_API_KEY", "") or os.environ.get("AI_BOX_COZE", "")
         self.workflow_id = workflow_id or os.environ.get("COZE_WORKFLOW_ID", "")
         self.use_coze = bool(self.coze_api_key and self.workflow_id)
+        self.batch_size = batch_size
+        self.batch_timeout = batch_timeout
 
     def analyze_tool(self, tool_data: Dict) -> Dict:
         """
@@ -55,8 +66,240 @@ class AIAnalyzer:
         else:
             return self._analyze_local(tool_data)
 
+    # ============================
+    # 批量分析接口
+    # ============================
+
+    def analyze_batch(self, tools: List[Dict]) -> List[Dict]:
+        """
+        批量分析工具 - 每20个打包调Coze
+
+        如果Coze不可用，自动降级到逐个本地分析。
+        """
+        if not tools:
+            return []
+
+        all_results = []
+
+        if self.use_coze:
+            # 批量模式：打包送Coze
+            for i in range(0, len(tools), self.batch_size):
+                batch = tools[i:i + self.batch_size]
+                batch_num = i // self.batch_size + 1
+                total_batches = (len(tools) + self.batch_size - 1) // self.batch_size
+                logger.info(f"Analyzing batch {batch_num}/{total_batches} ({len(batch)} tools)")
+
+                batch_results = self._analyze_with_coze_batch(batch)
+                all_results.extend(batch_results)
+
+                # 批次间暂停避免限流
+                if i + self.batch_size < len(tools):
+                    time.sleep(2)
+        else:
+            # 降级：逐个本地分析
+            logger.info(f"No Coze config, falling back to local analysis for {len(tools)} tools")
+            for i, tool in enumerate(tools):
+                name = tool.get("name", "unknown")
+                logger.info(f"  Local analyzing [{i + 1}/{len(tools)}]: {name}")
+                result = self._analyze_local(tool)
+                result["tool_id"] = tool.get("id", "")
+                all_results.append(result)
+
+        return all_results
+
+    def _analyze_with_coze_batch(self, tools: List[Dict]) -> List[Dict]:
+        """
+        将多个工具打包成一次Coze调用
+
+        构建包含多个工具的prompt，要求Coze返回JSON数组，
+        解析返回结果，匹配回每个工具。
+        """
+        prompt = self._build_batch_prompt(tools)
+
+        try:
+            resp = requests.post(
+                "https://api.coze.cn/v1/workflow/run",
+                headers={
+                    "Authorization": f"Bearer {self.coze_api_key}",
+                    "Content-Type": "application/json"
+                },
+                json={
+                    "workflow_id": self.workflow_id,
+                    "parameters": {"input": prompt}
+                },
+                timeout=self.batch_timeout
+            )
+
+            if resp.status_code == 200:
+                result = resp.json()
+                if result.get("code") == 0:
+                    raw_data = result.get("data")
+
+                    # 解析返回数据
+                    if isinstance(raw_data, str):
+                        try:
+                            data_obj = json.loads(raw_data)
+                        except (json.JSONDecodeError, TypeError):
+                            data_obj = {"output": raw_data}
+                    else:
+                        data_obj = raw_data if isinstance(raw_data, dict) else {}
+
+                    # 提取 output
+                    output_val = data_obj.get("output", data_obj)
+                    if isinstance(output_val, str):
+                        try:
+                            parsed = json.loads(output_val)
+                        except (json.JSONDecodeError, TypeError):
+                            # 尝试从文本中提取JSON数组
+                            parsed = self._extract_json_array(output_val)
+                    elif isinstance(output_val, dict):
+                        parsed = output_val
+                    else:
+                        parsed = data_obj
+
+                    # 解析批量结果
+                    results = self._parse_batch_response(parsed, tools)
+                    logger.info(f"  Coze batch analysis OK: {len(results)}/{len(tools)} tools")
+                    return results
+                else:
+                    logger.warning(f"Coze workflow error: code={result.get('code')}, msg={result.get('msg')}")
+            else:
+                logger.warning(f"Coze API HTTP {resp.status_code}: {resp.text[:200]}")
+        except Exception as e:
+            logger.warning(f"Coze batch analysis failed: {e}, falling back to local analysis")
+
+        # 降级到本地分析
+        return [self._fallback_local(t) for t in tools]
+
+    def _build_batch_prompt(self, tools: List[Dict]) -> str:
+        """
+        构建批量分析提示词
+
+        每个工具用编号标记，要求返回对应编号的JSON数组。
+        """
+        tool_entries = []
+        for idx, tool in enumerate(tools, 1):
+            entry = (
+                f"--- 工具 #{idx} ---\n"
+                f"名称: {tool.get('name', '')}\n"
+                f"来源: {tool.get('source', '')}\n"
+                f"URL: {tool.get('url', '')}\n"
+                f"描述: {tool.get('description', '')}\n"
+                f"中文描述: {tool.get('description_zh', '')}\n"
+                f"Stars: {tool.get('raw_data', {}).get('stargazers_count', 'N/A')}\n"
+                f"许可证: {tool.get('raw_data', {}).get('license', 'N/A')}\n"
+                f"最后更新: {tool.get('raw_data', {}).get('pushed_at', 'N/A')}\n"
+            )
+            tool_entries.append(entry)
+
+        tools_text = "\n".join(tool_entries)
+        count = len(tools)
+
+        return f"""请分析以下 {count} 个AI工具，对每个工具给出独立判断（不要照搬描述）。
+
+{tools_text}
+
+请返回一个JSON数组，包含 {count} 个对象，按编号顺序对应。格式如下：
+[
+  {{
+    "index": 1,
+    "category": "一级分类(文本生成/图像创作/代码开发/数据分析/音视频/办公效率/学术研究/开发工具/设计创意/营销推广/教育培训/其他)",
+    "subcategory": "二级分类",
+    "license_tier": "open-source/freemium/free/paid/source-available/unknown",
+    "license_type": "具体许可证如MIT/Apache等",
+    "tags": {{
+      "function": ["功能标签"],
+      "scenario": ["场景标签"],
+      "attribute": ["属性标签"],
+      "tech": ["技术标签"],
+      "quality": ["质量标签"]
+    }},
+    "ai_analysis": "2-3句独立分析摘要，说明这个工具真正做什么、适合谁",
+    "ai_confidence": 0.8,
+    "is_china_tool": false,
+    "health_status": "active/moderate/dormant/archived"
+  }}
+]
+
+注意：必须返回恰好 {count} 个对象的JSON数组，index从1到{count}。"""
+
+    def _parse_batch_response(self, response_data: Any, tools: List[Dict]) -> List[Dict]:
+        """
+        解析批量响应，匹配回每个工具
+
+        支持多种返回格式：
+        - JSON数组: [{index:1, ...}, {index:2, ...}]
+        - JSON对象: {results: [{index:1, ...}, ...]}
+        - 字符串中的JSON数组
+        """
+        results = []
+
+        # 如果是字符串，尝试解析JSON
+        if isinstance(response_data, str):
+            try:
+                response_data = json.loads(response_data)
+            except (json.JSONDecodeError, TypeError):
+                response_data = self._extract_json_array(response_data)
+
+        # 提取数组
+        items = []
+        if isinstance(response_data, list):
+            items = response_data
+        elif isinstance(response_data, dict):
+            # 尝试常见字段
+            for key in ["results", "items", "analyses", "data", "output"]:
+                if key in response_data and isinstance(response_data[key], list):
+                    items = response_data[key]
+                    break
+            if not items:
+                # 可能整个就是一个分析结果
+                items = [response_data]
+
+        # 构建 index -> analysis 映射
+        analysis_map = {}
+        for item in items:
+            if isinstance(item, dict):
+                idx = item.get("index", len(analysis_map) + 1)
+                analysis_map[idx] = item
+
+        # 匹配回每个工具
+        for idx, tool in enumerate(tools, 1):
+            analysis = analysis_map.get(idx)
+            if analysis and isinstance(analysis, dict):
+                result = dict(analysis)
+            else:
+                # 降级到本地分析
+                result = self._analyze_local(tool)
+
+            result["tool_id"] = tool.get("id", "")
+            results.append(result)
+
+        return results
+
+    def _extract_json_array(self, text: str) -> Any:
+        """尝试从文本中提取JSON数组"""
+        # 找第一个 [ 和最后一个 ]
+        start = text.find("[")
+        end = text.rfind("]")
+        if start != -1 and end != -1 and end > start:
+            try:
+                return json.loads(text[start:end + 1])
+            except json.JSONDecodeError:
+                pass
+        return text
+
+    def _fallback_local(self, tool: Dict) -> Dict:
+        """本地分析降级方案"""
+        result = self._analyze_local(tool)
+        result["tool_id"] = tool.get("id", "")
+        return result
+
+    # ============================
+    # 单工具 Coze 分析（保留）
+    # ============================
+
     def _analyze_with_coze(self, tool_data: Dict) -> Dict:
-        """使用Coze工作流分析"""
+        """使用Coze工作流分析（单工具模式，兼容旧逻辑）"""
         prompt = self._build_analysis_prompt(tool_data)
 
         try:
@@ -70,26 +313,22 @@ class AIAnalyzer:
                     "workflow_id": self.workflow_id,
                     "parameters": {"input": prompt}
                 },
-                timeout=120
+                timeout=self.batch_timeout
             )
 
             if resp.status_code == 200:
                 result = resp.json()
                 if result.get("code") == 0:
-                    # Coze v1 workflow API: data 可能是字符串或对象
                     raw_data = result.get("data")
-                    
-                    # 如果 data 是字符串，尝试 JSON 解析
+
                     if isinstance(raw_data, str):
                         try:
                             data_obj = json.loads(raw_data)
                         except (json.JSONDecodeError, TypeError):
-                            # 可能是纯文本输出，直接作为 analysis
                             data_obj = {"ai_analysis": raw_data}
                     else:
                         data_obj = raw_data if isinstance(raw_data, dict) else {}
 
-                    # 提取 output 字段（结束节点的输出值）
                     output_val = data_obj.get("output", data_obj)
                     if isinstance(output_val, str):
                         try:
@@ -110,8 +349,11 @@ class AIAnalyzer:
         except Exception as e:
             logger.warning(f"Coze analysis failed: {e}, falling back to local analysis")
 
-        # 降级到本地分析
         return self._analyze_local(tool_data)
+
+    # ============================
+    # 本地规则分析引擎（完整保留）
+    # ============================
 
     def _analyze_local(self, tool_data: Dict) -> Dict:
         """本地规则分析（不依赖Coze时的降级方案）"""
@@ -195,7 +437,6 @@ class AIAnalyzer:
         if source in ["github-trending", "huggingface-models", "huggingface-spaces"]:
             return "open-source"
         elif source in ["aishenqi", "aibot", "toolify-ai", "aigcrank", "aig123"]:
-            # 国内工具站收录的，需要进一步判断
             if "开源" in desc or "github" in url:
                 return "open-source"
             return "unknown"
@@ -206,7 +447,6 @@ class AIAnalyzer:
         """推断一级和二级分类"""
         text = f"{name} {desc} {' '.join(topics)}".lower()
 
-        # 分类关键词映射 (按优先级排列，越精确的越靠前)
         category_rules = [
             ("代码开发", ["code", "编程", "developer", "debug", "ide", "compiler",
                          "git", "api", "sdk", "framework", "编程辅助"]),
@@ -241,7 +481,6 @@ class AIAnalyzer:
                 best_score = score
                 best_cat = cat
 
-        # 二级分类（按一级分类细化）
         subcategory_map = {
             "文本生成": self._infer_text_subcategory(text),
             "图像创作": self._infer_image_subcategory(text),
@@ -252,7 +491,6 @@ class AIAnalyzer:
         }
 
         subcategory = subcategory_map.get(best_cat, "")
-
         return best_cat, subcategory
 
     def _infer_text_subcategory(self, text: str) -> str:
@@ -412,7 +650,6 @@ class AIAnalyzer:
         else:
             quality_tags.append("新星")
 
-        # 检测是否活跃
         pushed_at = raw.get("pushed_at", "")
         if pushed_at:
             try:
@@ -468,15 +705,12 @@ class AIAnalyzer:
         china_domains = [".cn", ".com.cn", ".net.cn", ".org.cn"]
         china_keywords = ["国内", "中国", "国产", "本土"]
 
-        # URL域名检查
         if any(url.endswith(d) for d in china_domains):
             return True
 
-        # 来源检查 - 国内工具站
         if source in ["aishenqi", "aigcrank", "aibot", "toolify-ai", "aig123"]:
             return True
 
-        # URL中的国内公司域名
         china_url_patterns = [
             "baidu.com", "aliyun.com", "tencent.com", "bytedance.com",
             "zhipuai.cn", "moonshot.cn", "baichuan-ai.com", "01.ai",
@@ -499,7 +733,6 @@ class AIAnalyzer:
         }
         tier_text = tier_desc.get(license_tier, "定价未知")
 
-        # 清理描述，去掉多余空白
         desc_clean = desc.strip()
         if len(desc_clean) > 200:
             desc_clean = desc_clean[:200] + "..."
@@ -507,7 +740,7 @@ class AIAnalyzer:
         return f"{name} 属于{category}领域，{tier_text}。{desc_clean}"
 
     def _build_analysis_prompt(self, tool: Dict) -> str:
-        """构建Coze分析提示词"""
+        """构建Coze分析提示词（单工具模式）"""
         return f"""请分析以下AI工具，给出独立判断（不要照搬描述）：
 
 工具名称: {tool.get('name', '')}
@@ -538,21 +771,9 @@ Stars: {tool.get('raw_data', {}).get('stargazers_count', 'N/A')}
   "health_status": "active/moderate/dormant/archived"
 }}"""
 
-    def analyze_batch(self, tools: List[Dict]) -> List[Dict]:
-        """批量分析工具"""
-        results = []
-        for i, tool in enumerate(tools):
-            name = tool.get("name", "unknown")
-            logger.info(f"  Analyzing [{i+1}/{len(tools)}]: {name}")
-            result = self.analyze_tool(tool)
-            result["tool_id"] = tool.get("id", "")
-            results.append(result)
-        return results
-
 
 def generate_tool_id(source: str, name: str) -> str:
     """生成工具唯一ID"""
     slug = name.lower().replace(" ", "-").replace("/", "-")
-    # 去除特殊字符
     slug = "".join(c for c in slug if c.isalnum() or c == "-")
     return f"{source}_{slug}"

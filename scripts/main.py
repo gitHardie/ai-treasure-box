@@ -1,10 +1,15 @@
 """
-AI百宝箱 - 主管线入口
-运行采集 → AI分析 → 存储 → 生成快照
+AI百宝箱 - 主管线 v2
 
-支持参数:
-  --analyze-only    只运行AI分析，不执行采集
-  --skip-analysis   只执行采集，跳过AI分析
+分级采集：发现 → 对比 → 批量分析 → 合并 → 生成
+
+子命令:
+  discover    发现新工具（从数据源采集）
+  check       健康检查（检查存量工具状态）
+  deep        深度更新（全量重分析）
+  analyze     对pending工具执行AI分析
+  deploy      生成网站数据
+  run         完整流程（自动判断模式）
 """
 import os
 import sys
@@ -18,9 +23,11 @@ from typing import Dict, List, Any
 # 确保scripts目录在path中
 sys.path.insert(0, str(Path(__file__).parent))
 
-from collectors.base import BaseCollector, load_config, get_enabled_sources
+from collectors.base import BaseCollector, load_config, get_enabled_sources, get_collector
 from pipeline.analyzer import AIAnalyzer, generate_tool_id
-from pipeline.data_model import Tool, DailySnapshot
+from pipeline.data_model import DailySnapshot
+from pipeline.scheduler import CollectionScheduler
+from pipeline.tool_database import ToolDatabase
 
 logging.basicConfig(
     level=logging.INFO,
@@ -29,331 +36,362 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-
-def run_collection(source_id: str = None, tier: int = None):
-    """
-    执行数据采集
-    :param source_id: 指定数据源ID，None则运行所有启用的
-    :param tier: 指定层级，None则全部层级
-    """
-    config = load_config()
-    global_config = config.get("global", {})
-
-    if source_id:
-        sources = [s for s in config["sources"] if s["id"] == source_id]
-        if not sources:
-            logger.error(f"Source '{source_id}' not found in config")
-            return []
-    else:
-        sources = get_enabled_sources(config, tier)
-
-    logger.info(f"Starting collection: {len(sources)} sources enabled")
-
-    results = []
-    for source_cfg in sources:
-        try:
-            collector = _create_collector(source_cfg, global_config)
-            result = collector.run()
-            results.append(result)
-            logger.info(f"  [{source_cfg['id']}] {result.get('count', 0)} items collected")
-        except Exception as e:
-            logger.error(f"  [{source_cfg['id']}] Failed: {e}")
-            results.append({"success": False, "source": source_cfg["id"], "error": str(e)})
-
-    # 输出汇总
-    success = sum(1 for r in results if r.get("success"))
-    total_items = sum(r.get("count", 0) for r in results)
-    logger.info(f"Collection complete: {success}/{len(results)} sources, {total_items} total items")
-
-    return results
+# 项目根目录
+PROJECT_ROOT = Path(__file__).parent.parent
+DATA_DIR = PROJECT_ROOT / "data"
+PENDING_PATH = DATA_DIR / "pending_analyze.json"
+MASTER_DB_PATH = str(DATA_DIR / "master_tools.json")
+SITE_DIR = DATA_DIR / "site"
 
 
-def run_analysis(source_id: str = None):
-    """
-    对采集的数据运行AI分析
-    分析结果写回到原数据文件中，同时在 _analyzed 目录生成副本
-    """
-    data_dir = Path(__file__).parent.parent / "data" / "tools"
-
-    if not data_dir.exists():
-        logger.warning(f"Data directory not found: {data_dir}")
-        return 0
-
-    if source_id:
-        source_dirs = [data_dir / source_id]
-    else:
-        source_dirs = [d for d in data_dir.iterdir() if d.is_dir() and not d.name.endswith("_analyzed")]
-
-    # 初始化AI分析器
-    analyzer = _create_analyzer()
-
-    total_analyzed = 0
-    for source_dir in source_dirs:
-        if not source_dir.exists():
-            continue
-
-        # 读取最新的采集结果
-        json_files = sorted(source_dir.glob("*.json"), reverse=True)
-        if not json_files:
-            logger.debug(f"No data files in {source_dir.name}")
-            continue
-
-        latest_file = json_files[0]
-        with open(latest_file, "r", encoding="utf-8") as f:
-            data = json.load(f)
-
-        items = data.get("items", [])
-        if not items:
-            continue
-
-        logger.info(f"Analyzing {len(items)} items from {source_dir.name}")
-
-        # 对每个工具运行AI分析
-        analyzed_items = []
-        for item in items:
-            try:
-                analysis = analyzer.analyze_tool(item)
-                # 将分析结果合并回原始数据
-                item["category"] = analysis.get("category", "")
-                item["subcategory"] = analysis.get("subcategory", "")
-                item["license_tier"] = analysis.get("license_tier", "unknown")
-                item["license_type"] = analysis.get("license_type", "")
-                item["tags"] = analysis.get("tags", {})
-                item["ai_analysis"] = analysis.get("ai_analysis", "")
-                item["ai_confidence"] = analysis.get("ai_confidence", 0.0)
-                item["is_china_tool"] = analysis.get("is_china_tool", False)
-                item["health_status"] = analysis.get("health_status", "unknown")
-                item["analyzed_at"] = datetime.now(timezone.utc).isoformat()
-                analyzed_items.append(item)
-            except Exception as e:
-                logger.error(f"  Failed to analyze '{item.get('name', '?')}': {e}")
-                analyzed_items.append(item)  # 保留原始数据
-
-        # 回写到原数据文件
-        data["items"] = analyzed_items
-        data["analyzed_at"] = datetime.now(timezone.utc).isoformat()
-        with open(latest_file, "w", encoding="utf-8") as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-
-        # 同时在 _analyzed 目录生成副本
-        output_dir = data_dir / f"{source_dir.name}_analyzed"
-        output_dir.mkdir(parents=True, exist_ok=True)
-        date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-
-        with open(output_dir / f"{date_str}.json", "w", encoding="utf-8") as f:
-            json.dump({
-                "source": source_dir.name,
-                "analyzed_at": datetime.now(timezone.utc).isoformat(),
-                "count": len(analyzed_items),
-                "items": analyzed_items,
-            }, f, ensure_ascii=False, indent=2)
-
-        total_analyzed += len(analyzed_items)
-        logger.info(f"  {source_dir.name}: {len(analyzed_items)} items analyzed and saved")
-
-    logger.info(f"Analysis complete: {total_analyzed} items analyzed")
-    return total_analyzed
+def _get_config():
+    """加载配置"""
+    return load_config()
 
 
-def run_snapshot():
-    """生成每日快照"""
-    data_dir = Path(__file__).parent.parent / "data"
-    snapshot_dir = data_dir / "snapshots"
-    snapshot_dir.mkdir(parents=True, exist_ok=True)
+def _get_scheduler(config: Dict = None):
+    """创建调度器"""
+    if config is None:
+        config = _get_config()
+    return CollectionScheduler(config, master_db_path=MASTER_DB_PATH)
 
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-    # 统计所有已分析的工具
-    tools_dir = data_dir / "tools"
-    all_tools = {}
-    category_counts = {}
-    tag_counts = {}
+def _get_db() -> ToolDatabase:
+    """获取并加载Master DB"""
+    db = ToolDatabase(MASTER_DB_PATH)
+    db.load()
+    return db
 
-    if not tools_dir.exists():
-        logger.warning(f"Tools directory not found: {tools_dir}")
-        return None
 
-    for source_dir in tools_dir.iterdir():
-        if not source_dir.is_dir():
-            continue
-        # 查找分析后的数据
-        analyzed_dir = tools_dir / f"{source_dir.name}_analyzed"
-        target_dir = analyzed_dir if analyzed_dir.exists() else source_dir
-
-        json_files = sorted(target_dir.glob("*.json"), reverse=True)
-        if not json_files:
-            continue
-
-        with open(json_files[0], "r", encoding="utf-8") as f:
-            data = json.load(f)
-
-        for item in data.get("items", []):
-            tool_id = generate_tool_id(data.get("source", source_dir.name), item.get("name", ""))
-            if tool_id not in all_tools:
-                all_tools[tool_id] = item
-                cat = item.get("category", "未分类")
-                category_counts[cat] = category_counts.get(cat, 0) + 1
-
-                # 统计标签
-                tags = item.get("tags", {})
-                if isinstance(tags, dict):
-                    for dim in ["function", "scenario", "attribute", "tech"]:
-                        for tag in tags.get(dim, []):
-                            tag_counts[tag] = tag_counts.get(tag, 0) + 1
-
-    # 加载昨日快照做对比
-    yesterday_tools = _load_yesterday_tools(snapshot_dir, today)
-    new_tools = []
-    updated_tools = []
-    removed_tools = []
-
-    for tool_id in all_tools:
-        if tool_id not in yesterday_tools:
-            new_tools.append(tool_id)
-        else:
-            updated_tools.append(tool_id)
-
-    for tool_id in yesterday_tools:
-        if tool_id not in all_tools:
-            removed_tools.append(tool_id)
-
-    # 构建快照
-    snapshot = DailySnapshot(
-        date=today,
-        total_tools=len(all_tools),
-        new_tools=new_tools,
-        updated_tools=updated_tools,
-        removed_tools=removed_tools,
-        category_counts=category_counts,
-        tag_trends=tag_counts,
+def _create_analyzer(config: Dict = None) -> AIAnalyzer:
+    """创建AI分析器"""
+    if config is None:
+        config = _get_config()
+    analysis_cfg = config.get("global", {}).get("analysis", {})
+    return AIAnalyzer(
+        coze_api_key=os.environ.get("COZE_API_KEY", "") or os.environ.get("AI_BOX_COZE", ""),
+        workflow_id=os.environ.get("COZE_WORKFLOW_ID", ""),
+        batch_size=analysis_cfg.get("batch_size", 20),
+        batch_timeout=analysis_cfg.get("batch_timeout", 120),
     )
-
-    # 保存快照
-    snapshot_path = snapshot_dir / f"{today}.json"
-    snapshot.save(str(snapshot_path))
-    logger.info(f"Snapshot saved: {len(all_tools)} tools, {len(new_tools)} new, {len(removed_tools)} removed")
-
-    return snapshot
 
 
 def _create_collector(source_cfg: Dict, global_config: Dict) -> BaseCollector:
     """动态创建采集器实例"""
-    parser_name = source_cfg["parser"].replace(".py", "")
-
-    # 导入对应的采集器模块
-    module = __import__(f"collectors.{parser_name}", fromlist=["Collector"])
-    collector_cls = getattr(module, "Collector")
-    return collector_cls(source_cfg, global_config)
+    return get_collector(source_cfg, global_config)
 
 
-def _create_analyzer() -> AIAnalyzer:
-    """创建AI分析器实例
-    自动从环境变量读取配置，支持Coze工作流和本地降级
-    """
-    return AIAnalyzer(
-        coze_api_key=os.environ.get("COZE_API_KEY", "") or os.environ.get("AI_BOX_COZE", ""),
-        workflow_id=os.environ.get("COZE_WORKFLOW_ID", ""),
-    )
+# ============================
+# Pending 队列管理
+# ============================
+
+def save_pending(items: List[Dict[str, Any]]):
+    """保存待分析队列"""
+    PENDING_PATH.parent.mkdir(parents=True, exist_ok=True)
+
+    existing = load_pending()
+    # 合并去重（按id）
+    existing_ids = {item.get("id", "") for item in existing}
+    new_items = [item for item in items if item.get("id", "") not in existing_ids]
+    merged = existing + new_items
+
+    with open(PENDING_PATH, "w", encoding="utf-8") as f:
+        json.dump(merged, f, ensure_ascii=False, indent=2)
+
+    logger.info(f"[Pending] Saved {len(new_items)} new items, total pending: {len(merged)}")
+    return merged
 
 
-def _load_yesterday_tools(snapshot_dir: Path, today: str) -> Dict:
-    """加载昨日工具列表用于对比"""
-    from datetime import timedelta
-    yesterday = (datetime.strptime(today, "%Y-%m-%d") - timedelta(days=1)).strftime("%Y-%m-%d")
-    yesterday_file = snapshot_dir / f"{yesterday}.json"
+def load_pending() -> List[Dict[str, Any]]:
+    """加载待分析队列"""
+    if not PENDING_PATH.exists():
+        return []
+    try:
+        with open(PENDING_PATH, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (json.JSONDecodeError, IOError):
+        return []
 
-    if yesterday_file.exists():
-        with open(yesterday_file, "r", encoding="utf-8") as f:
+
+def clear_pending():
+    """清空待分析队列"""
+    if PENDING_PATH.exists():
+        PENDING_PATH.unlink()
+    logger.info("[Pending] Cleared")
+
+
+# ============================
+# 子命令实现
+# ============================
+
+def cmd_discover(args):
+    """发现模式：从数据源采集新工具"""
+    config = _get_config()
+    global_config = config.get("global", {})
+    scheduler = _get_scheduler(config)
+    db = _get_db()
+
+    # 确定要采集的源
+    if hasattr(args, 'source') and args.source:
+        source = scheduler.get_source_by_id(args.source)
+        if not source:
+            logger.error(f"Source '{args.source}' not found")
+            return
+        sources = [source]
+    else:
+        sources = scheduler.get_discovery_sources()
+
+    if not sources:
+        logger.info("[Discover] No discovery sources to run today")
+        return
+
+    logger.info(f"[Discover] Running {len(sources)} sources: {[s['id'] for s in sources]}")
+
+    all_new_items = []
+    for source_cfg in sources:
+        try:
+            collector = _create_collector(source_cfg, global_config)
+            result = collector.run()
+
+            if result.get("success") and result.get("count", 0) > 0:
+                # 读取采集结果
+                items = _load_collected_items(source_cfg["id"])
+                # 对比master DB
+                diff = db.diff_tools(items)
+                new_changed = diff["new"] + diff["changed"]
+                all_new_items.extend(new_changed)
+                logger.info(f"  [{source_cfg['id']}] {result['count']} items, "
+                            f"{len(diff['new'])} new, {len(diff['changed'])} changed")
+        except Exception as e:
+            logger.error(f"  [{source_cfg['id']}] Failed: {e}")
+
+    # 写入pending队列
+    if all_new_items:
+        save_pending(all_new_items)
+
+    logger.info(f"[Discover] Complete: {len(all_new_items)} items pending for analysis")
+
+
+def cmd_check(args):
+    """健康检查模式：检查存量工具状态"""
+    config = _get_config()
+    global_config = config.get("global", {})
+    scheduler = _get_scheduler(config)
+    db = _get_db()
+
+    tools_to_check = scheduler.get_health_check_tools(master_db=db.tools)
+
+    if not tools_to_check:
+        logger.info("[Check] No tools need health checking")
+        return
+
+    logger.info(f"[Check] {len(tools_to_check)} tools need health checking")
+
+    # 将需要检查的工具加入pending（标记为health_check类型）
+    for tool_info in tools_to_check:
+        tool_info["_check_type"] = "health_check"
+
+    save_pending(tools_to_check)
+    logger.info(f"[Check] Added {len(tools_to_check)} tools to pending queue")
+
+
+def cmd_deep(args):
+    """深度更新模式：全量重分析"""
+    config = _get_config()
+    global_config = config.get("global", {})
+    scheduler = _get_scheduler(config)
+    db = _get_db()
+
+    all_tools = db.get_all_tools()
+    logger.info(f"[Deep] Full re-analysis of {len(all_tools)} tools")
+
+    if not all_tools:
+        logger.info("[Deep] No tools in master DB")
+        return
+
+    # 将所有工具加入pending（标记为deep_update类型）
+    for tool in all_tools:
+        tool["_check_type"] = "deep_update"
+
+    save_pending(all_tools)
+    logger.info(f"[Deep] Added {len(all_tools)} tools to pending queue for re-analysis")
+
+
+def cmd_analyze(args):
+    """分析模式：批量送Coze分析pending队列中的工具"""
+    config = _get_config()
+    pending = load_pending()
+
+    if not pending:
+        logger.info("[Analyze] No pending items to analyze")
+        return
+
+    logger.info(f"[Analyze] {len(pending)} items pending")
+
+    analyzer = _create_analyzer(config)
+    db = _get_db()
+
+    # 批量分析
+    results = analyzer.analyze_batch(pending)
+
+    # 合并到master DB
+    db.merge_analyzed(results)
+    db.save()
+
+    # 清空pending
+    clear_pending()
+
+    logger.info(f"[Analyze] Complete: {len(results)} items analyzed and merged to master DB")
+
+
+def cmd_deploy(args):
+    """生成网站数据"""
+    db = _get_db()
+    all_tools = db.get_all_tools()
+
+    if not all_tools:
+        logger.warning("[Deploy] No tools in master DB, skipping site data generation")
+        return
+
+    # 确保输出目录存在
+    SITE_DIR.mkdir(parents=True, exist_ok=True)
+
+    # 生成 tools.json - 所有工具列表
+    tools_list = []
+    for tool in all_tools:
+        # 清理内部字段
+        clean_tool = {k: v for k, v in tool.items() if not k.startswith("_")}
+        tools_list.append(clean_tool)
+
+    tools_path = SITE_DIR / "tools.json"
+    with open(tools_path, "w", encoding="utf-8") as f:
+        json.dump({
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "count": len(tools_list),
+            "tools": tools_list,
+        }, f, ensure_ascii=False, indent=2)
+    logger.info(f"[Deploy] Generated {tools_path} ({len(tools_list)} tools)")
+
+    # 生成 categories.json - 分类统计
+    category_counts = {}
+    subcategory_counts = {}
+    for tool in all_tools:
+        cat = tool.get("category", "其他")
+        subcat = tool.get("subcategory", "")
+        category_counts[cat] = category_counts.get(cat, 0) + 1
+        if subcat:
+            key = f"{cat}/{subcat}"
+            subcategory_counts[key] = subcategory_counts.get(key, 0) + 1
+
+    categories_path = SITE_DIR / "categories.json"
+    with open(categories_path, "w", encoding="utf-8") as f:
+        json.dump({
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "categories": category_counts,
+            "subcategories": subcategory_counts,
+        }, f, ensure_ascii=False, indent=2)
+    logger.info(f"[Deploy] Generated {categories_path}")
+
+    # 生成 stats.json - 总体统计
+    stats = db.get_stats()
+    stats_path = SITE_DIR / "stats.json"
+    with open(stats_path, "w", encoding="utf-8") as f:
+        json.dump({
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            **stats,
+        }, f, ensure_ascii=False, indent=2)
+    logger.info(f"[Deploy] Generated {stats_path}")
+
+    logger.info(f"[Deploy] Site data ready in {SITE_DIR}")
+
+
+def cmd_run(args):
+    """完整流程：自动判断模式并执行"""
+    config = _get_config()
+    scheduler = _get_scheduler(config)
+
+    # 确定运行模式
+    if hasattr(args, 'mode') and args.mode and args.mode != 'auto':
+        mode = args.mode
+    else:
+        mode = scheduler.determine_mode()
+
+    logger.info(f"[Run] Mode: {mode}")
+
+    # 根据模式执行采集
+    if mode == "discovery":
+        cmd_discover(args)
+    elif mode == "health_check":
+        cmd_check(args)
+    elif mode == "deep_update":
+        cmd_deep(args)
+
+    # 分析 + 部署
+    cmd_analyze(args)
+    cmd_deploy(args)
+
+
+def _load_collected_items(source_id: str) -> List[Dict[str, Any]]:
+    """加载某个源的最新采集结果"""
+    source_dir = DATA_DIR / "tools" / source_id
+    if not source_dir.exists():
+        return []
+
+    json_files = sorted(source_dir.glob("*.json"), reverse=True)
+    if not json_files:
+        return []
+
+    try:
+        with open(json_files[0], "r", encoding="utf-8") as f:
             data = json.load(f)
-            all_ids = set(data.get("updated_tools", [])) | set(data.get("new_tools", []))
-            return {tid: True for tid in all_ids}
-    return {}
+        return data.get("items", [])
+    except (json.JSONDecodeError, IOError):
+        return []
 
 
-# === CLI入口 ===
+# ============================
+# CLI入口
+# ============================
+
 def main():
-    parser = argparse.ArgumentParser(description="AI百宝箱 - 数据管线")
+    parser = argparse.ArgumentParser(description="AI百宝箱 - 管线 v2")
     subparsers = parser.add_subparsers(dest="command", help="子命令")
 
-    # collect 命令
-    collect_parser = subparsers.add_parser("collect", help="执行数据采集")
-    collect_parser.add_argument("--source", help="指定数据源ID")
-    collect_parser.add_argument("--tier", type=int, help="指定层级(1/2/3)")
-    collect_parser.add_argument("--skip-analysis", action="store_true",
-                                help="只执行采集，跳过AI分析")
+    # discover
+    discover_p = subparsers.add_parser("discover", help="发现新工具（从数据源采集）")
+    discover_p.add_argument("--source", help="指定数据源ID")
 
-    # analyze 命令
-    analyze_parser = subparsers.add_parser("analyze", help="AI分析（仅分析已采集数据）")
-    analyze_parser.add_argument("--source", help="指定数据源ID")
+    # check
+    subparsers.add_parser("check", help="健康检查（检查存量工具状态）")
 
-    # snapshot 命令
-    subparsers.add_parser("snapshot", help="生成每日快照")
+    # deep
+    subparsers.add_parser("deep", help="深度更新（全量重分析）")
 
-    # all 命令 - 完整流程
-    all_parser = subparsers.add_parser("all", help="执行完整流程: 采集→分析→快照")
-    all_parser.add_argument("--source", help="指定数据源ID")
-    all_parser.add_argument("--tier", type=int, help="指定层级")
-    all_parser.add_argument("--analyze-only", action="store_true",
-                            help="只运行AI分析，不执行采集")
-    all_parser.add_argument("--skip-analysis", action="store_true",
-                            help="只执行采集，跳过AI分析")
+    # analyze
+    subparsers.add_parser("analyze", help="对pending工具执行AI分析")
 
-    # 顶层也支持 --analyze-only 和 --skip-analysis
-    parser.add_argument("--analyze-only", action="store_true",
-                        help="只运行AI分析，不执行采集")
-    parser.add_argument("--skip-analysis", action="store_true",
-                        help="只执行采集，跳过AI分析")
+    # deploy
+    subparsers.add_parser("deploy", help="生成网站数据")
+
+    # run
+    run_p = subparsers.add_parser("run", help="完整流程（自动判断模式）")
+    run_p.add_argument("--mode", help="强制指定模式: discovery/health_check/deep_update/auto", default="auto")
+    run_p.add_argument("--source", help="指定数据源ID（仅discovery模式）")
 
     args = parser.parse_args()
 
-    # 处理顶层参数
-    analyze_only = getattr(args, "analyze_only", False)
-    skip_analysis = getattr(args, "skip_analysis", False)
-
-    if analyze_only:
-        # 只分析模式：跳过采集，直接分析
-        logger.info("=== AI百宝箱: 仅AI分析模式 ===")
-        source = getattr(args, "source", None)
-        run_analysis(source_id=source)
-        run_snapshot()
-        return
-
-    if args.command == "collect":
-        run_collection(
-            source_id=getattr(args, "source", None),
-            tier=getattr(args, "tier", None),
-        )
-        if not skip_analysis:
-            # 采集完成后自动触发AI分析
-            logger.info("=== 采集完成，自动启动AI分析 ===")
-            run_analysis(source_id=getattr(args, "source", None))
-            run_snapshot()
-
+    if args.command == "discover":
+        cmd_discover(args)
+    elif args.command == "check":
+        cmd_check(args)
+    elif args.command == "deep":
+        cmd_deep(args)
     elif args.command == "analyze":
-        run_analysis(source_id=getattr(args, "source", None))
-
-    elif args.command == "snapshot":
-        run_snapshot()
-
-    elif args.command == "all":
-        if analyze_only:
-            logger.info("=== AI百宝箱: 仅AI分析模式 ===")
-            run_analysis(source_id=getattr(args, "source", None))
-        else:
-            # 完整流程
-            logger.info("=== AI百宝箱: 完整流程 ===")
-            run_collection(
-                source_id=getattr(args, "source", None),
-                tier=getattr(args, "tier", None),
-            )
-            if not skip_analysis:
-                logger.info("=== 采集完成，自动启动AI分析 ===")
-                run_analysis(source_id=getattr(args, "source", None))
-            else:
-                logger.info("=== 跳过AI分析 (--skip-analysis) ===")
-
-        run_snapshot()
-
+        cmd_analyze(args)
+    elif args.command == "deploy":
+        cmd_deploy(args)
+    elif args.command == "run":
+        cmd_run(args)
     else:
         parser.print_help()
 
