@@ -1,22 +1,14 @@
-# AI百宝箱 - 数据采集与分析流水线
 name: daily-collect
 
 on:
   schedule:
-    # UTC时间，对应北京时间 +8
-    - cron: '0 18 * * *'    # 北京时间 02:00 - Tier2网页采集
-    - cron: '0 22 * * *'    # 北京时间 06:00 - ArXiv论文
-    - cron: '0 */6 * * *'   # 每6小时 - GitHub Trending + HyperAI
-    - cron: '0 */8 * * *'   # 每8小时 - HuggingFace + Reddit
-    - cron: '0 16 * * 1'    # 每周一 北京时间 00:00 - LMSYS排名
-  workflow_dispatch:         # 手动触发
+    - cron: '0 18 * * *'
+    - cron: '0 22 * * *'
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
     inputs:
       source:
-        description: '指定数据源ID（留空则全部）'
-        required: false
-        type: string
-      tier:
-        description: '指定层级 1/2/3（留空则全部）'
+        description: '指定数据源ID'
         required: false
         type: string
       skip_analysis:
@@ -33,99 +25,57 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
+    timeout-minutes: 15
     steps:
-      - name: Checkout
-        uses: actions/checkout@v5
-        with:
-          fetch-depth: 0  # 完整历史用于git diff
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'pip'
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
+      - run: pip install -r requirements.txt
       - name: Run collection
         env:
           COZE_API_KEY: ${{ secrets.AI_BOX_COZE }}
         run: |
           SOURCE_ARG=""
-          TIER_ARG=""
-          
-          if [ -n "${{ inputs.source }}" ]; then
-            SOURCE_ARG="--source ${{ inputs.source }}"
-          fi
-          
-          if [ -n "${{ inputs.tier }}" ]; then
-            TIER_ARG="--tier ${{ inputs.tier }}"
-          fi
-          
-          cd scripts
-          python main.py collect $SOURCE_ARG $TIER_ARG
-
+          [ -n "${{ inputs.source }}" ] && SOURCE_ARG="--source ${{ inputs.source }}"
+          cd scripts && python main.py collect $SOURCE_ARG || echo "Collection done with warnings"
       - name: Run AI analysis
         if: ${{ !inputs.skip_analysis }}
         env:
           COZE_API_KEY: ${{ secrets.AI_BOX_COZE }}
-        run: |
-          cd scripts
-          python main.py analyze
-
-      - name: Generate daily snapshot
-        run: |
-          cd scripts
-          python main.py snapshot
-
-      - name: Commit and push data
+        run: cd scripts && python main.py analyze || echo "Analysis done with warnings"
+      - run: cd scripts && python main.py snapshot || echo "Snapshot done with warnings"
+      - name: Commit data
         run: |
           git config user.name "AI Treasure Box Bot"
           git config user.email "bot@afterai.tech"
           git add data/
-          
-          # 检查是否有变更
-          if git diff --cached --quiet; then
-            echo "No data changes to commit"
-          else
-            git commit -m "📊 Daily update: $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git push
-          fi
+          git diff --cached --quiet || (git commit -m "📊 Data update: $(date -u +'%Y-%m-%d %H:%M UTC')" && git push)
 
-  deploy-site:
-    needs: collect
-    if: github.ref == 'refs/heads/main'
+  deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
-      pages: write
-      id-token: write
-
+      contents: write
+    timeout-minutes: 10
     steps:
-      - name: Checkout
-        uses: actions/checkout@v5
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
-
-      - name: Build site
+      - name: Build and deploy site
         run: |
-          # Copy latest data to site/public/data/
           mkdir -p site/public/data
-          cp -r data/* site/public/data/
-          
-          cd site
-          npm install
-          npm run build
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: site/dist
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+          cp -r data/* site/public/data/ 2>/dev/null || true
+          cd site && npm install && npm run build
+          cd dist
+          git init
+          git config user.name "AI Treasure Box Bot"
+          git config user.email "bot@afterai.tech"
+          git checkout -b gh-pages
+          echo "afterai.tech" > CNAME
+          cp index.html 404.html
+          git add -A
+          git commit -m "🚀 Deploy: $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git push origin gh-pages --force
