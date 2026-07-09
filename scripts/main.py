@@ -1,6 +1,10 @@
 """
 AI百宝箱 - 主管线入口
-运行采集 → 分析 → 存储 → 生成快照
+运行采集 → AI分析 → 存储 → 生成快照
+
+支持参数:
+  --analyze-only    只运行AI分析，不执行采集
+  --skip-analysis   只执行采集，跳过AI分析
 """
 import os
 import sys
@@ -65,15 +69,23 @@ def run_collection(source_id: str = None, tier: int = None):
 
 
 def run_analysis(source_id: str = None):
-    """对采集的数据运行AI分析"""
+    """
+    对采集的数据运行AI分析
+    分析结果写回到原数据文件中，同时在 _analyzed 目录生成副本
+    """
     data_dir = Path(__file__).parent.parent / "data" / "tools"
+
+    if not data_dir.exists():
+        logger.warning(f"Data directory not found: {data_dir}")
+        return 0
 
     if source_id:
         source_dirs = [data_dir / source_id]
     else:
-        source_dirs = [d for d in data_dir.iterdir() if d.is_dir()]
+        source_dirs = [d for d in data_dir.iterdir() if d.is_dir() and not d.name.endswith("_analyzed")]
 
-    analyzer = AIAnalyzer(_get_analyzer_config())
+    # 初始化AI分析器
+    analyzer = _create_analyzer()
 
     total_analyzed = 0
     for source_dir in source_dirs:
@@ -83,9 +95,11 @@ def run_analysis(source_id: str = None):
         # 读取最新的采集结果
         json_files = sorted(source_dir.glob("*.json"), reverse=True)
         if not json_files:
+            logger.debug(f"No data files in {source_dir.name}")
             continue
 
-        with open(json_files[0], "r", encoding="utf-8") as f:
+        latest_file = json_files[0]
+        with open(latest_file, "r", encoding="utf-8") as f:
             data = json.load(f)
 
         items = data.get("items", [])
@@ -93,9 +107,35 @@ def run_analysis(source_id: str = None):
             continue
 
         logger.info(f"Analyzing {len(items)} items from {source_dir.name}")
-        analyzed = analyzer.analyze_batch(items)
 
-        # 保存分析结果
+        # 对每个工具运行AI分析
+        analyzed_items = []
+        for item in items:
+            try:
+                analysis = analyzer.analyze_tool(item)
+                # 将分析结果合并回原始数据
+                item["category"] = analysis.get("category", "")
+                item["subcategory"] = analysis.get("subcategory", "")
+                item["license_tier"] = analysis.get("license_tier", "unknown")
+                item["license_type"] = analysis.get("license_type", "")
+                item["tags"] = analysis.get("tags", {})
+                item["ai_analysis"] = analysis.get("ai_analysis", "")
+                item["ai_confidence"] = analysis.get("ai_confidence", 0.0)
+                item["is_china_tool"] = analysis.get("is_china_tool", False)
+                item["health_status"] = analysis.get("health_status", "unknown")
+                item["analyzed_at"] = datetime.now(timezone.utc).isoformat()
+                analyzed_items.append(item)
+            except Exception as e:
+                logger.error(f"  Failed to analyze '{item.get('name', '?')}': {e}")
+                analyzed_items.append(item)  # 保留原始数据
+
+        # 回写到原数据文件
+        data["items"] = analyzed_items
+        data["analyzed_at"] = datetime.now(timezone.utc).isoformat()
+        with open(latest_file, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+
+        # 同时在 _analyzed 目录生成副本
         output_dir = data_dir / f"{source_dir.name}_analyzed"
         output_dir.mkdir(parents=True, exist_ok=True)
         date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -104,11 +144,12 @@ def run_analysis(source_id: str = None):
             json.dump({
                 "source": source_dir.name,
                 "analyzed_at": datetime.now(timezone.utc).isoformat(),
-                "count": len(analyzed),
-                "items": analyzed,
+                "count": len(analyzed_items),
+                "items": analyzed_items,
             }, f, ensure_ascii=False, indent=2)
 
-        total_analyzed += len(analyzed)
+        total_analyzed += len(analyzed_items)
+        logger.info(f"  {source_dir.name}: {len(analyzed_items)} items analyzed and saved")
 
     logger.info(f"Analysis complete: {total_analyzed} items analyzed")
     return total_analyzed
@@ -127,6 +168,10 @@ def run_snapshot():
     all_tools = {}
     category_counts = {}
     tag_counts = {}
+
+    if not tools_dir.exists():
+        logger.warning(f"Tools directory not found: {tools_dir}")
+        return None
 
     for source_dir in tools_dir.iterdir():
         if not source_dir.is_dir():
@@ -201,12 +246,14 @@ def _create_collector(source_cfg: Dict, global_config: Dict) -> BaseCollector:
     return collector_cls(source_cfg, global_config)
 
 
-def _get_analyzer_config() -> Dict:
-    """获取AI分析器配置"""
-    return {
-        "coze_api_key": os.environ.get("COZE_API_KEY", ""),
-        "analyzer_bot_id": os.environ.get("ANALYZER_BOT_ID", ""),
-    }
+def _create_analyzer() -> AIAnalyzer:
+    """创建AI分析器实例
+    自动从环境变量读取配置，支持Coze工作流和本地降级
+    """
+    return AIAnalyzer(
+        coze_api_key=os.environ.get("AI_BOX_COZE", ""),
+        workflow_id=os.environ.get("COZE_WORKFLOW_ID", ""),
+    )
 
 
 def _load_yesterday_tools(snapshot_dir: Path, today: str) -> Dict:
@@ -232,31 +279,81 @@ def main():
     collect_parser = subparsers.add_parser("collect", help="执行数据采集")
     collect_parser.add_argument("--source", help="指定数据源ID")
     collect_parser.add_argument("--tier", type=int, help="指定层级(1/2/3)")
+    collect_parser.add_argument("--skip-analysis", action="store_true",
+                                help="只执行采集，跳过AI分析")
 
     # analyze 命令
-    analyze_parser = subparsers.add_parser("analyze", help="AI分析")
+    analyze_parser = subparsers.add_parser("analyze", help="AI分析（仅分析已采集数据）")
     analyze_parser.add_argument("--source", help="指定数据源ID")
 
     # snapshot 命令
     subparsers.add_parser("snapshot", help="生成每日快照")
 
-    # all 命令
+    # all 命令 - 完整流程
     all_parser = subparsers.add_parser("all", help="执行完整流程: 采集→分析→快照")
     all_parser.add_argument("--source", help="指定数据源ID")
     all_parser.add_argument("--tier", type=int, help="指定层级")
+    all_parser.add_argument("--analyze-only", action="store_true",
+                            help="只运行AI分析，不执行采集")
+    all_parser.add_argument("--skip-analysis", action="store_true",
+                            help="只执行采集，跳过AI分析")
+
+    # 顶层也支持 --analyze-only 和 --skip-analysis
+    parser.add_argument("--analyze-only", action="store_true",
+                        help="只运行AI分析，不执行采集")
+    parser.add_argument("--skip-analysis", action="store_true",
+                        help="只执行采集，跳过AI分析")
 
     args = parser.parse_args()
 
+    # 处理顶层参数
+    analyze_only = getattr(args, "analyze_only", False)
+    skip_analysis = getattr(args, "skip_analysis", False)
+
+    if analyze_only:
+        # 只分析模式：跳过采集，直接分析
+        logger.info("=== AI百宝箱: 仅AI分析模式 ===")
+        source = getattr(args, "source", None)
+        run_analysis(source_id=source)
+        run_snapshot()
+        return
+
     if args.command == "collect":
-        run_collection(source_id=getattr(args, "source", None), tier=getattr(args, "tier", None))
+        run_collection(
+            source_id=getattr(args, "source", None),
+            tier=getattr(args, "tier", None),
+        )
+        if not skip_analysis:
+            # 采集完成后自动触发AI分析
+            logger.info("=== 采集完成，自动启动AI分析 ===")
+            run_analysis(source_id=getattr(args, "source", None))
+            run_snapshot()
+
     elif args.command == "analyze":
         run_analysis(source_id=getattr(args, "source", None))
+
     elif args.command == "snapshot":
         run_snapshot()
+
     elif args.command == "all":
-        run_collection(source_id=getattr(args, "source", None), tier=getattr(args, "tier", None))
-        run_analysis(source_id=getattr(args, "source", None))
+        if analyze_only:
+            logger.info("=== AI百宝箱: 仅AI分析模式 ===")
+            run_analysis(source_id=getattr(args, "source", None))
+        else:
+            # 完整流程
+            logger.info("=== AI百宝箱: 完整流程 ===")
+            run_collection(
+                source_id=getattr(args, "source", None),
+                tier=getattr(args, "tier", None),
+            )
+            if not skip_analysis:
+                logger.info("=== 采集完成，自动启动AI分析 ===")
+                run_analysis(source_id=getattr(args, "source", None))
+            else:
+                logger.info("=== 跳过AI分析 (--skip-analysis) ===")
+
         run_snapshot()
+
     else:
         parser.print_help()
 
