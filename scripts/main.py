@@ -204,7 +204,6 @@ def _get_analyzer_config() -> Dict:
     """获取AI分析器配置"""
     return {
         "coze_api_key": os.environ.get("COZE_API_KEY", ""),
-        "coze_api_base": os.environ.get("COZE_API_BASE", "https://api.coze.cn/v3"),
         "analyzer_bot_id": os.environ.get("ANALYZER_BOT_ID", ""),
     }
 

@@ -51,9 +51,7 @@ jobs:
 
       - name: Run collection
         env:
-          COZE_API_KEY: ${{ secrets.COZE_API_KEY }}
-          COZE_API_BASE: ${{ secrets.COZE_API_BASE }}
-          ANALYZER_BOT_ID: ${{ secrets.ANALYZER_BOT_ID }}
+          COZE_API_KEY: ${{ secrets.AI_BOX_COZE }}
         run: |
           SOURCE_ARG=""
           TIER_ARG=""

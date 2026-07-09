@@ -53,7 +53,7 @@ class AIAnalyzer:
     def __init__(self, config: Dict = None):
         self.config = config or {}
         self.api_key = self.config.get("coze_api_key", "")
-        self.api_base = self.config.get("coze_api_base", "https://api.coze.cn/v3")
+        self.api_base = "https://api.coze.cn/v3"
         self.bot_id = self.config.get("analyzer_bot_id", "")
         self.data_dir = Path(__file__).parent.parent.parent / "data"
 
