@@ -1,8 +1,23 @@
-# AI百宝箱 - 数据源配置
-# 分层优先级：Tier1=API直连, Tier2=RSS/网页, Tier3=社区
+# AI百宝箱 - 数据源配置 v2
+#
+# 配置化数据源管理：
+# - 添加新源：复制任意 source 块，修改 id/url/parser 即可
+# - 禁用源：设置 enabled: false
+# - 手动添加工具：使用 type: manual
+#
+# 字段说明：
+# - id: 唯一标识（英文，不可重复）
+# - name: 显示名称
+# - type: api/rss/web/manual
+# - tier: 优先级 1-3（1最高）
+# - category: 映射到的一级分类
+# - is_china_source: 是否国内数据源
+# - auto_detect_license: 是否自动检测许可类型
+# - ai_analysis: 是否需要AI深度分析
+# - enabled: 是否启用
 
 sources:
-  # ===== Tier 1: API直连（最稳定） =====
+  # ===== Tier 1: API直连 =====
   - id: github-trending
     name: GitHub Trending
     type: api
@@ -11,7 +26,12 @@ sources:
     schedule: "0 */6 * * *"
     enabled: true
     parser: github_trending.py
+    category: "开发工具"
+    is_china_source: false
+    auto_detect_license: true
+    ai_analysis: true
     tags_source: [language, topic, stars]
+    description: "GitHub每日趋势项目，发现热门开源AI工具"
 
   - id: huggingface-models
     name: HuggingFace Models
@@ -21,9 +41,14 @@ sources:
     schedule: "0 */8 * * *"
     enabled: true
     parser: huggingface.py
+    category: "学术研究"
+    is_china_source: false
+    auto_detect_license: true
+    ai_analysis: true
     params:
       sort: trending
       limit: 100
+    description: "HuggingFace热门模型，覆盖NLP/CV/音频等领域"
 
   - id: huggingface-spaces
     name: HuggingFace Spaces
@@ -33,9 +58,14 @@ sources:
     schedule: "0 */8 * * *"
     enabled: true
     parser: huggingface_spaces.py
+    category: "学术研究"
+    is_china_source: false
+    auto_detect_license: true
+    ai_analysis: true
     params:
       sort: trending
       limit: 50
+    description: "HuggingFace在线演示空间，可直接体验的AI应用"
 
   - id: lmsys-leaderboard
     name: LMSYS Chatbot Arena
@@ -44,6 +74,11 @@ sources:
     schedule: "0 0 * * 1"
     enabled: true
     parser: lmsys.py
+    category: "文本生成"
+    is_china_source: false
+    auto_detect_license: false
+    ai_analysis: false
+    description: "大模型竞技场，基于人类偏好的真实排名"
 
   - id: producthunt-ai
     name: Product Hunt AI
@@ -53,6 +88,11 @@ sources:
     schedule: "0 0 * * *"
     enabled: true
     parser: producthunt.py
+    category: "其他"
+    is_china_source: false
+    auto_detect_license: false
+    ai_analysis: true
+    description: "Product Hunt AI分类，发现新发布的AI产品"
 
   - id: arxiv-ai
     name: ArXiv AI Papers
@@ -62,10 +102,15 @@ sources:
     schedule: "0 6 * * *"
     enabled: true
     parser: arxiv.py
+    category: "学术研究"
+    is_china_source: false
+    auto_detect_license: false
+    ai_analysis: true
     params:
       search_query: "cat:cs.AI+OR+cat:cs.LG+OR+cat:cs.CL"
       max_results: 50
       sortBy: submittedDate
+    description: "ArXiv最新AI论文，追踪学术前沿"
 
   - id: hackernews-ai
     name: Hacker News AI
@@ -75,12 +120,17 @@ sources:
     schedule: "0 */4 * * *"
     enabled: true
     parser: hackernews.py
+    category: "其他"
+    is_china_source: false
+    auto_detect_license: false
+    ai_analysis: false
     params:
       query: "AI OR LLM OR GPT"
       tags: story
       hitsPerPage: 30
+    description: "Hacker News AI相关讨论，技术社区热点"
 
-  # ===== Tier 2: 网页采集 =====
+  # ===== Tier 2: 国内工具源 =====
   - id: aishenqi
     name: AI神器集
     type: web
@@ -89,6 +139,11 @@ sources:
     schedule: "0 2 * * *"
     enabled: true
     parser: aishenqi.py
+    category: "其他"
+    is_china_source: true
+    auto_detect_license: false
+    ai_analysis: true
+    description: "国内AI工具导航站，收录数百个AI工具"
 
   - id: aigcrank
     name: AI工具排行榜
@@ -98,15 +153,11 @@ sources:
     schedule: "0 3 * * *"
     enabled: true
     parser: aigcrank.py
-
-  - id: hyperai
-    name: HyperAI
-    type: rss
-    tier: 2
-    url: "https://hyper.ai/feed"
-    schedule: "0 */6 * * *"
-    enabled: true
-    parser: hyperai.py
+    category: "其他"
+    is_china_source: true
+    auto_detect_license: false
+    ai_analysis: true
+    description: "国内AI工具排行，按热度排序"
 
   - id: aibot
     name: AI-Bot.cn
@@ -116,6 +167,25 @@ sources:
     schedule: "0 3 * * *"
     enabled: true
     parser: aibot.py
+    category: "其他"
+    is_china_source: true
+    auto_detect_license: false
+    ai_analysis: true
+    description: "AI工具导航站，分类详细，更新频繁"
+
+  - id: toolify-ai
+    name: Toolify.ai
+    type: web
+    tier: 2
+    url: "https://www.toolify.ai"
+    schedule: "0 5 * * *"
+    enabled: true
+    parser: toolify.py
+    category: "其他"
+    is_china_source: true
+    auto_detect_license: false
+    ai_analysis: true
+    description: "AI工具聚合平台，数据量大，分类详细"
 
   - id: aig123
     name: AIG123
@@ -125,6 +195,54 @@ sources:
     schedule: "0 4 * * *"
     enabled: true
     parser: aig123.py
+    category: "其他"
+    is_china_source: true
+    auto_detect_license: false
+    ai_analysis: true
+    description: "AIGC工具社区，专注AI生成内容"
+
+  # ===== Tier 2: 国际工具源 =====
+  - id: hyperai
+    name: HyperAI
+    type: rss
+    tier: 2
+    url: "https://hyper.ai/feed"
+    schedule: "0 */6 * * *"
+    enabled: true
+    parser: hyperai.py
+    category: "其他"
+    is_china_source: false
+    auto_detect_license: false
+    ai_analysis: false
+    description: "HyperAI资讯，追踪AI行业动态"
+
+  - id: theresanaiforthat
+    name: "There's An AI For That"
+    type: web
+    tier: 2
+    url: "https://theresanaiforthat.com"
+    schedule: "0 6 * * *"
+    enabled: true
+    parser: tafit.py
+    category: "其他"
+    is_china_source: false
+    auto_detect_license: false
+    ai_analysis: true
+    description: "全球最大的AI工具目录，收录数万工具"
+
+  - id: futurepedia
+    name: Futurepedia
+    type: web
+    tier: 2
+    url: "https://www.futurepedia.io"
+    schedule: "0 7 * * *"
+    enabled: true
+    parser: futurepedia.py
+    category: "其他"
+    is_china_source: false
+    auto_detect_license: false
+    ai_analysis: true
+    description: "AI工具目录，每日更新新工具"
 
   # ===== Tier 3: 社区 =====
   - id: reddit-ai
@@ -135,6 +253,25 @@ sources:
     schedule: "0 */8 * * *"
     enabled: true
     parser: reddit.py
+    category: "其他"
+    is_china_source: false
+    auto_detect_license: false
+    ai_analysis: false
+    description: "Reddit AI社区，发现讨论度高的工具"
+
+  # ===== 手动添加 =====
+  - id: manual-tools
+    name: 手动添加工具
+    type: manual
+    tier: 0
+    schedule: "manual"
+    enabled: true
+    parser: manual.py
+    category: "其他"
+    is_china_source: false
+    auto_detect_license: false
+    ai_analysis: true
+    description: "手动添加的工具，放在 data/manual/*.json"
 
 global:
   retry_times: 3
@@ -146,3 +283,7 @@ global:
   dedup:
     strategy: "url+title"
     similarity_threshold: 0.85
+  ai_analysis:
+    enabled: true
+    batch_size: 20
+    confidence_threshold: 0.7
