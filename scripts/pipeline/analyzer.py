@@ -1,221 +1,523 @@
 """
-AI分析管道 - 对采集的工具进行AI深度分析
-调用Coze工作流或直接用LLM API进行五维标签生成
+AI分析管道 - 使用Coze工作流对工具进行独立分析
+不盲信源头描述，独立判断工具的真实功能、定价、活跃度
 """
 import json
+import os
 import logging
 import hashlib
 from typing import List, Dict, Any, Optional
 from datetime import datetime, timezone
-from pathlib import Path
 
 import requests
 
 logger = logging.getLogger(__name__)
 
 
-# 分析Prompt模板
-ANALYSIS_PROMPT = """你是一个AI工具分析专家。请对以下AI工具/项目进行深度分析。
-
-## 工具信息
-- 名称: {name}
-- 来源: {source}
-- 链接: {url}
-- 原始描述: {description}
-- 语言/技术: {language}
-- 统计数据: {stats}
-
-## 分析要求
-请以JSON格式输出分析结果，包含以下字段：
-
-1. **description_zh** (string): 中文一句话描述，简洁有力
-2. **summary** (string): 2-3段详细总结，涵盖：做什么、怎么用、适合谁
-3. **features** (string[]): 核心功能列表，3-7个
-4. **use_cases** (string[]): 典型使用场景，3-5个
-5. **pros** (string[]): 优点，2-4个
-6. **cons** (string[]): 缺点/局限，1-3个
-7. **alternatives** (string[]): 同类替代工具名称，2-5个
-8. **tags**: 五维标签对象：
-   - function (string[]): 功能分类标签，从以下选择: {function_tags}
-   - scenario (string[]): 使用场景标签，从以下选择: {scenario_tags}
-   - attribute (string[]): 产品属性标签，从以下选择: {attribute_tags}
-   - tech (string[]): 技术特征标签，从以下选择: {tech_tags}
-   - quality (string[]): 质量评估标签，从以下选择: {quality_tags}
-9. **category** (string): 主分类，如: 文本生成/图像生成/开发工具/数据分析/写作辅助等
-10. **pricing** (string): 定价模式: 免费/付费/Freemium/开源/API计费
-
-只输出JSON，不要其他内容。"""
-
-
 class AIAnalyzer:
-    """AI分析管道"""
+    """AI分析器 - 对采集到的工具进行深度分析"""
 
-    def __init__(self, config: Dict = None):
-        self.config = config or {}
-        self.api_key = self.config.get("coze_api_key", "")
-        self.api_base = "https://api.coze.cn/v3"
-        self.bot_id = self.config.get("analyzer_bot_id", "")
-        self.data_dir = Path(__file__).parent.parent.parent / "data"
+    # 一级分类体系
+    CATEGORIES = [
+        "文本生成", "图像创作", "代码开发", "数据分析",
+        "音视频", "办公效率", "学术研究", "开发工具",
+        "设计创意", "营销推广", "教育培训", "其他",
+    ]
+
+    # 许可/定价等级
+    LICENSE_TIERS = ["open-source", "freemium", "free", "paid", "source-available", "unknown"]
+
+    # 健康度等级
+    HEALTH_LEVELS = ["active", "moderate", "dormant", "archived"]
+
+    def __init__(self, coze_api_key: Optional[str] = None, workflow_id: Optional[str] = None):
+        self.coze_api_key = coze_api_key or os.environ.get("AI_BOX_COZE", "")
+        self.workflow_id = workflow_id or os.environ.get("COZE_WORKFLOW_ID", "")
+        self.use_coze = bool(self.coze_api_key and self.workflow_id)
 
     def analyze_tool(self, tool_data: Dict) -> Dict:
         """
         对单个工具进行AI分析
-        返回增强后的工具数据
+        返回: {
+            "category": str,        # 一级分类
+            "subcategory": str,     # 二级分类
+            "license_tier": str,    # 许可等级
+            "license_type": str,    # 具体许可证
+            "tags": {...},          # 五维标签
+            "ai_analysis": str,     # 分析摘要
+            "ai_confidence": float, # 置信度 0-1
+            "is_china_tool": bool,  # 是否国内工具
+            "health_status": str,   # 健康度
+        }
         """
-        # 构建分析Prompt
-        prompt = self._build_prompt(tool_data)
-
-        # 调用AI分析（优先Coze，降级为直接API）
-        if self.bot_id and self.api_key:
-            result = self._call_coze_workflow(prompt)
+        if self.use_coze:
+            return self._analyze_with_coze(tool_data)
         else:
-            result = self._call_direct_llm(prompt)
+            return self._analyze_local(tool_data)
 
-        if result:
-            # 合并分析结果到原始数据
-            tool_data.update(result)
-            tool_data["analyzed_at"] = datetime.now(timezone.utc).isoformat()
+    def _analyze_with_coze(self, tool_data: Dict) -> Dict:
+        """使用Coze工作流分析"""
+        prompt = self._build_analysis_prompt(tool_data)
 
-        return tool_data
+        try:
+            resp = requests.post(
+                "https://api.coze.cn/v1/workflow/run",
+                headers={
+                    "Authorization": f"Bearer {self.coze_api_key}",
+                    "Content-Type": "application/json"
+                },
+                json={
+                    "workflow_id": self.workflow_id,
+                    "parameters": {"input": prompt}
+                },
+                timeout=60
+            )
 
-    def analyze_batch(self, tools: List[Dict], batch_size: int = 5) -> List[Dict]:
+            if resp.status_code == 200:
+                result = resp.json()
+                if result.get("code") == 0:
+                    return json.loads(result["data"])
+        except Exception as e:
+            logger.warning(f"Coze analysis failed: {e}, falling back to local analysis")
+
+        # 降级到本地分析
+        return self._analyze_local(tool_data)
+
+    def _analyze_local(self, tool_data: Dict) -> Dict:
+        """本地规则分析（不依赖Coze时的降级方案）"""
+        name = tool_data.get("name", "")
+        desc = (tool_data.get("description", "") + " " + tool_data.get("description_zh", "")).lower()
+        url = tool_data.get("url", "").lower()
+        source = tool_data.get("source", "")
+        topics = tool_data.get("topics", [])
+        raw = tool_data.get("raw_data", {})
+
+        # === 许可类型识别 ===
+        license_type = raw.get("license", "")
+        if isinstance(license_type, dict):
+            license_type = license_type.get("name", "") or license_type.get("key", "")
+        license_tier = self._detect_license_tier(tool_data, license_type)
+
+        # === 分类推断 ===
+        category, subcategory = self._infer_category(name, desc, topics, source)
+
+        # === 五维标签 ===
+        tags = self._generate_tags(name, desc, topics, raw)
+
+        # === 健康度 ===
+        health = self._assess_health(tool_data)
+
+        # === 国内工具判断 ===
+        is_china = self._is_china_tool(url, desc, source)
+
+        # === 分析摘要 ===
+        analysis = self._generate_summary(name, desc, category, license_tier)
+
+        return {
+            "category": category,
+            "subcategory": subcategory,
+            "license_tier": license_tier,
+            "license_type": str(license_type) if license_type else "",
+            "tags": tags,
+            "ai_analysis": analysis,
+            "ai_confidence": 0.6,  # 本地分析置信度较低
+            "is_china_tool": is_china,
+            "health_status": health,
+        }
+
+    def _detect_license_tier(self, tool: Dict, license_type: str) -> str:
+        """检测许可/定价等级"""
+        desc = (tool.get("description", "") + " " + tool.get("description_zh", "")).lower()
+        url = tool.get("url", "").lower()
+
+        # 开源许可证检测
+        open_source_licenses = [
+            "mit", "apache-2.0", "gpl-2.0", "gpl-3.0", "bsd-2-clause",
+            "bsd-3-clause", "isc", "mpl-2.0", "lgpl-2.1", "lgpl-3.0",
+            "agpl-3.0", "unlicense", "apache", "gpl", "bsd", "mpl", "lgpl", "agpl"
+        ]
+        if license_type.lower().replace(" ", "-") in open_source_licenses:
+            return "open-source"
+
+        # GitHub 仓库有 license 文件
+        raw = tool.get("raw_data", {})
+        if raw.get("has_license") or (raw.get("license") and raw["license"] != "NOASSERTION"):
+            return "open-source"
+
+        # 免费/付费关键词检测
+        free_keywords = ["free", "免费", "open source", "开源", "no cost", "gratis"]
+        paid_keywords = ["pricing", "subscription", "付费", "计划", "pro", "enterprise", "$", "pricing page"]
+        freemium_keywords = ["free tier", "free plan", "免费版", "limited", "限量", "freemium", "basic plan"]
+
+        has_paid = any(kw in desc for kw in paid_keywords)
+        has_free = any(kw in desc for kw in free_keywords)
+        has_freemium = any(kw in desc for kw in freemium_keywords)
+
+        if has_freemium:
+            return "freemium"
+        elif has_paid and not has_free:
+            return "paid"
+        elif has_free:
+            return "free"
+
+        # 源站特征
+        source = tool.get("source", "")
+        if source in ["github-trending", "huggingface-models", "huggingface-spaces"]:
+            return "open-source"
+        elif source in ["aishenqi", "aibot", "toolify-ai", "aigcrank", "aig123"]:
+            # 国内工具站收录的，需要进一步判断
+            if "开源" in desc or "github" in url:
+                return "open-source"
+            return "unknown"
+
+        return "unknown"
+
+    def _infer_category(self, name: str, desc: str, topics: List[str], source: str) -> tuple:
+        """推断一级和二级分类"""
+        text = f"{name} {desc} {' '.join(topics)}".lower()
+
+        # 分类关键词映射 (按优先级排列，越精确的越靠前)
+        category_rules = [
+            ("代码开发", ["code", "编程", "developer", "debug", "ide", "compiler",
+                         "git", "api", "sdk", "framework", "编程辅助"]),
+            ("开发工具", ["devtool", "deploy", "docker", "kubernetes", "ci/cd",
+                         "monitor", "运维", "devops", "cli", "terminal", "debug"]),
+            ("图像创作", ["image", "图片", "绘画", "draw", "paint", "midjourney",
+                         "stable diffusion", "dall-e", "生成图", "图像", "photo", "svg"]),
+            ("音视频", ["audio", "video", "语音", "视频", "music", "speech",
+                       "whisper", "tts", "stt", "播客", "sound"]),
+            ("数据分析", ["data", "分析", "analytics", "visualization", "图表",
+                         "统计", "dashboard", "bi", "etl"]),
+            ("办公效率", ["office", "办公", "document", "ppt", "excel", "pdf",
+                         "email", "日程", "笔记", "notion", "calendar", "todo"]),
+            ("学术研究", ["research", "论文", "paper", "arxiv", "学术", "scholar",
+                         "citation", "模型", "model", "benchmark", "dataset"]),
+            ("设计创意", ["design", "设计", "ui", "ux", "figma", "creative",
+                         "logo", "品牌", "原型", "wireframe"]),
+            ("营销推广", ["marketing", "营销", "seo", "social", "ads", "推广",
+                         "content", "增长", "growth", "campaign"]),
+            ("教育培训", ["education", "教育", "learn", "学习", "课程", "教学",
+                         "tutor", "培训", "quiz", "flashcard"]),
+            ("文本生成", ["chat", "chatbot", "gpt", "llm", "text", "writing",
+                         "翻译", "写作", "对话", "文案", "摘要", "copilot", "assistant"]),
+        ]
+
+        best_cat = "其他"
+        best_score = 0
+
+        for cat, keywords in category_rules:
+            score = sum(1 for kw in keywords if kw in text)
+            if score > best_score:
+                best_score = score
+                best_cat = cat
+
+        # 二级分类（按一级分类细化）
+        subcategory_map = {
+            "文本生成": self._infer_text_subcategory(text),
+            "图像创作": self._infer_image_subcategory(text),
+            "代码开发": self._infer_code_subcategory(text),
+            "数据分析": self._infer_data_subcategory(text),
+            "办公效率": self._infer_office_subcategory(text),
+            "学术研究": self._infer_research_subcategory(text),
+        }
+
+        subcategory = subcategory_map.get(best_cat, "")
+
+        return best_cat, subcategory
+
+    def _infer_text_subcategory(self, text: str) -> str:
+        if any(kw in text for kw in ["chat", "对话", "聊天", "chatbot"]):
+            return "聊天助手"
+        if any(kw in text for kw in ["writing", "写作", "文案", "copy"]):
+            return "文案写作"
+        if any(kw in text for kw in ["翻译", "translate"]):
+            return "翻译"
+        if any(kw in text for kw in ["摘要", "summary", "summarize"]):
+            return "摘要提取"
+        if any(kw in text for kw in ["agent", "工作流", "workflow", "自动化"]):
+            return "AI Agent"
+        return "通用文本"
+
+    def _infer_image_subcategory(self, text: str) -> str:
+        if any(kw in text for kw in ["edit", "编辑", "修图", "enhance"]):
+            return "图像编辑"
+        if any(kw in text for kw in ["generate", "生成", "create", "创建"]):
+            return "图像生成"
+        if any(kw in text for kw in ["remove bg", "抠图", "background"]):
+            return "图像抠图"
+        if any(kw in text for kw in ["upscale", "超分", "enhance", "放大"]):
+            return "图像增强"
+        return "图像处理"
+
+    def _infer_code_subcategory(self, text: str) -> str:
+        if any(kw in text for kw in ["copilot", "completion", "补全", "autocomplete"]):
+            return "代码补全"
+        if any(kw in text for kw in ["review", "审查", "lint"]):
+            return "代码审查"
+        if any(kw in text for kw in ["debug", "调试", "fix"]):
+            return "调试工具"
+        if any(kw in text for kw in ["refactor", "重构", "optimize"]):
+            return "代码优化"
+        return "开发辅助"
+
+    def _infer_data_subcategory(self, text: str) -> str:
+        if any(kw in text for kw in ["visualization", "图表", "chart", "plot"]):
+            return "数据可视化"
+        if any(kw in text for kw in ["scrape", "爬虫", "crawl", "extract"]):
+            return "数据采集"
+        if any(kw in text for kw in ["etl", "pipeline", "transform"]):
+            return "数据处理"
+        return "数据分析"
+
+    def _infer_office_subcategory(self, text: str) -> str:
+        if any(kw in text for kw in ["email", "邮件", "mail"]):
+            return "邮件工具"
+        if any(kw in text for kw in ["note", "笔记", "notebook"]):
+            return "笔记工具"
+        if any(kw in text for kw in ["calendar", "日程", "schedule"]):
+            return "日程管理"
+        if any(kw in text for kw in ["pdf", "document", "文档"]):
+            return "文档处理"
+        return "办公助手"
+
+    def _infer_research_subcategory(self, text: str) -> str:
+        if any(kw in text for kw in ["论文", "paper", "arxiv"]):
+            return "论文工具"
+        if any(kw in text for kw in ["dataset", "数据", "benchmark"]):
+            return "数据资源"
+        if any(kw in text for kw in ["model", "模型", "training"]):
+            return "模型研究"
+        return "学术工具"
+
+    def _generate_tags(self, name: str, desc: str, topics: List[str], raw: Dict) -> Dict:
+        """生成五维标签"""
+        text = f"{name} {desc} {' '.join(topics)}".lower()
+
+        function_tags = []
+        scenario_tags = []
+        attribute_tags = []
+        tech_tags = []
+        quality_tags = []
+
+        # === 功能标签 (function) ===
+        func_keywords = {
+            "文本生成": ["generate text", "text generation", "文本生成", "write"],
+            "图像生成": ["generate image", "image generation", "图像生成", "生图", "text-to-image"],
+            "代码生成": ["code generation", "代码生成", "生成代码", "codegen"],
+            "对话": ["chat", "conversation", "对话", "聊天"],
+            "翻译": ["translate", "翻译", "localization"],
+            "数据分析": ["analyze", "analysis", "分析", "统计"],
+            "语音识别": ["speech recognition", "语音识别", "asr", "stt"],
+            "语音合成": ["tts", "text-to-speech", "语音合成", "voice"],
+            "视频生成": ["video generation", "视频生成", "video"],
+            "搜索": ["search", "搜索", "retrieval", "检索"],
+            "自动化": ["automate", "automation", "自动化", "workflow"],
+        }
+        for tag, keywords in func_keywords.items():
+            if any(kw in text for kw in keywords):
+                function_tags.append(tag)
+
+        # === 场景标签 (scenario) ===
+        scenario_keywords = {
+            "个人开发者": ["personal", "individual", "个人", "独立开发"],
+            "企业团队": ["enterprise", "team", "企业", "团队", "collaboration"],
+            "内容创作": ["content", "creator", "创作", "内容"],
+            "教育学习": ["education", "learn", "教育", "学习", "study"],
+            "学术研究": ["research", "paper", "学术", "研究"],
+            "商业营销": ["marketing", "business", "商业", "营销"],
+            "日常办公": ["office", "productivity", "办公", "效率"],
+            "设计工作": ["design", "设计", "creative", "创意"],
+        }
+        for tag, keywords in scenario_keywords.items():
+            if any(kw in text for kw in keywords):
+                scenario_tags.append(tag)
+
+        # === 属性标签 (attribute) ===
+        if "免费" in text or "free" in text:
+            attribute_tags.append("免费")
+        if "中文" in text or "chinese" in text:
+            attribute_tags.append("中文支持")
+        if "api" in text:
+            attribute_tags.append("API服务")
+        if "plugin" in text or "插件" in text or "extension" in text:
+            attribute_tags.append("浏览器插件")
+        if "open source" in text or "开源" in text:
+            attribute_tags.append("开源")
+        if "self-host" in text or "self host" in text or "本地部署" in text:
+            attribute_tags.append("本地部署")
+        if "mobile" in text or "移动端" in text or "ios" in text or "android" in text:
+            attribute_tags.append("移动端")
+
+        # === 技术标签 (tech) ===
+        tech_map = {
+            "gpt-4": "GPT-4", "gpt4": "GPT-4", "gpt-3.5": "GPT-3.5",
+            "claude": "Claude", "gemini": "Gemini", "llama": "Llama",
+            "mistral": "Mistral", "stable diffusion": "Stable Diffusion",
+            "diffusion": "Diffusion", "transformer": "Transformer",
+            "rag": "RAG", "embedding": "Embedding", "multimodal": "Multi-modal",
+            "fine-tune": "Fine-tuning", "fine tuning": "Fine-tuning",
+            "langchain": "LangChain", "llamaindex": "LlamaIndex",
+            "pytorch": "PyTorch", "tensorflow": "TensorFlow",
+        }
+        for kw, tag in tech_map.items():
+            if kw in text:
+                tech_tags.append(tag)
+
+        # === 质量标签 (quality) ===
+        stars = raw.get("stargazers_count", 0) or raw.get("stars", 0) or 0
+        if isinstance(stars, str):
+            try:
+                stars = int(stars)
+            except (ValueError, TypeError):
+                stars = 0
+
+        if stars > 10000:
+            quality_tags.append("热门")
+        elif stars > 5000:
+            quality_tags.append("口碑好")
+        elif stars > 1000:
+            quality_tags.append("受关注")
+        elif stars > 100:
+            quality_tags.append("成长中")
+        else:
+            quality_tags.append("新星")
+
+        # 检测是否活跃
+        pushed_at = raw.get("pushed_at", "")
+        if pushed_at:
+            try:
+                dt = datetime.fromisoformat(pushed_at.replace("Z", "+00:00"))
+                days = (datetime.now(timezone.utc) - dt).days
+                if days <= 7:
+                    quality_tags.append("高活跃")
+                elif days <= 30:
+                    quality_tags.append("活跃")
+                elif days > 180:
+                    quality_tags.append("低活跃")
+            except:
+                pass
+
+        return {
+            "function": list(set(function_tags)),
+            "scenario": list(set(scenario_tags)),
+            "attribute": list(set(attribute_tags)),
+            "tech": list(set(tech_tags)),
+            "quality": list(set(quality_tags)),
+        }
+
+    def _assess_health(self, tool: Dict) -> str:
+        """评估健康度"""
+        raw = tool.get("raw_data", {})
+        updated = raw.get("pushed_at") or raw.get("updated_at") or raw.get("last_updated", "")
+
+        if not updated:
+            return "unknown"
+
+        try:
+            if isinstance(updated, str):
+                dt = datetime.fromisoformat(updated.replace("Z", "+00:00"))
+            else:
+                dt = updated
+
+            now = datetime.now(timezone.utc)
+            days = (now - dt).days
+
+            if days <= 30:
+                return "active"
+            elif days <= 180:
+                return "moderate"
+            elif days <= 365:
+                return "dormant"
+            else:
+                return "archived"
+        except:
+            return "unknown"
+
+    def _is_china_tool(self, url: str, desc: str, source: str) -> bool:
+        """判断是否国内工具"""
+        china_domains = [".cn", ".com.cn", ".net.cn", ".org.cn"]
+        china_keywords = ["国内", "中国", "国产", "本土"]
+
+        # URL域名检查
+        if any(url.endswith(d) for d in china_domains):
+            return True
+
+        # 来源检查 - 国内工具站
+        if source in ["aishenqi", "aigcrank", "aibot", "toolify-ai", "aig123"]:
+            return True
+
+        # URL中的国内公司域名
+        china_url_patterns = [
+            "baidu.com", "aliyun.com", "tencent.com", "bytedance.com",
+            "zhipuai.cn", "moonshot.cn", "baichuan-ai.com", "01.ai",
+            "deepseek.com", "volcengine.com", "bcebos.com"
+        ]
+        if any(pattern in url for pattern in china_url_patterns):
+            return True
+
+        return False
+
+    def _generate_summary(self, name: str, desc: str, category: str, license_tier: str) -> str:
+        """生成分析摘要"""
+        tier_desc = {
+            "open-source": "开源项目",
+            "freemium": "免费限量",
+            "free": "免费工具",
+            "paid": "付费产品",
+            "source-available": "源码可见",
+            "unknown": "定价未知",
+        }
+        tier_text = tier_desc.get(license_tier, "定价未知")
+
+        # 清理描述，去掉多余空白
+        desc_clean = desc.strip()
+        if len(desc_clean) > 200:
+            desc_clean = desc_clean[:200] + "..."
+
+        return f"{name} 属于{category}领域，{tier_text}。{desc_clean}"
+
+    def _build_analysis_prompt(self, tool: Dict) -> str:
+        """构建Coze分析提示词"""
+        return f"""请分析以下AI工具，给出独立判断（不要照搬描述）：
+
+工具名称: {tool.get('name', '')}
+来源: {tool.get('source', '')}
+URL: {tool.get('url', '')}
+描述: {tool.get('description', '')}
+中文描述: {tool.get('description_zh', '')}
+Stars: {tool.get('raw_data', {}).get('stargazers_count', 'N/A')}
+许可证: {tool.get('raw_data', {}).get('license', 'N/A')}
+最后更新: {tool.get('raw_data', {}).get('pushed_at', 'N/A')}
+
+请返回JSON格式：
+{{
+  "category": "一级分类(文本生成/图像创作/代码开发/数据分析/音视频/办公效率/学术研究/开发工具/设计创意/营销推广/教育培训/其他)",
+  "subcategory": "二级分类",
+  "license_tier": "open-source/freemium/free/paid/source-available/unknown",
+  "license_type": "具体许可证如MIT/Apache等",
+  "tags": {{
+    "function": ["功能标签"],
+    "scenario": ["场景标签"],
+    "attribute": ["属性标签"],
+    "tech": ["技术标签"],
+    "quality": ["质量标签"]
+  }},
+  "ai_analysis": "2-3句独立分析摘要，说明这个工具真正做什么、适合谁",
+  "ai_confidence": 0.8,
+  "is_china_tool": false,
+  "health_status": "active/moderate/dormant/archived"
+}}"""
+
+    def analyze_batch(self, tools: List[Dict]) -> List[Dict]:
         """批量分析工具"""
         results = []
-        total = len(tools)
-
         for i, tool in enumerate(tools):
-            try:
-                logger.info(f"Analyzing tool {i+1}/{total}: {tool.get('name', 'unknown')}")
-                analyzed = self.analyze_tool(tool)
-                results.append(analyzed)
-            except Exception as e:
-                logger.error(f"Failed to analyze {tool.get('name')}: {e}")
-                results.append(tool)  # 保留原始数据
-
+            name = tool.get("name", "unknown")
+            logger.info(f"  Analyzing [{i+1}/{len(tools)}]: {name}")
+            result = self.analyze_tool(tool)
+            result["tool_id"] = tool.get("id", "")
+            results.append(result)
         return results
-
-    def _build_prompt(self, tool_data: Dict) -> str:
-        """构建分析Prompt"""
-        # 导入标签列表
-        import sys
-        sys.path.insert(0, str(Path(__file__).parent.parent))
-        from pipeline.data_model import FUNCTION_TAGS, SCENARIO_TAGS, ATTRIBUTE_TAGS, TECH_TAGS, QUALITY_TAGS
-
-        stats_str = ""
-        if tool_data.get("stars"):
-            stats_str += f"Stars: {tool_data['stars']}, "
-        if tool_data.get("downloads"):
-            stats_str += f"Downloads: {tool_data['downloads']}, "
-        if tool_data.get("likes"):
-            stats_str += f"Likes: {tool_data['likes']}"
-
-        return ANALYSIS_PROMPT.format(
-            name=tool_data.get("name", ""),
-            source=tool_data.get("source", ""),
-            url=tool_data.get("url", ""),
-            description=tool_data.get("description", "")[:500],
-            language=tool_data.get("language", ""),
-            stats=stats_str,
-            function_tags=", ".join(FUNCTION_TAGS[:30]),  # 控制长度
-            scenario_tags=", ".join(SCENARIO_TAGS[:20]),
-            attribute_tags=", ".join(ATTRIBUTE_TAGS[:20]),
-            tech_tags=", ".join(TECH_TAGS[:25]),
-            quality_tags=", ".join(QUALITY_TAGS[:15]),
-        )
-
-    def _call_coze_workflow(self, prompt: str) -> Optional[Dict]:
-        """调用Coze工作流进行AI分析"""
-        try:
-            url = f"{self.api_base}/workflow/run"
-            headers = {
-                "Authorization": f"Bearer {self.api_key}",
-                "Content-Type": "application/json",
-            }
-            payload = {
-                "workflow_id": self.bot_id,
-                "parameters": {
-                    "input": prompt,
-                },
-            }
-
-            resp = requests.post(url, json=payload, headers=headers, timeout=120)
-            resp.raise_for_status()
-            result = resp.json()
-
-            if result.get("code") == 0:
-                output = result.get("data", "")
-                return self._parse_analysis_result(output)
-            else:
-                logger.error(f"Coze workflow error: {result}")
-                return None
-
-        except Exception as e:
-            logger.error(f"Coze workflow call failed: {e}")
-            return None
-
-    def _call_direct_llm(self, prompt: str) -> Optional[Dict]:
-        """直接调用LLM API（备用方案）"""
-        # MVP阶段先返回mock数据，后续接入真实LLM
-        logger.warning("No Coze bot configured, using mock analysis")
-        return self._mock_analysis()
-
-    def _parse_analysis_result(self, text: str) -> Optional[Dict]:
-        """解析AI返回的分析结果"""
-        try:
-            # 尝试提取JSON
-            text = text.strip()
-            if text.startswith("```"):
-                # 去除markdown代码块
-                text = text.split("```")[1]
-                if text.startswith("json"):
-                    text = text[4:]
-
-            result = json.loads(text.strip())
-            return result
-
-        except json.JSONDecodeError as e:
-            logger.error(f"Failed to parse AI response as JSON: {e}")
-            # 尝试提取部分信息
-            return self._partial_parse(text)
-
-    def _partial_parse(self, text: str) -> Optional[Dict]:
-        """尝试从不完整的JSON中提取信息"""
-        import re
-        result = {}
-
-        # 尝试提取中文描述
-        match = re.search(r'"description_zh"\s*:\s*"([^"]+)"', text)
-        if match:
-            result["description_zh"] = match.group(1)
-
-        # 尝试提取分类
-        match = re.search(r'"category"\s*:\s*"([^"]+)"', text)
-        if match:
-            result["category"] = match.group(1)
-
-        return result if result else None
-
-    def _mock_analysis(self) -> Dict:
-        """Mock分析结果（开发阶段使用）"""
-        return {
-            "description_zh": "AI工具（待分析）",
-            "summary": "该工具正在等待AI分析服务接入，将自动完成深度分析。",
-            "features": ["待分析"],
-            "use_cases": ["待分析"],
-            "pros": ["待确认"],
-            "cons": ["待确认"],
-            "alternatives": [],
-            "tags": {
-                "function": [],
-                "scenario": [],
-                "attribute": [],
-                "tech": [],
-                "quality": ["待验证"],
-            },
-            "category": "未分类",
-            "pricing": "未知",
-            "analyzed_at": datetime.now(timezone.utc).isoformat(),
-        }
 
 
 def generate_tool_id(source: str, name: str) -> str:
