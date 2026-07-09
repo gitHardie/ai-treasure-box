@@ -70,9 +70,7 @@ jobs:
       - name: Run AI analysis
         if: ${{ !inputs.skip_analysis }}
         env:
-          COZE_API_KEY: ${{ secrets.COZE_API_KEY }}
-          COZE_API_BASE: ${{ secrets.COZE_API_BASE }}
-          ANALYZER_BOT_ID: ${{ secrets.ANALYZER_BOT_ID }}
+          COZE_API_KEY: ${{ secrets.AI_BOX_COZE }}
         run: |
           cd scripts
           python main.py analyze
@@ -116,6 +114,10 @@ jobs:
 
       - name: Build site
         run: |
+          # Copy latest data to site/public/data/
+          mkdir -p site/public/data
+          cp -r data/* site/public/data/
+          
           cd site
           npm install
           npm run build
