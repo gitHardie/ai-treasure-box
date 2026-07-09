@@ -13,6 +13,13 @@ export interface ToolItem {
   source_name?: string
   collected_at?: string
   rank_change?: number
+  license_tier?: string
+  license_type?: string
+  health_status?: string
+  ai_analysis?: string
+  is_china_tool?: boolean
+  category?: string
+  subcategory?: string
 }
 
 export interface ToolData {
@@ -55,4 +62,12 @@ export interface RankingItem extends ToolItem {
   rank_change: number
 }
 
-export type TabType = 'discover' | 'rankings' | 'news' | 'trends' | 'about'
+export type TabType = 'discover' | 'rankings' | 'news' | 'trends' | 'favorites' | 'about'
+
+export interface CategoryInfo {
+  id: string
+  label: string
+  emoji: string
+  count: number
+  subcategories?: { id: string; label: string; count: number }[]
+}
