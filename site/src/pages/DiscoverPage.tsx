@@ -148,7 +148,7 @@ export default function DiscoverPage() {
       </div>
 
       {/* Main content with sidebar */}
-      <div className="flex gap-6 overflow-x-hidden">
+      <div className="flex flex-col lg:flex-row gap-6">
         <CategorySidebar
           tools={tools}
           selectedCategory={selectedCategory}

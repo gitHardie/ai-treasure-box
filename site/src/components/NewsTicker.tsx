@@ -5,8 +5,18 @@ export default function NewsTicker() {
 
   if (news.length === 0) return null
 
-  // Take top 10 items for the ticker
   const tickerItems = news.slice(0, 10)
+
+  const handleArticleClick = (articleId?: string, e?: React.MouseEvent) => {
+    if (e) e.preventDefault()
+    if (articleId) {
+      window.location.hash = `#/news/${articleId}`
+    } else {
+      window.location.hash = '#/news'
+    }
+    // Dispatch custom event for App to pick up
+    window.dispatchEvent(new HashChangeEvent('hashchange'))
+  }
 
   return (
     <div className="relative -mx-4 sm:-mx-6 mb-6 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
@@ -26,9 +36,8 @@ export default function NewsTicker() {
             {tickerItems.map((item, idx) => (
               <a
                 key={idx}
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={item.article_id ? `#/news/${item.article_id}` : '#/news'}
+                onClick={(e) => handleArticleClick(item.article_id, e)}
                 className="flex items-center gap-2 whitespace-nowrap text-sm text-slate-600 dark:text-slate-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors shrink-0"
               >
                 <span className="text-xs text-slate-400 dark:text-slate-500">
@@ -41,9 +50,8 @@ export default function NewsTicker() {
             {tickerItems.map((item, idx) => (
               <a
                 key={`dup-${idx}`}
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={item.article_id ? `#/news/${item.article_id}` : '#/news'}
+                onClick={(e) => handleArticleClick(item.article_id, e)}
                 className="flex items-center gap-2 whitespace-nowrap text-sm text-slate-600 dark:text-slate-400 hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors shrink-0"
               >
                 <span className="text-xs text-slate-400 dark:text-slate-500">
@@ -56,7 +64,11 @@ export default function NewsTicker() {
         </div>
 
         {/* More link */}
-        <a href="#news" className="shrink-0 ml-4 text-xs text-slate-400 hover:text-indigo-500 transition-colors">
+        <a
+          href="#/news"
+          onClick={(e) => handleArticleClick(undefined, e)}
+          className="shrink-0 ml-4 text-xs text-slate-400 hover:text-indigo-500 transition-colors"
+        >
           更多 →
         </a>
       </div>

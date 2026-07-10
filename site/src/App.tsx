@@ -13,13 +13,59 @@ import AboutPage from './pages/AboutPage'
 import ToolDetail from './components/ToolDetail'
 import NewsTicker from './components/NewsTicker'
 
+function parseHash(): { tab: TabType; articleId: string | null } {
+  const hash = window.location.hash
+  // Format: #/news, #/news/article-id, #/discover, etc.
+  if (hash.startsWith('#/')) {
+    const parts = hash.slice(2).split('/')
+    const tabName = parts[0] as TabType
+    const articleId = parts[1] || null
+    const validTabs: TabType[] = ['discover', 'rankings', 'news', 'trends', 'favorites', 'about']
+    if (validTabs.includes(tabName)) {
+      return { tab: tabName, articleId }
+    }
+  }
+  return { tab: 'discover', articleId: null }
+}
+
 export default function App() {
-  const [activeTab, setActiveTab] = useState<TabType>('discover')
+  const [activeTab, setActiveTab] = useState<TabType>(() => parseHash().tab)
+  const [newsArticleId, setNewsArticleId] = useState<string | null>(() => parseHash().articleId)
   const { isDark, toggle } = useTheme()
   const { tools } = useTools()
   const { count: favoriteCount } = useFavorites()
   const [paletteOpen, setPaletteOpen] = useState(false)
   const [selectedTool, setSelectedTool] = useState<ToolItem | null>(null)
+
+  // Handle hash changes for deep linking
+  useEffect(() => {
+    const handleHashChange = () => {
+      const { tab, articleId } = parseHash()
+      setActiveTab(tab)
+      if (tab === 'news') {
+        setNewsArticleId(articleId)
+      }
+    }
+    window.addEventListener('hashchange', handleHashChange)
+    return () => window.removeEventListener('hashchange', handleHashChange)
+  }, [])
+
+  // Update hash when tab changes via navbar
+  const handleTabChange = useCallback((tab: TabType) => {
+    setActiveTab(tab)
+    setNewsArticleId(null)
+    if (tab === 'discover') {
+      history.replaceState(null, '', window.location.pathname)
+    } else {
+      window.location.hash = `#/${tab}`
+    }
+  }, [])
+
+  // Handle closing article detail
+  const handleArticleBack = useCallback(() => {
+    setNewsArticleId(null)
+    window.location.hash = '#/news'
+  }, [])
 
   // Cmd+K / Ctrl+K shortcut
   useEffect(() => {
@@ -41,7 +87,7 @@ export default function App() {
     switch (activeTab) {
       case 'discover': return <DiscoverPage />
       case 'rankings': return <RankingsPage />
-      case 'news': return <NewsPage />
+      case 'news': return <NewsPage articleId={newsArticleId} onArticleBack={handleArticleBack} />
       case 'trends': return <TrendsPage />
       case 'favorites': return <FavoritesPage />
       case 'about': return <AboutPage />
@@ -53,7 +99,7 @@ export default function App() {
     <div className="min-h-screen">
       <Navbar
         activeTab={activeTab}
-        onTabChange={setActiveTab}
+        onTabChange={handleTabChange}
         isDark={isDark}
         onToggleTheme={toggle}
         onSearchOpen={() => setPaletteOpen(true)}

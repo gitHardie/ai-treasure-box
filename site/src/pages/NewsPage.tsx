@@ -15,26 +15,32 @@ const categoryTabs = [
   { id: 'open_source', label: '开源动态', emoji: '📦' },
 ]
 
-export default function NewsPage() {
+interface Props {
+  articleId?: string | null
+  onArticleBack?: () => void
+}
+
+export default function NewsPage({ articleId, onArticleBack }: Props) {
   const { news, loading, error } = useNews()
   const [selectedCategory, setSelectedCategory] = useState('all')
-  const [selectedArticleId, setSelectedArticleId] = useState<string | null>(null)
+
+  // If viewing an article, render article page
+  if (articleId) {
+    return (
+      <ArticlePage
+        articleId={articleId}
+        onBack={() => {
+          if (onArticleBack) onArticleBack()
+        }}
+      />
+    )
+  }
 
   // Filter news by category
   const filteredNews = useMemo(() => {
     if (selectedCategory === 'all') return news
     return news.filter(item => item.category === selectedCategory)
   }, [news, selectedCategory])
-
-  // If viewing an article, render article page
-  if (selectedArticleId) {
-    return (
-      <ArticlePage
-        articleId={selectedArticleId}
-        onBack={() => setSelectedArticleId(null)}
-      />
-    )
-  }
 
   if (loading) {
     return <LoadingState message="正在加载资讯..." />
@@ -100,7 +106,11 @@ export default function NewsPage() {
         {filteredNews.map((item, idx) => (
           <div
             key={idx}
-            onClick={() => item.article_id ? setSelectedArticleId(item.article_id) : null}
+            onClick={() => {
+              if (item.article_id) {
+                window.location.hash = `#/news/${item.article_id}`
+              }
+            }}
             className={`block bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-5 transition-all ${
               item.article_id
                 ? 'cursor-pointer card-hover group'
@@ -120,7 +130,6 @@ export default function NewsPage() {
                   </p>
                 )}
                 <div className="flex items-center gap-3 mt-3 flex-wrap">
-                  {/* Category badge */}
                   {item.category && (
                     <span className="text-xs px-2 py-0.5 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-300 rounded-full">
                       {item.category_label || item.category}
