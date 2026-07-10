@@ -78,6 +78,15 @@ export default function Navbar({ activeTab, onTabChange, isDark, onToggleTheme, 
                 </kbd>
               </button>
 
+              {/* Bookmark hint - desktop only */}
+              <button
+                className="hidden lg:flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                title="按 Ctrl+D 收藏本站"
+              >
+                <kbd className="text-[10px] px-1.5 py-0.5 bg-slate-100 dark:bg-slate-800 rounded border border-slate-200 dark:border-slate-700 font-mono">Ctrl+D</kbd>
+                <span>收藏</span>
+              </button>
+
               <ThemeToggle isDark={isDark} toggle={onToggleTheme} />
             </div>
           </div>

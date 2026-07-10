@@ -14,7 +14,7 @@ export default function NewsPage() {
   }
 
   if (news.length === 0) {
-    return <EmptyState icon="📰" title="暂无资讯" description="资讯数据采集中，请稍后再来" />
+    return <EmptyState icon="📰" title="资讯模块建设中" description="我们正在搭建AI行业资讯采集管道，即将为你带来最新AI动态。你也可以先去发现页探索124+个AI工具！" />
   }
 
   return (

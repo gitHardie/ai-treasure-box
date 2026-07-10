@@ -249,6 +249,21 @@ def cmd_deploy(args):
     db = _get_db()
     all_tools = db.get_all_tools()
 
+    # 合并国内手动工具列表
+    china_tools_path = DATA_DIR / "china-tools-manual.json"
+    if china_tools_path.exists():
+        try:
+            with open(china_tools_path, "r", encoding="utf-8") as f:
+                china_data = json.load(f)
+            china_items = china_data.get("items", [])
+            # 去重：按name检查
+            existing_names = {t.get("name", "") for t in all_tools}
+            new_china = [t for t in china_items if t.get("name", "") not in existing_names]
+            all_tools.extend(new_china)
+            logger.info(f"[Deploy] Merged {len(new_china)} China tools")
+        except Exception as e:
+            logger.warning(f"[Deploy] Failed to load China tools: {e}")
+
     if not all_tools:
         logger.warning("[Deploy] No tools in master DB, skipping site data generation")
         return
@@ -301,6 +316,29 @@ def cmd_deploy(args):
             **stats,
         }, f, ensure_ascii=False, indent=2)
     logger.info(f"[Deploy] Generated {stats_path}")
+
+    # 生成 snapshots/latest.json
+    snapshots_dir = SITE_DIR / "snapshots"
+    snapshots_dir.mkdir(parents=True, exist_ok=True)
+    snapshot = {
+        "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+        "total_tools": len(all_tools),
+        "new_this_week": stats.get("new_this_week", 0),
+        "categories": category_counts,
+    }
+    snapshot_path = SITE_DIR / "snapshots" / "latest.json"
+    with open(snapshot_path, "w", encoding="utf-8") as f:
+        json.dump(snapshot, f, ensure_ascii=False, indent=2)
+    logger.info(f"[Deploy] Generated snapshot: {snapshot_path}")
+
+    # 复制资讯数据（如果有）
+    curated_news = DATA_DIR / "news" / "curated.json"
+    if curated_news.exists():
+        news_dir = SITE_DIR / "news"
+        news_dir.mkdir(parents=True, exist_ok=True)
+        import shutil
+        shutil.copy2(curated_news, news_dir / "latest.json")
+        logger.info(f"[Deploy] Copied curated news to {news_dir / 'latest.json'}")
 
     logger.info(f"[Deploy] Site data ready in {SITE_DIR}")
 

@@ -72,7 +72,7 @@ export default function DiscoverPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-50 dark:to-slate-950" />
         
         <div className="relative z-10 max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
             <span className="hero-gradient-text">发现下一个</span>
             <br />
             <span className="hero-gradient-text-2">AI 神器</span>
@@ -94,7 +94,7 @@ export default function DiscoverPage() {
                 value={search}
                 onChange={e => setSearch(e.target.value)}
                 placeholder="搜索工具名称、描述或标签..."
-                className="w-full pl-14 pr-20 py-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 shadow-lg shadow-indigo-500/5 transition-all text-base"
+                className="w-full pl-12 pr-16 sm:pl-14 sm:pr-20 py-3 sm:py-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 shadow-lg shadow-indigo-500/5 transition-all text-base"
               />
               <div className="absolute inset-y-0 right-0 pr-5 flex items-center">
                 <kbd className="hidden sm:inline-flex items-center px-2 py-1 text-xs text-slate-400 bg-slate-100 dark:bg-slate-800 rounded-lg font-mono border border-slate-200 dark:border-slate-700">
@@ -105,7 +105,7 @@ export default function DiscoverPage() {
           </div>
 
           {/* Stats */}
-          <div className="flex items-center justify-center gap-6 sm:gap-10 mb-8">
+          <div className="hidden sm:flex items-center justify-center gap-6 sm:gap-10 mb-8">
             <div className="text-center">
               <div className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
                 {statsData?.total_tools || tools.length}
@@ -129,7 +129,7 @@ export default function DiscoverPage() {
           </div>
 
           {/* Hot categories */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto">
+          <div className="hidden sm:grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto">
             {hotCategoryCounts.slice(0, 8).map(cat => (
               <button
                 key={cat.label}

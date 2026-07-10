@@ -1,23 +1,20 @@
 import { useState, useMemo } from 'react'
-import type { ToolItem, CategoryInfo } from '../types'
+import type { ToolItem } from '../types'
 import { useCategories } from '../hooks/useData'
 
-
-const CATEGORY_MAP: { id: string; label: string; emoji: string; keywords: string[] }[] = [
-  { id: 'all', label: '全部工具', emoji: '🏠', keywords: [] },
-  { id: 'llm', label: '大语言模型', emoji: '🧠', keywords: ['llm', 'gpt', 'language-model', 'chat', 'ollama', 'openai'] },
-  { id: 'agent', label: 'AI Agent', emoji: '🤖', keywords: ['agent', 'autonomous', 'auto-gpt', 'crew'] },
-  { id: 'dev-tools', label: '开发工具', emoji: '💻', keywords: ['code', 'developer', 'ide', 'editor', 'debug', 'api', 'sdk', 'framework'] },
-  { id: 'image', label: '图像生成', emoji: '🎨', keywords: ['image', 'art', 'draw', 'diffusion', 'midjourney', 'stable', 'dall'] },
-  { id: 'audio', label: '语音音频', emoji: '🎵', keywords: ['audio', 'speech', 'tts', 'voice', 'music', 'sound', 'whisper'] },
-  { id: 'video', label: '视频工具', emoji: '🎬', keywords: ['video', 'animation', 'motion', 'clip'] },
-  { id: 'data', label: '数据分析', emoji: '📊', keywords: ['data', 'analytics', 'visualization', 'chart', 'csv', 'table'] },
-  { id: 'writing', label: '写作助手', emoji: '✍️', keywords: ['writing', 'text', 'content', 'blog', 'copy', 'seo', 'markdown'] },
-  { id: 'productivity', label: '效率工具', emoji: '⚡', keywords: ['productivity', 'automation', 'workflow', 'tool', 'utility', 'search', 'crawler'] },
-  { id: 'research', label: '学术研究', emoji: '🔬', keywords: ['research', 'paper', 'academic', 'science', 'arxiv', 'scholar'] },
-  { id: 'education', label: '教育学习', emoji: '📚', keywords: ['education', 'learn', 'course', 'study', 'tutor', 'quiz'] },
-  { id: 'security', label: '安全工具', emoji: '🛡️', keywords: ['security', 'privacy', 'encrypt', 'auth', 'vulnerability'] },
-]
+const emojiMap: Record<string, string> = {
+  '代码开发': '💻',
+  '学术研究': '🔬',
+  '数据分析': '📊',
+  '文本生成': '✍️',
+  '图像创作': '🎨',
+  '音视频': '🎵',
+  '教育培训': '📚',
+  '办公效率': '⚡',
+  '设计创意': '🎭',
+  '开发工具': '🛠️',
+  '其他': '📦',
+}
 
 interface Props {
   tools: ToolItem[]
@@ -29,35 +26,29 @@ interface Props {
 
 export default function CategorySidebar({ tools, selectedCategory, onCategoryChange, chinaOnly, onChinaOnlyChange }: Props) {
   const [expanded, setExpanded] = useState(true)
+  const { categories: catsData } = useCategories()
 
-  const categories: CategoryInfo[] = useMemo(() => {
-    return CATEGORY_MAP.map(cat => {
-      let catTools = tools
-      if (cat.id !== 'all') {
-        catTools = tools.filter(t =>
-          cat.keywords.some(kw =>
-            t.topics?.some(topic => topic.toLowerCase().includes(kw)) ||
-            t.name.toLowerCase().includes(kw) ||
-            t.description?.toLowerCase().includes(kw) ||
-            (t.category === cat.id)
-          )
-        )
-      }
-      return {
-        id: cat.id,
-        label: cat.label,
-        emoji: cat.emoji,
-        count: catTools.length,
-      }
-    })
-  }, [tools])
+  const categories = useMemo(() => {
+    const allItem = { id: 'all', label: '全部工具', emoji: '🏠', count: tools.length }
+    if (!catsData?.categories) return [allItem]
+
+    const catList = Object.entries(catsData.categories)
+      .sort((a, b) => b[1] - a[1])
+      .map(([label, count]) => ({
+        id: label,
+        label,
+        emoji: emojiMap[label] || '📁',
+        count,
+      }))
+
+    return [allItem, ...catList]
+  }, [catsData, tools.length])
 
   return (
     <>
       {/* Desktop sidebar */}
       <aside className={`hidden lg:block shrink-0 transition-all duration-300 ${expanded ? 'w-56' : 'w-16'}`}>
         <div className="sticky top-20 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-hidden">
-          {/* Toggle */}
           <button
             onClick={() => setExpanded(!expanded)}
             className="w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
@@ -68,7 +59,6 @@ export default function CategorySidebar({ tools, selectedCategory, onCategoryCha
             </svg>
           </button>
 
-          {/* China/International Toggle */}
           {expanded && (
             <div className="px-3 pb-2">
               <div className="flex bg-slate-100 dark:bg-slate-800 rounded-lg p-0.5">
@@ -76,19 +66,18 @@ export default function CategorySidebar({ tools, selectedCategory, onCategoryCha
                   onClick={() => onChinaOnlyChange(false)}
                   className={`flex-1 text-xs py-1.5 rounded-md transition-all ${!chinaOnly ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-400 shadow-sm font-medium' : 'text-slate-500'}`}
                 >
-                  🌍 国际
+                  {'🌍'} 国际
                 </button>
                 <button
                   onClick={() => onChinaOnlyChange(true)}
                   className={`flex-1 text-xs py-1.5 rounded-md transition-all ${chinaOnly ? 'bg-white dark:bg-slate-700 text-red-600 dark:text-red-400 shadow-sm font-medium' : 'text-slate-500'}`}
                 >
-                  🇨🇳 国内
+                  {'🇨🇳'} 国内
                 </button>
               </div>
             </div>
           )}
 
-          {/* Category list */}
           <nav className="px-2 pb-2 space-y-0.5 max-h-[calc(100vh-200px)] overflow-y-auto">
             {categories.map(cat => (
               <button

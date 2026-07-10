@@ -130,7 +130,7 @@ export default function ToolCard({ tool, onClick, index = 0 }: Props) {
         className={`absolute top-3 left-3 z-10 p-1.5 rounded-full transition-all duration-200 ${
           fav
             ? 'bg-pink-100 dark:bg-pink-900/30 text-pink-500 scale-110'
-            : 'bg-white/80 dark:bg-slate-800/80 text-slate-400 opacity-0 group-hover:opacity-100 hover:text-pink-500'
+            : 'bg-white/80 dark:bg-slate-800/80 text-slate-300 dark:text-slate-500 hover:text-pink-500'
         }`}
       >
         <svg className="w-4 h-4" fill={fav ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
@@ -196,18 +196,18 @@ export default function ToolCard({ tool, onClick, index = 0 }: Props) {
         {/* Tags + badges */}
         <div className="flex flex-wrap items-center gap-1.5 mb-3">
           {license && (
-            <span className={`badge text-[10px] ${license.cls}`}>{license.label}</span>
+            <span className={`badge text-[9px] ${license.cls}`}>{license.label}</span>
           )}
           {tool.category && (
-            <span className="badge text-[10px] bg-indigo-50 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 font-medium">
+            <span className="badge text-[9px] bg-indigo-50 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 font-medium">
               {tool.category}
             </span>
           )}
           {displayTags.slice(0, 4).map(tag => (
-            <span key={tag} className={`badge ${tagColor(tag)}`}>{tag}</span>
+            <span key={tag} className={`badge text-[9px] ${tagColor(tag)}`}>{tag}</span>
           ))}
           {displayTags.length > 4 && (
-            <span className="badge bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400">
+            <span className="badge text-[9px] bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400">
               +{displayTags.length - 4}
             </span>
           )}
