@@ -45,7 +45,7 @@ export default function ArticlePage({ articleId, onBack }: Props) {
   useEffect(() => {
     const loadArticle = async () => {
       try {
-        const basePath = import.meta.env.BASE_URL || ''
+        const basePath = import.meta.env.BASE_URL.replace(/\/$/, '')
         const res = await fetch(basePath + '/data/news/articles.json')
         if (res.ok) {
           const data = await res.json()
