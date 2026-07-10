@@ -325,6 +325,7 @@ global:
     health_check_interval_days: 3 # 默认健康检查间隔
     deep_update_day: 1            # 每月1号做深度更新
   analysis:
+    mode: loop                     # loop=循环模式(Coze逐条分析) batch=批量模式
     batch_size: 20                # 每批送Coze分析的工具数
     batch_timeout: 120            # 单批超时秒数
     confidence_threshold: 0.7
