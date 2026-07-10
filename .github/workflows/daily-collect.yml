@@ -1,6 +1,8 @@
 name: daily-collect
 
 on:
+  push:
+    branches: [main]
   schedule:
     - cron: '0 18 * * *'  # 每天UTC 18:00 (北京凌晨2:00)
   workflow_dispatch:
@@ -57,7 +59,7 @@ jobs:
           git config user.name "AI Treasure Box Bot"
           git config user.email "bot@afterai.tech"
           git add data/
-          git diff --cached --quiet || (git commit -m "📊 Data update: $(date -u +'%Y-%m-%d %H:%M UTC')" && git push)
+          git diff --cached --quiet || (git commit -m "📊 Data update: $(date -u +'%Y-%m-%d %H:%M UTC')" && git pull --rebase origin main && git push)
 
   deploy-site:
     needs: collect-and-analyze
