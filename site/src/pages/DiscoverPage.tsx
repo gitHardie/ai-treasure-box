@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import type { ToolItem } from '../types'
 import { useTools, useCategories, useStats } from '../hooks/useData'
 import ToolCard from '../components/ToolCard'
@@ -18,6 +18,16 @@ export default function DiscoverPage() {
   const [selectedTool, setSelectedTool] = useState<ToolItem | null>(null)
   const { stats: statsData } = useStats()
 
+  // Deduplicate tools by name+source (fix duplicate key issue)
+  const uniqueTools = useMemo(() => {
+    const seen = new Set<string>()
+    return tools.filter(t => {
+      const key = (t.tool_id || t.name + (t.source || ''))
+      if (seen.has(key)) return false
+      seen.add(key)
+      return true
+    })
+  }, [tools])
 
   // Count per hot category
   // Build category list from Master DB
@@ -38,15 +48,21 @@ export default function DiscoverPage() {
       }))
   }, [catsData])
 
-  // Filter by category
-  const categoryFiltered = useMemo(() => {
-    if (selectedCategory === 'all') return tools
-    return tools.filter(t => t.category === selectedCategory)
-  }, [tools, selectedCategory])
-
-  // Search filter
+  // SINGLE useMemo for all filtering - eliminates intermediate caching issues
   const filteredTools = useMemo(() => {
-    let result = chinaOnly ? categoryFiltered.filter(t => t.is_china_tool) : categoryFiltered
+    let result = uniqueTools
+
+    // Step 1: Filter by category
+    if (selectedCategory !== 'all') {
+      result = result.filter(t => t.category === selectedCategory)
+    }
+
+    // Step 2: Filter by china only
+    if (chinaOnly) {
+      result = result.filter(t => t.is_china_tool)
+    }
+
+    // Step 3: Filter by search
     if (search.trim()) {
       const q = search.toLowerCase()
       result = result.filter(tool =>
@@ -58,8 +74,22 @@ export default function DiscoverPage() {
         tool.full_name?.toLowerCase().includes(q)
       )
     }
+
     return result
-  }, [categoryFiltered, search, chinaOnly])
+  }, [uniqueTools, selectedCategory, chinaOnly, search])
+
+  // Scroll to grid when category changes
+  useEffect(() => {
+    if (selectedCategory !== 'all') {
+      // Small delay to let the DOM update
+      setTimeout(() => {
+        const grid = document.querySelector('.tools-grid')
+        if (grid) {
+          grid.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }, 100)
+    }
+  }, [selectedCategory])
 
   if (loading) return <LoadingState message="正在加载工具数据..." />
   if (error) return <EmptyState icon="⚠️" title="加载失败" description={error} />
@@ -108,7 +138,7 @@ export default function DiscoverPage() {
           <div className="hidden sm:flex items-center justify-center gap-6 sm:gap-10 mb-8">
             <div className="text-center">
               <div className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
-                {statsData?.total_tools || tools.length}
+                {statsData?.total_tools || uniqueTools.length}
               </div>
               <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">收录工具</div>
             </div>
@@ -150,7 +180,7 @@ export default function DiscoverPage() {
       {/* Main content with sidebar */}
       <div className="flex flex-col lg:flex-row gap-6">
         <CategorySidebar
-          tools={tools}
+          tools={uniqueTools}
           selectedCategory={selectedCategory}
           onCategoryChange={setSelectedCategory}
           chinaOnly={chinaOnly}
@@ -163,16 +193,24 @@ export default function DiscoverPage() {
             <p className="text-sm text-slate-500 dark:text-slate-400">
               {search || selectedCategory !== 'all'
                 ? `找到 ${filteredTools.length} 个工具`
-                : `共 ${tools.length} 个工具`}
+                : `共 ${uniqueTools.length} 个工具`}
             </p>
+            {selectedCategory !== 'all' && (
+              <button
+                onClick={() => setSelectedCategory('all')}
+                className="text-xs text-indigo-500 hover:text-indigo-600 dark:text-indigo-400"
+              >
+                清除筛选 ✕
+              </button>
+            )}
           </div>
 
-          {/* Grid */}
+          {/* Grid - key forces complete re-mount when filter changes */}
           {filteredTools.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+            <div key={`grid-${selectedCategory}-${chinaOnly}-${search ? 's' : ''}`} className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 tools-grid">
               {filteredTools.map((tool, idx) => (
                 <ToolCard
-                  key={tool.name + (tool.source || '')}
+                  key={tool.tool_id || tool.name + (tool.source || '')}
                   tool={tool}
                   onClick={setSelectedTool}
                   index={idx}
