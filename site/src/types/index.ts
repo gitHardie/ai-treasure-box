@@ -12,9 +12,9 @@ export interface ToolItem {
   url: string
   description: string
   language?: string
-  stars: number
-  forks: number
-  topics: string[]
+  stars?: number
+  forks?: number
+  topics?: string[]
   platform: string[]
   type: string
   id?: string

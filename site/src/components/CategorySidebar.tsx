@@ -1,5 +1,7 @@
 import { useState, useMemo } from 'react'
 import type { ToolItem, CategoryInfo } from '../types'
+import { useCategories } from '../hooks/useData'
+
 
 const CATEGORY_MAP: { id: string; label: string; emoji: string; keywords: string[] }[] = [
   { id: 'all', label: '全部工具', emoji: '🏠', keywords: [] },

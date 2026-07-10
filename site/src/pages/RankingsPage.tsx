@@ -5,7 +5,8 @@ import ToolDetail from '../components/ToolDetail'
 import LoadingState from '../components/LoadingState'
 import EmptyState from '../components/EmptyState'
 
-function formatStars(stars: number): string {
+function formatStars(stars: number | null | undefined): string {
+  if (!stars) return "0"
   if (stars >= 1000) return (stars / 1000).toFixed(1) + 'k'
   return stars.toString()
 }
@@ -40,10 +41,10 @@ export default function RankingsPage() {
     }
     // Sort by stars for global, by a "heat" score for china
     if (activeTab === 'global') {
-      list.sort((a, b) => b.stars - a.stars)
+      list.sort((a, b) => (b.stars || 0) - (a.stars || 0))
     } else {
       // Heat score: stars + forks * 3
-      list.sort((a, b) => (b.stars + b.forks * 3) - (a.stars + a.forks * 3))
+      list.sort((a, b) => ((b.stars||0) + (b.forks||0) * 3) - ((a.stars||0) + (a.forks||0) * 3))
     }
     return list.map((item, idx) => ({
       ...item,

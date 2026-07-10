@@ -1,26 +1,13 @@
-import { useState, useMemo, useEffect } from 'react'
-import type { ToolItem, SnapshotData } from '../types'
-import { useTools, useCategories } from '../hooks/useData'
+import { useState, useMemo } from 'react'
+import type { ToolItem } from '../types'
+import { useTools, useCategories, useStats } from '../hooks/useData'
 import ToolCard from '../components/ToolCard'
 import ToolDetail from '../components/ToolDetail'
 import CategorySidebar from '../components/CategorySidebar'
 import LoadingState from '../components/LoadingState'
 import EmptyState from '../components/EmptyState'
 
-const HOT_CATEGORIES = [
-  { emoji: '🧠', label: '大语言模型', keywords: ['llm', 'gpt', 'chat', 'openai', 'ollama'] },
-  { emoji: '🤖', label: 'AI Agent', keywords: ['agent', 'autonomous', 'auto'] },
-  { emoji: '🎨', label: '图像生成', keywords: ['image', 'art', 'diffusion', 'midjourney'] },
-  { emoji: '💻', label: '开发工具', keywords: ['code', 'developer', 'api', 'framework'] },
-  { emoji: '🎵', label: '语音音频', keywords: ['audio', 'speech', 'tts', 'voice', 'music'] },
-  { emoji: '📊', label: '数据分析', keywords: ['data', 'analytics', 'visualization'] },
-  { emoji: '✍️', label: '写作助手', keywords: ['writing', 'text', 'content', 'blog'] },
-  { emoji: '⚡', label: '效率工具', keywords: ['productivity', 'automation', 'workflow', 'crawler'] },
-]
 
-function getBasePath(): string {
-  return import.meta.env.BASE_URL.replace(/\/$/, '')
-}
 
 export default function DiscoverPage() {
   const { tools, loading, error } = useTools()
@@ -29,17 +16,8 @@ export default function DiscoverPage() {
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [chinaOnly, setChinaOnly] = useState(false)
   const [selectedTool, setSelectedTool] = useState<ToolItem | null>(null)
-  const [stats, setStats] = useState<SnapshotData | null>(null)
+  const { stats: statsData } = useStats()
 
-  useEffect(() => {
-    const basePath = getBasePath()
-    fetch(basePath + '/data/snapshots/latest.json')
-      .then(r => r.ok ? r.json() : null)
-      .then(data => {
-        if (data) setStats(Array.isArray(data) ? data[0] : data)
-      })
-      .catch(() => {})
-  }, [])
 
   // Count per hot category
   // Build category list from Master DB
@@ -130,21 +108,21 @@ export default function DiscoverPage() {
           <div className="flex items-center justify-center gap-6 sm:gap-10 mb-8">
             <div className="text-center">
               <div className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
-                {stats?.total_tools || tools.length}
+                {statsData?.total_tools || tools.length}
               </div>
               <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">收录工具</div>
             </div>
             <div className="w-px h-8 bg-slate-200 dark:bg-slate-700" />
             <div className="text-center">
               <div className="text-2xl sm:text-3xl font-bold text-emerald-500">
-                {stats?.new_this_week || 0}
+                {statsData?.new_this_week || 0}
               </div>
               <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">本周新增</div>
             </div>
             <div className="w-px h-8 bg-slate-200 dark:bg-slate-700" />
             <div className="text-center">
               <div className="text-2xl sm:text-3xl font-bold text-indigo-500">
-                {Object.keys(stats?.categories || {}).length || '—'}
+                {Object.keys(statsData?.category_counts || {}).length || '—'}
               </div>
               <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">分类覆盖</div>
             </div>
@@ -152,7 +130,7 @@ export default function DiscoverPage() {
 
           {/* Hot categories */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto">
-            {hotCategoryCounts.map(cat => (
+            {hotCategoryCounts.slice(0, 8).map(cat => (
               <button
                 key={cat.label}
                 onClick={() => setSelectedCategory(cat.label)}

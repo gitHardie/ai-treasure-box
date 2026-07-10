@@ -144,7 +144,7 @@ export function useRankings() {
 
   useEffect(() => {
     if (tools.length === 0) return
-    const sorted = [...tools].sort((a, b) => b.stars - a.stars)
+    const sorted = [...tools].sort((a, b) => (b.stars || 0) - (a.stars || 0))
     const ranked: RankingItem[] = sorted.map((item, idx) => ({
       ...item,
       rank: idx + 1,

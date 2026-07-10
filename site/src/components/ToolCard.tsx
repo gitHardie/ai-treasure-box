@@ -41,7 +41,8 @@ function langColor(lang?: string): string {
   return lang ? (map[lang] || 'text-slate-400') : ''
 }
 
-function formatStars(stars: number): string {
+function formatStars(stars: number | null | undefined): string {
+  if (!stars) return "0"
   if (stars >= 1000) return (stars / 1000).toFixed(1) + 'k'
   return stars.toString()
 }
@@ -80,7 +81,7 @@ function getDomain(url: string): string {
 
 function getDisplayTags(tool: ToolItem): string[] {
   if (tool.tags?.function && tool.tags.function.length > 0) return tool.tags.function
-  if (tool.topics && tool.topics.length > 0) return tool.topics
+  if (tool.topics && Array.isArray(tool.topics) && tool.topics.length > 0) return tool.topics
   return []
 }
 

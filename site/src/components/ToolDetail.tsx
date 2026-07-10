@@ -1,6 +1,7 @@
 import type { ToolItem } from '../types'
 
-function formatStars(stars: number): string {
+function formatStars(stars: number | null | undefined): string {
+  if (!stars) return "0"
   if (stars >= 1000) {
     return (stars / 1000).toFixed(1) + 'k'
   }
