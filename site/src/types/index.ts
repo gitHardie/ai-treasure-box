@@ -1,3 +1,11 @@
+export interface ToolTags {
+  function: string[]
+  scenario: string[]
+  attribute: string[]
+  tech: string[]
+  quality: string[]
+}
+
 export interface ToolItem {
   name: string
   full_name: string
@@ -9,6 +17,8 @@ export interface ToolItem {
   topics: string[]
   platform: string[]
   type: string
+  id?: string
+  tool_id?: string
   source?: string
   source_name?: string
   collected_at?: string
@@ -17,9 +27,33 @@ export interface ToolItem {
   license_type?: string
   health_status?: string
   ai_analysis?: string
+  ai_confidence?: number
   is_china_tool?: boolean
   category?: string
   subcategory?: string
+  tags?: ToolTags
+}
+
+export interface ToolsJsonData {
+  generated_at: string
+  count: number
+  tools: ToolItem[]
+}
+
+export interface CategoriesData {
+  generated_at: string
+  categories: Record<string, number>
+  subcategories: Record<string, number>
+}
+
+export interface StatsData {
+  generated_at: string
+  total_tools: number
+  category_counts: Record<string, number>
+  health_counts: Record<string, number>
+  license_counts: Record<string, number>
+  source_counts: Record<string, number>
+  updated_at: string
 }
 
 export interface ToolData {
@@ -62,7 +96,7 @@ export interface RankingItem extends ToolItem {
   rank_change: number
 }
 
-export type TabType = 'discover' | 'rankings' | 'news' | 'trends' | 'favorites' | 'about'
+export type TabType = "discover" | "rankings" | "news" | "trends" | "favorites" | "about"
 
 export interface CategoryInfo {
   id: string

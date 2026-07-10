@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import type { ToolItem, NewsItem, ToolData, NewsData, SnapshotData, RankingItem } from '../types'
+import type { ToolItem, NewsItem, ToolData, NewsData, SnapshotData, RankingItem, ToolsJsonData, CategoriesData, StatsData } from '../types'
 
 function getBasePath(): string {
   return import.meta.env.BASE_URL.replace(/\/$/, '')
@@ -15,60 +15,12 @@ export function useTools() {
       try {
         setLoading(true)
         const basePath = getBasePath()
-        let allTools: ToolItem[] = []
-        
-        try {
-          const manifestRes = await fetch(basePath + '/data/manifest.json')
-          if (manifestRes.ok) {
-            const manifest = await manifestRes.json()
-            const fetchPromises = manifest.sources.map(async (src: { source_id: string; latest_file: string; source_name: string }) => {
-              try {
-                const res = await fetch(basePath + '/data/tools/' + src.source_id + '/' + src.latest_file)
-                if (res.ok) {
-                  const data: ToolData = await res.json()
-                  return data.items.map((item: ToolItem) => ({
-                    ...item,
-                    source: data.source,
-                    source_name: data.source_name,
-                    collected_at: data.collected_at,
-                  }))
-                }
-              } catch (e) { /* skip */ }
-              return []
-            })
-            const results = await Promise.all(fetchPromises)
-            allTools = results.flat()
-          }
-        } catch (e) {
-          const knownSources = ['github-trending', 'producthunt', 'huggingface']
-          for (const src of knownSources) {
-            try {
-              const idxRes = await fetch(basePath + '/data/tools/' + src + '/index.json')
-              if (idxRes.ok) {
-                const idx = await idxRes.json()
-                const res = await fetch(basePath + '/data/tools/' + src + '/' + idx.latest)
-                if (res.ok) {
-                  const data: ToolData = await res.json()
-                  allTools.push(...data.items.map((item: ToolItem) => ({
-                    ...item,
-                    source: data.source,
-                    source_name: data.source_name,
-                    collected_at: data.collected_at,
-                  })))
-                }
-              }
-            } catch (e) { /* skip */ }
-          }
+        const res = await fetch(basePath + '/data/tools.json')
+        if (!res.ok) {
+          throw new Error('Failed to fetch tools.json: ' + res.status)
         }
-
-        const seen = new Set<string>()
-        const uniqueTools = allTools.filter(t => {
-          if (seen.has(t.name)) return false
-          seen.add(t.name)
-          return true
-        })
-        
-        setTools(uniqueTools)
+        const data: ToolsJsonData = await res.json()
+        setTools(data.tools || [])
         setError(null)
       } catch (e) {
         setError('Failed to load tools data')
@@ -77,11 +29,42 @@ export function useTools() {
         setLoading(false)
       }
     }
-
     fetchTools()
   }, [])
 
   return { tools, loading, error }
+}
+
+export function useCategories() {
+  const [categories, setCategories] = useState<CategoriesData | null>(null)
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const basePath = getBasePath()
+    fetch(basePath + '/data/categories.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(data => { if (data) setCategories(data) })
+      .catch(() => {})
+      .finally(() => setLoading(false))
+  }, [])
+
+  return { categories, loading }
+}
+
+export function useStats() {
+  const [stats, setStats] = useState<StatsData | null>(null)
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const basePath = getBasePath()
+    fetch(basePath + '/data/stats.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(data => { if (data) setStats(data) })
+      .catch(() => {})
+      .finally(() => setLoading(false))
+  }, [])
+
+  return { stats, loading }
 }
 
 export function useNews() {
@@ -95,7 +78,6 @@ export function useNews() {
         setLoading(true)
         const basePath = getBasePath()
         let allNews: NewsItem[] = []
-
         try {
           const res = await fetch(basePath + '/data/news/latest.json')
           if (res.ok) {
@@ -103,13 +85,11 @@ export function useNews() {
             allNews = data.items
           }
         } catch (e) { /* skip */ }
-
         allNews.sort((a, b) => {
           const dateA = new Date(a.published_at || a.collected_at || '0').getTime()
           const dateB = new Date(b.published_at || b.collected_at || '0').getTime()
           return dateB - dateA
         })
-
         setNews(allNews)
         setError(null)
       } catch (e) {
@@ -119,7 +99,6 @@ export function useNews() {
         setLoading(false)
       }
     }
-
     fetchNews()
   }, [])
 
@@ -137,7 +116,6 @@ export function useSnapshots() {
         setLoading(true)
         const basePath = getBasePath()
         let data: SnapshotData[] = []
-
         try {
           const res = await fetch(basePath + '/data/snapshots/latest.json')
           if (res.ok) {
@@ -145,7 +123,6 @@ export function useSnapshots() {
             data = Array.isArray(json) ? json : [json]
           }
         } catch (e) { /* skip */ }
-
         setSnapshots(data)
         setError(null)
       } catch (e) {
@@ -155,7 +132,6 @@ export function useSnapshots() {
         setLoading(false)
       }
     }
-
     fetchSnapshots()
   }, [])
 
@@ -168,7 +144,6 @@ export function useRankings() {
 
   useEffect(() => {
     if (tools.length === 0) return
-    
     const sorted = [...tools].sort((a, b) => b.stars - a.stars)
     const ranked: RankingItem[] = sorted.map((item, idx) => ({
       ...item,

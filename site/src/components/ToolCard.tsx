@@ -78,6 +78,22 @@ function getDomain(url: string): string {
   try { return new URL(url).hostname } catch { return '' }
 }
 
+function getDisplayTags(tool: ToolItem): string[] {
+  if (tool.tags?.function && tool.tags.function.length > 0) return tool.tags.function
+  if (tool.topics && tool.topics.length > 0) return tool.topics
+  return []
+}
+
+function sourceLabel(source?: string): string {
+  if (!source) return ''
+  const map: Record<string, string> = {
+    'github-trending': 'GitHub',
+    'arxiv-ai': 'ArXiv',
+    'hackernews-ai': 'HN',
+  }
+  return map[source] || source
+}
+
 interface Props {
   tool: ToolItem
   onClick: (tool: ToolItem) => void
@@ -86,11 +102,13 @@ interface Props {
 
 export default function ToolCard({ tool, onClick, index = 0 }: Props) {
   const { toggle, isFavorite } = useFavorites()
-  const toolId = tool.name + (tool.source || '')
+  const toolId = tool.tool_id || tool.name + (tool.source || '')
   const fav = isFavorite(toolId)
   const license = useMemo(() => licenseBadge(tool.license_tier || tool.license_type), [tool.license_tier, tool.license_type])
   const health = useMemo(() => healthDot(tool.health_status), [tool.health_status])
   const domain = getDomain(tool.url)
+  const displayTags = getDisplayTags(tool)
+  const src = sourceLabel(tool.source)
 
   return (
     <div
@@ -166,17 +184,30 @@ export default function ToolCard({ tool, onClick, index = 0 }: Props) {
           {tool.description}
         </p>
 
+
+        {/* AI Analysis snippet */}
+        {tool.ai_analysis && (
+          <p className="text-xs text-indigo-600/70 dark:text-indigo-400/60 line-clamp-1 mb-3 italic">
+            {tool.ai_analysis}
+          </p>
+        )}
+
         {/* Tags + badges */}
         <div className="flex flex-wrap items-center gap-1.5 mb-3">
           {license && (
             <span className={`badge text-[10px] ${license.cls}`}>{license.label}</span>
           )}
-          {tool.topics?.slice(0, 4).map(tag => (
+          {tool.category && (
+            <span className="badge text-[10px] bg-indigo-50 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300 font-medium">
+              {tool.category}
+            </span>
+          )}
+          {displayTags.slice(0, 4).map(tag => (
             <span key={tag} className={`badge ${tagColor(tag)}`}>{tag}</span>
           ))}
-          {tool.topics && tool.topics.length > 4 && (
+          {displayTags.length > 4 && (
             <span className="badge bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400">
-              +{tool.topics.length - 4}
+              +{displayTags.length - 4}
             </span>
           )}
         </div>
@@ -203,8 +234,8 @@ export default function ToolCard({ tool, onClick, index = 0 }: Props) {
               {formatStars(tool.forks)}
             </span>
           </div>
-          {tool.source_name && (
-            <span className="truncate max-w-[100px]">via {tool.source_name}</span>
+          {src && (
+            <span className="truncate max-w-[100px]">via {src}</span>
           )}
         </div>
       </div>

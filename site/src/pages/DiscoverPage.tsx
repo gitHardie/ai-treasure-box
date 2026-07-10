@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from 'react'
 import type { ToolItem, SnapshotData } from '../types'
-import { useTools } from '../hooks/useData'
+import { useTools, useCategories } from '../hooks/useData'
 import ToolCard from '../components/ToolCard'
 import ToolDetail from '../components/ToolDetail'
 import CategorySidebar from '../components/CategorySidebar'
@@ -24,6 +24,7 @@ function getBasePath(): string {
 
 export default function DiscoverPage() {
   const { tools, loading, error } = useTools()
+  const { categories: catsData } = useCategories()
   const [search, setSearch] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [chinaOnly, setChinaOnly] = useState(false)
@@ -41,44 +42,28 @@ export default function DiscoverPage() {
   }, [])
 
   // Count per hot category
+  // Build category list from Master DB
   const hotCategoryCounts = useMemo(() => {
-    return HOT_CATEGORIES.map(cat => ({
-      ...cat,
-      count: tools.filter(t =>
-        cat.keywords.some(kw =>
-          t.topics?.some(topic => topic.toLowerCase().includes(kw)) ||
-          t.name.toLowerCase().includes(kw) ||
-          t.description?.toLowerCase().includes(kw)
-        )
-      ).length
-    }))
-  }, [tools])
+    if (!catsData?.categories) return []
+    const emojiMap: Record<string, string> = {
+      '代码开发': '💻', '学术研究': '🔬', '数据分析': '📊',
+      '文本生成': '✍️', '图像创作': '🎨', '音视频': '🎵',
+      '教育培训': '📚', '办公效率': '⚡', '设计创意': '🎭',
+      '开发工具': '🛠️', '其他': '📦',
+    }
+    return Object.entries(catsData.categories)
+      .sort((a, b) => b[1] - a[1])
+      .map(([label, count]) => ({
+        label,
+        emoji: emojiMap[label] || '📁',
+        count,
+      }))
+  }, [catsData])
 
   // Filter by category
   const categoryFiltered = useMemo(() => {
     if (selectedCategory === 'all') return tools
-    const catDef = {
-      llm: ['llm', 'gpt', 'language-model', 'chat', 'ollama', 'openai'],
-      agent: ['agent', 'autonomous', 'auto-gpt', 'crew'],
-      'dev-tools': ['code', 'developer', 'ide', 'editor', 'debug', 'api', 'sdk', 'framework'],
-      image: ['image', 'art', 'draw', 'diffusion', 'midjourney', 'stable', 'dall'],
-      audio: ['audio', 'speech', 'tts', 'voice', 'music', 'sound', 'whisper'],
-      video: ['video', 'animation', 'motion', 'clip'],
-      data: ['data', 'analytics', 'visualization', 'chart', 'csv', 'table'],
-      writing: ['writing', 'text', 'content', 'blog', 'copy', 'seo', 'markdown'],
-      productivity: ['productivity', 'automation', 'workflow', 'tool', 'utility', 'search', 'crawler'],
-      research: ['research', 'paper', 'academic', 'science', 'arxiv', 'scholar'],
-      education: ['education', 'learn', 'course', 'study', 'tutor', 'quiz'],
-      security: ['security', 'privacy', 'encrypt', 'auth', 'vulnerability'],
-    }[selectedCategory] || []
-    return tools.filter(t =>
-      t.category === selectedCategory ||
-      catDef.some(kw =>
-        t.topics?.some(topic => topic.toLowerCase().includes(kw)) ||
-        t.name.toLowerCase().includes(kw) ||
-        t.description?.toLowerCase().includes(kw)
-      )
-    )
+    return tools.filter(t => t.category === selectedCategory)
   }, [tools, selectedCategory])
 
   // Search filter
@@ -90,6 +75,8 @@ export default function DiscoverPage() {
         tool.name.toLowerCase().includes(q) ||
         tool.description?.toLowerCase().includes(q) ||
         tool.topics?.some(t => t.toLowerCase().includes(q)) ||
+        tool.tags?.function?.some(t => t.toLowerCase().includes(q)) ||
+        tool.category?.toLowerCase().includes(q) ||
         tool.full_name?.toLowerCase().includes(q)
       )
     }
@@ -168,7 +155,7 @@ export default function DiscoverPage() {
             {hotCategoryCounts.map(cat => (
               <button
                 key={cat.label}
-                onClick={() => setSearch(cat.keywords[0])}
+                onClick={() => setSelectedCategory(cat.label)}
                 className="flex items-center gap-2 px-4 py-3 bg-white/60 dark:bg-slate-900/60 backdrop-blur-sm rounded-xl border border-slate-200/60 dark:border-slate-700/60 hover:border-indigo-300 dark:hover:border-indigo-600 hover:bg-white dark:hover:bg-slate-800 transition-all duration-200 group"
               >
                 <span className="text-xl group-hover:scale-110 transition-transform">{cat.emoji}</span>
