@@ -96,7 +96,7 @@ def build_latest_json(articles):
         source_names = ', '.join(s.get('name', '') for s in article.get('sources', []))
         items.append({
             'title': article['title'],
-            'url': item.get('url', ''),
+            'url': article.get('sources', [{}])[0].get('url', ''),
             'description': article.get('summary', ''),
             'source': source_names or article.get('sources', [{}])[0].get('name', ''),
             'published_at': article.get('published_at', article.get('original_time', '')),
@@ -122,9 +122,14 @@ def build_latest_json(articles):
 
 def build_articles_json(articles):
     """Build articles.json for article detail page."""
+    # Ensure published_at is always set
+    for a in articles:
+        if not a.get('published_at') and a.get('original_time'):
+            a['published_at'] = a['original_time']
+    
     sorted_articles = sorted(
         articles,
-        key=lambda x: x.get('published_at', x.get('original_time', '')),
+        key=lambda x: x.get('published_at', ''),
         reverse=True
     )
 
