@@ -50,6 +50,8 @@ jobs:
             python main.py run --mode "$MODE_ARG"
           fi
 
+      - name: Transform news data
+        run: python scripts/news_transform.py
       - name: Commit and push
         run: |
           git config user.name "AI Treasure Box Bot"

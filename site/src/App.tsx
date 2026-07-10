@@ -11,6 +11,7 @@ import TrendsPage from './pages/TrendsPage'
 import FavoritesPage from './pages/FavoritesPage'
 import AboutPage from './pages/AboutPage'
 import ToolDetail from './components/ToolDetail'
+import NewsTicker from './components/NewsTicker'
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<TabType>('discover')
@@ -58,6 +59,7 @@ export default function App() {
         onSearchOpen={() => setPaletteOpen(true)}
         favoriteCount={favoriteCount}
       />
+      <NewsTicker />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 pb-24 md:pb-6">
         <div className="page-transition">
           {renderPage()}

@@ -73,6 +73,10 @@ export interface NewsItem {
   published_at?: string
   collected_at?: string
   tags?: string[]
+  category?: string
+  category_label?: string
+  article_id?: string
+  summary?: string
 }
 
 export interface NewsData {
@@ -81,6 +85,25 @@ export interface NewsData {
   collected_at: string
   count: number
   items: NewsItem[]
+}
+
+export interface NewsArticle {
+  id: string
+  title: string
+  summary: string
+  content_markdown: string
+  content_html?: string
+  sources: { name: string; url: string }[]
+  published_at: string
+  tags: string[]
+  category: string
+  category_label: string
+}
+
+export interface ArticlesData {
+  generated_at: string
+  count: number
+  articles: NewsArticle[]
 }
 
 export interface SnapshotData {

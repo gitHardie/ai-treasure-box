@@ -109,8 +109,8 @@ export default function CategorySidebar({ tools, selectedCategory, onCategoryCha
       </aside>
 
       {/* Mobile: horizontal scroll */}
-      <div className="lg:hidden -mx-4 px-4 overflow-x-auto scrollbar-hide">
-        <div className="flex gap-2 pb-3 min-w-max">
+      <div className="lg:hidden min-w-0 overflow-hidden">
+        <div className="flex gap-2 pb-3 overflow-x-auto scrollbar-hide">
           {categories.map(cat => (
             <button
               key={cat.id}
