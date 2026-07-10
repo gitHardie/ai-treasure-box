@@ -157,7 +157,7 @@ export default function CommandPalette({ tools, isOpen, onClose, onSelect }: Pro
                       </p>
                     </div>
                     <div className="text-xs text-amber-500 font-medium shrink-0">
-                      ★ {result.tool.stars >= 1000 ? (result.tool.stars / 1000).toFixed(1) + 'k' : result.tool.stars}
+                      ★ {(result.tool.stars || 0) >= 1000 ? ((result.tool.stars || 0) / 1000).toFixed(1) + 'k' : (result.tool.stars || 0)}
                     </div>
                   </button>
                 ))}

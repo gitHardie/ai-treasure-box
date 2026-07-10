@@ -49,6 +49,7 @@ export interface CategoriesData {
 export interface StatsData {
   generated_at: string
   total_tools: number
+  new_this_week?: number
   category_counts: Record<string, number>
   health_counts: Record<string, number>
   license_counts: Record<string, number>
@@ -85,7 +86,7 @@ export interface NewsData {
 export interface SnapshotData {
   date: string
   total_tools: number
-  new_this_week: number
+  new_this_week?: number
   categories: Record<string, number>
   top_tools?: { name: string; stars: number }[]
 }
