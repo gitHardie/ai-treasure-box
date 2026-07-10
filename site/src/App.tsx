@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import type { TabType, ToolItem } from './types'
-import { useTools, useTheme } from './hooks/useData'
+import { useTools, useTheme, useNews } from './hooks/useData'
 import { useFavorites } from './hooks/useFavorites'
 import Navbar from './components/Navbar'
 import CommandPalette from './components/CommandPalette'
@@ -33,6 +33,7 @@ export default function App() {
   const [newsArticleId, setNewsArticleId] = useState<string | null>(() => parseHash().articleId)
   const { isDark, toggle } = useTheme()
   const { tools } = useTools()
+  const { news } = useNews()
   const { count: favoriteCount } = useFavorites()
   const [paletteOpen, setPaletteOpen] = useState(false)
   const [selectedTool, setSelectedTool] = useState<ToolItem | null>(null)
@@ -105,7 +106,7 @@ export default function App() {
         onSearchOpen={() => setPaletteOpen(true)}
         favoriteCount={favoriteCount}
       />
-      <NewsTicker />
+      <NewsTicker items={news} />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 pb-24 md:pb-6">
         <div className="page-transition">
           {renderPage()}

@@ -96,7 +96,7 @@ def build_latest_json(articles):
         source_names = ', '.join(s.get('name', '') for s in article.get('sources', []))
         items.append({
             'title': article['title'],
-            'url': f"#article-{article['id']}",
+            'url': item.get('url', ''),
             'description': article.get('summary', ''),
             'source': source_names or article.get('sources', [{}])[0].get('name', ''),
             'published_at': article.get('published_at', article.get('original_time', '')),
