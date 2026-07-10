@@ -16,6 +16,7 @@ import logging
 import hashlib
 from typing import List, Dict, Any, Optional
 from datetime import datetime, timezone
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
@@ -39,12 +40,13 @@ class AIAnalyzer:
     HEALTH_LEVELS = ["active", "moderate", "dormant", "archived"]
 
     def __init__(self, coze_api_key: Optional[str] = None, workflow_id: Optional[str] = None,
-                 batch_size: int = 20, batch_timeout: int = 120):
+                 batch_size: int = 20, batch_timeout: int = 120, mode: str = "batch"):
         self.coze_api_key = coze_api_key or os.environ.get("COZE_API_KEY", "") or os.environ.get("AI_BOX_COZE", "")
         self.workflow_id = workflow_id or os.environ.get("COZE_WORKFLOW_ID", "")
         self.use_coze = bool(self.coze_api_key and self.workflow_id)
         self.batch_size = batch_size
         self.batch_timeout = batch_timeout
+        self.mode = mode  # "loop" or "batch"
 
     def analyze_tool(self, tool_data: Dict) -> Dict:
         """
@@ -82,6 +84,8 @@ class AIAnalyzer:
         all_results = []
 
         if self.use_coze:
+            if self.mode == "loop":
+                return self._analyze_loop_mode(tools)
             # 批量模式：打包送Coze
             for i in range(0, len(tools), self.batch_size):
                 batch = tools[i:i + self.batch_size]
@@ -357,6 +361,153 @@ class AIAnalyzer:
             logger.warning(f"Coze analysis failed: {e}, falling back to local analysis")
 
         return self._analyze_local(tool_data)
+
+
+    # ============================
+    # 循环模式：逐个工具调Coze
+    # ============================
+
+    def _analyze_loop_mode(self, tools: List[Dict]) -> List[Dict]:
+        """循环模式：逐个工具调Coze工作流，并行3个"""
+        results, total = [], len(tools)
+
+        def analyze_one(idx_tool):
+            idx, tool = idx_tool
+            name = tool.get("name", "unknown")
+            logger.info(f"  [Loop] Analyzing [{idx+1}/{total}]: {name}")
+            analysis = self._analyze_single_with_coze(tool)
+            return {**tool, **analysis, "id": tool.get("id",""), "tool_id": tool.get("id","")}
+
+        with ThreadPoolExecutor(max_workers=3) as executor:
+            futures = {executor.submit(analyze_one, (i, t)): i for i, t in enumerate(tools)}
+            for future in as_completed(futures):
+                try:
+                    results.append(future.result())
+                except Exception as e:
+                    idx = futures[future]
+                    tool = tools[idx]
+                    logger.warning(f"  [Loop] Failed for {tool.get('name','?')}: {e}")
+                    analysis = self._analyze_local(tool)
+                    results.append({**tool, **analysis, "id": tool.get("id",""), "tool_id": tool.get("id","")})
+
+        id_order = {t.get("id",""): i for i, t in enumerate(tools)}
+        results.sort(key=lambda r: id_order.get(r.get("id",""), 999))
+        logger.info(f"[Loop] Complete: {len(results)}/{total} tools analyzed")
+        return results
+
+    def _analyze_single_with_coze(self, tool: Dict) -> Dict:
+        """发送单个工具到Coze工作流分析"""
+        prompt = self._build_single_tool_prompt(tool)
+        try:
+            resp = requests.post(
+                "https://api.coze.cn/v1/workflow/run",
+                headers={"Authorization": f"Bearer {self.coze_api_key}", "Content-Type": "application/json"},
+                json={"workflow_id": self.workflow_id, "parameters": {"input": prompt}},
+                timeout=self.batch_timeout
+            )
+            if resp.status_code == 200:
+                result = resp.json()
+                if result.get("code") == 0:
+                    raw_data = result.get("data")
+                    analysis = self._parse_coze_response_data(raw_data)
+                    return self._normalize_analysis(analysis, tool)
+                else:
+                    logger.warning(f"  Coze error: code={result.get('code')}, msg={result.get('msg')}")
+            else:
+                logger.warning(f"  Coze HTTP {resp.status_code}: {resp.text[:200]}")
+        except Exception as e:
+            logger.warning(f"  Coze single failed: {e}")
+        return self._analyze_local(tool)
+
+    def _build_single_tool_prompt(self, tool: Dict) -> str:
+        """构建单工具分析提示词"""
+        name = tool.get("name", "")
+        url = tool.get("url", "")
+        desc = tool.get("description", "")
+        desc_zh = tool.get("description_zh", "")
+        source = tool.get("source", "")
+        stars = tool.get("stars", 0) or tool.get("raw_data", {}).get("stargazers_count", 0)
+        license_info = tool.get("license", "") or tool.get("raw_data", {}).get("license", "N/A")
+        topics = ", ".join(tool.get("topics", [])[:10]) or "无"
+        language = tool.get("language", "N/A")
+        pushed_at = tool.get("raw_data", {}).get("pushed_at", "N/A")
+        forks = tool.get("forks", 0) or tool.get("raw_data", {}).get("forks_count", 0)
+        cats = "/".join(self.CATEGORIES)
+        tiers = "/".join(self.LICENSE_TIERS)
+        levels = "/".join(self.HEALTH_LEVELS)
+
+        return (
+            "请独立分析以下AI工具（不要照搬描述，给出你的判断）。\n\n"
+            f"名称: {name}\n来源: {source}\nURL: {url}\n描述: {desc}\n"
+            f"中文描述: {desc_zh or '无'}\nStars: {stars}\nForks: {forks}\n"
+            f"语言: {language}\n许可证: {license_info}\n更新: {pushed_at}\n标签: {topics}\n\n"
+            "请严格按以下JSON格式返回（只返回JSON，不要其他文字）：\n"
+            '{"category":"' + cats + '中选一个","subcategory":"二级分类",'
+            '"license_tier":"' + tiers + '中选一个","license_type":"具体许可证或空字符串",'
+            '"tags":{"function":["功能标签"],"scenario":["场景标签"],"attribute":["属性标签"],"tech":["技术标签"],"quality":["质量标签"]},'
+            '"ai_analysis":"2-3句中文说明这工具做什么、适合谁",'
+            '"ai_confidence":0.8,"is_china_tool":false,"health_status":"' + levels + '中选一个"}'
+        )
+
+    def _parse_coze_response_data(self, raw_data):
+        """解析Coze工作流返回数据（处理嵌套格式）"""
+        if isinstance(raw_data, str):
+            try: data_obj = json.loads(raw_data)
+            except: return {"output": raw_data}
+        elif isinstance(raw_data, dict): data_obj = raw_data
+        else: return raw_data
+        output_val = data_obj.get("output", data_obj)
+        if isinstance(output_val, str):
+            try: return json.loads(output_val)
+            except: return self._extract_json_array(output_val)
+        elif isinstance(output_val, dict): return output_val
+        elif isinstance(output_val, list): return output_val
+        return data_obj
+
+    def _normalize_analysis(self, analysis, tool=None) -> Dict:
+        """标准化分析结果到统一格式"""
+        if not isinstance(analysis, dict):
+            return self._analyze_local(tool) if tool else self._empty_analysis()
+        r = {}
+        cat = analysis.get("category", "")
+        r["category"] = cat if cat in self.CATEGORIES else (self._fuzzy_match_category(cat) or (self._analyze_local(tool)["category"] if tool else "其他"))
+        r["subcategory"] = analysis.get("subcategory", "")
+        lt = analysis.get("license_tier", "unknown")
+        r["license_tier"] = lt if lt in self.LICENSE_TIERS else "unknown"
+        r["license_type"] = analysis.get("license_type", "")
+        rt = analysis.get("tags", {})
+        if isinstance(rt, dict):
+            r["tags"] = {k: (rt.get(k, []) if isinstance(rt.get(k), list) else []) for k in ["function","scenario","attribute","tech","quality"]}
+        else:
+            r["tags"] = {"function":[],"scenario":[],"attribute":[],"tech":[],"quality":[]}
+        ai = analysis.get("ai_analysis") or analysis.get("summary") or analysis.get("analysis") or analysis.get("description") or ""
+        if not ai and tool: ai = self._analyze_local(tool).get("ai_analysis", "")
+        r["ai_analysis"] = ai
+        try: conf = max(0.0, min(1.0, float(analysis.get("ai_confidence", analysis.get("confidence", 0.7)))))
+        except: conf = 0.5
+        r["ai_confidence"] = conf
+        r["is_china_tool"] = bool(analysis.get("is_china_tool", False))
+        hs = analysis.get("health_status", "unknown")
+        r["health_status"] = hs if hs in self.HEALTH_LEVELS else "unknown"
+        return r
+
+    def _fuzzy_match_category(self, text) -> Optional[str]:
+        if not text: return None
+        t = text.lower()
+        for c in self.CATEGORIES:
+            if c in t or t in c: return c
+        kw_map = {"文本生成":["text","写作","chat","翻译"],"图像创作":["image","图片","绘图"],"代码开发":["code","编程","开发"],
+                  "数据分析":["data","分析"],"音视频":["audio","video","语音"],"办公效率":["office","办公","效率"],
+                  "学术研究":["研究","论文"],"开发工具":["tool","cli","工具"],"设计创意":["design","设计"],
+                  "营销推广":["marketing","营销"],"教育培训":["education","教育","学习"]}
+        for c, kws in kw_map.items():
+            if any(k in t for k in kws): return c
+        return None
+
+    def _empty_analysis(self) -> Dict:
+        return {"category":"其他","subcategory":"","license_tier":"unknown","license_type":"",
+                "tags":{"function":[],"scenario":[],"attribute":[],"tech":[],"quality":[]},
+                "ai_analysis":"","ai_confidence":0.0,"is_china_tool":False,"health_status":"unknown"}
 
     # ============================
     # 本地规则分析引擎（完整保留）
