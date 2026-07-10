@@ -108,14 +108,14 @@ export default function CategorySidebar({ tools, selectedCategory, onCategoryCha
         </div>
       </aside>
 
-      {/* Mobile: horizontal scroll */}
-      <div className="lg:hidden min-w-0 overflow-hidden">
-        <div className="flex gap-2 pb-3 overflow-x-auto scrollbar-hide">
+      {/* Mobile: wrapping tag cloud */}
+      <div className="lg:hidden min-w-0">
+        <div className="flex flex-wrap gap-2 pb-3">
           {categories.map(cat => (
             <button
               key={cat.id}
               onClick={() => onCategoryChange(cat.id)}
-              className={`flex items-center gap-1.5 px-3 py-2 rounded-full text-sm whitespace-nowrap transition-all ${
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm transition-all ${
                 selectedCategory === cat.id
                   ? 'bg-indigo-500 text-white shadow-md shadow-indigo-500/25'
                   : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700 hover:border-indigo-300 dark:hover:border-indigo-600'

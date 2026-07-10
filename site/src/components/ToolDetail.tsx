@@ -82,11 +82,11 @@ export default function ToolDetail({ tool, onClose }: Props) {
           </svg>
         </button>
 
-        <div className="p-6">
+        <div className="p-6 pr-14">
           {/* Title section */}
           <div className="mb-6">
-            <div className="flex items-start gap-4">
-              <div className="flex-1">
+            <div className="flex flex-wrap items-start gap-4">
+              <div className="flex-1 min-w-0">
                 <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
                   {tool.name}
                 </h2>
