@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { useNews } from '../hooks/useData'
 import LoadingState from '../components/LoadingState'
 import EmptyState from '../components/EmptyState'
@@ -24,7 +24,18 @@ export default function NewsPage({ articleId, onArticleBack }: Props) {
   const { news, loading, error } = useNews()
   const [selectedCategory, setSelectedCategory] = useState('all')
 
-  // If viewing an article, render article page
+  // ALL hooks must be called BEFORE any conditional return (React Rules of Hooks)
+  const filteredNews = useMemo(() => {
+    if (selectedCategory === 'all') return news
+    return news.filter(item => item.category === selectedCategory)
+  }, [news, selectedCategory])
+
+  // Scroll to top when switching between article and list view
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [articleId])
+
+  // If viewing an article, render article page (AFTER all hooks)
   if (articleId) {
     return (
       <ArticlePage
@@ -35,12 +46,6 @@ export default function NewsPage({ articleId, onArticleBack }: Props) {
       />
     )
   }
-
-  // Filter news by category
-  const filteredNews = useMemo(() => {
-    if (selectedCategory === 'all') return news
-    return news.filter(item => item.category === selectedCategory)
-  }, [news, selectedCategory])
 
   if (loading) {
     return <LoadingState message="正在加载资讯..." />
@@ -103,9 +108,9 @@ export default function NewsPage({ articleId, onArticleBack }: Props) {
 
       {/* News list */}
       <div className="space-y-3">
-        {filteredNews.map((item, idx) => (
+        {filteredNews.map((item) => (
           <div
-            key={idx}
+            key={item.article_id || item.title}
             onClick={() => {
               if (item.article_id) {
                 window.location.hash = `#/news/${item.article_id}`
