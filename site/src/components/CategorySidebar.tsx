@@ -16,6 +16,10 @@ const emojiMap: Record<string, string> = {
   '其他': '📦',
 }
 
+function formatCount(n: number): string {
+  return n > 99 ? '99+' : String(n)
+}
+
 interface Props {
   tools: ToolItem[]
   selectedCategory: string
@@ -28,11 +32,10 @@ export default function CategorySidebar({ tools, selectedCategory, onCategoryCha
   const [expanded, setExpanded] = useState(true)
   const { categories: catsData } = useCategories()
 
+  // No "all" item — clear filter button handles that
   const categories = useMemo(() => {
-    const allItem = { id: 'all', label: '全部工具', emoji: '🏠', count: tools.length }
-    if (!catsData?.categories) return [allItem]
-
-    const catList = Object.entries(catsData.categories)
+    if (!catsData?.categories) return []
+    return Object.entries(catsData.categories)
       .sort((a, b) => b[1] - a[1])
       .map(([label, count]) => ({
         id: label,
@@ -40,9 +43,7 @@ export default function CategorySidebar({ tools, selectedCategory, onCategoryCha
         emoji: emojiMap[label] || '📁',
         count,
       }))
-
-    return [allItem, ...catList]
-  }, [catsData, tools.length])
+  }, [catsData])
 
   return (
     <>
@@ -93,12 +94,12 @@ export default function CategorySidebar({ tools, selectedCategory, onCategoryCha
                 {expanded && (
                   <>
                     <span className="flex-1 text-sm truncate">{cat.label}</span>
-                    <span className={`text-xs tabular-nums ${
+                    <span className={`text-xs tabular-nums w-7 text-right ${
                       selectedCategory === cat.id
                         ? 'text-indigo-500 dark:text-indigo-400 font-medium'
                         : 'text-slate-400 dark:text-slate-500'
                     }`}>
-                      {cat.count}
+                      {formatCount(cat.count)}
                     </span>
                   </>
                 )}
@@ -108,23 +109,27 @@ export default function CategorySidebar({ tools, selectedCategory, onCategoryCha
         </div>
       </aside>
 
-      {/* Mobile: wrapping tag cloud */}
+      {/* Mobile: fixed-width grid tags */}
       <div className="lg:hidden min-w-0">
-        <div className="flex flex-wrap gap-2 pb-3">
+        <div className="grid grid-cols-3 gap-2 pb-3">
           {categories.map(cat => (
             <button
               key={cat.id}
               onClick={() => onCategoryChange(cat.id)}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm transition-all ${
+              className={`flex items-center justify-between px-2.5 py-2 rounded-xl text-sm transition-all ${
                 selectedCategory === cat.id
                   ? 'bg-indigo-500 text-white shadow-md shadow-indigo-500/25'
-                  : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700 hover:border-indigo-300 dark:hover:border-indigo-600'
+                  : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700 active:border-indigo-400'
               }`}
             >
-              <span>{cat.emoji}</span>
-              <span>{cat.label}</span>
-              <span className={`text-xs ${selectedCategory === cat.id ? 'text-indigo-200' : 'text-slate-400'}`}>
-                {cat.count}
+              <span className="flex items-center gap-1.5 min-w-0">
+                <span className="shrink-0">{cat.emoji}</span>
+                <span className="truncate text-xs">{cat.label}</span>
+              </span>
+              <span className={`text-[10px] tabular-nums ml-1 shrink-0 ${
+                selectedCategory === cat.id ? 'text-indigo-200' : 'text-slate-400'
+              }`}>
+                {formatCount(cat.count)}
               </span>
             </button>
           ))}
