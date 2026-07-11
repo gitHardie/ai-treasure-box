@@ -1,6 +1,5 @@
 import { useState, useMemo } from 'react'
 import type { ToolItem } from '../types'
-import { useCategories } from '../hooks/useData'
 
 const emojiMap: Record<string, string> = {
   '代码开发': '💻',
@@ -26,16 +25,28 @@ interface Props {
   onCategoryChange: (cat: string) => void
   chinaOnly: boolean
   onChinaOnlyChange: (v: boolean) => void
+  /** Pre-computed category counts from filtered tools (excludes papers/news) */
+  categoryCounts?: Record<string, number>
 }
 
-export default function CategorySidebar({ tools, selectedCategory, onCategoryChange, chinaOnly, onChinaOnlyChange }: Props) {
+export default function CategorySidebar({ tools, selectedCategory, onCategoryChange, chinaOnly, onChinaOnlyChange, categoryCounts }: Props) {
   const [expanded, setExpanded] = useState(true)
-  const { categories: catsData } = useCategories()
 
-  // No "all" item — clear filter button handles that
   const categories = useMemo(() => {
-    if (!catsData?.categories) return []
-    return Object.entries(catsData.categories)
+    // If parent provides counts, use them; otherwise compute from tools
+    let counts: Record<string, number>
+    if (categoryCounts) {
+      counts = categoryCounts
+    } else {
+      counts = {}
+      for (const t of tools) {
+        const c = t.category || '其他'
+        counts[c] = (counts[c] || 0) + 1
+      }
+    }
+
+    return Object.entries(counts)
+      .filter(([, count]) => count > 0)
       .sort((a, b) => b[1] - a[1])
       .map(([label, count]) => ({
         id: label,
@@ -43,7 +54,7 @@ export default function CategorySidebar({ tools, selectedCategory, onCategoryCha
         emoji: emojiMap[label] || '📁',
         count,
       }))
-  }, [catsData])
+  }, [tools, categoryCounts])
 
   return (
     <>

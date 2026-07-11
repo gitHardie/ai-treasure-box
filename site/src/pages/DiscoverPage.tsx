@@ -29,28 +29,43 @@ export default function DiscoverPage() {
     })
   }, [tools])
 
+  // Exclude papers and news - these are not usable tools
+  const realTools = useMemo(() => {
+    return uniqueTools.filter(t => t.type !== 'paper' && t.type !== 'news')
+  }, [uniqueTools])
+
+  // Compute category counts from real tools only
+  const realCategoryCounts = useMemo(() => {
+    const counts: Record<string, number> = {}
+    for (const t of realTools) {
+      const c = t.category || '其他'
+      counts[c] = (counts[c] || 0) + 1
+    }
+    return counts
+  }, [realTools])
+
   // Count per hot category
   // Build category list from Master DB
   const hotCategoryCounts = useMemo(() => {
-    if (!catsData?.categories) return []
     const emojiMap: Record<string, string> = {
       '代码开发': '💻', '学术研究': '🔬', '数据分析': '📊',
       '文本生成': '✍️', '图像创作': '🎨', '音视频': '🎵',
       '教育培训': '📚', '办公效率': '⚡', '设计创意': '🎭',
       '开发工具': '🛠️', '其他': '📦',
     }
-    return Object.entries(catsData.categories)
+    return Object.entries(realCategoryCounts)
+      .filter(([, count]) => count > 0)
       .sort((a, b) => b[1] - a[1])
       .map(([label, count]) => ({
         label,
         emoji: emojiMap[label] || '📁',
         count,
       }))
-  }, [catsData])
+  }, [realCategoryCounts])
 
   // SINGLE useMemo for all filtering - eliminates intermediate caching issues
   const filteredTools = useMemo(() => {
-    let result = uniqueTools
+    let result = realTools
 
     // Step 1: Filter by category
     if (selectedCategory !== 'all') {
@@ -76,7 +91,7 @@ export default function DiscoverPage() {
     }
 
     return result
-  }, [uniqueTools, selectedCategory, chinaOnly, search])
+  }, [realTools, selectedCategory, chinaOnly, search])
 
   // Scroll to grid when category changes
   useEffect(() => {
@@ -138,7 +153,7 @@ export default function DiscoverPage() {
           <div className="hidden sm:flex items-center justify-center gap-6 sm:gap-10 mb-8">
             <div className="text-center">
               <div className="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
-                {statsData?.total_tools || uniqueTools.length}
+                {statsData?.total_tools || realTools.length}
               </div>
               <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">收录工具</div>
             </div>
@@ -180,11 +195,12 @@ export default function DiscoverPage() {
       {/* Main content with sidebar */}
       <div className="flex flex-col lg:flex-row gap-6">
         <CategorySidebar
-          tools={uniqueTools}
+          tools={realTools}
           selectedCategory={selectedCategory}
           onCategoryChange={setSelectedCategory}
           chinaOnly={chinaOnly}
           onChinaOnlyChange={setChinaOnly}
+          categoryCounts={realCategoryCounts}
         />
 
         <div className="flex-1 min-w-0 space-y-6">
@@ -193,7 +209,7 @@ export default function DiscoverPage() {
             <p className="text-sm text-slate-500 dark:text-slate-400">
               {search || selectedCategory !== 'all'
                 ? `找到 ${filteredTools.length} 个工具`
-                : `共 ${uniqueTools.length} 个工具`}
+                : `共 ${realTools.length} 个工具`}
             </p>
             {selectedCategory !== 'all' && (
               <button

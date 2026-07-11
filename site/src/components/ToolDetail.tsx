@@ -149,7 +149,9 @@ export default function ToolDetail({ tool, onClose }: Props) {
           )}
 
           {/* Stats */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6" style={{gridTemplateColumns: `repeat(auto-fill, minmax(120px, 1fr))`}}>
+            {(tool.stars ?? 0) > 0 && (
+            <>
             <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-3 text-center">
               <div className="text-2xl font-bold text-amber-500">{formatStars(tool.stars)}</div>
               <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">Stars</div>
@@ -158,6 +160,8 @@ export default function ToolDetail({ tool, onClose }: Props) {
               <div className="text-2xl font-bold text-indigo-500">{formatStars(tool.forks)}</div>
               <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">Forks</div>
             </div>
+            </>
+            )}
             {tool.language && (
               <div className="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-3 text-center">
                 <div className="text-2xl font-bold text-slate-700 dark:text-slate-300">{tool.language}</div>
