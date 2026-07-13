@@ -1,139 +1,7 @@
 {
-  "generated_at": "2026-07-13T03:46:38.745554+00:00",
-  "count": 20,
+  "generated_at": "2026-07-13T03:50:44.556488+00:00",
+  "count": 16,
   "articles": [
-    {
-      "title": "DeepSeek V4定档7月15日全量上线，中国AI大模型调用量首超美国",
-      "summary": "DeepSeek V4正式版7月15日全量上线，Pro旗舰版1.6万亿参数、Flash轻量版2840亿参数，全系标配100万token上下文，发布即适配八大国产芯片。API定价低至GPT-5.5百分之一，引入峰谷分时计费。与此同时，OpenRouter数据显示中国AI模型周调用量达23.45万亿Token，首次稳定超越美国，全球前五占四席。",
-      "content_markdown": "DeepSeek V4正式版将于7月15日全量上线，推出Pro旗舰版（1.6万亿参数、49B激活）和Flash轻量版（2840亿参数、13B激活）双版本，全系标配100万token超长上下文。Pro版在百万上下文下计算量仅前代V3.2的27%，内存占用仅10%。更值得关注的是，V4发布首日即完成华为昇腾、寒武纪、海光、摩尔线程等八大国产芯片的全量适配，证明国产算力足以支撑万亿级参数模型运行。\n\nAPI定价方面，V4低至GPT-5.5的百分之一，同时引入峰谷分时计费机制（高峰时段翻倍）。已有美国企业切换至DeepSeek后数月内节省数百万美元。\n\n与此同时，OpenRouter最新数据显示（6月29日-7月5日），中国AI大模型周调用量达23.45万亿Token，环比增长15%，连续六周增长，首次稳定超越美国。全球前五名中中国占据四席。中国模型份额从一年前的11%跃升至30%以上，核心驱动力是\"性能差距仅1%-4%，价格低60%-90%\"的极致性价比。",
-      "sources": [
-        {
-          "name": "智科小探/头条",
-          "url": "http://m.toutiao.com/group/7661489475624665651/"
-        },
-        {
-          "name": "e公司",
-          "url": "https://www.egsea.com/quotation/stock-info.html?code=sh603019"
-        },
-        {
-          "name": "CSDN/AI前沿速报",
-          "url": "https://blog.csdn.net/qq_32808455/article/details/162643337"
-        },
-        {
-          "name": "头条/中国AI大模型全球反攻",
-          "url": "http://m.toutiao.com/group/7661666588755624499/"
-        }
-      ],
-      "original_time": "2026-07-12T12:00:00+08:00",
-      "tags": [
-        "DeepSeek",
-        "V4",
-        "国产芯片",
-        "OpenRouter",
-        "中美AI竞争"
-      ],
-      "category": "model_release",
-      "id": "2026-07-13-morning-005",
-      "category_label": "模型发布",
-      "published_at": "2026-07-12T12:00:00+08:00"
-    },
-    {
-      "title": "美国国会一周密集推出多项AI法案，监管框架加速成型",
-      "summary": "美国国会本周密集推进多项AI法案。269页《2026年大美国人工智能法案》要求前沿AI公司半年安全审计、违规罚百万/天；冻结州级AI法规3年。数据中心能源争议升温，Q1全美75个总值1300亿美元项目被抗议阻止。EU AI法案透明度义务8月2日生效。",
-      "content_markdown": "美国国会本周在AI监管领域密集发力，多项法案同时推进，呈现\"促进与约束并行\"的双轨态势：\n\n**重大立法：** 两党议员发布269页讨论草案《2026年大美国人工智能法案》，由加州共和党议员Obernolte和马萨诸塞州民主党议员Trahan联合牵头。法案要求\"大型前沿开发者\"（OpenAI、Google DeepMind、Anthropic等）每半年接受独立安全审计、强制披露灾难性风险场景，违规罚款最高每日100万美元。最具争议的是冻结州级AI法规3年的条款。\n\n**数据中心之争：** 参议员Sanders和众议员AOC提出暂停新建数据中心法案；参议员Markey提出AI问责议程，要求数据中心获FCC认证\"不会伤害公共利益\"。2026年Q1，全美75个总值1300亿美元的AI数据中心项目被抗议阻止或延迟，反对组织从396个增至833个，覆盖49个州。\n\n**其他法案：** People-First Chatbot Act禁止使用未成年人数据训练聊天机器人；Spot the Fakes Act要求AI生成内容携带元数据标签；EU方面，AI法案第50条透明度义务将于8月2日生效。",
-      "sources": [
-        {
-          "name": "AI-Damn/AI Bill",
-          "url": "https://ai-damn.com/u-s-unveils-sweeping-ai-bill-tech-giants-under-microscope-states-sidelined-1780873965187"
-        },
-        {
-          "name": "Artiverse/Congress AI Week",
-          "url": "https://www.artiverse.ca/congress-tackles-ais-promise-and-power-drain-in-one-week/"
-        },
-        {
-          "name": "CNN/Trump延迟AI行政令",
-          "url": "https://cnnbc.com/trump-delays-ai-oversight-executive-order-at-the-last-minute-extending-policy-uncertainty"
-        },
-        {
-          "name": "ForthWorth24/Markey AI Agenda",
-          "url": "https://forthworth24.com/a-us-senator-has-a-plan-to-make-ai-answer-for-its-harms-it-starts-with-your-local-data-centre"
-        }
-      ],
-      "original_time": "2026-07-12T08:00:00+08:00",
-      "tags": [
-        "AI监管",
-        "美国国会",
-        "数据中心",
-        "EU AI Act",
-        "政策"
-      ],
-      "category": "industry_policy",
-      "id": "2026-07-13-morning-004",
-      "category_label": "行业政策",
-      "published_at": "2026-07-12T08:00:00+08:00"
-    },
-    {
-      "title": "苹果正式起诉OpenAI窃取商业机密，科技巨头合作彻底破裂",
-      "summary": "苹果公司7月10日向加州联邦法院提起诉讼，指控OpenAI系统性窃取商业机密用于自研硬件。起诉书披露400+前苹果员工被挖走、首席硬件官Tang Tan等具体案例。此事发生在OpenAI筹备8520亿美元IPO关键时期，标志两家公司关系从2024年合作彻底走向对立。",
-      "content_markdown": "苹果公司7月10日向美国加州北区联邦法院提起诉讼，指控OpenAI系统性窃取苹果商业机密，用于开发自有硬件设备。这份长达41页的起诉书显示，OpenAI已在各个层级——从技术人员到首席硬件官——挖走苹果员工并获取机密信息，目前已有超过400名前苹果员工在OpenAI工作。\n\n诉讼披露了多个具体案例：首席硬件官Tang Tan（前苹果24年资深员工）在招聘时使用苹果内部项目代号，并要求仍在苹果任职的求职者携带\"实物零部件\"参加面试；前工程师Chang Liu离职时未归还苹果笔记本电脑，利用身份验证漏洞进入公司内部网络下载数十份机密文件。苹果要求OpenAI赔偿损失、归还所有涉密材料，并重新设计其硬件产品以剔除苹果技术。\n\n此事发生在OpenAI筹备IPO（估值约8520亿美元）的关键时期，标志着两家公司的关系从2024年WWDC上的\"模范合作\"彻底走向对立。OpenAI回应称\"对其他公司的商业机密不感兴趣\"。",
-      "sources": [
-        {
-          "name": "法治日报",
-          "url": "http://m.legaldaily.com.cn/index/content/2026-07/12/content_9422101.htm"
-        },
-        {
-          "name": "36氪/新浪财经",
-          "url": "https://finance.sina.com.cn/wm/2026-07-12/doc-inihpuec2940903.shtml"
-        },
-        {
-          "name": "凤凰网/红星新闻",
-          "url": "https://news.ifeng.com/c/8uhI1MrQgin"
-        },
-        {
-          "name": "AICoin",
-          "url": "https://www.aicoin.com/en/article/543839"
-        }
-      ],
-      "original_time": "2026-07-10T23:00:00+08:00",
-      "tags": [
-        "OpenAI",
-        "苹果",
-        "商业机密",
-        "诉讼",
-        "IPO"
-      ],
-      "category": "other",
-      "id": "2026-07-13-morning-003",
-      "category_label": "其他",
-      "published_at": "2026-07-10T23:00:00+08:00"
-    },
-    {
-      "title": "中国首个全国产十万卡AI超集群曙光8000正式落成",
-      "summary": "中科曙光7月10日宣布中国首个全国产十万卡AI超集群——曙光8000（登峰）正式落成并接入国家超算互联网。集群100%全链路国产化，不依赖海外高端GPU，有效规避芯片出口管制。",
-      "content_markdown": "7月10日，中科曙光在光合组织2026智能计算应用大会上宣布，中国首个全国产十万卡AI超集群——曙光8000（登峰）正式落成，同步接入国家超算互联网。该集群实现100%全链路国产化，核心处理器、内存、高速网络、调度软件全部自研，创新将矩阵加速单元集成到处理器内部，不依赖海外高端GPU，有效规避芯片出口管制限制。\n\n这标志着中国在AI算力基础设施方面取得重大突破，为全国产大模型训练和推理提供顶级算力支撑。",
-      "sources": [
-        {
-          "name": "e公司",
-          "url": "https://www.egsea.com/quotation/stock-info.html?code=sh603019"
-        },
-        {
-          "name": "人民财讯",
-          "url": "https://www.egsea.com/quotation/stock-info.html?code=sh603019"
-        }
-      ],
-      "original_time": "2026-07-10T14:00:00+08:00",
-      "tags": [
-        "曙光8000",
-        "国产算力",
-        "超算",
-        "昇腾",
-        "AI基础设施"
-      ],
-      "category": "tech_breakthrough",
-      "id": "2026-07-13-morning-002",
-      "category_label": "技术突破",
-      "published_at": "2026-07-10T14:00:00+08:00"
-    },
     {
       "title": "人形机器人量产提速：工信部确认年产量冲刺10万台，具身智能融资半年破900亿",
       "summary": "工信部在WAIC新闻发布会上披露2026年国内人形机器人全年整机产量有望突破10万台，较2025年全球产量实现约5倍增长。上半年具身智能赛道融资超900亿元，同比增长约5倍。此外，开源AI工具Ollama完成6500万美元B轮融资，月活开发者近890万。",
@@ -386,42 +254,6 @@
       "published_at": "2026-07-09T20:00:00+08:00"
     },
     {
-      "title": "AI模型密集发布周：GPT-Live、Grok 4.5、Anthropic Reflect集中亮相",
-      "summary": "本周多家AI巨头密集发布新产品。OpenAI推出GPT-Live语音模型支持双工交互；SpaceXAI发布Grok 4.5（1.5万亿参数），号称Opus级但价格低十倍，但上线不到一天即被越狱；Anthropic为Claude新增Reflect功能追踪使用数据。AI竞争进入白热化阶段。",
-      "content_markdown": "本周多家AI巨头密集发布新产品，竞争进入白热化阶段：\n\n**OpenAI GPT-Live（7月9日）**：全新语音模型，支持双工交互（可同时倾听和发声），实现接近真人的实时对话体验。分为GPT-Live-1（付费版）和GPT-Live-1 mini（免费版），新增实时语音翻译功能。Sam Altman表示此前偏好文字输入，但GPT-Live让他认为语音可能成为主要交互方式。分析认为这标志着语音正从辅助输入升级为\"Agent操作系统\"的默认界面。\n\n**SpaceXAI Grok 4.5（7月8-9日）**：1.5万亿参数、基于V9全新架构，由马斯克旗下公司与Cursor合作训练，定位\"Opus级模型但更快更便宜\"。API定价$2/$6每百万token（远低于Anthropic Opus的$5/$25和OpenAI Sol的$5/$30）。但上线不到一天即被知名黑客用学术场景指令越狱，安全护栏全线瓦解，引发严重安全争议。\n\n**Anthropic Reflect（7月13日）**：Claude新增\"Reflect\"功能，用户可查看过去一个月的使用数据，旨在减少AI过度依赖。该功能类似Spotify年度回顾，反映行业开始关注\"AI使用健康度\"。",
-      "sources": [
-        {
-          "name": "OpenAI Release Notes",
-          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
-        },
-        {
-          "name": "6G-AI",
-          "url": "https://6g-ai.com/news/gpt-live-goes-live-voice-is-becoming-the-default-agent-os"
-        },
-        {
-          "name": "AI-Damn/Grok 4.5",
-          "url": "https://ai-damn.com/musk-s-grok-4-5-takes-on-ai-giants-claims-opus-level-smarts-at-a-tenth-of-the-price-1783569894836"
-        },
-        {
-          "name": "网易/Grok安全漏洞",
-          "url": "https://c.m.163.com/news/a/L1KB2BHK0553AXH3.html"
-        }
-      ],
-      "original_time": "2026-07-09T12:00:00+08:00",
-      "tags": [
-        "OpenAI",
-        "GPT-Live",
-        "Grok",
-        "Anthropic",
-        "语音AI",
-        "安全"
-      ],
-      "category": "product_launch",
-      "id": "2026-07-13-morning-001",
-      "category_label": "产品发布",
-      "published_at": "2026-07-09T12:00:00+08:00"
-    },
-    {
       "id": "legacy-003",
       "title": "SpaceXAI发布Grok 4.5，马斯克称其为Opus级别但更快更便宜",
       "summary": "马斯克旗下SpaceXAI（原xAI）正式向公众开放Grok 4.5模型，在编码、Agent任务和知识工作方面表现出色。该模型强调token效率，定价为每百万输入token 2美元、输出6美元。",
@@ -564,6 +396,27 @@
         "图像生成",
         "Muse Image",
         "社交媒体"
+      ],
+      "category": "other",
+      "category_label": "其他"
+    },
+    {
+      "id": "legacy-005",
+      "title": "国家发改委：2026年中国AI产业增速将维持30%以上",
+      "summary": "国家发改委披露2025年中国人工智能相关产业规模已迈过万亿元关口，预计2026年行业增速维持30%以上。AI手机、AI电脑等智能终端年出货量超1亿台。",
+      "content_markdown": "国家发改委披露2025年中国人工智能相关产业规模已迈过万亿元关口，预计2026年行业增速维持30%以上。AI手机、AI电脑等智能终端年出货量超1亿台。",
+      "sources": [
+        {
+          "name": "新华网",
+          "url": "https://www.ndrc.gov.cn"
+        }
+      ],
+      "published_at": "2026-07-07",
+      "tags": [
+        "产业政策",
+        "中国市场",
+        "AI产业",
+        "发改委"
       ],
       "category": "other",
       "category_label": "其他"
