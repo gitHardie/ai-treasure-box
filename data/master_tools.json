@@ -18,47 +18,44 @@
       "type": "github_project",
       "_period": "daily",
       "id": "github-trending_ai-job-search",
-      "category": "代码开发",
-      "subcategory": "代码生成与优化",
+      "category": "开发工具",
+      "subcategory": "代码生成与辅助",
       "license_tier": "open-source",
       "license_type": "MIT",
       "tags": {
         "attribute": [
           "轻量级",
-          "可定制",
-          "跨平台"
+          "本地部署"
         ],
         "function": [
           "代码生成",
           "代码补全",
-          "代码优化"
+          "代码重构"
         ],
         "quality": [
           "高效",
-          "准确",
-          "易用"
+          "准确"
         ],
         "scenario": [
           "编程开发",
-          "代码审查",
-          "学习辅助"
+          "代码优化",
+          "学习编程"
         ],
         "tech": [
-          "自然语言处理",
-          "机器学习",
-          "API集成"
+          "大语言模型",
+          "代码理解"
         ]
       },
-      "ai_analysis": "该工具主要用于辅助开发者生成、补全和优化代码，提升编程效率。适合软件工程师、学生以及需要快速编写或改进代码的编程爱好者。",
+      "ai_analysis": "这是一个基于大语言模型的代码生成与补全工具，能够帮助开发者快速生成代码片段、重构现有代码或提供编程建议。适合程序员、学生以及任何需要提高编码效率的人群，尤其适合希望在本地环境使用AI编码助手的用户。",
       "ai_confidence": 0.8,
       "is_china_tool": false,
       "health_status": "active",
       "tool_id": "unknown_ai-job-search",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-10T05:45:34.875808+00:00",
-      "last_checked": "2026-07-10T05:45:34.875808+00:00",
-      "content_hash": "0d541fc128dbb9ce3ecd01ce75c99ea2",
+      "ai_analyzed_at": "2026-07-14T00:10:24.856873+00:00",
+      "last_checked": "2026-07-14T00:10:24.856873+00:00",
+      "content_hash": "3712c9403bcabfb54127ce8e8f71582d",
       "source": "github-trending"
     },
     "github-trending_u3-sdk": {
@@ -79,47 +76,29 @@
       "type": "github_project",
       "_period": "daily",
       "id": "github-trending_u3-sdk",
-      "category": "文本生成",
-      "subcategory": "对话与问答",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
       "license_tier": "open-source",
-      "license_type": "MIT",
+      "license_type": "",
       "tags": {
-        "attribute": [
-          "开源",
-          "可定制",
-          "轻量级"
-        ],
-        "function": [
-          "对话生成",
-          "问答系统",
-          "文本理解"
-        ],
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
         "quality": [
-          "高响应速度",
-          "多语言支持",
-          "模块化设计"
-        ],
-        "scenario": [
-          "客服助手",
-          "教育辅导",
-          "内容创作"
-        ],
-        "tech": [
-          "自然语言处理",
-          "深度学习",
-          "Transformer"
+          "新星"
         ]
       },
-      "ai_analysis": "这是一个基于深度学习的文本生成工具，专注于对话和问答任务，适合开发者集成到客服系统或教育应用中。",
-      "ai_confidence": 0.8,
+      "ai_analysis": "U3-SDK 属于代码开发领域，开源项目。",
+      "ai_confidence": 0.6,
       "is_china_tool": false,
-      "health_status": "active",
+      "health_status": "unknown",
       "tool_id": "unknown_u3-sdk",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-10T10:33:34.620418+00:00",
-      "last_checked": "2026-07-10T10:33:34.620418+00:00",
-      "content_hash": "bf5cc32bdc41985d5970f7dc97b6c86a",
+      "ai_analyzed_at": "2026-07-14T00:10:24.856873+00:00",
+      "last_checked": "2026-07-14T00:10:24.856873+00:00",
+      "content_hash": "0652c6f6f5a075b32944f224e990f296",
       "source": "github-trending"
     },
     "github-trending_agent-skills": {
@@ -9519,9 +9498,9 @@
     }
   },
   "metadata": {
-    "last_merge": "2026-07-13T19:18:58.496099+00:00",
-    "last_merge_count": 72,
-    "updated_at": "2026-07-13T19:18:58.496818+00:00",
+    "last_merge": "2026-07-14T00:10:24.856873+00:00",
+    "last_merge_count": 2,
+    "updated_at": "2026-07-14T00:10:24.857192+00:00",
     "total_tools": 197
   }
 }
