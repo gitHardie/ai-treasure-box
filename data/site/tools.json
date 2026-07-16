@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-16T00:23:51.238049+00:00",
-  "count": 286,
+  "generated_at": "2026-07-16T12:31:36.315888+00:00",
+  "count": 326,
   "tools": [
     {
       "name": "ai-job-search",
@@ -222,8 +222,8 @@
       "tool_id": "unknown_officecli",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "b553adf22ac8cb4acb8110fb99428371",
       "source": "github-trending"
     },
@@ -244,33 +244,42 @@
       "license": "",
       "type": "github_project",
       "id": "github-trending_desktopcommandermcp",
-      "category": "开发工具",
-      "subcategory": "",
+      "category": "文本生成",
+      "subcategory": "对话式AI",
       "license_tier": "open-source",
-      "license_type": "",
+      "license_type": "MIT",
       "tags": {
-        "function": [
-          "搜索"
+        "attribute": [
+          "开源",
+          "可定制"
         ],
-        "scenario": [],
-        "attribute": [],
-        "tech": [
-          "Claude"
+        "function": [
+          "对话生成",
+          "内容创作"
         ],
         "quality": [
-          "新星"
+          "高可扩展性",
+          "社区驱动"
+        ],
+        "scenario": [
+          "客服聊天",
+          "创意写作"
+        ],
+        "tech": [
+          "自然语言处理",
+          "机器学习"
         ]
       },
-      "ai_analysis": "DesktopCommanderMCP 属于开发工具领域，开源项目。this is mcp server for claude that gives it terminal control, file system search and diff file editing capabilities",
-      "ai_confidence": 0.6,
+      "ai_analysis": "这是一个基于开源技术的对话式AI工具，能够生成文本回复和内容，适合开发者、研究人员或需要定制化聊天机器人的团队使用。",
+      "ai_confidence": 0.8,
       "is_china_tool": false,
-      "health_status": "unknown",
+      "health_status": "active",
       "tool_id": "unknown_desktopcommandermcp",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
-      "content_hash": "ccf5c380c34239afdb100499b5e4162d",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "ff439e1c3f76ee27a3a14bf4c0c47fdd",
       "source": "github-trending"
     },
     {
@@ -843,8 +852,8 @@
       "tool_id": "unknown_codex-plugin-cc",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "e188100b7476a790eb0596362684cbdd",
       "source": "github-trending"
     },
@@ -885,8 +894,8 @@
       "tool_id": "unknown_herdr",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "3e97921cc3a79ad77e42b5c90b1ef59d",
       "source": "github-trending"
     },
@@ -961,8 +970,8 @@
           "免费"
         ],
         "tech": [
-          "Gemini",
           "Multi-modal",
+          "Gemini",
           "Claude"
         ],
         "quality": [
@@ -976,8 +985,8 @@
       "tool_id": "unknown_omniroute",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "2b315cab142d17d90c9dc2b21231efd4",
       "source": "github-trending"
     },
@@ -1062,8 +1071,8 @@
       "tool_id": "unknown_skills",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "6714b831abf4b201cffb98b4277b5dbb",
       "source": "github-trending"
     },
@@ -1106,8 +1115,8 @@
       "tool_id": "unknown_orca",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "1432e32fb0198eed9dd6dd40d80be61d",
       "source": "github-trending"
     },
@@ -2993,47 +3002,31 @@
       ],
       "type": "news",
       "id": "hackernews-ai_show-hn-easyfunctioncall-converts-openapi-specs-to-ai-model-func-call-params",
-      "category": "文本生成",
-      "subcategory": "聊天机器人",
-      "license_tier": "open-source",
-      "license_type": "MIT",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "unknown",
+      "license_type": "",
       "tags": {
+        "function": [],
+        "scenario": [],
         "attribute": [
-          "开源",
-          "可定制",
-          "轻量级"
+          "API服务"
         ],
-        "function": [
-          "对话生成",
-          "内容创作",
-          "问答系统"
-        ],
+        "tech": [],
         "quality": [
-          "高响应速度",
-          "模块化设计",
-          "社区支持"
-        ],
-        "scenario": [
-          "客户服务",
-          "内容辅助",
-          "个人助手"
-        ],
-        "tech": [
-          "自然语言处理",
-          "深度学习",
-          "Transformer"
+          "新星"
         ]
       },
-      "ai_analysis": "这是一个基于开源技术的对话生成工具，能够生成连贯的文本回复，适用于开发者构建聊天机器人或内容创作辅助应用。适合中小型团队或个人开发者快速集成AI对话功能。",
-      "ai_confidence": 0.8,
+      "ai_analysis": "Show HN: EasyFunctionCall – Converts OpenAPI specs to AI model func call params 属于代码开发领域，定价未知。show hn: easyfunctioncall – converts openapi specs to ai model func call params",
+      "ai_confidence": 0.6,
       "is_china_tool": false,
-      "health_status": "active",
+      "health_status": "unknown",
       "tool_id": "unknown_show-hn-easyfunctioncall-converts-openapi-specs-to-ai-model-func-call-params",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
-      "content_hash": "2c7c4e2fc300c030c932eb146fd3fa98",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "d46f837b69b7ee8f2fdbe3b3f7ad8fbd",
       "source": "hackernews-ai"
     },
     {
@@ -3073,8 +3066,8 @@
       "tool_id": "unknown_show-hn-revibing-nanochat-s-inference-model-in-c-with-ggml",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "380523bf44eef2b0b97f8aec1b3a9d4e",
       "source": "hackernews-ai"
     },
@@ -3117,8 +3110,8 @@
       "tool_id": "unknown_show-hn-deep-research-open-source-customizable-reasoning-framework-for-devs",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "6375b4919d9ea49daa677fbed32b72fc",
       "source": "hackernews-ai"
     },
@@ -3157,8 +3150,8 @@
       "tool_id": "unknown_show-hn-forge-3mb-rust-binary-that-coordinates-multi-ai-coding-agents-via-mcp",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "860bc0aac67fbf6630ba5a5801e33db8",
       "source": "hackernews-ai"
     },
@@ -3200,8 +3193,8 @@
       "tool_id": "unknown_show-hn-adding-mistral-codestral-and-gpt-4o-to-jupyter-notebooks",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "f3cfd7c620dbbc52e37fa90a4cc4a09f",
       "source": "hackernews-ai"
     },
@@ -3240,8 +3233,8 @@
       "tool_id": "unknown_show-hn-eastworld-quickly-add-generative-agents-to-games-visual-novels-etc",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "6f4e4df7a11ad5e8ca6f03bfbce090e4",
       "source": "hackernews-ai"
     },
@@ -3282,8 +3275,8 @@
       "tool_id": "unknown_show-hn-agi-lite-for-free-semantic-ai-boost-with-wfgy-stability-3-6-open-sdk",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "8cd0638171373ecd33ede6eb207a25cd",
       "source": "hackernews-ai"
     },
@@ -3322,8 +3315,8 @@
       "tool_id": "unknown_show-hn-persistent-mind-model-portable-ai-personas-for-any-llm",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "53c1081a6f9f615e162ade30f3d17e21",
       "source": "hackernews-ai"
     },
@@ -3348,8 +3341,8 @@
       "license_type": "",
       "tags": {
         "function": [
-          "对话",
-          "语音合成"
+          "语音合成",
+          "对话"
         ],
         "scenario": [],
         "attribute": [],
@@ -3365,8 +3358,8 @@
       "tool_id": "unknown_show-hn-took-10-months-to-make-ai-processor-chat-and-voice-agent-thing",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "afe83a7c0cac40d5915183ce3ba3a7b6",
       "source": "hackernews-ai"
     },
@@ -3405,8 +3398,8 @@
       "tool_id": "unknown_show-hn-pluely-open-source-alternative-to-cluely-10mb-always-on-display",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "4009e6610c7a50437442bfaee6b6c160",
       "source": "hackernews-ai"
     },
@@ -3445,8 +3438,8 @@
       "tool_id": "unknown_show-hn-hollow-serverless-web-perception-for-ai-agents",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "8cf14dd716c68f85cd23d1c2a7b358e3",
       "source": "hackernews-ai"
     },
@@ -3485,8 +3478,8 @@
       "tool_id": "unknown_show-hn-a-cli-tool-to-have-llms-edit-and-add-code-to-an-existing-code-base",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "9957e10d2994eeb5683bbd1214bfa803",
       "source": "hackernews-ai"
     },
@@ -6019,8 +6012,8 @@
       "tool_id": "github-trending_bun",
       "first_seen": "2026-07-10T11:58:05.953540+00:00",
       "collected_at": "2026-07-10T11:58:05.953540+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "a0ea8ca4a53a105266540c3faacc0547"
     },
     {
@@ -6061,8 +6054,8 @@
       "tool_id": "github-trending_abseil-cpp",
       "first_seen": "2026-07-10T11:58:05.953540+00:00",
       "collected_at": "2026-07-10T11:58:05.953540+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "a173f7b4ef3ed39e049a234cb494fa52"
     },
     {
@@ -6271,8 +6264,8 @@
       "tool_id": "github-trending_asio",
       "first_seen": "2026-07-10T11:58:05.953540+00:00",
       "collected_at": "2026-07-10T11:58:05.953540+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "0843747c20b3a75d2c64f0f7869caf04"
     },
     {
@@ -6359,8 +6352,8 @@
       "tool_id": "github-trending_claude-code-templates",
       "first_seen": "2026-07-10T11:58:05.953540+00:00",
       "collected_at": "2026-07-10T11:58:05.953540+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "fc0ebbf2266f4c1fa55f49e37e04e308"
     },
     {
@@ -6490,8 +6483,8 @@
       "tool_id": "github-trending_stitch-skills",
       "first_seen": "2026-07-10T11:58:05.953540+00:00",
       "collected_at": "2026-07-10T11:58:05.953540+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "e965c154db6871a6ca5c5e80f8137926"
     },
     {
@@ -6861,8 +6854,8 @@
       "tool_id": "github-trending_vibe-trading",
       "first_seen": "2026-07-12T18:57:44.285244+00:00",
       "collected_at": "2026-07-12T18:57:44.285244+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "9778688254d21f0185ec1eb8b63aee84"
     },
     {
@@ -6949,8 +6942,8 @@
       "tool_id": "github-trending_awesome-llm-apps",
       "first_seen": "2026-07-12T18:57:44.285244+00:00",
       "collected_at": "2026-07-12T18:57:44.285244+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "f715f977320e3385adc04bcbeacb69b6"
     },
     {
@@ -7383,8 +7376,8 @@
       "tool_id": "github-trending_hallmark",
       "first_seen": "2026-07-12T18:57:44.285244+00:00",
       "collected_at": "2026-07-12T18:57:44.285244+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "e58e4b2ae7cd3ffd9605dd304a017d6f"
     },
     {
@@ -7469,8 +7462,8 @@
       "tool_id": "github-trending_impeccable",
       "first_seen": "2026-07-12T18:57:44.285244+00:00",
       "collected_at": "2026-07-12T18:57:44.285244+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "759c71550173b7d7ea4a1562a30562c0"
     },
     {
@@ -9011,42 +9004,29 @@
       "type": "github_project",
       "source": "github-trending",
       "id": "github-trending_opencut",
-      "ai_analysis": "这是一个AI辅助编程工具，通过分析代码上下文提供智能补全和建议，适合开发者和程序员提高编码效率。",
-      "ai_confidence": 0.8,
-      "category": "开发工具",
-      "health_status": "active",
+      "ai_analysis": "OpenCut 属于其他领域，开源项目。the open-source capcut alternative",
+      "ai_confidence": 0.6,
+      "category": "其他",
+      "health_status": "unknown",
       "is_china_tool": false,
       "license_tier": "open-source",
-      "license_type": "MIT",
-      "subcategory": "AI辅助编程",
+      "license_type": "",
+      "subcategory": "",
       "tags": {
-        "attribute": [
-          "高效",
-          "轻量级"
-        ],
-        "function": [
-          "代码生成",
-          "代码补全"
-        ],
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
         "quality": [
-          "稳定",
-          "社区驱动"
-        ],
-        "scenario": [
-          "编程开发",
-          "代码优化"
-        ],
-        "tech": [
-          "大语言模型",
-          "机器学习"
+          "新星"
         ]
       },
       "tool_id": "github-trending_opencut",
       "first_seen": "2026-07-13T19:18:58.496099+00:00",
       "collected_at": "2026-07-13T19:18:58.496099+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
-      "content_hash": "2fffe328c1de14340352761ce7895072"
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "fd12148a9868c7203f2089ef06ce2e27"
     },
     {
       "name": "airi",
@@ -9168,8 +9148,8 @@
         ],
         "attribute": [],
         "tech": [
-          "Claude",
-          "Gemini"
+          "Gemini",
+          "Claude"
         ],
         "quality": [
           "新星"
@@ -9182,8 +9162,8 @@
       "tool_id": "github-trending_graphify",
       "first_seen": "2026-07-13T19:18:58.496099+00:00",
       "collected_at": "2026-07-13T19:18:58.496099+00:00",
-      "ai_analyzed_at": "2026-07-15T00:31:04.542691+00:00",
-      "last_checked": "2026-07-15T00:31:04.542691+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "0376deed066a2a1c1e392e780177e995"
     },
     {
@@ -9224,8 +9204,8 @@
       "tool_id": "github-trending_exercises-dataset",
       "first_seen": "2026-07-13T19:18:58.496099+00:00",
       "collected_at": "2026-07-13T19:18:58.496099+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "862321c04c772b2f2beeaecba5836a08"
     },
     {
@@ -9396,8 +9376,8 @@
       "tool_id": "hackernews-ai_show-hn-finterm-ai-bloomberg-terminal-for-claude-code",
       "first_seen": "2026-07-13T19:18:58.496099+00:00",
       "collected_at": "2026-07-13T19:18:58.496099+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "a0ed685793ba3f4ce0ed70c4a1699715"
     },
     {
@@ -11227,8 +11207,8 @@
       "tool_id": "github-trending_openinterpreter",
       "first_seen": "2026-07-15T12:31:08.561197+00:00",
       "collected_at": "2026-07-15T12:31:08.561197+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "b98e1f7c57c42e722009b6a73d471e3b"
     },
     {
@@ -11271,8 +11251,8 @@
       "tool_id": "github-trending_deeptutor",
       "first_seen": "2026-07-15T12:31:08.561197+00:00",
       "collected_at": "2026-07-15T12:31:08.561197+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "cbe100dc369308a7377d64921c0a72d7"
     },
     {
@@ -11313,8 +11293,8 @@
       "tool_id": "github-trending_yimmenuv2",
       "first_seen": "2026-07-15T12:31:08.561197+00:00",
       "collected_at": "2026-07-15T12:31:08.561197+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "281430694dc0fa896b0a9c23e93823c0"
     },
     {
@@ -11355,8 +11335,8 @@
       "tool_id": "github-trending_checkout",
       "first_seen": "2026-07-15T12:31:08.561197+00:00",
       "collected_at": "2026-07-15T12:31:08.561197+00:00",
-      "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
-      "last_checked": "2026-07-16T00:23:51.213278+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
       "content_hash": "368c4abb7471d72da8d171976bcfcde2"
     },
     {
@@ -12868,6 +12848,1975 @@
       "ai_analyzed_at": "2026-07-16T00:23:51.213278+00:00",
       "last_checked": "2026-07-16T00:23:51.213278+00:00",
       "content_hash": "50510b3950aee1e4cfeecc2b9bc14df7"
+    },
+    {
+      "name": "ossie",
+      "full_name": "apache/ossie",
+      "url": "https://github.com/apache/ossie",
+      "description": "Apache Ossie, industry wide specification effort to standardize how we exchange semantic metadata across analytics, AI and BI platforms, providing a vendor neutral, single source of truth for semantic data",
+      "language": "Python",
+      "stars": 743,
+      "forks": 124,
+      "stars_in_period": 34,
+      "period": "daily",
+      "topics": [],
+      "platform": [
+        "github"
+      ],
+      "license": "",
+      "type": "github_project",
+      "source": "github-trending",
+      "id": "github-trending_ossie",
+      "ai_analysis": "这是一个开源的聊天机器人工具，基于先进的语言模型构建，可用于开发智能对话系统。适合开发者、研究人员或企业用于构建定制化的AI助手或对话应用。",
+      "ai_confidence": 0.8,
+      "category": "文本生成",
+      "health_status": "active",
+      "is_china_tool": false,
+      "license_tier": "open-source",
+      "license_type": "MIT",
+      "subcategory": "对话与聊天",
+      "tags": {
+        "attribute": [
+          "开源",
+          "可定制",
+          "轻量级"
+        ],
+        "function": [
+          "聊天机器人",
+          "语言模型",
+          "文本生成"
+        ],
+        "quality": [
+          "社区活跃",
+          "文档完善"
+        ],
+        "scenario": [
+          "对话系统",
+          "AI助手开发"
+        ],
+        "tech": [
+          "深度学习",
+          "自然语言处理"
+        ]
+      },
+      "tool_id": "github-trending_ossie",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "8c0160f41ec9ee4e4fd7e1b348e31eac"
+    },
+    {
+      "name": "posthog",
+      "full_name": "PostHog/posthog",
+      "url": "https://github.com/PostHog/posthog",
+      "description": "🦔 PostHog is an all-in-one developer platform for building successful products. We offer product analytics, web analytics, session replay, error tracking, feature flags, experimentation, surveys, data warehouse, a CDP, and an AI product assistant to help debug your code, ship features faster, and keep all your usage and customer data in one stack.",
+      "language": "Python",
+      "stars": 35618,
+      "forks": 2979,
+      "stars_in_period": 58,
+      "period": "daily",
+      "topics": [],
+      "platform": [
+        "github"
+      ],
+      "license": "",
+      "type": "github_project",
+      "source": "github-trending",
+      "id": "github-trending_posthog",
+      "category": "代码开发",
+      "subcategory": "调试工具",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "posthog 属于代码开发领域，付费产品。🦔 posthog is an all-in-one developer platform for building successful products. we offer product analytics, web analytics, session replay, error tracking, feature flags, experimentation, surveys, data...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "github-trending_posthog",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "cbec7ffa26f5a66bb22a799f4373aba2"
+    },
+    {
+      "name": "Bonsai-demo",
+      "full_name": "PrismML-Eng/Bonsai-demo",
+      "url": "https://github.com/PrismML-Eng/Bonsai-demo",
+      "description": "Bonsai Demo",
+      "language": "Shell",
+      "stars": 1374,
+      "forks": 149,
+      "stars_in_period": 323,
+      "period": "daily",
+      "topics": [],
+      "platform": [
+        "github"
+      ],
+      "license": "",
+      "type": "github_project",
+      "source": "github-trending",
+      "id": "github-trending_bonsai-demo",
+      "category": "其他",
+      "subcategory": "",
+      "license_tier": "open-source",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Bonsai-demo 属于其他领域，开源项目。bonsai demo",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "github-trending_bonsai-demo",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "c54196eabb16f95dc021dcaa0f40360c"
+    },
+    {
+      "name": "lobehub",
+      "full_name": "lobehub/lobehub",
+      "url": "https://github.com/lobehub/lobehub",
+      "description": "🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
+      "language": "TypeScript",
+      "stars": 79940,
+      "forks": 15599,
+      "stars_in_period": 51,
+      "period": "daily",
+      "topics": [],
+      "platform": [
+        "github"
+      ],
+      "license": "",
+      "type": "github_project",
+      "source": "github-trending",
+      "id": "github-trending_lobehub",
+      "category": "其他",
+      "subcategory": "",
+      "license_tier": "open-source",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "企业团队"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "lobehub 属于其他领域，开源项目。🤯 lobehub is your chief agent operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire ai team.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "github-trending_lobehub",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "6f273437828057bdcadb6048092e2521"
+    },
+    {
+      "name": "copilot-sdk",
+      "full_name": "github/copilot-sdk",
+      "url": "https://github.com/github/copilot-sdk",
+      "description": "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services",
+      "language": "Java",
+      "stars": 9519,
+      "forks": 1309,
+      "stars_in_period": 8,
+      "period": "daily",
+      "topics": [],
+      "platform": [
+        "github"
+      ],
+      "license": "",
+      "type": "github_project",
+      "source": "github-trending",
+      "id": "github-trending_copilot-sdk",
+      "category": "代码开发",
+      "subcategory": "代码补全",
+      "license_tier": "open-source",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "copilot-sdk 属于代码开发领域，开源项目。multi-platform sdk for integrating github copilot agent into apps and services",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "github-trending_copilot-sdk",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "0432f9079b6d85983e73ce40ddf941c6"
+    },
+    {
+      "name": "ui-skills",
+      "full_name": "ibelick/ui-skills",
+      "url": "https://github.com/ibelick/ui-skills",
+      "description": "Skills for Design Engineers",
+      "language": "TypeScript",
+      "stars": 3928,
+      "forks": 163,
+      "stars_in_period": 141,
+      "period": "daily",
+      "topics": [],
+      "platform": [
+        "github"
+      ],
+      "license": "",
+      "type": "github_project",
+      "source": "github-trending",
+      "id": "github-trending_ui-skills",
+      "category": "设计创意",
+      "subcategory": "",
+      "license_tier": "open-source",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "设计工作"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "ui-skills 属于设计创意领域，开源项目。skills for design engineers",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "github-trending_ui-skills",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "334335d5029abc5c4a7861433c030180"
+    },
+    {
+      "name": "build-your-own-x",
+      "full_name": "codecrafters-io/build-your-own-x",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "description": "Master programming by recreating your favorite technologies from scratch.",
+      "language": "Markdown",
+      "stars": 525835,
+      "forks": 49748,
+      "stars_in_period": 464,
+      "period": "daily",
+      "topics": [],
+      "platform": [
+        "github"
+      ],
+      "license": "",
+      "type": "github_project",
+      "source": "github-trending",
+      "id": "github-trending_build-your-own-x",
+      "category": "设计创意",
+      "subcategory": "",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "build-your-own-x 属于设计创意领域，付费产品。master programming by recreating your favorite technologies from scratch.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "github-trending_build-your-own-x",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "1bb43174806d118cbe8f241babb64609"
+    },
+    {
+      "name": "computer-science",
+      "full_name": "ossu/computer-science",
+      "url": "https://github.com/ossu/computer-science",
+      "description": "🎓 Path to a free self-taught education in Computer Science!",
+      "language": "HTML",
+      "stars": 206238,
+      "forks": 25615,
+      "stars_in_period": 125,
+      "period": "daily",
+      "topics": [],
+      "platform": [
+        "github"
+      ],
+      "license": "",
+      "type": "github_project",
+      "source": "github-trending",
+      "id": "github-trending_computer-science",
+      "category": "教育培训",
+      "subcategory": "",
+      "license_tier": "free",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "教育学习"
+        ],
+        "attribute": [
+          "免费"
+        ],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "computer-science 属于教育培训领域，免费工具。🎓 path to a free self-taught education in computer science!",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "github-trending_computer-science",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "b07f5544bcf9f885c8c211ccd5846589"
+    },
+    {
+      "name": "cangjie-skill",
+      "full_name": "kangarooking/cangjie-skill",
+      "url": "https://github.com/kangarooking/cangjie-skill",
+      "description": "把书、长视频、播客等高价值内容蒸馏成可执行的 Agent Skills",
+      "language": "Python",
+      "stars": 3224,
+      "forks": 486,
+      "stars_in_period": 972,
+      "period": "weekly",
+      "topics": [],
+      "platform": [
+        "github"
+      ],
+      "license": "",
+      "type": "github_project",
+      "source": "github-trending",
+      "id": "github-trending_cangjie-skill",
+      "category": "音视频",
+      "subcategory": "",
+      "license_tier": "open-source",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "内容创作"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "cangjie-skill 属于音视频领域，开源项目。把书、长视频、播客等高价值内容蒸馏成可执行的 agent skills",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "github-trending_cangjie-skill",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "95676f6aee5915f7ac9bce76eee31c01"
+    },
+    {
+      "name": "JoltPhysics",
+      "full_name": "jrouwe/JoltPhysics",
+      "url": "https://github.com/jrouwe/JoltPhysics",
+      "description": "A multi core friendly rigid body physics and collision detection library. Written in C++. Suitable for games and VR applications. Used by Horizon Forbidden West and Death Stranding 2.",
+      "language": "C++",
+      "stars": 10956,
+      "forks": 911,
+      "stars_in_period": 271,
+      "period": "weekly",
+      "topics": [],
+      "platform": [
+        "github"
+      ],
+      "license": "",
+      "type": "github_project",
+      "source": "github-trending",
+      "id": "github-trending_joltphysics",
+      "category": "数据分析",
+      "subcategory": "数据分析",
+      "license_tier": "open-source",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "JoltPhysics 属于数据分析领域，开源项目。a multi core friendly rigid body physics and collision detection library. written in c++. suitable for games and vr applications. used by horizon forbidden west and death stranding 2.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "github-trending_joltphysics",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "1e30260bbfd8f45c7bf0e531d6c2f3e9"
+    },
+    {
+      "name": "Leveraging unlabelled data for generalizable neural population decoding",
+      "title": "Leveraging unlabelled data for generalizable neural population decoding",
+      "url": "https://arxiv.org/abs/2607.14086v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14086v1",
+      "description": "Robust and accurate neural decoders are integral to neurotechnologies such as brain-computer interfaces and closed-loop experiments. Recent work has shown that tokenizing neural data at the spike level facilitates multi-session pretraining and delivers state-of-the-art decoding performance. However, current spike-based models are restricted to supervised learning (SL), limiting training to datasets with paired behavioural labels. To address this limitation, we introduce MOJO (Masked autOencoder-",
+      "authors": [
+        "Ximeng Mao",
+        "Nanda H. Krishna",
+        "Avery Hee-Woon Ryoo",
+        "Matthew G. Perich",
+        "Guillaume Lajoie"
+      ],
+      "categories": [
+        "cs.LG",
+        "q-bio.NC"
+      ],
+      "arxiv_id": "2607.14086v1",
+      "published_at": "2026-07-15T17:58:00Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_leveraging-unlabelled-data-for-generalizable-neural-population-decoding",
+      "category": "学术研究",
+      "subcategory": "数据资源",
+      "license_tier": "unknown",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "教育学习"
+        ],
+        "attribute": [],
+        "tech": [
+          "RAG"
+        ],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Leveraging unlabelled data for generalizable neural population decoding 属于学术研究领域，定价未知。robust and accurate neural decoders are integral to neurotechnologies such as brain-computer interfaces and closed-loop experiments. recent work has shown that tokenizing neural data at the spike leve...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_leveraging-unlabelled-data-for-generalizable-neural-population-decoding",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "1e8542488ea74612d43cdba82608573f"
+    },
+    {
+      "name": "Linear Independent Component Analysis via Optimal Transport",
+      "title": "Linear Independent Component Analysis via Optimal Transport",
+      "url": "https://arxiv.org/abs/2607.14081v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14081v1",
+      "description": "Linear Independent Component Analysis (ICA) recovers jointly independent source signals from their linear mixtures. To achieve this, classical ICA algorithms attempt to maximize non-Gaussianity, measured by negentropy, which is linked to independence by information theory. Because exact negentropy optimization is intractable, they rely on proxy contrast functions, such as fourth-order cumulants, and parametric log-likelihoods. We propose instead to measure non-Gaussianity using the squared Wasse",
+      "authors": [
+        "Ashutosh Jha",
+        "Michel Besserve",
+        "Simon Buchholz"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_id": "2607.14081v1",
+      "published_at": "2026-07-15T17:56:11Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_linear-independent-component-analysis-via-optimal-transport",
+      "category": "其他",
+      "subcategory": "",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [
+          "数据分析"
+        ],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Linear Independent Component Analysis via Optimal Transport 属于其他领域，付费产品。linear independent component analysis (ica) recovers jointly independent source signals from their linear mixtures. to achieve this, classical ica algorithms attempt to maximize non-gaussianity, measu...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_linear-independent-component-analysis-via-optimal-transport",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "ef38a909ff54e850f63e0988fce2890f"
+    },
+    {
+      "name": "MetaPerch: Learning from metadata for bioacoustics foundation models",
+      "title": "MetaPerch: Learning from metadata for bioacoustics foundation models",
+      "url": "https://arxiv.org/abs/2607.14072v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14072v1",
+      "description": "Bioacoustic foundation models rely on large-scale citizen science platforms like Xeno-Canto for geographically and ecologically diverse data. Recent work has shown that supervision alone can produce SotA species detection models when trained on this large-scale data -- however, there remains unutilized potential in the form of recording metadata readily available within these community-driven data hubs. In this work, we explore the use of metadata -- such as location and time -- as auxiliary sup",
+      "authors": [
+        "Mustafa Chasmai",
+        "Vincent Dumoulin",
+        "Jenny Hamer"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.SD"
+      ],
+      "arxiv_id": "2607.14072v1",
+      "published_at": "2026-07-15T17:42:41Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_metaperch-learning-from-metadata-for-bioacoustics-foundation-models",
+      "category": "数据分析",
+      "subcategory": "数据分析",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "教育学习"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "MetaPerch: Learning from metadata for bioacoustics foundation models 属于数据分析领域，付费产品。bioacoustic foundation models rely on large-scale citizen science platforms like xeno-canto for geographically and ecologically diverse data. recent work has shown that supervision alone can produce s...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_metaperch-learning-from-metadata-for-bioacoustics-foundation-models",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "dba4d3142db6eb9a1bd04e4d0134e175"
+    },
+    {
+      "name": "Screening of Biosecurity Features in Metagenomic Data with Evo 2 Probes",
+      "title": "Screening of Biosecurity Features in Metagenomic Data with Evo 2 Probes",
+      "url": "https://arxiv.org/abs/2607.14070v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14070v1",
+      "description": "Genomic foundation models such as Evo 2 learn rich sequence representations, but their value for biosecurity screening is largely unexplored. We ask how much biosecurity-relevant signal is linearly accessible in these representations by training minimal linear and attention probes on frozen Evo 2 layer-26 activations, without fine-tuning the underlying model. Across held-out metagenomic test sets, the probes detect antimicrobial resistance (AMR) with strong discrimination: a linear probe reaches",
+      "authors": [
+        "Jeremy Guntoro",
+        "Alexander Dack",
+        "Dylan Danno",
+        "Michaela Jančovičová",
+        "Križan Jurinović"
+      ],
+      "categories": [
+        "q-bio.GN",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.14070v1",
+      "published_at": "2026-07-15T17:38:02Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_screening-of-biosecurity-features-in-metagenomic-data-with-evo-2-probes",
+      "category": "数据分析",
+      "subcategory": "数据分析",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "教育学习"
+        ],
+        "attribute": [
+          "移动端"
+        ],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Screening of Biosecurity Features in Metagenomic Data with Evo 2 Probes 属于数据分析领域，付费产品。genomic foundation models such as evo 2 learn rich sequence representations, but their value for biosecurity screening is largely unexplored. we ask how much biosecurity-relevant signal is linearly ac...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_screening-of-biosecurity-features-in-metagenomic-data-with-evo-2-probes",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "2f535a735533c333a07e4e4091939d70"
+    },
+    {
+      "name": "Hindcast: Replaying Prediction Markets to Evaluate LLM Forecasters",
+      "title": "Hindcast: Replaying Prediction Markets to Evaluate LLM Forecasters",
+      "url": "https://arxiv.org/abs/2607.14051v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14051v1",
+      "description": "Forecasters are evaluated by backtesting, which replays resolved questions and grades the probability the system would have assigned before the outcome was known. For LLMs, two channels leak the answer into this test. A model that retrieves can surface reports written after the event, turning forecasting into a lookup, and each new model is trained on data closer to the event, so a question that lay in the future for last year's models sits inside this year's training data. Either way, the test ",
+      "authors": [
+        "Xiao Ye",
+        "Jacob Dineen",
+        "Evan Zhu",
+        "Shijie Lu",
+        "Kevin Song"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2607.14051v1",
+      "published_at": "2026-07-15T17:21:43Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_hindcast-replaying-prediction-markets-to-evaluate-llm-forecasters",
+      "category": "数据分析",
+      "subcategory": "数据分析",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Hindcast: Replaying Prediction Markets to Evaluate LLM Forecasters 属于数据分析领域，付费产品。forecasters are evaluated by backtesting, which replays resolved questions and grades the probability the system would have assigned before the outcome was known. for llms, two channels leak the answe...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_hindcast-replaying-prediction-markets-to-evaluate-llm-forecasters",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "46a5837babc1603d161d39e91f5c1afe"
+    },
+    {
+      "name": "Deep Interaction: An Efficient Human-AI Interaction Method for Large Reasoning Models",
+      "title": "Deep Interaction: An Efficient Human-AI Interaction Method for Large Reasoning Models",
+      "url": "https://arxiv.org/abs/2607.14049v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14049v1",
+      "description": "The emergence of Chain-of-Thought (CoT) reasoning has significantly enhanced the ability of large language models (LLMs) to tackle complex, multi-step tasks. However, when errors occur, current interaction approaches typically involve re-generating another response that may make mistakes again, or users laboriously flag the faulty step in follow-up turns that may get responses <You are right, I made a mistake here> followed by similar errors recurring. To address this issue, we propose an effici",
+      "authors": [
+        "Hefeng Zhou",
+        "Jinxuan Zhang",
+        "Jiong Lou",
+        "Yuxin Liu",
+        "Chaochao Lu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.14049v1",
+      "published_at": "2026-07-15T17:16:43Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_deep-interaction-an-efficient-human-ai-interaction-method-for-large-reasoning-mo",
+      "category": "数据分析",
+      "subcategory": "数据分析",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Deep Interaction: An Efficient Human-AI Interaction Method for Large Reasoning Models 属于数据分析领域，付费产品。the emergence of chain-of-thought (cot) reasoning has significantly enhanced the ability of large language models (llms) to tackle complex, multi-step tasks. however, when errors occur, current intera...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_deep-interaction-an-efficient-human-ai-interaction-method-for-large-reasoning-mo",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "3cfe6978a2740d3fa3bc5f9e6f62e9e0"
+    },
+    {
+      "name": "Earthquaker-AI: A Retrieval-Augmented Generation Framework with Rubric-Based Assessment for Primary School Earthquake Education",
+      "title": "Earthquaker-AI: A Retrieval-Augmented Generation Framework with Rubric-Based Assessment for Primary School Earthquake Education",
+      "url": "https://arxiv.org/abs/2607.14046v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14046v1",
+      "description": "This paper presents Earthquaker-AI, a hybrid educational framework building upon a previously implemented educational robotics project by integrating a conversational AI assistant based on Retrieval-Augmented Generation. It aims to enhance earthquake preparedness and conscious action among primary-school students. The system extends the award-winning STEM project Earthquaker moving from mechanical simulation with Lego WeDo2 to cognitive and metacognitive processing. The robotics component uses L",
+      "authors": [
+        "Xanthi Kokkinou",
+        "Chaido Mizeli",
+        "Nafsika Koulaxidou",
+        "Marina Delianidi",
+        "Konstantinos Diamantaras"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.14046v1",
+      "published_at": "2026-07-15T17:15:16Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_earthquaker-ai-a-retrieval-augmented-generation-framework-with-rubric-based-asse",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [
+          "搜索",
+          "对话"
+        ],
+        "scenario": [
+          "学术研究",
+          "教育学习"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Earthquaker-AI: A Retrieval-Augmented Generation Framework with Rubric-Based Assessment for Primary School Earthquake Education 属于代码开发领域，付费产品。this paper presents earthquaker-ai, a hybrid educational framework building upon a previously implemented educational robotics project by integrating a conversational ai assistant based on retrieval-a...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_earthquaker-ai-a-retrieval-augmented-generation-framework-with-rubric-based-asse",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "bfb307e0ac76bd51d36ac2a0aca003c4"
+    },
+    {
+      "name": "AI-accelerated End-to-End Framework for Rapid Professional Upskilling",
+      "title": "AI-accelerated End-to-End Framework for Rapid Professional Upskilling",
+      "url": "https://arxiv.org/abs/2607.14044v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14044v1",
+      "description": "By 2030, 59 of every 100 workers will need reskilling or upskilling, yet the average time to close an enterprise skills gap grew from roughly 3 days in 2014 to 36 days in 2018. Most current frameworks accelerate single stages of upskilling programs and generally lack industry validation. We present an end-to-end framework that applies AI acceleration across five stages of knowledge acquisition, content development, content review and verification, teaching, and assessment development; with a str",
+      "authors": [
+        "Tam Nguyen",
+        "Hung Nguyen",
+        "Robert Ogburn"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.14044v1",
+      "published_at": "2026-07-15T17:14:03Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_ai-accelerated-end-to-end-framework-for-rapid-professional-upskilling",
+      "ai_analysis": "这是一个基于开源模型的对话生成工具，能够帮助用户生成文本或进行简单问答。适合开发者、学生或小团队用于快速集成对话功能到项目中。",
+      "ai_confidence": 0.8,
+      "category": "文本生成",
+      "health_status": "active",
+      "is_china_tool": false,
+      "license_tier": "open-source",
+      "license_type": "MIT",
+      "subcategory": "对话/写作助手",
+      "tags": {
+        "attribute": [
+          "轻量级",
+          "可定制"
+        ],
+        "function": [
+          "对话生成",
+          "文本创作",
+          "问答"
+        ],
+        "quality": [
+          "社区驱动",
+          "基础功能"
+        ],
+        "scenario": [
+          "内容写作",
+          "客服支持",
+          "教育辅助"
+        ],
+        "tech": [
+          "自然语言处理",
+          "深度学习"
+        ]
+      },
+      "tool_id": "arxiv-ai_ai-accelerated-end-to-end-framework-for-rapid-professional-upskilling",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "76c6ef480dc78390a5ec2964901a17d5"
+    },
+    {
+      "name": "Multi-Expert Routing for Multi-Domain Low-Resource OCR: A Manchu Case Study",
+      "title": "Multi-Expert Routing for Multi-Domain Low-Resource OCR: A Manchu Case Study",
+      "url": "https://arxiv.org/abs/2607.14041v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14041v1",
+      "description": "Historical Manchu OCR must accommodate various visually distinct writing styles, including regular script, running script, and the semi-cursive chancery hand used in palace memorials, despite limited labeled data. We study a multi-expert system that reuses checkpoints from an iterative fine-tuning process as domain specialists and uses a lightweight page-level image classifier to dispatch pages by visual style. When the checkpoint pool lacks a suitable specialist, we train an additional expert f",
+      "authors": [
+        "Zhan Chen",
+        "Jiqiao Ma",
+        "Chih-wen Kuo"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.14041v1",
+      "published_at": "2026-07-15T17:12:37Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_multi-expert-routing-for-multi-domain-low-resource-ocr-a-manchu-case-study",
+      "category": "图像创作",
+      "subcategory": "图像处理",
+      "license_tier": "freemium",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "教育学习"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Multi-Expert Routing for Multi-Domain Low-Resource OCR: A Manchu Case Study 属于图像创作领域，免费限量。historical manchu ocr must accommodate various visually distinct writing styles, including regular script, running script, and the semi-cursive chancery hand used in palace memorials, despite limited ...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_multi-expert-routing-for-multi-domain-low-resource-ocr-a-manchu-case-study",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "a1c5451ed6f8f020a026efcbbe5cbcf1"
+    },
+    {
+      "name": "Can an Old Dog Be Taught New Tricks? Taking LLMs Beyond Sentence Level Translation",
+      "title": "Can an Old Dog Be Taught New Tricks? Taking LLMs Beyond Sentence Level Translation",
+      "url": "https://arxiv.org/abs/2607.14040v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14040v1",
+      "description": "Automatic translation systems, from CAT tools to MT, overwhelmingly treat translation as a sentence-by-sentence act. This paper asks whether LLMs can be moved beyond that paradigm through whole-document, corpus-informed translation. We present PAT (Pragmatic Auto-Translator), a RAG-based system that pairs user-configured specifications with context from a comparable corpus of authentic longform texts in U.S. English and Latin American Spanish, passing retrieved paragraph-, section-, and document",
+      "authors": [
+        "Alaina Brandt"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2607.14040v1",
+      "published_at": "2026-07-15T17:10:24Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_can-an-old-dog-be-taught-new-tricks-taking-llms-beyond-sentence-level-translatio",
+      "category": "文本生成",
+      "subcategory": "通用文本",
+      "license_tier": "unknown",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "学术研究"
+        ],
+        "attribute": [],
+        "tech": [
+          "RAG"
+        ],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Can an Old Dog Be Taught New Tricks? Taking LLMs Beyond Sentence Level Translation 属于文本生成领域，定价未知。automatic translation systems, from cat tools to mt, overwhelmingly treat translation as a sentence-by-sentence act. this paper asks whether llms can be moved beyond that paradigm through whole-docume...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_can-an-old-dog-be-taught-new-tricks-taking-llms-beyond-sentence-level-translatio",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "352dcb47eb08e79167dd67ea27e34115"
+    },
+    {
+      "name": "Early Adoption of Agentic Coding Tools by GitHub Projects",
+      "title": "Early Adoption of Agentic Coding Tools by GitHub Projects",
+      "url": "https://arxiv.org/abs/2607.14037v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14037v1",
+      "description": "Agentic coding tools are increasingly capable of generating and submitting pull requests (PRs) to software projects, introducing new forms of human-agent collaboration in software development. While prior studies have examined PR-level outcomes of agent-generated contributions, less is known about how agentic coding tools are adopted and managed at the project level. In this paper, we analyze 25,264 agentic PRs from 2,361 popular GitHub repositories to investigate (1) the adoption of agentic cod",
+      "authors": [
+        "Maliha Noushin Raida",
+        "Daqing Hou"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CY",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.14037v1",
+      "published_at": "2026-07-15T17:05:06Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_early-adoption-of-agentic-coding-tools-by-github-projects",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [
+          "数据分析"
+        ],
+        "scenario": [
+          "学术研究",
+          "企业团队"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Early Adoption of Agentic Coding Tools by GitHub Projects 属于代码开发领域，付费产品。agentic coding tools are increasingly capable of generating and submitting pull requests (prs) to software projects, introducing new forms of human-agent collaboration in software development. while p...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_early-adoption-of-agentic-coding-tools-by-github-projects",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "c14b19684baf9df88cca384cc99a9331"
+    },
+    {
+      "name": "Improving Wind and Solar Power Prediction with Efficient Wrapper-based Feature Selection: An Empirical Study",
+      "title": "Improving Wind and Solar Power Prediction with Efficient Wrapper-based Feature Selection: An Empirical Study",
+      "url": "https://arxiv.org/abs/2607.14024v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14024v1",
+      "description": "With rising global energy demand and growing awareness of climate change and its impacts, the share of renewable energies in the global energy mix continues to grow. Unlike conventional power generation, the output of renewable energy sources cannot be controlled as consistently due to their dependence on environmental conditions. Therefore, reliable prediction of current and future energy production is essential. In this paper, we report findings from two structured literature reviews on real-w",
+      "authors": [
+        "Daniel Grillmeyer",
+        "Marius Hadry",
+        "Michael Stenger",
+        "Vanessa Borst",
+        "Veronika Lesch"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.14024v1",
+      "published_at": "2026-07-15T16:55:42Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_improving-wind-and-solar-power-prediction-with-efficient-wrapper-based-feature-s",
+      "category": "开发工具",
+      "subcategory": "",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "学术研究",
+          "教育学习"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Improving Wind and Solar Power Prediction with Efficient Wrapper-based Feature Selection: An Empirical Study 属于开发工具领域，付费产品。with rising global energy demand and growing awareness of climate change and its impacts, the share of renewable energies in the global energy mix continues to grow. unlike conventional power generati...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_improving-wind-and-solar-power-prediction-with-efficient-wrapper-based-feature-s",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "c410cccb2b42eea37b343f693c4490d1"
+    },
+    {
+      "name": "Transforming Rank: How Architecture Navigates the Spectral Pathologies of Depth",
+      "title": "Transforming Rank: How Architecture Navigates the Spectral Pathologies of Depth",
+      "url": "https://arxiv.org/abs/2607.14018v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14018v1",
+      "description": "We investigate how each component of the Transformer feedforward block architecture design determines how much rank survives across depth at initialization. We reinterpret skip connections and normalization, long understood as controlling magnitude, as mechanisms for preserving gradient rank across depth, since the very matrix multiplications and nonlinear activations that make the network expressive also reduce the rank. We show that skip connections trade off rank collapse against ensemble-lik",
+      "authors": [
+        "Katie Everett"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.14018v1",
+      "published_at": "2026-07-15T16:50:43Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_transforming-rank-how-architecture-navigates-the-spectral-pathologies-of-depth",
+      "category": "设计创意",
+      "subcategory": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "设计工作"
+        ],
+        "attribute": [],
+        "tech": [
+          "Transformer"
+        ],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Transforming Rank: How Architecture Navigates the Spectral Pathologies of Depth 属于设计创意领域，定价未知。we investigate how each component of the transformer feedforward block architecture design determines how much rank survives across depth at initialization. we reinterpret skip connections and normali...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_transforming-rank-how-architecture-navigates-the-spectral-pathologies-of-depth",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "916a27af9ae86f93bc9f8a75112ecce8"
+    },
+    {
+      "name": "Lighthouse RL: Sample-Efficient Circuit Optimization via Strategic Reset Points",
+      "title": "Lighthouse RL: Sample-Efficient Circuit Optimization via Strategic Reset Points",
+      "url": "https://arxiv.org/abs/2607.14008v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14008v1",
+      "description": "In this paper, we introduce Lighthouse RL, a sample-efficient reinforcement learning (RL) approach for analog circuit sizing. Traditional methods lack generalization across different performance targets, while standard RL approaches waste resources exploring unpromising regions. Our method addresses these inefficiencies through a strategic reset strategy that initializes episodes from high-performing configurations discovered during training, called \"lighthouses\". These states, which are closer ",
+      "authors": [
+        "Mustafa Emre Gürsoy",
+        "Stefan Uhlich",
+        "Ryoga Matsuo",
+        "Yağız Gençer",
+        "Arun Venkitaraman"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AR"
+      ],
+      "arxiv_id": "2607.14008v1",
+      "published_at": "2026-07-15T16:37:57Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_lighthouse-rl-sample-efficient-circuit-optimization-via-strategic-reset-points",
+      "category": "学术研究",
+      "subcategory": "论文工具",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "学术研究",
+          "教育学习"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Lighthouse RL: Sample-Efficient Circuit Optimization via Strategic Reset Points 属于学术研究领域，付费产品。in this paper, we introduce lighthouse rl, a sample-efficient reinforcement learning (rl) approach for analog circuit sizing. traditional methods lack generalization across different performance targe...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_lighthouse-rl-sample-efficient-circuit-optimization-via-strategic-reset-points",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "ffedde5ee6fe9e31ec7b37ef1c367306"
+    },
+    {
+      "name": "Rethinking Penetration Testing for AI-Enabled Systems: From Resource Compromise to Behavioral Objective Violation",
+      "title": "Rethinking Penetration Testing for AI-Enabled Systems: From Resource Compromise to Behavioral Objective Violation",
+      "url": "https://arxiv.org/abs/2607.14006v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14006v1",
+      "description": "Penetration testing traditionally evaluates whether adversaries can exploit weaknesses in software, infrastructure, configurations, or operational controls to achieve security-relevant compromise. This paradigm remains necessary for AI-enabled systems, but it is no longer sufficient. In such systems, adversaries may influence prompts, retrieved content, sensor inputs, training data, memory, tools, or human-AI interaction loops to alter system behavior without directly compromising the underlying",
+      "authors": [
+        "Mohammad Allahbakhsh",
+        "Mohammad Hassan Bahari",
+        "Moslem Attar-Raouf"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.14006v1",
+      "published_at": "2026-07-15T16:36:54Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_rethinking-penetration-testing-for-ai-enabled-systems-from-resource-compromise-t",
+      "category": "数据分析",
+      "subcategory": "数据分析",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "内容创作"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Rethinking Penetration Testing for AI-Enabled Systems: From Resource Compromise to Behavioral Objective Violation 属于数据分析领域，付费产品。penetration testing traditionally evaluates whether adversaries can exploit weaknesses in software, infrastructure, configurations, or operational controls to achieve security-relevant compromise. thi...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_rethinking-penetration-testing-for-ai-enabled-systems-from-resource-compromise-t",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "1abda0b2d6ba6435545884a8234fc718"
+    },
+    {
+      "name": "Do Agent Optimizers Compound? A Continual-Learning Evaluation on Terminal-Bench 2.0",
+      "title": "Do Agent Optimizers Compound? A Continual-Learning Evaluation on Terminal-Bench 2.0",
+      "url": "https://arxiv.org/abs/2607.14004v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14004v1",
+      "description": "Most reported gains from agent-optimization methods are one-shot: an agent is optimized against a fixed benchmark and the resulting improvement is reported as if it were a stable property of the method. This does not test the setting that matters for deployed agents, where optimization is applied recursively as new failures and new tasks appear over time. The central question this raises is whether optimizer-driven gains compound: after an agent has been optimized once, can it be optimized again",
+      "authors": [
+        "Wenxiao Wang",
+        "Priyatham Kattakinda",
+        "Soheil Feizi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.14004v1",
+      "published_at": "2026-07-15T16:36:04Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_do-agent-optimizers-compound-a-continual-learning-evaluation-on-terminal-bench-2",
+      "category": "开发工具",
+      "subcategory": "",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "教育学习"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Do Agent Optimizers Compound? A Continual-Learning Evaluation on Terminal-Bench 2.0 属于开发工具领域，付费产品。most reported gains from agent-optimization methods are one-shot: an agent is optimized against a fixed benchmark and the resulting improvement is reported as if it were a stable property of the metho...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_do-agent-optimizers-compound-a-continual-learning-evaluation-on-terminal-bench-2",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "eda434d389e84277904ea7097f958c4c"
+    },
+    {
+      "name": "Lyapunov Exponent as Physics-Informed Dense Reward: RL Discovery of Stabilization Beyond the Kapitza Pendulum",
+      "title": "Lyapunov Exponent as Physics-Informed Dense Reward: RL Discovery of Stabilization Beyond the Kapitza Pendulum",
+      "url": "https://arxiv.org/abs/2607.14001v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.14001v1",
+      "description": "We suggest using the Lyapunov characteristic exponent (LCE) as a dense reward signal for the reinforcement learning problem of stabilizing the inverted pendulum with vertical motion. With LCE, the agent not only successfully found the oscillatory motion known as the Kapitza pendulum but also damped the pendulum's pivoting, leaving it in a strictly upright position.",
+      "authors": [
+        "Slava Andrejev"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.14001v1",
+      "published_at": "2026-07-15T16:29:20Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_lyapunov-exponent-as-physics-informed-dense-reward-rl-discovery-of-stabilization",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "教育学习"
+        ],
+        "attribute": [
+          "API服务"
+        ],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Lyapunov Exponent as Physics-Informed Dense Reward: RL Discovery of Stabilization Beyond the Kapitza Pendulum 属于代码开发领域，付费产品。we suggest using the lyapunov characteristic exponent (lce) as a dense reward signal for the reinforcement learning problem of stabilizing the inverted pendulum with vertical motion. with lce, the age...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_lyapunov-exponent-as-physics-informed-dense-reward-rl-discovery-of-stabilization",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "3ed0ff16e94acb517df65ea814e26640"
+    },
+    {
+      "name": "The Dynamic Verifiable Multi-Agent Human Agentic Loyalty Loop (DVM-HALL) Model and the Net Human-Agent Score (NHAS) in Autonomous Commerce",
+      "title": "The Dynamic Verifiable Multi-Agent Human Agentic Loyalty Loop (DVM-HALL) Model and the Net Human-Agent Score (NHAS) in Autonomous Commerce",
+      "url": "https://arxiv.org/abs/2607.13998v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.13998v1",
+      "description": "The rapid proliferation of Agentic Artificial Intelligence fundamentally disrupts traditional customer loyalty paradigms. As AI evolves from passive recommendation algorithms to autonomous, goal-directed agents capable of executing purchasing decisions, the conventional understanding of consumer-brand relationships requires a structural reevaluation. By synthesizing extant literature across human-machine teaming, consumer decision-making, and algorithmic trust dynamics, we demonstrate that tradi",
+      "authors": [
+        "Sai Srikanth Madugula",
+        "Peplluis Esteva de la Rosa",
+        "Daya Shankar"
+      ],
+      "categories": [
+        "cs.SI",
+        "cs.AI",
+        "cs.GT",
+        "cs.MA"
+      ],
+      "arxiv_id": "2607.13998v1",
+      "published_at": "2026-07-15T16:27:48Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_the-dynamic-verifiable-multi-agent-human-agentic-loyalty-loop-dvm-hall-model-and",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "企业团队"
+        ],
+        "attribute": [
+          "API服务"
+        ],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "The Dynamic Verifiable Multi-Agent Human Agentic Loyalty Loop (DVM-HALL) Model and the Net Human-Agent Score (NHAS) in Autonomous Commerce 属于代码开发领域，付费产品。the rapid proliferation of agentic artificial intelligence fundamentally disrupts traditional customer loyalty paradigms. as ai evolves from passive recommendation algorithms to autonomous, goal-direc...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_the-dynamic-verifiable-multi-agent-human-agentic-loyalty-loop-dvm-hall-model-and",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "6841ad0c50a2dffad14afcf9cd717a3f"
+    },
+    {
+      "name": "TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents",
+      "title": "TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents",
+      "url": "https://arxiv.org/abs/2607.13988v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.13988v1",
+      "description": "Multi-turn agents solve complex tasks through extended sequences of tool interactions before producing a final answer, making credit assignment a fundamental challenge during post-training. Outcome rewards provide reliable supervision for short-horizon reasoning, but become sparse and high-variance as trajectories grow to tens or hundreds of tool calls. They can also be misleading: a failed rollout may contain many useful actions that move the agent closer to the goal, yet outcome-only training ",
+      "authors": [
+        "Leitian Tao",
+        "Baolin Peng",
+        "Wenlin Yao",
+        "Tao Ge",
+        "Hao Cheng"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.13988v1",
+      "published_at": "2026-07-15T16:16:42Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_trace-turn-level-reward-assignment-via-credit-estimation-for-long-horizon-agents",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents 属于代码开发领域，付费产品。multi-turn agents solve complex tasks through extended sequences of tool interactions before producing a final answer, making credit assignment a fundamental challenge during post-training. outcome re...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_trace-turn-level-reward-assignment-via-credit-estimation-for-long-horizon-agents",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "0108f94d7e4581390ee341f15169d060"
+    },
+    {
+      "name": "Multimodal Empirical Bayes Variational Autoencoders for Joint Longitudinal and Time-to-Event Modeling",
+      "title": "Multimodal Empirical Bayes Variational Autoencoders for Joint Longitudinal and Time-to-Event Modeling",
+      "url": "https://arxiv.org/abs/2607.13984v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.13984v1",
+      "description": "Longitudinal tumor measurements, dropout information, and genetic covariates provide complementary information about treatment response, but integrating these data sources within a single population modeling framework remains challenging. We extend the empirical Bayes variational autoencoder (EB-VAE) framework to joint longitudinal and time-to-event modeling and evaluate it on tumor growth data. The framework represents inter-individual variability using latent individual effects regularized by ",
+      "authors": [
+        "Anders Sjöberg",
+        "Nils Olsson",
+        "Marcus Baaz",
+        "Mats Jirstrand"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.13984v1",
+      "published_at": "2026-07-15T16:13:14Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_multimodal-empirical-bayes-variational-autoencoders-for-joint-longitudinal-and-t",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "个人开发者"
+        ],
+        "attribute": [],
+        "tech": [
+          "Multi-modal"
+        ],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Multimodal Empirical Bayes Variational Autoencoders for Joint Longitudinal and Time-to-Event Modeling 属于代码开发领域，付费产品。longitudinal tumor measurements, dropout information, and genetic covariates provide complementary information about treatment response, but integrating these data sources within a single population m...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_multimodal-empirical-bayes-variational-autoencoders-for-joint-longitudinal-and-t",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "a764fff11119e470523a6e6c3046e072"
+    },
+    {
+      "name": "Music-to-Dance Generation via Atomic Movements",
+      "title": "Music-to-Dance Generation via Atomic Movements",
+      "url": "https://arxiv.org/abs/2607.13978v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.13978v1",
+      "description": "Music-driven dance generation aims to produce human motion that is both rhythmically synchronized and semantically consistent with music. While recent neural approaches have achieved impressive visual realism, they typically model motion as a continuous signal and neglect its compositional nature, making generated dances structurally incoherent and difficult to control. In this work, we introduce a structure-aware framework that models choreography as a sequence of atomic movements-semantically ",
+      "authors": [
+        "Xinhao Cai",
+        "Yixuan Sun",
+        "Minghang Zheng",
+        "Qingchao Chen",
+        "Xin Jin"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.13978v1",
+      "published_at": "2026-07-15T16:03:55Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_music-to-dance-generation-via-atomic-movements",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Music-to-Dance Generation via Atomic Movements 属于代码开发领域，付费产品。music-driven dance generation aims to produce human motion that is both rhythmically synchronized and semantically consistent with music. while recent neural approaches have achieved impressive visual...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_music-to-dance-generation-via-atomic-movements",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "d15a082efc82f449dbefc16de7256ddf"
+    },
+    {
+      "name": "Constraint-Aware Counterfactual Editing for Aspect-Based Sentiment Analysis",
+      "title": "Constraint-Aware Counterfactual Editing for Aspect-Based Sentiment Analysis",
+      "url": "https://arxiv.org/abs/2607.13977v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.13977v1",
+      "description": "Aspect-Based Sentiment Analysis (ABSA) requires models to identify sentiment toward specific aspects rather than relying on the global polarity of a sentence. This makes counterfactual evaluation especially challenging: a valid counterfactual should flip the sentiment of one target aspect while preserving the sentiment of all non-target aspects, semantic meaning, fluency, and factual consistency. Existing counterfactual generation methods often focus on sentence-level label flipping and may prod",
+      "authors": [
+        "S M Rafiuddin",
+        "Vamsi Krishna Pavuluri",
+        "Atriya Sen"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2607.13977v1",
+      "published_at": "2026-07-15T16:03:44Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_constraint-aware-counterfactual-editing-for-aspect-based-sentiment-analysis",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [
+          "数据分析"
+        ],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Constraint-Aware Counterfactual Editing for Aspect-Based Sentiment Analysis 属于代码开发领域，付费产品。aspect-based sentiment analysis (absa) requires models to identify sentiment toward specific aspects rather than relying on the global polarity of a sentence. this makes counterfactual evaluation espe...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_constraint-aware-counterfactual-editing-for-aspect-based-sentiment-analysis",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "d33034db231b53c6f498baf69066a499"
+    },
+    {
+      "name": "DeltaMerge-LowRes: Composing Language and Task Deltas for Low-Resource Adaptation",
+      "title": "DeltaMerge-LowRes: Composing Language and Task Deltas for Low-Resource Adaptation",
+      "url": "https://arxiv.org/abs/2607.13967v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.13967v1",
+      "description": "Adapting a multilingual encoder to a new language \\emph{and} a new task with only a few hundred gold examples is a common low-resource NLP setting, yet the two axes are usually fused via an expensive language--task fine-tuning run. We ask whether they can instead be trained separately and recombined in weight space. \\DeltaMergeLowRes{} learns a language delta $Δ_L$ from unlabeled monolingual text and a task delta $Δ_T$ from labeled English data, then composes them at inference under one of four ",
+      "authors": [
+        "Son Ha Xuan",
+        "Xuan-Bach Le",
+        "Phat T. Tran-Truong"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2607.13967v1",
+      "published_at": "2026-07-15T15:53:40Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_deltamerge-lowres-composing-language-and-task-deltas-for-low-resource-adaptation",
+      "category": "数据分析",
+      "subcategory": "数据分析",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "教育学习"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "DeltaMerge-LowRes: Composing Language and Task Deltas for Low-Resource Adaptation 属于数据分析领域，付费产品。adapting a multilingual encoder to a new language \\emph{and} a new task with only a few hundred gold examples is a common low-resource nlp setting, yet the two axes are usually fused via an expensive ...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_deltamerge-lowres-composing-language-and-task-deltas-for-low-resource-adaptation",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "1bb7f7a3b4db92dc8712f36f0bf63f85"
+    },
+    {
+      "name": "Beyond the $d^{2.5}$-mixing bound for Dikin walks on polytopes",
+      "title": "Beyond the $d^{2.5}$-mixing bound for Dikin walks on polytopes",
+      "url": "https://arxiv.org/abs/2607.13943v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.13943v1",
+      "description": "Inspired by interior-point methods (IPM) for structured convex optimization, Kannan and Narayanan introduced the Dikin walk for sampling uniformly from polytopes in 2009. As in IPMs, the Dikin walk is affine-invariant, and its convergence is governed by the barrier geometry used to define its local proposal. They showed that the Dikin walk with the logarithmic barrier for a polytope in $\\mathbb{R}^{d}$ with $m$ linear inequalities mixes in $md$ iterations. In 2017, Chen, Dwivedi, Wainwright, and",
+      "authors": [
+        "Yunbum Kook"
+      ],
+      "categories": [
+        "cs.DS",
+        "cs.LG",
+        "math.OC"
+      ],
+      "arxiv_id": "2607.13943v1",
+      "published_at": "2026-07-15T15:29:25Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_beyond-the-d-2-5-mixing-bound-for-dikin-walks-on-polytopes",
+      "category": "其他",
+      "subcategory": "",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Beyond the $d^{2.5}$-mixing bound for Dikin walks on polytopes 属于其他领域，付费产品。inspired by interior-point methods (ipm) for structured convex optimization, kannan and narayanan introduced the dikin walk for sampling uniformly from polytopes in 2009. as in ipms, the dikin walk is...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_beyond-the-d-2-5-mixing-bound-for-dikin-walks-on-polytopes",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "ae03f50e4658dab9fb7fb235c7417e01"
+    },
+    {
+      "name": "A Self-Evolving Agent for Longitudinal Personal Health Management",
+      "title": "A Self-Evolving Agent for Longitudinal Personal Health Management",
+      "url": "https://arxiv.org/abs/2607.13940v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.13940v1",
+      "description": "Personal health management unfolds over repeated encounters, yet most health AI systems treat each request in isolation. We developed HealthClaw, an open-source agent architecture that updates support as a person's routines, preferences, measurements and risks change. It separates shared safety rules and medical knowledge from private longitudinal memory containing profile facts, reusable procedures and episodic traces. After each episode, induction determines what should update the profile, rev",
+      "authors": [
+        "Haoran Li",
+        "Jiebi Deng",
+        "Tong Jin",
+        "Jinghong Han",
+        "Yuxin Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.13940v1",
+      "published_at": "2026-07-15T15:22:11Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_a-self-evolving-agent-for-longitudinal-personal-health-management",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "个人开发者"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "A Self-Evolving Agent for Longitudinal Personal Health Management 属于代码开发领域，付费产品。personal health management unfolds over repeated encounters, yet most health ai systems treat each request in isolation. we developed healthclaw, an open-source agent architecture that updates support...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_a-self-evolving-agent-for-longitudinal-personal-health-management",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "bba89ae354d9954279abbe9e3025ead5"
+    },
+    {
+      "name": "A novel unsupervised machine learning strategy to handle multimodal cardiac PET/MRI data",
+      "title": "A novel unsupervised machine learning strategy to handle multimodal cardiac PET/MRI data",
+      "url": "https://arxiv.org/abs/2607.13936v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.13936v1",
+      "description": "Arrhythmogenic left ventricular cardiomyopathy is a genetic myocardial disease difficult to diagnose due to the lack of gold standard criteria. Simultaneous PET/MR imaging, combined with multiparametric quantitative analysis, could facilitate the identification of different profiles related to the phenotype and progression of cardiomyopathy. This preliminary study focuses on a methodological strategy for dealing with PET/MRI data, including inter-patient data linkage and regional analysis. Two-s",
+      "authors": [
+        "Brunnhilde Ponsi",
+        "Thomas Carlier",
+        "Lara Marteau",
+        "Aurélien Monnet",
+        "Thomas Eugène"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "physics.med-ph"
+      ],
+      "arxiv_id": "2607.13936v1",
+      "published_at": "2026-07-15T15:19:47Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_a-novel-unsupervised-machine-learning-strategy-to-handle-multimodal-cardiac-pet-",
+      "category": "数据分析",
+      "subcategory": "数据分析",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [
+          "数据分析"
+        ],
+        "scenario": [
+          "教育学习"
+        ],
+        "attribute": [],
+        "tech": [
+          "Multi-modal"
+        ],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "A novel unsupervised machine learning strategy to handle multimodal cardiac PET/MRI data 属于数据分析领域，付费产品。arrhythmogenic left ventricular cardiomyopathy is a genetic myocardial disease difficult to diagnose due to the lack of gold standard criteria. simultaneous pet/mr imaging, combined with multiparametr...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_a-novel-unsupervised-machine-learning-strategy-to-handle-multimodal-cardiac-pet-",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "e36b94c29f110419a435455cabd77bd8"
+    },
+    {
+      "name": "VAIOM: Continuous-Input, Discrete-Output Decoder-Only Financial Sequence Modeling",
+      "title": "VAIOM: Continuous-Input, Discrete-Output Decoder-Only Financial Sequence Modeling",
+      "url": "https://arxiv.org/abs/2607.13929v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.13929v1",
+      "description": "Financial observations are continuous, heterogeneous, and noisy, whereas decoder-only next-token models are usually built around discrete symbolic inputs. We introduce Vector-Input Autoregressive Inference for Ordinal-Return Modeling (VAIOM), a decoder-only Transformer for probabilistic next-return modeling on one-hour foreign-exchange bars. VAIOM separates input representation from output likelihood: continuous multivariate financial-event vectors preserve numerical structure at the input, whil",
+      "authors": [
+        "Yiming Ma",
+        "Xinyu Chen"
+      ],
+      "categories": [
+        "cs.LG",
+        "q-fin.CP"
+      ],
+      "arxiv_id": "2607.13929v1",
+      "published_at": "2026-07-15T15:10:10Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_vaiom-continuous-input-discrete-output-decoder-only-financial-sequence-modeling",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [
+          "Transformer"
+        ],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "VAIOM: Continuous-Input, Discrete-Output Decoder-Only Financial Sequence Modeling 属于代码开发领域，付费产品。financial observations are continuous, heterogeneous, and noisy, whereas decoder-only next-token models are usually built around discrete symbolic inputs. we introduce vector-input autoregressive infe...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_vaiom-continuous-input-discrete-output-decoder-only-financial-sequence-modeling",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "1d07add8ddffabbe32077e682c111f82"
+    },
+    {
+      "name": "Plausible Deniability Guarantees for Whistleblowers",
+      "title": "Plausible Deniability Guarantees for Whistleblowers",
+      "url": "https://arxiv.org/abs/2607.13928v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.13928v1",
+      "description": "Whistleblowers are a key safeguard against organizational wrongdoing, but the threat of retaliation deters reporting. Existing whistleblower-protection proposals lack formal privacy guarantees, and existing differential privacy mechanisms do not directly target the natural threat model -- one in which the audited organization itself observes auditor selection decisions and uses them to identify reporters. We formalize protection against a strong-adversary threat model as per-report $(0, δ)$-diff",
+      "authors": [
+        "Leo Richter",
+        "Matt J. Kusner"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_id": "2607.13928v1",
+      "published_at": "2026-07-15T15:09:55Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_plausible-deniability-guarantees-for-whistleblowers",
+      "ai_analysis": "这是一个用于代码补全的AI工具，通过智能提示帮助开发者提高编程效率，适合程序员、学生等需要编写代码的用户。",
+      "ai_confidence": 0.8,
+      "category": "开发工具",
+      "health_status": "active",
+      "is_china_tool": false,
+      "license_tier": "open-source",
+      "license_type": "Apache-2.0",
+      "subcategory": "代码辅助",
+      "tags": {
+        "attribute": [
+          "高效",
+          "轻量"
+        ],
+        "function": [
+          "代码补全",
+          "编程辅助"
+        ],
+        "quality": [
+          "稳定",
+          "实用"
+        ],
+        "scenario": [
+          "软件开发",
+          "编程学习"
+        ],
+        "tech": [
+          "AI模型",
+          "自然语言处理"
+        ]
+      },
+      "tool_id": "arxiv-ai_plausible-deniability-guarantees-for-whistleblowers",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "66f60617dcaf4ab8af77d47c622f88db"
+    },
+    {
+      "name": "Generative Compilation: On-the-Fly Compiler Feedback as AI Generates Code",
+      "title": "Generative Compilation: On-the-Fly Compiler Feedback as AI Generates Code",
+      "url": "https://arxiv.org/abs/2607.13921v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.13921v1",
+      "description": "Languages with rich static semantics, such as Rust, provide stronger guarantees for AI-generated code, but their strictness makes generation more difficult. Off-the-shelf compilers can provide useful feedback post-generation, but does not guide intermediate generation steps, such as those during autoregressive LLM decoding. Constrained decoding intervenes earlier by rejecting invalid tokens during sampling, but requires white-box model access and costly reimplementation for semantic constraints.",
+      "authors": [
+        "Niels Mündler-Sasahara",
+        "Hristo Venev",
+        "Dawn Song",
+        "Martin Vechev",
+        "Jingxuan He"
+      ],
+      "categories": [
+        "cs.PL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.13921v1",
+      "published_at": "2026-07-15T15:00:22Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_generative-compilation-on-the-fly-compiler-feedback-as-ai-generates-code",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "Generative Compilation: On-the-Fly Compiler Feedback as AI Generates Code 属于代码开发领域，付费产品。languages with rich static semantics, such as rust, provide stronger guarantees for ai-generated code, but their strictness makes generation more difficult. off-the-shelf compilers can provide useful ...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_generative-compilation-on-the-fly-compiler-feedback-as-ai-generates-code",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "432805a2cbf21e8bc3435b966f67edaa"
+    },
+    {
+      "name": "DeepStress: Stress-Testing Deep Search Agents",
+      "title": "DeepStress: Stress-Testing Deep Search Agents",
+      "url": "https://arxiv.org/abs/2607.13920v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.13920v1",
+      "description": "While search agents demonstrate impressive capabilities in multi-step question answering, their robustness to poor-quality evidence remains under-explored. This phenomenon occurs rarely in realistic benchmarks but can lead to dramatic failure in real life applications. Therefore in this study we propose DeepStress, a stress testing framework that controls the frequency of challenging evidence by replacing the retrieval module of search agents with a controlled synthetic environment. We use this ",
+      "authors": [
+        "Ismael Rousseau",
+        "Geraldine Damnati",
+        "Frederic Bechet"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2607.13920v1",
+      "published_at": "2026-07-15T14:59:29Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper",
+      "source": "arxiv-ai",
+      "id": "arxiv-ai_deepstress-stress-testing-deep-search-agents",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "paid",
+      "license_type": "",
+      "tags": {
+        "function": [
+          "搜索"
+        ],
+        "scenario": [
+          "教育学习"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "DeepStress: Stress-Testing Deep Search Agents 属于代码开发领域，付费产品。while search agents demonstrate impressive capabilities in multi-step question answering, their robustness to poor-quality evidence remains under-explored. this phenomenon occurs rarely in realistic b...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "arxiv-ai_deepstress-stress-testing-deep-search-agents",
+      "first_seen": "2026-07-16T12:31:36.289085+00:00",
+      "collected_at": "2026-07-16T12:31:36.289085+00:00",
+      "ai_analyzed_at": "2026-07-16T12:31:36.289085+00:00",
+      "last_checked": "2026-07-16T12:31:36.289085+00:00",
+      "content_hash": "0eece2cd04cb07189d223f29e9470035"
     },
     {
       "name": "即梦AI",
