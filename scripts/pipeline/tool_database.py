@@ -299,14 +299,17 @@ class ToolDatabase:
         return list(self.tools.values())
 
     def get_stats(self) -> Dict[str, Any]:
-        """获取数据库统计信息"""
-        total = len(self.tools)
+        """获取数据库统计信息（排除论文和新闻，只统计真实工具）"""
+        # Filter out papers and news - frontend only displays real tools
+        real_tools = [t for t in self.tools.values() 
+                      if t.get("type") not in ("paper", "news")]
+        total = len(real_tools)
         category_counts = {}
         health_counts = {}
         license_counts = {}
         source_counts = {}
 
-        for tool in self.tools.values():
+        for tool in real_tools:
             cat = tool.get("category", "其他")
             category_counts[cat] = category_counts.get(cat, 0) + 1
 

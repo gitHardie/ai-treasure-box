@@ -322,7 +322,7 @@ def cmd_deploy(args):
     snapshots_dir.mkdir(parents=True, exist_ok=True)
     snapshot = {
         "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
-        "total_tools": len(all_tools),
+        "total_tools": stats.get("total_tools", len(all_tools)),
         "new_this_week": stats.get("new_this_week", 0),
         "categories": category_counts,
     }
