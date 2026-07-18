@@ -35,6 +35,9 @@ export interface ToolItem {
   utility_score?: number
   should_include?: boolean
   tags?: ToolTags
+  features?: string[]
+  best_for?: string
+  notable?: string
 }
 
 export interface ToolsJsonData {

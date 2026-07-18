@@ -191,9 +191,9 @@ export default function ToolCard({ tool, onClick, index = 0 }: Props) {
           )}
         </div>
 
-        {/* Description */}
+        {/* Description - prefer AI analysis (Chinese) over raw English description */}
         <p className="text-sm text-slate-600 dark:text-slate-400 line-clamp-2 mb-2 leading-relaxed">
-          {tool.description}
+          {tool.ai_analysis || tool.description}
         </p>
 
         {/* Tags + badges */}

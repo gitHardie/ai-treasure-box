@@ -300,7 +300,10 @@ class AIAnalyzer:
       "tech": ["技术标签"],
       "quality": ["质量标签"]
     }},
-    "ai_analysis": "2-3句中文分析，说明这工具做什么、适合谁用、有什么独特之处",
+    "ai_analysis": "1-2句精炼中文概述，说明这个工具做什么、解决什么问题。要简洁有力，不要照搬英文描述",
+    "features": ["3个以内核心功能亮点，每个5-10字中文"],
+    "best_for": "一句话说明最适合谁用、在什么场景下用",
+    "notable": "一句话评价：这个工具的独特优势或值得关注的理由",
     "ai_confidence": 0.8,
     "is_china_tool": false,
     "health_status": "active/moderate/dormant/archived"
@@ -585,6 +588,11 @@ class AIAnalyzer:
         ai = analysis.get("ai_analysis") or analysis.get("summary") or analysis.get("analysis") or analysis.get("description") or ""
         if not ai and tool: ai = self._analyze_local(tool).get("ai_analysis", "")
         r["ai_analysis"] = ai
+        # 丰富分析字段
+        features = analysis.get("features", [])
+        r["features"] = features if isinstance(features, list) else []
+        r["best_for"] = analysis.get("best_for", "") or ""
+        r["notable"] = analysis.get("notable", "") or ""
         try: conf = max(0.0, min(1.0, float(analysis.get("ai_confidence", analysis.get("confidence", 0.7)))))
         except: conf = 0.5
         r["ai_confidence"] = conf
@@ -629,7 +637,8 @@ class AIAnalyzer:
                 "should_include":False,"rejection_reason":"无法分析",
                 "license_tier":"unknown","license_type":"",
                 "tags":{"function":[],"scenario":[],"attribute":[],"tech":[],"quality":[]},
-                "ai_analysis":"","ai_confidence":0.0,"is_china_tool":False,"health_status":"unknown"}
+                "ai_analysis":"","features":[],"best_for":"","notable":"",
+                "ai_confidence":0.0,"is_china_tool":False,"health_status":"unknown"}
 
     # ============================
     # 本地规则分析引擎（完整保留）
@@ -662,12 +671,13 @@ class AIAnalyzer:
         # === 国内工具判断 ===
         is_china = self._is_china_tool(url, desc, source)
 
-        # === 分析摘要 ===
-        analysis = self._generate_summary(name, desc, category, license_tier)
-
         # 本地推断受众面和实用性评分
         audience, utility = self._infer_audience_utility(name, desc, category, source, raw)
         should_include = self._eval_inclusion(category, utility, {})
+
+        # === 丰富分析内容 ===
+        rich = self._generate_rich_analysis(name, desc, category, license_tier,
+                                             source, raw, audience, utility)
 
         return {
             "category": category,
@@ -679,7 +689,10 @@ class AIAnalyzer:
             "license_tier": license_tier,
             "license_type": str(license_type) if license_type else "",
             "tags": tags,
-            "ai_analysis": analysis,
+            "ai_analysis": rich["ai_analysis"],
+            "features": rich["features"],
+            "best_for": rich["best_for"],
+            "notable": rich["notable"],
             "ai_confidence": 0.6,  # 本地分析置信度较低
             "is_china_tool": is_china,
             "health_status": health,
@@ -1104,7 +1117,7 @@ class AIAnalyzer:
         return False
 
     def _generate_summary(self, name: str, desc: str, category: str, license_tier: str) -> str:
-        """生成分析摘要"""
+        """生成分析摘要（简版，兼容旧字段）"""
         tier_desc = {
             "open-source": "开源项目",
             "freemium": "免费限量",
@@ -1120,6 +1133,137 @@ class AIAnalyzer:
             desc_clean = desc_clean[:200] + "..."
 
         return f"{name} 属于{category}领域，{tier_text}。{desc_clean}"
+
+    def _generate_rich_analysis(self, name: str, desc: str, category: str,
+                                license_tier: str, source: str, raw: Dict,
+                                audience: str, utility: int) -> Dict:
+        """
+        生成更丰富的分析内容，包含功能亮点、适合人群、特色评价。
+        本地降级时使用，比 _generate_summary 更详细。
+        """
+        text = f"{name} {desc}".lower()
+        desc_clean = desc.strip().rstrip('.')
+
+        # === 一句话概述（ai_analysis）===
+        tier_desc = {
+            "open-source": "开源",
+            "freemium": "免费增值",
+            "free": "免费",
+            "paid": "付费",
+            "source-available": "源码可见",
+            "unknown": "",
+        }
+        tier_text = tier_desc.get(license_tier, "")
+
+        # 从英文描述中提取关键词作为中文概述的补充
+        # 提取描述中的核心动作词（去除常见停用词）
+        desc_short = desc_clean[:60].strip().rstrip('.,;!')
+        # 如果描述太长或含英文句子，截取到第一个句号/句号位置
+        if len(desc_short) > 50:
+            desc_short = desc_clean[:50].strip().rstrip('.,;!') + "..."
+
+        # 根据受众面调整概述风格 - 生成纯中文概述，不嵌入英文原文
+        if audience == "general":
+            tier_part = f"{tier_text}" if tier_text else ""
+            overview = f"{name} 是一款{category}领域的{tier_part}工具".replace("的的", "的").rstrip("，, ")
+            overview += "，适合普通用户直接使用，无需技术背景。"
+        elif audience == "developer":
+            tier_part = f"{tier_text}" if tier_text else ""
+            overview = f"{name} 是一个面向开发者的{category}类{tier_part}项目".replace("的的", "的").rstrip("，, ")
+            overview += "，适合有技术背景的用户集成到工作流中使用。"
+        elif audience == "researcher":
+            tier_part = f"{tier_text}" if tier_text else ""
+            overview = f"{name} 是{category}领域的{tier_part}研究工具".replace("的的", "的").rstrip("，, ")
+            overview += "，主要面向研究人员和学术场景。"
+        else:
+            overview = f"{name} 属于{category}领域。"
+
+        # === 功能亮点 (features) ===
+        features = []
+        feature_keywords = {
+            "AI驱动": ["ai", "gpt", "llm", "neural", "model", "machine learning", "deep learning"],
+            "实时处理": ["real-time", "realtime", "live", "streaming", "实时"],
+            "多语言支持": ["multilingual", "multi-language", "多语言", "i18n", "localization"],
+            "API接口": ["api", "rest", "graphql", "endpoint", "webhook"],
+            "浏览器扩展": ["chrome extension", "firefox", "browser extension", "浏览器插件"],
+            "云端部署": ["cloud", "saas", "hosted", "在线", "云端"],
+            "本地运行": ["local", "offline", "本地", "离线", "self-hosted"],
+            "开源免费": ["open-source", "open source", "free", "mit", "apache"],
+            "自动化": ["automation", "automate", "auto", "自动化", "workflow", "pipeline"],
+            "可视化": ["visualization", "visual", "dashboard", "chart", "图表", "可视化"],
+            "协作功能": ["collaborate", "collaboration", "team", "share", "协作", "团队"],
+            "跨平台": ["cross-platform", "multi-platform", "windows", "macos", "linux", "跨平台"],
+            "数据导入导出": ["import", "export", "convert", "导入", "导出", "转换"],
+            "插件/扩展系统": ["plugin", "extension", "addon", "插件", "扩展"],
+            "CLI工具": ["cli", "command line", "terminal", "命令行"],
+            "SDK集成": ["sdk", "library", "framework", "集成"],
+        }
+        for feat_name, keywords in feature_keywords.items():
+            if any(kw in text for kw in keywords):
+                features.append(feat_name)
+            if len(features) >= 3:
+                break
+
+        # 如果没提取到特征，根据分类给默认特征
+        if not features:
+            default_features = {
+                "文本生成": ["文本处理", "智能生成"],
+                "图像创作": ["图像处理", "视觉创作"],
+                "代码开发": ["开发辅助", "代码工具"],
+                "数据分析": ["数据处理", "分析工具"],
+                "音视频": ["媒体处理", "音视频工具"],
+                "办公效率": ["效率提升", "办公辅助"],
+                "学术研究": ["研究工具", "学术资源"],
+                "开发工具": ["开发辅助", "工程工具"],
+                "设计创意": ["设计工具", "创意设计"],
+                "营销推广": ["营销工具", "推广助手"],
+                "教育培训": ["教育资源", "学习工具"],
+                "其他": ["实用工具"],
+            }
+            features = default_features.get(category, ["实用工具"])
+
+        # === 适合人群 (best_for) ===
+        audience_map = {
+            "general": "普通用户、AI爱好者，无需技术背景即可使用",
+            "developer": "开发者和技术人员，适合集成到工作流中",
+            "researcher": "研究人员和学者，适合学术研究和论文工作",
+        }
+        best_for = audience_map.get(audience, "对AI工具感兴趣的用户")
+
+        # === 特色评价 (notable) ===
+        stars = raw.get("stargazers_count", 0) or 0
+        notable_parts = []
+
+        if stars >= 10000:
+            notable_parts.append(f"GitHub {stars/1000:.0f}k+ Stars，社区高度认可")
+        elif stars >= 5000:
+            notable_parts.append(f"GitHub {stars/1000:.1f}k Stars，社区关注度高")
+        elif stars >= 1000:
+            notable_parts.append(f"GitHub {stars/1000:.1f}k Stars，有一定社区基础")
+
+        if license_tier == "open-source":
+            notable_parts.append("完全开源，可自由部署和修改")
+        elif license_tier == "free":
+            notable_parts.append("免费使用，零成本上手")
+        elif license_tier == "freemium":
+            notable_parts.append("提供免费层，高级功能按需付费")
+
+        # 实用性评价
+        if utility >= 8:
+            notable_parts.append("实用性极高，强烈推荐")
+        elif utility >= 6:
+            notable_parts.append("实用性良好，值得一试")
+        elif utility >= 4:
+            notable_parts.append("有一定实用价值")
+
+        notable = "；".join(notable_parts[:3]) if notable_parts else "值得关注的工具"
+
+        return {
+            "ai_analysis": overview,
+            "features": features,
+            "best_for": best_for,
+            "notable": notable,
+        }
 
     def _build_analysis_prompt(self, tool: Dict) -> str:
         """构建Coze分析提示词（单工具模式）"""
@@ -1147,7 +1291,10 @@ Stars: {tool.get('raw_data', {}).get('stargazers_count', 'N/A')}
     "tech": ["技术标签"],
     "quality": ["质量标签"]
   }},
-  "ai_analysis": "2-3句独立分析摘要，说明这个工具真正做什么、适合谁",
+  "ai_analysis": "1-2句精炼中文概述，说明这个工具做什么、解决什么问题。要简洁有力，不要照搬英文描述",
+  "features": ["3个以内核心功能亮点，每个5-10字中文"],
+  "best_for": "一句话说明最适合谁用、在什么场景下用",
+  "notable": "一句话评价：这个工具的独特优势或值得关注的理由",
   "ai_confidence": 0.8,
   "is_china_tool": false,
   "health_status": "active/moderate/dormant/archived"
