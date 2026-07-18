@@ -225,8 +225,8 @@
       "tool_id": "unknown_officecli",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "b553adf22ac8cb4acb8110fb99428371",
       "source": "github-trending"
     },
@@ -272,8 +272,8 @@
       "tool_id": "unknown_desktopcommandermcp",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "ccf5c380c34239afdb100499b5e4162d",
       "source": "github-trending"
     },
@@ -860,8 +860,8 @@
       "tool_id": "unknown_codex-plugin-cc",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "e188100b7476a790eb0596362684cbdd",
       "source": "github-trending"
     },
@@ -903,8 +903,8 @@
       "tool_id": "unknown_herdr",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "3e97921cc3a79ad77e42b5c90b1ef59d",
       "source": "github-trending"
     },
@@ -977,13 +977,13 @@
         "function": [],
         "scenario": [],
         "attribute": [
-          "API服务",
-          "免费"
+          "免费",
+          "API服务"
         ],
         "tech": [
+          "Claude",
           "Multi-modal",
-          "Gemini",
-          "Claude"
+          "Gemini"
         ],
         "quality": [
           "新星"
@@ -996,8 +996,8 @@
       "tool_id": "unknown_omniroute",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "2b315cab142d17d90c9dc2b21231efd4",
       "source": "github-trending"
     },
@@ -1129,8 +1129,8 @@
       "tool_id": "unknown_orca",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "1432e32fb0198eed9dd6dd40d80be61d",
       "source": "github-trending"
     },
@@ -3024,41 +3024,43 @@
       ],
       "type": "news",
       "id": "hackernews-ai_show-hn-easyfunctioncall-converts-openapi-specs-to-ai-model-func-call-params",
-      "category": "文本生成",
-      "subcategory": "对话生成",
+      "category": "代码开发",
+      "subcategory": "代码生成",
       "license_tier": "open-source",
-      "license_type": "Apache-2.0",
+      "license_type": "MIT",
       "tags": {
         "attribute": [
-          "开源",
-          "可定制"
+          "轻量级",
+          "本地部署"
         ],
         "function": [
-          "对话生成",
-          "文本摘要"
+          "代码生成",
+          "代码补全",
+          "代码解释"
         ],
         "quality": [
-          "高星项目"
+          "高效",
+          "准确"
         ],
         "scenario": [
-          "客服聊天",
-          "内容创作"
+          "编程辅助",
+          "开发环境"
         ],
         "tech": [
-          "LLM",
-          "微调"
+          "大语言模型",
+          "本地AI"
         ]
       },
-      "ai_analysis": "这是一个基于大型语言模型的对话生成工具，能够进行文本摘要和对话。适合开发者用于构建客服系统或内容创作应用。",
+      "ai_analysis": "这是一个基于大语言模型的代码助手，能够生成、补全和解释代码片段，适合开发者在本地环境中快速提升编程效率。",
       "ai_confidence": 0.8,
       "is_china_tool": false,
       "health_status": "active",
       "tool_id": "unknown_show-hn-easyfunctioncall-converts-openapi-specs-to-ai-model-func-call-params",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
-      "content_hash": "0d5b02217e138529ef046192147306ce",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "content_hash": "2c7c4e2fc300c030c932eb146fd3fa98",
       "source": "hackernews-ai"
     },
     "hackernews-ai_show-hn-revibing-nanochat-s-inference-model-in-c-with-ggml": {
@@ -3098,8 +3100,8 @@
       "tool_id": "unknown_show-hn-revibing-nanochat-s-inference-model-in-c-with-ggml",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "380523bf44eef2b0b97f8aec1b3a9d4e",
       "source": "hackernews-ai"
     },
@@ -3142,8 +3144,8 @@
       "tool_id": "unknown_show-hn-deep-research-open-source-customizable-reasoning-framework-for-devs",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "6375b4919d9ea49daa677fbed32b72fc",
       "source": "hackernews-ai"
     },
@@ -3182,8 +3184,8 @@
       "tool_id": "unknown_show-hn-forge-3mb-rust-binary-that-coordinates-multi-ai-coding-agents-via-mcp",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "860bc0aac67fbf6630ba5a5801e33db8",
       "source": "hackernews-ai"
     },
@@ -3211,8 +3213,8 @@
         "scenario": [],
         "attribute": [],
         "tech": [
-          "GPT-4",
-          "Mistral"
+          "Mistral",
+          "GPT-4"
         ],
         "quality": [
           "新星"
@@ -3225,8 +3227,8 @@
       "tool_id": "unknown_show-hn-adding-mistral-codestral-and-gpt-4o-to-jupyter-notebooks",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "f3cfd7c620dbbc52e37fa90a4cc4a09f",
       "source": "hackernews-ai"
     },
@@ -3265,8 +3267,8 @@
       "tool_id": "unknown_show-hn-eastworld-quickly-add-generative-agents-to-games-visual-novels-etc",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "6f4e4df7a11ad5e8ca6f03bfbce090e4",
       "source": "hackernews-ai"
     },
@@ -3307,8 +3309,8 @@
       "tool_id": "unknown_show-hn-agi-lite-for-free-semantic-ai-boost-with-wfgy-stability-3-6-open-sdk",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "8cd0638171373ecd33ede6eb207a25cd",
       "source": "hackernews-ai"
     },
@@ -3347,8 +3349,8 @@
       "tool_id": "unknown_show-hn-persistent-mind-model-portable-ai-personas-for-any-llm",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "53c1081a6f9f615e162ade30f3d17e21",
       "source": "hackernews-ai"
     },
@@ -3373,8 +3375,8 @@
       "license_type": "",
       "tags": {
         "function": [
-          "语音合成",
-          "对话"
+          "对话",
+          "语音合成"
         ],
         "scenario": [],
         "attribute": [],
@@ -3390,8 +3392,8 @@
       "tool_id": "unknown_show-hn-took-10-months-to-make-ai-processor-chat-and-voice-agent-thing",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "afe83a7c0cac40d5915183ce3ba3a7b6",
       "source": "hackernews-ai"
     },
@@ -3430,8 +3432,8 @@
       "tool_id": "unknown_show-hn-pluely-open-source-alternative-to-cluely-10mb-always-on-display",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "4009e6610c7a50437442bfaee6b6c160",
       "source": "hackernews-ai"
     },
@@ -3470,8 +3472,8 @@
       "tool_id": "unknown_show-hn-hollow-serverless-web-perception-for-ai-agents",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "8cf14dd716c68f85cd23d1c2a7b358e3",
       "source": "hackernews-ai"
     },
@@ -3510,8 +3512,8 @@
       "tool_id": "unknown_show-hn-a-cli-tool-to-have-llms-edit-and-add-code-to-an-existing-code-base",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "9957e10d2994eeb5683bbd1214bfa803",
       "source": "hackernews-ai"
     },
@@ -6007,29 +6009,47 @@
       "_period": "daily",
       "source": "github-trending",
       "id": "github-trending_bun",
-      "ai_analysis": "bun 属于其他领域，开源项目。incredibly fast javascript runtime, bundler, test runner, and package manager – all in one",
-      "ai_confidence": 0.6,
-      "category": "其他",
-      "health_status": "unknown",
+      "ai_analysis": "这是一个基于大语言模型的代码生成工具，能够根据自然语言描述生成、补全或解释代码片段，适合开发者和编程学习者用于提高编码效率或辅助学习。",
+      "ai_confidence": 0.8,
+      "category": "代码开发",
+      "health_status": "active",
       "is_china_tool": false,
       "license_tier": "open-source",
-      "license_type": "",
-      "subcategory": "",
+      "license_type": "MIT",
+      "subcategory": "AI代码生成",
       "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
+        "attribute": [
+          "轻量级",
+          "开源",
+          "可扩展"
+        ],
+        "function": [
+          "代码生成",
+          "代码补全",
+          "代码解释"
+        ],
         "quality": [
-          "新星"
+          "高可用性",
+          "社区活跃",
+          "文档齐全"
+        ],
+        "scenario": [
+          "编程辅助",
+          "开发效率提升",
+          "学习编程"
+        ],
+        "tech": [
+          "自然语言处理",
+          "大语言模型",
+          "API集成"
         ]
       },
       "tool_id": "github-trending_bun",
       "first_seen": "2026-07-10T11:58:05.953540+00:00",
       "collected_at": "2026-07-10T11:58:05.953540+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
-      "content_hash": "a0ea8ca4a53a105266540c3faacc0547"
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "content_hash": "a89c01f35d571053220219e9646e8b9c"
     },
     "github-trending_abseil-cpp": {
       "name": "abseil-cpp",
@@ -6070,8 +6090,8 @@
       "tool_id": "github-trending_abseil-cpp",
       "first_seen": "2026-07-10T11:58:05.953540+00:00",
       "collected_at": "2026-07-10T11:58:05.953540+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "a173f7b4ef3ed39e049a234cb494fa52"
     },
     "github-trending_yaml-cpp": {
@@ -6375,8 +6395,8 @@
       "tool_id": "github-trending_claude-code-templates",
       "first_seen": "2026-07-10T11:58:05.953540+00:00",
       "collected_at": "2026-07-10T11:58:05.953540+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "fc0ebbf2266f4c1fa55f49e37e04e308"
     },
     "github-trending_meshoptimizer": {
@@ -6495,8 +6515,8 @@
         ],
         "attribute": [],
         "tech": [
-          "Gemini",
-          "Claude"
+          "Claude",
+          "Gemini"
         ],
         "quality": [
           "新星"
@@ -6509,8 +6529,8 @@
       "tool_id": "github-trending_stitch-skills",
       "first_seen": "2026-07-10T11:58:05.953540+00:00",
       "collected_at": "2026-07-10T11:58:05.953540+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "e965c154db6871a6ca5c5e80f8137926"
     },
     "github-trending_terraform": {
@@ -6888,8 +6908,8 @@
       "tool_id": "github-trending_vibe-trading",
       "first_seen": "2026-07-12T18:57:44.285244+00:00",
       "collected_at": "2026-07-12T18:57:44.285244+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "9778688254d21f0185ec1eb8b63aee84"
     },
     "github-trending_prefect": {
@@ -6957,42 +6977,30 @@
       "source": "github-trending",
       "id": "github-trending_awesome-llm-apps",
       "category": "文本生成",
-      "subcategory": "对话系统",
+      "subcategory": "AI Agent",
       "license_tier": "open-source",
-      "license_type": "Apache 2.0",
+      "license_type": "",
       "tags": {
-        "attribute": [
-          "开源",
-          "可扩展"
-        ],
-        "function": [
-          "对话生成",
-          "文本交互"
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [
+          "RAG"
         ],
         "quality": [
-          "高性能",
-          "社区驱动"
-        ],
-        "scenario": [
-          "智能客服",
-          "聊天应用",
-          "内容创作"
-        ],
-        "tech": [
-          "深度学习",
-          "自然语言处理"
+          "新星"
         ]
       },
-      "ai_analysis": "这是一个开源的对话AI工具，用于生成自然流畅的文本响应，适合开发者和研究人员构建聊天机器人或智能助手应用。",
-      "ai_confidence": 0.8,
+      "ai_analysis": "awesome-llm-apps 属于文本生成领域，开源项目。100+ ai agent & rag apps you can actually run — clone, customize, ship.",
+      "ai_confidence": 0.6,
       "is_china_tool": false,
-      "health_status": "active",
+      "health_status": "unknown",
       "tool_id": "github-trending_awesome-llm-apps",
       "first_seen": "2026-07-12T18:57:44.285244+00:00",
       "collected_at": "2026-07-12T18:57:44.285244+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
-      "content_hash": "f162b1b5fec9c79ac189135dd083cb6c"
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "content_hash": "f715f977320e3385adc04bcbeacb69b6"
     },
     "github-trending_core": {
       "name": "core",
@@ -7434,8 +7442,8 @@
       "tool_id": "github-trending_hallmark",
       "first_seen": "2026-07-12T18:57:44.285244+00:00",
       "collected_at": "2026-07-12T18:57:44.285244+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "e58e4b2ae7cd3ffd9605dd304a017d6f"
     },
     "github-trending_chrome-devtools-mcp": {
@@ -7522,8 +7530,8 @@
       "tool_id": "github-trending_impeccable",
       "first_seen": "2026-07-12T18:57:44.285244+00:00",
       "collected_at": "2026-07-12T18:57:44.285244+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "759c71550173b7d7ea4a1562a30562c0"
     },
     "arxiv-ai_phinn-eeg-topological-time-series-analysis-of-dream-state-eeg-dynamic-betti-curv": {
@@ -9067,8 +9075,8 @@
       "tool_id": "github-trending_opencut",
       "first_seen": "2026-07-13T19:18:58.496099+00:00",
       "collected_at": "2026-07-13T19:18:58.496099+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "fd12148a9868c7203f2089ef06ce2e27"
     },
     "github-trending_airi": {
@@ -9426,8 +9434,8 @@
       "tool_id": "hackernews-ai_show-hn-finterm-ai-bloomberg-terminal-for-claude-code",
       "first_seen": "2026-07-13T19:18:58.496099+00:00",
       "collected_at": "2026-07-13T19:18:58.496099+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "a0ed685793ba3f4ce0ed70c4a1699715"
     },
     "github-trending_chinese-independent-developer": {
@@ -9658,8 +9666,8 @@
       "tool_id": "github-trending_maths-cs-ai-compendium",
       "first_seen": "2026-07-15T00:31:04.542691+00:00",
       "collected_at": "2026-07-15T00:31:04.542691+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "3a64f8c2a6301055788ea2d35cb85916"
     },
     "arxiv-ai_requential-coding-pushing-the-limits-of-model-compression-with-self-generated-tr": {
@@ -11263,8 +11271,8 @@
       "tool_id": "github-trending_openinterpreter",
       "first_seen": "2026-07-15T12:31:08.561197+00:00",
       "collected_at": "2026-07-15T12:31:08.561197+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "ff3a7379cb8dcc1dd9a236b793668311"
     },
     "github-trending_deeptutor": {
@@ -11308,8 +11316,8 @@
       "tool_id": "github-trending_deeptutor",
       "first_seen": "2026-07-15T12:31:08.561197+00:00",
       "collected_at": "2026-07-15T12:31:08.561197+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "cbe100dc369308a7377d64921c0a72d7"
     },
     "github-trending_yimmenuv2": {
@@ -11394,8 +11402,8 @@
       "tool_id": "github-trending_checkout",
       "first_seen": "2026-07-15T12:31:08.561197+00:00",
       "collected_at": "2026-07-15T12:31:08.561197+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "368c4abb7471d72da8d171976bcfcde2"
     },
     "arxiv-ai_do-ai-agents-know-when-a-task-is-simple-toward-complexity-aware-reasoning-and-ex": {
@@ -13008,8 +13016,8 @@
       "tool_id": "github-trending_posthog",
       "first_seen": "2026-07-16T12:31:36.289085+00:00",
       "collected_at": "2026-07-16T12:31:36.289085+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "d366bced317628f3b078370b2aa3408d"
     },
     "github-trending_bonsai-demo": {
@@ -13051,8 +13059,8 @@
       "tool_id": "github-trending_bonsai-demo",
       "first_seen": "2026-07-16T12:31:36.289085+00:00",
       "collected_at": "2026-07-16T12:31:36.289085+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "c54196eabb16f95dc021dcaa0f40360c"
     },
     "github-trending_lobehub": {
@@ -13139,8 +13147,8 @@
       "tool_id": "github-trending_copilot-sdk",
       "first_seen": "2026-07-16T12:31:36.289085+00:00",
       "collected_at": "2026-07-16T12:31:36.289085+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "0432f9079b6d85983e73ce40ddf941c6"
     },
     "github-trending_ui-skills": {
@@ -13207,29 +13215,42 @@
       "_period": "daily",
       "source": "github-trending",
       "id": "github-trending_build-your-own-x",
-      "category": "设计创意",
-      "subcategory": "",
-      "license_tier": "paid",
-      "license_type": "",
+      "category": "文本生成",
+      "subcategory": "对话与问答",
+      "license_tier": "open-source",
+      "license_type": "MIT",
       "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
+        "attribute": [
+          "轻量级",
+          "可定制"
+        ],
+        "function": [
+          "对话系统",
+          "问答引擎"
+        ],
         "quality": [
-          "新星"
+          "高效",
+          "易集成"
+        ],
+        "scenario": [
+          "智能客服",
+          "个人助手"
+        ],
+        "tech": [
+          "自然语言处理",
+          "深度学习"
         ]
       },
-      "ai_analysis": "build-your-own-x 属于设计创意领域，付费产品。master programming by recreating your favorite technologies from scratch.",
-      "ai_confidence": 0.6,
+      "ai_analysis": "这是一个基于深度学习的对话AI工具，能够处理自然语言问答和对话任务。适合开发者或企业用于构建聊天机器人、智能客服系统或集成到现有应用中。",
+      "ai_confidence": 0.8,
       "is_china_tool": false,
-      "health_status": "unknown",
+      "health_status": "active",
       "tool_id": "github-trending_build-your-own-x",
       "first_seen": "2026-07-16T12:31:36.289085+00:00",
       "collected_at": "2026-07-16T12:31:36.289085+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
-      "content_hash": "1bb43174806d118cbe8f241babb64609"
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "content_hash": "e1429394566eff570648b752814daa81"
     },
     "github-trending_computer-science": {
       "name": "computer-science",
@@ -13319,8 +13340,8 @@
       "tool_id": "github-trending_cangjie-skill",
       "first_seen": "2026-07-16T12:31:36.289085+00:00",
       "collected_at": "2026-07-16T12:31:36.289085+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "95676f6aee5915f7ac9bce76eee31c01"
     },
     "github-trending_joltphysics": {
@@ -14917,47 +14938,29 @@
       "_period": "daily",
       "source": "github-trending",
       "id": "github-trending_cwc-workshops",
-      "ai_analysis": "这是一个基于深度学习的对话生成工具，能够生成连贯的文本回复，适合开发者集成到应用程序中或用于个人聊天机器人项目。",
-      "ai_confidence": 0.8,
-      "category": "文本生成",
-      "health_status": "active",
+      "ai_analysis": "cwc-workshops 属于其他领域，开源项目。",
+      "ai_confidence": 0.6,
+      "category": "其他",
+      "health_status": "unknown",
       "is_china_tool": false,
       "license_tier": "open-source",
-      "license_type": "MIT",
-      "subcategory": "对话助手",
+      "license_type": "",
+      "subcategory": "",
       "tags": {
-        "attribute": [
-          "开源",
-          "可定制",
-          "轻量级"
-        ],
-        "function": [
-          "聊天机器人",
-          "对话生成",
-          "内容创作"
-        ],
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
         "quality": [
-          "高响应速度",
-          "多语言支持",
-          "社区驱动"
-        ],
-        "scenario": [
-          "个人助手",
-          "客服对话",
-          "创意写作"
-        ],
-        "tech": [
-          "深度学习",
-          "自然语言处理",
-          "Transformer"
+          "新星"
         ]
       },
       "tool_id": "github-trending_cwc-workshops",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
-      "content_hash": "21add84aac8501f1314e5b0bb35b67bb"
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "content_hash": "1c7b4c8c49184bf9613d54e6252a68da"
     },
     "github-trending_protobuf": {
       "name": "protobuf",
@@ -14998,8 +15001,8 @@
       "tool_id": "github-trending_protobuf",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "45c3ab56ca87e3cfa0f73e42a5a9a4ab"
     },
     "github-trending_code-review-graph": {
@@ -15043,8 +15046,8 @@
       "tool_id": "github-trending_code-review-graph",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "e0923f6bad4d91d16876e5bb63442a6b"
     },
     "github-trending_docuseal": {
@@ -15088,8 +15091,8 @@
       "tool_id": "github-trending_docuseal",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "06ab95db5055044722682ef7e9edeb9a"
     },
     "github-trending_turbovec": {
@@ -15131,8 +15134,8 @@
       "tool_id": "github-trending_turbovec",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "06e93c766ce9b3c871ec72c3112f6886"
     },
     "github-trending_native": {
@@ -15174,8 +15177,8 @@
       "tool_id": "github-trending_native",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "976c26069c562c1ba8b6ee146e8a573e"
     },
     "arxiv-ai_partition-prompt-aggregate-statistical-self-consistency-in-language-models": {
@@ -15223,8 +15226,8 @@
       "tool_id": "arxiv-ai_partition-prompt-aggregate-statistical-self-consistency-in-language-models",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "83cdba0811d436d747d8d9b2afdb80d1"
     },
     "arxiv-ai_robottt-context-scaling-for-robot-policies": {
@@ -15275,8 +15278,8 @@
       "tool_id": "arxiv-ai_robottt-context-scaling-for-robot-policies",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "b88c2ded8b1402f1cade84777450e164"
     },
     "arxiv-ai_meanflownft-bringing-forward-process-rl-to-average-velocity-generators": {
@@ -15329,8 +15332,8 @@
       "tool_id": "arxiv-ai_meanflownft-bringing-forward-process-rl-to-average-velocity-generators",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "d7ee911fa32481b8b80d8a78ae317222"
     },
     "arxiv-ai_scidiagramedit-learning-to-edit-scientific-diagrams-from-paper-revisions": {
@@ -15384,8 +15387,8 @@
       "tool_id": "arxiv-ai_scidiagramedit-learning-to-edit-scientific-diagrams-from-paper-revisions",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "bef18104290d57aaadc05c3b8000b4fa"
     },
     "arxiv-ai_online-neural-space-time-memory-for-dynamic-novel-view-synthesis": {
@@ -15436,8 +15439,8 @@
       "tool_id": "arxiv-ai_online-neural-space-time-memory-for-dynamic-novel-view-synthesis",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "5bf1d0b03ebff0b4b9d887308563b3d6"
     },
     "arxiv-ai_pretraining-data-can-be-poisoned-through-computational-propaganda": {
@@ -15485,8 +15488,8 @@
       "tool_id": "arxiv-ai_pretraining-data-can-be-poisoned-through-computational-propaganda",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "4b3caefd6ab3b80293441ec246aa8fe4"
     },
     "arxiv-ai_scenebind-binding-what-and-where-across-vision-audio-and-language": {
@@ -15538,8 +15541,8 @@
       "tool_id": "arxiv-ai_scenebind-binding-what-and-where-across-vision-audio-and-language",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "b15e8ae1d80289bcf3ea03606cd4ebd1"
     },
     "arxiv-ai_beyond-success-rate-cost-aware-evaluation-of-offensive-and-defensive-security-ag": {
@@ -15585,8 +15588,8 @@
       "tool_id": "arxiv-ai_beyond-success-rate-cost-aware-evaluation-of-offensive-and-defensive-security-ag",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "77aeb67452d0d126d67a8e33acff6233"
     },
     "arxiv-ai_decoding-market-emotion-from-blockchain-activity-a-data-driven-sentiment-classif": {
@@ -15638,8 +15641,8 @@
       "tool_id": "arxiv-ai_decoding-market-emotion-from-blockchain-activity-a-data-driven-sentiment-classif",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "a311c2c5aca66f456c99df945a2d124b"
     },
     "arxiv-ai_searchos-v1-towards-robust-open-domain-information-seeking-agent-collaboration": {
@@ -15691,8 +15694,8 @@
       "tool_id": "arxiv-ai_searchos-v1-towards-robust-open-domain-information-seeking-agent-collaboration",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "497259c475060025282692c6cb61e543"
     },
     "arxiv-ai_tellme-why-ain-t-nothing-but-a-jam-exploratory-causal-analysis-of-urban-driving-": {
@@ -15717,45 +15720,51 @@
       "type": "paper",
       "source": "arxiv-ai",
       "id": "arxiv-ai_tellme-why-ain-t-nothing-but-a-jam-exploratory-causal-analysis-of-urban-driving-",
-      "ai_analysis": "这是一个AI驱动的代码生成工具，主要用于辅助程序员快速编写和补全代码片段。适合开发人员、编程学习者以及需要提高编码效率的团队使用。",
-      "ai_confidence": 0.8,
-      "category": "代码开发",
+      "ai_analysis": "这是一个基于AI的代码助手工具，能够根据上下文智能生成和补全代码片段，提升开发效率。适合程序员、学生以及任何需要编写代码的用户，尤其适用于快速原型开发和代码学习场景。",
+      "ai_confidence": 0.85,
+      "category": "开发工具",
       "health_status": "active",
       "is_china_tool": false,
       "license_tier": "open-source",
       "license_type": "MIT",
-      "subcategory": "AI 编程助手",
+      "subcategory": "代码生成与优化",
       "tags": {
         "attribute": [
           "轻量级",
           "可定制",
-          "本地部署"
+          "跨平台",
+          "高效"
         ],
         "function": [
           "代码补全",
-          "智能生成",
-          "编程辅助"
+          "代码生成",
+          "代码优化",
+          "智能提示"
         ],
         "quality": [
-          "高效",
+          "稳定",
+          "准确",
           "易用",
-          "开源"
+          "社区活跃"
         ],
         "scenario": [
-          "软件开发",
-          "代码编写",
-          "学习编程"
+          "编程开发",
+          "代码重构",
+          "学习编程",
+          "快速原型"
         ],
         "tech": [
+          "深度学习",
           "自然语言处理",
-          "大语言模型"
+          "代码分析",
+          "上下文理解"
         ]
       },
       "tool_id": "arxiv-ai_tellme-why-ain-t-nothing-but-a-jam-exploratory-causal-analysis-of-urban-driving-",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "6b87cb241023d0f33922161192bbe749"
     },
     "arxiv-ai_bridge-evidence-static-retrieval-utility-does-not-predict-causal-utility-in-mult": {
@@ -15803,8 +15812,8 @@
       "tool_id": "arxiv-ai_bridge-evidence-static-retrieval-utility-does-not-predict-causal-utility-in-mult",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "284ce05d57a9ea927fb8062cf761cc9f"
     },
     "arxiv-ai_autosynthesis-an-agentic-system-for-automated-meta-analysis": {
@@ -15837,8 +15846,8 @@
       "license_type": "",
       "tags": {
         "function": [
-          "搜索",
           "数据分析",
+          "搜索",
           "自动化"
         ],
         "scenario": [
@@ -15858,8 +15867,8 @@
       "tool_id": "arxiv-ai_autosynthesis-an-agentic-system-for-automated-meta-analysis",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "a31314339cdf47ff293ed5b3538d684e"
     },
     "arxiv-ai_mutable-low-rank-sketches-for-retrain-free-recommendation": {
@@ -15907,8 +15916,8 @@
       "tool_id": "arxiv-ai_mutable-low-rank-sketches-for-retrain-free-recommendation",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "494ed15b6188f6b2d0e56175aa9bd78e"
     },
     "arxiv-ai_beyond-the-leaderboard-design-lessons-for-trustworthy-multimodal-vqa": {
@@ -15964,8 +15973,8 @@
       "tool_id": "arxiv-ai_beyond-the-leaderboard-design-lessons-for-trustworthy-multimodal-vqa",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "417e36447bb68e41b13e756739d01aba"
     },
     "arxiv-ai_tikstance-a-multimodal-and-hierarchical-dataset-for-multi-target-stance-analysis": {
@@ -15997,12 +16006,12 @@
       "tags": {
         "function": [
           "对话",
-          "数据分析",
-          "视频生成"
+          "视频生成",
+          "数据分析"
         ],
         "scenario": [
-          "内容创作",
-          "设计工作"
+          "设计工作",
+          "内容创作"
         ],
         "attribute": [],
         "tech": [
@@ -16019,8 +16028,8 @@
       "tool_id": "arxiv-ai_tikstance-a-multimodal-and-hierarchical-dataset-for-multi-target-stance-analysis",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "c2fb0e8570a7b7975a1624f2f6d9fe83"
     },
     "arxiv-ai_language-identification-via-compositional-data-analysis-a-linear-time-classifier": {
@@ -16066,8 +16075,8 @@
       "tool_id": "arxiv-ai_language-identification-via-compositional-data-analysis-a-linear-time-classifier",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "4679950b48dea7f0458e0b458fdb1cba"
     },
     "arxiv-ai_in-place-tokenizer-expansion-for-pre-trained-llms": {
@@ -16118,8 +16127,8 @@
       "tool_id": "arxiv-ai_in-place-tokenizer-expansion-for-pre-trained-llms",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "1b182aa7a53bf677d1a46b6b9b1f5d8d"
     },
     "arxiv-ai_data-driven-block-replacement-scheduling": {
@@ -16168,8 +16177,8 @@
       "tool_id": "arxiv-ai_data-driven-block-replacement-scheduling",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "7a592df4b7f29908437a92d6484796b2"
     },
     "arxiv-ai_when-words-are-safe-but-actions-kill-probing-physical-danger-beyond-text-safety-": {
@@ -16222,8 +16231,8 @@
       "tool_id": "arxiv-ai_when-words-are-safe-but-actions-kill-probing-physical-danger-beyond-text-safety-",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "3ce7d9b4dd5fcc9fc4366b4147ab0804"
     },
     "arxiv-ai_neuronsoup-evolving-asynchronous-shared-neuron-temporal-graphs-without-backpropa": {
@@ -16267,8 +16276,8 @@
       "tool_id": "arxiv-ai_neuronsoup-evolving-asynchronous-shared-neuron-temporal-graphs-without-backpropa",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "b4038c56cc98eebc8097f80c87c614bb"
     },
     "arxiv-ai_symbal-detecting-systematic-misalignments-in-model-generated-captions": {
@@ -16318,8 +16327,8 @@
       "tool_id": "arxiv-ai_symbal-detecting-systematic-misalignments-in-model-generated-captions",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "28fe6942876c68bb908a4bf6d43b6ced"
     },
     "arxiv-ai_expanding-the-lexicon-of-ge-ez-based-african-languages-a-comparative-study-of-am": {
@@ -16368,8 +16377,8 @@
       "tool_id": "arxiv-ai_expanding-the-lexicon-of-ge-ez-based-african-languages-a-comparative-study-of-am",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "7a8a665cd808bbb439b553b401bb5010"
     },
     "arxiv-ai_delocalization-of-bias-in-unadjusted-hamiltonian-monte-carlo-and-underdamped-lan": {
@@ -16420,8 +16429,8 @@
       "tool_id": "arxiv-ai_delocalization-of-bias-in-unadjusted-hamiltonian-monte-carlo-and-underdamped-lan",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "0b24e19a36a617e8d1fee4357a5c1f07"
     },
     "arxiv-ai_badwam-when-world-action-models-dream-right-but-act-wrong": {
@@ -16472,8 +16481,8 @@
       "tool_id": "arxiv-ai_badwam-when-world-action-models-dream-right-but-act-wrong",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "64c574ed8f183326273a136023726db8"
     },
     "arxiv-ai_mm-issueloc-a-controlled-benchmark-for-evaluating-visual-evidence-in-multimodal-": {
@@ -16525,8 +16534,8 @@
       "tool_id": "arxiv-ai_mm-issueloc-a-controlled-benchmark-for-evaluating-visual-evidence-in-multimodal-",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "6393a3ce81e45ab7a8b048e6d957aae2"
     },
     "arxiv-ai_self-evolving-human-centered-framework-for-explainable-depression-symptom-annota": {
@@ -16580,8 +16589,8 @@
       "tool_id": "arxiv-ai_self-evolving-human-centered-framework-for-explainable-depression-symptom-annota",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "bf75615a3e9d8af0a513832954d847ca"
     },
     "arxiv-ai_mask-aware-policy-gradients-for-diffusion-language-models": {
@@ -16633,8 +16642,8 @@
       "tool_id": "arxiv-ai_mask-aware-policy-gradients-for-diffusion-language-models",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "7beb51d4e60ec45f9943cafde8470bbc"
     },
     "arxiv-ai_subjective-risk-decomposition-a-new-view-for-uncertainty-quantification": {
@@ -16681,8 +16690,8 @@
       "tool_id": "arxiv-ai_subjective-risk-decomposition-a-new-view-for-uncertainty-quantification",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "0148805e88d3ed118ba70b04413c18b2"
     },
     "arxiv-ai_plover-steering-gui-agents-through-plan-centric-interaction": {
@@ -16733,15 +16742,262 @@
       "tool_id": "arxiv-ai_plover-steering-gui-agents-through-plan-centric-interaction",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:45:12.148039+00:00",
-      "last_checked": "2026-07-18T03:45:12.148039+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
       "content_hash": "201dd15b7c621c6456dd933541a2d78d"
+    },
+    "aishenqi_ai排行榜": {
+      "name": "AI排行榜",
+      "url": "https://aigcrank.cn/",
+      "description": "",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "aishenqi"
+      ],
+      "type": "ai_tool",
+      "source": "aishenqi",
+      "id": "aishenqi_ai排行榜",
+      "category": "其他",
+      "subcategory": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "AI排行榜 属于其他领域，定价未知。",
+      "ai_confidence": 0.6,
+      "is_china_tool": true,
+      "health_status": "unknown",
+      "tool_id": "aishenqi_ai排行榜",
+      "first_seen": "2026-07-18T03:51:54.171727+00:00",
+      "collected_at": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "content_hash": "528ca0ff55c34ea3afcd5f352b958e68"
+    },
+    "aishenqi_tago-ai是什么": {
+      "name": "Tago AI是什么",
+      "url": "https://shetuan.forchangeai.com/aigcfun/shetuandaoliu/course-qrcode",
+      "description": "Tago AI是一款为电商卖家与内容创作者打造的AI视频生成工具，专注于电商营销与内容创作场景。通过人工智能技术，Tago革新了传统的视频制作流程，提供一站式、高效率、低成本的视频内容解决方案。用户只需输入简单的产品描述或上传参考图，即可智能生成高质量、电影质感的短视频，极大简化从创意到成片的完整流程。",
+      "tags": {
+        "function": [
+          "视频生成"
+        ],
+        "scenario": [
+          "商业营销",
+          "设计工作",
+          "日常办公",
+          "内容创作"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "aishenqi"
+      ],
+      "type": "ai_tool",
+      "source": "aishenqi",
+      "id": "aishenqi_tago-ai是什么",
+      "category": "音视频",
+      "subcategory": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "Tago AI是什么 属于音视频领域，定价未知。tago ai是一款为电商卖家与内容创作者打造的ai视频生成工具，专注于电商营销与内容创作场景。通过人工智能技术，tago革新了传统的视频制作流程，提供一站式、高效率、低成本的视频内容解决方案。用户只需输入简单的产品描述或上传参考图，即可智能生成高质量、电影质感的短视频，极大简化从创意到成片的完整流程。",
+      "ai_confidence": 0.6,
+      "is_china_tool": true,
+      "health_status": "unknown",
+      "tool_id": "aishenqi_tago-ai是什么",
+      "first_seen": "2026-07-18T03:51:54.171727+00:00",
+      "collected_at": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "content_hash": "95594f4c906e60741a1b41a05bc3e78d"
+    },
+    "aishenqi_发现更多神器": {
+      "name": "发现更多神器",
+      "url": "https://aishenqi.net/tooltag/rengongzhineng",
+      "description": "(317)",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "aishenqi"
+      ],
+      "type": "ai_tool",
+      "source": "aishenqi",
+      "id": "aishenqi_发现更多神器",
+      "category": "其他",
+      "subcategory": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "发现更多神器 属于其他领域，定价未知。(317)",
+      "ai_confidence": 0.6,
+      "is_china_tool": true,
+      "health_status": "unknown",
+      "tool_id": "aishenqi_发现更多神器",
+      "first_seen": "2026-07-18T03:51:54.171727+00:00",
+      "collected_at": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "content_hash": "817fc489ae90c607c4e975c6dbae952b"
+    },
+    "aibot_ai-chat-avataræ-ä-ä¹": {
+      "name": "AI Chat-avataræ¯ä»ä¹",
+      "url": "https://ai-bot.cn/ai-tools/",
+      "description": "AI Chat-avatar æ¯ AI é©±å¨çæ°å­äººäº¤äºå©æï¼éè¿é«åº¦ä¸ªæ§åçäºå¨ä½éªæåæ²éæçä¸ç¨æ·åä¸åº¦ãå·å¤å¤è¯­è¨æ¯æï¼è½å®æ¶ç¿»è¯å¹¶è¿è¡èªç¶å¯¹è¯ï¼æç ´è¯­è¨éç¢ãAI Chat-avatar å¯ä»¥æ ¹æ®ä¸åçä¸å¡åºæ¯ï¼å¦éå®ãå®¢æãå¹è®­ç­ï¼è°",
+      "platform": [
+        "ai-bot.cn"
+      ],
+      "type": "ai_tool",
+      "source": "aibot",
+      "id": "aibot_ai-chat-avataræ-ä-ä¹",
+      "category": "文本生成",
+      "subcategory": "聊天助手",
+      "license_tier": "unknown",
+      "license_type": "",
+      "tags": {
+        "function": [
+          "对话"
+        ],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "AI Chat-avataræ¯ä»ä¹ 属于文本生成领域，定价未知。ai chat-avatar æ¯ ai é©±å¨çæ°å­äººäº¤äºå©æï¼éè¿é«åº¦ä¸ªæ§åçäºå¨ä½éªæåæ²éæçä¸ç¨æ·åä¸åº¦ãå·å¤å¤è¯­è¨æ¯æï¼è½å®æ¶ç¿»è¯å¹¶è¿è¡èªç¶å¯¹è¯ï¼æç ´è...",
+      "ai_confidence": 0.6,
+      "is_china_tool": true,
+      "health_status": "unknown",
+      "tool_id": "aibot_ai-chat-avataræ-ä-ä¹",
+      "first_seen": "2026-07-18T03:51:54.171727+00:00",
+      "collected_at": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "content_hash": "9eb692d210d04331d73d7d224a723188"
+    },
+    "aibot_ç-é-å-å": {
+      "name": "ç­é¨å·¥å·",
+      "url": "https://ai-bot.cn/sites/4189.html",
+      "description": "",
+      "platform": [
+        "ai-bot.cn"
+      ],
+      "type": "ai_tool",
+      "source": "aibot",
+      "id": "aibot_ç-é-å-å",
+      "category": "其他",
+      "subcategory": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "ç­é¨å·¥å· 属于其他领域，定价未知。",
+      "ai_confidence": 0.6,
+      "is_china_tool": true,
+      "health_status": "unknown",
+      "tool_id": "aibot_ç-é-å-å",
+      "first_seen": "2026-07-18T03:51:54.171727+00:00",
+      "collected_at": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "content_hash": "74170abe65db92d7eab2c44cc20e76be"
+    },
+    "aibot_æ-æ-æ-å½": {
+      "name": "ææ°æ¶å½",
+      "url": "https://ai-bot.cn/sites/82119.html",
+      "description": "",
+      "platform": [
+        "ai-bot.cn"
+      ],
+      "type": "ai_tool",
+      "source": "aibot",
+      "id": "aibot_æ-æ-æ-å½",
+      "category": "其他",
+      "subcategory": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "ææ°æ¶å½ 属于其他领域，定价未知。",
+      "ai_confidence": 0.6,
+      "is_china_tool": true,
+      "health_status": "unknown",
+      "tool_id": "aibot_æ-æ-æ-å½",
+      "first_seen": "2026-07-18T03:51:54.171727+00:00",
+      "collected_at": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "content_hash": "739505944d5524c4701eb0375bbb8594"
+    },
+    "aibot_æ-æ-æ-ç": {
+      "name": "ææ°æç«",
+      "url": "https://ai-bot.cn/vipcheap-banner-0210/",
+      "description": "",
+      "platform": [
+        "ai-bot.cn"
+      ],
+      "type": "ai_tool",
+      "source": "aibot",
+      "id": "aibot_æ-æ-æ-ç",
+      "category": "其他",
+      "subcategory": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "ai_analysis": "ææ°æç« 属于其他领域，定价未知。",
+      "ai_confidence": 0.6,
+      "is_china_tool": true,
+      "health_status": "unknown",
+      "tool_id": "aibot_æ-æ-æ-ç",
+      "first_seen": "2026-07-18T03:51:54.171727+00:00",
+      "collected_at": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
+      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "content_hash": "a5041c72430dda6b64266e1f85963a4f"
     }
   },
   "metadata": {
-    "last_merge": "2026-07-18T03:45:12.148039+00:00",
-    "last_merge_count": 73,
-    "updated_at": "2026-07-18T03:45:12.148524+00:00",
-    "total_tools": 342
+    "last_merge": "2026-07-18T03:51:54.171727+00:00",
+    "last_merge_count": 80,
+    "updated_at": "2026-07-18T03:51:54.172451+00:00",
+    "total_tools": 349
   }
 }
