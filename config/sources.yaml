@@ -1,4 +1,23 @@
 sources:
+- id: arxiv-ai
+  name: ArXiv AI Papers
+  type: api
+  tier: 1
+  url: http://export.arxiv.org/api/query
+  enabled: true
+  parser: arxiv.py
+  category: 学术研究
+  is_china_source: false
+  auto_detect_license: false
+  ai_analysis: true
+  params:
+    search_query: cat:cs.AI+OR+cat:cs.LG+OR+cat:cs.CL
+    max_results: 50
+    sortBy: submittedDate
+  description: ArXiv最新AI论文，追踪学术前沿
+  schedule_mode: discovery
+  fetch_limit: 30
+  check_interval_days: 7
 - id: github-trending
   name: GitHub Trending
   type: api
@@ -17,6 +36,25 @@ sources:
   description: GitHub每日趋势项目，发现热门开源AI工具
   schedule_mode: discovery
   fetch_limit: 50
+  check_interval_days: 3
+- id: hackernews-ai
+  name: Hacker News AI
+  type: api
+  tier: 1
+  url: https://hn.algolia.com/api/v1/search
+  enabled: true
+  parser: hackernews.py
+  category: 其他
+  is_china_source: false
+  auto_detect_license: false
+  ai_analysis: false
+  params:
+    query: AI OR LLM OR GPT
+    tags: story
+    hitsPerPage: 30
+  description: Hacker News AI相关讨论，技术社区热点
+  schedule_mode: discovery
+  fetch_limit: 20
   check_interval_days: 3
 - id: huggingface-models
   name: HuggingFace Models
@@ -54,103 +92,20 @@ sources:
   schedule_mode: discovery
   fetch_limit: 30
   check_interval_days: 3
-- id: arxiv-ai
-  name: ArXiv AI Papers
+- id: lmsys-leaderboard
+  name: LMSYS Chatbot Arena
   type: api
   tier: 1
-  url: http://export.arxiv.org/api/query
-  enabled: true
-  parser: arxiv.py
-  category: 学术研究
-  is_china_source: false
-  auto_detect_license: false
-  ai_analysis: true
-  params:
-    search_query: cat:cs.AI+OR+cat:cs.LG+OR+cat:cs.CL
-    max_results: 50
-    sortBy: submittedDate
-  description: ArXiv最新AI论文，追踪学术前沿
-  schedule_mode: discovery
-  fetch_limit: 30
-  check_interval_days: 7
-- id: hackernews-ai
-  name: Hacker News AI
-  type: api
-  tier: 1
-  url: https://hn.algolia.com/api/v1/search
-  enabled: true
-  parser: hackernews.py
-  category: 其他
+  enabled: false
+  parser: lmsys.py
+  category: 文本生成
   is_china_source: false
   auto_detect_license: false
   ai_analysis: false
-  params:
-    query: AI OR LLM OR GPT
-    tags: story
-    hitsPerPage: 30
-  description: Hacker News AI相关讨论，技术社区热点
+  description: 大模型竞技场，基于人类偏好的真实排名
   schedule_mode: discovery
   fetch_limit: 20
-  check_interval_days: 3
-- id: aishenqi
-  name: AI神器集
-  type: web
-  tier: 2
-  url: https://aishenqi.net
-  enabled: true
-  parser: aishenqi.py
-  category: 其他
-  is_china_source: true
-  auto_detect_license: false
-  ai_analysis: true
-  description: 国内AI工具导航站，收录数百个AI工具
-  schedule_mode: discovery
-  fetch_limit: 30
-  check_interval_days: 7
-- id: aibot
-  name: AI-Bot.cn
-  type: web
-  tier: 2
-  url: https://ai-bot.cn
-  enabled: true
-  parser: aibot.py
-  category: 其他
-  is_china_source: true
-  auto_detect_license: false
-  ai_analysis: true
-  description: AI工具导航站，分类详细，更新频繁
-  schedule_mode: discovery
-  fetch_limit: 30
-  check_interval_days: 7
-- id: hyperai
-  name: HyperAI
-  type: rss
-  tier: 2
-  url: https://hyper.ai/feed
-  enabled: true
-  parser: hyperai.py
-  category: 其他
-  is_china_source: false
-  auto_detect_license: false
-  ai_analysis: false
-  description: HyperAI资讯，追踪AI行业动态
-  schedule_mode: discovery
-  fetch_limit: 20
-  check_interval_days: 7
-- id: manual-tools
-  name: 手动添加工具
-  type: manual
-  tier: 0
-  enabled: true
-  parser: manual.py
-  category: 其他
-  is_china_source: false
-  auto_detect_license: false
-  ai_analysis: true
-  description: 手动添加的工具，放在 data/manual/*.json
-  schedule_mode: discovery
-  fetch_limit: 10
-  check_interval_days: 30
+  check_interval_days: 14
 - id: producthunt-ai
   name: Product Hunt AI
   type: api
@@ -166,47 +121,18 @@ sources:
   schedule_mode: discovery
   fetch_limit: 30
   check_interval_days: 3
-- id: lmsys-leaderboard
-  name: LMSYS Chatbot Arena
-  type: api
-  tier: 1
-  enabled: false
-  parser: lmsys.py
-  category: 文本生成
-  is_china_source: false
-  auto_detect_license: false
-  ai_analysis: false
-  description: 大模型竞技场，基于人类偏好的真实排名
-  schedule_mode: discovery
-  fetch_limit: 20
-  check_interval_days: 14
-- id: aigcrank
-  name: AI工具排行榜
+- id: aibot
+  name: AI-Bot.cn
   type: web
   tier: 2
-  url: https://aigcrank.cn
-  enabled: false
-  parser: aigcrank.py
+  url: https://ai-bot.cn
+  enabled: true
+  parser: aibot.py
   category: 其他
   is_china_source: true
   auto_detect_license: false
   ai_analysis: true
-  description: 国内AI工具排行，按热度排序
-  schedule_mode: discovery
-  fetch_limit: 30
-  check_interval_days: 7
-- id: toolify-ai
-  name: Toolify.ai
-  type: web
-  tier: 2
-  url: https://www.toolify.ai
-  enabled: false
-  parser: toolify.py
-  category: 其他
-  is_china_source: true
-  auto_detect_license: false
-  ai_analysis: true
-  description: Toolify.ai（Cloudflare 封锁，暂不可用）
+  description: AI工具导航站，分类详细，更新频繁
   schedule_mode: discovery
   fetch_limit: 30
   check_interval_days: 7
@@ -225,21 +151,36 @@ sources:
   schedule_mode: discovery
   fetch_limit: 20
   check_interval_days: 7
-- id: theresanaiforthat
-  name: There's An AI For That
+- id: aigcrank
+  name: AI工具排行榜
   type: web
   tier: 2
-  url: https://theresanaiforthat.com
-  enabled: true
-  parser: taaft.py
+  url: https://aigcrank.cn
+  enabled: false
+  parser: aigcrank.py
   category: 其他
-  is_china_source: false
+  is_china_source: true
   auto_detect_license: false
   ai_analysis: true
-  description: TAAFT 首页 AI 工具（Cloudflare 限制，仅首页 ~19 条）
+  description: 国内AI工具排行，按热度排序
   schedule_mode: discovery
-  fetch_limit: 20
-  check_interval_days: 14
+  fetch_limit: 30
+  check_interval_days: 7
+- id: aishenqi
+  name: AI神器集
+  type: web
+  tier: 2
+  url: https://aishenqi.net
+  enabled: true
+  parser: aishenqi.py
+  category: 其他
+  is_china_source: true
+  auto_detect_license: false
+  ai_analysis: true
+  description: 国内AI工具导航站，收录数百个AI工具
+  schedule_mode: discovery
+  fetch_limit: 30
+  check_interval_days: 7
 - id: futurepedia
   name: Futurepedia
   type: web
@@ -255,6 +196,65 @@ sources:
   schedule_mode: discovery
   fetch_limit: 30
   check_interval_days: 7
+- id: hyperai
+  name: HyperAI
+  type: rss
+  tier: 2
+  url: https://hyper.ai/feed
+  enabled: true
+  parser: hyperai.py
+  category: 其他
+  is_china_source: false
+  auto_detect_license: false
+  ai_analysis: false
+  description: HyperAI资讯，追踪AI行业动态
+  schedule_mode: discovery
+  fetch_limit: 20
+  check_interval_days: 7
+- id: theresanaiforthat
+  name: There's An AI For That
+  type: web
+  tier: 2
+  url: https://theresanaiforthat.com
+  enabled: true
+  parser: taaft.py
+  category: 其他
+  is_china_source: false
+  auto_detect_license: false
+  ai_analysis: true
+  description: TAAFT 首页 AI 工具（Cloudflare 限制，仅首页 ~19 条）
+  schedule_mode: discovery
+  fetch_limit: 20
+  check_interval_days: 14
+- id: toolify-ai
+  name: Toolify.ai
+  type: web
+  tier: 2
+  url: https://www.toolify.ai
+  enabled: false
+  parser: toolify.py
+  category: 其他
+  is_china_source: true
+  auto_detect_license: false
+  ai_analysis: true
+  description: Toolify.ai（Cloudflare 封锁，暂不可用）
+  schedule_mode: discovery
+  fetch_limit: 30
+  check_interval_days: 7
+- id: manual-tools
+  name: 手动添加工具
+  type: manual
+  tier: 0
+  enabled: true
+  parser: manual.py
+  category: 其他
+  is_china_source: false
+  auto_detect_license: false
+  ai_analysis: true
+  description: 手动添加的工具，放在 data/manual/*.json
+  schedule_mode: discovery
+  fetch_limit: 10
+  check_interval_days: 30
 - id: reddit-ai
   name: Reddit AI
   type: web
@@ -278,7 +278,7 @@ global:
   rate_limit:
     requests_per_minute: 15
   collection:
-    discovery_batch_size: 9
+    discovery_batch_size: 10
     health_check_interval_days: 3
     deep_update_day: 1
   analysis:
