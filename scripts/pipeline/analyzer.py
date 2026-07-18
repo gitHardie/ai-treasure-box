@@ -60,7 +60,8 @@ class AIAnalyzer:
 
     def __init__(self, coze_api_key: Optional[str] = None, workflow_id: Optional[str] = None,
                  batch_size: int = 20, batch_timeout: int = 120, mode: str = "batch",
-                 inclusion_rules: Optional[Dict] = None):
+                 inclusion_rules: Optional[Dict] = None,
+                 global_min_utility: int = 4):
         self.coze_api_key = coze_api_key or os.environ.get("COZE_API_KEY", "") or os.environ.get("AI_BOX_COZE", "")
         self.workflow_id = workflow_id or os.environ.get("COZE_WORKFLOW_ID", "")
         self.use_coze = bool(self.coze_api_key and self.workflow_id)
@@ -69,6 +70,8 @@ class AIAnalyzer:
         self.mode = mode  # "loop" or "batch"
         # 收录规则：优先从配置读取，否则用默认值
         self.inclusion_rules = inclusion_rules or self.DEFAULT_INCLUSION_RULES
+        # 全局最低门槛：任何分类下 utility 低于此值都不收录
+        self.global_min_utility = global_min_utility
 
     def analyze_tool(self, tool_data: Dict) -> Dict:
         """
@@ -151,20 +154,25 @@ class AIAnalyzer:
             utility = tool.get("utility_score", 5)
             should_include = tool.get("should_include", True)
             
-            # 综合判断：AI 决策 + 本地规则
+            # 综合判断：AI 决策 + 本地规则 + 全局门槛
             rule = self.inclusion_rules.get(category, self.inclusion_rules.get("其他", {"min_utility": 4}))
             min_utility = rule.get("min_utility", 4) if isinstance(rule, dict) else 4
+            # 取分类门槛和全局门槛的较大值
+            effective_min = max(min_utility, self.global_min_utility)
             
             # 最终收录决策
-            final_include = should_include and (utility >= min_utility)
+            final_include = should_include and (utility >= effective_min)
             
             if final_include:
                 included.append(tool)
             else:
                 # 记录拒绝原因
                 if not tool.get("rejection_reason"):
-                    if utility < min_utility:
-                        tool["rejection_reason"] = f"实用性{utility}分低于{category}类阈值{min_utility}分"
+                    if utility < effective_min:
+                        if utility < self.global_min_utility:
+                            tool["rejection_reason"] = f"实用性{utility}分低于全局最低门槛{self.global_min_utility}分"
+                        else:
+                            tool["rejection_reason"] = f"实用性{utility}分低于{category}类阈值{min_utility}分"
                     else:
                         tool["rejection_reason"] = "AI评估不建议收录"
                 excluded.append(tool)
@@ -597,10 +605,11 @@ class AIAnalyzer:
             # AI 说收，但分类门槛很高 -> 用本地规则复核
             pass
 
-        # 本地规则：按分类的最低实用性阈值
+        # 本地规则：按分类的最低实用性阈值 + 全局门槛
         rule = self.inclusion_rules.get(category, self.inclusion_rules.get("其他", {"min_utility": 4}))
         min_utility = rule.get("min_utility", 4) if isinstance(rule, dict) else 4
-        return utility_score >= min_utility
+        effective_min = max(min_utility, self.global_min_utility)
+        return utility_score >= effective_min
 
     def _fuzzy_match_category(self, text) -> Optional[str]:
         if not text: return None

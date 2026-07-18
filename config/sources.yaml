@@ -345,3 +345,5 @@ global:
       其他:
         min_utility: 4
         reason: 需要有一定实用性才收
+    global_min_utility: 4
+    global_min_reason: 全局最低门槛：任何分类下utility<4都不收录（筛掉纯论文/纯基础设施）

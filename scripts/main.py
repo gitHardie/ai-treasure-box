@@ -71,12 +71,14 @@ def _create_analyzer(config: Dict = None) -> AIAnalyzer:
     # 从配置读取收录规则
     inclusion_cfg = config.get("global", {}).get("inclusion", {})
     inclusion_rules = inclusion_cfg.get("rules", None)
+    global_min_utility = inclusion_cfg.get("global_min_utility", 4)
     return AIAnalyzer(
         coze_api_key=os.environ.get("COZE_API_KEY", "") or os.environ.get("AI_BOX_COZE", ""),
         workflow_id=os.environ.get("COZE_WORKFLOW_ID", ""),
         batch_size=analysis_cfg.get("batch_size", 20),
         batch_timeout=analysis_cfg.get("batch_timeout", 120),
         inclusion_rules=inclusion_rules,
+        global_min_utility=global_min_utility,
     )
 
 
