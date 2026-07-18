@@ -31,6 +31,9 @@ export interface ToolItem {
   is_china_tool?: boolean
   category?: string
   subcategory?: string
+  audience?: string
+  utility_score?: number
+  should_include?: boolean
   tags?: ToolTags
 }
 

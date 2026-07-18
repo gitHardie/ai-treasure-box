@@ -15,6 +15,7 @@ export default function DiscoverPage() {
   const [search, setSearch] = useState('')
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [chinaOnly, setChinaOnly] = useState(false)
+  const [selectedScenario, setSelectedScenario] = useState('all')
   const [selectedTool, setSelectedTool] = useState<ToolItem | null>(null)
   const { stats: statsData } = useStats()
 
@@ -63,6 +64,20 @@ export default function DiscoverPage() {
       }))
   }, [realCategoryCounts])
 
+  // Collect all scenario tags from tools
+  const allScenarios = useMemo(() => {
+    const counts: Record<string, number> = {}
+    for (const t of realTools) {
+      t.tags?.scenario?.forEach(s => {
+        if (s) counts[s] = (counts[s] || 0) + 1
+      })
+    }
+    return Object.entries(counts)
+      .filter(([, c]) => c >= 2)
+      .sort((a, b) => b[1] - a[1])
+      .map(([label, count]) => ({ label, count }))
+  }, [realTools])
+
   // SINGLE useMemo for all filtering - eliminates intermediate caching issues
   const filteredTools = useMemo(() => {
     let result = realTools
@@ -72,12 +87,17 @@ export default function DiscoverPage() {
       result = result.filter(t => t.category === selectedCategory)
     }
 
-    // Step 2: Filter by china only
+    // Step 2: Filter by scenario
+    if (selectedScenario !== 'all') {
+      result = result.filter(t => t.tags?.scenario?.includes(selectedScenario))
+    }
+
+    // Step 3: Filter by china only
     if (chinaOnly) {
       result = result.filter(t => t.is_china_tool)
     }
 
-    // Step 3: Filter by search
+    // Step 4: Filter by search
     if (search.trim()) {
       const q = search.toLowerCase()
       result = result.filter(tool =>
@@ -204,16 +224,47 @@ export default function DiscoverPage() {
         />
 
         <div className="flex-1 min-w-0 space-y-6">
+          {/* Scenario filter pills */}
+          {allScenarios.length > 0 && (
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="text-xs text-slate-500 dark:text-slate-400 shrink-0">场景:</span>
+              <button
+                onClick={() => setSelectedScenario('all')}
+                className={`px-2.5 py-1 rounded-full text-xs transition-all ${
+                  selectedScenario === 'all'
+                    ? 'bg-indigo-500 text-white shadow-sm'
+                    : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700'
+                }`}
+              >
+                全部
+              </button>
+              {allScenarios.slice(0, 12).map(s => (
+                <button
+                  key={s.label}
+                  onClick={() => setSelectedScenario(selectedScenario === s.label ? 'all' : s.label)}
+                  className={`px-2.5 py-1 rounded-full text-xs transition-all ${
+                    selectedScenario === s.label
+                      ? 'bg-indigo-500 text-white shadow-sm'
+                      : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700'
+                  }`}
+                >
+                  {s.label}
+                  <span className="ml-1 opacity-60">{s.count}</span>
+                </button>
+              ))}
+            </div>
+          )}
+
           {/* Results count */}
           <div className="flex items-center justify-between">
             <p className="text-sm text-slate-500 dark:text-slate-400">
-              {search || selectedCategory !== 'all'
+              {search || selectedCategory !== 'all' || selectedScenario !== 'all'
                 ? `找到 ${filteredTools.length} 个工具`
                 : `共 ${realTools.length} 个工具`}
             </p>
-            {selectedCategory !== 'all' && (
+            {(selectedCategory !== 'all' || selectedScenario !== 'all') && (
               <button
-                onClick={() => setSelectedCategory('all')}
+                onClick={() => { setSelectedCategory('all'); setSelectedScenario('all') }}
                 className="text-xs text-indigo-500 hover:text-indigo-600 dark:text-indigo-400"
               >
                 清除筛选 ✕
@@ -223,7 +274,7 @@ export default function DiscoverPage() {
 
           {/* Grid - key forces complete re-mount when filter changes */}
           {filteredTools.length > 0 ? (
-            <div key={`grid-${selectedCategory}-${chinaOnly}-${search ? 's' : ''}`} className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 tools-grid">
+            <div key={`grid-${selectedCategory}-${selectedScenario}-${chinaOnly}-${search ? 's' : ''}`} className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 tools-grid">
               {filteredTools.map((tool, idx) => (
                 <ToolCard
                   key={tool.tool_id || tool.name + (tool.source || '')}

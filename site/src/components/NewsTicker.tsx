@@ -92,7 +92,7 @@ export default function NewsTicker({ items }: Props) {
 
           <div
             ref={trackRef}
-            className={`flex ${needsScroll && !paused ? 'ticker-scroll' : ''} items-center gap-0`}
+            className={`flex ${needsScroll && !paused ? 'animate-ticker-scroll' : ''} items-center gap-0`}
             style={{
               width: needsScroll ? 'max-content' : '100%',
               justifyContent: needsScroll ? undefined : 'center',

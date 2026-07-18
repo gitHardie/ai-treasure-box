@@ -85,6 +85,15 @@ function getDisplayTags(tool: ToolItem): string[] {
   return []
 }
 
+
+function audienceBadge(audience?: string): { icon: string; label: string; cls: string } | null {
+  if (!audience) return null
+  if (audience === 'general') return { icon: '👤', label: '通用', cls: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400' }
+  if (audience === 'developer') return { icon: '💻', label: '开发者', cls: 'bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400' }
+  if (audience === 'researcher') return { icon: '🔬', label: '研究', cls: 'bg-purple-50 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400' }
+  return null
+}
+
 function sourceLabel(source?: string): string {
   if (!source) return ''
   const map: Record<string, string> = {
@@ -183,20 +192,12 @@ export default function ToolCard({ tool, onClick, index = 0 }: Props) {
         </div>
 
         {/* Description */}
-        <p className="text-sm text-slate-600 dark:text-slate-400 line-clamp-2 mb-3 leading-relaxed">
+        <p className="text-sm text-slate-600 dark:text-slate-400 line-clamp-2 mb-2 leading-relaxed">
           {tool.description}
         </p>
 
-
-        {/* AI Analysis snippet */}
-        {tool.ai_analysis && (
-          <p className="text-xs text-indigo-600/70 dark:text-indigo-400/60 line-clamp-1 mb-3 italic">
-            {tool.ai_analysis}
-          </p>
-        )}
-
         {/* Tags + badges */}
-        <div className="flex flex-wrap items-center gap-1.5 mb-3">
+        <div className="flex flex-wrap items-center gap-1.5 mb-2">
           {license && (
             <span className={`badge text-[9px] ${license.cls}`}>{license.label}</span>
           )}
@@ -205,12 +206,23 @@ export default function ToolCard({ tool, onClick, index = 0 }: Props) {
               {tool.category}
             </span>
           )}
-          {displayTags.slice(0, 4).map(tag => (
+          {(() => {
+            const badge = audienceBadge(tool.audience)
+            return badge ? (
+              <span className={`badge text-[9px] ${badge.cls}`}>{badge.icon} {badge.label}</span>
+            ) : null
+          })()}
+          {/* Scenario tags */}
+          {tool.tags?.scenario?.slice(0, 2).map(tag => (
+            <span key={`s-${tag}`} className="badge text-[9px] bg-amber-50 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">🎯 {tag}</span>
+          ))}
+          {/* Function tags */}
+          {displayTags.slice(0, 3).map(tag => (
             <span key={tag} className={`badge text-[9px] ${tagColor(tag)}`}>{tag}</span>
           ))}
-          {displayTags.length > 4 && (
+          {(displayTags.length + (tool.tags?.scenario?.length || 0)) > 5 && (
             <span className="badge text-[9px] bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400">
-              +{displayTags.length - 4}
+              +{(displayTags.length + (tool.tags?.scenario?.length || 0)) - 5}
             </span>
           )}
         </div>
