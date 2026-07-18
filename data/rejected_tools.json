@@ -3417,5 +3417,2231 @@
     "url": "https://www.producthunt.com/products/lineation",
     "description": "Real-time guardrails for agentic AI and enterprise workflows. Lineation is the accountability layer for AI agents. Cross-provider policy enforcement, runtime defense, and forensic lineage for OpenAI, ",
     "rejected_at": "2026-07-18T12:32:33.036910+00:00"
+  },
+  {
+    "name": "Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models",
+    "title": "Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models",
+    "url": "https://arxiv.org/abs/2607.15277v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15277v1",
+    "description": "In-context learning is commonly interpreted as a form of conditional inference, in which the prompt specifies a context and the model's output is treated as an estimate of the corresponding conditional distribution. If this interpretation holds, then LLM estimates should satisfy basic probabilistic identities. In particular, the law of total probability asserts that prior-weighted conditional distributions aggregate into population-level marginals over any valid partition of the population. In t",
+    "authors": [
+      "Patrik Wolf",
+      "Thomas Kleine Buening",
+      "Andreas Krause",
+      "Celestine Mendler-Dünner"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "arxiv_id": "2607.15277v1",
+    "published_at": "2026-07-16T17:59:31Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_partition-prompt-aggregate-statistical-self-consistency-in-language-models",
+    "ai_analysis": "这是一个基于AI的代码生成与优化工具，能够根据自然语言描述生成代码片段或优化现有代码。适合开发者、编程学习者和技术团队使用，提升编码效率与代码质量。",
+    "ai_confidence": 0.8,
+    "category": "开发工具",
+    "health_status": "active",
+    "is_china_tool": false,
+    "license_tier": "open-source",
+    "license_type": "MIT",
+    "subcategory": "代码生成与优化",
+    "tags": {
+      "attribute": [
+        "开源",
+        "免费",
+        "轻量级"
+      ],
+      "function": [
+        "代码生成",
+        "代码优化",
+        "代码重构"
+      ],
+      "quality": [
+        "高可用性",
+        "社区活跃"
+      ],
+      "scenario": [
+        "软件开发",
+        "代码审查",
+        "编程学习"
+      ],
+      "tech": [
+        "AI代码助手",
+        "自然语言处理"
+      ]
+    },
+    "tool_id": "arxiv-ai_partition-prompt-aggregate-statistical-self-consistency-in-language-models",
+    "rejection_reason": "实用性5分低于开发工具类阈值6分",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "RoboTTT: Context Scaling for Robot Policies",
+    "title": "RoboTTT: Context Scaling for Robot Policies",
+    "url": "https://arxiv.org/abs/2607.15275v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15275v1",
+    "description": "Recent robot foundation models operate with single-step or short-history visuomotor context. We introduce Test-Time-Training Robot Policies (RoboTTT), a robot model and training recipe that scale visuomotor context to 8K timesteps, three orders of magnitude beyond state-of-the-art policies, without growing inference latency. At this context length, we unlock new robot capabilities: one-shot in-context imitation from human video demonstrations, on-the-fly policy improvement, robustness to perturb",
+    "authors": [
+      "Yunfan Jiang",
+      "Yevgen Chebotar",
+      "Ruijie Zheng",
+      "Fengyuan Hu",
+      "Yunhao Ge"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "arxiv_id": "2607.15275v1",
+    "published_at": "2026-07-16T17:59:06Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_robottt-context-scaling-for-robot-policies",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "视频生成"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "RoboTTT: Context Scaling for Robot Policies 属于代码开发领域，付费产品。recent robot foundation models operate with single-step or short-history visuomotor context. we introduce test-time-training robot policies (robottt), a robot model and training recipe that scale visu...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_robottt-context-scaling-for-robot-policies",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators",
+    "title": "MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators",
+    "url": "https://arxiv.org/abs/2607.15273v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15273v1",
+    "description": "MeanFlow generators achieve fast few-step sampling by predicting average velocities over time intervals, making them attractive for efficient generation. Reinforcement learning (RL) has become a powerful way to align diffusion and flow models with human preferences and task-specific objectives. In particular, DiffusionNFT offers an efficient forward-process RL framework that does not require reverse-process trajectories or likelihood estimation. However, applying such RL methods to MeanFlow rema",
+    "authors": [
+      "Yushi Huang",
+      "Xiangxin Zhou",
+      "Jun Zhang",
+      "Liefeng Bo",
+      "Tianyu Pang"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "arxiv_id": "2607.15273v1",
+    "published_at": "2026-07-16T17:59:02Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_meanflownft-bringing-forward-process-rl-to-average-velocity-generators",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [
+        "Diffusion",
+        "RAG"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators 属于代码开发领域，付费产品。meanflow generators achieve fast few-step sampling by predicting average velocities over time intervals, making them attractive for efficient generation. reinforcement learning (rl) has become a power...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_meanflownft-bringing-forward-process-rl-to-average-velocity-generators",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions",
+    "title": "SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions",
+    "url": "https://arxiv.org/abs/2607.15272v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15272v1",
+    "description": "Editing the figures in a research paper is a routine and time-consuming part of everyday research practice: authors relabel components, rearrange panels, and restyle visuals as they revise their manuscripts. Automating this editing workflow under a natural-language instruction, however, is challenging, because a scientific figure is a dense infographic in which heterogeneous visual elements such as schematics, plots, photos, captions, and arrows are composed under a tight visual grammar to advan",
+    "authors": [
+      "Yasheng Sun",
+      "Zezi Zeng",
+      "Yifan Yang",
+      "Chong Luo",
+      "Wenyi Wang"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "arxiv_id": "2607.15272v1",
+    "published_at": "2026-07-16T17:58:36Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_scidiagramedit-learning-to-edit-scientific-diagrams-from-paper-revisions",
+    "category": "学术研究",
+    "subcategory": "论文工具",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索",
+        "自动化"
+      ],
+      "scenario": [
+        "教育学习",
+        "学术研究"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions 属于学术研究领域，定价未知。editing the figures in a research paper is a routine and time-consuming part of everyday research practice: authors relabel components, rearrange panels, and restyle visuals as they revise their manus...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_scidiagramedit-learning-to-edit-scientific-diagrams-from-paper-revisions",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Online Neural Space Time Memory for Dynamic Novel View Synthesis",
+    "title": "Online Neural Space Time Memory for Dynamic Novel View Synthesis",
+    "url": "https://arxiv.org/abs/2607.15271v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15271v1",
+    "description": "Online novel view synthesis from multi-view streaming videos faces a fundamental trade-off: maintaining a persistent, long-horizon memory to reconstruct temporarily occluded regions while operating under strict real-time constraints. While Test-Time Training (TTT) offers a powerful memory mechanism, standard models mandate gradient-based memory updates at every frame to adapt to the changing motion in dynamic scenes. The computational cost of heavy memory updates precludes real-time application ",
+    "authors": [
+      "Baback Elmieh",
+      "Lynn Tsai",
+      "Zeman Li",
+      "Srinivas Kaza",
+      "Tiancheng Sun"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.GR",
+      "cs.LG"
+    ],
+    "arxiv_id": "2607.15271v1",
+    "published_at": "2026-07-16T17:58:18Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_online-neural-space-time-memory-for-dynamic-novel-view-synthesis",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "视频生成"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Online Neural Space Time Memory for Dynamic Novel View Synthesis 属于代码开发领域，定价未知。online novel view synthesis from multi-view streaming videos faces a fundamental trade-off: maintaining a persistent, long-horizon memory to reconstruct temporarily occluded regions while operating un...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_online-neural-space-time-memory-for-dynamic-novel-view-synthesis",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Pretraining Data Can Be Poisoned through Computational Propaganda",
+    "title": "Pretraining Data Can Be Poisoned through Computational Propaganda",
+    "url": "https://arxiv.org/abs/2607.15267v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15267v1",
+    "description": "Poisoning pretraining data can introduce harmful behaviors to LMs that are difficult to detect and mitigate. Prior work on poisoning pretraining data has largely exploited established data sources such as Wikipedia, which do not represent the large scale and heterogeneity typical of pretraining corpora, and has ignored the interaction between poisoned data and data curation pipelines. We demonstrate that poisoning attacks on pretraining data are feasible beyond this limited setting through an ex",
+    "authors": [
+      "Victoria Graf",
+      "Hannaneh Hajishirzi",
+      "Noah A. Smith",
+      "David Kohlbrenner",
+      "Kyle Lo"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "arxiv_id": "2607.15267v1",
+    "published_at": "2026-07-16T17:56:05Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_pretraining-data-can-be-poisoned-through-computational-propaganda",
+    "category": "数据分析",
+    "subcategory": "数据处理",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=数据分析 实用性=3 低于阈值",
+    "license_tier": "freemium",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Pretraining Data Can Be Poisoned through Computational Propaganda 属于数据分析领域，免费限量。poisoning pretraining data can introduce harmful behaviors to lms that are difficult to detect and mitigate. prior work on poisoning pretraining data has largely exploited established data sources suc...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_pretraining-data-can-be-poisoned-through-computational-propaganda",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "SceneBind: Binding What and Where Across Vision, Audio and Language",
+    "title": "SceneBind: Binding What and Where Across Vision, Audio and Language",
+    "url": "https://arxiv.org/abs/2607.15265v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15265v1",
+    "description": "We present SceneBind, an omni-modal representation of realistic scenes with joint semantic and 3D spatial understanding across vision, audio and language. Existing omni-modal encoders excel at instance-level semantics (i.e., what is present), but often lack explicit spatial structure (i.e., where it is). SceneBind addresses this gap by representing each scene as a semantic-spatial entity, combining a global semantic embedding with object-centric semantic-spatial slots. This representation explic",
+    "authors": [
+      "Mingfei Chen",
+      "Zijun Cui",
+      "Ruoke Zhang",
+      "Hyeonggon Ryu",
+      "Eli Shlizerman"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.MM",
+      "cs.SD"
+    ],
+    "arxiv_id": "2607.15265v1",
+    "published_at": "2026-07-16T17:55:15Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_scenebind-binding-what-and-where-across-vision-audio-and-language",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=3 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "Embedding"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "SceneBind: Binding What and Where Across Vision, Audio and Language 属于代码开发领域，定价未知。we present scenebind, an omni-modal representation of realistic scenes with joint semantic and 3d spatial understanding across vision, audio and language. existing omni-modal encoders excel at instanc...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_scenebind-binding-what-and-where-across-vision-audio-and-language",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Beyond Success Rate: Cost-Aware Evaluation of Offensive and Defensive Security Agents",
+    "title": "Beyond Success Rate: Cost-Aware Evaluation of Offensive and Defensive Security Agents",
+    "url": "https://arxiv.org/abs/2607.15263v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15263v1",
+    "description": "Security-agent evaluations commonly measure peak offensive capability under generous inference budgets, emphasizing vulnerability discovery, exploit development, penetration testing, and CTF completion. Such measurements are useful but incomplete: in operational security, every reasoning step, tool call, telemetry query, and enrichment request consumes budget. We evaluate language-model security agents through this cost-success lens on offensive Cybench challenges and defensive Splunk BOTS v1 in",
+    "authors": [
+      "Paul Kassianik",
+      "Blaine Nelson",
+      "Yaron Singer"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "arxiv_id": "2607.15263v1",
+    "published_at": "2026-07-16T17:54:47Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_beyond-success-rate-cost-aware-evaluation-of-offensive-and-defensive-security-ag",
+    "category": "数据分析",
+    "subcategory": "数据分析",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=数据分析 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Beyond Success Rate: Cost-Aware Evaluation of Offensive and Defensive Security Agents 属于数据分析领域，定价未知。security-agent evaluations commonly measure peak offensive capability under generous inference budgets, emphasizing vulnerability discovery, exploit development, penetration testing, and ctf completio...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_beyond-success-rate-cost-aware-evaluation-of-offensive-and-defensive-security-ag",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Decoding Market Emotion from Blockchain Activity: A Data-Driven Sentiment Classifier",
+    "title": "Decoding Market Emotion from Blockchain Activity: A Data-Driven Sentiment Classifier",
+    "url": "https://arxiv.org/abs/2607.15258v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15258v1",
+    "description": "The growing use of Bitcoin as a decentralized digital asset and investment tool has sparked strong interest in understanding its market behavior. This study presents a new approach to analyze Bitcoin market sentiment by combining on-chain and financial data with social media posts. Unlike models that aim to predict prices, this work focuses on explaining market sentiment using blockchain transactions, historical price data of Bitcoin, and daily Twitter sentiment classifications. The method merge",
+    "authors": [
+      "Arthur G. Bubolz",
+      "Abreu Quevedo",
+      "Giancarlo Lucca",
+      "Rafael A. Berri",
+      "Eduardo Borges"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CE"
+    ],
+    "arxiv_id": "2607.15258v1",
+    "published_at": "2026-07-16T17:52:26Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_decoding-market-emotion-from-blockchain-activity-a-data-driven-sentiment-classif",
+    "category": "数据分析",
+    "subcategory": "数据分析",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=数据分析 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "数据分析"
+      ],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Decoding Market Emotion from Blockchain Activity: A Data-Driven Sentiment Classifier 属于数据分析领域，付费产品。the growing use of bitcoin as a decentralized digital asset and investment tool has sparked strong interest in understanding its market behavior. this study presents a new approach to analyze bitcoin ...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_decoding-market-emotion-from-blockchain-activity-a-data-driven-sentiment-classif",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration",
+    "title": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration",
+    "url": "https://arxiv.org/abs/2607.15257v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15257v1",
+    "description": "Recent advances in Tool-Integrated Large Language Models have made web search a core capability of information-seeking agents. However, as interaction histories grow, agents increasingly struggle to track task progress. When search attempts fail to yield useful evidence, current single- and multi-agent systems can become trapped in repetitive loops, wasting search budgets and ultimately compromising the quality and completeness of the final output. We introduce SearchOS, a system-level multi-age",
+    "authors": [
+      "Yuyao Zhang",
+      "Junjie Gao",
+      "Zhengxian Wu",
+      "Jiaming Fan",
+      "Jin Zhang"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.IR"
+    ],
+    "arxiv_id": "2607.15257v1",
+    "published_at": "2026-07-16T17:51:23Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_searchos-v1-towards-robust-open-domain-information-seeking-agent-collaboration",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=4 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [
+        "企业团队"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration 属于代码开发领域，付费产品。recent advances in tool-integrated large language models have made web search a core capability of information-seeking agents. however, as interaction histories grow, agents increasingly struggle to t...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_searchos-v1-towards-robust-open-domain-information-seeking-agent-collaboration",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "teLLMe Why (Ain't Nothing but a Jam): Exploratory Causal Analysis of Urban Driving Data",
+    "title": "teLLMe Why (Ain't Nothing but a Jam): Exploratory Causal Analysis of Urban Driving Data",
+    "url": "https://arxiv.org/abs/2607.15254v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15254v1",
+    "description": "Traffic agencies now have access to large volumes of video-derived data for studying safety and congestion. Most of these data are observational and collected without interventions, which makes causal questions such as \"How would rain change traffic density?\" difficult to answer. We present teLLMe, a system for exploratory causal analysis of urban driving datasets. The system starts from a structured event table built from dashcam annotations and combines causal structure learning with the PC al",
+    "authors": [
+      "Qiwei Li",
+      "Jorge Ortiz"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.HC"
+    ],
+    "arxiv_id": "2607.15254v1",
+    "published_at": "2026-07-16T17:49:28Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_tellme-why-ain-t-nothing-but-a-jam-exploratory-causal-analysis-of-urban-driving-",
+    "category": "数据分析",
+    "subcategory": "数据分析",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=数据分析 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "视频生成",
+        "数据分析"
+      ],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "teLLMe Why (Ain't Nothing but a Jam): Exploratory Causal Analysis of Urban Driving Data 属于数据分析领域，定价未知。traffic agencies now have access to large volumes of video-derived data for studying safety and congestion. most of these data are observational and collected without interventions, which makes causal...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_tellme-why-ain-t-nothing-but-a-jam-exploratory-causal-analysis-of-urban-driving-",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Bridge Evidence: Static Retrieval Utility Does Not Predict Causal Utility in Multi-Step Agentic Search",
+    "title": "Bridge Evidence: Static Retrieval Utility Does Not Predict Causal Utility in Multi-Step Agentic Search",
+    "url": "https://arxiv.org/abs/2607.15253v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15253v1",
+    "description": "Retrieval systems are trained and evaluated on a static idea of usefulness: hand a document and a question to a reader model, see whether the answer improves, and score the document accordingly. The idea holds up when a document is read on its own. It breaks when a language model works as a search agent, issuing several queries and reasoning across turns, because a document can matter for what it lets the agent do next rather than for what it says about the current question. We measure that gap ",
+    "authors": [
+      "Debayan Mukhopadhyay",
+      "Utshab Kumar Ghosh",
+      "Shubham Chatterjee"
+    ],
+    "categories": [
+      "cs.IR",
+      "cs.CL"
+    ],
+    "arxiv_id": "2607.15253v1",
+    "published_at": "2026-07-16T17:48:29Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_bridge-evidence-static-retrieval-utility-does-not-predict-causal-utility-in-mult",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Bridge Evidence: Static Retrieval Utility Does Not Predict Causal Utility in Multi-Step Agentic Search 属于代码开发领域，付费产品。retrieval systems are trained and evaluated on a static idea of usefulness: hand a document and a question to a reader model, see whether the answer improves, and score the document accordingly. the i...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_bridge-evidence-static-retrieval-utility-does-not-predict-causal-utility-in-mult",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "AutoSynthesis: An agentic system for automated meta-analysis",
+    "title": "AutoSynthesis: An agentic system for automated meta-analysis",
+    "url": "https://arxiv.org/abs/2607.15247v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15247v1",
+    "description": "Evidence synthesis is crucial for turning primary research into reliable knowledge for science, medicine, education, and policy. Yet, quantitative evidence synthesis remains largely manual and difficult to scale. Here, we introduce AutoSynthesis, an end-to-end multi-agent system for automated meta-analysis. Given a research question in natural language, AutoSynthesis formulates a search strategy, retrieves scientific literature, screens candidate studies, assesses full-text eligibility, extracts",
+    "authors": [
+      "Moein Taherinezhad",
+      "Sebastian Maier",
+      "Gerardo Vitagliano",
+      "Francesco Pierri",
+      "Stefan Feuerriegel"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "arxiv_id": "2607.15247v1",
+    "published_at": "2026-07-16T17:45:27Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_autosynthesis-an-agentic-system-for-automated-meta-analysis",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=3 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索",
+        "自动化",
+        "数据分析"
+      ],
+      "scenario": [
+        "教育学习",
+        "学术研究"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "AutoSynthesis: An agentic system for automated meta-analysis 属于代码开发领域，定价未知。evidence synthesis is crucial for turning primary research into reliable knowledge for science, medicine, education, and policy. yet, quantitative evidence synthesis remains largely manual and difficu...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_autosynthesis-an-agentic-system-for-automated-meta-analysis",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Mutable Low-Rank Sketches for Retrain-Free Recommendation",
+    "title": "Mutable Low-Rank Sketches for Retrain-Free Recommendation",
+    "url": "https://arxiv.org/abs/2607.15242v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15242v1",
+    "description": "A common bottleneck in two-stage recommendation is embedding staleness: when a user rates a new item, their embedding remains fixed until the next retrain cycle. We propose mutable sketches, which store each user's preferences in a KP-tree (a sparse segment tree with sum aggregation), fit a low-rank projection once, and recompute embeddings on-the-fly as ratings arrive. We prove that each new observation monotonically tightens the prediction error envelope (Theorem 1), a guarantee that FunkSVD a",
+    "authors": [
+      "Hector J. Garcia",
+      "Nick Clayton"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "arxiv_id": "2607.15242v1",
+    "published_at": "2026-07-16T17:39:38Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_mutable-low-rank-sketches-for-retrain-free-recommendation",
+    "category": "其他",
+    "subcategory": "",
+    "audience": "general",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=其他 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [
+        "免费"
+      ],
+      "tech": [
+        "Embedding"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Mutable Low-Rank Sketches for Retrain-Free Recommendation 属于其他领域，付费产品。a common bottleneck in two-stage recommendation is embedding staleness: when a user rates a new item, their embedding remains fixed until the next retrain cycle. we propose mutable sketches, which sto...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_mutable-low-rank-sketches-for-retrain-free-recommendation",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Beyond the Leaderboard: Design Lessons for Trustworthy Multimodal VQA",
+    "title": "Beyond the Leaderboard: Design Lessons for Trustworthy Multimodal VQA",
+    "url": "https://arxiv.org/abs/2607.15241v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15241v1",
+    "description": "Healthcare multimodal AI must combine visual and textual evidence while remaining reliable and interpretable. Using MediaEval Medico 2025 as a retrospective GI endoscopy case study, we analyze design choices across nine documented systems for question answering and explanation quality. Parameter-efficient adaptation of pretrained backbones provides strong challenge performance, but answer-level gains do not consistently translate into faithful and complete clinical reasoning. Methods enforcing s",
+    "authors": [
+      "Sushant Gautam",
+      "Vajira Thambawita",
+      "Michael A. Riegler",
+      "Pål Halvorsen",
+      "Steven A. Hicks"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.CV"
+    ],
+    "arxiv_id": "2607.15241v1",
+    "published_at": "2026-07-16T17:38:19Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_beyond-the-leaderboard-design-lessons-for-trustworthy-multimodal-vqa",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "数据分析",
+        "翻译"
+      ],
+      "scenario": [
+        "设计工作",
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [
+        "Multi-modal"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Beyond the Leaderboard: Design Lessons for Trustworthy Multimodal VQA 属于代码开发领域，付费产品。healthcare multimodal ai must combine visual and textual evidence while remaining reliable and interpretable. using mediaeval medico 2025 as a retrospective gi endoscopy case study, we analyze design ...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_beyond-the-leaderboard-design-lessons-for-trustworthy-multimodal-vqa",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Language Identification via Compositional Data Analysis: A Linear-Time Classifier Based on Log-Ratio Geometry",
+    "title": "Language Identification via Compositional Data Analysis: A Linear-Time Classifier Based on Log-Ratio Geometry",
+    "url": "https://arxiv.org/abs/2607.15238v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15238v1",
+    "description": "Language identification is commonly addressed using either neural architectures or statistical n-gram models. Neural approaches typically require substantial computational resources, whereas classical frequency-based methods offer efficient linear-time performance, but rely on distance metrics that are not always appropriate for compositional data. This work models character and bigram frequency distributions as compositional vectors constrained to the simplex and mapped via the centered log-rat",
+    "authors": [
+      "Paul-Andrei Pogăcean",
+      "Sanda-Maria Avram"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "arxiv_id": "2607.15238v1",
+    "published_at": "2026-07-16T17:35:23Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_language-identification-via-compositional-data-analysis-a-linear-time-classifier",
+    "category": "数据分析",
+    "subcategory": "数据分析",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=数据分析 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "数据分析"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Language Identification via Compositional Data Analysis: A Linear-Time Classifier Based on Log-Ratio Geometry 属于数据分析领域，付费产品。language identification is commonly addressed using either neural architectures or statistical n-gram models. neural approaches typically require substantial computational resources, whereas classical...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_language-identification-via-compositional-data-analysis-a-linear-time-classifier",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "In-Place Tokenizer Expansion for Pre-trained LLMs",
+    "title": "In-Place Tokenizer Expansion for Pre-trained LLMs",
+    "url": "https://arxiv.org/abs/2607.15232v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15232v1",
+    "description": "A tokenizer fixed at the start of pre-training allocates vocabulary in proportion to the pre-training corpus, reflecting the deployment priorities at that time. When those priorities shift, languages added later are split into many more tokens per word, which can raise latency, compute, and energy consumption for users of those languages. Cloud models can afford a broad vocabulary because the embedding and LM-head matrices are a small fraction of their parameters. On a compact model those matric",
+    "authors": [
+      "Jimmy T. H. Smith",
+      "Tarek Dakhran",
+      "Alberto Cabrera",
+      "Simon S. Lee",
+      "Paul Pak"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "arxiv_id": "2607.15232v1",
+    "published_at": "2026-07-16T17:32:38Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_in-place-tokenizer-expansion-for-pre-trained-llms",
+    "category": "开发工具",
+    "subcategory": "",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=开发工具 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "Embedding"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "In-Place Tokenizer Expansion for Pre-trained LLMs 属于开发工具领域，付费产品。a tokenizer fixed at the start of pre-training allocates vocabulary in proportion to the pre-training corpus, reflecting the deployment priorities at that time. when those priorities shift, languages ...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_in-place-tokenizer-expansion-for-pre-trained-llms",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Data Driven Block Replacement Scheduling",
+    "title": "Data Driven Block Replacement Scheduling",
+    "url": "https://arxiv.org/abs/2607.15229v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15229v1",
+    "description": "We develop data-driven algorithms for maintaining $N$ independent identical machines under a \\textit{block replacement policy}, in which each machine is replaced upon failure and all machines are jointly replaced at regular intervals of length $k$. The goal is to learn the cost-minimizing interval $k^*$ from operational data when the lifetime distribution is unknown. At each decision epoch, the operator selects $k \\in \\{1, 2, \\ldots, K\\}$, observes the resulting failure history (a mixture of com",
+    "authors": [
+      "Aniruddhan Ganesaraman",
+      "VIdyadhar Kulkarni"
+    ],
+    "categories": [
+      "cs.LG",
+      "math.OC",
+      "stat.AP",
+      "stat.ML"
+    ],
+    "arxiv_id": "2607.15229v1",
+    "published_at": "2026-07-16T17:31:15Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_data-driven-block-replacement-scheduling",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Data Driven Block Replacement Scheduling 属于代码开发领域，付费产品。we develop data-driven algorithms for maintaining $n$ independent identical machines under a \\textit{block replacement policy}, in which each machine is replaced upon failure and all machines are join...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_data-driven-block-replacement-scheduling",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "When Words Are Safe But Actions Kill: Probing Physical Danger Beyond Text Safety in Hidden-State Risk Space",
+    "title": "When Words Are Safe But Actions Kill: Probing Physical Danger Beyond Text Safety in Hidden-State Risk Space",
+    "url": "https://arxiv.org/abs/2607.15218v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15218v1",
+    "description": "Large language models (LLMs) increasingly serve as high-level planners for embodied agents, where linguistically benign instructions can become unsafe once grounded in the physical world. We study whether this physically grounded danger is the same safety problem as ordinary text-level content danger. Through hidden-state direction analysis and random-split null tests, we show that content danger (CD) and physical danger (PD) form separable signals in LLM representations across Qwen2.5-3B/7B/14B",
+    "authors": [
+      "Weimeng Wang",
+      "Ziqiang Wang",
+      "Zihang Zhan",
+      "Chuanpu Fu",
+      "Qi Li"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CR"
+    ],
+    "arxiv_id": "2607.15218v1",
+    "published_at": "2026-07-16T17:20:38Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_when-words-are-safe-but-actions-kill-probing-physical-danger-beyond-text-safety-",
+    "category": "文本生成",
+    "subcategory": "AI Agent",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=文本生成 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "数据分析"
+      ],
+      "scenario": [
+        "内容创作",
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "When Words Are Safe But Actions Kill: Probing Physical Danger Beyond Text Safety in Hidden-State Risk Space 属于文本生成领域，付费产品。large language models (llms) increasingly serve as high-level planners for embodied agents, where linguistically benign instructions can become unsafe once grounded in the physical world. we study whe...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_when-words-are-safe-but-actions-kill-probing-physical-danger-beyond-text-safety-",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "NeuronSoup: Evolving Asynchronous, Shared-Neuron Temporal Graphs without Backpropagation",
+    "title": "NeuronSoup: Evolving Asynchronous, Shared-Neuron Temporal Graphs without Backpropagation",
+    "url": "https://arxiv.org/abs/2607.15217v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15217v1",
+    "description": "We present NeuronSoup, a neural computation architecture that replaces synchronous layer-by-layer processing with asynchronous, delay-mediated signal propagation through a pool of shared neurons. Each path in the network routes a continuous-valued signal from one input neuron to one output neuron through a variable number of intermediate hidden neurons. Hidden neurons are physically shared across paths: when two paths pass through the same neuron, the second arrival encounters the accumulated st",
+    "authors": [
+      "Subodh Kalia"
+    ],
+    "categories": [
+      "cs.NE",
+      "cs.LG"
+    ],
+    "arxiv_id": "2607.15217v1",
+    "published_at": "2026-07-16T17:18:59Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_neuronsoup-evolving-asynchronous-shared-neuron-temporal-graphs-without-backpropa",
+    "category": "其他",
+    "subcategory": "",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=其他 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "NeuronSoup: Evolving Asynchronous, Shared-Neuron Temporal Graphs without Backpropagation 属于其他领域，付费产品。we present neuronsoup, a neural computation architecture that replaces synchronous layer-by-layer processing with asynchronous, delay-mediated signal propagation through a pool of shared neurons. each...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_neuronsoup-evolving-asynchronous-shared-neuron-temporal-graphs-without-backpropa",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Expanding the Lexicon of Ge'ez Based African Languages: A Comparative Study of Amharic and Tigrinya",
+    "title": "Expanding the Lexicon of Ge'ez Based African Languages: A Comparative Study of Amharic and Tigrinya",
+    "url": "https://arxiv.org/abs/2607.15209v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15209v1",
+    "description": "Multilingual pre-trained language models (PLMs) exhibit degraded performance on low-resource, non-Latin-script languages, driven by high out-of-vocabulary (OOV) rates and excessive subword fragmentation that result from Latin-script-centric tokenizer training. We introduce VEXMLM, a vocabulary-extended variant of XLM-R targeting the two highest-resource Ge'ez-script languages, Amharic and Tigrinya, and further evaluated on 17 additional low-resource African languages (19 total). We train a langu",
+    "authors": [
+      "Hailay Kidu Teklehaymanot",
+      "Debela Desalegn Yadeta",
+      "Wolfgang Nejdl"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "arxiv_id": "2607.15209v1",
+    "published_at": "2026-07-16T17:08:28Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_expanding-the-lexicon-of-ge-ez-based-african-languages-a-comparative-study-of-am",
+    "category": "数据分析",
+    "subcategory": "数据分析",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=数据分析 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [
+        "RAG"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Expanding the Lexicon of Ge'ez Based African Languages: A Comparative Study of Amharic and Tigrinya 属于数据分析领域，定价未知。multilingual pre-trained language models (plms) exhibit degraded performance on low-resource, non-latin-script languages, driven by high out-of-vocabulary (oov) rates and excessive subword fragmentati...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_expanding-the-lexicon-of-ge-ez-based-african-languages-a-comparative-study-of-am",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Delocalization of bias in unadjusted Hamiltonian Monte Carlo and underdamped Langevin",
+    "title": "Delocalization of bias in unadjusted Hamiltonian Monte Carlo and underdamped Langevin",
+    "url": "https://arxiv.org/abs/2607.15208v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15208v1",
+    "description": "Unadjusted samplers such as unadjusted Hamiltonian Monte Carlo and underdamped Langevin are well-known to be biased. Metropolis--Hastings adjustment has been conventionally incorporated into Hamiltonian Monte Carlo to eliminate the bias. However, this adjustment can significantly increase the iteration complexity due to the small step size required for reasonable Metropolis acceptance rates. In this work, we extend the \\emph{delocalization of bias} phenomenon, previously established for the over",
+    "authors": [
+      "Yifan Chen",
+      "Xiaoou Cheng",
+      "Jonathan Niles-Weed",
+      "Jonathan Weare"
+    ],
+    "categories": [
+      "stat.CO",
+      "cs.LG",
+      "math.PR",
+      "stat.ML"
+    ],
+    "arxiv_id": "2607.15208v1",
+    "published_at": "2026-07-16T17:07:42Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_delocalization-of-bias-in-unadjusted-hamiltonian-monte-carlo-and-underdamped-lan",
+    "category": "数据分析",
+    "subcategory": "数据分析",
+    "audience": "general",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=数据分析 实用性=3 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "翻译"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Delocalization of bias in unadjusted Hamiltonian Monte Carlo and underdamped Langevin 属于数据分析领域，定价未知。unadjusted samplers such as unadjusted hamiltonian monte carlo and underdamped langevin are well-known to be biased. metropolis--hastings adjustment has been conventionally incorporated into hamiltoni...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_delocalization-of-bias-in-unadjusted-hamiltonian-monte-carlo-and-underdamped-lan",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "BadWAM: When World-Action Models Dream Right but Act Wrong",
+    "title": "BadWAM: When World-Action Models Dream Right but Act Wrong",
+    "url": "https://arxiv.org/abs/2607.15207v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15207v1",
+    "description": "World-action models (WAMs) are emerging as a promising foundation for embodied control: rather than predicting actions alone, they learn representations that couple action generation with future world prediction. This coupling is often viewed as a source of robustness, interpretability, and safety, as a robot's action can in principle be checked against its imagined future. In this paper, we show that this assumption is fragile. We introduce BadWAM, a unified framework for modeling and evaluatin",
+    "authors": [
+      "Qi Li",
+      "Xingyi Yang",
+      "Xinchao Wang"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.RO"
+    ],
+    "arxiv_id": "2607.15207v1",
+    "published_at": "2026-07-16T17:04:15Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_badwam-when-world-action-models-dream-right-but-act-wrong",
+    "category": "学术研究",
+    "subcategory": "论文工具",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习",
+        "学术研究"
+      ],
+      "attribute": [],
+      "tech": [
+        "RAG"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "BadWAM: When World-Action Models Dream Right but Act Wrong 属于学术研究领域，付费产品。world-action models (wams) are emerging as a promising foundation for embodied control: rather than predicting actions alone, they learn representations that couple action generation with future world...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_badwam-when-world-action-models-dream-right-but-act-wrong",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal Repository-Level Issue Localization",
+    "title": "MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal Repository-Level Issue Localization",
+    "url": "https://arxiv.org/abs/2607.15205v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15205v1",
+    "description": "Real repository issues routinely include visual evidence such as screenshots, error dialogs, rendered UI states, and logs, yet repository-level issue localization is evaluated mostly as a text-only task. Existing multimodal SE benchmarks evaluate end-to-end repair, entangling localization with patch synthesis and obscuring whether visual input helped, hurt, or was ignored. We introduce \\textbf{MM-IssueLoc}, a controlled benchmark and evaluation protocol for repository-level localization with vis",
+    "authors": [
+      "Shaoxiong Zhan",
+      "Shi Hu",
+      "Boyu Feng",
+      "Hai Lin",
+      "Andrew Gong"
+    ],
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "arxiv_id": "2607.15205v1",
+    "published_at": "2026-07-16T17:02:25Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_mm-issueloc-a-controlled-benchmark-for-evaluating-visual-evidence-in-multimodal-",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "翻译"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "Multi-modal"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal Repository-Level Issue Localization 属于代码开发领域，付费产品。real repository issues routinely include visual evidence such as screenshots, error dialogs, rendered ui states, and logs, yet repository-level issue localization is evaluated mostly as a text-only ta...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_mm-issueloc-a-controlled-benchmark-for-evaluating-visual-evidence-in-multimodal-",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Self-Evolving Human-Centered Framework for Explainable Depression Symptom Annotation",
+    "title": "Self-Evolving Human-Centered Framework for Explainable Depression Symptom Annotation",
+    "url": "https://arxiv.org/abs/2607.15202v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15202v1",
+    "description": "Annotation quality is a major bottleneck in building reliable and explainable artificial intelligence (XAI) systems for mental health research. In depression-related datasets, labels are often assigned without structured evidence, symptom-level justification, or traceable alignment with the criteria of the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, Text Revision (DSM-5-TR), limiting both transparency and downstream model interpretability. We propose a self-evolving, ex",
+    "authors": [
+      "Hoang-Loc Cao",
+      "Van Pham",
+      "Truong Thanh Hung Nguyen",
+      "Phuc Truong Loc Nguyen",
+      "Phuc Ho"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.HC",
+      "cs.MA",
+      "cs.MM"
+    ],
+    "arxiv_id": "2607.15202v1",
+    "published_at": "2026-07-16T16:59:54Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_self-evolving-human-centered-framework-for-explainable-depression-symptom-annota",
+    "category": "学术研究",
+    "subcategory": "数据资源",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [
+        "学术研究"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Self-Evolving Human-Centered Framework for Explainable Depression Symptom Annotation 属于学术研究领域，付费产品。annotation quality is a major bottleneck in building reliable and explainable artificial intelligence (xai) systems for mental health research. in depression-related datasets, labels are often assigne...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_self-evolving-human-centered-framework-for-explainable-depression-symptom-annota",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Mask-Aware Policy Gradients for Diffusion Language Models",
+    "title": "Mask-Aware Policy Gradients for Diffusion Language Models",
+    "url": "https://arxiv.org/abs/2607.15200v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15200v1",
+    "description": "Reinforcement learning has proven effective for improving reasoning in large language models, but extending it to Masked Diffusion Language Models (MDLMs) remains challenging due to the intractability of the log-likelihood estimation. Existing approaches approximate this log-likelihood by modeling only the token predictions, ignoring the order in which positions are unmasked during generation. We observe that MDLM generation involves two decisions at each step: what tokens to place at each maske",
+    "authors": [
+      "Haran Raajesh",
+      "Kulin Shah",
+      "Adam Klivans",
+      "Philipp Krähenbühl"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "arxiv_id": "2607.15200v1",
+    "published_at": "2026-07-16T16:57:34Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_mask-aware-policy-gradients-for-diffusion-language-models",
+    "category": "数据分析",
+    "subcategory": "数据分析",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=数据分析 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [
+        "Diffusion"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Mask-Aware Policy Gradients for Diffusion Language Models 属于数据分析领域，付费产品。reinforcement learning has proven effective for improving reasoning in large language models, but extending it to masked diffusion language models (mdlms) remains challenging due to the intractability...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_mask-aware-policy-gradients-for-diffusion-language-models",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Subjective Risk Decomposition: A New View for Uncertainty Quantification",
+    "title": "Subjective Risk Decomposition: A New View for Uncertainty Quantification",
+    "url": "https://arxiv.org/abs/2607.15196v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15196v1",
+    "description": "We present a novel viewpoint for uncertainty quantification. Uncertainty measures are not primitives, in need of axioms and argumentation, but instead consequences, of higher-level modelling decisions. We show how epistemic and aleatoric uncertainty measures can be derived via decomposition of a subjective risk, based on a strictly proper loss. Reverse cross-entropy provides a prominent example, where decomposition recovers the classic information-theoretic uncertainty terms. The same approach r",
+    "authors": [
+      "Raghad Alamri",
+      "Michele Caprio",
+      "Gavin Brown"
+    ],
+    "categories": [
+      "stat.ML",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "arxiv_id": "2607.15196v1",
+    "published_at": "2026-07-16T16:52:54Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_subjective-risk-decomposition-a-new-view-for-uncertainty-quantification",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Subjective Risk Decomposition: A New View for Uncertainty Quantification 属于代码开发领域，付费产品。we present a novel viewpoint for uncertainty quantification. uncertainty measures are not primitives, in need of axioms and argumentation, but instead consequences, of higher-level modelling decisions...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_subjective-risk-decomposition-a-new-view-for-uncertainty-quantification",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Plover: Steering GUI Agents through Plan-Centric Interaction",
+    "title": "Plover: Steering GUI Agents through Plan-Centric Interaction",
+    "url": "https://arxiv.org/abs/2607.15193v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.15193v1",
+    "description": "Graphical user interface (GUI) automation remains challenging in real-world environments, where dynamic layouts, unexpected dialogs, and evolving interface states can cause autonomous agents to drift from user intent. Recent vision-based multimodal agents improve flexibility by operating directly over screenshots and natural language instructions, but planning and adaptation often remain internal, limiting users' ability to inspect, supervise, or correct system behavior. We present Plover, a pla",
+    "authors": [
+      "Madhumitha Venkatesan",
+      "Shicheng Wen",
+      "Jiajing Guo",
+      "Jorge Piazentin Ono",
+      "Liu Ren"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "arxiv_id": "2607.15193v1",
+    "published_at": "2026-07-16T16:48:39Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_plover-steering-gui-agents-through-plan-centric-interaction",
+    "category": "数据分析",
+    "subcategory": "数据分析",
+    "audience": "general",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=数据分析 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "自动化"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "Multi-modal"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Plover: Steering GUI Agents through Plan-Centric Interaction 属于数据分析领域，付费产品。graphical user interface (gui) automation remains challenging in real-world environments, where dynamic layouts, unexpected dialogs, and evolving interface states can cause autonomous agents to drift ...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_plover-steering-gui-agents-through-plan-centric-interaction",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "code-review-graph",
+    "full_name": "tirth8205/code-review-graph",
+    "url": "https://github.com/tirth8205/code-review-graph",
+    "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
+    "language": "Python",
+    "stars": 19952,
+    "forks": 2114,
+    "stars_in_period": 356,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_code-review-graph",
+    "category": "代码开发",
+    "subcategory": "代码审查",
+    "audience": "developer",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=4 低于阈值",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "自动化"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "code-review-graph 属于代码开发领域，开源项目。local-first code intelligence graph for mcp and cli. builds a persistent map of your codebase so ai coding tools read only what matters, with benchmarked context reductions on reviews and large-repo w...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_code-review-graph",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "airllm",
+    "full_name": "lyogavin/airllm",
+    "url": "https://github.com/lyogavin/airllm",
+    "description": "AirLLM 70B inference with single 4GB GPU",
+    "language": "Jupyter Notebook",
+    "stars": 23145,
+    "forks": 2642,
+    "stars_in_period": 242,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_airllm",
+    "category": "文本生成",
+    "subcategory": "通用文本",
+    "audience": "researcher",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=文本生成 实用性=3 低于阈值",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "airllm 属于文本生成领域，开源项目。airllm 70b inference with single 4gb gpu",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_airllm",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "wigolo",
+    "full_name": "KnockOutEZ/wigolo",
+    "url": "https://github.com/KnockOutEZ/wigolo",
+    "description": "The go-to web for your AI coding agent — local-first search, fetch, crawl & research over MCP. No API keys, no cloud, $0/query. Public beta.",
+    "language": "TypeScript",
+    "stars": 946,
+    "forks": 72,
+    "stars_in_period": 192,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_wigolo",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=4 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [
+        "学术研究"
+      ],
+      "attribute": [
+        "API服务"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "wigolo 属于代码开发领域，付费产品。the go-to web for your ai coding agent — local-first search, fetch, crawl & research over mcp. no api keys, no cloud, $0/query. public beta.",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_wigolo",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "kimi-cli",
+    "full_name": "MoonshotAI/kimi-cli",
+    "url": "https://github.com/MoonshotAI/kimi-cli",
+    "description": "Kimi Code CLI is your next CLI agent.",
+    "language": "Python",
+    "stars": 9278,
+    "forks": 1153,
+    "stars_in_period": 48,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_kimi-cli",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=4 低于阈值",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "kimi-cli 属于代码开发领域，开源项目。kimi code cli is your next cli agent.",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_kimi-cli",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "hallmark",
+    "full_name": "Nutlope/hallmark",
+    "url": "https://github.com/Nutlope/hallmark",
+    "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+    "language": "CSS",
+    "stars": 12552,
+    "forks": 623,
+    "stars_in_period": 8075,
+    "period": "weekly",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "weekly",
+    "source": "github-trending",
+    "id": "github-trending_hallmark",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=6 低于阈值",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "设计工作"
+      ],
+      "attribute": [],
+      "tech": [
+        "Claude"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "hallmark 属于代码开发领域，开源项目。anti-ai-slop design skill for claude code, cursor, and codex.",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_hallmark",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "DesktopCommanderMCP",
+    "full_name": "wonderwhy-er/DesktopCommanderMCP",
+    "url": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+    "description": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities",
+    "language": "TypeScript",
+    "stars": 8475,
+    "forks": 937,
+    "stars_in_period": 1657,
+    "period": "weekly",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "weekly",
+    "source": "github-trending",
+    "id": "github-trending_desktopcommandermcp",
+    "category": "开发工具",
+    "subcategory": "",
+    "audience": "developer",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=开发工具 实用性=4 低于阈值",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "Claude"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "DesktopCommanderMCP 属于开发工具领域，开源项目。this is mcp server for claude that gives it terminal control, file system search and diff file editing capabilities",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_desktopcommandermcp",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "graphify",
+    "full_name": "Graphify-Labs/graphify",
+    "url": "https://github.com/Graphify-Labs/graphify",
+    "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
+    "language": "Python",
+    "stars": 90600,
+    "forks": 8847,
+    "stars_in_period": 8379,
+    "period": "weekly",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "weekly",
+    "source": "github-trending",
+    "id": "github-trending_graphify",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=6 低于阈值",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "视频生成"
+      ],
+      "scenario": [
+        "学术研究"
+      ],
+      "attribute": [],
+      "tech": [
+        "Gemini",
+        "Claude"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "graphify 属于代码开发领域，开源项目。ai coding assistant skill (claude code, codex, opencode, cursor, gemini cli, and more). turn any folder of code, sql schemas, r scripts, shell scripts, docs, papers, images, or videos into a queryable...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_graphify",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "openinterpreter",
+    "full_name": "openinterpreter/openinterpreter",
+    "url": "https://github.com/openinterpreter/openinterpreter",
+    "description": "A coding agent for open models like Kimi K3",
+    "language": "Rust",
+    "stars": 66593,
+    "forks": 5717,
+    "stars_in_period": 2009,
+    "period": "weekly",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "weekly",
+    "source": "github-trending",
+    "id": "github-trending_openinterpreter",
+    "category": "学术研究",
+    "subcategory": "模型研究",
+    "audience": "developer",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=4 低于阈值",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "openinterpreter 属于学术研究领域，开源项目。a coding agent for open models like kimi k3",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_openinterpreter",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Show HN: Deep Research – Open-Source Customizable Reasoning Framework for Devs",
+    "title": "Show HN: Deep Research – Open-Source Customizable Reasoning Framework for Devs",
+    "url": "https://github.com/JigsawStack/deep-research",
+    "hn_url": "https://news.ycombinator.com/item?id=44153898",
+    "description": "Show HN: Deep Research – Open-Source Customizable Reasoning Framework for Devs",
+    "points": 7,
+    "num_comments": 0,
+    "author": "winzamark12",
+    "published_at": "2025-06-01T21:34:46Z",
+    "platform": [
+      "hackernews"
+    ],
+    "type": "news",
+    "source": "hackernews-ai",
+    "id": "hackernews-ai_show-hn-deep-research-open-source-customizable-reasoning-framework-for-devs",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 5,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=5 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [
+        "学术研究"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Show HN: Deep Research – Open-Source Customizable Reasoning Framework for Devs 属于代码开发领域，定价未知。show hn: deep research – open-source customizable reasoning framework for devs",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "hackernews-ai_show-hn-deep-research-open-source-customizable-reasoning-framework-for-devs",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Show HN: Persistent Mind Model – Portable AI Personas for Any LLM",
+    "title": "Show HN: Persistent Mind Model – Portable AI Personas for Any LLM",
+    "url": "https://github.com/scottonanski/persistent-mind-model",
+    "hn_url": "https://news.ycombinator.com/item?id=44870680",
+    "description": "Show HN: Persistent Mind Model – Portable AI Personas for Any LLM",
+    "points": 2,
+    "num_comments": 0,
+    "author": "HimTortons",
+    "published_at": "2025-08-11T23:33:27Z",
+    "platform": [
+      "hackernews"
+    ],
+    "type": "news",
+    "source": "hackernews-ai",
+    "id": "hackernews-ai_show-hn-persistent-mind-model-portable-ai-personas-for-any-llm",
+    "category": "学术研究",
+    "subcategory": "模型研究",
+    "audience": "researcher",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=4 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Show HN: Persistent Mind Model – Portable AI Personas for Any LLM 属于学术研究领域，定价未知。show hn: persistent mind model – portable ai personas for any llm",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "hackernews-ai_show-hn-persistent-mind-model-portable-ai-personas-for-any-llm",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+    "title": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+    "url": "https://finterm.ai/",
+    "hn_url": "https://news.ycombinator.com/item?id=48896257",
+    "description": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+    "points": 6,
+    "num_comments": 0,
+    "author": "cheeseblubber",
+    "published_at": "2026-07-13T17:52:10Z",
+    "platform": [
+      "hackernews"
+    ],
+    "type": "news",
+    "source": "hackernews-ai",
+    "id": "hackernews-ai_show-hn-finterm-ai-bloomberg-terminal-for-claude-code",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 5,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=5 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "Claude"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Show HN: Finterm.ai Bloomberg terminal for Claude Code 属于代码开发领域，定价未知。show hn: finterm.ai bloomberg terminal for claude code",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "hackernews-ai_show-hn-finterm-ai-bloomberg-terminal-for-claude-code",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Show HN: EasyFunctionCall – Converts OpenAPI specs to AI model func call params",
+    "title": "Show HN: EasyFunctionCall – Converts OpenAPI specs to AI model func call params",
+    "url": "https://easyfunctioncall.com",
+    "hn_url": "https://news.ycombinator.com/item?id=42560205",
+    "description": "Show HN: EasyFunctionCall – Converts OpenAPI specs to AI model func call params",
+    "points": 1,
+    "num_comments": 0,
+    "author": "numbbbbb",
+    "published_at": "2024-12-31T17:27:32Z",
+    "platform": [
+      "hackernews"
+    ],
+    "type": "news",
+    "source": "hackernews-ai",
+    "id": "hackernews-ai_show-hn-easyfunctioncall-converts-openapi-specs-to-ai-model-func-call-params",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 5,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=5 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [
+        "API服务"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Show HN: EasyFunctionCall – Converts OpenAPI specs to AI model func call params 属于代码开发领域，定价未知。show hn: easyfunctioncall – converts openapi specs to ai model func call params",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "hackernews-ai_show-hn-easyfunctioncall-converts-openapi-specs-to-ai-model-func-call-params",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Show HN: Forge – 3MB Rust binary that coordinates multi-AI coding agents via MCP",
+    "title": "Show HN: Forge – 3MB Rust binary that coordinates multi-AI coding agents via MCP",
+    "url": "https://github.com/nxtg-ai/forge-orchestrator",
+    "hn_url": "https://news.ycombinator.com/item?id=46943041",
+    "description": "Show HN: Forge – 3MB Rust binary that coordinates multi-AI coding agents via MCP",
+    "points": 1,
+    "num_comments": 1,
+    "author": "vipdestiny",
+    "published_at": "2026-02-09T08:38:51Z",
+    "platform": [
+      "hackernews"
+    ],
+    "type": "news",
+    "source": "hackernews-ai",
+    "id": "hackernews-ai_show-hn-forge-3mb-rust-binary-that-coordinates-multi-ai-coding-agents-via-mcp",
+    "ai_analysis": "这是一个基于AI的代码生成与优化工具，能够根据用户需求自动生成或改进代码片段。适合开发者、编程学习者以及需要快速原型构建的团队使用。",
+    "ai_confidence": 0.8,
+    "category": "代码开发",
+    "health_status": "active",
+    "is_china_tool": false,
+    "license_tier": "open-source",
+    "license_type": "MIT",
+    "subcategory": "代码生成与优化",
+    "tags": {
+      "attribute": [
+        "高效",
+        "智能",
+        "开源"
+      ],
+      "function": [
+        "代码生成",
+        "代码优化",
+        "编程辅助"
+      ],
+      "quality": [
+        "可靠",
+        "实用"
+      ],
+      "scenario": [
+        "软件开发",
+        "编程学习",
+        "代码审查"
+      ],
+      "tech": [
+        "AI代码模型",
+        "自然语言处理"
+      ]
+    },
+    "tool_id": "hackernews-ai_show-hn-forge-3mb-rust-binary-that-coordinates-multi-ai-coding-agents-via-mcp",
+    "rejection_reason": "实用性5分低于代码开发类阈值7分",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "Vekol",
+    "slug": "vekol",
+    "url": "https://www.producthunt.com/products/vekol",
+    "description": "The first AI platform dedicated to the Kurdish language.. Vekol is the first AI platform dedicated to the Kurdish language. It bridges the digital gap with accurate Speech-to-Text, emotional Text-to-Speech, Voice Cloning, OCR, and advanced translation across multiple Kurdish dialects.",
+    "source": "producthunt-ai",
+    "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+    "tags": {
+      "function": [
+        "语音合成"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "platform": [
+      "producthunt"
+    ],
+    "type": "ai_tool",
+    "thumbnail_url": "https://ph-files.imgix.net/f0170e1e-5b7c-4e75-abc4-23c42707aa7b.png?auto=format",
+    "raw_data": {
+      "ph_id": "1199517",
+      "tagline": "The first AI platform dedicated to the Kurdish language.",
+      "votes_count": 10,
+      "comments_count": 5,
+      "created_at": "2026-07-18T07:01:00Z",
+      "featured_at": null,
+      "daily_rank": 28,
+      "makers": [
+        {
+          "name": "Darvan Shvan",
+          "username": "darvan_shvan"
+        }
+      ],
+      "topics": [
+        "Languages",
+        "Artificial Intelligence",
+        "Audio"
+      ]
+    },
+    "id": "producthunt-ai_vekol",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=4 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "ai_analysis": "Vekol 属于代码开发领域，定价未知。the first ai platform dedicated to the kurdish language.. vekol is the first ai platform dedicated to the kurdish language. it bridges the digital gap with accurate speech-to-text, emotional text-to-s...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "producthunt-ai_vekol",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "preppilot AI",
+    "slug": "preppilot-ai",
+    "url": "https://www.producthunt.com/products/preppilot-ai",
+    "description": "One platform for coding, resumes & AI interviews. PrepPilot AI helps job seekers prepare for technical interviews in one place. Practice coding problems, take AI-powered mock interviews, analyze your resume with ATS scoring, and receive personalized feedback to improve your performance. Instead of switching between multiple platforms, PrepPilot AI brings interview preparation together in a single, easy-to-use experience.",
+    "source": "producthunt-ai",
+    "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+    "tags": {
+      "attribute": [
+        "开源",
+        "轻量级"
+      ],
+      "function": [
+        "代码生成",
+        "代码优化"
+      ],
+      "quality": [
+        "高精度",
+        "易集成"
+      ],
+      "scenario": [
+        "编程辅助",
+        "开发效率提升"
+      ],
+      "tech": [
+        "AI代码模型",
+        "自然语言处理"
+      ]
+    },
+    "platform": [
+      "producthunt"
+    ],
+    "type": "ai_tool",
+    "thumbnail_url": "https://ph-files.imgix.net/c303a1dc-4e49-4612-968a-5c5a4fd6d8c0.png?auto=format",
+    "raw_data": {
+      "ph_id": "1199564",
+      "tagline": "One platform for coding, resumes & AI interviews",
+      "votes_count": 9,
+      "comments_count": 5,
+      "created_at": "2026-07-18T07:01:00Z",
+      "featured_at": null,
+      "daily_rank": 41,
+      "makers": [
+        {
+          "name": "Anup Singh",
+          "username": "anup_singh25"
+        }
+      ],
+      "topics": [
+        "Education",
+        "Developer Tools",
+        "Artificial Intelligence"
+      ]
+    },
+    "id": "producthunt-ai_preppilot-ai",
+    "ai_analysis": "该工具通过AI模型辅助生成和优化代码，提升开发效率。适合程序员、开发者以及需要快速原型开发的技术团队使用。",
+    "ai_confidence": 0.8,
+    "category": "开发工具",
+    "health_status": "active",
+    "is_china_tool": false,
+    "license_tier": "open-source",
+    "license_type": "MIT",
+    "subcategory": "代码开发",
+    "tool_id": "producthunt-ai_preppilot-ai",
+    "rejection_reason": "实用性5分低于开发工具类阈值6分",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
+  },
+  {
+    "name": "promptvv",
+    "slug": "promptvv",
+    "url": "https://www.producthunt.com/products/promptvv",
+    "description": "Turn any video into a structured AI video prompt. promptvv turns an uploaded video—or a Douyin, Xiaohongshu, or Bilibili link—into a structured prompt you can use with Jimeng, Seedance, Kling, and other AI video models. It breaks the source into events, shots, camera moves, actions, performance, and dialogue, and supports follow-up refinements. No manual downloading is needed for supported links. New accounts include 30 seconds of free analysis.",
+    "source": "producthunt-ai",
+    "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+    "tags": {
+      "function": [
+        "视频生成",
+        "数据分析"
+      ],
+      "scenario": [],
+      "attribute": [
+        "免费"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "platform": [
+      "producthunt"
+    ],
+    "type": "ai_tool",
+    "thumbnail_url": "https://ph-files.imgix.net/fb8c3103-c6c3-4012-8238-7723e4e2d7cc.x-icon?auto=format",
+    "raw_data": {
+      "ph_id": "1199254",
+      "tagline": "Turn any video into a structured AI video prompt",
+      "votes_count": 7,
+      "comments_count": 3,
+      "created_at": "2026-07-18T07:01:00Z",
+      "featured_at": null,
+      "daily_rank": 65,
+      "makers": [
+        {
+          "name": "任增飞",
+          "username": "new_user___1722026f4d02c2a555adfdd"
+        }
+      ],
+      "topics": [
+        "Artificial Intelligence"
+      ]
+    },
+    "id": "producthunt-ai_promptvv",
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=4 低于阈值",
+    "license_tier": "free",
+    "license_type": "",
+    "ai_analysis": "promptvv 属于代码开发领域，免费工具。turn any video into a structured ai video prompt. promptvv turns an uploaded video—or a douyin, xiaohongshu, or bilibili link—into a structured prompt you can use with jimeng, seedance, kling, and oth...",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "producthunt-ai_promptvv",
+    "rejected_at": "2026-07-18T12:36:33.465644+00:00"
   }
 ]
