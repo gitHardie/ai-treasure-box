@@ -68,11 +68,15 @@ def _create_analyzer(config: Dict = None) -> AIAnalyzer:
     if config is None:
         config = _get_config()
     analysis_cfg = config.get("global", {}).get("analysis", {})
+    # 从配置读取收录规则
+    inclusion_cfg = config.get("global", {}).get("inclusion", {})
+    inclusion_rules = inclusion_cfg.get("rules", None)
     return AIAnalyzer(
         coze_api_key=os.environ.get("COZE_API_KEY", "") or os.environ.get("AI_BOX_COZE", ""),
         workflow_id=os.environ.get("COZE_WORKFLOW_ID", ""),
         batch_size=analysis_cfg.get("batch_size", 20),
         batch_timeout=analysis_cfg.get("batch_timeout", 120),
+        inclusion_rules=inclusion_rules,
     )
 
 
@@ -218,7 +222,7 @@ def cmd_deep(args):
 
 
 def cmd_analyze(args):
-    """分析模式：批量送Coze分析pending队列中的工具"""
+    """分析模式：批量送Coze分析pending队列中的工具，过滤后入库"""
     config = _get_config()
     pending = load_pending()
 
@@ -234,14 +238,50 @@ def cmd_analyze(args):
     # 批量分析
     results = analyzer.analyze_batch(pending)
 
-    # 合并到master DB
-    db.merge_analyzed(results)
+    # 过滤：根据收录规则决定是否入库
+    included, excluded = analyzer.filter_for_inclusion(results)
+
+    # 只合并通过过滤的工具到 master DB
+    db.merge_analyzed(included)
     db.save()
+
+    # 保存被拒绝的工具到 rejected.json（追加模式）
+    if excluded:
+        _save_rejected(excluded)
 
     # 清空pending
     clear_pending()
 
-    logger.info(f"[Analyze] Complete: {len(results)} items analyzed and merged to master DB")
+    logger.info(f"[Analyze] Complete: {len(included)} included, {len(excluded)} excluded, merged to master DB")
+
+
+REJECTED_PATH = DATA_DIR / "rejected_tools.json"
+
+def _save_rejected(items: List[Dict[str, Any]]):
+    """保存被拒绝的工具到 rejected.json（追加模式）"""
+    existing = []
+    if REJECTED_PATH.exists():
+        try:
+            with open(REJECTED_PATH, "r", encoding="utf-8") as f:
+                existing = json.load(f)
+                if not isinstance(existing, list):
+                    existing = []
+        except (json.JSONDecodeError, IOError):
+            existing = []
+
+    # 添加拒绝时间戳
+    from datetime import datetime, timezone
+    now = datetime.now(timezone.utc).isoformat()
+    for item in items:
+        item["rejected_at"] = now
+
+    merged = existing + items
+
+    REJECTED_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with open(REJECTED_PATH, "w", encoding="utf-8") as f:
+        json.dump(merged, f, ensure_ascii=False, indent=2)
+
+    logger.info(f"[Rejected] Saved {len(items)} rejected items, total: {len(merged)}")
 
 
 def cmd_deploy(args):

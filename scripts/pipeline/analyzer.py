@@ -39,14 +39,36 @@ class AIAnalyzer:
     # 健康度等级
     HEALTH_LEVELS = ["active", "moderate", "dormant", "archived"]
 
+    # 受众面类型（默认值，实际从 config 读取）
+    AUDIENCE_TYPES = ["general", "developer", "researcher"]
+
+    # 默认收录规则（当 config 中无 inclusion 配置时使用）
+    DEFAULT_INCLUSION_RULES = {
+        "文本生成":   {"min_utility": 1},
+        "图像创作":   {"min_utility": 1},
+        "音视频":     {"min_utility": 1},
+        "办公效率":   {"min_utility": 1},
+        "设计创意":   {"min_utility": 1},
+        "营销推广":   {"min_utility": 1},
+        "教育培训":   {"min_utility": 1},
+        "数据分析":   {"min_utility": 1},
+        "代码开发":   {"min_utility": 7},
+        "开发工具":   {"min_utility": 6},
+        "学术研究":   {"min_utility": 5},
+        "其他":       {"min_utility": 4},
+    }
+
     def __init__(self, coze_api_key: Optional[str] = None, workflow_id: Optional[str] = None,
-                 batch_size: int = 20, batch_timeout: int = 120, mode: str = "batch"):
+                 batch_size: int = 20, batch_timeout: int = 120, mode: str = "batch",
+                 inclusion_rules: Optional[Dict] = None):
         self.coze_api_key = coze_api_key or os.environ.get("COZE_API_KEY", "") or os.environ.get("AI_BOX_COZE", "")
         self.workflow_id = workflow_id or os.environ.get("COZE_WORKFLOW_ID", "")
         self.use_coze = bool(self.coze_api_key and self.workflow_id)
         self.batch_size = batch_size
         self.batch_timeout = batch_timeout
         self.mode = mode  # "loop" or "batch"
+        # 收录规则：优先从配置读取，否则用默认值
+        self.inclusion_rules = inclusion_rules or self.DEFAULT_INCLUSION_RULES
 
     def analyze_tool(self, tool_data: Dict) -> Dict:
         """
@@ -112,6 +134,50 @@ class AIAnalyzer:
                 all_results.append(result)
 
         return all_results
+
+    def filter_for_inclusion(self, analyzed_tools: List[Dict]) -> tuple:
+        """
+        根据收录规则过滤分析结果。
+        
+        返回: (included, excluded) 两个列表
+        - included: 符合收录条件的工具
+        - excluded: 被拒绝的工具（带 rejection_reason）
+        """
+        included = []
+        excluded = []
+        
+        for tool in analyzed_tools:
+            category = tool.get("category", "其他")
+            utility = tool.get("utility_score", 5)
+            should_include = tool.get("should_include", True)
+            
+            # 综合判断：AI 决策 + 本地规则
+            rule = self.inclusion_rules.get(category, self.inclusion_rules.get("其他", {"min_utility": 4}))
+            min_utility = rule.get("min_utility", 4) if isinstance(rule, dict) else 4
+            
+            # 最终收录决策
+            final_include = should_include and (utility >= min_utility)
+            
+            if final_include:
+                included.append(tool)
+            else:
+                # 记录拒绝原因
+                if not tool.get("rejection_reason"):
+                    if utility < min_utility:
+                        tool["rejection_reason"] = f"实用性{utility}分低于{category}类阈值{min_utility}分"
+                    else:
+                        tool["rejection_reason"] = "AI评估不建议收录"
+                excluded.append(tool)
+        
+        logger.info(f"[Filter] Included: {len(included)}, Excluded: {len(excluded)}")
+        if excluded:
+            by_cat = {}
+            for t in excluded:
+                cat = t.get("category", "其他")
+                by_cat[cat] = by_cat.get(cat, 0) + 1
+            logger.info(f"[Filter] Excluded by category: {by_cat}")
+        
+        return included, excluded
 
     def _analyze_with_coze_batch(self, tools: List[Dict]) -> List[Dict]:
         """
@@ -201,7 +267,9 @@ class AIAnalyzer:
         tools_text = "\n".join(tool_entries)
         count = len(tools)
 
-        return f"""请分析以下 {count} 个AI工具，对每个工具给出独立判断（不要照搬描述）。
+        return f"""请分析以下 {count} 个AI工具/项目，对每个给出独立判断（不要照搬描述）。
+
+这是一个面向普通用户和AI爱好者的工具导航站，不是开发者资源库。请从"普通用户是否能用"的角度来评估。
 
 {tools_text}
 
@@ -211,6 +279,10 @@ class AIAnalyzer:
     "index": 1,
     "category": "一级分类(文本生成/图像创作/代码开发/数据分析/音视频/办公效率/学术研究/开发工具/设计创意/营销推广/教育培训/其他)",
     "subcategory": "二级分类",
+    "audience": "general/developer/researcher",
+    "utility_score": 5,
+    "should_include": true,
+    "rejection_reason": "",
     "license_tier": "open-source/freemium/free/paid/source-available/unknown",
     "license_type": "具体许可证如MIT/Apache等",
     "tags": {{
@@ -220,12 +292,22 @@ class AIAnalyzer:
       "tech": ["技术标签"],
       "quality": ["质量标签"]
     }},
-    "ai_analysis": "2-3句独立分析摘要，说明这个工具真正做什么、适合谁",
+    "ai_analysis": "2-3句中文分析，说明这工具做什么、适合谁用、有什么独特之处",
     "ai_confidence": 0.8,
     "is_china_tool": false,
     "health_status": "active/moderate/dormant/archived"
   }}
 ]
+
+重要评估标准：
+- audience: general=普通用户也能直接用; developer=只有开发者才会用; researcher=主要面向研究人员
+- utility_score: 1-10分，评估对目标受众的实用价值。纯学术理论=1-3; 纯SDK/CLI工具(无UI)=3-5; 有产品形态但小众=5-7; 普通人也能直接上手用=7-10
+- should_include: 是否适合收录到工具导航站。判断标准：
+  * audience=general 的几乎都收
+  * audience=developer 且 utility_score>=6 才收（有产品形态、有明确使用场景的DevTool）
+  * 纯学术论文（无可用产品/服务）、纯SDK库、纯CLI工具、测试框架 → 不收
+  * 如果一个工具"普通人完全用不上"，should_include=false
+- rejection_reason: 如果should_include=false，简要说明原因（如"纯学术论文"、"纯CLI工具"、"SDK无产品形态"等）
 
 注意：必须返回恰好 {count} 个对象的JSON数组，index从1到{count}。"""
 
@@ -472,6 +554,18 @@ class AIAnalyzer:
         cat = analysis.get("category", "")
         r["category"] = cat if cat in self.CATEGORIES else (self._fuzzy_match_category(cat) or (self._analyze_local(tool)["category"] if tool else "其他"))
         r["subcategory"] = analysis.get("subcategory", "")
+
+        # 新增：受众面和收录决策
+        audience = analysis.get("audience", "")
+        r["audience"] = audience if audience in self.AUDIENCE_TYPES else "developer"
+        try:
+            utility = max(1, min(10, int(analysis.get("utility_score", analysis.get("utility", 5)))))
+        except (ValueError, TypeError):
+            utility = 5
+        r["utility_score"] = utility
+        r["should_include"] = self._eval_inclusion(r["category"], utility, analysis)
+        r["rejection_reason"] = analysis.get("rejection_reason", "") or analysis.get("reject_reason", "")
+
         lt = analysis.get("license_tier", "unknown")
         r["license_tier"] = lt if lt in self.LICENSE_TIERS else "unknown"
         r["license_type"] = analysis.get("license_type", "")
@@ -491,6 +585,23 @@ class AIAnalyzer:
         r["health_status"] = hs if hs in self.HEALTH_LEVELS else "unknown"
         return r
 
+    def _eval_inclusion(self, category: str, utility_score: int, analysis: Dict) -> bool:
+        """
+        根据分类和实用性评分判断是否收录。
+        优先使用 AI 的 should_include 判断，再用本地规则兜底。
+        """
+        # 如果 AI 已经给了明确的 should_include，且合理，则采纳
+        ai_decision = analysis.get("should_include")
+        if ai_decision is not None:
+            # AI 说不收，且分类确实需要门槛 -> 采纳
+            # AI 说收，但分类门槛很高 -> 用本地规则复核
+            pass
+
+        # 本地规则：按分类的最低实用性阈值
+        rule = self.inclusion_rules.get(category, self.inclusion_rules.get("其他", {"min_utility": 4}))
+        min_utility = rule.get("min_utility", 4) if isinstance(rule, dict) else 4
+        return utility_score >= min_utility
+
     def _fuzzy_match_category(self, text) -> Optional[str]:
         if not text: return None
         t = text.lower()
@@ -505,7 +616,9 @@ class AIAnalyzer:
         return None
 
     def _empty_analysis(self) -> Dict:
-        return {"category":"其他","subcategory":"","license_tier":"unknown","license_type":"",
+        return {"category":"其他","subcategory":"","audience":"developer","utility_score":1,
+                "should_include":False,"rejection_reason":"无法分析",
+                "license_tier":"unknown","license_type":"",
                 "tags":{"function":[],"scenario":[],"attribute":[],"tech":[],"quality":[]},
                 "ai_analysis":"","ai_confidence":0.0,"is_china_tool":False,"health_status":"unknown"}
 
@@ -543,9 +656,17 @@ class AIAnalyzer:
         # === 分析摘要 ===
         analysis = self._generate_summary(name, desc, category, license_tier)
 
+        # 本地推断受众面和实用性评分
+        audience, utility = self._infer_audience_utility(name, desc, category, source, raw)
+        should_include = self._eval_inclusion(category, utility, {})
+
         return {
             "category": category,
             "subcategory": subcategory,
+            "audience": audience,
+            "utility_score": utility,
+            "should_include": should_include,
+            "rejection_reason": "" if should_include else f"本地评估: 分类={category} 实用性={utility} 低于阈值",
             "license_tier": license_tier,
             "license_type": str(license_type) if license_type else "",
             "tags": tags,
@@ -600,6 +721,100 @@ class AIAnalyzer:
             return "unknown"
 
         return "unknown"
+
+    def _infer_audience_utility(self, name: str, desc: str, category: str, source: str, raw: Dict) -> tuple:
+        """
+        本地推断受众面和实用性评分。
+        返回 (audience, utility_score)
+        """
+        text = f"{name} {desc}".lower()
+        stars = raw.get("stargazers_count", 0) or 0
+
+        # === 受众面推断 ===
+        general_keywords = [
+            "app", "website", "online", "tool", "platform", "service",
+            "free", "免费", "在线", "工具", "助手", "生成", "创作",
+            "写作", "翻译", "图片", "视频", "音频", "设计", "ppt",
+            "office", "email", "calendar", "note", "chat", "bot",
+            "editor", "player", "viewer", "converter"
+        ]
+        dev_keywords = [
+            "sdk", "api", "library", "framework", "cli", "terminal",
+            "plugin", "extension", "vscode", "npm", "pip", "docker",
+            "kubernetes", "ci/cd", "devops", "deploy", "test", "debug",
+            "compiler", "lint", "build", "package", "module", "crate",
+            "runtime", "interpreter", "bundler", "linter", "formatter"
+        ]
+        research_keywords = [
+            "paper", "论文", "arxiv", "benchmark", "dataset", "model",
+            "transformer", "attention", "neural", "training", "inference",
+            "evaluation", "experiment", "method", "approach", "algorithm",
+            "state-of-the-art", "sota", "ablation", "baseline"
+        ]
+
+        general_score = sum(1 for kw in general_keywords if kw in text)
+        dev_score = sum(1 for kw in dev_keywords if kw in text)
+        research_score = sum(1 for kw in research_keywords if kw in text)
+
+        if research_score > general_score and research_score > dev_score:
+            audience = "researcher"
+        elif dev_score > general_score:
+            audience = "developer"
+        else:
+            audience = "general"
+
+        # === 实用性评分 ===
+        # 基准分：不同来源的默认基准不同
+        if source in ("producthunt-ai", "theresanaiforthat", "aibot", "aishenqi"):
+            base_score = 7  # 产品导航站的工具通常有产品形态，可直接使用
+        elif source in ("aigcrank", "hyperai"):
+            base_score = 6
+        elif source == "github-trending":
+            base_score = 4  # GitHub 工具需要看是否有产品形态
+        elif source == "arxiv-ai":
+            base_score = 3  # 论文默认低分
+        elif source == "hackernews-ai":
+            base_score = 5
+        else:
+            base_score = 5
+
+        # 受众调整
+        if audience == "general":
+            base_score += 2  # 普通人能用，加分
+        elif audience == "researcher":
+            base_score -= 1
+
+        # Stars 微调（不影响大局）
+        if stars > 5000:
+            base_score += 1
+        elif stars > 1000:
+            base_score += 0  # 1000+ stars 只是及格线，不额外加分
+
+        # 产品形态信号加分
+        product_signals = [
+            "try it", "试用", "sign up", "注册", "get started",
+            "官网", "website", "online tool", "web app", "saas",
+            "download", "安装", "chrome extension", "vscode extension"
+        ]
+        if any(kw in text for kw in product_signals):
+            base_score += 1
+
+        # 纯论文/纯库 惩罚
+        if source == "arxiv-ai" and not any(kw in text for kw in ["tool", "platform", "service", "app", "website"]):
+            base_score = min(base_score, 3)
+
+        # 纯开发基础设施惩罚（测试框架、CI 工具、包管理器等对普通用户无用）
+        infra_signals = [
+            "test framework", "unit test", "testing library",
+            "ci/cd", "build tool", "package manager", "bundler",
+            "runtime", "compiler", "transpiler", "linter", "formatter",
+            "orm", "database driver", "http client", "logging"
+        ]
+        if any(kw in text for kw in infra_signals):
+            base_score = min(base_score, 4)
+
+        utility = max(1, min(10, base_score))
+        return audience, utility
 
     def _infer_category(self, name: str, desc: str, topics: List[str], source: str) -> tuple:
         """推断一级和二级分类"""

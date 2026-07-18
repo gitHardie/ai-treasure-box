@@ -61,7 +61,7 @@ sources:
   type: api
   tier: 1
   url: https://huggingface.co/api/models
-  enabled: true
+  enabled: false
   parser: huggingface.py
   category: 学术研究
   is_china_source: false
@@ -70,7 +70,7 @@ sources:
   params:
     sort: trending
     limit: 100
-  description: HuggingFace热门模型，覆盖NLP/CV/音频等领域
+  description: HuggingFace热门模型，覆盖NLP/CV/音频等领域（已停用）
   schedule_mode: discovery
   fetch_limit: 50
   check_interval_days: 3
@@ -79,7 +79,7 @@ sources:
   type: api
   tier: 1
   url: https://huggingface.co/api/spaces
-  enabled: true
+  enabled: false
   parser: huggingface.py
   category: 学术研究
   is_china_source: false
@@ -88,7 +88,7 @@ sources:
   params:
     sort: trending
     limit: 50
-  description: HuggingFace在线演示空间，可直接体验的AI应用
+  description: HuggingFace在线演示空间，可直接体验的AI应用（已停用）
   schedule_mode: discovery
   fetch_limit: 30
   check_interval_days: 3
@@ -289,3 +289,59 @@ global:
   dedup:
     strategy: url+name
     similarity_threshold: 0.85
+  categories:
+  - 文本生成
+  - 图像创作
+  - 代码开发
+  - 数据分析
+  - 音视频
+  - 办公效率
+  - 学术研究
+  - 开发工具
+  - 设计创意
+  - 营销推广
+  - 教育培训
+  - 其他
+  audience_types:
+  - general
+  - developer
+  - researcher
+  inclusion:
+    description: 收录规则：按分类设定最低实用性分数阈值(1-10)，低于阈值不收录
+    rules:
+      文本生成:
+        min_utility: 1
+        reason: 面向普通用户全收
+      图像创作:
+        min_utility: 1
+        reason: 面向普通用户全收
+      音视频:
+        min_utility: 1
+        reason: 面向普通用户全收
+      办公效率:
+        min_utility: 1
+        reason: 面向普通用户全收
+      设计创意:
+        min_utility: 1
+        reason: 面向普通用户全收
+      营销推广:
+        min_utility: 1
+        reason: 面向普通用户全收
+      教育培训:
+        min_utility: 1
+        reason: 面向普通用户全收
+      数据分析:
+        min_utility: 1
+        reason: 受众较广全收
+      代码开发:
+        min_utility: 7
+        reason: 筛掉纯SDK框架CI只收有产品形态的
+      开发工具:
+        min_utility: 6
+        reason: 保留有产品形态的DevTool
+      学术研究:
+        min_utility: 5
+        reason: 筛掉纯理论论文留有实用价值的
+      其他:
+        min_utility: 4
+        reason: 需要有一定实用性才收
