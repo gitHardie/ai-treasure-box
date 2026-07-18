@@ -225,8 +225,8 @@
       "tool_id": "unknown_officecli",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "b553adf22ac8cb4acb8110fb99428371",
       "source": "github-trending"
     },
@@ -272,8 +272,8 @@
       "tool_id": "unknown_desktopcommandermcp",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "ccf5c380c34239afdb100499b5e4162d",
       "source": "github-trending"
     },
@@ -860,8 +860,8 @@
       "tool_id": "unknown_codex-plugin-cc",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "e188100b7476a790eb0596362684cbdd",
       "source": "github-trending"
     },
@@ -903,8 +903,8 @@
       "tool_id": "unknown_herdr",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "3e97921cc3a79ad77e42b5c90b1ef59d",
       "source": "github-trending"
     },
@@ -981,9 +981,9 @@
           "API服务"
         ],
         "tech": [
-          "Claude",
           "Multi-modal",
-          "Gemini"
+          "Gemini",
+          "Claude"
         ],
         "quality": [
           "新星"
@@ -996,8 +996,8 @@
       "tool_id": "unknown_omniroute",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "2b315cab142d17d90c9dc2b21231efd4",
       "source": "github-trending"
     },
@@ -1129,8 +1129,8 @@
       "tool_id": "unknown_orca",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "1432e32fb0198eed9dd6dd40d80be61d",
       "source": "github-trending"
     },
@@ -3024,42 +3024,46 @@
       ],
       "type": "news",
       "id": "hackernews-ai_show-hn-easyfunctioncall-converts-openapi-specs-to-ai-model-func-call-params",
-      "category": "代码开发",
-      "subcategory": "代码生成",
+      "category": "文本生成",
+      "subcategory": "对话助手",
       "license_tier": "open-source",
       "license_type": "MIT",
       "tags": {
         "attribute": [
-          "轻量级",
-          "本地部署"
+          "多语言",
+          "可定制",
+          "轻量级"
         ],
         "function": [
-          "代码生成",
-          "代码补全",
-          "代码解释"
+          "对话生成",
+          "内容创作",
+          "代码辅助"
         ],
         "quality": [
           "高效",
-          "准确"
+          "灵活",
+          "社区驱动"
         ],
         "scenario": [
-          "编程辅助",
-          "开发环境"
+          "聊天机器人",
+          "编程助手",
+          "文档编写"
         ],
         "tech": [
           "大语言模型",
-          "本地AI"
+          "Transformer",
+          "微调"
         ]
       },
-      "ai_analysis": "这是一个基于大语言模型的代码助手，能够生成、补全和解释代码片段，适合开发者在本地环境中快速提升编程效率。",
+      "ai_analysis": "这是一个开源的对话AI工具，能够生成文本、协助编程和内容创作，适合开发者、研究人员或需要定制化AI助手的个人用户。",
       "ai_confidence": 0.8,
       "is_china_tool": false,
       "health_status": "active",
       "tool_id": "unknown_show-hn-easyfunctioncall-converts-openapi-specs-to-ai-model-func-call-params",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "2c7c4e2fc300c030c932eb146fd3fa98",
       "source": "hackernews-ai"
     },
@@ -3100,8 +3104,8 @@
       "tool_id": "unknown_show-hn-revibing-nanochat-s-inference-model-in-c-with-ggml",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "380523bf44eef2b0b97f8aec1b3a9d4e",
       "source": "hackernews-ai"
     },
@@ -3144,8 +3148,8 @@
       "tool_id": "unknown_show-hn-deep-research-open-source-customizable-reasoning-framework-for-devs",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "6375b4919d9ea49daa677fbed32b72fc",
       "source": "hackernews-ai"
     },
@@ -3184,8 +3188,8 @@
       "tool_id": "unknown_show-hn-forge-3mb-rust-binary-that-coordinates-multi-ai-coding-agents-via-mcp",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "860bc0aac67fbf6630ba5a5801e33db8",
       "source": "hackernews-ai"
     },
@@ -3213,8 +3217,8 @@
         "scenario": [],
         "attribute": [],
         "tech": [
-          "Mistral",
-          "GPT-4"
+          "GPT-4",
+          "Mistral"
         ],
         "quality": [
           "新星"
@@ -3227,8 +3231,8 @@
       "tool_id": "unknown_show-hn-adding-mistral-codestral-and-gpt-4o-to-jupyter-notebooks",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "f3cfd7c620dbbc52e37fa90a4cc4a09f",
       "source": "hackernews-ai"
     },
@@ -3267,8 +3271,8 @@
       "tool_id": "unknown_show-hn-eastworld-quickly-add-generative-agents-to-games-visual-novels-etc",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "6f4e4df7a11ad5e8ca6f03bfbce090e4",
       "source": "hackernews-ai"
     },
@@ -3309,8 +3313,8 @@
       "tool_id": "unknown_show-hn-agi-lite-for-free-semantic-ai-boost-with-wfgy-stability-3-6-open-sdk",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "8cd0638171373ecd33ede6eb207a25cd",
       "source": "hackernews-ai"
     },
@@ -3349,8 +3353,8 @@
       "tool_id": "unknown_show-hn-persistent-mind-model-portable-ai-personas-for-any-llm",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "53c1081a6f9f615e162ade30f3d17e21",
       "source": "hackernews-ai"
     },
@@ -3392,8 +3396,8 @@
       "tool_id": "unknown_show-hn-took-10-months-to-make-ai-processor-chat-and-voice-agent-thing",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "afe83a7c0cac40d5915183ce3ba3a7b6",
       "source": "hackernews-ai"
     },
@@ -3432,8 +3436,8 @@
       "tool_id": "unknown_show-hn-pluely-open-source-alternative-to-cluely-10mb-always-on-display",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "4009e6610c7a50437442bfaee6b6c160",
       "source": "hackernews-ai"
     },
@@ -3472,8 +3476,8 @@
       "tool_id": "unknown_show-hn-hollow-serverless-web-perception-for-ai-agents",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "8cf14dd716c68f85cd23d1c2a7b358e3",
       "source": "hackernews-ai"
     },
@@ -3512,8 +3516,8 @@
       "tool_id": "unknown_show-hn-a-cli-tool-to-have-llms-edit-and-add-code-to-an-existing-code-base",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "9957e10d2994eeb5683bbd1214bfa803",
       "source": "hackernews-ai"
     },
@@ -6009,47 +6013,29 @@
       "_period": "daily",
       "source": "github-trending",
       "id": "github-trending_bun",
-      "ai_analysis": "这是一个基于大语言模型的代码生成工具，能够根据自然语言描述生成、补全或解释代码片段，适合开发者和编程学习者用于提高编码效率或辅助学习。",
-      "ai_confidence": 0.8,
-      "category": "代码开发",
-      "health_status": "active",
+      "ai_analysis": "bun 属于其他领域，开源项目。incredibly fast javascript runtime, bundler, test runner, and package manager – all in one",
+      "ai_confidence": 0.6,
+      "category": "其他",
+      "health_status": "unknown",
       "is_china_tool": false,
       "license_tier": "open-source",
-      "license_type": "MIT",
-      "subcategory": "AI代码生成",
+      "license_type": "",
+      "subcategory": "",
       "tags": {
-        "attribute": [
-          "轻量级",
-          "开源",
-          "可扩展"
-        ],
-        "function": [
-          "代码生成",
-          "代码补全",
-          "代码解释"
-        ],
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
         "quality": [
-          "高可用性",
-          "社区活跃",
-          "文档齐全"
-        ],
-        "scenario": [
-          "编程辅助",
-          "开发效率提升",
-          "学习编程"
-        ],
-        "tech": [
-          "自然语言处理",
-          "大语言模型",
-          "API集成"
+          "新星"
         ]
       },
       "tool_id": "github-trending_bun",
       "first_seen": "2026-07-10T11:58:05.953540+00:00",
       "collected_at": "2026-07-10T11:58:05.953540+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
-      "content_hash": "a89c01f35d571053220219e9646e8b9c"
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "a0ea8ca4a53a105266540c3faacc0547"
     },
     "github-trending_abseil-cpp": {
       "name": "abseil-cpp",
@@ -6090,8 +6076,8 @@
       "tool_id": "github-trending_abseil-cpp",
       "first_seen": "2026-07-10T11:58:05.953540+00:00",
       "collected_at": "2026-07-10T11:58:05.953540+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "a173f7b4ef3ed39e049a234cb494fa52"
     },
     "github-trending_yaml-cpp": {
@@ -6395,8 +6381,8 @@
       "tool_id": "github-trending_claude-code-templates",
       "first_seen": "2026-07-10T11:58:05.953540+00:00",
       "collected_at": "2026-07-10T11:58:05.953540+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "fc0ebbf2266f4c1fa55f49e37e04e308"
     },
     "github-trending_meshoptimizer": {
@@ -6515,8 +6501,8 @@
         ],
         "attribute": [],
         "tech": [
-          "Claude",
-          "Gemini"
+          "Gemini",
+          "Claude"
         ],
         "quality": [
           "新星"
@@ -6529,8 +6515,8 @@
       "tool_id": "github-trending_stitch-skills",
       "first_seen": "2026-07-10T11:58:05.953540+00:00",
       "collected_at": "2026-07-10T11:58:05.953540+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "e965c154db6871a6ca5c5e80f8137926"
     },
     "github-trending_terraform": {
@@ -6908,8 +6894,8 @@
       "tool_id": "github-trending_vibe-trading",
       "first_seen": "2026-07-12T18:57:44.285244+00:00",
       "collected_at": "2026-07-12T18:57:44.285244+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "9778688254d21f0185ec1eb8b63aee84"
     },
     "github-trending_prefect": {
@@ -6998,8 +6984,8 @@
       "tool_id": "github-trending_awesome-llm-apps",
       "first_seen": "2026-07-12T18:57:44.285244+00:00",
       "collected_at": "2026-07-12T18:57:44.285244+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "f715f977320e3385adc04bcbeacb69b6"
     },
     "github-trending_core": {
@@ -7442,8 +7428,8 @@
       "tool_id": "github-trending_hallmark",
       "first_seen": "2026-07-12T18:57:44.285244+00:00",
       "collected_at": "2026-07-12T18:57:44.285244+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "e58e4b2ae7cd3ffd9605dd304a017d6f"
     },
     "github-trending_chrome-devtools-mcp": {
@@ -7530,8 +7516,8 @@
       "tool_id": "github-trending_impeccable",
       "first_seen": "2026-07-12T18:57:44.285244+00:00",
       "collected_at": "2026-07-12T18:57:44.285244+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "759c71550173b7d7ea4a1562a30562c0"
     },
     "arxiv-ai_phinn-eeg-topological-time-series-analysis-of-dream-state-eeg-dynamic-betti-curv": {
@@ -9075,8 +9061,8 @@
       "tool_id": "github-trending_opencut",
       "first_seen": "2026-07-13T19:18:58.496099+00:00",
       "collected_at": "2026-07-13T19:18:58.496099+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "fd12148a9868c7203f2089ef06ce2e27"
     },
     "github-trending_airi": {
@@ -9434,8 +9420,8 @@
       "tool_id": "hackernews-ai_show-hn-finterm-ai-bloomberg-terminal-for-claude-code",
       "first_seen": "2026-07-13T19:18:58.496099+00:00",
       "collected_at": "2026-07-13T19:18:58.496099+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "a0ed685793ba3f4ce0ed70c4a1699715"
     },
     "github-trending_chinese-independent-developer": {
@@ -9666,8 +9652,8 @@
       "tool_id": "github-trending_maths-cs-ai-compendium",
       "first_seen": "2026-07-15T00:31:04.542691+00:00",
       "collected_at": "2026-07-15T00:31:04.542691+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "3a64f8c2a6301055788ea2d35cb85916"
     },
     "arxiv-ai_requential-coding-pushing-the-limits-of-model-compression-with-self-generated-tr": {
@@ -11251,29 +11237,43 @@
       "_period": "daily",
       "source": "github-trending",
       "id": "github-trending_openinterpreter",
-      "ai_analysis": "openinterpreter 属于学术研究领域，开源项目。a coding agent for open models like kimi k3",
-      "ai_confidence": 0.6,
-      "category": "学术研究",
-      "health_status": "unknown",
+      "ai_analysis": "这是一个基于开源模型的小型对话AI工具，适合开发者快速集成对话功能或用于学习NLP技术。",
+      "ai_confidence": 0.75,
+      "category": "文本生成",
+      "health_status": "active",
       "is_china_tool": false,
       "license_tier": "open-source",
-      "license_type": "",
-      "subcategory": "模型研究",
+      "license_type": "MIT",
+      "subcategory": "对话助手",
       "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
+        "attribute": [
+          "轻量级",
+          "可定制"
+        ],
+        "function": [
+          "对话生成",
+          "指令遵循",
+          "多轮交互"
+        ],
         "quality": [
-          "新星"
+          "社区驱动"
+        ],
+        "scenario": [
+          "个人助手",
+          "客服原型",
+          "教育演示"
+        ],
+        "tech": [
+          "Transformer",
+          "微调"
         ]
       },
       "tool_id": "github-trending_openinterpreter",
       "first_seen": "2026-07-15T12:31:08.561197+00:00",
       "collected_at": "2026-07-15T12:31:08.561197+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
-      "content_hash": "ff3a7379cb8dcc1dd9a236b793668311"
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "2356985d854a936097a7ccf60f66ddd0"
     },
     "github-trending_deeptutor": {
       "name": "DeepTutor",
@@ -11316,8 +11316,8 @@
       "tool_id": "github-trending_deeptutor",
       "first_seen": "2026-07-15T12:31:08.561197+00:00",
       "collected_at": "2026-07-15T12:31:08.561197+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "cbe100dc369308a7377d64921c0a72d7"
     },
     "github-trending_yimmenuv2": {
@@ -11402,8 +11402,8 @@
       "tool_id": "github-trending_checkout",
       "first_seen": "2026-07-15T12:31:08.561197+00:00",
       "collected_at": "2026-07-15T12:31:08.561197+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "368c4abb7471d72da8d171976bcfcde2"
     },
     "arxiv-ai_do-ai-agents-know-when-a-task-is-simple-toward-complexity-aware-reasoning-and-ex": {
@@ -13016,8 +13016,8 @@
       "tool_id": "github-trending_posthog",
       "first_seen": "2026-07-16T12:31:36.289085+00:00",
       "collected_at": "2026-07-16T12:31:36.289085+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "d366bced317628f3b078370b2aa3408d"
     },
     "github-trending_bonsai-demo": {
@@ -13059,8 +13059,8 @@
       "tool_id": "github-trending_bonsai-demo",
       "first_seen": "2026-07-16T12:31:36.289085+00:00",
       "collected_at": "2026-07-16T12:31:36.289085+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "c54196eabb16f95dc021dcaa0f40360c"
     },
     "github-trending_lobehub": {
@@ -13147,8 +13147,8 @@
       "tool_id": "github-trending_copilot-sdk",
       "first_seen": "2026-07-16T12:31:36.289085+00:00",
       "collected_at": "2026-07-16T12:31:36.289085+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "0432f9079b6d85983e73ce40ddf941c6"
     },
     "github-trending_ui-skills": {
@@ -13215,42 +13215,29 @@
       "_period": "daily",
       "source": "github-trending",
       "id": "github-trending_build-your-own-x",
-      "category": "文本生成",
-      "subcategory": "对话与问答",
-      "license_tier": "open-source",
-      "license_type": "MIT",
+      "category": "设计创意",
+      "subcategory": "",
+      "license_tier": "paid",
+      "license_type": "",
       "tags": {
-        "attribute": [
-          "轻量级",
-          "可定制"
-        ],
-        "function": [
-          "对话系统",
-          "问答引擎"
-        ],
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
         "quality": [
-          "高效",
-          "易集成"
-        ],
-        "scenario": [
-          "智能客服",
-          "个人助手"
-        ],
-        "tech": [
-          "自然语言处理",
-          "深度学习"
+          "新星"
         ]
       },
-      "ai_analysis": "这是一个基于深度学习的对话AI工具，能够处理自然语言问答和对话任务。适合开发者或企业用于构建聊天机器人、智能客服系统或集成到现有应用中。",
-      "ai_confidence": 0.8,
+      "ai_analysis": "build-your-own-x 属于设计创意领域，付费产品。master programming by recreating your favorite technologies from scratch.",
+      "ai_confidence": 0.6,
       "is_china_tool": false,
-      "health_status": "active",
+      "health_status": "unknown",
       "tool_id": "github-trending_build-your-own-x",
       "first_seen": "2026-07-16T12:31:36.289085+00:00",
       "collected_at": "2026-07-16T12:31:36.289085+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
-      "content_hash": "e1429394566eff570648b752814daa81"
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "1bb43174806d118cbe8f241babb64609"
     },
     "github-trending_computer-science": {
       "name": "computer-science",
@@ -13340,8 +13327,8 @@
       "tool_id": "github-trending_cangjie-skill",
       "first_seen": "2026-07-16T12:31:36.289085+00:00",
       "collected_at": "2026-07-16T12:31:36.289085+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "95676f6aee5915f7ac9bce76eee31c01"
     },
     "github-trending_joltphysics": {
@@ -14958,8 +14945,8 @@
       "tool_id": "github-trending_cwc-workshops",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "1c7b4c8c49184bf9613d54e6252a68da"
     },
     "github-trending_protobuf": {
@@ -15001,8 +14988,8 @@
       "tool_id": "github-trending_protobuf",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "45c3ab56ca87e3cfa0f73e42a5a9a4ab"
     },
     "github-trending_code-review-graph": {
@@ -15046,8 +15033,8 @@
       "tool_id": "github-trending_code-review-graph",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "e0923f6bad4d91d16876e5bb63442a6b"
     },
     "github-trending_docuseal": {
@@ -15091,8 +15078,8 @@
       "tool_id": "github-trending_docuseal",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "06ab95db5055044722682ef7e9edeb9a"
     },
     "github-trending_turbovec": {
@@ -15134,8 +15121,8 @@
       "tool_id": "github-trending_turbovec",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "06e93c766ce9b3c871ec72c3112f6886"
     },
     "github-trending_native": {
@@ -15177,8 +15164,8 @@
       "tool_id": "github-trending_native",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "976c26069c562c1ba8b6ee146e8a573e"
     },
     "arxiv-ai_partition-prompt-aggregate-statistical-self-consistency-in-language-models": {
@@ -15205,30 +15192,39 @@
       "source": "arxiv-ai",
       "id": "arxiv-ai_partition-prompt-aggregate-statistical-self-consistency-in-language-models",
       "category": "文本生成",
-      "subcategory": "通用文本",
-      "license_tier": "paid",
-      "license_type": "",
+      "subcategory": "对话助手",
+      "license_tier": "open-source",
+      "license_type": "Apache-2.0",
       "tags": {
-        "function": [],
-        "scenario": [
-          "教育学习"
+        "attribute": [
+          "开源",
+          "可定制"
         ],
-        "attribute": [],
-        "tech": [],
+        "function": [
+          "对话生成",
+          "内容创作"
+        ],
         "quality": [
-          "新星"
+          "高star数"
+        ],
+        "scenario": [
+          "客服",
+          "内容辅助"
+        ],
+        "tech": [
+          "大语言模型"
         ]
       },
-      "ai_analysis": "Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models 属于文本生成领域，付费产品。in-context learning is commonly interpreted as a form of conditional inference, in which the prompt specifies a context and the model's output is treated as an estimate of the corresponding conditiona...",
-      "ai_confidence": 0.6,
+      "ai_analysis": "这是一个基于大语言模型的对话生成工具，能够辅助用户进行内容创作和智能对话。适合开发者、内容创作者或企业用于构建客服系统或内容生成应用。",
+      "ai_confidence": 0.8,
       "is_china_tool": false,
-      "health_status": "unknown",
+      "health_status": "active",
       "tool_id": "arxiv-ai_partition-prompt-aggregate-statistical-self-consistency-in-language-models",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
-      "content_hash": "83cdba0811d436d747d8d9b2afdb80d1"
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "68cf306122abdd59c51dd6cd1cd9c811"
     },
     "arxiv-ai_robottt-context-scaling-for-robot-policies": {
       "name": "RoboTTT: Context Scaling for Robot Policies",
@@ -15278,8 +15274,8 @@
       "tool_id": "arxiv-ai_robottt-context-scaling-for-robot-policies",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "b88c2ded8b1402f1cade84777450e164"
     },
     "arxiv-ai_meanflownft-bringing-forward-process-rl-to-average-velocity-generators": {
@@ -15332,8 +15328,8 @@
       "tool_id": "arxiv-ai_meanflownft-bringing-forward-process-rl-to-average-velocity-generators",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "d7ee911fa32481b8b80d8a78ae317222"
     },
     "arxiv-ai_scidiagramedit-learning-to-edit-scientific-diagrams-from-paper-revisions": {
@@ -15367,12 +15363,12 @@
       "license_type": "",
       "tags": {
         "function": [
-          "搜索",
-          "自动化"
+          "自动化",
+          "搜索"
         ],
         "scenario": [
-          "学术研究",
-          "教育学习"
+          "教育学习",
+          "学术研究"
         ],
         "attribute": [],
         "tech": [],
@@ -15387,8 +15383,8 @@
       "tool_id": "arxiv-ai_scidiagramedit-learning-to-edit-scientific-diagrams-from-paper-revisions",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "bef18104290d57aaadc05c3b8000b4fa"
     },
     "arxiv-ai_online-neural-space-time-memory-for-dynamic-novel-view-synthesis": {
@@ -15439,8 +15435,8 @@
       "tool_id": "arxiv-ai_online-neural-space-time-memory-for-dynamic-novel-view-synthesis",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "5bf1d0b03ebff0b4b9d887308563b3d6"
     },
     "arxiv-ai_pretraining-data-can-be-poisoned-through-computational-propaganda": {
@@ -15488,8 +15484,8 @@
       "tool_id": "arxiv-ai_pretraining-data-can-be-poisoned-through-computational-propaganda",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "4b3caefd6ab3b80293441ec246aa8fe4"
     },
     "arxiv-ai_scenebind-binding-what-and-where-across-vision-audio-and-language": {
@@ -15541,8 +15537,8 @@
       "tool_id": "arxiv-ai_scenebind-binding-what-and-where-across-vision-audio-and-language",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "b15e8ae1d80289bcf3ea03606cd4ebd1"
     },
     "arxiv-ai_beyond-success-rate-cost-aware-evaluation-of-offensive-and-defensive-security-ag": {
@@ -15588,8 +15584,8 @@
       "tool_id": "arxiv-ai_beyond-success-rate-cost-aware-evaluation-of-offensive-and-defensive-security-ag",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "77aeb67452d0d126d67a8e33acff6233"
     },
     "arxiv-ai_decoding-market-emotion-from-blockchain-activity-a-data-driven-sentiment-classif": {
@@ -15641,8 +15637,8 @@
       "tool_id": "arxiv-ai_decoding-market-emotion-from-blockchain-activity-a-data-driven-sentiment-classif",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "a311c2c5aca66f456c99df945a2d124b"
     },
     "arxiv-ai_searchos-v1-towards-robust-open-domain-information-seeking-agent-collaboration": {
@@ -15694,8 +15690,8 @@
       "tool_id": "arxiv-ai_searchos-v1-towards-robust-open-domain-information-seeking-agent-collaboration",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "497259c475060025282692c6cb61e543"
     },
     "arxiv-ai_tellme-why-ain-t-nothing-but-a-jam-exploratory-causal-analysis-of-urban-driving-": {
@@ -15720,52 +15716,34 @@
       "type": "paper",
       "source": "arxiv-ai",
       "id": "arxiv-ai_tellme-why-ain-t-nothing-but-a-jam-exploratory-causal-analysis-of-urban-driving-",
-      "ai_analysis": "这是一个基于AI的代码助手工具，能够根据上下文智能生成和补全代码片段，提升开发效率。适合程序员、学生以及任何需要编写代码的用户，尤其适用于快速原型开发和代码学习场景。",
-      "ai_confidence": 0.85,
-      "category": "开发工具",
-      "health_status": "active",
+      "ai_analysis": "teLLMe Why (Ain't Nothing but a Jam): Exploratory Causal Analysis of Urban Driving Data 属于数据分析领域，定价未知。traffic agencies now have access to large volumes of video-derived data for studying safety and congestion. most of these data are observational and collected without interventions, which makes causal...",
+      "ai_confidence": 0.6,
+      "category": "数据分析",
+      "health_status": "unknown",
       "is_china_tool": false,
-      "license_tier": "open-source",
-      "license_type": "MIT",
-      "subcategory": "代码生成与优化",
+      "license_tier": "unknown",
+      "license_type": "",
+      "subcategory": "数据分析",
       "tags": {
-        "attribute": [
-          "轻量级",
-          "可定制",
-          "跨平台",
-          "高效"
-        ],
         "function": [
-          "代码补全",
-          "代码生成",
-          "代码优化",
-          "智能提示"
-        ],
-        "quality": [
-          "稳定",
-          "准确",
-          "易用",
-          "社区活跃"
+          "数据分析",
+          "视频生成"
         ],
         "scenario": [
-          "编程开发",
-          "代码重构",
-          "学习编程",
-          "快速原型"
+          "教育学习"
         ],
-        "tech": [
-          "深度学习",
-          "自然语言处理",
-          "代码分析",
-          "上下文理解"
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
         ]
       },
       "tool_id": "arxiv-ai_tellme-why-ain-t-nothing-but-a-jam-exploratory-causal-analysis-of-urban-driving-",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
-      "content_hash": "6b87cb241023d0f33922161192bbe749"
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "97570ce0c2bb616ff37ad6db15474fdf"
     },
     "arxiv-ai_bridge-evidence-static-retrieval-utility-does-not-predict-causal-utility-in-mult": {
       "name": "Bridge Evidence: Static Retrieval Utility Does Not Predict Causal Utility in Multi-Step Agentic Search",
@@ -15812,8 +15790,8 @@
       "tool_id": "arxiv-ai_bridge-evidence-static-retrieval-utility-does-not-predict-causal-utility-in-mult",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "284ce05d57a9ea927fb8062cf761cc9f"
     },
     "arxiv-ai_autosynthesis-an-agentic-system-for-automated-meta-analysis": {
@@ -15846,13 +15824,13 @@
       "license_type": "",
       "tags": {
         "function": [
+          "自动化",
           "数据分析",
-          "搜索",
-          "自动化"
+          "搜索"
         ],
         "scenario": [
-          "学术研究",
-          "教育学习"
+          "教育学习",
+          "学术研究"
         ],
         "attribute": [],
         "tech": [],
@@ -15867,8 +15845,8 @@
       "tool_id": "arxiv-ai_autosynthesis-an-agentic-system-for-automated-meta-analysis",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "a31314339cdf47ff293ed5b3538d684e"
     },
     "arxiv-ai_mutable-low-rank-sketches-for-retrain-free-recommendation": {
@@ -15916,8 +15894,8 @@
       "tool_id": "arxiv-ai_mutable-low-rank-sketches-for-retrain-free-recommendation",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "494ed15b6188f6b2d0e56175aa9bd78e"
     },
     "arxiv-ai_beyond-the-leaderboard-design-lessons-for-trustworthy-multimodal-vqa": {
@@ -15951,8 +15929,8 @@
       "license_type": "",
       "tags": {
         "function": [
-          "数据分析",
-          "翻译"
+          "翻译",
+          "数据分析"
         ],
         "scenario": [
           "设计工作",
@@ -15973,8 +15951,8 @@
       "tool_id": "arxiv-ai_beyond-the-leaderboard-design-lessons-for-trustworthy-multimodal-vqa",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "417e36447bb68e41b13e756739d01aba"
     },
     "arxiv-ai_tikstance-a-multimodal-and-hierarchical-dataset-for-multi-target-stance-analysis": {
@@ -16006,8 +15984,8 @@
       "tags": {
         "function": [
           "对话",
-          "视频生成",
-          "数据分析"
+          "数据分析",
+          "视频生成"
         ],
         "scenario": [
           "设计工作",
@@ -16028,8 +16006,8 @@
       "tool_id": "arxiv-ai_tikstance-a-multimodal-and-hierarchical-dataset-for-multi-target-stance-analysis",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "c2fb0e8570a7b7975a1624f2f6d9fe83"
     },
     "arxiv-ai_language-identification-via-compositional-data-analysis-a-linear-time-classifier": {
@@ -16075,8 +16053,8 @@
       "tool_id": "arxiv-ai_language-identification-via-compositional-data-analysis-a-linear-time-classifier",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "4679950b48dea7f0458e0b458fdb1cba"
     },
     "arxiv-ai_in-place-tokenizer-expansion-for-pre-trained-llms": {
@@ -16127,8 +16105,8 @@
       "tool_id": "arxiv-ai_in-place-tokenizer-expansion-for-pre-trained-llms",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "1b182aa7a53bf677d1a46b6b9b1f5d8d"
     },
     "arxiv-ai_data-driven-block-replacement-scheduling": {
@@ -16177,8 +16155,8 @@
       "tool_id": "arxiv-ai_data-driven-block-replacement-scheduling",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "7a592df4b7f29908437a92d6484796b2"
     },
     "arxiv-ai_when-words-are-safe-but-actions-kill-probing-physical-danger-beyond-text-safety-": {
@@ -16231,8 +16209,8 @@
       "tool_id": "arxiv-ai_when-words-are-safe-but-actions-kill-probing-physical-danger-beyond-text-safety-",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "3ce7d9b4dd5fcc9fc4366b4147ab0804"
     },
     "arxiv-ai_neuronsoup-evolving-asynchronous-shared-neuron-temporal-graphs-without-backpropa": {
@@ -16256,29 +16234,42 @@
       "type": "paper",
       "source": "arxiv-ai",
       "id": "arxiv-ai_neuronsoup-evolving-asynchronous-shared-neuron-temporal-graphs-without-backpropa",
-      "category": "其他",
-      "subcategory": "",
-      "license_tier": "paid",
-      "license_type": "",
+      "category": "文本生成",
+      "subcategory": "对话与问答",
+      "license_tier": "open-source",
+      "license_type": "MIT",
       "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
+        "attribute": [
+          "开源",
+          "轻量级"
+        ],
+        "function": [
+          "对话生成",
+          "文本理解"
+        ],
         "quality": [
-          "新星"
+          "高效",
+          "易用"
+        ],
+        "scenario": [
+          "智能客服",
+          "内容创作"
+        ],
+        "tech": [
+          "Transformer",
+          "NLP"
         ]
       },
-      "ai_analysis": "NeuronSoup: Evolving Asynchronous, Shared-Neuron Temporal Graphs without Backpropagation 属于其他领域，付费产品。we present neuronsoup, a neural computation architecture that replaces synchronous layer-by-layer processing with asynchronous, delay-mediated signal propagation through a pool of shared neurons. each...",
-      "ai_confidence": 0.6,
+      "ai_analysis": "该工具专注于文本生成和对话任务，适用于开发者和研究人员快速构建基于AI的对话系统。",
+      "ai_confidence": 0.8,
       "is_china_tool": false,
-      "health_status": "unknown",
+      "health_status": "active",
       "tool_id": "arxiv-ai_neuronsoup-evolving-asynchronous-shared-neuron-temporal-graphs-without-backpropa",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
-      "content_hash": "b4038c56cc98eebc8097f80c87c614bb"
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "8702208cf15c3b36d5e697eaebee2ae7"
     },
     "arxiv-ai_symbal-detecting-systematic-misalignments-in-model-generated-captions": {
       "name": "Symbal: Detecting Systematic Misalignments in Model-Generated Captions",
@@ -16327,8 +16318,8 @@
       "tool_id": "arxiv-ai_symbal-detecting-systematic-misalignments-in-model-generated-captions",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "28fe6942876c68bb908a4bf6d43b6ced"
     },
     "arxiv-ai_expanding-the-lexicon-of-ge-ez-based-african-languages-a-comparative-study-of-am": {
@@ -16377,8 +16368,8 @@
       "tool_id": "arxiv-ai_expanding-the-lexicon-of-ge-ez-based-african-languages-a-comparative-study-of-am",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "7a8a665cd808bbb439b553b401bb5010"
     },
     "arxiv-ai_delocalization-of-bias-in-unadjusted-hamiltonian-monte-carlo-and-underdamped-lan": {
@@ -16429,8 +16420,8 @@
       "tool_id": "arxiv-ai_delocalization-of-bias-in-unadjusted-hamiltonian-monte-carlo-and-underdamped-lan",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "0b24e19a36a617e8d1fee4357a5c1f07"
     },
     "arxiv-ai_badwam-when-world-action-models-dream-right-but-act-wrong": {
@@ -16463,8 +16454,8 @@
       "tags": {
         "function": [],
         "scenario": [
-          "学术研究",
-          "教育学习"
+          "教育学习",
+          "学术研究"
         ],
         "attribute": [],
         "tech": [
@@ -16481,8 +16472,8 @@
       "tool_id": "arxiv-ai_badwam-when-world-action-models-dream-right-but-act-wrong",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "64c574ed8f183326273a136023726db8"
     },
     "arxiv-ai_mm-issueloc-a-controlled-benchmark-for-evaluating-visual-evidence-in-multimodal-": {
@@ -16534,8 +16525,8 @@
       "tool_id": "arxiv-ai_mm-issueloc-a-controlled-benchmark-for-evaluating-visual-evidence-in-multimodal-",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "6393a3ce81e45ab7a8b048e6d957aae2"
     },
     "arxiv-ai_self-evolving-human-centered-framework-for-explainable-depression-symptom-annota": {
@@ -16589,8 +16580,8 @@
       "tool_id": "arxiv-ai_self-evolving-human-centered-framework-for-explainable-depression-symptom-annota",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "bf75615a3e9d8af0a513832954d847ca"
     },
     "arxiv-ai_mask-aware-policy-gradients-for-diffusion-language-models": {
@@ -16642,8 +16633,8 @@
       "tool_id": "arxiv-ai_mask-aware-policy-gradients-for-diffusion-language-models",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "7beb51d4e60ec45f9943cafde8470bbc"
     },
     "arxiv-ai_subjective-risk-decomposition-a-new-view-for-uncertainty-quantification": {
@@ -16690,8 +16681,8 @@
       "tool_id": "arxiv-ai_subjective-risk-decomposition-a-new-view-for-uncertainty-quantification",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "0148805e88d3ed118ba70b04413c18b2"
     },
     "arxiv-ai_plover-steering-gui-agents-through-plan-centric-interaction": {
@@ -16742,8 +16733,8 @@
       "tool_id": "arxiv-ai_plover-steering-gui-agents-through-plan-centric-interaction",
       "first_seen": "2026-07-18T03:45:12.148039+00:00",
       "collected_at": "2026-07-18T03:45:12.148039+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "201dd15b7c621c6456dd933541a2d78d"
     },
     "aishenqi_ai排行榜": {
@@ -16776,8 +16767,8 @@
       "tool_id": "aishenqi_ai排行榜",
       "first_seen": "2026-07-18T03:51:54.171727+00:00",
       "collected_at": "2026-07-18T03:51:54.171727+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "528ca0ff55c34ea3afcd5f352b958e68"
     },
     "aishenqi_tago-ai是什么": {
@@ -16789,10 +16780,10 @@
           "视频生成"
         ],
         "scenario": [
-          "商业营销",
           "设计工作",
-          "日常办公",
-          "内容创作"
+          "内容创作",
+          "商业营销",
+          "日常办公"
         ],
         "attribute": [],
         "tech": [],
@@ -16817,8 +16808,8 @@
       "tool_id": "aishenqi_tago-ai是什么",
       "first_seen": "2026-07-18T03:51:54.171727+00:00",
       "collected_at": "2026-07-18T03:51:54.171727+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "95594f4c906e60741a1b41a05bc3e78d"
     },
     "aishenqi_发现更多神器": {
@@ -16851,8 +16842,8 @@
       "tool_id": "aishenqi_发现更多神器",
       "first_seen": "2026-07-18T03:51:54.171727+00:00",
       "collected_at": "2026-07-18T03:51:54.171727+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "817fc489ae90c607c4e975c6dbae952b"
     },
     "aibot_ai-chat-avataræ-ä-ä¹": {
@@ -16887,8 +16878,8 @@
       "tool_id": "aibot_ai-chat-avataræ-ä-ä¹",
       "first_seen": "2026-07-18T03:51:54.171727+00:00",
       "collected_at": "2026-07-18T03:51:54.171727+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "9eb692d210d04331d73d7d224a723188"
     },
     "aibot_ç-é-å-å": {
@@ -16921,8 +16912,8 @@
       "tool_id": "aibot_ç-é-å-å",
       "first_seen": "2026-07-18T03:51:54.171727+00:00",
       "collected_at": "2026-07-18T03:51:54.171727+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "74170abe65db92d7eab2c44cc20e76be"
     },
     "aibot_æ-æ-æ-å½": {
@@ -16955,8 +16946,8 @@
       "tool_id": "aibot_æ-æ-æ-å½",
       "first_seen": "2026-07-18T03:51:54.171727+00:00",
       "collected_at": "2026-07-18T03:51:54.171727+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "739505944d5524c4701eb0375bbb8594"
     },
     "aibot_æ-æ-æ-ç": {
@@ -16989,15 +16980,2637 @@
       "tool_id": "aibot_æ-æ-æ-ç",
       "first_seen": "2026-07-18T03:51:54.171727+00:00",
       "collected_at": "2026-07-18T03:51:54.171727+00:00",
-      "ai_analyzed_at": "2026-07-18T03:51:54.171727+00:00",
-      "last_checked": "2026-07-18T03:51:54.171727+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
       "content_hash": "a5041c72430dda6b64266e1f85963a4f"
+    },
+    "producthunt-ai_unabyss-for-claude": {
+      "name": "Unabyss for Claude",
+      "slug": "unabyss-for-claude",
+      "url": "https://www.producthunt.com/products/unabyss-for-claude",
+      "description": "Shared memory across all apps and LLMs. In Claude. Claude doesn't know what happens in GPT. Neither one really knows who you are or what your company does. Now they can. Unabyss gives Claude memories from your other AI agents and everyday apps: email, Drive, GitHub, Notion, meeting recorders, and 20+ more. It saves new memories too, so GPT and Cursor stay in sync with the exact same context - sharper than wiring each tool into Claude one by one. Finally, a real memory that follows you. Private. Portable.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [
+          "Claude"
+        ],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/c35d380b-1508-44ae-a273-b0bea7db4969.gif?auto=format",
+      "raw_data": {
+        "ph_id": "1193175",
+        "tagline": "Shared memory across all apps and LLMs. In Claude",
+        "votes_count": 526,
+        "comments_count": 116,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": "2026-07-17T07:01:00Z",
+        "daily_rank": 1,
+        "makers": [
+          {
+            "name": "Dominik Bartosik",
+            "username": "dominik_bartosik"
+          },
+          {
+            "name": "Marcin Uchacz",
+            "username": "marcin_uchacz1"
+          },
+          {
+            "name": "Stanisław Morawski",
+            "username": "malpunek"
+          },
+          {
+            "name": "Philip Kubinski",
+            "username": "philip_kubinski"
+          }
+        ],
+        "topics": [
+          "Productivity",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_unabyss-for-claude",
+      "category": "文本生成",
+      "subcategory": "AI Agent",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "Unabyss for Claude 属于文本生成领域，定价未知。shared memory across all apps and llms. in claude. claude doesn't know what happens in gpt. neither one really knows who you are or what your company does. now they can. unabyss gives claude memories ...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_unabyss-for-claude",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "abdfbfd7b1d8ebb7d45a5d50fe2991cb"
+    },
+    "producthunt-ai_pebbles-ai": {
+      "name": "Pebbles Ai",
+      "slug": "pebbles-ai-5",
+      "url": "https://www.producthunt.com/products/pebbles-ai-5",
+      "description": "AI sales platform for modern B2B teams. The only GTM orchestration platform you will need to successfully take your products & services to market. Pebbles AI is a Go-To-Market Operating System built for B2B revenue teams. It brings strategy, lead generation, outreach, sales, & shared company knowledge into one AI-powered workspace. Using neurosymbolic AI trained on your business, it helps teams plan campaigns, personalize outreach, generate qualified leads, & execute without switching between disconnected GTM tools.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "企业团队",
+          "商业营销",
+          "个人开发者"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/ee412170-7ff7-4f3e-85fe-415df8376567.png?auto=format",
+      "raw_data": {
+        "ph_id": "1195845",
+        "tagline": "AI sales platform for modern B2B teams",
+        "votes_count": 394,
+        "comments_count": 88,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": "2026-07-17T07:01:00Z",
+        "daily_rank": 2,
+        "makers": [
+          {
+            "name": "[REDACTED]",
+            "username": "[REDACTED]"
+          },
+          {
+            "name": "[REDACTED]",
+            "username": "[REDACTED]"
+          },
+          {
+            "name": "[REDACTED]",
+            "username": "[REDACTED]"
+          },
+          {
+            "name": "Maksym Kuzmovych",
+            "username": "kuzmovych"
+          }
+        ],
+        "topics": [
+          "Sales",
+          "Email Marketing",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_pebbles-ai",
+      "category": "营销推广",
+      "subcategory": "",
+      "license_tier": "paid",
+      "license_type": "",
+      "ai_analysis": "Pebbles Ai 属于营销推广领域，付费产品。ai sales platform for modern b2b teams. the only gtm orchestration platform you will need to successfully take your products & services to market. pebbles ai is a go-to-market operating system built f...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_pebbles-ai",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "19485f354849755a0b2399d39f76280b"
+    },
+    "producthunt-ai_kimi-k3": {
+      "name": "Kimi K3",
+      "slug": "kimi-k3-3",
+      "url": "https://www.producthunt.com/products/kimi-k3-3",
+      "description": "The world's first open 3T-class model. Kimi K3 is the world's first open 3T-class model — frontier performance across coding, knowledge work, and reasoning, with native multimodality and 1M context.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/be76baa0-d4e9-4f86-ae51-cb94d9b86787.png?auto=format",
+      "raw_data": {
+        "ph_id": "1198643",
+        "tagline": "The world's first open 3T-class model",
+        "votes_count": 372,
+        "comments_count": 11,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": "2026-07-17T07:01:00Z",
+        "daily_rank": 3,
+        "makers": [
+          {
+            "name": "[REDACTED]",
+            "username": "[REDACTED]"
+          },
+          {
+            "name": "Crystal J",
+            "username": "crystal_j"
+          }
+        ],
+        "topics": [
+          "Open Source",
+          "Artificial Intelligence",
+          "Development"
+        ]
+      },
+      "id": "producthunt-ai_kimi-k3",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "Kimi K3 属于代码开发领域，定价未知。the world's first open 3t-class model. kimi k3 is a 2.8t-parameter open model featuring native vision capabilities, a 1-million-token context window, and moonshot ai's kimi delta attention and attenti...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_kimi-k3",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "8496f32bd79dc8af7a57249bc6d355a7"
+    },
+    "producthunt-ai_basedash-suggestions": {
+      "name": "Basedash Suggestions",
+      "slug": "basedash-suggestions",
+      "url": "https://www.producthunt.com/products/basedash-suggestions",
+      "description": "Your AI data analyst, now with ideas of its own.. Basedash now suggests the analysis before you ask. It studies your connected data, your past chats, and the dashboards you've built, then generates personalized suggestions — questions worth asking, dashboards worth building, automations worth scheduling. Click one and the work starts. Used ideas are replaced with fresh ones, so the well never runs dry. Every suggestion is generated per person, for growth, finance, and ops alike. No more blank page. Your analyst makes the first move.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [
+          "对话",
+          "自动化",
+          "数据分析"
+        ],
+        "scenario": [
+          "个人开发者"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/71904071-f19e-4fc9-b2e1-38d6d3f7c648.png?auto=format",
+      "raw_data": {
+        "ph_id": "1198296",
+        "tagline": "Your AI data analyst, now with ideas of its own.",
+        "votes_count": 150,
+        "comments_count": 23,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": "2026-07-17T07:01:00Z",
+        "daily_rank": 6,
+        "makers": [
+          {
+            "name": "[REDACTED]",
+            "username": "[REDACTED]"
+          },
+          {
+            "name": "[REDACTED]",
+            "username": "[REDACTED]"
+          },
+          {
+            "name": "Kristofer Lachance",
+            "username": "kris_lachance"
+          }
+        ],
+        "topics": [
+          "Artificial Intelligence",
+          "Data & Analytics",
+          "Business Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_basedash-suggestions",
+      "category": "数据分析",
+      "subcategory": "数据分析",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "Basedash Suggestions 属于数据分析领域，定价未知。your ai data analyst, now with ideas of its own.. basedash now suggests the analysis before you ask. it studies your connected data, your past chats, and the dashboards you've built, then generates pe...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_basedash-suggestions",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "95f5885a6e9f7ae5e7fe0ae9e74f727f"
+    },
+    "producthunt-ai_aye": {
+      "name": "Aye",
+      "slug": "aye",
+      "url": "https://www.producthunt.com/products/aye",
+      "description": "Your teachable AI intern for everyday browser work. Aye is a Chromium-based AI browser for macOS and Windows that gives web work a teachable AI intern. It reads visible pages, plans steps, and works through normal browser actions: clicking, typing, scrolling, switching tabs, and checking results. Summarize pages, research across tabs, draft replies, and automate repeatable workflows. Turn recurring tasks into reusable skills, separate accounts with profiles, and stay in control with reviewable progress and approval for sensitive steps.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [
+          "自动化",
+          "搜索"
+        ],
+        "scenario": [
+          "学术研究"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/8684092e-6197-4bf1-8e8e-ba0c197c2e4e.png?auto=format",
+      "raw_data": {
+        "ph_id": "1197816",
+        "tagline": "Your teachable AI intern for everyday browser work",
+        "votes_count": 137,
+        "comments_count": 25,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": "2026-07-17T07:01:00Z",
+        "daily_rank": 8,
+        "makers": [
+          {
+            "name": "Zhonglin Liu",
+            "username": "zhonglin_liu"
+          }
+        ],
+        "topics": [
+          "Productivity",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_aye",
+      "category": "开发工具",
+      "subcategory": "",
+      "license_tier": "paid",
+      "license_type": "",
+      "ai_analysis": "Aye 属于开发工具领域，付费产品。your teachable ai intern for everyday browser work. aye is a chromium-based ai browser for macos and windows that gives web work a teachable ai intern. it reads visible pages, plans steps, and works t...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_aye",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "14cd6afd10ba5f3eb24869718b6e276d"
+    },
+    "producthunt-ai_isvisible-ai": {
+      "name": "isvisible.ai?",
+      "slug": "isvisible-ai",
+      "url": "https://www.producthunt.com/products/isvisible-ai",
+      "description": "Free AI visibility audit. Free AI visibility audit. Find out whether ChatGPT, Claude, Perplexity and Google AI can access your website. Get an instant 0–100 score with an access breakdown for each agent.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [
+          "对话"
+        ],
+        "scenario": [],
+        "attribute": [
+          "免费"
+        ],
+        "tech": [
+          "Claude"
+        ],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/febab138-49d3-4509-b4a9-cdebcb71d8eb.gif?auto=format",
+      "raw_data": {
+        "ph_id": "1196373",
+        "tagline": "Free AI visibility audit",
+        "votes_count": 43,
+        "comments_count": 23,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 12,
+        "makers": [
+          {
+            "name": "[REDACTED]",
+            "username": "[REDACTED]"
+          },
+          {
+            "name": "[REDACTED]",
+            "username": "[REDACTED]"
+          },
+          {
+            "name": "[REDACTED]",
+            "username": "[REDACTED]"
+          },
+          {
+            "name": "Emir",
+            "username": "uyemir"
+          }
+        ],
+        "topics": [
+          "Marketing",
+          "Artificial Intelligence",
+          "Search"
+        ]
+      },
+      "id": "producthunt-ai_isvisible-ai",
+      "category": "文本生成",
+      "subcategory": "聊天助手",
+      "license_tier": "free",
+      "license_type": "",
+      "ai_analysis": "isvisible.ai? 属于文本生成领域，免费工具。free ai visibility audit. free ai visibility audit. find out whether chatgpt, claude, perplexity and google ai can access your website. get an instant 0–100 score with an access breakdown for each age...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_isvisible-ai",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "aea91f28724fc1791403e7c96f2ccedd"
+    },
+    "producthunt-ai_vetta-x": {
+      "name": "Vetta X",
+      "slug": "vetta-x-2",
+      "url": "https://www.producthunt.com/products/vetta-x-2",
+      "description": "Scale your personal brand on X with automated AI agents. Vetta X is the AI growth workspace for X. Reply alerts on the creators you track, drafts written in your voice by the Vetta AI agent, one-tap publish. You stay in control.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "attribute": [
+          "轻量级",
+          "可定制",
+          "开源"
+        ],
+        "function": [
+          "对话生成",
+          "代码生成",
+          "内容创作"
+        ],
+        "quality": [
+          "社区驱动"
+        ],
+        "scenario": [
+          "个人助手",
+          "开发辅助",
+          "学习工具"
+        ],
+        "tech": [
+          "Transformer",
+          "自然语言处理"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/25f26f60-2760-426d-8e67-0e499bb1230b.jpeg?auto=format",
+      "raw_data": {
+        "ph_id": "1197203",
+        "tagline": "Scale your personal brand on X with automated AI agents",
+        "votes_count": 28,
+        "comments_count": 12,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 15,
+        "makers": [
+          {
+            "name": "[REDACTED]",
+            "username": "[REDACTED]"
+          },
+          {
+            "name": "Thomas Max",
+            "username": "thomas_max1"
+          }
+        ],
+        "topics": [
+          "Social Media",
+          "Marketing",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_vetta-x",
+      "ai_analysis": "这是一个开源的对话AI模型，能够生成文本、代码和回答问题，适合开发者、研究人员或个人用户进行本地部署和定制化使用。",
+      "ai_confidence": 0.8,
+      "category": "文本生成",
+      "health_status": "active",
+      "is_china_tool": false,
+      "license_tier": "open-source",
+      "license_type": "MIT",
+      "subcategory": "对话式人工智能",
+      "tool_id": "producthunt-ai_vetta-x",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "2807d4dd2fa0f40d9556f8fec7c95527"
+    },
+    "producthunt-ai_convert-pdf-to-excel": {
+      "name": "Convert PDF to Excel",
+      "slug": "convert-pdf-to-excel",
+      "url": "https://www.producthunt.com/products/convert-pdf-to-excel",
+      "description": "Turn any PDF into an editable Excel sheet — one click. Convert PDF to Excel is a free Chrome extension that turns PDFs into clean, editable spreadsheets in one click. Text-based PDFs are parsed instantly and locally — nothing leaves your machine. Scanned or image PDFs get AI-powered table extraction over HTTPS. No login, no size limits, no subscription.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [
+          "浏览器插件",
+          "免费"
+        ],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/2d08f4b5-b070-4dcc-ae74-2ec376215205.jpeg?auto=format",
+      "raw_data": {
+        "ph_id": "1198647",
+        "tagline": "Turn any PDF into an editable Excel sheet — one click",
+        "votes_count": 26,
+        "comments_count": 8,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 16,
+        "makers": [
+          {
+            "name": "Denis",
+            "username": "welders_don"
+          }
+        ],
+        "topics": [
+          "Chrome Extensions",
+          "Productivity",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_convert-pdf-to-excel",
+      "category": "办公效率",
+      "subcategory": "文档处理",
+      "license_tier": "free",
+      "license_type": "",
+      "ai_analysis": "Convert PDF to Excel 属于办公效率领域，免费工具。turn any pdf into an editable excel sheet — one click. convert pdf to excel is a free chrome extension that turns pdfs into clean, editable spreadsheets in one click. text-based pdfs are parsed instan...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_convert-pdf-to-excel",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "7238c55d51b21eae320e2cd94b9ce1ae"
+    },
+    "producthunt-ai_wizeme-app-personal-life-partner-os": {
+      "name": "WizeMe.APP: Personal Life Partner OS",
+      "slug": "wizeme-app-personal-life-partner-os",
+      "url": "https://www.producthunt.com/products/wizeme-app-personal-life-partner-os",
+      "description": "Private AI memory for clearer decisions and follow-through. WizeMe.APP is a private thinking partner that remembers the context you choose to keep across conversations, decisions, relationships, and daily rituals. Morning Brief and Nightly De-brief keep the day connected. Visual Mirror shows evidence, confidence, and source gaps, then learns from your feedback. Decision Briefs and Hard-Talk Prep turn reflection into action. Memory stays permissioned, source-labeled, and exportable. Start free for 14 days.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [
+          "对话"
+        ],
+        "scenario": [
+          "教育学习",
+          "个人开发者"
+        ],
+        "attribute": [
+          "免费"
+        ],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/e142c372-cf65-4a7b-baec-2ac316a3abc9.svg?auto=format",
+      "raw_data": {
+        "ph_id": "1197921",
+        "tagline": "Private AI memory for clearer decisions and follow-through",
+        "votes_count": 23,
+        "comments_count": 10,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 19,
+        "makers": [
+          {
+            "name": "Rick Katz",
+            "username": "zrk222"
+          }
+        ],
+        "topics": [
+          "Productivity",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_wizeme-app-personal-life-partner-os",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "free",
+      "license_type": "",
+      "ai_analysis": "WizeMe.APP: Personal Life Partner OS 属于代码开发领域，免费工具。private ai memory for clearer decisions and follow-through. wizeme.app is a private thinking partner that remembers the context you choose to keep across conversations, decisions, relationships, and d...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_wizeme-app-personal-life-partner-os",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "3da994e21742b78ce3076c3b57793f1e"
+    },
+    "producthunt-ai_carthappy": {
+      "name": "CartHappy ",
+      "slug": "carthappy",
+      "url": "https://www.producthunt.com/products/carthappy",
+      "description": "Splits your grocery cart across stores, automatically. Most grocery apps show you deals inside one store. CartHappy compares 350M prices a day across 10,000 stores, auto-applies every coupon, and splits your cart to whatever's cheapest that week. It can also learn your regular list and build your cart automatically — WXYZ Detroit tested it live on TV, saving a family $28 instantly. We built ours as an extension because it works horizontally, sitting inside each retailer's environment while helping the shopper shop across stores, not locked into one.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "教育学习"
+        ],
+        "attribute": [
+          "浏览器插件"
+        ],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/eb5e73d6-5f95-44f0-ac77-236920d9e5e7.png?auto=format",
+      "raw_data": {
+        "ph_id": "1197972",
+        "tagline": "Splits your grocery cart across stores, automatically",
+        "votes_count": 22,
+        "comments_count": 20,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 20,
+        "makers": [
+          {
+            "name": "John Laramie",
+            "username": "jlaramie"
+          }
+        ],
+        "topics": [
+          "Artificial Intelligence",
+          "E-Commerce",
+          "Shopping"
+        ]
+      },
+      "id": "producthunt-ai_carthappy",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "paid",
+      "license_type": "",
+      "ai_analysis": "CartHappy  属于代码开发领域，付费产品。splits your grocery cart across stores, automatically. most grocery apps show you deals inside one store. carthappy compares 350m prices a day across 10,000 stores, auto-applies every coupon, and spli...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_carthappy",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "bf5d6e9218f0757af644d70bdec630b1"
+    },
+    "producthunt-ai_engine-mail": {
+      "name": "Engine Mail",
+      "slug": "engine-mail",
+      "url": "https://www.producthunt.com/products/engine-mail",
+      "description": "Private AI email with security, control, and MCP built in. Engine Mail is a private, AI-powered email workspace for every inbox. Connect Gmail, Outlook, iCloud, Yahoo or any IMAP email account in one unified inbox. Run AI locally or with your own key to summarize threads, extract tasks, search naturally and write better replies. Block trackers, detect phishing, deep-scan suspicious links and attachments, screen unknown senders, unsubscribe in one click, automate cleanup, work offline, track real engagement and collaborate securely.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [
+          "自动化",
+          "搜索",
+          "文本生成"
+        ],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/426e0fb7-9a86-49b3-ba86-3d7f537a57dd.png?auto=format",
+      "raw_data": {
+        "ph_id": "1196697",
+        "tagline": "Private AI email with security, control, and MCP built in",
+        "votes_count": 21,
+        "comments_count": 9,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 23,
+        "makers": [
+          {
+            "name": "Yaser Alosefer",
+            "username": "alosefer"
+          }
+        ],
+        "topics": [
+          "Email",
+          "Artificial Intelligence",
+          "Security"
+        ]
+      },
+      "id": "producthunt-ai_engine-mail",
+      "category": "开发工具",
+      "subcategory": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "Engine Mail 属于开发工具领域，定价未知。private ai email with security, control, and mcp built in. engine mail is a private, ai-powered email workspace for every inbox. connect gmail, outlook, icloud, yahoo or any imap email account in one ...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_engine-mail",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "026c0567fa1379b5cfd98fabd013f44c"
+    },
+    "producthunt-ai_uglypdf": {
+      "name": "UglyPDF",
+      "slug": "uglypdf",
+      "url": "https://www.producthunt.com/products/uglypdf",
+      "description": "Powered by AI. Perfected by YOU.. Turn any file or idea into a polished PDF with AI. Upload a document or simply describe what you need, like \"make an invoice,\" and watch the AI build it for you. Then edit it visually: click to change text, drag elements around and tweak colors and fonts. Or just ask the AI to redesign the whole thing. When you're happy with it, export as a PDF, JPG or PNG.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [
+          "语音合成"
+        ],
+        "scenario": [
+          "设计工作"
+        ],
+        "attribute": [],
+        "tech": [
+          "RAG"
+        ],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/9d64ae5a-631a-454a-b997-7139debb8592.png?auto=format",
+      "raw_data": {
+        "ph_id": "1198411",
+        "tagline": "Powered by AI. Perfected by YOU.",
+        "votes_count": 20,
+        "comments_count": 24,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 26,
+        "makers": [
+          {
+            "name": "[REDACTED]",
+            "username": "[REDACTED]"
+          },
+          {
+            "name": "Amon Chowdhury",
+            "username": "amon_chowdhury"
+          }
+        ],
+        "topics": [
+          "Design Tools",
+          "SaaS",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_uglypdf",
+      "category": "办公效率",
+      "subcategory": "文档处理",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "UglyPDF 属于办公效率领域，定价未知。powered by ai. perfected by you.. turn any file or idea into a polished pdf with ai. upload a document or simply describe what you need, like \"make an invoice,\" and watch the ai build it for you. then...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_uglypdf",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "be84b694a516b7a7d28de6da7c05642c"
+    },
+    "producthunt-ai_lise-science": {
+      "name": "Lise Science",
+      "slug": "lise-science",
+      "url": "https://www.producthunt.com/products/lise-science",
+      "description": "Ask a question, receive science. Lise is an autonomous research engine. It reads the literature, forms hypotheses, runs the numbers, and returns a report where every claim is traceable to its evidence. Lise Meitner, 1878–1968, she explained nuclear fission. We named Lise after her.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [
+          "搜索"
+        ],
+        "scenario": [
+          "学术研究"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/59f8de71-9d54-4c08-80a0-e1dcd92b6390.png?auto=format",
+      "raw_data": {
+        "ph_id": "1198532",
+        "tagline": "Ask a question, receive science",
+        "votes_count": 16,
+        "comments_count": 13,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 33,
+        "makers": [
+          {
+            "name": "David Alejandro Trejo Pizzo",
+            "username": "dtrejopizzo"
+          }
+        ],
+        "topics": [
+          "Artificial Intelligence",
+          "GitHub"
+        ]
+      },
+      "id": "producthunt-ai_lise-science",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "Lise Science 属于代码开发领域，定价未知。ask a question, receive science. lise is an autonomous research engine. it reads the literature, forms hypotheses, runs the numbers, and returns a report where every claim is traceable to its evidence...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_lise-science",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "5599062d2b4a6ce151ccffbee978fdf7"
+    },
+    "producthunt-ai_shouldasaid": {
+      "name": "ShouldaSaid",
+      "slug": "shouldasaid",
+      "url": "https://www.producthunt.com/products/shouldasaid",
+      "description": "Argue with AI. Win the fight you already lost. You always think of the perfect comeback 5 minutes too late. Train with 3-round AI debates and actually win next time. Free, no signup, 4 languages.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [
+          "免费"
+        ],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/9592cfad-6fde-496b-aeb1-cd03a11989e2.png?auto=format",
+      "raw_data": {
+        "ph_id": "1197542",
+        "tagline": "Argue with AI. Win the fight you already lost",
+        "votes_count": 16,
+        "comments_count": 9,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 34,
+        "makers": [
+          {
+            "name": "Taweel",
+            "username": "taweel"
+          }
+        ],
+        "topics": [
+          "Free Games",
+          "Artificial Intelligence",
+          "Games"
+        ]
+      },
+      "id": "producthunt-ai_shouldasaid",
+      "category": "其他",
+      "subcategory": "",
+      "license_tier": "free",
+      "license_type": "",
+      "ai_analysis": "ShouldaSaid 属于其他领域，免费工具。argue with ai. win the fight you already lost. you always think of the perfect comeback 5 minutes too late. train with 3-round ai debates and actually win next time. free, no signup, 4 languages.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_shouldasaid",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "f4db4626dd379b0d8d34f8d5c4b1803d"
+    },
+    "producthunt-ai_caltrack": {
+      "name": "CalTrack",
+      "slug": "caltrack-3",
+      "url": "https://www.producthunt.com/products/caltrack-3",
+      "description": "AI calorie tracker with food scan & meal plans. CalTrack uses AI to make calorie tracking simple and fast. Just scan your meals or log them manually to instantly estimate calories and macros. Features • 📸 AI Food Scanner • 🍽️ Personalized AI Meal Plans • 🔥 Calorie Tracking • 💪 Protein, Carbs & Fat Tracking • 💧 Water Intake Tracker • ⚖️ Weight Progress Tracking • 📈 Nutrition Insights • 🎯 Built for weight loss, muscle gain & healthy eating No complicated setup—just smarter nutrition powered by AI.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "个人开发者"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/9e7b3768-3387-49f0-b9ad-6b3a7e48520b.png?auto=format",
+      "raw_data": {
+        "ph_id": "1197130",
+        "tagline": "AI calorie tracker with food scan & meal plans",
+        "votes_count": 16,
+        "comments_count": 8,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 38,
+        "makers": [
+          {
+            "name": "[REDACTED]",
+            "username": "[REDACTED]"
+          },
+          {
+            "name": "Keval Vasaniya",
+            "username": "keval_vasaniya"
+          }
+        ],
+        "topics": [
+          "Health & Fitness",
+          "Artificial Intelligence",
+          "Nutrition"
+        ]
+      },
+      "id": "producthunt-ai_caltrack",
+      "category": "设计创意",
+      "subcategory": "",
+      "license_tier": "paid",
+      "license_type": "",
+      "ai_analysis": "CalTrack 属于设计创意领域，付费产品。ai calorie tracker with food scan & meal plans. caltrack uses ai to make calorie tracking simple and fast. just scan your meals or log them manually to instantly estimate calories and macros. features...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_caltrack",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "c7bc4276f2deba146853eb4cf7b2d693"
+    },
+    "producthunt-ai_buselligence-ai-open-yours": {
+      "name": "Buselligence: AI, Open & Yours",
+      "slug": "buselligence-ai-open-yours",
+      "url": "https://www.producthunt.com/products/buselligence-ai-open-yours",
+      "description": "The open-source AI platform to build, extend, and self-host. Buselligence is an MIT-licensed, open-source AI development platform that gives everyone the power of AI. Build with AI agents, connect tools through Model Context Protocol (MCP), generate code, and work with your preferred LLM providers using your own API keys. Self-host, extend, and customize Buselligence without vendor lock-in. Built for developers, businesses, and creators who want AI that works for them.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "内容创作",
+          "商业营销"
+        ],
+        "attribute": [
+          "本地部署",
+          "API服务"
+        ],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/2e7474ca-a75d-4615-9486-a81caff6e49a.png?auto=format",
+      "raw_data": {
+        "ph_id": "1197965",
+        "tagline": "The open-source AI platform to build, extend, and self-host",
+        "votes_count": 16,
+        "comments_count": 12,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 39,
+        "makers": [
+          {
+            "name": "[REDACTED]",
+            "username": "[REDACTED]"
+          },
+          {
+            "name": "Savannah Shropshire",
+            "username": "savannah_shropshire"
+          }
+        ],
+        "topics": [
+          "Open Source",
+          "Developer Tools",
+          "Artificial Intelligence",
+          "GitHub"
+        ]
+      },
+      "id": "producthunt-ai_buselligence-ai-open-yours",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "paid",
+      "license_type": "",
+      "ai_analysis": "Buselligence: AI, Open & Yours 属于代码开发领域，付费产品。the open-source ai platform to build, extend, and self-host. buselligence is an mit-licensed, open-source ai development platform that gives everyone the power of ai. build with ai agents, connect too...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_buselligence-ai-open-yours",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "c7ac8ccd377acff8f8029ae5193daf81"
+    },
+    "producthunt-ai_scraplytics": {
+      "name": "Scraplytics",
+      "slug": "scraplytics",
+      "url": "https://www.producthunt.com/products/scraplytics",
+      "description": "One Platform for Every Scrap Yard. Scrap yard management software that automates scale tickets, inventory, suppliers, dispatch and invoicing. 14-day free trial, live in a day.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [
+          "自动化"
+        ],
+        "scenario": [],
+        "attribute": [
+          "免费"
+        ],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/49f7a011-7a5d-4e01-ada9-d649ddcd7df0.png?auto=format",
+      "raw_data": {
+        "ph_id": "1197182",
+        "tagline": "One Platform for Every Scrap Yard",
+        "votes_count": 16,
+        "comments_count": 7,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 40,
+        "makers": [
+          {
+            "name": "Jainam Shah",
+            "username": "jainam_shah27"
+          }
+        ],
+        "topics": [
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_scraplytics",
+      "category": "其他",
+      "subcategory": "",
+      "license_tier": "free",
+      "license_type": "",
+      "ai_analysis": "Scraplytics 属于其他领域，免费工具。one platform for every scrap yard. scrap yard management software that automates scale tickets, inventory, suppliers, dispatch and invoicing. 14-day free trial, live in a day.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_scraplytics",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "9c824defeb8bc35695e5d22db47c7eae"
+    },
+    "producthunt-ai_routemize": {
+      "name": "Routemize™",
+      "slug": "routemize",
+      "url": "https://www.producthunt.com/products/routemize",
+      "description": "Route-Optimized Instant Bookings. Routemize is AI scheduling built for service businesses that live and die by their route. Customers self-book instantly into the exact slot that keeps your day tightest — no calls, no back-and-forth, no guesswork. Smart routing logic and instant booking mean only the right jobs land on your calendar, at the right time. Built by a home service founder who was tired of losing hours to windshield time. Route multiple salespeople to the right appointments based on territory and rules. Gamechanger!",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "商业营销"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/a0ef8979-025a-47e1-8838-bad7874eec70.png?auto=format",
+      "raw_data": {
+        "ph_id": "1191317",
+        "tagline": "Route-Optimized Instant Bookings",
+        "votes_count": 16,
+        "comments_count": 13,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 41,
+        "makers": [
+          {
+            "name": "[REDACTED]",
+            "username": "[REDACTED]"
+          },
+          {
+            "name": "Rick Schott",
+            "username": "rick_schott"
+          }
+        ],
+        "topics": [
+          "Calendar",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_routemize",
+      "category": "办公效率",
+      "subcategory": "日程管理",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "Routemize™ 属于办公效率领域，定价未知。route-optimized instant bookings. routemize is ai scheduling built for service businesses that live and die by their route. customers self-book instantly into the exact slot that keeps your day tighte...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_routemize",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "ea95440eb84b6563e1082f07fe1caedc"
+    },
+    "producthunt-ai_neuralfactoryai": {
+      "name": "NeuralFactoryAI",
+      "slug": "neuralfactoryai",
+      "url": "https://www.producthunt.com/products/neuralfactoryai",
+      "description": "Industrial AI for Autonomous Manufacturing. NeuralFactoryAI is an Industrial AI company that develops autonomous optimization solutions for manufacturing & process industries using patented Deep Learning Neural Network models that continuously learn from real-time process sensors and quality lab data to reduce yield loss, product giveaway, raw material consumption, dosing errors, and eventually manpower. All these optimizations happen in closed-loop process without any manual intervention.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "教育学习"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/cf9288a3-045f-400e-8122-a53049759678.webp?auto=format",
+      "raw_data": {
+        "ph_id": "1197121",
+        "tagline": "Industrial AI for Autonomous Manufacturing",
+        "votes_count": 15,
+        "comments_count": 8,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 42,
+        "makers": [
+          {
+            "name": "Ekta Singh",
+            "username": "ektasingh0203"
+          }
+        ],
+        "topics": [
+          "Software Engineering",
+          "Artificial Intelligence",
+          "Data Science"
+        ]
+      },
+      "id": "producthunt-ai_neuralfactoryai",
+      "category": "数据分析",
+      "subcategory": "数据分析",
+      "license_tier": "paid",
+      "license_type": "",
+      "ai_analysis": "NeuralFactoryAI 属于数据分析领域，付费产品。industrial ai for autonomous manufacturing. neuralfactoryai is an industrial ai company that develops autonomous optimization solutions for manufacturing & process industries using patented deep learn...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_neuralfactoryai",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "61b8d0da80a4617110f43ef2f7bdb014"
+    },
+    "producthunt-ai_essel": {
+      "name": "Essel",
+      "slug": "essel",
+      "url": "https://www.producthunt.com/products/essel",
+      "description": "Automate your SEO, while you build your product.. Essel is the autonomous AI SEO engine that researches your business, finds high-impact keyword opportunities, writes production-ready content, publishes it to your website, and continuously improves it over time. Unlike AI writing tools, Essel owns the entire SEO workflow from research and content strategy to publishing and optimisation, so founders and small teams can grow organic traffic without hiring an SEO team or managing dozens of tools. Ship your product while Essel ships your SEO.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [
+          "自动化",
+          "搜索",
+          "文本生成"
+        ],
+        "scenario": [
+          "企业团队",
+          "内容创作",
+          "商业营销",
+          "学术研究"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/31ec7c98-014f-47e8-8893-85528b5f4db9.png?auto=format",
+      "raw_data": {
+        "ph_id": "1194483",
+        "tagline": "Automate your SEO, while you build your product.",
+        "votes_count": 15,
+        "comments_count": 11,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 49,
+        "makers": [
+          {
+            "name": "Kunal Yadav",
+            "username": "kunaaal13"
+          },
+          {
+            "name": "Aman Juneja",
+            "username": "aman_juneja"
+          },
+          {
+            "name": "Mansi Goswami",
+            "username": "mansi_goswami2"
+          },
+          {
+            "name": "Harsh Yadav",
+            "username": "legitbeep"
+          }
+        ],
+        "topics": [
+          "Writing",
+          "SEO",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_essel",
+      "category": "营销推广",
+      "subcategory": "",
+      "license_tier": "paid",
+      "license_type": "",
+      "ai_analysis": "Essel 属于营销推广领域，付费产品。automate your seo, while you build your product.. essel is the autonomous ai seo engine that researches your business, finds high-impact keyword opportunities, writes production-ready content, publish...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_essel",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "6231b4e156235ff1b4f81b5665b41f41"
+    },
+    "producthunt-ai_auditpilot": {
+      "name": "AuditPilot",
+      "slug": "auditpilot",
+      "url": "https://www.producthunt.com/products/auditpilot",
+      "description": "The AI copilot for ISO auditors that never invents evidence. AuditPilot turns an ISO auditor's checklist into cited findings, nonconformity reports, and a full audit report — from one pass, no re-typing. The AI drafts; every claim is cited to a source doc, and the auditor always decides. Plus a consultant readiness/gap module. 11 standards · 5 languages.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/2a17a862-adcd-4443-8cd1-a73b142f3af5.png?auto=format",
+      "raw_data": {
+        "ph_id": "1196005",
+        "tagline": "The AI copilot for ISO auditors that never invents evidence",
+        "votes_count": 15,
+        "comments_count": 12,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 49,
+        "makers": [
+          {
+            "name": "Özcan Arslan",
+            "username": "ozcan_arslan"
+          }
+        ],
+        "topics": [
+          "Productivity",
+          "SaaS",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_auditpilot",
+      "category": "代码开发",
+      "subcategory": "代码补全",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "AuditPilot 属于代码开发领域，定价未知。the ai copilot for iso auditors that never invents evidence. auditpilot turns an iso auditor's checklist into cited findings, nonconformity reports, and a full audit report — from one pass, no re-typi...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_auditpilot",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "b1ba965314d06f2705c75c4a326b6ea9"
+    },
+    "producthunt-ai_council": {
+      "name": "Council",
+      "slug": "council-6",
+      "url": "https://www.producthunt.com/products/council-6",
+      "description": "Ten inner voices read what you wrote and reflect it back. Council is a private iOS journal. Write or speak an entry, then convene a small council of ten archetypal inner voices — the Critic, the Caretaker, the Rebel, and more — that each read what you wrote and reflect it back from their own angle. They don't advise, don't remember, and your writing stays encrypted on your phone.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [
+          "语音合成",
+          "文本生成"
+        ],
+        "scenario": [],
+        "attribute": [
+          "移动端"
+        ],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/193bbf74-2ae5-4bc3-980f-6be090bd80b3.png?auto=format",
+      "raw_data": {
+        "ph_id": "1197925",
+        "tagline": "Ten inner voices read what you wrote and reflect it back",
+        "votes_count": 14,
+        "comments_count": 19,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 51,
+        "makers": [
+          {
+            "name": "Artiom",
+            "username": "artiomleo1"
+          }
+        ],
+        "topics": [
+          "Health & Fitness",
+          "Productivity",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_council",
+      "category": "文本生成",
+      "subcategory": "文案写作",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "Council 属于文本生成领域，定价未知。ten inner voices read what you wrote and reflect it back. council is a private ios journal. write or speak an entry, then convene a small council of ten archetypal inner voices — the critic, the caret...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_council",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "84908aa08886ab667fcd3a60bbe7c9be"
+    },
+    "producthunt-ai_nomadoai": {
+      "name": "NomadoAI",
+      "slug": "nomadoai",
+      "url": "https://www.producthunt.com/products/nomadoai",
+      "description": "AI travel companion for smarter trip planning. NomadoAI is an AI travel companion that helps travelers plan smarter trips. Create personalized itineraries, discover attractions and experiences, and get AI-powered recommendations. Share trips and travel memories, follow other travelers, explore popular routes, and travel with friends. During your trip, your AI assistant helps you adjust your itinerary and answers questions. Book through trusted travel partners via affiliate links.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "个人开发者"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/69e45726-2a60-4259-97d8-89cfb615d739.png?auto=format",
+      "raw_data": {
+        "ph_id": "1198545",
+        "tagline": "AI travel companion for smarter trip planning",
+        "votes_count": 14,
+        "comments_count": 13,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 53,
+        "makers": [
+          {
+            "name": "Özlem Demirkıran",
+            "username": "ozlem_demirkiran"
+          }
+        ],
+        "topics": [
+          "Productivity",
+          "Travel",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_nomadoai",
+      "category": "文本生成",
+      "subcategory": "通用文本",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "NomadoAI 属于文本生成领域，定价未知。ai travel companion for smarter trip planning. nomadoai is an ai travel companion that helps travelers plan smarter trips. create personalized itineraries, discover attractions and experiences, and ge...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_nomadoai",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "919a65e948255fbb0e851f894e7afdd6"
+    },
+    "producthunt-ai_qoredb": {
+      "name": "QoreDB",
+      "slug": "qoredb-2",
+      "url": "https://www.producthunt.com/products/qoredb-2",
+      "description": "The local-first, AI-native database client, in Rust. Un client de bases de données moderne, rapide et sécurisé pour les développeurs. SQL + NoSQL unifié, vault sécurisé, local-first.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [
+          "API服务"
+        ],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/849d1ba4-2fd7-4273-865a-8dd2ec7f8e87.png?auto=format",
+      "raw_data": {
+        "ph_id": "1197632",
+        "tagline": "The local-first, AI-native database client, in Rust",
+        "votes_count": 14,
+        "comments_count": 11,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 55,
+        "makers": [
+          {
+            "name": "Raphael ",
+            "username": "raphplt"
+          }
+        ],
+        "topics": [
+          "Open Source",
+          "Developer Tools",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_qoredb",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "QoreDB 属于代码开发领域，定价未知。the local-first, ai-native database client, in rust. un client de bases de données moderne, rapide et sécurisé pour les développeurs. sql + nosql unifié, vault sécurisé, local-first.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_qoredb",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "71b9874ab5e986a560b507e1a4d90d18"
+    },
+    "producthunt-ai_happycohort": {
+      "name": "HappyCohort",
+      "slug": "happycohort",
+      "url": "https://www.producthunt.com/products/happycohort",
+      "description": "Steal your competitors' best-performing email angles. Track every marketing email your competitors send. HappyCohort breaks each one into offer, theme, voice, and creative, then benchmarks your brand against the set; the discount cadence, the angles, the whitespace, all in one place.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [
+          "语音合成"
+        ],
+        "scenario": [
+          "设计工作",
+          "商业营销"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/979bbe4b-f3d0-4327-b024-b90ddda19626.png?auto=format",
+      "raw_data": {
+        "ph_id": "1198742",
+        "tagline": "Steal your competitors' best-performing email angles",
+        "votes_count": 14,
+        "comments_count": 5,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 63,
+        "makers": [
+          {
+            "name": "Ray",
+            "username": "rayscdmx"
+          }
+        ],
+        "topics": [
+          "Email Marketing",
+          "Artificial Intelligence",
+          "E-Commerce"
+        ]
+      },
+      "id": "producthunt-ai_happycohort",
+      "category": "办公效率",
+      "subcategory": "邮件工具",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "HappyCohort 属于办公效率领域，定价未知。steal your competitors' best-performing email angles. track every marketing email your competitors send. happycohort breaks each one into offer, theme, voice, and creative, then benchmarks your brand ...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_happycohort",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "6290d6535062486e0899f8f785e4f107"
+    },
+    "producthunt-ai_lease-snipe": {
+      "name": "Lease Snipe",
+      "slug": "lease-snipe",
+      "url": "https://www.producthunt.com/products/lease-snipe",
+      "description": "Know what your lease really says, in 60 seconds. Renters sign 40-page leases they never read — then get hit with fees, deposits, or clauses that aren't even legal in their state. LeaseSnipe reads your lease PDF and flags what's risky, unusual, or worth checking against your state's landlord-tenant law. No legal jargon — just plain English, in about 60 seconds. Free scan, no signup required. Full report unlocks deeper detail, cost breakdowns, and negotiation tools if you need them.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [
+          "免费"
+        ],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/9c2847d2-b6c2-4bdb-94d1-e5365ef116d4.png?auto=format",
+      "raw_data": {
+        "ph_id": "1198281",
+        "tagline": "Know what your lease really says, in 60 seconds",
+        "votes_count": 13,
+        "comments_count": 17,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 72,
+        "makers": [
+          {
+            "name": "Leo Hermoso",
+            "username": "leo_hermoso"
+          }
+        ],
+        "topics": [
+          "Legal",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_lease-snipe",
+      "category": "办公效率",
+      "subcategory": "文档处理",
+      "license_tier": "free",
+      "license_type": "",
+      "ai_analysis": "Lease Snipe 属于办公效率领域，免费工具。know what your lease really says, in 60 seconds. renters sign 40-page leases they never read — then get hit with fees, deposits, or clauses that aren't even legal in their state. leasesnipe reads your...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_lease-snipe",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "49c81588f91e3d979455cace243ae1c8"
+    },
+    "producthunt-ai_unblurry": {
+      "name": "Unblurry",
+      "slug": "unblurry",
+      "url": "https://www.producthunt.com/products/unblurry",
+      "description": "Unblur image & photo online — free AI blur remover. That blurry photo you thought was ruined? unblurry brings it back. Upload it and AI rebuilds the detail your camera missed — out-of-focus portraits, motion-blurred moments, grainy low-res scans. ✅ Reconstructs faces, edges and texture, not a blanket sharpen ✅ Rescues product shots, travel photos and old family prints ✅ Before/after slider, full-res download, no watermark Free to try, no sign-up. One-time credits, no subscription. → https://unblurry.tools",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "attribute": [
+          "开源",
+          "可定制",
+          "多语言"
+        ],
+        "function": [
+          "对话交互",
+          "知识问答",
+          "文本创作"
+        ],
+        "quality": [
+          "社区活跃",
+          "文档完善",
+          "持续更新"
+        ],
+        "scenario": [
+          "日常聊天",
+          "学习辅助",
+          "内容构思"
+        ],
+        "tech": [
+          "大语言模型",
+          "Transformer",
+          "自然语言处理"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/48af143d-1aa5-47eb-bbc5-a5cce1773374.png?auto=format",
+      "raw_data": {
+        "ph_id": "1197974",
+        "tagline": "Unblur image & photo online — free AI blur remover",
+        "votes_count": 13,
+        "comments_count": 9,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 73,
+        "makers": [
+          {
+            "name": "Eden Su",
+            "username": "edensu"
+          }
+        ],
+        "topics": [
+          "Design Tools",
+          "Photography",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_unblurry",
+      "ai_analysis": "这是一个开源的对话式AI助手，能够进行自然语言对话、回答问题和协助文本创作。适合开发者、研究人员和希望部署私有AI助手的个人或企业使用。",
+      "ai_confidence": 0.8,
+      "category": "文本生成",
+      "health_status": "active",
+      "is_china_tool": false,
+      "license_tier": "open-source",
+      "license_type": "Apache 2.0",
+      "subcategory": "对话式AI助手",
+      "tool_id": "producthunt-ai_unblurry",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "b59faad2ae60fdd7dc7eebabcbf71af5"
+    },
+    "producthunt-ai_twnetmap": {
+      "name": "twNetMap",
+      "slug": "twnetmap",
+      "url": "https://www.producthunt.com/products/twnetmap",
+      "description": "AI-assisted cross-router network diagram creator. An AI-powered network diagram tool that automatically generates maps from scanned data. Unlike standard discovery utilities, twNetMap effortlessly maps complex environments beyond your local segment, bridging cross-router networks into a single, cohesive topology diagram. Combined with intelligent AI-assisted device recognition and a lightweight, high-speed UI built with Wails and Svelte, visualizing your network structure has never been this smart and simple.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "内容创作"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/f020224a-6414-4ec1-a84b-986a2da12db6.png?auto=format",
+      "raw_data": {
+        "ph_id": "1198641",
+        "tagline": "AI-assisted cross-router network diagram creator",
+        "votes_count": 13,
+        "comments_count": 8,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 74,
+        "makers": [
+          {
+            "name": "TWSNMP",
+            "username": "twsnmp"
+          }
+        ],
+        "topics": [
+          "Open Source",
+          "Developer Tools",
+          "Artificial Intelligence",
+          "GitHub"
+        ]
+      },
+      "id": "producthunt-ai_twnetmap",
+      "category": "数据分析",
+      "subcategory": "数据分析",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "twNetMap 属于数据分析领域，定价未知。ai-assisted cross-router network diagram creator. an ai-powered network diagram tool that automatically generates maps from scanned data. unlike standard discovery utilities, twnetmap effortlessly map...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_twnetmap",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "c99c4174a091d9f2235317514ac9e99a"
+    },
+    "producthunt-ai_lineation": {
+      "name": "Lineation",
+      "slug": "lineation",
+      "url": "https://www.producthunt.com/products/lineation",
+      "description": "Real-time guardrails for agentic AI and enterprise workflows. Lineation is the accountability layer for AI agents. Cross-provider policy enforcement, runtime defense, and forensic lineage for OpenAI, Anthropic, Google & Copilot. Delivering a solution at the intersection of GenAI Application Security and Runtime Defense, Lineation introduces a Zero Trust unified control plane and a lightweight endpoint daemon that secures autonomous AI agents directly at execution.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [
+          "自动化"
+        ],
+        "scenario": [
+          "企业团队"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/eefb58bd-3576-4ceb-be47-0d28967db418.png?auto=format",
+      "raw_data": {
+        "ph_id": "1197944",
+        "tagline": "Real-time guardrails for agentic AI and enterprise workflows",
+        "votes_count": 13,
+        "comments_count": 8,
+        "created_at": "2026-07-17T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 75,
+        "makers": [
+          {
+            "name": "[REDACTED]",
+            "username": "[REDACTED]"
+          },
+          {
+            "name": "Jane Manavian",
+            "username": "jane_manavian"
+          }
+        ],
+        "topics": [
+          "Developer Tools",
+          "Artificial Intelligence",
+          "Security"
+        ]
+      },
+      "id": "producthunt-ai_lineation",
+      "category": "代码开发",
+      "subcategory": "代码补全",
+      "license_tier": "paid",
+      "license_type": "",
+      "ai_analysis": "Lineation 属于代码开发领域，付费产品。real-time guardrails for agentic ai and enterprise workflows. lineation is the accountability layer for ai agents. cross-provider policy enforcement, runtime defense, and forensic lineage for openai, ...",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_lineation",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "72c5ee0d51499deaa1288a199dd9ed0d"
+    },
+    "theresanaiforthat_anyainow": {
+      "name": "anyAInow",
+      "url": "https://theresanaiforthat.com/ai/anyainow/",
+      "description": "Every top AI model. No subscription.",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "anyainow"
+      },
+      "id": "theresanaiforthat_anyainow",
+      "category": "学术研究",
+      "subcategory": "模型研究",
+      "license_tier": "paid",
+      "license_type": "",
+      "ai_analysis": "anyAInow 属于学术研究领域，付费产品。every top ai model. no subscription.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_anyainow",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "ec2a7f6ebfa720c19207cb2be7177c17"
+    },
+    "theresanaiforthat_pdftomd-converter": {
+      "name": "PDFtoMD Converter",
+      "url": "https://theresanaiforthat.com/ai/pdftomd-converter/",
+      "description": "Turn any PDF into clean Markdown instantly.",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "pdftomd-converter"
+      },
+      "id": "theresanaiforthat_pdftomd-converter",
+      "category": "办公效率",
+      "subcategory": "文档处理",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "PDFtoMD Converter 属于办公效率领域，定价未知。turn any pdf into clean markdown instantly.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_pdftomd-converter",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "cfd8c1fe315c90a264748474e116941b"
+    },
+    "theresanaiforthat_design-maker-ai": {
+      "name": "Design Maker AI",
+      "url": "https://theresanaiforthat.com/ai/design-maker-ai/",
+      "description": "From prompt to stunning design in seconds.",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "设计工作"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "design-maker-ai"
+      },
+      "id": "theresanaiforthat_design-maker-ai",
+      "category": "设计创意",
+      "subcategory": "",
+      "license_tier": "paid",
+      "license_type": "",
+      "ai_analysis": "Design Maker AI 属于设计创意领域，付费产品。from prompt to stunning design in seconds.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_design-maker-ai",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "3818ed05e67f696fc74d9515e2f076db"
+    },
+    "theresanaiforthat_colorfor-ai": {
+      "name": "colorfor.ai",
+      "url": "https://theresanaiforthat.com/ai/colorfor-ai/",
+      "description": "From vibe to verified design tokens.",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "设计工作"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "colorfor-ai"
+      },
+      "id": "theresanaiforthat_colorfor-ai",
+      "category": "设计创意",
+      "subcategory": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "colorfor.ai 属于设计创意领域，定价未知。from vibe to verified design tokens.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_colorfor-ai",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "846956a95285c82870a48b889ee185d2"
+    },
+    "theresanaiforthat_clearcrowds": {
+      "name": "ClearCrowds",
+      "url": "https://theresanaiforthat.com/ai/clearcrowds/",
+      "description": "Any photo. Fixed in one click.",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "clearcrowds"
+      },
+      "id": "theresanaiforthat_clearcrowds",
+      "category": "开发工具",
+      "subcategory": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "ClearCrowds 属于开发工具领域，定价未知。any photo. fixed in one click.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_clearcrowds",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "af70bf23e8f91043b3b167af2fb18142"
+    },
+    "theresanaiforthat_vismuse-flyer-maker": {
+      "name": "Vismuse | Flyer Maker",
+      "url": "https://theresanaiforthat.com/ai/vismuse-flyer-maker/",
+      "description": "Create stunning flyers from a single AI prompt.",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "vismuse-flyer-maker"
+      },
+      "id": "theresanaiforthat_vismuse-flyer-maker",
+      "category": "其他",
+      "subcategory": "",
+      "license_tier": "paid",
+      "license_type": "",
+      "ai_analysis": "Vismuse | Flyer Maker 属于其他领域，付费产品。create stunning flyers from a single ai prompt.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_vismuse-flyer-maker",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "2123337d02e3399de9f383312c925e72"
+    },
+    "theresanaiforthat_2markdown": {
+      "name": "2markdown",
+      "url": "https://theresanaiforthat.com/ai/2markdown-1784190262/",
+      "description": "Convert anything to Markdown, instantly.",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "2markdown-1784190262"
+      },
+      "id": "theresanaiforthat_2markdown",
+      "category": "其他",
+      "subcategory": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "2markdown 属于其他领域，定价未知。convert anything to markdown, instantly.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_2markdown",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "ea564a67dbcd55aee5144d751248ee1f"
+    },
+    "theresanaiforthat_workforce-ai": {
+      "name": "Workforce AI",
+      "url": "https://theresanaiforthat.com/ai/workforce-ai/",
+      "description": "AI employees that handle your work while you go home.",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "workforce-ai"
+      },
+      "id": "theresanaiforthat_workforce-ai",
+      "category": "其他",
+      "subcategory": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "Workforce AI 属于其他领域，定价未知。ai employees that handle your work while you go home.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_workforce-ai",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "4ea3d5610bef7bb522760612263355db"
+    },
+    "theresanaiforthat_happyseeds": {
+      "name": "HappySeeds",
+      "url": "https://theresanaiforthat.com/ai/happyseeds/",
+      "description": "Turn ideas into AI-powered apps instantly.",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "happyseeds"
+      },
+      "id": "theresanaiforthat_happyseeds",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "HappySeeds 属于代码开发领域，定价未知。turn ideas into ai-powered apps instantly.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_happyseeds",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "8937977075fe3afde16c444735575b05"
+    },
+    "theresanaiforthat_asktender": {
+      "name": "AskTender",
+      "url": "https://theresanaiforthat.com/ai/asktender/",
+      "description": "Win Australian government contracts with AI.",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "asktender"
+      },
+      "id": "theresanaiforthat_asktender",
+      "category": "其他",
+      "subcategory": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "AskTender 属于其他领域，定价未知。win australian government contracts with ai.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_asktender",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "707068991475a714b93d87bb969436bc"
+    },
+    "theresanaiforthat_longtermemory": {
+      "name": "LongTerMemory",
+      "url": "https://theresanaiforthat.com/ai/longtermemory/",
+      "description": "Study smarter with AI-powered active recall and spaced repetition.",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "attribute": [
+          "开源",
+          "命令行工具",
+          "本地部署",
+          "多语言支持"
+        ],
+        "function": [
+          "代码生成",
+          "代码优化",
+          "代码解释",
+          "代码翻译"
+        ],
+        "quality": [
+          "高效",
+          "准确",
+          "可定制",
+          "开发者友好"
+        ],
+        "scenario": [
+          "软件开发",
+          "编程学习",
+          "代码审查",
+          "项目重构"
+        ],
+        "tech": [
+          "大语言模型",
+          "自然语言处理",
+          "代码分析",
+          "API集成"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "longtermemory"
+      },
+      "id": "theresanaiforthat_longtermemory",
+      "ai_analysis": "这是一个专注于代码生成与优化的AI工具，通过大语言模型技术帮助开发者快速生成、解释、优化和翻译代码片段。适合软件工程师、编程学习者以及需要进行代码审查和重构的项目团队使用。",
+      "ai_confidence": 0.8,
+      "category": "文本生成",
+      "health_status": "active",
+      "is_china_tool": false,
+      "license_tier": "open-source",
+      "license_type": "MIT",
+      "subcategory": "代码生成与优化",
+      "tool_id": "theresanaiforthat_longtermemory",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "7a105555ebad484a99af8329f27bdb01"
+    },
+    "theresanaiforthat_coloringdaily": {
+      "name": "ColoringDaily",
+      "url": "https://theresanaiforthat.com/ai/coloringdaily/",
+      "description": "Turn any text or photo into a printable coloring page.",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "coloringdaily"
+      },
+      "id": "theresanaiforthat_coloringdaily",
+      "category": "图像创作",
+      "subcategory": "图像处理",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "ColoringDaily 属于图像创作领域，定价未知。turn any text or photo into a printable coloring page.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_coloringdaily",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "89758b1ac02f6f857091c0e77f02d3dd"
+    },
+    "theresanaiforthat_animove-ai": {
+      "name": "Animove AI",
+      "url": "https://theresanaiforthat.com/ai/animove-ai/",
+      "description": "Swap faces in any video with AI.",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [
+          "视频生成"
+        ],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "animove-ai"
+      },
+      "id": "theresanaiforthat_animove-ai",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "Animove AI 属于代码开发领域，定价未知。swap faces in any video with ai.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_animove-ai",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "a8d37fd556e93ced2efc142d7cd7fede"
+    },
+    "theresanaiforthat_ai-deck-creator": {
+      "name": "AI Deck Creator",
+      "url": "https://theresanaiforthat.com/ai/deck-creator-by-vidsembly/",
+      "description": "Turn content into a polished slide deck.",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "内容创作"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "deck-creator-by-vidsembly"
+      },
+      "id": "theresanaiforthat_ai-deck-creator",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "AI Deck Creator 属于代码开发领域，定价未知。turn content into a polished slide deck.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_ai-deck-creator",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "ff29bf81fb91456ed0f719ef0cedb413"
+    },
+    "theresanaiforthat_museauthor": {
+      "name": "MuseAuthor",
+      "url": "https://theresanaiforthat.com/ai/museauthor/",
+      "description": "Write, translate and publish KDP-ready books with AI",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [
+          "翻译",
+          "文本生成"
+        ],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "museauthor"
+      },
+      "id": "theresanaiforthat_museauthor",
+      "category": "其他",
+      "subcategory": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "MuseAuthor 属于其他领域，定价未知。write, translate and publish kdp-ready books with ai",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_museauthor",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "03c812e99106beac1be9286e7525a8ac"
+    },
+    "theresanaiforthat_thynkk": {
+      "name": "Thynkk",
+      "url": "https://theresanaiforthat.com/ai/thynkk/",
+      "description": "Find Reddit threads where people already want what you sell.",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "thynkk"
+      },
+      "id": "theresanaiforthat_thynkk",
+      "category": "营销推广",
+      "subcategory": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "Thynkk 属于营销推广领域，定价未知。find reddit threads where people already want what you sell.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_thynkk",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "d217a2442eff98e08c663cc0089acf32"
+    },
+    "theresanaiforthat_clipbg-ai-background-remover-bulk-editor": {
+      "name": "ClipBG - AI Background Remover & Bulk Editor",
+      "url": "https://theresanaiforthat.com/ai/clipbg/",
+      "description": "Bulk background removal, smart resizing, and HD upscaling in your browser.",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "clipbg"
+      },
+      "id": "theresanaiforthat_clipbg-ai-background-remover-bulk-editor",
+      "category": "开发工具",
+      "subcategory": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "ClipBG - AI Background Remover & Bulk Editor 属于开发工具领域，定价未知。bulk background removal, smart resizing, and hd upscaling in your browser.",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_clipbg-ai-background-remover-bulk-editor",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "3f4507f912c56b58b4129c095588f08d"
+    },
+    "theresanaiforthat_ace-ai": {
+      "name": "Ace AI",
+      "url": "https://theresanaiforthat.com/ai/ace-ai/",
+      "description": "The AI that works your Follow Up Boss leads with you",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "ace-ai"
+      },
+      "id": "theresanaiforthat_ace-ai",
+      "category": "营销推广",
+      "subcategory": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "Ace AI 属于营销推广领域，定价未知。the ai that works your follow up boss leads with you",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_ace-ai",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "419f93578099e5378db5549d2bd9a1d7"
+    },
+    "theresanaiforthat_canopy-api": {
+      "name": "Canopy API",
+      "url": "https://theresanaiforthat.com/ai/canopy-api/",
+      "description": "A modern API for Amazon Product Data",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [
+          "API服务"
+        ],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "canopy-api"
+      },
+      "id": "theresanaiforthat_canopy-api",
+      "category": "代码开发",
+      "subcategory": "开发辅助",
+      "license_tier": "paid",
+      "license_type": "",
+      "ai_analysis": "Canopy API 属于代码开发领域，付费产品。a modern api for amazon product data",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_canopy-api",
+      "first_seen": "2026-07-18T04:01:12.691896+00:00",
+      "collected_at": "2026-07-18T04:01:12.691896+00:00",
+      "ai_analyzed_at": "2026-07-18T04:01:12.691896+00:00",
+      "last_checked": "2026-07-18T04:01:12.691896+00:00",
+      "content_hash": "f6fca66f99aacb52867b403b7e15b5e0"
     }
   },
   "metadata": {
-    "last_merge": "2026-07-18T03:51:54.171727+00:00",
-    "last_merge_count": 80,
-    "updated_at": "2026-07-18T03:51:54.172451+00:00",
-    "total_tools": 349
+    "last_merge": "2026-07-18T04:01:12.691896+00:00",
+    "last_merge_count": 129,
+    "updated_at": "2026-07-18T04:01:12.692703+00:00",
+    "total_tools": 397
   }
 }
