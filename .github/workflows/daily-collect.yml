@@ -38,6 +38,8 @@ jobs:
         env:
           COZE_API_KEY: ${{ secrets.AI_BOX_COZE }}
           COZE_WORKFLOW_ID: ${{ secrets.COZE_WORKFLOW_ID }}
+          PH_API_KEY: ${{ secrets.PH_API_KEY }}
+          PH_API_SECRET: ${{ secrets.PH_API_SECRET }}
         run: |
           cd scripts
           MODE_ARG="${{ inputs.mode }}"
