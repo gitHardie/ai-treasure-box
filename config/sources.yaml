@@ -278,7 +278,7 @@ global:
   rate_limit:
     requests_per_minute: 15
   collection:
-    discovery_batch_size: 5
+    discovery_batch_size: 8
     health_check_interval_days: 3
     deep_update_day: 1
   analysis:
