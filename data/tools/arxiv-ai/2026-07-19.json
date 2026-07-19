@@ -1,0 +1,705 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-07-19T18:54:11.566368+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models",
+      "title": "Partition, Prompt, Aggregate: Statistical Self-Consistency in Language Models",
+      "url": "https://arxiv.org/abs/2607.15277v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15277v1",
+      "description": "In-context learning is commonly interpreted as a form of conditional inference, in which the prompt specifies a context and the model's output is treated as an estimate of the corresponding conditional distribution. If this interpretation holds, then LLM estimates should satisfy basic probabilistic identities. In particular, the law of total probability asserts that prior-weighted conditional distributions aggregate into population-level marginals over any valid partition of the population. In t",
+      "authors": [
+        "Patrik Wolf",
+        "Thomas Kleine Buening",
+        "Andreas Krause",
+        "Celestine Mendler-Dünner"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2607.15277v1",
+      "published_at": "2026-07-16T17:59:31Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "RoboTTT: Context Scaling for Robot Policies",
+      "title": "RoboTTT: Context Scaling for Robot Policies",
+      "url": "https://arxiv.org/abs/2607.15275v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15275v1",
+      "description": "Recent robot foundation models operate with single-step or short-history visuomotor context. We introduce Test-Time-Training Robot Policies (RoboTTT), a robot model and training recipe that scale visuomotor context to 8K timesteps, three orders of magnitude beyond state-of-the-art policies, without growing inference latency. At this context length, we unlock new robot capabilities: one-shot in-context imitation from human video demonstrations, on-the-fly policy improvement, robustness to perturb",
+      "authors": [
+        "Yunfan Jiang",
+        "Yevgen Chebotar",
+        "Ruijie Zheng",
+        "Fengyuan Hu",
+        "Yunhao Ge"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.15275v1",
+      "published_at": "2026-07-16T17:59:06Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators",
+      "title": "MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators",
+      "url": "https://arxiv.org/abs/2607.15273v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15273v1",
+      "description": "MeanFlow generators achieve fast few-step sampling by predicting average velocities over time intervals, making them attractive for efficient generation. Reinforcement learning (RL) has become a powerful way to align diffusion and flow models with human preferences and task-specific objectives. In particular, DiffusionNFT offers an efficient forward-process RL framework that does not require reverse-process trajectories or likelihood estimation. However, applying such RL methods to MeanFlow rema",
+      "authors": [
+        "Yushi Huang",
+        "Xiangxin Zhou",
+        "Jun Zhang",
+        "Liefeng Bo",
+        "Tianyu Pang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.15273v1",
+      "published_at": "2026-07-16T17:59:02Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions",
+      "title": "SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions",
+      "url": "https://arxiv.org/abs/2607.15272v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15272v1",
+      "description": "Editing the figures in a research paper is a routine and time-consuming part of everyday research practice: authors relabel components, rearrange panels, and restyle visuals as they revise their manuscripts. Automating this editing workflow under a natural-language instruction, however, is challenging, because a scientific figure is a dense infographic in which heterogeneous visual elements such as schematics, plots, photos, captions, and arrows are composed under a tight visual grammar to advan",
+      "authors": [
+        "Yasheng Sun",
+        "Zezi Zeng",
+        "Yifan Yang",
+        "Chong Luo",
+        "Wenyi Wang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.15272v1",
+      "published_at": "2026-07-16T17:58:36Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Online Neural Space Time Memory for Dynamic Novel View Synthesis",
+      "title": "Online Neural Space Time Memory for Dynamic Novel View Synthesis",
+      "url": "https://arxiv.org/abs/2607.15271v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15271v1",
+      "description": "Online novel view synthesis from multi-view streaming videos faces a fundamental trade-off: maintaining a persistent, long-horizon memory to reconstruct temporarily occluded regions while operating under strict real-time constraints. While Test-Time Training (TTT) offers a powerful memory mechanism, standard models mandate gradient-based memory updates at every frame to adapt to the changing motion in dynamic scenes. The computational cost of heavy memory updates precludes real-time application ",
+      "authors": [
+        "Baback Elmieh",
+        "Lynn Tsai",
+        "Zeman Li",
+        "Srinivas Kaza",
+        "Tiancheng Sun"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.GR",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.15271v1",
+      "published_at": "2026-07-16T17:58:18Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Pretraining Data Can Be Poisoned through Computational Propaganda",
+      "title": "Pretraining Data Can Be Poisoned through Computational Propaganda",
+      "url": "https://arxiv.org/abs/2607.15267v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15267v1",
+      "description": "Poisoning pretraining data can introduce harmful behaviors to LMs that are difficult to detect and mitigate. Prior work on poisoning pretraining data has largely exploited established data sources such as Wikipedia, which do not represent the large scale and heterogeneity typical of pretraining corpora, and has ignored the interaction between poisoned data and data curation pipelines. We demonstrate that poisoning attacks on pretraining data are feasible beyond this limited setting through an ex",
+      "authors": [
+        "Victoria Graf",
+        "Hannaneh Hajishirzi",
+        "Noah A. Smith",
+        "David Kohlbrenner",
+        "Kyle Lo"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2607.15267v1",
+      "published_at": "2026-07-16T17:56:05Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SceneBind: Binding What and Where Across Vision, Audio and Language",
+      "title": "SceneBind: Binding What and Where Across Vision, Audio and Language",
+      "url": "https://arxiv.org/abs/2607.15265v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15265v1",
+      "description": "We present SceneBind, an omni-modal representation of realistic scenes with joint semantic and 3D spatial understanding across vision, audio and language. Existing omni-modal encoders excel at instance-level semantics (i.e., what is present), but often lack explicit spatial structure (i.e., where it is). SceneBind addresses this gap by representing each scene as a semantic-spatial entity, combining a global semantic embedding with object-centric semantic-spatial slots. This representation explic",
+      "authors": [
+        "Mingfei Chen",
+        "Zijun Cui",
+        "Ruoke Zhang",
+        "Hyeonggon Ryu",
+        "Eli Shlizerman"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.MM",
+        "cs.SD"
+      ],
+      "arxiv_id": "2607.15265v1",
+      "published_at": "2026-07-16T17:55:15Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Beyond Success Rate: Cost-Aware Evaluation of Offensive and Defensive Security Agents",
+      "title": "Beyond Success Rate: Cost-Aware Evaluation of Offensive and Defensive Security Agents",
+      "url": "https://arxiv.org/abs/2607.15263v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15263v1",
+      "description": "Security-agent evaluations commonly measure peak offensive capability under generous inference budgets, emphasizing vulnerability discovery, exploit development, penetration testing, and CTF completion. Such measurements are useful but incomplete: in operational security, every reasoning step, tool call, telemetry query, and enrichment request consumes budget. We evaluate language-model security agents through this cost-success lens on offensive Cybench challenges and defensive Splunk BOTS v1 in",
+      "authors": [
+        "Paul Kassianik",
+        "Blaine Nelson",
+        "Yaron Singer"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.15263v1",
+      "published_at": "2026-07-16T17:54:47Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Decoding Market Emotion from Blockchain Activity: A Data-Driven Sentiment Classifier",
+      "title": "Decoding Market Emotion from Blockchain Activity: A Data-Driven Sentiment Classifier",
+      "url": "https://arxiv.org/abs/2607.15258v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15258v1",
+      "description": "The growing use of Bitcoin as a decentralized digital asset and investment tool has sparked strong interest in understanding its market behavior. This study presents a new approach to analyze Bitcoin market sentiment by combining on-chain and financial data with social media posts. Unlike models that aim to predict prices, this work focuses on explaining market sentiment using blockchain transactions, historical price data of Bitcoin, and daily Twitter sentiment classifications. The method merge",
+      "authors": [
+        "Arthur G. Bubolz",
+        "Abreu Quevedo",
+        "Giancarlo Lucca",
+        "Rafael A. Berri",
+        "Eduardo Borges"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CE"
+      ],
+      "arxiv_id": "2607.15258v1",
+      "published_at": "2026-07-16T17:52:26Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration",
+      "title": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration",
+      "url": "https://arxiv.org/abs/2607.15257v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15257v1",
+      "description": "Recent advances in Tool-Integrated Large Language Models have made web search a core capability of information-seeking agents. However, as interaction histories grow, agents increasingly struggle to track task progress. When search attempts fail to yield useful evidence, current single- and multi-agent systems can become trapped in repetitive loops, wasting search budgets and ultimately compromising the quality and completeness of the final output. We introduce SearchOS, a system-level multi-age",
+      "authors": [
+        "Yuyao Zhang",
+        "Junjie Gao",
+        "Zhengxian Wu",
+        "Jiaming Fan",
+        "Jin Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.IR"
+      ],
+      "arxiv_id": "2607.15257v1",
+      "published_at": "2026-07-16T17:51:23Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "teLLMe Why (Ain't Nothing but a Jam): Exploratory Causal Analysis of Urban Driving Data",
+      "title": "teLLMe Why (Ain't Nothing but a Jam): Exploratory Causal Analysis of Urban Driving Data",
+      "url": "https://arxiv.org/abs/2607.15254v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15254v1",
+      "description": "Traffic agencies now have access to large volumes of video-derived data for studying safety and congestion. Most of these data are observational and collected without interventions, which makes causal questions such as \"How would rain change traffic density?\" difficult to answer. We present teLLMe, a system for exploratory causal analysis of urban driving datasets. The system starts from a structured event table built from dashcam annotations and combines causal structure learning with the PC al",
+      "authors": [
+        "Qiwei Li",
+        "Jorge Ortiz"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.HC"
+      ],
+      "arxiv_id": "2607.15254v1",
+      "published_at": "2026-07-16T17:49:28Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Bridge Evidence: Static Retrieval Utility Does Not Predict Causal Utility in Multi-Step Agentic Search",
+      "title": "Bridge Evidence: Static Retrieval Utility Does Not Predict Causal Utility in Multi-Step Agentic Search",
+      "url": "https://arxiv.org/abs/2607.15253v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15253v1",
+      "description": "Retrieval systems are trained and evaluated on a static idea of usefulness: hand a document and a question to a reader model, see whether the answer improves, and score the document accordingly. The idea holds up when a document is read on its own. It breaks when a language model works as a search agent, issuing several queries and reasoning across turns, because a document can matter for what it lets the agent do next rather than for what it says about the current question. We measure that gap ",
+      "authors": [
+        "Debayan Mukhopadhyay",
+        "Utshab Kumar Ghosh",
+        "Shubham Chatterjee"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "arxiv_id": "2607.15253v1",
+      "published_at": "2026-07-16T17:48:29Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "AutoSynthesis: An agentic system for automated meta-analysis",
+      "title": "AutoSynthesis: An agentic system for automated meta-analysis",
+      "url": "https://arxiv.org/abs/2607.15247v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15247v1",
+      "description": "Evidence synthesis is crucial for turning primary research into reliable knowledge for science, medicine, education, and policy. Yet, quantitative evidence synthesis remains largely manual and difficult to scale. Here, we introduce AutoSynthesis, an end-to-end multi-agent system for automated meta-analysis. Given a research question in natural language, AutoSynthesis formulates a search strategy, retrieves scientific literature, screens candidate studies, assesses full-text eligibility, extracts",
+      "authors": [
+        "Moein Taherinezhad",
+        "Sebastian Maier",
+        "Gerardo Vitagliano",
+        "Francesco Pierri",
+        "Stefan Feuerriegel"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.15247v1",
+      "published_at": "2026-07-16T17:45:27Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Mutable Low-Rank Sketches for Retrain-Free Recommendation",
+      "title": "Mutable Low-Rank Sketches for Retrain-Free Recommendation",
+      "url": "https://arxiv.org/abs/2607.15242v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15242v1",
+      "description": "A common bottleneck in two-stage recommendation is embedding staleness: when a user rates a new item, their embedding remains fixed until the next retrain cycle. We propose mutable sketches, which store each user's preferences in a KP-tree (a sparse segment tree with sum aggregation), fit a low-rank projection once, and recompute embeddings on-the-fly as ratings arrive. We prove that each new observation monotonically tightens the prediction error envelope (Theorem 1), a guarantee that FunkSVD a",
+      "authors": [
+        "Hector J. Garcia",
+        "Nick Clayton"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.15242v1",
+      "published_at": "2026-07-16T17:39:38Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Beyond the Leaderboard: Design Lessons for Trustworthy Multimodal VQA",
+      "title": "Beyond the Leaderboard: Design Lessons for Trustworthy Multimodal VQA",
+      "url": "https://arxiv.org/abs/2607.15241v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15241v1",
+      "description": "Healthcare multimodal AI must combine visual and textual evidence while remaining reliable and interpretable. Using MediaEval Medico 2025 as a retrospective GI endoscopy case study, we analyze design choices across nine documented systems for question answering and explanation quality. Parameter-efficient adaptation of pretrained backbones provides strong challenge performance, but answer-level gains do not consistently translate into faithful and complete clinical reasoning. Methods enforcing s",
+      "authors": [
+        "Sushant Gautam",
+        "Vajira Thambawita",
+        "Michael A. Riegler",
+        "Pål Halvorsen",
+        "Steven A. Hicks"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CV"
+      ],
+      "arxiv_id": "2607.15241v1",
+      "published_at": "2026-07-16T17:38:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "TikStance: A Multimodal and Hierarchical Dataset for Multi-target Stance Analysis in TikTok Political Conversations",
+      "title": "TikStance: A Multimodal and Hierarchical Dataset for Multi-target Stance Analysis in TikTok Political Conversations",
+      "url": "https://arxiv.org/abs/2607.15240v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15240v1",
+      "description": "Political discourse has increasingly moved to short-video platforms, yet computational analysis of such content remains constrained by the scarcity of datasets that jointly preserve audiovisual information and hierarchical conversations. Here we present TikStance, a multimodal and context-aware dataset comprising 161 videos and 13,876 comments from TikTok, designed for stance detection in political discussions. The dataset covers three major political figures in the 2024 U.S. election cycle--Don",
+      "authors": [
+        "Yazhi Zhang",
+        "Fuqiang Niu",
+        "Bowen Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2607.15240v1",
+      "published_at": "2026-07-16T17:37:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Language Identification via Compositional Data Analysis: A Linear-Time Classifier Based on Log-Ratio Geometry",
+      "title": "Language Identification via Compositional Data Analysis: A Linear-Time Classifier Based on Log-Ratio Geometry",
+      "url": "https://arxiv.org/abs/2607.15238v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15238v1",
+      "description": "Language identification is commonly addressed using either neural architectures or statistical n-gram models. Neural approaches typically require substantial computational resources, whereas classical frequency-based methods offer efficient linear-time performance, but rely on distance metrics that are not always appropriate for compositional data. This work models character and bigram frequency distributions as compositional vectors constrained to the simplex and mapped via the centered log-rat",
+      "authors": [
+        "Paul-Andrei Pogăcean",
+        "Sanda-Maria Avram"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2607.15238v1",
+      "published_at": "2026-07-16T17:35:23Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "In-Place Tokenizer Expansion for Pre-trained LLMs",
+      "title": "In-Place Tokenizer Expansion for Pre-trained LLMs",
+      "url": "https://arxiv.org/abs/2607.15232v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15232v1",
+      "description": "A tokenizer fixed at the start of pre-training allocates vocabulary in proportion to the pre-training corpus, reflecting the deployment priorities at that time. When those priorities shift, languages added later are split into many more tokens per word, which can raise latency, compute, and energy consumption for users of those languages. Cloud models can afford a broad vocabulary because the embedding and LM-head matrices are a small fraction of their parameters. On a compact model those matric",
+      "authors": [
+        "Jimmy T. H. Smith",
+        "Tarek Dakhran",
+        "Alberto Cabrera",
+        "Simon S. Lee",
+        "Paul Pak"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.15232v1",
+      "published_at": "2026-07-16T17:32:38Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Data Driven Block Replacement Scheduling",
+      "title": "Data Driven Block Replacement Scheduling",
+      "url": "https://arxiv.org/abs/2607.15229v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15229v1",
+      "description": "We develop data-driven algorithms for maintaining $N$ independent identical machines under a \\textit{block replacement policy}, in which each machine is replaced upon failure and all machines are jointly replaced at regular intervals of length $k$. The goal is to learn the cost-minimizing interval $k^*$ from operational data when the lifetime distribution is unknown. At each decision epoch, the operator selects $k \\in \\{1, 2, \\ldots, K\\}$, observes the resulting failure history (a mixture of com",
+      "authors": [
+        "Aniruddhan Ganesaraman",
+        "VIdyadhar Kulkarni"
+      ],
+      "categories": [
+        "cs.LG",
+        "math.OC",
+        "stat.AP",
+        "stat.ML"
+      ],
+      "arxiv_id": "2607.15229v1",
+      "published_at": "2026-07-16T17:31:15Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "When Words Are Safe But Actions Kill: Probing Physical Danger Beyond Text Safety in Hidden-State Risk Space",
+      "title": "When Words Are Safe But Actions Kill: Probing Physical Danger Beyond Text Safety in Hidden-State Risk Space",
+      "url": "https://arxiv.org/abs/2607.15218v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15218v1",
+      "description": "Large language models (LLMs) increasingly serve as high-level planners for embodied agents, where linguistically benign instructions can become unsafe once grounded in the physical world. We study whether this physically grounded danger is the same safety problem as ordinary text-level content danger. Through hidden-state direction analysis and random-split null tests, we show that content danger (CD) and physical danger (PD) form separable signals in LLM representations across Qwen2.5-3B/7B/14B",
+      "authors": [
+        "Weimeng Wang",
+        "Ziqiang Wang",
+        "Zihang Zhan",
+        "Chuanpu Fu",
+        "Qi Li"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "arxiv_id": "2607.15218v1",
+      "published_at": "2026-07-16T17:20:38Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "NeuronSoup: Evolving Asynchronous, Shared-Neuron Temporal Graphs without Backpropagation",
+      "title": "NeuronSoup: Evolving Asynchronous, Shared-Neuron Temporal Graphs without Backpropagation",
+      "url": "https://arxiv.org/abs/2607.15217v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15217v1",
+      "description": "We present NeuronSoup, a neural computation architecture that replaces synchronous layer-by-layer processing with asynchronous, delay-mediated signal propagation through a pool of shared neurons. Each path in the network routes a continuous-valued signal from one input neuron to one output neuron through a variable number of intermediate hidden neurons. Hidden neurons are physically shared across paths: when two paths pass through the same neuron, the second arrival encounters the accumulated st",
+      "authors": [
+        "Subodh Kalia"
+      ],
+      "categories": [
+        "cs.NE",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.15217v1",
+      "published_at": "2026-07-16T17:18:59Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Symbal: Detecting Systematic Misalignments in Model-Generated Captions",
+      "title": "Symbal: Detecting Systematic Misalignments in Model-Generated Captions",
+      "url": "https://arxiv.org/abs/2607.15216v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15216v1",
+      "description": "Multimodal large language models (MLLMs) often introduce errors when generating image captions, resulting in misaligned image-text pairs. Our work focuses on a class of captioning errors that we refer to as systematic misalignments, where a recurring error in MLLM-generated captions is closely associated with the presence of a specific visual feature in the paired image. Given a vision-language dataset with MLLM-generated captions, our aim in this work is to detect such errors, a task we refer t",
+      "authors": [
+        "Maya Varma",
+        "Jean-Benoit Delbrouck",
+        "Sophie Ostmeier",
+        "Akshay Chaudhari",
+        "Curtis Langlotz"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.15216v1",
+      "published_at": "2026-07-16T17:18:37Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Expanding the Lexicon of Ge'ez Based African Languages: A Comparative Study of Amharic and Tigrinya",
+      "title": "Expanding the Lexicon of Ge'ez Based African Languages: A Comparative Study of Amharic and Tigrinya",
+      "url": "https://arxiv.org/abs/2607.15209v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15209v1",
+      "description": "Multilingual pre-trained language models (PLMs) exhibit degraded performance on low-resource, non-Latin-script languages, driven by high out-of-vocabulary (OOV) rates and excessive subword fragmentation that result from Latin-script-centric tokenizer training. We introduce VEXMLM, a vocabulary-extended variant of XLM-R targeting the two highest-resource Ge'ez-script languages, Amharic and Tigrinya, and further evaluated on 17 additional low-resource African languages (19 total). We train a langu",
+      "authors": [
+        "Hailay Kidu Teklehaymanot",
+        "Debela Desalegn Yadeta",
+        "Wolfgang Nejdl"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2607.15209v1",
+      "published_at": "2026-07-16T17:08:28Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Delocalization of bias in unadjusted Hamiltonian Monte Carlo and underdamped Langevin",
+      "title": "Delocalization of bias in unadjusted Hamiltonian Monte Carlo and underdamped Langevin",
+      "url": "https://arxiv.org/abs/2607.15208v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15208v1",
+      "description": "Unadjusted samplers such as unadjusted Hamiltonian Monte Carlo and underdamped Langevin are well-known to be biased. Metropolis--Hastings adjustment has been conventionally incorporated into Hamiltonian Monte Carlo to eliminate the bias. However, this adjustment can significantly increase the iteration complexity due to the small step size required for reasonable Metropolis acceptance rates. In this work, we extend the \\emph{delocalization of bias} phenomenon, previously established for the over",
+      "authors": [
+        "Yifan Chen",
+        "Xiaoou Cheng",
+        "Jonathan Niles-Weed",
+        "Jonathan Weare"
+      ],
+      "categories": [
+        "stat.CO",
+        "cs.LG",
+        "math.PR",
+        "stat.ML"
+      ],
+      "arxiv_id": "2607.15208v1",
+      "published_at": "2026-07-16T17:07:42Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "BadWAM: When World-Action Models Dream Right but Act Wrong",
+      "title": "BadWAM: When World-Action Models Dream Right but Act Wrong",
+      "url": "https://arxiv.org/abs/2607.15207v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15207v1",
+      "description": "World-action models (WAMs) are emerging as a promising foundation for embodied control: rather than predicting actions alone, they learn representations that couple action generation with future world prediction. This coupling is often viewed as a source of robustness, interpretability, and safety, as a robot's action can in principle be checked against its imagined future. In this paper, we show that this assumption is fragile. We introduce BadWAM, a unified framework for modeling and evaluatin",
+      "authors": [
+        "Qi Li",
+        "Xingyi Yang",
+        "Xinchao Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "arxiv_id": "2607.15207v1",
+      "published_at": "2026-07-16T17:04:15Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal Repository-Level Issue Localization",
+      "title": "MM-IssueLoc: A Controlled Benchmark for Evaluating Visual Evidence in Multimodal Repository-Level Issue Localization",
+      "url": "https://arxiv.org/abs/2607.15205v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15205v1",
+      "description": "Real repository issues routinely include visual evidence such as screenshots, error dialogs, rendered UI states, and logs, yet repository-level issue localization is evaluated mostly as a text-only task. Existing multimodal SE benchmarks evaluate end-to-end repair, entangling localization with patch synthesis and obscuring whether visual input helped, hurt, or was ignored. We introduce \\textbf{MM-IssueLoc}, a controlled benchmark and evaluation protocol for repository-level localization with vis",
+      "authors": [
+        "Shaoxiong Zhan",
+        "Shi Hu",
+        "Boyu Feng",
+        "Hai Lin",
+        "Andrew Gong"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.15205v1",
+      "published_at": "2026-07-16T17:02:25Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Self-Evolving Human-Centered Framework for Explainable Depression Symptom Annotation",
+      "title": "Self-Evolving Human-Centered Framework for Explainable Depression Symptom Annotation",
+      "url": "https://arxiv.org/abs/2607.15202v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15202v1",
+      "description": "Annotation quality is a major bottleneck in building reliable and explainable artificial intelligence (XAI) systems for mental health research. In depression-related datasets, labels are often assigned without structured evidence, symptom-level justification, or traceable alignment with the criteria of the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, Text Revision (DSM-5-TR), limiting both transparency and downstream model interpretability. We propose a self-evolving, ex",
+      "authors": [
+        "Hoang-Loc Cao",
+        "Van Pham",
+        "Truong Thanh Hung Nguyen",
+        "Phuc Truong Loc Nguyen",
+        "Phuc Ho"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.HC",
+        "cs.MA",
+        "cs.MM"
+      ],
+      "arxiv_id": "2607.15202v1",
+      "published_at": "2026-07-16T16:59:54Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Mask-Aware Policy Gradients for Diffusion Language Models",
+      "title": "Mask-Aware Policy Gradients for Diffusion Language Models",
+      "url": "https://arxiv.org/abs/2607.15200v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15200v1",
+      "description": "Reinforcement learning has proven effective for improving reasoning in large language models, but extending it to Masked Diffusion Language Models (MDLMs) remains challenging due to the intractability of the log-likelihood estimation. Existing approaches approximate this log-likelihood by modeling only the token predictions, ignoring the order in which positions are unmasked during generation. We observe that MDLM generation involves two decisions at each step: what tokens to place at each maske",
+      "authors": [
+        "Haran Raajesh",
+        "Kulin Shah",
+        "Adam Klivans",
+        "Philipp Krähenbühl"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.15200v1",
+      "published_at": "2026-07-16T16:57:34Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Subjective Risk Decomposition: A New View for Uncertainty Quantification",
+      "title": "Subjective Risk Decomposition: A New View for Uncertainty Quantification",
+      "url": "https://arxiv.org/abs/2607.15196v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15196v1",
+      "description": "We present a novel viewpoint for uncertainty quantification. Uncertainty measures are not primitives, in need of axioms and argumentation, but instead consequences, of higher-level modelling decisions. We show how epistemic and aleatoric uncertainty measures can be derived via decomposition of a subjective risk, based on a strictly proper loss. Reverse cross-entropy provides a prominent example, where decomposition recovers the classic information-theoretic uncertainty terms. The same approach r",
+      "authors": [
+        "Raghad Alamri",
+        "Michele Caprio",
+        "Gavin Brown"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.15196v1",
+      "published_at": "2026-07-16T16:52:54Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Plover: Steering GUI Agents through Plan-Centric Interaction",
+      "title": "Plover: Steering GUI Agents through Plan-Centric Interaction",
+      "url": "https://arxiv.org/abs/2607.15193v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.15193v1",
+      "description": "Graphical user interface (GUI) automation remains challenging in real-world environments, where dynamic layouts, unexpected dialogs, and evolving interface states can cause autonomous agents to drift from user intent. Recent vision-based multimodal agents improve flexibility by operating directly over screenshots and natural language instructions, but planning and adaptation often remain internal, limiting users' ability to inspect, supervise, or correct system behavior. We present Plover, a pla",
+      "authors": [
+        "Madhumitha Venkatesan",
+        "Shicheng Wen",
+        "Jiajing Guo",
+        "Jorge Piazentin Ono",
+        "Liu Ren"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.15193v1",
+      "published_at": "2026-07-16T16:48:39Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
