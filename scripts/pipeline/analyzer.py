@@ -30,7 +30,9 @@ class AIAnalyzer:
     CATEGORIES = [
         "文本生成", "图像创作", "代码开发", "数据分析",
         "音视频", "办公效率", "学术研究", "开发工具",
-        "设计创意", "营销推广", "教育培训", "其他",
+        "设计创意", "营销推广", "教育培训",
+        "AI Agent", "金融科技", "安全合规", "生活服务",
+        "其他",
     ]
 
     # 许可/定价等级
@@ -52,6 +54,10 @@ class AIAnalyzer:
         "营销推广":   {"min_utility": 1},
         "教育培训":   {"min_utility": 1},
         "数据分析":   {"min_utility": 1},
+        "AI Agent":   {"min_utility": 3},
+        "金融科技":   {"min_utility": 3},
+        "安全合规":   {"min_utility": 3},
+        "生活服务":   {"min_utility": 1},
         "代码开发":   {"min_utility": 7},
         "开发工具":   {"min_utility": 6},
         "学术研究":   {"min_utility": 5},
@@ -450,7 +456,7 @@ class AIAnalyzer:
 [
   {{
     "index": 1,
-    "category": "一级分类(文本生成/图像创作/代码开发/数据分析/音视频/办公效率/学术研究/开发工具/设计创意/营销推广/教育培训/其他)",
+    "category": "一级分类(文本生成/图像创作/代码开发/数据分析/音视频/办公效率/学术研究/开发工具/设计创意/营销推广/教育培训/AI Agent/金融科技/安全合规/生活服务/其他)",
     "subcategory": "二级分类",
     "audience": "general/developer/researcher",
     "utility_score": 5,
@@ -789,7 +795,7 @@ class AIAnalyzer:
         t = text.lower()
         for c in self.CATEGORIES:
             if c in t or t in c: return c
-        kw_map = {"文本生成":["text","写作","chat","翻译"],"图像创作":["image","图片","绘图"],"代码开发":["code","编程","开发"],
+        kw_map = {"文本生成":["text","写作","chat","翻译"],"图像创作":["image","图片","绘图"],"代码开发":["code","编程","开发"],"AI Agent":["agent","multi-agent","智能体"],"金融科技":["trading","finance","投资"],"安全合规":["security","安全","guard"],"生活服务":["lifestyle","个人","journal"],
                   "数据分析":["data","分析"],"音视频":["audio","video","语音"],"办公效率":["office","办公","效率"],
                   "学术研究":["研究","论文"],"开发工具":["tool","cli","工具"],"设计创意":["design","设计"],
                   "营销推广":["marketing","营销"],"教育培训":["education","教育","学习"]}
@@ -1008,6 +1014,20 @@ class AIAnalyzer:
         text = f"{name} {desc} {' '.join(topics)}".lower()
 
         category_rules = [
+            ("AI Agent", ["agent", "multi-agent", "agentic", "orchestrat",
+                         "autonomous", "crew", "swarm", "langgraph", "autogen",
+                         "background agent", "agent platform", "agent operator",
+                         "agent memory", "agent framework"]),
+            ("金融科技", ["finance", "trading", "invest", "hedge fund", "stock",
+                         "portfolio", "quantitative", "financial", "交易", "投资",
+                         "金融", "quant"]),
+            ("安全合规", ["security", "malware", "firewall", "audit", "compliance",
+                         "guard", "protect", "scanner", "penetration", "pentest",
+                         "vulnerability", "安全", "合规", "防护", "扫描"]),
+            ("生活服务", ["lifestyle", "personal", "health", "journal", "diary",
+                         "recipe", "fashion", "style", "movie", "chess", "game",
+                         "name generator", "stylist", "adhd", "生存", "生活",
+                         "个人助理", "日常"]),
             ("代码开发", ["code", "编程", "developer", "debug", "ide", "compiler",
                          "git", "api", "sdk", "framework", "编程辅助"]),
             ("开发工具", ["devtool", "deploy", "docker", "kubernetes", "ci/cd",
@@ -1048,6 +1068,10 @@ class AIAnalyzer:
             "数据分析": self._infer_data_subcategory(text),
             "办公效率": self._infer_office_subcategory(text),
             "学术研究": self._infer_research_subcategory(text),
+            "AI Agent": self._infer_agent_subcategory(text),
+            "金融科技": self._infer_fintech_subcategory(text),
+            "安全合规": self._infer_security_subcategory(text),
+            "生活服务": self._infer_lifestyle_subcategory(text),
         }
 
         subcategory = subcategory_map.get(best_cat, "")
@@ -1116,6 +1140,60 @@ class AIAnalyzer:
         if any(kw in text for kw in ["model", "模型", "training"]):
             return "模型研究"
         return "学术工具"
+
+    def _infer_agent_subcategory(self, text: str) -> str:
+        if any(kw in text for kw in ["multi-agent", "multi agent", "crew", "swarm"]):
+            return "多智能体"
+        if any(kw in text for kw in ["background", "autonomous", "持续"]):
+            return "自主代理"
+        if any(kw in text for kw in ["memory", "记忆", "cognee"]):
+            return "Agent记忆"
+        if any(kw in text for kw in ["platform", "operator", "orchestrat", "hub", "调度"]):
+            return "Agent平台"
+        if any(kw in text for kw in ["browser", "web", "browse", "浏览"]):
+            return "浏览器Agent"
+        if any(kw in text for kw in ["skill", "tool", "skill"]):
+            return "Agent工具"
+        return "Agent框架"
+
+    def _infer_fintech_subcategory(self, text: str) -> str:
+        if any(kw in text for kw in ["trading", "交易", "量化"]):
+            return "AI交易"
+        if any(kw in text for kw in ["hedge", "fund", "基金", "投资"]):
+            return "投资组合"
+        if any(kw in text for kw in ["stock", "股票"]):
+            return "股票分析"
+        return "金融工具"
+
+    def _infer_security_subcategory(self, text: str) -> str:
+        if any(kw in text for kw in ["malware", "scanner", "guard", "恶意"]):
+            return "恶意软件防护"
+        if any(kw in text for kw in ["firewall", "prompt", "dapto", "防火墙"]):
+            return "AI防火墙"
+        if any(kw in text for kw in ["pentest", "penetration", "pentagi", "渗透"]):
+            return "安全测试"
+        if any(kw in text for kw in ["audit", "compliance", "合规", "审计"]):
+            return "合规审计"
+        return "安全工具"
+
+    def _infer_lifestyle_subcategory(self, text: str) -> str:
+        if any(kw in text for kw in ["journal", "diary", "日记", "日志"]):
+            return "AI日记"
+        if any(kw in text for kw in ["health", "medical", "健康", "医疗"]):
+            return "健康医疗"
+        if any(kw in text for kw in ["movie", "entertainment", "电影", "娱乐"]):
+            return "娱乐推荐"
+        if any(kw in text for kw in ["recipe", "food", "cook", "食谱", "美食"]):
+            return "美食食谱"
+        if any(kw in text for kw in ["style", "fashion", "stylist", "穿搭", "时尚"]):
+            return "个人形象"
+        if any(kw in text for kw in ["game", "chess", "棋", "游戏"]):
+            return "AI游戏"
+        if any(kw in text for kw in ["name", "generator", "生成名"]):
+            return "创意工具"
+        if any(kw in text for kw in ["argue", "debate", "argument", "辩论"]):
+            return "沟通训练"
+        return "生活助手"
 
     def _generate_tags(self, name: str, desc: str, topics: List[str], raw: Dict) -> Dict:
         """生成五维标签"""
@@ -1445,7 +1523,7 @@ Stars: {tool.get('raw_data', {}).get('stargazers_count', 'N/A')}
 
 请返回JSON格式：
 {{
-  "category": "一级分类(文本生成/图像创作/代码开发/数据分析/音视频/办公效率/学术研究/开发工具/设计创意/营销推广/教育培训/其他)",
+  "category": "一级分类(文本生成/图像创作/代码开发/数据分析/音视频/办公效率/学术研究/开发工具/设计创意/营销推广/教育培训/AI Agent/金融科技/安全合规/生活服务/其他)",
   "subcategory": "二级分类",
   "license_tier": "open-source/freemium/free/paid/source-available/unknown",
   "license_type": "具体许可证如MIT/Apache等",
