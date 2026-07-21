@@ -38,6 +38,7 @@ export interface ToolItem {
   features?: string[]
   best_for?: string
   notable?: string
+  ai_relevance?: 'ai-core' | 'ai-powered' | 'ai-enabled'
 }
 
 export interface ToolsJsonData {

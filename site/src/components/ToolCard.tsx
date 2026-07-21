@@ -104,6 +104,17 @@ function sourceLabel(source?: string): string {
   return map[source] || source
 }
 
+function aiRelevanceBadge(relevance?: string): { icon: string; label: string; cls: string } | null {
+  if (!relevance) return null
+  if (relevance === 'ai-core')
+    return { icon: '🧠', label: 'AI核心', cls: 'bg-gradient-to-r from-violet-500 to-indigo-500 text-white shadow-sm shadow-violet-200 dark:shadow-violet-900/30' }
+  if (relevance === 'ai-powered')
+    return { icon: '⚡', label: 'AI驱动', cls: 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300 border border-blue-200 dark:border-blue-800/50' }
+  if (relevance === 'ai-enabled')
+    return { icon: '🔗', label: 'AI集成', cls: 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 border border-slate-200 dark:border-slate-700' }
+  return null
+}
+
 interface Props {
   tool: ToolItem
   onClick: (tool: ToolItem) => void
@@ -198,6 +209,12 @@ export default function ToolCard({ tool, onClick, index = 0 }: Props) {
 
         {/* Tags + badges */}
         <div className="flex flex-wrap items-center gap-1.5 mb-2">
+          {(() => {
+            const arb = aiRelevanceBadge(tool.ai_relevance)
+            return arb ? (
+              <span className={`badge text-[9px] font-semibold ${arb.cls}`}>{arb.icon} {arb.label}</span>
+            ) : null
+          })()}
           {license && (
             <span className={`badge text-[9px] ${license.cls}`}>{license.label}</span>
           )}

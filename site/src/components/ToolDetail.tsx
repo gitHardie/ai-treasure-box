@@ -56,6 +56,32 @@ function audienceInfo(audience?: string): { icon: string; label: string; desc: s
   return null
 }
 
+function aiRelevanceInfo(relevance?: string): { icon: string; label: string; desc: string; cls: string; border_cls: string } | null {
+  if (!relevance) return null
+  if (relevance === 'ai-core')
+    return {
+      icon: '🧠', label: 'AI核心',
+      desc: '核心AI能力，项目以AI/机器学习为主要功能',
+      cls: 'bg-gradient-to-r from-violet-500 to-indigo-500 text-white',
+      border_cls: 'border-violet-300 dark:border-violet-700'
+    }
+  if (relevance === 'ai-powered')
+    return {
+      icon: '⚡', label: 'AI驱动',
+      desc: 'AI驱动型产品，深度集成AI能力作为核心功能之一',
+      cls: 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300',
+      border_cls: 'border-blue-200 dark:border-blue-800/50'
+    }
+  if (relevance === 'ai-enabled')
+    return {
+      icon: '🔗', label: 'AI集成',
+      desc: '集成AI功能，AI作为辅助或增强能力',
+      cls: 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400',
+      border_cls: 'border-slate-200 dark:border-slate-700'
+    }
+  return null
+}
+
 const tagDimensionLabels: Record<string, string> = {
   function: '🔧 功能标签',
   scenario: '🎯 场景标签',
@@ -144,6 +170,14 @@ export default function ToolDetail({ tool, onClose }: Props) {
 
             {/* Badges row */}
             <div className="flex flex-wrap gap-2 mt-3">
+              {(() => {
+                const arb = aiRelevanceInfo(tool.ai_relevance)
+                return arb ? (
+                  <span className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold border ${arb.cls} ${arb.border_cls}`}>
+                    {arb.icon} {arb.label}
+                  </span>
+                ) : null
+              })()}
               {tool.category && (
                 <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 rounded-lg text-xs font-medium">
                   📁 {tool.category}
@@ -193,6 +227,16 @@ export default function ToolDetail({ tool, onClose }: Props) {
                 </span>
               )}
             </div>
+
+            {/* AI Relevance description */}
+            {(() => {
+              const arb = aiRelevanceInfo(tool.ai_relevance)
+              return arb ? (
+                <p className="text-[11px] text-indigo-400 dark:text-indigo-500 italic">
+                  {arb.icon} {arb.desc}
+                </p>
+              ) : null
+            })()}
 
             {/* Overview */}
             {tool.ai_analysis && (
