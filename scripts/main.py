@@ -301,6 +301,10 @@ def cmd_deploy(args):
             # 去重：按name检查
             existing_names = {t.get("name", "") for t in all_tools}
             new_china = [t for t in china_items if t.get("name", "") not in existing_names]
+            # 为 China 手动收录工具设置默认 AI 相关性（手动收录的都是 AI 工具）
+            for t in new_china:
+                if not t.get("ai_relevance"):
+                    t["ai_relevance"] = "ai-enabled"
             all_tools.extend(new_china)
             logger.info(f"[Deploy] Merged {len(new_china)} China tools")
         except Exception as e:

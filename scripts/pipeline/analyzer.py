@@ -58,6 +58,77 @@ class AIAnalyzer:
         "其他":       {"min_utility": 4},
     }
 
+    # ============================
+    # AI 相关性检测常量
+    # ============================
+
+    # 强 AI 信号词（正则表达式，匹配任意一个即高度相关）
+    STRONG_AI_SIGNALS = [
+        r'\bllm\b', r'\bgpt[\-\s]?\d', r'\bclaude\b', r'\bgemini\b', r'\bcopilot\b',
+        r'\bagent[s]?\b', r'\bagentic\b', r'\bchatbot\b',
+        r'\bopenai\b', r'\banthropic\b', r'\bmistral\b', r'\bdeepseek\b',
+        r'\btransformer\b', r'\bdiffusion\b', r'\bmidjourney\b', r'\bdalle\b',
+        r'\blangchain\b', r'\bllama\b', r'\bqwen\b',
+        r'\btext.to.(image|video|audio|speech|music)\b',
+        r'\bimage.generation\b', r'\bvoice.clon', r'\btts\b', r'\bstt\b',
+        r'\bspeech.recognition\b', r'\bnatural.language\b',
+        r'\bcomputer.vision\b', r'\bobject.detection\b',
+        r'\bfine.tun', r'\bpretrain', r'\binference\b', r'\bembedding\b',
+        r'\bvector.database\b', r'\brag\b', r'\bretrieval.augmented\b',
+        r'\bwhisper\b', r'\bsuno\b',
+        r'\bneural.network', r'\bdeep.learning\b', r'\bmachine.learning\b',
+        r'\bartificial.intelligence\b', r'\bai.model\b',
+        r'\bai(\s|[-_])?(agent|chat|writer|editor|designer|search|studio|voice|fund|powered|hedge)\b',
+        r'\bprompt\b.*\bengineer', r'\bmultimodal\b',
+        r'\btext.generation\b', r'\bcode.generation\b',
+        r'\bmcp\b.*\b(server|tool|protocol|model)',
+        r'\b(stable.diffusion|flux\.1|sdxl)\b',
+    ]
+
+    # 明确的非 AI 工具名称（精确匹配小写）
+    NON_AI_EXACT_NAMES = {
+        # 编程语言
+        'typescript', 'javascript', 'python', 'rust', 'golang', 'java', 'kotlin', 'swift', 'ruby',
+        # 开发基础设施（无 AI 功能）
+        'bun', 'grpc', 'protobuf', 'prisma', 'abseil-cpp', 'asio', 'meshoptimizer', 'yaml-cpp',
+        # 教程/学习索引（非 AI 产品）
+        'build-your-own-x', 'computer-science', 'cs-self-learning',
+        # 操作系统/系统工具
+        'hyprland', 'croc', 'win11debloat', 'how-to-secure-a-linux-server',
+        'core',  # Home Assistant
+        'zapret-discord-youtube', 'open-seo', 'joltphysics',
+        'awesome-design-md',  # 设计系统文件集合
+        'checkout',  # GitHub Action
+        # 非 AI 设计工具
+        'penpot',
+        # 历史项目
+        'apollo-11',
+    }
+
+    # 非 AI 描述模式（正则，匹配描述中的特征）
+    NON_AI_DESC_PATTERNS = [
+        r'superset\s+of\s+javascript',
+        r'compiles?\s+(to|into)\s+javascript',
+        r'next.generation\s+orm',
+        r'protocol\s+buffers',
+        r'c\+\+\s+based\s+grpc',
+        r'open.source\s+home\s+automation',
+        r'javascript\s+runtime.*bundler',
+        r'tiling\s+wayland',
+        r'original\s+apollo.*source\s+code',
+        r'remove\s+pre.installed\s+apps',
+        r'open.source\s+design\s+platform',
+        r'mesh\s+optimization\s+library',
+        r'rigid\s+body\s+physics',
+        r'common\s+libraries\s+\(c\+\+\)',
+    ]
+
+    # 信任来源（这些来源本身已过滤为 AI 相关）
+    TRUSTED_AI_SOURCES = [
+        'producthunt-ai', 'taaft', 'theresanaiforthat',
+        'arxiv-ai', 'aibot', 'aishenqi', 'hackernews-ai',
+    ]
+
     def __init__(self, coze_api_key: Optional[str] = None, workflow_id: Optional[str] = None,
                  batch_size: int = 20, batch_timeout: int = 120, mode: str = "batch",
                  inclusion_rules: Optional[Dict] = None,
@@ -138,6 +209,90 @@ class AIAnalyzer:
 
         return all_results
 
+    def _get_source_from_tool(self, tool: Dict) -> str:
+        """从工具数据推断数据来源"""
+        tid = tool.get("id", "")
+        if tid.startswith("producthunt"): return "producthunt-ai"
+        if tid.startswith("github"): return "github-trending"
+        if tid.startswith("theresanaiforthat"): return "taaft"
+        if tid.startswith("arxiv"): return "arxiv-ai"
+        if tid.startswith("hackernews"): return "hackernews-ai"
+        if tid.startswith("aibot"): return "aibot"
+        if tid.startswith("aishenqi"): return "aishenqi"
+        platforms = tool.get("platform", [])
+        if isinstance(platforms, list):
+            p = platforms[0] if platforms else ""
+        else:
+            p = str(platforms)
+        if "producthunt" in p: return "producthunt-ai"
+        if "github" in p: return "github-trending"
+        if "taaft" in p: return "taaft"
+        return "other"
+
+    def check_ai_relevance(self, tool: Dict) -> Dict:
+        """
+        判断工具是否与 AI 真正相关。
+        
+        返回: {
+            'is_ai': bool,          # 是否 AI 相关
+            'label': str,           # ai-core / ai-powered / ai-enabled / not-ai
+            'reason': str,          # 判断理由
+        }
+        
+        逻辑：
+        1. 精确黑名单 → 直接排除
+        2. 描述模式匹配 → 直接排除
+        3. 强 AI 信号匹配 → 确认 AI
+        4. 信任来源 → 默认通过
+        5. GitHub 来源 → 严格检查
+        6. 其他 → 默认通过
+        """
+        name = (tool.get("name", "") or "").lower().strip()
+        desc = (tool.get("description", "") or "").lower()
+        text = f"{name} {desc}"
+        source = self._get_source_from_tool(tool)
+        
+        # 1. 精确黑名单
+        if name in self.NON_AI_EXACT_NAMES:
+            return {"is_ai": False, "label": "not-ai", "reason": f"黑名单: {name}"}
+        
+        # 2. 描述模式匹配
+        for pattern in self.NON_AI_DESC_PATTERNS:
+            if re.search(pattern, desc):
+                return {"is_ai": False, "label": "not-ai", "reason": "非AI描述模式"}
+        
+        # 3. 强 AI 信号
+        strong_count = sum(1 for p in self.STRONG_AI_SIGNALS if re.search(p, text))
+        if strong_count >= 1:
+            label = "ai-core" if strong_count >= 2 else "ai-powered"
+            return {"is_ai": True, "label": label, "reason": f"{strong_count}个强AI信号"}
+        
+        # 4. 信任来源默认通过
+        if source in self.TRUSTED_AI_SOURCES:
+            return {"is_ai": True, "label": "ai-enabled", "reason": f"信任来源({source})"}
+        
+        # 5. GitHub Trending 严格检查
+        if source == "github-trending":
+            # 名称含 "ai" 是高信号
+            if re.search(r'\bai\b', name):
+                return {"is_ai": True, "label": "ai-powered", "reason": "名称含AI"}
+            # 描述中的 AI 信号
+            ai_in_desc = bool(re.search(r'\bai\b', desc))
+            other_ai_keywords = ['ml', 'model', 'neural', 'inference', 'training',
+                                  'embedding', 'vector', 'generate', 'voice',
+                                  'deep', 'smart', 'learn']
+            other_count = sum(1 for kw in other_ai_keywords if kw in text)
+            if ai_in_desc and other_count >= 1:
+                return {"is_ai": True, "label": "ai-enabled", "reason": "描述含AI+其他信号"}
+            if ai_in_desc:
+                return {"is_ai": True, "label": "ai-enabled", "reason": "描述含AI"}
+            if other_count >= 2:
+                return {"is_ai": True, "label": "ai-enabled", "reason": f"{other_count}个弱AI信号"}
+            return {"is_ai": False, "label": "not-ai", "reason": "GitHub无明确AI信号"}
+        
+        # 6. 其他来源默认通过
+        return {"is_ai": True, "label": "ai-enabled", "reason": "默认通过"}
+
     def filter_for_inclusion(self, analyzed_tools: List[Dict]) -> tuple:
         """
         根据收录规则过滤分析结果。
@@ -150,6 +305,16 @@ class AIAnalyzer:
         excluded = []
         
         for tool in analyzed_tools:
+            # === AI 相关性预检（新增）===
+            relevance = self.check_ai_relevance(tool)
+            tool["ai_relevance"] = relevance["label"]
+            
+            if not relevance["is_ai"]:
+                # 非 AI 工具直接排除
+                tool["rejection_reason"] = f"非AI工具: {relevance['reason']}"
+                excluded.append(tool)
+                continue
+            
             category = tool.get("category", "其他")
             utility = tool.get("utility_score", 5)
             should_include = tool.get("should_include", True)
