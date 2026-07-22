@@ -13,6 +13,7 @@ import os
 import re
 import time
 import logging
+from pathlib import Path
 import hashlib
 from typing import List, Dict, Any, Optional
 from datetime import datetime, timezone
@@ -459,6 +460,9 @@ class AIAnalyzer:
             else:
                 search_line = '搜索热度: 无数据'
                 snippet_line = ''
+            # China detection signal
+            likely_china = tool.get('likely_china', False)
+            china_line = f'疑似国内工具: {"是" if likely_china else "否"}'
             entry = (
                 f"--- 工具 #{idx} ---\n"
                 f"名称: {tool.get('name', '')}\n"
@@ -467,6 +471,7 @@ class AIAnalyzer:
             if snippet_line:
                 entry += f"{snippet_line}\n"
             entry += (
+                f"{china_line}\n"
                 f"来源: {tool.get('source', '')}\n"
                 f"URL: {tool.get('url', '')}\n"
                 f"描述: {tool.get('description', '')}\n"
@@ -537,6 +542,10 @@ class AIAnalyzer:
   * warm: 有一定知名度和用户群
   * moderate: 小众但有特定受众
   * cold: 几乎无人知晓或非常新
+- is_china_tool: 判断这个工具是否来自中国公司/团队。综合判断依据：
+  * 产品主要面向中文用户、有ICP备案号、官网主要语言是中文 → true
+  * 面向全球/英文用户、无中国特征 → false
+  * 如果输入数据中有 likely_china 字段为 true，优先采信
 
 注意：必须返回恰好 {count} 个对象的JSON数组，index从1到{count}。"""
 
@@ -827,6 +836,7 @@ class AIAnalyzer:
         except: conf = 0.5
         r["ai_confidence"] = conf
         r["is_china_tool"] = bool(analysis.get("is_china_tool", False))
+        r["likely_china"] = bool(analysis.get("likely_china", False))
         hs = analysis.get("health_status", "unknown")
         r["health_status"] = hs if hs in self.HEALTH_LEVELS else "unknown"
         # AI relevance and popularity from LLM analysis
@@ -906,7 +916,16 @@ class AIAnalyzer:
         health = self._assess_health(tool_data)
 
         # === 国内工具判断 ===
-        is_china = self._is_china_tool(url, desc, source)
+        # 优先使用pipeline预检测的结果（china_detector.py并发抓取）
+        # 如果没有预检测结果，再本地抓取
+        likely_china = tool_data.get('likely_china')
+        if likely_china is None:
+            china_data = self._detect_china_signals(url)
+            likely_china = china_data.get('likely_china', False)
+            china_signals_list = china_data.get('china_signals', [])
+        else:
+            china_signals_list = tool_data.get('china_signals', [])
+        is_china = self._is_china_tool(url, desc, source, likely_china=likely_china)
 
         # 本地推断受众面和实用性评分
         audience, utility = self._infer_audience_utility(name, desc, category, source, raw)
@@ -933,6 +952,8 @@ class AIAnalyzer:
             "ai_confidence": 0.6,  # 本地分析置信度较低
             "is_china_tool": is_china,
             "health_status": health,
+            "likely_china": likely_china,
+            "china_signals": china_signals_list,
         }
 
     def _detect_license_tier(self, tool: Dict, license_type: str) -> str:
@@ -1404,39 +1425,116 @@ class AIAnalyzer:
         except:
             return "unknown"
 
-    def _is_china_tool(self, url: str, desc: str, source: str) -> bool:
-        """判断是否国内工具（基于URL域名和关键词，不盲信来源）"""
-        china_tlds = [".cn", ".com.cn", ".net.cn", ".org.cn"]
-        china_keywords = ["国内", "中国", "国产", "本土"]
 
-        # 1. 中国顶级域名
+    # ICP备案号正则（覆盖各种格式）
+    _ICP_RE = re.compile(
+        r'[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤川青藏琼宁]'
+        r'ICP[备证]?\d{6,14}号?[-\d]*'
+    )
+
+    # 中国相关域名后缀
+    _CHINA_TLDS = {'.cn', '.com.cn', '.net.cn', '.org.cn'}
+
+    def _detect_china_signals(self, url: str) -> Dict:
+        """
+        抓取产品首页，检测是否国内工具。
+        信号：ICP备案号（铁证）、页面语言、中文字符占比。
+        结果缓存 7 天。
+        """
+        cache_dir = Path(__file__).parent.parent.parent / "data" / "cache"
+        cache_dir.mkdir(parents=True, exist_ok=True)
+        cache_file = cache_dir / "china_detect_cache.json"
+
+        # 加载缓存
+        cache = {}
+        if cache_file.exists():
+            try:
+                with open(cache_file, 'r', encoding='utf-8') as f:
+                    cache = json.load(f)
+            except Exception:
+                cache = {}
+
+        domain = urlparse(url).netloc.lower()
+        cached = cache.get(domain)
+        if cached and (time.time() - cached.get('ts', 0)) < 7 * 86400:
+            return cached['data']
+
+        signals = []
+        likely = False
+
+        # 1. 中国顶级域名（轻量信号）
+        if any(domain.endswith(tld) for tld in self._CHINA_TLDS):
+            signals.append('cn_tld')
+            likely = True
+
+        # 2. 抓取首页
+        try:
+            resp = requests.get(url, timeout=5, allow_redirects=True,
+                                headers={'User-Agent': 'Mozilla/5.0 (compatible; AIBotDetector/1.0)'})
+            html = resp.text[:8000]  # 只看前8K，footer通常在前面或通过模板渲染
+
+            # ICP备案号（铁证）
+            if self._ICP_RE.search(html):
+                signals.append('icp_found')
+                likely = True
+
+            # html lang 属性
+            lang_match = re.search(r'<html[^>]+lang=["\']?([^"\'>\s]+)', html, re.IGNORECASE)
+            if lang_match:
+                lang = lang_match.group(1).lower()
+                if lang.startswith('zh'):
+                    signals.append('lang_zh')
+                    likely = True
+
+            # 中文字符占比（在可见文本区域）
+            # 去掉标签后的纯文本
+            text_only = re.sub(r'<[^>]+>', '', html)
+            if len(text_only) > 30:
+                chinese_chars = len(re.findall(r'[一-鿿]', text_only))
+                ratio = chinese_chars / len(text_only)
+                if ratio > 0.08:  # 中文内容占比>8%
+                    signals.append(f'zh_ratio_{ratio:.2f}')
+                    likely = True
+
+        except Exception as e:
+            logger.debug(f"[ChinaDetect] Fetch failed for {url}: {e}")
+
+        result = {'likely_china': likely, 'china_signals': signals}
+        cache[domain] = {'ts': time.time(), 'data': result}
+
+        try:
+            with open(cache_file, 'w', encoding='utf-8') as f:
+                json.dump(cache, f, ensure_ascii=False)
+        except Exception:
+            pass
+
+        return result
+
+    def _is_china_tool(self, url: str, desc: str, source: str, likely_china: bool = False) -> bool:
+        """
+        判断是否国内工具。
+        优先级：首页检测信号(ICP/语言) > 域名关键词 > 描述关键词。
+        不再盲信 source 标记。
+        """
+        # 1. 首页检测（最可靠：ICP备案/中文语言）
+        if likely_china:
+            return True
+
+        # 2. 中国顶级域名
         from urllib.parse import urlparse
         try:
             domain = urlparse(url).netloc.lower()
         except Exception:
             domain = ""
 
-        if any(domain.endswith(tld) for tld in china_tlds):
+        if any(domain.endswith(tld) for tld in self._CHINA_TLDS):
             return True
 
-        # 2. 已知的国内公司域名（而非来源标记）
-        china_url_patterns = [
-            "baidu.com", "aliyun.com", "tencent.com", "bytedance.com",
-            "zhipuai.cn", "moonshot.cn", "baichuan-ai.com", "01.ai",
-            "deepseek.com", "volcengine.com", "bcebos.com",
-            "kuaishou.com", "xfyun.cn", "tiangong.cn", "doubao.com",
-            "coze.cn", "jianying.com", "wps.cn",
-        ]
-        if any(pattern in domain for pattern in china_url_patterns):
-            return True
-
-        # 3. 描述中的中文关键词
+        # 3. 描述中的中国关键词
         text = f"{url} {desc}".lower()
+        china_keywords = ["国内", "中国", "国产", "本土"]
         if any(kw in text for kw in china_keywords):
             return True
-
-        # 注意：不再因 source 是 aibot/aishenqi 就盲目标记为中国工具
-        # 这些导航站也收录了大量外国工具
 
         return False
 

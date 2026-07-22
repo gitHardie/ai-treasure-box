@@ -29,6 +29,7 @@ from pipeline.data_model import DailySnapshot
 from pipeline.scheduler import CollectionScheduler
 from pipeline.tool_database import ToolDatabase
 from pipeline.search_enricher import SearchEnricher
+from pipeline.china_detector import enrich_china_signals
 
 logging.basicConfig(
     level=logging.INFO,
@@ -240,6 +241,10 @@ def cmd_analyze(args):
     enricher = SearchEnricher(cache_dir=data_dir / "cache")
     pending = enricher.enrich(pending)
     logger.info("[Analyze] Search enrichment complete")
+
+    # China detection: fetch homepages and check ICP/language
+    pending = enrich_china_signals(pending)
+    logger.info("[Analyze] China detection complete")
 
     analyzer = _create_analyzer(config)
     db = _get_db()
