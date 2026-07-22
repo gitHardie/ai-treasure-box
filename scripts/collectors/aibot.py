@@ -3,7 +3,7 @@ AI-Bot.cn 采集器 v2.1
 采集国内优质AI工具导航 - 只采集外部工具URL，排除导航页面
 
 v2.1改动:
-- 过滤安装包URL（.exe/.msi/.dmg等）
+- 只采集产品首页URL（path="/"），过滤子页面和下载链接
 - 清理URL中的UTM追踪参数
 - 清理工具名称中的列表序号前缀（如"1.剪映"→"剪映"）
 """
@@ -103,12 +103,13 @@ class Collector(BaseCollector):
         return resp.text
 
     def _is_external_tool_url(self, url: str) -> bool:
-        """判断是否是有效的外部工具URL（排除自身域名和导航站）"""
+        """判断是否是有效的外部工具URL（只接受产品首页）"""
         if not url or not url.startswith("http"):
             return False
 
         try:
-            domain = urlparse(url).netloc.lower()
+            parsed = urlparse(url)
+            domain = parsed.netloc.lower()
             if domain.startswith("www."):
                 domain = domain[4:]
         except Exception:
@@ -122,17 +123,13 @@ class Collector(BaseCollector):
         if domain in NAVIGATION_DOMAINS:
             return False
 
-        # 排除非http链接和安装包/二进制文件
-        exclude = ["javascript:", "mailto:", "#", ".pdf", ".jpg", ".png", ".gif",
-                    ".exe", ".msi", ".dmg", ".deb", ".rpm", ".apk", ".pkg", ".zip", ".rar", ".7z"]
-        url_lower = url.lower()
-        if any(ex in url_lower for ex in exclude):
+        # 只保留产品首页：path 必须是 "/" 或空
+        # 子页面（/ai-chat-avatar/）、安装包（/installer.exe）等一律过滤
+        path = parsed.path.rstrip("/")
+        if path:
             return False
 
         return True
-
-    # 安装包/二进制文件扩展名
-    INSTALLER_EXTENSIONS = {".exe", ".msi", ".dmg", ".deb", ".rpm", ".apk", ".pkg", ".zip", ".rar", ".7z"}
 
     def _clean_name(self, name: str) -> str:
         """清理SEO标题后缀和列表序号"""
