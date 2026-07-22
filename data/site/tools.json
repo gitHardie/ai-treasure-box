@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-22T12:30:25.088532+00:00",
-  "count": 359,
+  "generated_at": "2026-07-22T14:16:19.482827+00:00",
+  "count": 368,
   "tools": [
     {
       "name": "agent-skills",
@@ -96,8 +96,8 @@
       "tool_id": "unknown_officecli",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "b553adf22ac8cb4acb8110fb99428371",
       "source": "github-trending",
       "audience": "general",
@@ -743,8 +743,8 @@
       "tool_id": "unknown_skills",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "4596427e36d7b5179b66dbcc07e0b0f4",
       "source": "github-trending",
       "audience": "general",
@@ -1083,8 +1083,8 @@
       "tool_id": "unknown_show-hn-revibing-nanochat-s-inference-model-in-c-with-ggml",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "380523bf44eef2b0b97f8aec1b3a9d4e",
       "source": "hackernews-ai",
       "audience": "researcher",
@@ -1132,8 +1132,8 @@
       "tool_id": "unknown_show-hn-forge-3mb-rust-binary-that-coordinates-multi-ai-coding-agents-via-mcp",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "860bc0aac67fbf6630ba5a5801e33db8",
       "source": "hackernews-ai",
       "audience": "general",
@@ -1161,32 +1161,47 @@
       ],
       "type": "news",
       "id": "hackernews-ai_show-hn-adding-mistral-codestral-and-gpt-4o-to-jupyter-notebooks",
-      "category": "代码开发",
-      "subcategory": "开发辅助",
-      "license_tier": "unknown",
-      "license_type": "",
+      "category": "文本生成",
+      "subcategory": "对话与问答",
+      "license_tier": "open-source",
+      "license_type": "MIT",
       "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [
-          "GPT-4",
-          "Mistral"
+        "attribute": [
+          "开源",
+          "可定制",
+          "轻量级"
+        ],
+        "function": [
+          "对话生成",
+          "问答系统",
+          "文本理解"
         ],
         "quality": [
-          "新星"
+          "高响应速度",
+          "多语言支持",
+          "易于集成"
+        ],
+        "scenario": [
+          "智能客服",
+          "内容创作",
+          "教育辅助"
+        ],
+        "tech": [
+          "自然语言处理",
+          "深度学习",
+          "Transformer"
         ]
       },
-      "ai_analysis": "Show HN: Adding Mistral Codestral and GPT-4o to Jupyter Notebooks 是一款代码开发领域的工具，适合普通用户直接使用，无需技术背景。",
-      "ai_confidence": 0.6,
+      "ai_analysis": "这是一个基于AI的文本生成工具，主要用于生成对话和回答用户问题，适合开发者、内容创作者和教育工作者使用。",
+      "ai_confidence": 0.8,
       "is_china_tool": false,
-      "health_status": "unknown",
+      "health_status": "active",
       "tool_id": "unknown_show-hn-adding-mistral-codestral-and-gpt-4o-to-jupyter-notebooks",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
-      "content_hash": "f3cfd7c620dbbc52e37fa90a4cc4a09f",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
+      "content_hash": "f0a6f7057b44df5b5edacbc396336682",
       "source": "hackernews-ai",
       "audience": "general",
       "utility_score": 7,
@@ -1233,8 +1248,8 @@
       "tool_id": "unknown_show-hn-eastworld-quickly-add-generative-agents-to-games-visual-novels-etc",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "6f4e4df7a11ad5e8ca6f03bfbce090e4",
       "source": "hackernews-ai",
       "audience": "general",
@@ -1284,8 +1299,8 @@
       "tool_id": "unknown_show-hn-agi-lite-for-free-semantic-ai-boost-with-wfgy-stability-3-6-open-sdk",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "8cd0638171373ecd33ede6eb207a25cd",
       "source": "hackernews-ai",
       "audience": "general",
@@ -1338,8 +1353,8 @@
       "tool_id": "unknown_show-hn-took-10-months-to-make-ai-processor-chat-and-voice-agent-thing",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "afe83a7c0cac40d5915183ce3ba3a7b6",
       "source": "hackernews-ai",
       "audience": "general",
@@ -1387,8 +1402,8 @@
       "tool_id": "unknown_show-hn-pluely-open-source-alternative-to-cluely-10mb-always-on-display",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "4009e6610c7a50437442bfaee6b6c160",
       "source": "hackernews-ai",
       "audience": "general",
@@ -1436,8 +1451,8 @@
       "tool_id": "unknown_show-hn-hollow-serverless-web-perception-for-ai-agents",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "8cf14dd716c68f85cd23d1c2a7b358e3",
       "source": "hackernews-ai",
       "audience": "general",
@@ -1485,8 +1500,8 @@
       "tool_id": "unknown_show-hn-a-cli-tool-to-have-llms-edit-and-add-code-to-an-existing-code-base",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "9957e10d2994eeb5683bbd1214bfa803",
       "source": "hackernews-ai",
       "audience": "general",
@@ -1802,8 +1817,8 @@
         "function": [],
         "scenario": [],
         "attribute": [
-          "免费",
-          "开源"
+          "开源",
+          "免费"
         ],
         "tech": [
           "RAG"
@@ -1819,8 +1834,8 @@
       "tool_id": "github-trending_awesome-llm-apps",
       "first_seen": "2026-07-12T18:57:44.285244+00:00",
       "collected_at": "2026-07-12T18:57:44.285244+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "e058a906c9eafade9273bb38de164896",
       "audience": "general",
       "utility_score": 6,
@@ -2373,8 +2388,8 @@
       "tool_id": "github-trending_openinterpreter",
       "first_seen": "2026-07-15T12:31:08.561197+00:00",
       "collected_at": "2026-07-15T12:31:08.561197+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "ff3a7379cb8dcc1dd9a236b793668311",
       "audience": "developer",
       "utility_score": 4,
@@ -7414,8 +7429,8 @@
       "tool_id": "github-trending_ossie",
       "first_seen": "2026-07-18T12:36:33.457021+00:00",
       "collected_at": "2026-07-18T12:36:33.457021+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "48fca96caf4f0e6293a65ccd75f97513",
       "features": [
         "AI驱动",
@@ -7469,8 +7484,8 @@
       "tool_id": "github-trending_ai-engineering-from-scratch",
       "first_seen": "2026-07-18T12:36:33.457021+00:00",
       "collected_at": "2026-07-18T12:36:33.457021+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "1403a1949894868633cdc0bbe94e6cd1",
       "features": [
         "AI驱动"
@@ -7658,8 +7673,8 @@
       "tool_id": "producthunt-ai_buzzy",
       "first_seen": "2026-07-18T12:36:33.457021+00:00",
       "collected_at": "2026-07-18T12:36:33.457021+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "2263feb14c25ec960d627be0dc5ea945",
       "features": [
         "AI驱动",
@@ -10035,8 +10050,8 @@
       "tool_id": "github-trending_kimi-cli",
       "first_seen": "2026-07-19T18:55:26.685213+00:00",
       "collected_at": "2026-07-19T18:55:26.685213+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "c05a46363449cac11471a7d7470e92f9",
       "ai_relevance": "ai-powered",
       "features": [
@@ -14821,8 +14836,8 @@
       "tool_id": "github-trending_worldmonitor",
       "first_seen": "2026-07-21T12:29:57.818913+00:00",
       "collected_at": "2026-07-21T12:29:57.818913+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "2b3d923a1de2060bfee5fd6d0fa29ec1",
       "ai_relevance": "ai-powered"
     },
@@ -14929,8 +14944,8 @@
       "tool_id": "github-trending_i-have-adhd",
       "first_seen": "2026-07-21T12:29:57.818913+00:00",
       "collected_at": "2026-07-21T12:29:57.818913+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "dd487515229f9d163d7273e022eb3346",
       "ai_relevance": "ai-powered"
     },
@@ -15035,8 +15050,8 @@
       "tool_id": "github-trending_pi-web",
       "first_seen": "2026-07-21T12:29:57.818913+00:00",
       "collected_at": "2026-07-21T12:29:57.818913+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "f3eed4b11a62fdd7bf3a281fdfcd697b",
       "ai_relevance": "ai-powered"
     },
@@ -17875,8 +17890,8 @@
       "ai_relevance": "ai-powered",
       "first_seen": "2026-07-21T16:08:14.300931+00:00",
       "collected_at": "2026-07-21T16:08:14.300931+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "64f040e4e7fd206768407aa3513393e0"
     },
     {
@@ -18052,8 +18067,8 @@
       "ai_relevance": "ai-core",
       "first_seen": "2026-07-21T16:08:14.300931+00:00",
       "collected_at": "2026-07-21T16:08:14.300931+00:00",
-      "ai_analyzed_at": "2026-07-22T00:24:05.661726+00:00",
-      "last_checked": "2026-07-22T00:24:05.661726+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "bd6e8174db25c6e77ee89fa0cabcc26d"
     },
     {
@@ -18785,8 +18800,8 @@
       "ai_relevance": "ai-powered",
       "first_seen": "2026-07-22T00:24:05.661726+00:00",
       "collected_at": "2026-07-22T00:24:05.661726+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "9eb692d210d04331d73d7d224a723188"
     },
     {
@@ -18829,8 +18844,8 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T00:24:05.661726+00:00",
       "collected_at": "2026-07-22T00:24:05.661726+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "74170abe65db92d7eab2c44cc20e76be"
     },
     {
@@ -18873,8 +18888,8 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T00:24:05.661726+00:00",
       "collected_at": "2026-07-22T00:24:05.661726+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "1b66d33e2240fa9e573b0875fd523090"
     },
     {
@@ -19016,8 +19031,8 @@
       "ai_relevance": "ai-powered",
       "first_seen": "2026-07-22T00:24:05.661726+00:00",
       "collected_at": "2026-07-22T00:24:05.661726+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "1a6318670b9429ee6f399a8580d8cd0e"
     },
     {
@@ -19066,8 +19081,8 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T00:24:05.661726+00:00",
       "collected_at": "2026-07-22T00:24:05.661726+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "bd79a37e8b12c3d97d077b1628309394"
     },
     {
@@ -19114,8 +19129,8 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T00:24:05.661726+00:00",
       "collected_at": "2026-07-22T00:24:05.661726+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "546a95d72a0601847b464417d370abef"
     },
     {
@@ -19164,8 +19179,8 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T00:24:05.661726+00:00",
       "collected_at": "2026-07-22T00:24:05.661726+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "0f8a9e5a8dadf9b56d7ab9d339788a60"
     },
     {
@@ -19212,8 +19227,8 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T00:24:05.661726+00:00",
       "collected_at": "2026-07-22T00:24:05.661726+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "e4cf5ecd4d8342dfcd1e5bc51d5c4c22"
     },
     {
@@ -19261,8 +19276,8 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T00:24:05.661726+00:00",
       "collected_at": "2026-07-22T00:24:05.661726+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "e7f6293af57dc252c16751d640e1df19"
     },
     {
@@ -19459,8 +19474,8 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T00:24:05.661726+00:00",
       "collected_at": "2026-07-22T00:24:05.661726+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "b817f4aef33023fbc8afdf96f62bd9d0"
     },
     {
@@ -19507,8 +19522,8 @@
       "ai_relevance": "ai-core",
       "first_seen": "2026-07-22T00:24:05.661726+00:00",
       "collected_at": "2026-07-22T00:24:05.661726+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "0dec3434b1fe4b8cc127d18c9ab55382"
     },
     {
@@ -19907,8 +19922,8 @@
       "ai_relevance": "ai-powered",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "55ad87147b4208c32bc2c73ca9e08506"
     },
     {
@@ -19959,8 +19974,8 @@
       "ai_relevance": "ai-powered",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "1939cb43cf0e0114495028324b452445"
     },
     {
@@ -20047,8 +20062,8 @@
       "ai_relevance": "ai-powered",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "23f2c71d3a5b53ddd84c15c4b2aeff0a"
     },
     {
@@ -20118,8 +20133,8 @@
       "ai_relevance": "ai-core",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "b82ee9336faf82bd3043c7b161ae5adb"
     },
     {
@@ -20266,8 +20281,8 @@
       "ai_relevance": "ai-core",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "b6c367d957518f6a022c6300099e3e46"
     },
     {
@@ -20339,8 +20354,8 @@
       "ai_relevance": "ai-powered",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "acc7d795ebe221bff44b842b966764ce"
     },
     {
@@ -20419,8 +20434,8 @@
       "ai_relevance": "ai-core",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "9f5d40c748918668fafb0e438618f413"
     },
     {
@@ -20488,8 +20503,8 @@
       "ai_relevance": "ai-powered",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "4e18cdbb477e5d4f307cb1dc648fcfc5"
     },
     {
@@ -20501,9 +20516,9 @@
       "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
       "tags": {
         "function": [
+          "自动化",
           "搜索",
-          "文本生成",
-          "自动化"
+          "文本生成"
         ],
         "scenario": [
           "设计工作",
@@ -20564,8 +20579,8 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "62786fbf1454c52750890530f5181fed"
     },
     {
@@ -20581,8 +20596,8 @@
         ],
         "scenario": [],
         "attribute": [
-          "免费",
-          "浏览器插件"
+          "浏览器插件",
+          "免费"
         ],
         "tech": [
           "Claude"
@@ -20639,8 +20654,8 @@
       "ai_relevance": "ai-core",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "bc99109c883e58addd9152df0565fcc1"
     },
     {
@@ -20652,9 +20667,9 @@
       "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
       "tags": {
         "function": [
+          "自动化",
           "对话",
-          "文本生成",
-          "自动化"
+          "文本生成"
         ],
         "scenario": [],
         "attribute": [],
@@ -20713,8 +20728,8 @@
       "ai_relevance": "ai-powered",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "d55aa465bba0e253f9bd5acb0ec7e67b"
     },
     {
@@ -20730,8 +20745,8 @@
         ],
         "scenario": [],
         "attribute": [
-          "免费",
-          "API服务"
+          "API服务",
+          "免费"
         ],
         "tech": [],
         "quality": [
@@ -20806,8 +20821,8 @@
       "ai_relevance": "ai-core",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "104661b6fc1bb09b37e90ad509413633"
     },
     {
@@ -20819,14 +20834,14 @@
       "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
       "tags": {
         "function": [
-          "搜索",
+          "自动化",
           "对话",
-          "文本生成",
-          "自动化"
+          "搜索",
+          "文本生成"
         ],
         "scenario": [
-          "学术研究",
           "内容创作",
+          "学术研究",
           "企业团队"
         ],
         "attribute": [],
@@ -20893,8 +20908,8 @@
       "ai_relevance": "ai-powered",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "56f74e23ac21bf06f106868c7e405e7d"
     },
     {
@@ -20971,8 +20986,8 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "2ad076d4ea0d43f4d7e04a8ef2bd3076"
     },
     {
@@ -21044,8 +21059,8 @@
       "ai_relevance": "ai-core",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "e5d8f16e8f8c96539a51586d552476d6"
     },
     {
@@ -21121,8 +21136,8 @@
       "ai_relevance": "ai-powered",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "90fd9a0b637d796445520e686a1df4bd"
     },
     {
@@ -21221,8 +21236,8 @@
       "ai_relevance": "ai-powered",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "a6f32f1b6044166a11f3bd32c9ffdf1d"
     },
     {
@@ -21301,8 +21316,8 @@
       "ai_relevance": "ai-core",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "d8619cc6db5be41f4213032828c84fa6"
     },
     {
@@ -21317,8 +21332,8 @@
           "搜索"
         ],
         "scenario": [
-          "学术研究",
-          "内容创作"
+          "内容创作",
+          "学术研究"
         ],
         "attribute": [],
         "tech": [],
@@ -21374,8 +21389,8 @@
       "ai_relevance": "ai-powered",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "5330fde8288e8edb3d54b201c1e7a251"
     },
     {
@@ -21444,8 +21459,8 @@
       "ai_relevance": "ai-powered",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "52e3d4cecd4ffaf88f5c033f94bbfe87"
     },
     {
@@ -21774,8 +21789,8 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "896fe11c834d641e078f14a859b6a857"
     },
     {
@@ -21822,8 +21837,8 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "767cc3a781d81dbf0b9795c73ad73706"
     },
     {
@@ -21873,8 +21888,8 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "b153105ba871f53510c3d1dd5690e398"
     },
     {
@@ -21923,8 +21938,8 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "8c6ba77e8f7af07706f6344a09dd5bbe"
     },
     {
@@ -21971,8 +21986,8 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "c5db4717c79142fd1d68753435948a9a"
     },
     {
@@ -22021,8 +22036,8 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "f79ab978487a4c876f3ca6a765dabfc9"
     },
     {
@@ -22069,8 +22084,8 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "a138a2e2e312a4fa90661886a07ed5a9"
     },
     {
@@ -22117,8 +22132,8 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "53836750b694e74823e4681bd8121359"
     },
     {
@@ -22166,9 +22181,610 @@
       "ai_relevance": "ai-enabled",
       "first_seen": "2026-07-22T12:30:25.024483+00:00",
       "collected_at": "2026-07-22T12:30:25.024483+00:00",
-      "ai_analyzed_at": "2026-07-22T12:30:25.024483+00:00",
-      "last_checked": "2026-07-22T12:30:25.024483+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
       "content_hash": "b08ef2a07fd80a227cc8f1c8361ce4c3"
+    },
+    {
+      "name": "BotCritic",
+      "slug": "botcritic",
+      "url": "https://www.producthunt.com/products/botcritic",
+      "description": "Stress-test your AI chatbot before your customers do. Most chatbot testing tools check if your bot follows a script. BotCritic tests whether it survives a real customer — frustrated, confused, multilingual, or trying to break it. What makes it different: full conversation transcripts as evidence, a rewritten system prompt targeting the exact failures found, and the ability to re-test after fixes to prove they worked. We hold our own product to the same standard — we ran BotCritic on its own pitch and published the result, hallucination included.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [
+          "对话"
+        ],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/e28dff58-6c96-470a-9b80-3b3bc51808ac.png?auto=format",
+      "raw_data": {
+        "ph_id": "1200919",
+        "tagline": "Stress-test your AI chatbot before your customers do",
+        "votes_count": 13,
+        "comments_count": 3,
+        "created_at": "2026-07-22T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 38,
+        "makers": [
+          {
+            "name": "Amjad shaik",
+            "username": "amjad_shaik"
+          }
+        ],
+        "topics": [
+          "SaaS",
+          "Developer Tools",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_botcritic",
+      "category": "文本生成",
+      "subcategory": "聊天助手",
+      "audience": "general",
+      "utility_score": 9,
+      "should_include": true,
+      "rejection_reason": "",
+      "license_tier": "paid",
+      "license_type": "",
+      "ai_analysis": "BotCritic 是一款文本生成领域的付费工具，适合普通用户直接使用，无需技术背景。",
+      "features": [
+        "AI驱动",
+        "多语言支持"
+      ],
+      "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+      "notable": "实用性极高，强烈推荐",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_botcritic",
+      "ai_relevance": "ai-powered",
+      "first_seen": "2026-07-22T14:16:19.403153+00:00",
+      "collected_at": "2026-07-22T14:16:19.403153+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
+      "content_hash": "32bca0a3ab978bdc7f4d619b33a75e4f"
+    },
+    {
+      "name": "Afterword",
+      "slug": "afterword-5",
+      "url": "https://www.producthunt.com/products/afterword-5",
+      "description": "Voice journaling, supercharged with AI. Afterword is a voice journaling app for iPhone: speak your mind and AI writes it into a private, encrypted journal with titles, tags, mood, weekly summaries, and chat over your entries. Free to try, no card required. Afterword is the most advanced AI-powered voice journaling app on the market.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [
+          "语音合成",
+          "对话",
+          "文本生成"
+        ],
+        "scenario": [],
+        "attribute": [
+          "免费"
+        ],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/75dbc425-9d45-4459-b607-ab24a118baf0.png?auto=format",
+      "raw_data": {
+        "ph_id": "1203176",
+        "tagline": "Voice journaling, supercharged with AI",
+        "votes_count": 12,
+        "comments_count": 6,
+        "created_at": "2026-07-22T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 43,
+        "makers": [
+          {
+            "name": "Marco van Hylckama Vlieg",
+            "username": "marco_van_hylckama_vlieg"
+          }
+        ],
+        "topics": [
+          "Writing",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_afterword",
+      "category": "生活服务",
+      "subcategory": "AI日记",
+      "audience": "general",
+      "utility_score": 9,
+      "should_include": true,
+      "rejection_reason": "",
+      "license_tier": "free",
+      "license_type": "",
+      "ai_analysis": "Afterword 是一款生活服务领域的免费工具，适合普通用户直接使用，无需技术背景。",
+      "features": [
+        "AI驱动",
+        "开源免费"
+      ],
+      "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+      "notable": "免费使用，零成本上手；实用性极高，强烈推荐",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_afterword",
+      "ai_relevance": "ai-powered",
+      "first_seen": "2026-07-22T14:16:19.403153+00:00",
+      "collected_at": "2026-07-22T14:16:19.403153+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
+      "content_hash": "91cf49326c80f8b758a4536cd2f9015a"
+    },
+    {
+      "name": "Still Your Words",
+      "slug": "still-your-words",
+      "url": "https://www.producthunt.com/products/still-your-words",
+      "description": "AI proofreader - fixes dictation without erasing your voice. Speech-to-text is great until you read what it wrote: wrong words, garbled phrases, repeated sentences. Most AI cleanup tools \"fix\" this by rewriting everything into polished corporate English — which no longer sounds like you. Still Your Words cleans up messy dictation while keeping your own words. Two modes: Balanced and Polished. Every correction is a clickable mark — skim the changes and click any one to keep your original wording.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [
+          "语音合成"
+        ],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/7a1b5ded-18a9-4ed6-96ff-084c6de6524f.jpeg?auto=format",
+      "raw_data": {
+        "ph_id": "1201740",
+        "tagline": "AI proofreader - fixes dictation without erasing your voice",
+        "votes_count": 12,
+        "comments_count": 7,
+        "created_at": "2026-07-22T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 44,
+        "makers": [
+          {
+            "name": "Umesh nagar",
+            "username": "umesh92x"
+          }
+        ],
+        "topics": [
+          "Productivity",
+          "Writing",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_still-your-words",
+      "category": "音视频",
+      "subcategory": "",
+      "audience": "general",
+      "utility_score": 9,
+      "should_include": true,
+      "rejection_reason": "",
+      "license_tier": "paid",
+      "license_type": "",
+      "ai_analysis": "Still Your Words 是一款音视频领域的付费工具，适合普通用户直接使用，无需技术背景。",
+      "features": [
+        "AI驱动",
+        "CLI工具"
+      ],
+      "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+      "notable": "实用性极高，强烈推荐",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_still-your-words",
+      "ai_relevance": "ai-enabled",
+      "first_seen": "2026-07-22T14:16:19.403153+00:00",
+      "collected_at": "2026-07-22T14:16:19.403153+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
+      "content_hash": "f88ba4744faeff1bd753076d8b5ffa14"
+    },
+    {
+      "name": "Qualzo",
+      "slug": "qualzo",
+      "url": "https://www.producthunt.com/products/qualzo",
+      "description": "Your whole story, one link. Qualzo turns your resume and LinkedIn profile into a Professional Companion, an AI chatbot that answers questions about your experience, skills, and availability 24/7, grounded only in your own data.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [
+          "对话"
+        ],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/1f4ae148-c0ad-4a2b-be82-dd776f0a67f6.x-icon?auto=format",
+      "raw_data": {
+        "ph_id": "1202141",
+        "tagline": "Your whole story, one link",
+        "votes_count": 11,
+        "comments_count": 4,
+        "created_at": "2026-07-22T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 46,
+        "makers": [
+          {
+            "name": "Ahmed Abdullah",
+            "username": "ahmed_abdullah17"
+          }
+        ],
+        "topics": [
+          "Hiring",
+          "Artificial Intelligence",
+          "Tech"
+        ]
+      },
+      "id": "producthunt-ai_qualzo",
+      "category": "数据分析",
+      "subcategory": "数据分析",
+      "audience": "general",
+      "utility_score": 9,
+      "should_include": true,
+      "rejection_reason": "",
+      "license_tier": "paid",
+      "license_type": "",
+      "ai_analysis": "Qualzo 是一款数据分析领域的付费工具，适合普通用户直接使用，无需技术背景。",
+      "features": [
+        "AI驱动"
+      ],
+      "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+      "notable": "实用性极高，强烈推荐",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_qualzo",
+      "ai_relevance": "ai-powered",
+      "first_seen": "2026-07-22T14:16:19.403153+00:00",
+      "collected_at": "2026-07-22T14:16:19.403153+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
+      "content_hash": "84c642323679d91653a60c687ee6693e"
+    },
+    {
+      "name": "Klemly",
+      "slug": "klemly",
+      "url": "https://www.producthunt.com/products/klemly",
+      "description": "AI support widget that trains on your content. Klemly helps small teams add an AI support widget to any website in minutes. Train it on URLs, PDFs, or pasted text. It answers in 13 languages, captures leads, flags frustrated customers, and escalates to a human instead of guessing.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "内容创作",
+          "企业团队"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/456e3162-8093-4ad0-b0c8-5acaefb10ac8.png?auto=format",
+      "raw_data": {
+        "ph_id": "1202194",
+        "tagline": "AI support widget that trains on your content",
+        "votes_count": 10,
+        "comments_count": 8,
+        "created_at": "2026-07-22T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 50,
+        "makers": [
+          {
+            "name": "Yoseph Berhane",
+            "username": "yoseph_berhane"
+          }
+        ],
+        "topics": [
+          "SaaS",
+          "Developer Tools",
+          "Artificial Intelligence",
+          "GitHub"
+        ]
+      },
+      "id": "producthunt-ai_klemly",
+      "category": "营销推广",
+      "subcategory": "",
+      "audience": "general",
+      "utility_score": 10,
+      "should_include": true,
+      "rejection_reason": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "Klemly 是一款营销推广领域的工具，适合普通用户直接使用，无需技术背景。",
+      "features": [
+        "AI驱动",
+        "协作功能"
+      ],
+      "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+      "notable": "实用性极高，强烈推荐",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_klemly",
+      "ai_relevance": "ai-enabled",
+      "first_seen": "2026-07-22T14:16:19.403153+00:00",
+      "collected_at": "2026-07-22T14:16:19.403153+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
+      "content_hash": "bd6bf0e8deaaa542adae99ae31fb4ec4"
+    },
+    {
+      "name": "Supermux: AFK. Still Shipping.",
+      "slug": "supermux-afk-still-shipping",
+      "url": "https://www.producthunt.com/products/supermux-afk-still-shipping",
+      "description": "Access Claude Code, Codex, OpenCode from any device you have. Supermux is the full agentic development environment that runs on every device you have, with your own subscription. Start a task in your computer then pick up from your phone. Get a push the moment an agent needs you. Read the diff and ship from your phone. Use terminal if you need to run a quick command. It supports Claude Code, Codex, Cursor, OpenCode, Grok and many more to come. MIT, self-hosted, no vendor cloud, no account.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [
+          "本地部署"
+        ],
+        "tech": [
+          "Claude"
+        ],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/df1d51df-9190-4330-a809-15f07b99b189.png?auto=format",
+      "raw_data": {
+        "ph_id": "1203090",
+        "tagline": "Access Claude Code, Codex, OpenCode from any device you have",
+        "votes_count": 10,
+        "comments_count": 5,
+        "created_at": "2026-07-22T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 53,
+        "makers": [
+          {
+            "name": "Ahmet Hüseyin Dok",
+            "username": "ahmethuseyindok"
+          }
+        ],
+        "topics": [
+          "Developer Tools",
+          "Artificial Intelligence",
+          "GitHub",
+          "Vibe coding"
+        ]
+      },
+      "id": "producthunt-ai_supermux-afk-still-shipping",
+      "category": "AI Agent",
+      "subcategory": "Agent框架",
+      "audience": "developer",
+      "utility_score": 7,
+      "should_include": true,
+      "rejection_reason": "",
+      "license_tier": "paid",
+      "license_type": "",
+      "ai_analysis": "Supermux: AFK. Still Shipping. 是一个面向开发者的AI Agent类付费项目，适合有技术背景的用户集成到工作流中使用。",
+      "features": [
+        "云端部署",
+        "本地运行",
+        "开源免费"
+      ],
+      "best_for": "开发者和技术人员，适合集成到工作流中",
+      "notable": "实用性良好，值得一试",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_supermux-afk-still-shipping",
+      "ai_relevance": "ai-core",
+      "first_seen": "2026-07-22T14:16:19.403153+00:00",
+      "collected_at": "2026-07-22T14:16:19.403153+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
+      "content_hash": "634dfa482bf95dfd5fc2fd3c1e7b0acb"
+    },
+    {
+      "name": "Koiven",
+      "slug": "koiven",
+      "url": "https://www.producthunt.com/products/koiven",
+      "description": "Grow an aquarium by hydrating.. Koiven turns drinking water into something you actually want to open. Log a drink and your on-screen aquarium fills: the water rises and your fish, Zenna, swims. Under the calm surface it's a complete tracker: personalized daily goal, streaks, weekly dots, and free custom drinks. Private by design: fully offline, no account, no email. Your data stays on your device. Free to use; Pro unlocks more fish, themes, and drink slots. Android today, iOS once the app funds it.",
+      "source": "producthunt-ai",
+      "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "个人开发者",
+          "设计工作"
+        ],
+        "attribute": [
+          "移动端",
+          "免费"
+        ],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "producthunt"
+      ],
+      "type": "ai_tool",
+      "thumbnail_url": "https://ph-files.imgix.net/56d9e198-1e2a-4d90-9903-ac1f1e91e36f.png?auto=format",
+      "raw_data": {
+        "ph_id": "1202567",
+        "tagline": "Grow an aquarium by hydrating.",
+        "votes_count": 9,
+        "comments_count": 8,
+        "created_at": "2026-07-22T07:01:00Z",
+        "featured_at": null,
+        "daily_rank": 54,
+        "makers": [
+          {
+            "name": "Vyzenna",
+            "username": "vyzenna"
+          }
+        ],
+        "topics": [
+          "Android",
+          "Health & Fitness",
+          "Artificial Intelligence"
+        ]
+      },
+      "id": "producthunt-ai_koiven",
+      "category": "生活服务",
+      "subcategory": "生活助手",
+      "audience": "general",
+      "utility_score": 9,
+      "should_include": true,
+      "rejection_reason": "",
+      "license_tier": "free",
+      "license_type": "",
+      "ai_analysis": "Koiven 是一款生活服务领域的免费工具，适合普通用户直接使用，无需技术背景。",
+      "features": [
+        "AI驱动",
+        "本地运行",
+        "开源免费"
+      ],
+      "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+      "notable": "免费使用，零成本上手；实用性极高，强烈推荐",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "producthunt-ai_koiven",
+      "ai_relevance": "ai-enabled",
+      "first_seen": "2026-07-22T14:16:19.403153+00:00",
+      "collected_at": "2026-07-22T14:16:19.403153+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
+      "content_hash": "8e3409d97889dba4a768bf597a862b1a"
+    },
+    {
+      "name": "T-Shirt Design AI",
+      "url": "https://theresanaiforthat.com/ai/t-shirt-design-ai/",
+      "description": "Type it. Wear it.",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [],
+        "scenario": [
+          "设计工作"
+        ],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "t-shirt-design-ai"
+      },
+      "id": "theresanaiforthat_t-shirt-design-ai",
+      "category": "设计创意",
+      "subcategory": "",
+      "audience": "general",
+      "utility_score": 9,
+      "should_include": true,
+      "rejection_reason": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "T-Shirt Design AI 是一款设计创意领域的工具，适合普通用户直接使用，无需技术背景。",
+      "features": [
+        "AI驱动"
+      ],
+      "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+      "notable": "实用性极高，强烈推荐",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_t-shirt-design-ai",
+      "ai_relevance": "ai-enabled",
+      "first_seen": "2026-07-22T14:16:19.403153+00:00",
+      "collected_at": "2026-07-22T14:16:19.403153+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
+      "content_hash": "6da8d0e118a3e7e00a15bf607358aa55"
+    },
+    {
+      "name": "Analyse",
+      "url": "https://theresanaiforthat.com/ai/analyse-net/",
+      "description": "Know why your traffic moves. Fix it before competitors do.",
+      "source": "theresanaiforthat",
+      "source_url": "https://theresanaiforthat.com",
+      "tags": {
+        "function": [],
+        "scenario": [],
+        "attribute": [],
+        "tech": [],
+        "quality": [
+          "新星"
+        ]
+      },
+      "platform": [
+        "taaft"
+      ],
+      "type": "ai_tool",
+      "raw_data": {
+        "slug": "analyse-net"
+      },
+      "id": "theresanaiforthat_analyse",
+      "category": "其他",
+      "subcategory": "",
+      "audience": "general",
+      "utility_score": 9,
+      "should_include": true,
+      "rejection_reason": "",
+      "license_tier": "unknown",
+      "license_type": "",
+      "ai_analysis": "Analyse 是一款其他领域的工具，适合普通用户直接使用，无需技术背景。",
+      "features": [
+        "实用工具"
+      ],
+      "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+      "notable": "实用性极高，强烈推荐",
+      "ai_confidence": 0.6,
+      "is_china_tool": false,
+      "health_status": "unknown",
+      "tool_id": "theresanaiforthat_analyse",
+      "ai_relevance": "ai-enabled",
+      "first_seen": "2026-07-22T14:16:19.403153+00:00",
+      "collected_at": "2026-07-22T14:16:19.403153+00:00",
+      "ai_analyzed_at": "2026-07-22T14:16:19.403153+00:00",
+      "last_checked": "2026-07-22T14:16:19.403153+00:00",
+      "content_hash": "14a2a26a7efc9863bb2fefbb9d02c96b"
     },
     {
       "name": "即梦AI",
