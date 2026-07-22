@@ -371,9 +371,6 @@ export default function ToolDetail({ tool, onClose }: Props) {
           {/* ===== Footer ===== */}
           <div className="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-800">
             <div className="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-500">
-              {tool.source_name && (
-                <span>来源: {tool.source_name}</span>
-              )}
               {tool.collected_at && (
                 <span>采集: {new Date(tool.collected_at).toLocaleDateString('zh-CN')}</span>
               )}

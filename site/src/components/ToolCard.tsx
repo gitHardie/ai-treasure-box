@@ -94,15 +94,6 @@ function audienceBadge(audience?: string): { icon: string; label: string; cls: s
   return null
 }
 
-function sourceLabel(source?: string): string {
-  if (!source) return ''
-  const map: Record<string, string> = {
-    'github-trending': 'GitHub',
-    'arxiv-ai': 'ArXiv',
-    'hackernews-ai': 'HN',
-  }
-  return map[source] || source
-}
 
 function aiRelevanceBadge(relevance?: string): { icon: string; label: string; cls: string } | null {
   if (!relevance) return null
@@ -129,7 +120,6 @@ export default function ToolCard({ tool, onClick, index = 0 }: Props) {
   const health = useMemo(() => healthDot(tool.health_status), [tool.health_status])
   const domain = getDomain(tool.url)
   const displayTags = getDisplayTags(tool)
-  const src = sourceLabel(tool.source)
 
   return (
     <div
@@ -268,9 +258,6 @@ export default function ToolCard({ tool, onClick, index = 0 }: Props) {
             </span>
             )}
           </div>
-          {src && (
-            <span className="truncate max-w-[100px]">via {src}</span>
-          )}
         </div>
       </div>
     </div>
