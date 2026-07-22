@@ -132,7 +132,9 @@ class AIAnalyzer:
     # 信任来源（这些来源本身已过滤为 AI 相关）
     TRUSTED_AI_SOURCES = [
         'producthunt-ai', 'taaft', 'theresanaiforthat',
-        'arxiv-ai', 'aibot', 'aishenqi', 'hackernews-ai',
+        'arxiv-ai', 'hackernews-ai',
+        # aibot/aishenqi 已移除：这些导航站收录了大量非AI工具和外国工具，
+        # 需要逐个验证AI相关性，不能盲目信任
     ]
 
     def __init__(self, coze_api_key: Optional[str] = None, workflow_id: Optional[str] = None,
@@ -1403,23 +1405,38 @@ class AIAnalyzer:
             return "unknown"
 
     def _is_china_tool(self, url: str, desc: str, source: str) -> bool:
-        """判断是否国内工具"""
-        china_domains = [".cn", ".com.cn", ".net.cn", ".org.cn"]
+        """判断是否国内工具（基于URL域名和关键词，不盲信来源）"""
+        china_tlds = [".cn", ".com.cn", ".net.cn", ".org.cn"]
         china_keywords = ["国内", "中国", "国产", "本土"]
 
-        if any(url.endswith(d) for d in china_domains):
+        # 1. 中国顶级域名
+        from urllib.parse import urlparse
+        try:
+            domain = urlparse(url).netloc.lower()
+        except Exception:
+            domain = ""
+
+        if any(domain.endswith(tld) for tld in china_tlds):
             return True
 
-        if source in ["aishenqi", "aigcrank", "aibot", "toolify-ai", "aig123"]:
-            return True
-
+        # 2. 已知的国内公司域名（而非来源标记）
         china_url_patterns = [
             "baidu.com", "aliyun.com", "tencent.com", "bytedance.com",
             "zhipuai.cn", "moonshot.cn", "baichuan-ai.com", "01.ai",
-            "deepseek.com", "volcengine.com", "bcebos.com"
+            "deepseek.com", "volcengine.com", "bcebos.com",
+            "kuaishou.com", "xfyun.cn", "tiangong.cn", "doubao.com",
+            "coze.cn", "jianying.com", "wps.cn",
         ]
-        if any(pattern in url for pattern in china_url_patterns):
+        if any(pattern in domain for pattern in china_url_patterns):
             return True
+
+        # 3. 描述中的中文关键词
+        text = f"{url} {desc}".lower()
+        if any(kw in text for kw in china_keywords):
+            return True
+
+        # 注意：不再因 source 是 aibot/aishenqi 就盲目标记为中国工具
+        # 这些导航站也收录了大量外国工具
 
         return False
 

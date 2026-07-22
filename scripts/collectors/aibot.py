@@ -1,12 +1,11 @@
 """
-AI-Bot.cn 采集器 v2
+AI-Bot.cn 采集器 v2.1
 采集国内优质AI工具导航 - 只采集外部工具URL，排除导航页面
 
-v2改动:
-- 排除ai-bot.cn自身域名的链接（只采集外部工具URL）
-- 修复编码问题（meta charset检测 + apparent_encoding）
-- 过滤导航/聚合页面
-- 过滤SEO标题（"是什么"/"怎么样"/"好用吗"）
+v2.1改动:
+- 过滤安装包URL（.exe/.msi/.dmg等）
+- 清理URL中的UTM追踪参数
+- 清理工具名称中的列表序号前缀（如"1.剪映"→"剪映"）
 """
 import re
 import logging
@@ -123,19 +122,36 @@ class Collector(BaseCollector):
         if domain in NAVIGATION_DOMAINS:
             return False
 
-        # 排除非http链接
-        exclude = ["javascript:", "mailto:", "#", ".pdf", ".jpg", ".png", ".gif"]
-        if any(ex in url.lower() for ex in exclude):
+        # 排除非http链接和安装包/二进制文件
+        exclude = ["javascript:", "mailto:", "#", ".pdf", ".jpg", ".png", ".gif",
+                    ".exe", ".msi", ".dmg", ".deb", ".rpm", ".apk", ".pkg", ".zip", ".rar", ".7z"]
+        url_lower = url.lower()
+        if any(ex in url_lower for ex in exclude):
             return False
 
         return True
 
+    # 安装包/二进制文件扩展名
+    INSTALLER_EXTENSIONS = {".exe", ".msi", ".dmg", ".deb", ".rpm", ".apk", ".pkg", ".zip", ".rar", ".7z"}
+
     def _clean_name(self, name: str) -> str:
-        """清理SEO标题后缀"""
+        """清理SEO标题后缀和列表序号"""
         name = name.strip()
         # 去掉SEO后缀
         name = SEO_SUFFIX_RE.sub("", name)
+        # 去掉列表序号前缀（如 "1.剪映" → "剪映", "12.AI Writer" → "AI Writer"）
+        name = re.sub(r"^\d+\.\s*", "", name)
         return name.strip()
+
+    @staticmethod
+    def _strip_utm(url: str) -> str:
+        """去除 URL 中的 UTM 追踪参数"""
+        from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
+        parsed = urlparse(url)
+        params = parse_qs(parsed.query)
+        clean_params = {k: v for k, v in params.items() if not k.startswith("utm_")}
+        clean_query = urlencode(clean_params, doseq=True)
+        return urlunparse((parsed.scheme, parsed.netloc, parsed.path, parsed.params, clean_query, parsed.fragment))
 
     def _is_navigation_title(self, title: str) -> bool:
         """判断是否是导航页面标题（不是工具名）"""
@@ -176,7 +192,7 @@ class Collector(BaseCollector):
 
                 items.append({
                     "name": clean_title,
-                    "url": href,
+                    "url": self._strip_utm(href),
                     "description": "",
                     "platform": ["ai-bot.cn"],
                     "type": "ai_tool",
@@ -218,7 +234,7 @@ class Collector(BaseCollector):
 
                 items.append({
                     "name": clean_title,
-                    "url": tool_url,
+                    "url": self._strip_utm(tool_url),
                     "description": description[:300],
                     "platform": ["ai-bot.cn"],
                     "type": "ai_tool",
