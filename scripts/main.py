@@ -28,6 +28,7 @@ from pipeline.analyzer import AIAnalyzer, generate_tool_id
 from pipeline.data_model import DailySnapshot
 from pipeline.scheduler import CollectionScheduler
 from pipeline.tool_database import ToolDatabase
+from pipeline.search_enricher import SearchEnricher
 
 logging.basicConfig(
     level=logging.INFO,
@@ -233,6 +234,12 @@ def cmd_analyze(args):
         return
 
     logger.info(f"[Analyze] {len(pending)} items pending")
+
+    # Search enrichment: add DuckDuckGo search data to each tool
+    data_dir = Path(__file__).parent.parent / "data"
+    enricher = SearchEnricher(cache_dir=data_dir / "cache")
+    pending = enricher.enrich(pending)
+    logger.info("[Analyze] Search enrichment complete")
 
     analyzer = _create_analyzer(config)
     db = _get_db()

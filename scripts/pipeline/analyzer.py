@@ -311,13 +311,29 @@ class AIAnalyzer:
         excluded = []
         
         for tool in analyzed_tools:
-            # === AI 相关性预检（新增）===
-            relevance = self.check_ai_relevance(tool)
-            tool["ai_relevance"] = relevance["label"]
+            # === AI relevance cross-validation ===
+            local_result = self.check_ai_relevance(tool)
+            local_label = local_result['label']
             
-            if not relevance["is_ai"]:
-                # 非 AI 工具直接排除
-                tool["rejection_reason"] = f"非AI工具: {relevance['reason']}"
+            # LLM result (from _normalize_analysis)
+            llm_label = tool.get('ai_relevance', '')
+            
+            # Cross-validation: take the stricter value
+            STRICTNESS = {'ai-core': 4, 'ai-powered': 3, 'ai-enabled': 2, 'not-ai': 0}
+            
+            if llm_label and llm_label in STRICTNESS:
+                if STRICTNESS[llm_label] < STRICTNESS.get(local_label, 2):
+                    final_label = llm_label
+                else:
+                    final_label = local_label
+            else:
+                final_label = local_label
+            
+            tool['ai_relevance'] = final_label
+            
+            # non-ai -> exclude
+            if final_label == 'not-ai':
+                tool['rejection_reason'] = f"非AI工具: {local_result['reason']}"
                 excluded.append(tool)
                 continue
             
@@ -430,9 +446,25 @@ class AIAnalyzer:
         """
         tool_entries = []
         for idx, tool in enumerate(tools, 1):
+            # Search enrichment data
+            search_data = tool.get('_search', {})
+            if search_data and search_data.get('result_count', 0) > 0:
+                tier = search_data.get('popularity_tier', 'cold')
+                rc = search_data.get('result_count', 0)
+                snippets = search_data.get('top_snippets', [])
+                search_line = f'搜索热度: {tier} ({rc}条结果)'
+                snippet_line = '搜索摘要: ' + ' | '.join(snippets[:3]) if snippets else ''
+            else:
+                search_line = '搜索热度: 无数据'
+                snippet_line = ''
             entry = (
                 f"--- 工具 #{idx} ---\n"
                 f"名称: {tool.get('name', '')}\n"
+                f"{search_line}\n"
+            )
+            if snippet_line:
+                entry += f"{snippet_line}\n"
+            entry += (
                 f"来源: {tool.get('source', '')}\n"
                 f"URL: {tool.get('url', '')}\n"
                 f"描述: {tool.get('description', '')}\n"
@@ -477,7 +509,9 @@ class AIAnalyzer:
     "notable": "一句话评价：这个工具的独特优势或值得关注的理由",
     "ai_confidence": 0.8,
     "is_china_tool": false,
-    "health_status": "active/moderate/dormant/archived"
+    "health_status": "active/moderate/dormant/archived",
+    "ai_relevance": "ai-core/ai-powered/ai-enabled/non-ai",
+    "popularity": "hot/warm/moderate/cold"
   }}
 ]
 
@@ -490,6 +524,17 @@ class AIAnalyzer:
   * 纯学术论文（无可用产品/服务）、纯SDK库、纯CLI工具、测试框架 → 不收
   * 如果一个工具"普通人完全用不上"，should_include=false
 - rejection_reason: 如果should_include=false，简要说明原因（如"纯学术论文"、"纯CLI工具"、"SDK无产品形态"等）
+
+- ai_relevance: 判断这个工具与AI的关系程度
+  * ai-core: 产品本身就是AI模型/AI平台/AI生成引擎（如ChatGPT、Midjourney、Stable Diffusion）
+  * ai-powered: 核心功能由AI驱动，去掉AI产品就不成立（如AI写作助手、AI代码补全、AI图像编辑）
+  * ai-enabled: AI只是辅助功能之一，没有AI产品仍有价值（如Notion AI、Office Copilot）
+  * non-ai: 跟AI无关或蹭AI概念（如纯编程库、CLI框架、TypeScript工具链、编程语言本身）
+- popularity: 基于搜索热度和GitHub数据综合判断
+  * hot: 广泛知名、大量讨论和报道
+  * warm: 有一定知名度和用户群
+  * moderate: 小众但有特定受众
+  * cold: 几乎无人知晓或非常新
 
 注意：必须返回恰好 {count} 个对象的JSON数组，index从1到{count}。"""
 
@@ -700,17 +745,29 @@ class AIAnalyzer:
         tiers = "/".join(self.LICENSE_TIERS)
         levels = "/".join(self.HEALTH_LEVELS)
 
+        # Search enrichment data
+        search_data = tool.get('_search', {})
+        if search_data and search_data.get('result_count', 0) > 0:
+            tier = search_data.get('popularity_tier', 'cold')
+            rc = search_data.get('result_count', 0)
+            snippets = search_data.get('top_snippets', [])
+            search_info = f'\n搜索热度: {tier} ({rc}条结果)'
+            if snippets:
+                search_info += f'\n搜索摘要: {" | ".join(snippets[:3])}'
+        else:
+            search_info = '\n搜索热度: 无数据'
+
         return (
             "请独立分析以下AI工具（不要照搬描述，给出你的判断）。\n\n"
             f"名称: {name}\n来源: {source}\nURL: {url}\n描述: {desc}\n"
-            f"中文描述: {desc_zh or '无'}\nStars: {stars}\nForks: {forks}\n"
+            f"中文描述: {desc_zh or '无'}\nStars: {stars}\nForks: {forks}\n" + search_info + '\n'
             f"语言: {language}\n许可证: {license_info}\n更新: {pushed_at}\n标签: {topics}\n\n"
             "请严格按以下JSON格式返回（只返回JSON，不要其他文字）：\n"
             '{"category":"' + cats + '中选一个","subcategory":"二级分类",'
             '"license_tier":"' + tiers + '中选一个","license_type":"具体许可证或空字符串",'
             '"tags":{"function":["功能标签"],"scenario":["场景标签"],"attribute":["属性标签"],"tech":["技术标签"],"quality":["质量标签"]},'
             '"ai_analysis":"2-3句中文说明这工具做什么、适合谁",'
-            '"ai_confidence":0.8,"is_china_tool":false,"health_status":"' + levels + '中选一个"}'
+            '"ai_confidence":0.8,"is_china_tool":false,"health_status":"' + levels + '中选一个","ai_relevance":"ai-core/ai-powered/ai-enabled/non-ai","popularity":"hot/warm/moderate/cold"}'
         )
 
     def _parse_coze_response_data(self, raw_data):
@@ -770,6 +827,13 @@ class AIAnalyzer:
         r["is_china_tool"] = bool(analysis.get("is_china_tool", False))
         hs = analysis.get("health_status", "unknown")
         r["health_status"] = hs if hs in self.HEALTH_LEVELS else "unknown"
+        # AI relevance and popularity from LLM analysis
+        valid_ai_rel = ['ai-core', 'ai-powered', 'ai-enabled', 'non-ai']
+        ar = analysis.get('ai_relevance', '')
+        r['ai_relevance'] = ar if ar in valid_ai_rel else ''
+        valid_pop = ['hot', 'warm', 'moderate', 'cold']
+        pop = analysis.get('popularity', 'moderate')
+        r['popularity'] = pop if pop in valid_pop else 'moderate'
         return r
 
     def _eval_inclusion(self, category: str, utility_score: int, analysis: Dict) -> bool:
@@ -809,7 +873,7 @@ class AIAnalyzer:
                 "license_tier":"unknown","license_type":"",
                 "tags":{"function":[],"scenario":[],"attribute":[],"tech":[],"quality":[]},
                 "ai_analysis":"","features":[],"best_for":"","notable":"",
-                "ai_confidence":0.0,"is_china_tool":False,"health_status":"unknown"}
+                "ai_confidence":0.0,"is_china_tool":False,"health_status":"unknown","ai_relevance":"","popularity":"moderate"}
 
     # ============================
     # 本地规则分析引擎（完整保留）
@@ -1510,6 +1574,18 @@ class AIAnalyzer:
 
     def _build_analysis_prompt(self, tool: Dict) -> str:
         """构建Coze分析提示词（单工具模式）"""
+        # Search enrichment data
+        search_data = tool.get('_search', {})
+        if search_data and search_data.get('result_count', 0) > 0:
+            tier = search_data.get('popularity_tier', 'cold')
+            rc = search_data.get('result_count', 0)
+            snippets = search_data.get('top_snippets', [])
+            search_info = f'\n搜索热度: {tier} ({rc}条结果)'
+            if snippets:
+                search_info += f'\n搜索摘要: {" | ".join(snippets[:3])}'
+        else:
+            search_info = '\n搜索热度: 无数据'
+
         return f"""请分析以下AI工具，给出独立判断（不要照搬描述）：
 
 工具名称: {tool.get('name', '')}
@@ -1519,7 +1595,7 @@ URL: {tool.get('url', '')}
 中文描述: {tool.get('description_zh', '')}
 Stars: {tool.get('raw_data', {}).get('stargazers_count', 'N/A')}
 许可证: {tool.get('raw_data', {}).get('license', 'N/A')}
-最后更新: {tool.get('raw_data', {}).get('pushed_at', 'N/A')}
+最后更新: {tool.get('raw_data', {}).get('pushed_at', 'N/A')}{search_info}
 
 请返回JSON格式：
 {{
@@ -1540,7 +1616,14 @@ Stars: {tool.get('raw_data', {}).get('stargazers_count', 'N/A')}
   "notable": "一句话评价：这个工具的独特优势或值得关注的理由",
   "ai_confidence": 0.8,
   "is_china_tool": false,
-  "health_status": "active/moderate/dormant/archived"
+  "health_status": "active/moderate/dormant/archived",
+  "ai_relevance": "ai-core/ai-powered/ai-enabled/non-ai",
+  "popularity": "hot/warm/moderate/cold"
+}}
+
+评估标准：
+- ai_relevance: 判断工具与AI的关系 (ai-core/ai-powered/ai-enabled/non-ai)
+- popularity: 基于搜索热度和GitHub数据综合判断 (hot/warm/moderate/cold)
 }}"""
 
 
