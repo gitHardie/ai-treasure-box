@@ -94,6 +94,8 @@ class AIAnalyzer:
 
     # 明确的非 AI 工具名称（精确匹配小写）
     NON_AI_EXACT_NAMES = {
+        # 软件下载站/导航站（非AI工具）
+        '果核剥壳',
         # 编程语言
         'typescript', 'javascript', 'python', 'rust', 'golang', 'java', 'kotlin', 'swift', 'ruby',
         # 开发基础设施（无 AI 功能）
@@ -114,6 +116,8 @@ class AIAnalyzer:
 
     # 非 AI 描述模式（正则，匹配描述中的特征）
     NON_AI_DESC_PATTERNS = [
+        # 导航站文字沙拉（大量工具名拼接，无实际描述）
+        r'^(?:AI工具集|最新AI项目|热门工具|关于我们|免责声明).{50,}',
         r'superset\s+of\s+javascript',
         r'compiles?\s+(to|into)\s+javascript',
         r'next.generation\s+orm',
