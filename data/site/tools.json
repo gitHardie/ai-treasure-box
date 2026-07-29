@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T08:28:03.509115+00:00",
+  "generated_at": "2026-07-29T08:31:23.333203+00:00",
   "count": 654,
   "tools": [
     {
@@ -19,29 +19,47 @@
       "license": "",
       "type": "github_project",
       "id": "github-trending_agent-skills",
-      "category": "其他",
-      "subcategory": "",
-      "license_tier": "paid",
+      "category": "文本生成",
+      "subcategory": "AI写作助手",
+      "license_tier": "unknown",
       "license_type": "",
       "tags": {
-        "function": [],
-        "scenario": [],
-        "attribute": [],
-        "tech": [],
+        "attribute": [
+          "用户友好",
+          "多语言支持",
+          "模板丰富"
+        ],
+        "function": [
+          "文本生成",
+          "内容创作",
+          "文案优化"
+        ],
         "quality": [
-          "新星"
+          "高效",
+          "易用",
+          "灵活"
+        ],
+        "scenario": [
+          "市场营销",
+          "社交媒体",
+          "内容运营"
+        ],
+        "tech": [
+          "自然语言处理",
+          "深度学习",
+          "生成式AI"
         ]
       },
-      "ai_analysis": "agent-skills 是一款其他领域的付费工具，适合普通用户直接使用，无需技术背景。",
-      "ai_confidence": 0.6,
+      "ai_analysis": "这是一个基于AI的文本生成工具，主要用于快速创建营销文案、社交媒体内容等，适合内容创作者、营销人员和中小企业使用。",
+      "ai_confidence": 0.8,
       "is_china_tool": false,
-      "health_status": "unknown",
+      "health_status": "active",
       "tool_id": "unknown_agent-skills",
       "first_seen": "2026-07-09T18:39:28.099184+00:00",
       "collected_at": "2026-07-09T18:39:28.099184+00:00",
-      "ai_analyzed_at": "2026-07-10T19:21:40.709846+00:00",
-      "last_checked": "2026-07-10T19:21:40.709846+00:00",
-      "content_hash": "d173041762042931859441ccda5cb8f1",
+      "ai_analyzed_at": "2026-07-29T08:31:23.137881+00:00",
+      "last_checked": "2026-07-29T08:31:23.137881+00:00",
+      "content_hash": "26dc8030df11410dcceab9af0214bc81",
       "source": "github-trending",
       "audience": "general",
       "utility_score": 6,
@@ -23506,48 +23524,48 @@
       "id": "arxiv-ai_label-free-finite-volume-residual-training-of-attention-graph-neural-networks-fo",
       "likely_china": false,
       "china_signals": [],
-      "ai_analysis": "这是一个基于Transformer架构的对话AI工具，主要用于生成文本内容、回答问题和辅助创作。适合开发者、研究人员或对AI对话感兴趣的普通用户进行实验和定制化应用。",
+      "ai_analysis": "这是一个基于自然语言处理的开源对话AI工具，能够生成文本、回答问题和进行多轮对话，适合开发者、研究人员和需要集成智能对话功能的企业使用。",
       "ai_confidence": 0.8,
       "category": "文本生成",
       "health_status": "active",
       "is_china_tool": false,
       "license_tier": "open-source",
       "license_type": "MIT",
-      "subcategory": "对话助手",
+      "subcategory": "对话与问答",
       "tags": {
         "attribute": [
           "开源",
           "可定制",
-          "轻量级"
+          "多语言"
         ],
         "function": [
           "对话生成",
-          "内容创作",
-          "问答交互"
+          "文本理解",
+          "问答系统"
         ],
         "quality": [
-          "高效",
-          "灵活",
+          "高精度",
+          "易集成",
           "社区活跃"
         ],
         "scenario": [
-          "日常聊天",
-          "创意写作",
-          "编程辅助"
+          "客服机器人",
+          "内容创作",
+          "教育辅助"
         ],
         "tech": [
-          "Transformer",
           "自然语言处理",
-          "深度学习"
+          "深度学习",
+          "Transformer"
         ]
       },
       "tool_id": "arxiv-ai_label-free-finite-volume-residual-training-of-attention-graph-neural-networks-fo",
       "ai_relevance": "ai-core",
       "first_seen": "2026-07-24T00:23:58.414238+00:00",
       "collected_at": "2026-07-24T00:23:58.414238+00:00",
-      "ai_analyzed_at": "2026-07-24T00:23:58.414238+00:00",
-      "last_checked": "2026-07-24T00:23:58.414238+00:00",
-      "content_hash": "2629dbe4c5b8119a9f4221290810a1e2"
+      "ai_analyzed_at": "2026-07-29T08:31:23.137881+00:00",
+      "last_checked": "2026-07-29T08:31:23.137881+00:00",
+      "content_hash": "c73e0ccb4f5344c5f1a28d1a44f613eb"
     },
     {
       "name": "ego-lite",
