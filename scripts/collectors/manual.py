@@ -1,6 +1,10 @@
 """
 手动添加工具采集器
 从 data/manual/ 目录读取手动添加的工具JSON文件
+
+支持两种格式：
+1. 完整格式：包含 name, url, description, category 等所有字段
+2. 极简格式：只需要 name + url，其余由 pipeline 自动补全
 """
 import json
 import logging
@@ -53,15 +57,14 @@ class Collector(BaseCollector):
         return items
 
     def _parse_tool(self, tool: Dict, source_file: str) -> Dict[str, Any]:
-        """解析单个手动添加工具"""
+        """解析单个手动添加工具，支持极简格式"""
         try:
             name = tool.get("name", "").strip()
             url = tool.get("url", "").strip()
-            description = tool.get("description", "").strip()
 
-            # 验证必填字段
-            if not name or not url or not description:
-                logger.warning(f"[{self.source_id}] Tool missing required fields in {source_file}: name={name}, url={url}")
+            # 验证必填字段（极简格式只需要 name + url）
+            if not name or not url:
+                logger.warning(f"[{self.source_id}] Tool missing required fields (name+url) in {source_file}")
                 return None
 
             # 处理标签 - 支持两种格式：简单列表或分维度字典
@@ -79,7 +82,7 @@ class Collector(BaseCollector):
             return {
                 "name": name,
                 "url": url,
-                "description": description,
+                "description": tool.get("description", ""),  # 可为空，由LLM补全
                 "description_zh": tool.get("description_zh", ""),
                 "source": self.source_id,
                 "source_url": source_file,
@@ -90,7 +93,8 @@ class Collector(BaseCollector):
                     "category": category,
                     "subcategory": tool.get("subcategory", ""),
                     "license_tier": tool.get("license_tier", ""),
-                    "is_china_tool": tool.get("is_china_tool", False),
+                    "is_china_tool": tool.get("is_china_tool", None),  # None表示未确定，由pipeline检测
+                    "minimal_format": not tool.get("description", "").strip(),  # 标记是否为极简格式
                 },
             }
         except Exception as e:

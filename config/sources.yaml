@@ -270,6 +270,20 @@ sources:
   schedule_mode: discovery
   fetch_limit: 20
   check_interval_days: 14
+- id: search-discovery
+  name: 搜索发现
+  type: discovery
+  tier: 2
+  enabled: false
+  parser: search_discovery.py
+  category: 其他
+  is_china_source: false
+  auto_detect_license: false
+  ai_analysis: true
+  description: 通过搜索引擎发现新AI工具推荐
+  schedule_mode: discovery
+  fetch_limit: 20
+  check_interval_days: 7
 global:
   retry_times: 3
   retry_delay: 15
