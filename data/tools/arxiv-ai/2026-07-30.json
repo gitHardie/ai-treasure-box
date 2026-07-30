@@ -1,0 +1,688 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-07-30T00:19:35.358490+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "Pass the Baton: Trajectory-Relayed On-Policy Distillation",
+      "title": "Pass the Baton: Trajectory-Relayed On-Policy Distillation",
+      "url": "https://arxiv.org/abs/2607.26057v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26057v1",
+      "description": "On-policy distillation (OPD) grounds token-level supervision in the student's own trajectory, yet suffers from prefix failure: once the student commits to a wrong reasoning direction, all subsequent generation builds on this deviation, producing misdirected continuations that elicit unreliable supervision and waste compute. We identify a teacher-student continuation asymmetry on failed prefixes, where the teacher tends to redirect while the student continues along the original direction, and con",
+      "authors": [
+        "Haolei Xu",
+        "Xiaowen Xu",
+        "Haiwen Hong",
+        "Zixuan Ni",
+        "Hongxing Li"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.26057v1",
+      "published_at": "2026-07-28T17:59:46Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "$π\\mathbf{R}^2$: Reactive Real-time Flow Policies",
+      "title": "$π\\mathbf{R}^2$: Reactive Real-time Flow Policies",
+      "url": "https://arxiv.org/abs/2607.26055v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26055v1",
+      "description": "Generalist manipulation policies increasingly take the form of action-chunking flow policies built on large pretrained backbones. Such chunks run open-loop, so the policy cannot react to sensory input arriving mid-execution, sacrificing \\emph{reactivity}. Replanning more often would restore it, but the perception-to-action pipeline (a large backbone plus multiple denoising steps) is too slow: this \\emph{latency} forbids frequent replanning and leaves committed actions stale, making such policies",
+      "authors": [
+        "Sungjae Park",
+        "Shubham Tulsiani"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.26055v1",
+      "published_at": "2026-07-28T17:59:31Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Spend Experts Where You Are Unsure: Confidence-Adaptive Routing for Mixture-of-Experts LoRA",
+      "title": "Spend Experts Where You Are Unsure: Confidence-Adaptive Routing for Mixture-of-Experts LoRA",
+      "url": "https://arxiv.org/abs/2607.26052v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26052v1",
+      "description": "Mixture-of-Experts (MoE) variants of Low-Rank Adaptation (LoRA) route every token to a fixed number of experts $k$. Tokens differ in how uncertain the model is about them, so a single k over-spends on easy tokens and under-serves hard ones. We observe that the router's output distribution is already a per-token uncertainty signal: peaked mass indicates confidence, while a flat distribution indicates ambiguity. We introduce CARE (Confidence-Adaptive Routing of Experts), which admits experts in a ",
+      "authors": [
+        "Tom Saliencro",
+        "Rohan Desai",
+        "Priya Nair",
+        "Maya Lindqvist",
+        "Daniel Whitmore"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.26052v1",
+      "published_at": "2026-07-28T17:59:16Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Re-thinking Mammography Transfer Learning: The Dataset-Informed Transfer Learning (DITL) Framework for Breast Cancer Screening and Lesion Diagnosis",
+      "title": "Re-thinking Mammography Transfer Learning: The Dataset-Informed Transfer Learning (DITL) Framework for Breast Cancer Screening and Lesion Diagnosis",
+      "url": "https://arxiv.org/abs/2607.26043v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26043v1",
+      "description": "Enhancing classification performance in mammography remains a persistent challenge across both small curated datasets and large-scale clinical cohorts. Conventional transfer learning approaches often neglect dataset-specific characteristics, while recent neighborhood-informed methods have been restricted to narrow tasks with rigid formulations, limiting their scalability to population-level datasets. To address these challenges, we propose the Dataset-Informed Transfer Learning (DITL) framework,",
+      "authors": [
+        "Adarsh Bhandary Panambur",
+        "Siming Bayer",
+        "Andreas Maier"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.26043v1",
+      "published_at": "2026-07-28T17:52:36Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening",
+      "title": "VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening",
+      "url": "https://arxiv.org/abs/2607.26042v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26042v1",
+      "description": "We present VetClaw, an edge-cloud multimodal agentic system for early veterinary disease screening. VetClaw uses a camera module as an edge sensing device and sends captured images, together with optional symptom descriptions, to a server-hosted vision-language model for zero-shot disease classification. The system separates agent interaction from workflow orchestration: OpenClaw provides scheduling, tool access, user interaction, and notification services on the edge device, while LangGraph man",
+      "authors": [
+        "Syed Mhamudul Hasan",
+        "Anas AlSobeh",
+        "Hussein Zangoti",
+        "Abdur R. Shahid"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.26042v1",
+      "published_at": "2026-07-28T17:50:25Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?",
+      "title": "Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?",
+      "url": "https://arxiv.org/abs/2607.26041v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26041v1",
+      "description": "Computer-use agents (CUAs) increasingly act through desktop GUIs to complete long-horizon tasks. Current benchmarks primarily measure end-task success or single-frame grounding. Neither isolates whether a model can reconstruct the causal, task-relevant transition produced by an action- crucial for rejecting stale observations, verifying progress, and recovering from failure. This is difficult because inference, remote input, app rendering, and screenshot capture are asynchronous: the next observ",
+      "authors": [
+        "Abhishek Pillai",
+        "Samir Kumar Nayak",
+        "Yuan Chen"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "arxiv_id": "2607.26041v1",
+      "published_at": "2026-07-28T17:49:51Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Reinformed Dreamer: An Asymmetric World Model Efficiently Trained through Latent Guidance",
+      "title": "Reinformed Dreamer: An Asymmetric World Model Efficiently Trained through Latent Guidance",
+      "url": "https://arxiv.org/abs/2607.26040v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26040v1",
+      "description": "Much like humans benefit from guidance while learning, reinforcement learning algorithms may benefit from additional supervision beyond rewards. Leveraging additional information during training to learn better representations and behaviors has been the focus of asymmetric reinforcement learning. This learning paradigm has proven effective under partial observability when additional state information is available, but also under full observability when more refined state information is available",
+      "authors": [
+        "Gaspard Lambrechts",
+        "Adrien Bolland",
+        "Daniel Ebi",
+        "Damien Ernst"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_id": "2607.26040v1",
+      "published_at": "2026-07-28T17:49:29Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Collaborative System Failure Prognostics via Federated Longitudinal-Survival Modeling",
+      "title": "Collaborative System Failure Prognostics via Federated Longitudinal-Survival Modeling",
+      "url": "https://arxiv.org/abs/2607.26038v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26038v1",
+      "description": "Time-to-event modeling provides a systematic framework for estimating time-dependent failure risk, reliability, and remaining useful life (RUL) from longitudinal condition monitoring data. However, applying these models to distributed prognostics remains challenging because sensor trajectories and failure-time records are often stored across organizations or operational sites and cannot be centrally pooled due to privacy or proprietary constraints. Moreover, the classical Cox proportional hazard",
+      "authors": [
+        "Fan Yang",
+        "Madelyn Weller",
+        "Dimuthu Fernando",
+        "Hila Livneh",
+        "Yuxin Wen"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.26038v1",
+      "published_at": "2026-07-28T17:46:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Falling Behind Drives Unsafe Development in an Idealised AI Race Experiment",
+      "title": "Falling Behind Drives Unsafe Development in an Idealised AI Race Experiment",
+      "url": "https://arxiv.org/abs/2607.26034v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26034v1",
+      "description": "Technological races create tension between speed and safety: actors may gain by moving faster than competitors, even when risky development is harmful. This is prominent in debates about artificial intelligence (AI), where competitive pressure is often argued to incentivise riskier, less safety-conscious development. We study this using a framed behavioural experiment based on an idealised AI race, in which paired participants repeatedly chose between Safe and Unsafe development under an uncerta",
+      "authors": [
+        "Elias Fernández Domingos",
+        "The Anh Han"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CY",
+        "cs.GT",
+        "econ.GN"
+      ],
+      "arxiv_id": "2607.26034v1",
+      "published_at": "2026-07-28T17:44:03Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "CHARM: A Multimodal Graph Foundation Model with Hierarchical Context Modeling for Zero-Shot Transfer",
+      "title": "CHARM: A Multimodal Graph Foundation Model with Hierarchical Context Modeling for Zero-Shot Transfer",
+      "url": "https://arxiv.org/abs/2607.26023v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26023v1",
+      "description": "Graph foundation models (GFMs) have emerged as a promising paradigm for transferring knowledge across graph domains and tasks. Real-world graphs associate nodes with text, images, and other modalities, making multimodal graphs essential for representing complex entities and relations. Moreover, collecting labels and adapting models for every new graph domain is costly and often infeasible, motivating zero-shot transfer. Unfortunately, zero-shot transfer on multimodal graphs remains underexplored",
+      "authors": [
+        "Ankang Yang",
+        "Jitao Zhao",
+        "Di Jin",
+        "Yuxiao Huang",
+        "Dongxiao He"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.26023v1",
+      "published_at": "2026-07-28T17:35:26Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "UniMem: Complementary Episodic-to-Parametric Memory for Boundary-Agnostic Task Streams",
+      "title": "UniMem: Complementary Episodic-to-Parametric Memory for Boundary-Agnostic Task Streams",
+      "url": "https://arxiv.org/abs/2607.26017v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26017v1",
+      "description": "Memory is essential for LLM agents to accumulate task experience and reuse task-specific execution strategies. However, real-world deployment over boundary-agnostic and evolving task streams exposes a fundamental stability-plasticity dilemma. External retrieval-based memory can rapidly absorb new evidence, but it often fails to internalize recurring execution patterns and incurs inference-time retrieval overhead. Parametric memory enables stable and efficient execution once learned, but typicall",
+      "authors": [
+        "Siyu Xia",
+        "Chenheng Zhang",
+        "Yanting Wu",
+        "Haoxuan Li",
+        "Jiajun Chai"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2607.26017v1",
+      "published_at": "2026-07-28T17:28:21Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "MDTransformer: A Hardware-Software Co-Design of Mode-Division Photonic Transformer Accelerator with Inverse-Designed Coherent Crossbar",
+      "title": "MDTransformer: A Hardware-Software Co-Design of Mode-Division Photonic Transformer Accelerator with Inverse-Designed Coherent Crossbar",
+      "url": "https://arxiv.org/abs/2607.26016v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26016v1",
+      "description": "Recently, photonic transformer accelerators (PTAs) have successfully achieved significant speedup and energy efficiency improvements over electronic accelerators for expediting Transformer inference. However, state-of-the-art rely on expensive multi-wavelength light generation and large dot-product units due to active phase-shifter components, thus making their approach inefficient and impractical. To address this, we propose MDTransformer, a novel hardware-software co-design of PTA based on mod",
+      "authors": [
+        "Solomon Micheal Serunjogi",
+        "Rachmad Vidya Wicaksana Putra",
+        "Ayat Taha",
+        "Muhammad Shafique",
+        "Mahmoud Rasras"
+      ],
+      "categories": [
+        "cs.AR",
+        "cs.AI",
+        "cs.DC"
+      ],
+      "arxiv_id": "2607.26016v1",
+      "published_at": "2026-07-28T17:27:49Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Instruction-Tuned Models Locally Reuse Human Syntax More Than Humans Do",
+      "title": "Instruction-Tuned Models Locally Reuse Human Syntax More Than Humans Do",
+      "url": "https://arxiv.org/abs/2607.26015v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26015v1",
+      "description": "Syntactic convergence (the tendency of speakers to adapt in language towards the grammatical profiles of their interlocutors) is a well-documented feature of human dialogue widely considered to operate below conscious awareness. Whether large language models exhibit analogous syntactic convergence toward human users relative to human baselines and across a broad range of syntactic constructions remains an open question. Using substitution-paradigm data in which model generations replace one spea",
+      "authors": [
+        "Zandi Eberstadt"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2607.26015v1",
+      "published_at": "2026-07-28T17:27:47Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Pictura: Perspective-View Self-Play at Scale for Driving",
+      "title": "Pictura: Perspective-View Self-Play at Scale for Driving",
+      "url": "https://arxiv.org/abs/2607.26005v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26005v1",
+      "description": "Self-play in simulation produces robust driving policies at scale. Demonstrations of such behavior have been made using privileged vectorized observations such as exact poses and velocities, even for occluded agents. This assumes that perception is solved and introduces a representation gap with the partial observation of a deployed agent driving from the perspective view of egocentric cameras. A common fix, distilling the privileged policy into a camera-input student, leaves the student imitati",
+      "authors": [
+        "Yuan Yin",
+        "Elias Ramzi",
+        "Marc Lafon",
+        "Valentin Charraut",
+        "Victor Bares"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "arxiv_id": "2607.26005v1",
+      "published_at": "2026-07-28T17:20:39Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Parallel Decoding Distillation for Fast Image and Video Generation",
+      "title": "Parallel Decoding Distillation for Fast Image and Video Generation",
+      "url": "https://arxiv.org/abs/2607.26004v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26004v1",
+      "description": "Generation in video diffusion or flow models is computationally expensive due to the slow and iterative sampling process. Current state-of-the-art (SOTA) acceleration methods heavily rely on variational score distillation (VSD) and adversarial losses to distill diffusion models into few-step generators. Albeit achieving high-quality video generation, these training losses are notoriously hard to optimize and suffer from mode collapse, leading to loss of video diversity and lack of motion. In thi",
+      "authors": [
+        "Neta Shaul",
+        "Chao Liu",
+        "Arash Vahdat",
+        "Julius Berner"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.26004v1",
+      "published_at": "2026-07-28T17:20:00Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Sharpness-Aware Minimization and Muon: Robustness under the Spectral Norm",
+      "title": "Sharpness-Aware Minimization and Muon: Robustness under the Spectral Norm",
+      "url": "https://arxiv.org/abs/2607.26001v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26001v1",
+      "description": "Sharpness-Aware Minimization (SAM) aims to improve generalization by encouraging insensitivity to small, worst-case parameter perturbations. However, the notion of a \"small\" perturbation is inherently geometry-dependent: while existing SAM variants have explored a wide range of choices, a clear perspective on which geometries are most effective in practice remains elusive. Recent work on matrix-aware optimization, particularly the Muon optimizer, suggests that respecting the matrix structure of ",
+      "authors": [
+        "Wenzhi Zhong",
+        "Edward Milsom",
+        "Michael Murray"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_id": "2607.26001v1",
+      "published_at": "2026-07-28T17:18:11Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Empirical Evaluation of Out-Of-Distribution Performance of Tabular Foundation Models",
+      "title": "Empirical Evaluation of Out-Of-Distribution Performance of Tabular Foundation Models",
+      "url": "https://arxiv.org/abs/2607.26000v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.26000v1",
+      "description": "Tabular Foundation Models (TFMs) have emerged as novel approaches for tabular predictive tasks, demonstrating competitive predictive performance to ensemble tree-based models. Most TFMs are trained and evaluated on independent and identically distributed data, but this assumption changes in real-world scenarios due to distribution shifts, which compromise the robustness of models. Limited research has been conducted of TFMs under distribution shifts. We present an empirical evaluation of Out-Of-",
+      "authors": [
+        "Malena Loza",
+        "David Chushig-Muzo",
+        "Eva Milara",
+        "Luis Bote-Curiel",
+        "Luis Estrada-Petrocelli"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.26000v1",
+      "published_at": "2026-07-28T17:16:01Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Does Runtime Topology Context Improve LLM-Generated Kubernetes Security Patches?",
+      "title": "Does Runtime Topology Context Improve LLM-Generated Kubernetes Security Patches?",
+      "url": "https://arxiv.org/abs/2607.25995v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25995v1",
+      "description": "Kubernetes is central to the cloud-native ecosystem, orchestrating containerised workloads. Recent work suggests that large language models (LLMs) can automate cluster security remediation, generating configuration patches from Kubernetes Security Posture Management (KSPM) findings without human authoring. Such systems, however, prompt the model with each finding in isolation from the live service call graph, assuming general hardening knowledge suffices. This assumption breaks down whenever a p",
+      "authors": [
+        "Farooq Shaikh"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.25995v1",
+      "published_at": "2026-07-28T17:12:12Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "MemLens: A Value-Aware Memory Management System with Interactive Analytics for LLM-based Agents",
+      "title": "MemLens: A Value-Aware Memory Management System with Interactive Analytics for LLM-based Agents",
+      "url": "https://arxiv.org/abs/2607.25992v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25992v1",
+      "description": "Recently, memory management has become a key infrastructure for LLM-based agents, as it directly affects long-horizon reasoning, personalized responses, and knowledge reuse. However, existing LLM memory systems typically adopt a coarse-grained (utility-agnostic) manner that treats heterogeneous user-LLM interaction records uniformly, leading to redundant and low-impact records persisting in the memory repository. To address this challenge, we present MemLens, a value-aware memory management syst",
+      "authors": [
+        "Shuyue Wei",
+        "Chang Liu",
+        "Zimu Zhou",
+        "Yongxin Tong",
+        "Lizhen Cui"
+      ],
+      "categories": [
+        "cs.DB",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.25992v1",
+      "published_at": "2026-07-28T17:08:56Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Untangling Co-Drift: Proactive Multi-Intent Failure Prediction and Root-Cause Disambiguation for Self-Driving Networks",
+      "title": "Untangling Co-Drift: Proactive Multi-Intent Failure Prediction and Root-Cause Disambiguation for Self-Driving Networks",
+      "url": "https://arxiv.org/abs/2607.25989v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25989v1",
+      "description": "The vision of self-driving networks that monitor, reason, and act upon themselves with minimal human intervention relies on tightly coupled monitoring, analytics, and actuation functions. In this work, we treat these functions as three operational macro-intents: continuous telemetry, real-time analytics, and programmatic actuation, and formalize the health of each function as an intent that the network must continuously satisfy. A critical, yet underexplored, challenge stems from the causal coup",
+      "authors": [
+        "Md. Kamrul Hossain",
+        "Walid Aljoby"
+      ],
+      "categories": [
+        "cs.NI",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "arxiv_id": "2607.25989v1",
+      "published_at": "2026-07-28T17:06:24Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Generator-Aligned Representation Interfaces for Diagnostic Soft Equivariance",
+      "title": "Generator-Aligned Representation Interfaces for Diagnostic Soft Equivariance",
+      "url": "https://arxiv.org/abs/2607.25988v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25988v1",
+      "description": "Exact-equivariant architectures typically encode prescribed group actions in specialized operators, which can complicate their reuse with generic backbones and across data modalities. We introduce the Generator-Aligned Representation Interface (GARI), a representation-level design principle that exposes selected transformation generators to a generic sequence backbone through aligned canonical and generator-induced views. We formalize the resulting behavior using a probe-specific soft-equivarian",
+      "authors": [
+        "Weitao Li",
+        "Gong Cheng"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.25988v1",
+      "published_at": "2026-07-28T17:06:21Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Physics-Aware End-to-End Deep Reinforcement Learning for Quadcopter Control with Actuator Dynamics",
+      "title": "Physics-Aware End-to-End Deep Reinforcement Learning for Quadcopter Control with Actuator Dynamics",
+      "url": "https://arxiv.org/abs/2607.25985v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25985v1",
+      "description": "Unmanned aerial vehicles (UAVs), particularly quadcopters, present unique challenges for autonomous control due to their underactuated dynamics: only four available control inputs must govern six degrees of freedom. This paper investigates a physics-aware, end-to-end deep reinforcement learning (DRL) approach that acts directly on low-level body inputs, total thrust and body torques $(T, τ_x, τ_y, τ_z)$, and closes the loop through a high-fidelity Simulink environment. Our simulator integrates a",
+      "authors": [
+        "Ya-Chia Shen",
+        "Woei-Leong Chan"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "arxiv_id": "2607.25985v1",
+      "published_at": "2026-07-28T17:05:47Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Schrödinger's Cat: Probabilistic Representation and Prediction of Potential Scene Kinematics",
+      "title": "Schrödinger's Cat: Probabilistic Representation and Prediction of Potential Scene Kinematics",
+      "url": "https://arxiv.org/abs/2607.25984v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25984v1",
+      "description": "Predicting how a scene may evolve from partial observations requires reasoning about multiple possible futures rather than committing to a single trajectory. Existing approaches either generate appearance-dominated video predictions or sample a small number of trajectories without explicitly modeling the distribution of possible motion. We introduce Goal-Aware Representations of Future kInEmatic Latent Distributions (GARFIELD), a probabilistic model of scene kinematics that learns a structured s",
+      "authors": [
+        "Timy Phan",
+        "Jannik Wiese",
+        "Björn Ommer"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.25984v1",
+      "published_at": "2026-07-28T17:05:39Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Reinforcement Learning for Code Optimization",
+      "title": "Reinforcement Learning for Code Optimization",
+      "url": "https://arxiv.org/abs/2607.25970v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25970v1",
+      "description": "RL for code correctness is now established: have the model generate a program, run it against hidden test cases, and reward solutions that pass. Extending this to code optimization seems straightforward: just add execution time to the reward. But in practice, once timing drives the reward, small problems in measurement noise, reward sparsity, or GRPO instability overwhelm the signal and make RL fail: generated solutions are barely faster, and more of them can fail. We make execution time learnab",
+      "authors": [
+        "Pierre Chambon",
+        "Kunhao Zheng",
+        "Juliette Decugis",
+        "Benoit Sagot",
+        "Gabriel Synnaeve"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.25970v1",
+      "published_at": "2026-07-28T16:52:31Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Quasi-SVD: Learning a Lie-constrained matrix factorisation for real-time imaging",
+      "title": "Quasi-SVD: Learning a Lie-constrained matrix factorisation for real-time imaging",
+      "url": "https://arxiv.org/abs/2607.25967v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25967v1",
+      "description": "Singular Value Decomposition (SVD) underlies matrix factorisation tasks across computational imaging, with medical applications increasingly demanding real-time processing. Yet SVD algorithms are inherently sequential, constraining real-time GPU throughput and limit online deployment in clinical pipelines. This study introduces Quasi-SVD, a differentiable, fully parallelized matrix factorization framework for GPUs. Rather than enforcing orthogonality on both factors, it guarantees exact orthogon",
+      "authors": [
+        "Christopher Hahne"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "math.NA"
+      ],
+      "arxiv_id": "2607.25967v1",
+      "published_at": "2026-07-28T16:47:59Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Knowledge-Guided Multimodal Reasoning over Interacting Streams for Video-Level Ambivalence and Hesitancy Recognition",
+      "title": "Knowledge-Guided Multimodal Reasoning over Interacting Streams for Video-Level Ambivalence and Hesitancy Recognition",
+      "url": "https://arxiv.org/abs/2607.25961v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25961v1",
+      "description": "Ambivalence and hesitancy (A/H) are conflicting affective states that precede the delay or abandonment of health behaviour change. Recognition of A/H at the video level is difficult, since the signal arises from disagreement across and within facial, vocal, linguistic, and bodily modalities, and manifests differently across individuals. The proposed PRISM-AH (Predictive Reasoning over Interacting Streams for Multimodal Ambivalence/Hesitancy Recognition), is a framework that treats A/H as a multi",
+      "authors": [
+        "Podakanti Satyajith Chary",
+        "Barath Parthiban",
+        "Pranesh Velmurugan",
+        "Adeeba Khan",
+        "Nagarajan Ganapathy"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.25961v1",
+      "published_at": "2026-07-28T16:44:38Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Detecting Knowledge Inconsistencies Across Text, Tables, and Knowledge Graphs",
+      "title": "Detecting Knowledge Inconsistencies Across Text, Tables, and Knowledge Graphs",
+      "url": "https://arxiv.org/abs/2607.25959v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25959v1",
+      "description": "Wikipedia and Wikidata are widely used for information access, LLM pre-training, and retrieval-augmented generation. Their knowledge is deeply connected but scattered across text, tables, and knowledge graphs. This raises a practical question: when these modalities disagree, how can we detect and explain the conflict? We study this problem as \\emph{modality-level inconsistency detection}. We first introduce a taxonomy of cross-modal knowledge inconsistencies, covering information granularity dif",
+      "authors": [
+        "Fanfu Wei",
+        "Thibault Ehrhart",
+        "Raphaël Troncy"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2607.25959v1",
+      "published_at": "2026-07-28T16:43:56Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Large Language Model for Operations Research Formulation Selection in Multi-Warehouse Inventory Allocation",
+      "title": "Large Language Model for Operations Research Formulation Selection in Multi-Warehouse Inventory Allocation",
+      "url": "https://arxiv.org/abs/2607.25956v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25956v1",
+      "description": "Multi-warehouse inventory allocation is typically formulated as a mixed-integer programming (MIP) problem, yet no single formulation consistently matches heterogeneous instance-level regimes induced by demand concentration, inventory imbalance, replenishment scale, service constraints, and forecast volatility. We study this issue as instance-wise operations research (OR) formulation selection, where each allocation instance is assigned to a solver-executable formulation from a candidate OR exper",
+      "authors": [
+        "Jintao Xu",
+        "Yingzheng Ma",
+        "Jiong Dong",
+        "Yongzhi Qi",
+        "Jianshen Zhang"
+      ],
+      "categories": [
+        "cs.AI",
+        "math.OC"
+      ],
+      "arxiv_id": "2607.25956v1",
+      "published_at": "2026-07-28T16:41:54Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Polistemics: Evaluating LLMs as Information Mediators in Politics & Elections",
+      "title": "Polistemics: Evaluating LLMs as Information Mediators in Politics & Elections",
+      "url": "https://arxiv.org/abs/2607.25953v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25953v1",
+      "description": "As LLMs increasingly mediate the political information citizens rely on, there is still no standardized way to assess whether they do so responsibly. We introduce Polistemics, a theory-grounded benchmark for evaluating LLMs as mediators of political information in elections. Prior work has treated this task as reproduction rather than mediation, leaving its epistemic dimensions and interaction with imperfect information unaddressed. We ground the evaluation in Epistemic Modesty, a normative stan",
+      "authors": [
+        "Baran Peters"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "arxiv_id": "2607.25953v1",
+      "published_at": "2026-07-28T16:40:18Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "MODUS: Decoder-Only Any-to-Any Modeling of Diverse Modalities",
+      "title": "MODUS: Decoder-Only Any-to-Any Modeling of Diverse Modalities",
+      "url": "https://arxiv.org/abs/2607.25948v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25948v1",
+      "description": "Any-to-any models predict any modality from any combination of others within a single network, a formulation used in multimodal vision and vision-language models, and increasingly in scientific domains such as ecology and astronomy. Existing any-to-any models are typically trained from scratch using encoder-decoder or diffusion architectures, impacting their performance and preventing them from using strong pre-trained decoder-only models as a prior. In this work, we investigate decoder-only any",
+      "authors": [
+        "Mingqiao Ye",
+        "Zhaochong An",
+        "Zhitong Gao",
+        "Xian Liu",
+        "François Fleuret"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2607.25948v1",
+      "published_at": "2026-07-28T16:34:23Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
