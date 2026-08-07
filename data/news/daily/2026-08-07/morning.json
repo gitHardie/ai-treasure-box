@@ -1,0 +1,168 @@
+{
+  "type": "daily_briefing",
+  "date": "2026-08-07",
+  "session": "morning",
+  "summary": {
+    "opinion_title": "AI行业进入三重转折：定价回归理性、人才重新洗牌、基础设施瓶颈凸显",
+    "overview": "今日AI行业呈现三大转折信号：DeepSeek大幅涨价预告宣告大模型“价格战”时代终结，日处理8万亿Token的算力账单倒逼全行业回归理性定价；谷歌一日之内失去两位AI灵魂人物，叠加Meta超级智能实验室成立和xAI百亿融资，AI竞争从模型能力转向组织与人才配置；台积电产能扩张、DRAM缺货、AMD创纪录财报共同指向AI竞争终极战场在基础设施层。",
+    "trend_evaluation": "三条主线交织：DeepSeek涨价+OpenAI降价形成定价分化，谷歌人才流失+Meta/xAI重组形成人才再分配，算力瓶颈+EU监管落地形成产业约束。核心判断——AI行业正从“能力竞争”进入“生态+成本+合规”的三维博弈阶段，单纯靠低价或单点技术突破已不足以构建长期优势。"
+  },
+  "articles": [
+    {
+      "title": "谷歌AI高层巨震：DeepMind创始人哈萨比斯卸任CEO，Jeff Dean等元老离职创办Discovery Loop",
+      "summary": "8月5日谷歌公布两则重磅人事变动：DeepMind创始人哈萨比斯卸任CEO转任董事长兼首席科学家，Jeff Dean等元老离职创办Discovery Loop聚焦AI自动化科研。Alphabet股价跌超4%，单日市值蒸发1800亿美元。",
+      "content_markdown": "8月5日，谷歌母公司Alphabet一天内公布两则重磅人事变动。2024年诺贝尔化学奖得主、DeepMind创始人兼CEO德米斯·哈萨比斯正式卸任日常管理职务，转任DeepMind董事长兼Alphabet首席科学家，将更多精力投入AGI和科学突破研究。首席技术官科拉伊·卡武库奥卢升任高级副总裁，直接向Alphabet CEO皮查伊汇报。\n\n同日，在谷歌工作近27年的传奇工程师杰夫·迪恩（Jeff Dean）宣布离职，与MapReduce共同作者Sanjay Ghemawat、Gemini负责人之一Oriol Vinyals及Quoc Le等多位资深研究员共同创办AI初创公司Discovery Loop，目标是用AI自动化科学研究的全流程。\n\n消息公布后，Alphabet股价收跌超4%，盘中一度下跌逾5%，单日市值蒸发超1800亿美元。分析人士指出，这一人事变动标志着谷歌正从“AI科学探索时代”全面转向“AI产品落地和商业化时代”。哈萨比斯的卸任并非离开AI，而是摆脱日常管理重新聚焦科研；Jeff Dean的出走则象征着谷歌工程文化一个时代的结束。",
+      "sources": [
+        {
+          "name": "第一财经",
+          "url": "http://m.toutiao.com/group/7670851989492613667/"
+        },
+        {
+          "name": "London Daily",
+          "url": "https://londondaily.com/this-week-in-ai-meta-s-superintelligence-push-xai-s-ten-billion-dollar-raise-genesis-ai-s-robotics-ambitions-microsoft"
+        }
+      ],
+      "original_time": "2026-08-05T20:00:00+08:00",
+      "tags": [
+        "谷歌",
+        "DeepMind",
+        "哈萨比斯",
+        "Jeff Dean",
+        "Discovery Loop",
+        "人事变动"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "DeepSeek宣布大幅上调API定价，AI大模型行业从“价格战”转向“理性定价”",
+      "summary": "8月6日，DeepSeek发布公告计划近期整体上调API服务定价，预计涨幅较大。直接原因是日处理8万亿Token的海量调用远超算力供给能力，叠加高端芯片产能受限。高盛研报指出这反映行业竞争从价格战回归理性定价框架。",
+      "content_markdown": "8月6日，DeepSeek开放平台发布公告，计划近期整体上调API服务定价，明确表示“预计涨幅较大”，具体方案以正式通知为准。这是DeepSeek自2024年以“地板价”搅动市场以来最重大的一次定价策略转向。\n\n涨价的直接驱动力来自需求端的爆发式增长。据OpenRouter平台数据，DeepSeek V4 Flash单周调用量达7.22万亿Token，位居全球第一；开源项目OpenCode披露，8月1日单日处理量达8万亿Token，其中5万亿来自免费额度。国家数据局数据显示，国内日均Token调用量已突破140万亿，较2024年初增长超千倍。巨大的访问量已在8月4日导致API出现容量不足和性能下降。\n\n成本端压力同样显著。高端AI芯片产能受限、供应链成本持续上涨，国内AI加速芯片需求约400万张但国产产能仅约300万张，缺口达25%。此前DeepSeek V4-Flash缓存命中输入仅0.02元/百万Token（约为GPT-4o的1/125），长期低价策略已不可持续。\n\n高盛研报指出，此次调价并不意味着需求走弱，反而反映出国内AI模型需求持续旺盛，行业竞争正从激进的价格战逐步回归理性定价框架。智谱AI、腾讯云、豆包等厂商已先行调价，DeepSeek是跟随而非引领。",
+      "sources": [
+        {
+          "name": "上海证券报",
+          "url": "http://www.cnstock.com/commonDetail/756390"
+        },
+        {
+          "name": "科创板日报",
+          "url": "https://m.weibo.cn/detail/5328977150607875"
+        },
+        {
+          "name": "新浪财经",
+          "url": "https://cj.sina.cn/articles/view/7879776886/1d5abda76068026u1u"
+        },
+        {
+          "name": "经济参考报",
+          "url": "http://m.toutiao.com/group/7670994017659748870/"
+        }
+      ],
+      "original_time": "2026-08-06T14:30:00+08:00",
+      "tags": [
+        "DeepSeek",
+        "API定价",
+        "Token",
+        "算力",
+        "价格战"
+      ],
+      "category": "industry_policy"
+    },
+    {
+      "title": "AI基础设施军备竞赛全面升级：台积电产能扩张+AMD创纪录财报+EU AI Act透明度条款生效",
+      "summary": "台积电3nm月产能年底将达18万片晶圆，资本支出上调至600-640亿美元。AMD Q2营收115亿美元创纪录，数据中心业务收入同比翻倍。EU AI Act第50条透明度条款8月2日正式执行，违规罚款最高1500万欧元或全球营收3%。",
+      "content_markdown": "本周AI基础设施领域密集释放重磅信号。台积电3nm制程月产能预计年底达18万片晶圆，超市场预期的15万片，同比增长超40%；2nm月产能亦有望接近10万片。台积电全年资本支出从520亿美元上调至600-640亿美元，约70-80%投向先进制程。同时因DRAM缺货，价值10亿美元的苹果A20 Pro处理器堆积等待封装，凸显AI需求对传统终端供应链的挤压效应。\n\nAMD于8月4日公布Q2财报创历史新高：营收115.36亿美元同比增长50%，数据中心业务收入67.18亿美元同比翻倍，占总营收58%。CEO苏姿丰表示EPYC需求加速、Instinct部署扩大、Helios开始放量。DRAM方面，SK Hynix净利润同比暴涨397.5%，三星净利润增长486.7%，HBM产能已预售至2027年。\n\n监管层面，EU AI Act第50条透明度条款于8月2日正式执行。所有在欧盟提供AI服务的企业必须明确告知用户正在与AI交互，AI生成内容需强制标注。违规企业面临最高1500万欧元或全球年营收3%的罚款。法国监管机构已于8月4日向14家金融机构发出信息调查要求。",
+      "sources": [
+        {
+          "name": "朝鲜日报",
+          "url": "https://www.chosun.com/english/industry-en/2026/08/06/6LPTRUXIJ5GMNOXOZQA52CZ5AQ/"
+        },
+        {
+          "name": "AMD官方",
+          "url": "https://www.globenewswire.com/"
+        },
+        {
+          "name": "环球网",
+          "url": "http://m.toutiao.com/group/7670002669876019766/"
+        },
+        {
+          "name": "CNN Business",
+          "url": "https://cnnbc.com/the-ai-race-enters-its-infrastructure-era"
+        },
+        {
+          "name": "每日经济新闻",
+          "url": "https://news.ifeng.com/c/8vO2b3uTbEw"
+        }
+      ],
+      "original_time": "2026-08-06T16:00:00+08:00",
+      "tags": [
+        "台积电",
+        "AMD",
+        "EU AI Act",
+        "芯片",
+        "基础设施",
+        "监管"
+      ],
+      "category": "tech_breakthrough"
+    },
+    {
+      "title": "字节跳动CEO梁汝波年中表态：大模型坚持自研，接受短期落后",
+      "summary": "8月6日字节跳动年中全员会上，CEO梁汝波明确大语言模型坚持自研路线，做好基本功，接受短期落后。创始人张一鸣强调不会使用模型蒸馏技术加速研发。梁汝波坦言大模型与海外领先模型存在差距，但豆包C端应用和Seedance视频生成保持竞争力。",
+      "content_markdown": "8月6日字节跳动2026年度年中全员会上，CEO梁汝波明确表示字节跳动大语言模型将坚持自研路线，做好基本功，接受短期落后，坚持优化长期。他辟谣称“字节因外部压力才坚持自研”是外界猜测，真实原因是公司希望团队延迟满足感、打好技术基础，这对长期实现AGI很关键。\n\n此前，字节跳动创始人张一鸣在内部会议上强调，字节跳动不会使用模型蒸馏技术来加速AI模型研发，哪怕这意味着Seed模型在短期内会在评测榜单上暂时落后于DeepSeek、Kimi（月之暗面）和Qwen（通义千问）等国内竞争对手。梁汝波坦言豆包在C端应用、Seedance视频生成模型保持了竞争力，但大语言模型与海外领先模型存在差距。\n\n这一表态被业界视为中国AI赛道上“难得的慢哲学宣言”。对于字节这样的超级应用生态公司，模型能力最终需与产品深度耦合，短期评测排名并不等于商业胜势。坚持自研意味着要承受更长的投入周期与更大的不确定性风险。",
+      "sources": [
+        {
+          "name": "科创板日报",
+          "url": "https://m.weibo.cn/detail/5328977150607875"
+        },
+        {
+          "name": "凤凰网",
+          "url": "https://news.ifeng.com/c/8vO2b3uTbEw"
+        },
+        {
+          "name": "每日经济新闻",
+          "url": "https://news.ifeng.com/c/8vO2b3uTbEw"
+        }
+      ],
+      "original_time": "2026-08-06T18:00:00+08:00",
+      "tags": [
+        "字节跳动",
+        "梁汝波",
+        "张一鸣",
+        "大模型",
+        "自研",
+        "AGI"
+      ],
+      "category": "other"
+    },
+    {
+      "title": "OpenAI双线动作：ChatGPT免费用户升级GPT-5.6 Luna，同时请求驳回苹果商业秘密诉讼",
+      "summary": "OpenAI于8月7日宣布ChatGPT免费用户文字互动不再受限，默认升级GPT-5.6 Luna，新增“思考”按钮。同期GPT-5.6 Luna API降价80%。另一方面，OpenAI于8月5日请求法院驳回苹果商业秘密诉讼，公开邮件逐条反驳指控，法官定于10月1日听证。",
+      "content_markdown": "OpenAI于8月7日宣布ChatGPT完成重大更新：免费用户文字互动将不再受限，默认模型同步升级为GPT-5.6 Luna，表现优于此前的GPT-5.5 Instant。免费用户和8美元Go套餐用户还将新增“思考”按钮功能，可分配更多推理时间应对复杂问题。该更新预计下周正式上线。同期，OpenAI此前已将GPT-5.6 Luna API价格下调80%，降至每百万输入Token 0.20美元、输出1.20美元。\n\n与此同时，OpenAI于8月5日向美国法院提交动议，请求驳回苹果7月提起的商业秘密诉讼。苹果指控OpenAI通过前员工系统性获取iPhone等硬件未发布产品的机密信息，涉及超400名前苹果员工。OpenAI在31页动议中逐条反驳，公开邮件记录显示苹果外聘律师曾混淆亚裔姓氏发错邮件，并称“OpenAI正在开发完全不同于苹果产品的全新东西”。OpenAI还在博客文章中以《苹果，这件事是你做错了》为题公开回应。法官定于10月1日就禁令申请举行听证。\n\n两大事件折射OpenAI的“两面战略”：一面以降价和免费策略扩大用户基础，一面在硬件领域与苹果展开激烈法律对抗。",
+      "sources": [
+        {
+          "name": "新浪财经",
+          "url": "https://cj.sina.cn/articles/view/7879776887/1d5abda7706803kduu"
+        },
+        {
+          "name": "MacRumors",
+          "url": "https://www.macrumors.com/2026/08/06/openai-asks-judge-to-dismiss-apple-lawsuit/"
+        },
+        {
+          "name": "电子工程专辑",
+          "url": "https://www.eet-china.com/news/202608064837.html"
+        },
+        {
+          "name": "爱范儿",
+          "url": "http://m.toutiao.com/group/7670926988307120655/"
+        }
+      ],
+      "original_time": "2026-08-07T06:00:00+08:00",
+      "tags": [
+        "OpenAI",
+        "ChatGPT",
+        "GPT-5.6 Luna",
+        "苹果",
+        "商业秘密",
+        "诉讼"
+      ],
+      "category": "product_launch"
+    }
+  ]
+}
