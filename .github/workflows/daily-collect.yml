@@ -86,7 +86,7 @@ jobs:
           git config user.name "AI Treasure Box Bot"
           git config user.email "bot@afterai.tech"
           git checkout -b gh-pages
-          echo "afterai.tech" > CNAME
+          echo "tools.afterai.tech" > CNAME
           cp index.html 404.html
           git add -A
           git commit -m "🚀 Deploy: $(date -u +'%Y-%m-%d %H:%M UTC')"
