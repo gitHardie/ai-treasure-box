@@ -2,7 +2,7 @@
 URL Verifier - unified URL verification and Logo resolution.
 
 Runs after SearchEnricher and before ChinaDetector/AIAnalyzer.
-Only replaces URLs from known tool aggregator sites (ProductHunt, AIWW, TAAFT, etc.).
+Only replaces URLs from known tool aggregator sites (ProductHunt, TAAFT, etc.).
 GitHub repos are treated as valid official sites for open-source projects.
 """
 import json
@@ -61,6 +61,16 @@ FALSE_POSITIVE_DOMAINS = {
     "get.adobe.com",
     "code.visualstudio.com",
     "en.m.wikipedia.org",
+}
+
+# Domains to skip when extracting links from aggregator pages
+SCRAPER_SKIP_DOMAINS = {
+    "theresanaiforthat", "taaft", "aiww",
+    "youtube", "discord", "twitter", "x.com",
+    "facebook", "linkedin", "reddit", "instagram",
+    "tiktok", "pinterest", "snapchat", "tumblr",
+    "github.com/topics", "apps.apple.com", "play.google.com",
+    "microsoft.com/store", "chrome.google.com",
 }
 
 # 30-day cache
@@ -143,34 +153,195 @@ class URLVerifier:
             return True
         return False
 
+    @staticmethod
+    def _clean_url(url):
+        """Strip tracking/UTM parameters from a URL, return homepage root."""
+        try:
+            parsed = urlparse(url)
+            clean = f"{parsed.scheme}://{parsed.netloc}{parsed.path}".rstrip("/")
+            return clean
+        except Exception:
+            return url
+
+    def _should_skip_scraper_link(self, url):
+        """Check if a link found on an aggregator page should be skipped."""
+        domain = self._extract_domain(url)
+        if not domain:
+            return True
+        for skip in SCRAPER_SKIP_DOMAINS:
+            if skip in domain:
+                return True
+        # Skip if it's any known aggregator
+        if self._is_aggregator_url(url):
+            return True
+        return False
+
+    # ------------------------------------------------------------------ #
+    # Strategy 0: Direct page scraping for accessible aggregators        #
+    # ------------------------------------------------------------------ #
+
+    def _scrape_aiww(self, url):
+        """Scrape AIWW page to extract official website URL.
+
+        AIWW pages have a link with class 'a-url' pointing to the tool's
+        official site (with utm_source=aiww tracking params).
+        """
+        try:
+            import requests as req
+            session = req.Session()
+            session.headers.update({
+                "User-Agent": (
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/125.0.0.0 Safari/537.36"
+                ),
+                "Accept": "text/html,application/xhtml+xml",
+                "Accept-Language": "en-US,en;q=0.9",
+            })
+            r = session.get(url, timeout=15, allow_redirects=True)
+            if r.status_code == 200:
+                # Primary pattern: class containing 'a-url' with href
+                match = re.search(
+                    r'class="[^"]*a-url[^"]*"[^>]*href="([^"]+)"', r.text
+                )
+                if not match:
+                    # Fallback: any link with utm_source=aiww
+                    match = re.search(
+                        r'href="(https?://[^"]*[?&]utm_source=aiww[^"]*)"',
+                        r.text,
+                    )
+                if match:
+                    raw_url = match.group(1)
+                    clean_url = self._clean_url(raw_url)
+                    if not self._is_false_positive(clean_url):
+                        logger.info(
+                            "[URLVerifier] AIWW scrape: %s -> %s", url, clean_url
+                        )
+                        return clean_url
+        except ImportError:
+            logger.warning("[URLVerifier] requests not installed for AIWW scrape")
+        except Exception as e:
+            logger.warning("[URLVerifier] AIWW scrape failed for %s: %s", url, e)
+        return None
+
+    def _scrape_taaft(self, url):
+        """Scrape TAAFT page using cloudscraper to extract official website URL.
+
+        TAAFT uses Cloudflare protection; cloudscraper may bypass it.
+        External links with ref=taaft or utm_source=taaft point to the tool site.
+        """
+        try:
+            import cloudscraper
+            scraper = cloudscraper.create_scraper(
+                browser={
+                    "browser": "chrome",
+                    "platform": "windows",
+                    "desktop": True,
+                }
+            )
+            r = scraper.get(url, timeout=20)
+            if r.status_code == 200:
+                # Find all external links
+                links = re.findall(r'href="(https?://[^"]+)"', r.text)
+                for link in links:
+                    # Look for links with TAAFT tracking params
+                    if "ref=taaft" in link or "utm_source=taaft" in link:
+                        clean_url = self._clean_url(link)
+                        if not self._should_skip_scraper_link(clean_url):
+                            if not self._is_false_positive(clean_url):
+                                logger.info(
+                                    "[URLVerifier] TAAFT scrape: %s -> %s",
+                                    url,
+                                    clean_url,
+                                )
+                                return clean_url
+
+                # Fallback: if no tracking-param links found, look for the
+                # "Visit website" / "Get this tool" button pattern
+                visit_match = re.search(
+                    r'(?:visit|get\s+this|go\s+to|official)\s*(?:website|site|tool)?'
+                    r'[^>]*href="(https?://[^"]+)"',
+                    r.text,
+                    re.IGNORECASE,
+                )
+                if visit_match:
+                    clean_url = self._clean_url(visit_match.group(1))
+                    if (
+                        not self._should_skip_scraper_link(clean_url)
+                        and not self._is_false_positive(clean_url)
+                    ):
+                        logger.info(
+                            "[URLVerifier] TAAFT scrape (fallback): %s -> %s",
+                            url,
+                            clean_url,
+                        )
+                        return clean_url
+            else:
+                logger.warning(
+                    "[URLVerifier] TAAFT scrape HTTP %d for %s", r.status_code, url
+                )
+        except ImportError:
+            logger.warning("[URLVerifier] cloudscraper not installed")
+        except Exception as e:
+            logger.warning("[URLVerifier] TAAFT scrape failed for %s: %s", url, e)
+        return None
+
+    # ------------------------------------------------------------------ #
+    # Main resolution pipeline                                           #
+    # ------------------------------------------------------------------ #
+
     def _resolve_official_url(self, tool):
         """Try to resolve the real official URL for a product from aggregator."""
         name = tool.get("name", "")
-        
-        # Strategy 1: Use search results from SearchEnricher (already cached)
+        url = tool.get("url", "")
+        domain = self._extract_domain(url)
+
+        # ---- Strategy 0a: Direct scrape for AIWW (high success rate) ----
+        if "aiww.com" in domain:
+            result = self._scrape_aiww(url)
+            if result:
+                return result
+
+        # ---- Strategy 0b: Direct scrape for TAAFT (cloudscraper) --------
+        if "theresanaiforthat.com" in domain or "theresanaiforthat.ai" in domain:
+            result = self._scrape_taaft(url)
+            if result:
+                return result
+
+        # ---- Strategy 1: Use search results from SearchEnricher ----------
         search_data = tool.get("_search", {})
         top_results = search_data.get("top_results", [])
         for result in top_results:
             href = result.get("href", "")
             if href and not self._is_aggregator_url(href) and not self._is_false_positive(href):
-                domain = self._extract_domain(href)
                 logger.info("[URLVerifier] %s -> resolved from search: %s", name, href)
                 return href
 
-        # Strategy 2: Targeted DuckDuckGo search with stricter filtering
+        # ---- Strategy 2: Targeted DuckDuckGo search ----------------------
         try:
             try:
                 from ddgs import DDGS
             except ImportError:
                 from duckduckgo_search import DDGS
-            query = '"' + name + '" official website'
+
+            # Use a more specific query excluding known aggregators
+            query = '"' + name + '" official website -producthunt -theresanaiforthat -aiww -toolify'
             with DDGS() as ddgs:
-                results = list(ddgs.text(query, max_results=5))
+                results = list(ddgs.text(query, max_results=8))
             for r in results:
                 href = r.get("href", "")
                 if href and not self._is_aggregator_url(href) and not self._is_false_positive(href):
-                    domain = self._extract_domain(href)
                     logger.info("[URLVerifier] %s -> DDG: %s", name, href)
+                    return href
+
+            # Second attempt with different query
+            query2 = '"' + name + '" site -producthunt -theresanaiforthat -aiww'
+            with DDGS() as ddgs:
+                results2 = list(ddgs.text(query2, max_results=5))
+            for r in results2:
+                href = r.get("href", "")
+                if href and not self._is_aggregator_url(href) and not self._is_false_positive(href):
+                    logger.info("[URLVerifier] %s -> DDG (alt): %s", name, href)
                     return href
         except ImportError:
             logger.warning("[URLVerifier] duckduckgo_search not installed")
