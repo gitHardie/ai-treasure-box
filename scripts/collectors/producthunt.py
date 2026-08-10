@@ -128,6 +128,11 @@ class Collector(BaseCollector):
         return url.split("?")[0] if "?" in url else url
 
     def _tool_url(self, node: Dict) -> str:
+        # Prefer real official website URL from GraphQL
+        website = node.get("website", "")
+        if website:
+            return self._clean_url(website)
+        # Fallback to PH page
         slug = node.get("slug", "")
         if slug:
             return f"https://www.producthunt.com/products/{slug}"

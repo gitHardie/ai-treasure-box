@@ -142,9 +142,19 @@ class SearchEnricher:
             result_count = len(results)
             popularity_tier = self._compute_popularity_tier(result_count, has_official)
             logger.info("[Search] %s: %d results, tier=%s", tool_name, result_count, popularity_tier)
+            # Build top_results with title, href, snippet
+            top_results = []
+            for r in results[:5]:
+                top_results.append({
+                    "title": (r.get("title") or "").strip(),
+                    "href": (r.get("href") or "").strip(),
+                    "snippet": (r.get("body") or "").strip(),
+                })
+
             return {
                 "result_count": result_count,
                 "top_snippets": snippets,
+                "top_results": top_results,
                 "has_official_site": has_official,
                 "popularity_tier": popularity_tier,
             }

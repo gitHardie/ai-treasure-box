@@ -29,6 +29,7 @@ from pipeline.data_model import DailySnapshot
 from pipeline.scheduler import CollectionScheduler
 from pipeline.tool_database import ToolDatabase
 from pipeline.search_enricher import SearchEnricher
+from pipeline.url_verifier import URLVerifier
 from pipeline.china_detector import enrich_china_signals
 
 logging.basicConfig(
@@ -241,6 +242,11 @@ def cmd_analyze(args):
     enricher = SearchEnricher(cache_dir=data_dir / "cache")
     pending = enricher.enrich(pending)
     logger.info("[Analyze] Search enrichment complete")
+
+    # URL verification: resolve aggregator URLs to official sites + logo
+    verifier = URLVerifier(cache_dir=data_dir / "cache")
+    pending = verifier.verify_tools(pending)
+    logger.info("[Analyze] URL verification complete")
 
     # China detection: fetch homepages and check ICP/language
     pending = enrich_china_signals(pending)

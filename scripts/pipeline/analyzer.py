@@ -936,8 +936,10 @@ class AIAnalyzer:
         should_include = self._eval_inclusion(category, utility, {})
 
         # === 丰富分析内容 ===
+        search_data = tool_data.get('_search', {})
         rich = self._generate_rich_analysis(name, desc, category, license_tier,
-                                             source, raw, audience, utility)
+                                             source, raw, audience, utility,
+                                             search_data=search_data)
 
         return {
             "category": category,
@@ -1562,7 +1564,8 @@ class AIAnalyzer:
 
     def _generate_rich_analysis(self, name: str, desc: str, category: str,
                                 license_tier: str, source: str, raw: Dict,
-                                audience: str, utility: int) -> Dict:
+                                audience: str, utility: int,
+                                search_data: Dict = None) -> Dict:
         """
         生成更丰富的分析内容，包含功能亮点、适合人群、特色评价。
         本地降级时使用，比 _generate_summary 更详细。
@@ -1588,21 +1591,34 @@ class AIAnalyzer:
         if len(desc_short) > 50:
             desc_short = desc_clean[:50].strip().rstrip('.,;!') + "..."
 
-        # 根据受众面调整概述风格 - 生成纯中文概述，不嵌入英文原文
-        if audience == "general":
-            tier_part = f"{tier_text}" if tier_text else ""
-            overview = f"{name} 是一款{category}领域的{tier_part}工具".replace("的的", "的").rstrip("，, ")
-            overview += "，适合普通用户直接使用，无需技术背景。"
-        elif audience == "developer":
-            tier_part = f"{tier_text}" if tier_text else ""
-            overview = f"{name} 是一个面向开发者的{category}类{tier_part}项目".replace("的的", "的").rstrip("，, ")
-            overview += "，适合有技术背景的用户集成到工作流中使用。"
-        elif audience == "researcher":
-            tier_part = f"{tier_text}" if tier_text else ""
-            overview = f"{name} 是{category}领域的{tier_part}研究工具".replace("的的", "的").rstrip("，, ")
-            overview += "，主要面向研究人员和学术场景。"
+        # Use search snippets to generate informative overview
+        import re as _re
+        func_desc = ""
+        if search_data and search_data.get('top_snippets'):
+            for snippet in search_data['top_snippets']:
+                if any('\u4e00' <= c <= '\u9fff' for c in snippet):
+                    func_desc = snippet[:150]
+                    break
+            if not func_desc:
+                func_desc = search_data['top_snippets'][0][:150]
+        if not func_desc and desc:
+            first_sent = _re.split(r'(?<=[.!?])\s+', desc.strip())[0]
+            if len(first_sent) > 20:
+                func_desc = first_sent[:150]
+
+        audience_desc = {
+            "general": "适合普通用户直接使用",
+            "developer": "适合开发者集成到工作流",
+            "researcher": "面向研究人员和学术场景",
+        }
+        aud_text = audience_desc.get(audience, "")
+
+        if func_desc:
+            overview = f"{name}：{func_desc}。{tier_text}{('，' + aud_text) if aud_text else ''}。"
         else:
-            overview = f"{name} 属于{category}领域。"
+            overview = f"{name} 属于{category}领域的{tier_text}工具。"
+
+        overview = overview.replace("的的", "的").replace("。。", "。").replace("，，", "，")
 
         # === 功能亮点 (features) ===
         features = []
