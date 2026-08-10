@@ -120,11 +120,18 @@ class SearchEnricher:
         tool_name = tool.get("name", "")
         query = chr(34) + tool_name + chr(34) + " AI tool"
         logger.info("[Search] Searching: %s", query)
+
+        # Import DDGS with fallback
         try:
-            try:
             from ddgs import DDGS
         except ImportError:
-            from duckduckgo_search import DDGS
+            try:
+                from duckduckgo_search import DDGS
+            except ImportError:
+                logger.warning("[Search] ddgs/duckduckgo_search not installed")
+                return self._empty_result()
+
+        try:
             with DDGS() as ddgs:
                 results = list(ddgs.text(query, max_results=8))
             if not results:
@@ -145,7 +152,6 @@ class SearchEnricher:
             result_count = len(results)
             popularity_tier = self._compute_popularity_tier(result_count, has_official)
             logger.info("[Search] %s: %d results, tier=%s", tool_name, result_count, popularity_tier)
-            # Build top_results with title, href, snippet
             top_results = []
             for r in results[:5]:
                 top_results.append({
@@ -161,11 +167,8 @@ class SearchEnricher:
                 "has_official_site": has_official,
                 "popularity_tier": popularity_tier,
             }
-        except ImportError:
-            logger.warning("[Search] duckduckgo_search not installed")
-            return self._empty_result()
         except Exception as e:
-            logger.warning("[Search] Search failed: %s", e)
+            logger.warning("[Search] Search failed for %s: %s", tool_name, e)
             return self._empty_result()
 
     def enrich(self, tools):
