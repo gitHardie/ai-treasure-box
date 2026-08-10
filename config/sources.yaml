@@ -136,6 +136,21 @@ sources:
   schedule_mode: discovery
   fetch_limit: 30
   check_interval_days: 7
+- id: aiww
+  name: AIWW关注度排行
+  type: web
+  tier: 2
+  url: https://www.aiww.com
+  enabled: true
+  parser: aiww.py
+  category: 其他
+  is_china_source: true
+  auto_detect_license: false
+  ai_analysis: false
+  description: AIWW关注度排行榜，提供国内AI工具真实热度指标（日均关注人次）
+  schedule_mode: discovery
+  fetch_limit: 50
+  check_interval_days: 7
 - id: aig123
   name: AIG123
   type: web

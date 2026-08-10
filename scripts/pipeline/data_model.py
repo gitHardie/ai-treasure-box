@@ -119,6 +119,8 @@ class ToolStats:
     growth_rate: Optional[float] = None      # 增长率(%)
     rank_position: Optional[int] = None      # 排名位置
     rank_source: Optional[str] = None        # 排名来源
+    popularity_score: Optional[int] = None   # 关注度（日均关注人次，来自AIWW等非开源数据源）
+    popularity_change: Optional[float] = None  # 关注度变化百分比（如30.8表示+30.8%）
 
 
 @dataclass

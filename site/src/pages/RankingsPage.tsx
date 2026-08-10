@@ -11,6 +11,20 @@ function formatStars(stars: number | null | undefined): string {
   return stars.toString()
 }
 
+function formatPopularity(score: number | null | undefined): string {
+  if (!score) return "0"
+  if (score >= 10000) return (score / 10000).toFixed(1) + '万'
+  if (score >= 1000) return (score / 1000).toFixed(1) + 'k'
+  return score.toString()
+}
+
+function formatChange(change: number | null | undefined): string {
+  if (!change && change !== 0) return ''
+  if (change > 0) return `+${change.toFixed(1)}%`
+  if (change < 0) return `${change.toFixed(1)}%`
+  return '0%'
+}
+
 function getDomain(url: string): string {
   try { return new URL(url).hostname } catch { return '' }
 }
@@ -39,17 +53,13 @@ export default function RankingsPage() {
         t.topics?.some(topic => topic.toLowerCase().includes(filterCat.toLowerCase()))
       )
     }
-    // Sort by stars for global, by a "heat" score for china
-    if (activeTab === 'global') {
-      list.sort((a, b) => (b.stars || 0) - (a.stars || 0))
-    } else {
-      // Heat score: stars + forks * 3
-      list.sort((a, b) => ((b.stars||0) + (b.forks||0) * 3) - ((a.stars||0) + (a.forks||0) * 3))
-    }
+    // Sort by popularity_score (if available) or stars
+    const heatScore = (t: ToolItem) => (t.popularity_score || 0) * 10 + (t.stars || 0) + (t.forks || 0) * 3
+    list.sort((a, b) => heatScore(b) - heatScore(a))
     return list.map((item, idx) => ({
       ...item,
       rank: idx + 1,
-      rank_change: item.rank_change || 0,
+      rank_change: item.rank_change || item.popularity_change || 0,
     }))
   }, [tools, activeTab, filterCat])
 
@@ -71,7 +81,7 @@ export default function RankingsPage() {
           🏆 AI 工具排行榜
         </h2>
         <p className="text-sm text-slate-500 dark:text-slate-400">
-          实时追踪最受欢迎的 AI 开源项目
+          实时追踪最受欢迎的 AI 工具，关注度和趋势基于 AIWW 真实用户数据
         </p>
       </div>
 
@@ -157,24 +167,37 @@ export default function RankingsPage() {
               </p>
             </div>
 
-            {/* Stars - only show when > 0 */}
+            {/* Popularity / Stars + Trend */}
             <div className="text-right shrink-0">
-              {(item.stars ?? 0) > 0 && (
+              {(item.popularity_score ?? 0) > 0 ? (
+              <div className="flex items-center gap-1 text-orange-500">
+                <span className="text-sm">🔥</span>
+                <span className="font-bold text-sm">{formatPopularity(item.popularity_score)}</span>
+              </div>
+              ) : (item.stars ?? 0) > 0 ? (
               <div className="flex items-center gap-1 text-amber-500">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                 </svg>
                 <span className="font-bold text-sm">{formatStars(item.stars)}</span>
               </div>
-              )}
-              {item.rank_change !== 0 && (
+              ) : null}
+              {/* Trend arrow - use popularity_change when available */}
+              {(item.popularity_change ?? 0) > 0 ? (
+                <div className="text-xs mt-0.5 font-medium text-emerald-500">
+                  ↑ {formatChange(item.popularity_change)}
+                </div>
+              ) : (item.popularity_change ?? 0) < 0 ? (
+                <div className="text-xs mt-0.5 font-medium text-red-500">
+                  ↓ {formatChange(item.popularity_change)}
+                </div>
+              ) : (item.rank_change ?? 0) !== 0 ? (
                 <div className={`text-xs mt-0.5 font-medium ${
                   item.rank_change > 0 ? 'text-emerald-500' : 'text-red-500'
                 }`}>
                   {item.rank_change > 0 ? `↑${Math.abs(item.rank_change)}` : `↓${Math.abs(item.rank_change)}`}
                 </div>
-              )}
-              {item.rank_change === 0 && (
+              ) : (
                 <div className="text-xs mt-0.5 text-slate-400">→ 持平</div>
               )}
             </div>

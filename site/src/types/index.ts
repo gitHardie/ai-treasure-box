@@ -39,6 +39,8 @@ export interface ToolItem {
   best_for?: string
   notable?: string
   ai_relevance?: 'ai-core' | 'ai-powered' | 'ai-enabled'
+  popularity_score?: number
+  popularity_change?: number
 }
 
 export interface ToolsJsonData {

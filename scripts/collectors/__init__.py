@@ -11,6 +11,7 @@ from .toolify import Collector as ToolifyCollector
 from .aig123 import Collector as AIG123Collector
 from .futurepedia import Collector as FuturepediaCollector
 from .manual import Collector as ManualCollector
+from .aiww import Collector as AIWWCollector
 
 __all__ = [
     "BaseCollector",
@@ -26,4 +27,5 @@ __all__ = [
     "AIG123Collector",
     "FuturepediaCollector",
     "ManualCollector",
+    "AIWWCollector",
 ]

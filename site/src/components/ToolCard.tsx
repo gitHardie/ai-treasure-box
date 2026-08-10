@@ -47,6 +47,13 @@ function formatStars(stars: number | null | undefined): string {
   return stars.toString()
 }
 
+function formatPopularity(score: number | null | undefined): string {
+  if (!score) return "0"
+  if (score >= 10000) return (score / 10000).toFixed(1) + '万'
+  if (score >= 1000) return (score / 1000).toFixed(1) + 'k'
+  return score.toString()
+}
+
 function licenseBadge(tier?: string): { label: string; cls: string } | null {
   if (!tier) return null
   const t = tier.toLowerCase()
@@ -179,8 +186,15 @@ export default function ToolCard({ tool, onClick, index = 0 }: Props) {
             )}
           </div>
 
-          {/* Stars - only show for GitHub tools */}
-          {(tool.stars ?? 0) > 0 && (
+          {/* Popularity Score or Stars */}
+          {(tool.popularity_score ?? 0) > 0 ? (
+          <div className="flex items-center gap-1 text-orange-500 dark:text-orange-400 shrink-0">
+            <span className="text-sm">🔥</span>
+            <span className="text-sm font-bold bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+              {formatPopularity(tool.popularity_score)}
+            </span>
+          </div>
+          ) : (tool.stars ?? 0) > 0 ? (
           <div className="flex items-center gap-1 text-amber-500 dark:text-amber-400 shrink-0">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -189,7 +203,7 @@ export default function ToolCard({ tool, onClick, index = 0 }: Props) {
               {formatStars(tool.stars)}
             </span>
           </div>
-          )}
+          ) : null}
         </div>
 
         {/* Description - prefer AI analysis (Chinese) over raw English description */}
