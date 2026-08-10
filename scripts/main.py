@@ -407,6 +407,37 @@ def cmd_deploy(args):
     logger.info(f"[Deploy] Site data ready in {SITE_DIR}")
 
 
+
+def cmd_url_fix(args):
+    """URL修复模式：批量修复存量工具的聚合站URL"""
+    from pipeline.url_verifier import URLVerifier
+    
+    db = _get_db()
+    all_tools = db.get_all_tools()
+    logger.info(f"[URLFix] Total tools: {len(all_tools)}")
+    
+    # Find tools with aggregator URLs
+    verifier = URLVerifier(cache_dir=DATA_DIR / "cache")
+    agg_tools = [t for t in all_tools if isinstance(t, dict) and verifier._is_aggregator_url(t.get("url", ""))]
+    logger.info(f"[URLFix] Tools with aggregator URLs: {len(agg_tools)}")
+    
+    if not agg_tools:
+        logger.info("[URLFix] No aggregator URLs to fix!")
+        return
+    
+    # Run URL verification with concurrency
+    verifier.verify_tools(agg_tools, max_workers=5)
+    
+    # Count results
+    fixed = sum(1 for t in agg_tools if not verifier._is_aggregator_url(t.get("url", "")))
+    remaining = len(agg_tools) - fixed
+    logger.info(f"[URLFix] Fixed: {fixed}, Still aggregator: {remaining}")
+    
+    # Save updated master DB
+    db.save()
+    logger.info("[URLFix] Master DB saved")
+
+
 def cmd_run(args):
     """完整流程：自动判断模式并执行"""
     config = _get_config()
@@ -475,6 +506,9 @@ def main():
     # deep
     subparsers.add_parser("deep", help="深度更新（全量重分析）")
 
+    # url_fix
+    subparsers.add_parser("url_fix", help="批量修复存量工具的聚合站URL")
+
     # analyze
     subparsers.add_parser("analyze", help="对pending工具执行AI分析")
 
@@ -494,6 +528,8 @@ def main():
         cmd_check(args)
     elif args.command == "deep":
         cmd_deep(args)
+    elif args.command == "url_fix":
+        cmd_url_fix(args)
     elif args.command == "analyze":
         cmd_analyze(args)
     elif args.command == "deploy":

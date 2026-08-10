@@ -154,15 +154,15 @@ class URLVerifier:
             href = result.get("href", "")
             if href and not self._is_aggregator_url(href) and not self._is_false_positive(href):
                 domain = self._extract_domain(href)
-                # Skip GitHub - for OSS projects, the original GitHub URL is fine
-                if domain == "github.com":
-                    continue
                 logger.info("[URLVerifier] %s -> resolved from search: %s", name, href)
                 return href
 
         # Strategy 2: Targeted DuckDuckGo search with stricter filtering
         try:
-            from duckduckgo_search import DDGS
+            try:
+                from ddgs import DDGS
+            except ImportError:
+                from duckduckgo_search import DDGS
             query = '"' + name + '" official website'
             with DDGS() as ddgs:
                 results = list(ddgs.text(query, max_results=5))
@@ -170,8 +170,6 @@ class URLVerifier:
                 href = r.get("href", "")
                 if href and not self._is_aggregator_url(href) and not self._is_false_positive(href):
                     domain = self._extract_domain(href)
-                    if domain == "github.com":
-                        continue
                     logger.info("[URLVerifier] %s -> DDG: %s", name, href)
                     return href
         except ImportError:

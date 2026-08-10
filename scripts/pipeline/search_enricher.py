@@ -121,6 +121,9 @@ class SearchEnricher:
         query = chr(34) + tool_name + chr(34) + " AI tool"
         logger.info("[Search] Searching: %s", query)
         try:
+            try:
+            from ddgs import DDGS
+        except ImportError:
             from duckduckgo_search import DDGS
             with DDGS() as ddgs:
                 results = list(ddgs.text(query, max_results=8))
