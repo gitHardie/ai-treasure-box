@@ -86,7 +86,7 @@ jobs:
               git add "$conflict_file"
             done
             
-            if git rebase --continue; then
+            if GIT_EDITOR=true git rebase --continue; then
               echo "Rebase resolved, pushing..."
               git push && echo "Push successful" && exit 0
             fi
