@@ -82,7 +82,7 @@ jobs:
             # For data files, accept our version (freshly computed pipeline data)
             git diff --name-only --diff-filter=U | while read conflict_file; do
               echo "Resolving conflict in: $conflict_file"
-              git checkout --ours "$conflict_file"
+              git checkout --theirs "$conflict_file"
               git add "$conflict_file"
             done
             

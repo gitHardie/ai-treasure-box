@@ -195,6 +195,7 @@ class URLVerifier:
 
         AIWW pages have a link with class 'a-url' pointing to the tool's
         official site (with utm_source=aiww tracking params).
+        Includes retry logic for transient network failures.
         """
         try:
             import requests as req
@@ -208,7 +209,26 @@ class URLVerifier:
                 "Accept": "text/html,application/xhtml+xml",
                 "Accept-Language": "en-US,en;q=0.9",
             })
-            r = session.get(url, timeout=15, allow_redirects=True)
+            # Retry up to 2 times for transient failures
+            r = None
+            for attempt in range(3):
+                try:
+                    r = session.get(url, timeout=20, allow_redirects=True)
+                    if r.status_code == 200:
+                        break
+                    logger.warning(
+                        "[URLVerifier] AIWW HTTP %d for %s (attempt %d)",
+                        r.status_code, url, attempt + 1,
+                    )
+                except (req.exceptions.ConnectionError, req.exceptions.Timeout) as e:
+                    logger.warning(
+                        "[URLVerifier] AIWW network error for %s (attempt %d): %s",
+                        url, attempt + 1, e,
+                    )
+                    if attempt < 2:
+                        time.sleep(2 * (attempt + 1))  # 2s, 4s backoff
+            if r is None or r.status_code != 200:
+                return None
             if r.status_code == 200:
                 # Primary pattern: class containing 'a-url' with href
                 match = re.search(
