@@ -44,17 +44,25 @@ def _classify_tools(verifier, tools):
 
 
 def _apply_cached(verifier, tool_list):
-    """Apply cached results; return list of uncached tools."""
+    """Apply cached results; return list of uncached tools.
+    
+    Uses source-aware cache keys to avoid collisions between tools
+    with the same name from different sources.
+    Failed results (no official_url) are always retried.
+    """
     uncached = []
     for t in tool_list:
-        name = t.get("name", "")
-        cached = verifier._cache.get(name)
+        cache_key = verifier._cache_key(t)
+        cached = verifier._cache.get(cache_key)
         if cached and verifier._is_cache_valid(cached):
             result = cached.get("data", {})
             if result.get("official_url"):
                 t["url"] = result["official_url"]
-            if result.get("logo_url"):
-                t["logo_url"] = result["logo_url"]
+                if result.get("logo_url"):
+                    t["logo_url"] = result["logo_url"]
+            else:
+                # Failed result - retry
+                uncached.append(t)
         else:
             uncached.append(t)
     return uncached

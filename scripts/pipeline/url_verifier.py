@@ -73,8 +73,10 @@ SCRAPER_SKIP_DOMAINS = {
     "microsoft.com/store", "chrome.google.com",
 }
 
-# 30-day cache
+# 30-day cache for successful results
 CACHE_TTL_SECONDS = 30 * 24 * 3600
+# 1-day cache for failed results (allow retry)
+CACHE_TTL_FAIL_SECONDS = 24 * 3600
 
 
 class URLVerifier:
@@ -110,9 +112,17 @@ class URLVerifier:
             logger.warning("[URLVerifier] Failed to save cache: %s", e)
 
     def _is_cache_valid(self, entry):
+        """Check if cache entry is still valid.
+        
+        Successful results use 30-day TTL, failed results use 1-day TTL.
+        """
         timestamp = entry.get("timestamp", 0)
         age = time.time() - timestamp
-        return age < CACHE_TTL_SECONDS
+        data = entry.get("data", {})
+        if data.get("official_url"):
+            return age < CACHE_TTL_SECONDS
+        else:
+            return age < CACHE_TTL_FAIL_SECONDS
 
     @staticmethod
     def _extract_domain(url):
@@ -357,15 +367,35 @@ class URLVerifier:
             return ""
         return "https://logo.clearbit.com/" + domain
 
+    def _cache_key(self, tool):
+        """Generate a cache key that includes the source domain to avoid collisions.
+        
+        Different sources (AIWW, TAAFT, PH) for the same tool name should have
+        separate cache entries, since scraping success varies by source.
+        """
+        name = tool.get("name", "")
+        original_url = tool.get("url", "")
+        source_domain = self._extract_domain(original_url)
+        return f"{name}|{source_domain}"
+
     def _verify_single_tool(self, tool):
         """Verify URL and logo for a single tool."""
         name = tool.get("name", "")
         original_url = tool.get("url", "")
+        cache_key = self._cache_key(tool)
 
-        # Check cache
-        cached = self._cache.get(name)
+        # Check cache - but allow retry for failed results
+        cached = self._cache.get(cache_key)
         if cached and self._is_cache_valid(cached):
-            return cached.get("data", {})
+            data = cached.get("data", {})
+            # If cache hit but failed (no official_url for aggregator URL), allow retry
+            if data.get("official_url") or not self._is_aggregator_url(original_url):
+                return data
+            # Failed result - check if we should use shorter TTL
+            age = time.time() - cached.get("timestamp", 0)
+            if age < CACHE_TTL_FAIL_SECONDS:
+                return data
+            # Past short TTL - retry
 
         result = {}
         domain = self._extract_domain(original_url)
@@ -398,7 +428,7 @@ class URLVerifier:
                     "domain": domain,
                 }
 
-        self._cache[name] = {"timestamp": time.time(), "data": result}
+        self._cache[cache_key] = {"timestamp": time.time(), "data": result}
         return result
 
     def verify_tools(self, tools, max_workers=3):
