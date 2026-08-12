@@ -254,6 +254,62 @@ class URLVerifier:
             return url
         return url
 
+    def _is_known_product_url_wrong(self, tool):
+        """Check if a known product has a URL that should be normalized."""
+        name = tool.get('name', '')
+        url = tool.get('url', '')
+        if not name or not url:
+            return False
+        if self._is_aggregator_url(url):
+            return False
+        normalized = self._normalize_known_url(name, url)
+        return normalized != url
+
+    def verify_known_products(self, tools, max_workers=3):
+        """Second pass: re-verify known products with wrong URLs."""
+        wrong_tools = [t for t in tools if isinstance(t, dict) and self._is_known_product_url_wrong(t)]
+        if not wrong_tools:
+            logger.info('[URLVerifier] No known products with wrong URLs')
+            return tools
+        
+        logger.info('[URLVerifier] Found %d known products with wrong URLs', len(wrong_tools))
+        for t in wrong_tools:
+            logger.info('[URLVerifier]   %s: %s', t.get('name',''), t.get('url',''))
+        
+        # Clear cache for these tools
+        for t in wrong_tools:
+            cache_key = self._cache_key(t)
+            if cache_key in self._cache:
+                del self._cache[cache_key]
+        
+        # Re-verify
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = {}
+            for t in wrong_tools:
+                future = executor.submit(self._verify_single_tool, t)
+                futures[future] = t
+            
+            for future in as_completed(futures):
+                t = futures[future]
+                try:
+                    result = future.result()
+                    if result and result.get('official_url'):
+                        t['url'] = result['official_url']
+                        if result.get('logo_url'):
+                            t['logo_url'] = result['logo_url']
+                    else:
+                        # Fallback: direct normalization
+                        normalized = self._normalize_known_url(t.get('name',''), t.get('url',''))
+                        if normalized != t.get('url',''):
+                            t['url'] = normalized
+                except Exception as e:
+                    logger.warning('[URLVerifier] Error re-verifying %s: %s', t.get('name',''), e)
+        
+        self._save_cache()
+        fixed_count = sum(1 for t in wrong_tools if self._normalize_known_url(t.get('name',''), t.get('url','')) == t.get('url',''))
+        logger.info('[URLVerifier] Fixed %d/%d known products', fixed_count, len(wrong_tools))
+        return tools
+
     def _should_skip_scraper_link(self, url):
         """Check if a link found on an aggregator page should be skipped."""
         domain = self._extract_domain(url)
