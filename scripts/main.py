@@ -428,6 +428,10 @@ def cmd_url_fix(args):
     # Run URL verification with concurrency
     verifier.verify_tools(agg_tools, max_workers=5)
     
+    # Second pass: re-verify known products with wrong URLs
+    all_tools_list = list(all_tools.values()) if isinstance(all_tools, dict) else all_tools
+    verifier.verify_known_products(all_tools_list, max_workers=3)
+    
     # Count results
     fixed = sum(1 for t in agg_tools if not verifier._is_aggregator_url(t.get("url", "")))
     remaining = len(agg_tools) - fixed
