@@ -1,7 +1,174 @@
 {
-  "generated_at": "2026-08-13T00:24:34.027363+00:00",
-  "count": 247,
+  "generated_at": "2026-08-13T12:31:25.721745+00:00",
+  "count": 252,
   "articles": [
+    {
+      "title": "Anthropic升级Claude Cowork Chrome扩展，同时传出10月IPO计划估值冲2万亿美元",
+      "summary": "Anthropic于8月13日将Chrome浏览器侧边栏的Claude扩展升级为完整的Claude Cowork会话，实现浏览器与桌面端、网页端、移动端的对话记录、技能和连接器互通。用户可在浏览器中利用已有登录状态执行点击、填表等操作，任务可跨端无缝接力。该功能现面向Max和Team套餐用户开放。\n\n与此同时，多位消息人士向《金融时报》确认Anthropic计划于10月挂牌上市，目标估值冲击2万亿美元，将超越SpaceX刷新全球IPO纪录。",
+      "content_markdown": "## Claude Cowork Chrome扩展升级\n\n### 核心更新\n\n- **产品更名**：Claude in Chrome → Claude Cowork\n- **会话统一**：Chrome侧边栏成为完整Cowork会话\n- **跨端同步**：浏览器对话保存至账号历史，可在桌面端/网页端/移动端恢复\n- **技能复用**：账户已配置的Agent Skills和Connectors可直接在浏览器中使用\n- **操作能力**：利用已有登录状态点击链接、输入文字、跳转页面、填写表单\n\n### 应用场景\n\n- 从Analytics仪表盘提取数据\n- 整理Google Drive文件\n- 在Salesforce中记录销售对话\n- 处理无API连接器的内部工具（旧系统、供应商门户等）\n\n### 安全机制\n\n- 启用自动批准时，重大操作前需单独验证\n- 购买或共享个人数据等操作仍需用户确认\n- Anthropic警告浏览器智能体仍面临提示词注入风险\n- 建议从\"可信任的网站\"开始使用\n\n### 开放范围\n\n- **即日开放**：Max和Team套餐\n- **未来数周**：Pro用户\n- **Enterprise**：默认禁用，管理员可启用并限制访问域名\n\n### IPO消息\n\n- 计划2026年10月挂牌上市\n- 目标估值2万亿美元\n- 将超越SpaceX，刷新全球IPO纪录\n- 6名Anthropic投资者向《金融时报》确认",
+      "sources": [
+        {
+          "name": "IT之家/今日头条",
+          "url": "http://m.toutiao.com/group/7673284803529114150/"
+        },
+        {
+          "name": "亿邦动力",
+          "url": "https://m.ebrun.com/694084.html"
+        },
+        {
+          "name": "Blog Du Modérateur",
+          "url": "https://www.blogdumoderateur.com/claude-dans-chrome-integre-cowork/"
+        },
+        {
+          "name": "Coze日报",
+          "url": "https://www.coze.cn/share-article/201786602523205760"
+        }
+      ],
+      "original_time": "2026-08-13T10:07:00+08:00",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "Cowork",
+        "Chrome",
+        "浏览器Agent",
+        "IPO"
+      ],
+      "category": "product_launch",
+      "id": "2026-08-13-evening-004",
+      "category_label": "产品发布",
+      "published_at": "2026-08-13T10:07:00+08:00"
+    },
+    {
+      "title": "SpaceXAI发布Grok 4.6重返前沿梯队，马斯克预告4.7将在3-4周后推出",
+      "summary": "SpaceXAI于8月13日正式发布Grok 4.6模型，在Artificial Analysis Intelligence Index上获得61分，追平OpenAI的GPT-5.6 Sol，仅次于Anthropic的Claude Fable 5（62分）。该模型重点强化了长程Agent任务和复杂交互能力，API定价为每百万输入token 2美元、输出6美元，性价比优势明显。\n\n马斯克随后透露Grok 4.7初训已完成，正在补充大量SpaceX公司数据，预计3-4周后发布，目标参数量2.1万亿。他表示\"SpaceX的训练语料库非常出色且独特，如果有模型在现实工程方面比4.7更好我会感到震惊\"。SpaceX股价当日上涨超8%。",
+      "content_markdown": "## SpaceXAI发布Grok 4.6，重返大模型前沿梯队\n\n### 核心性能\n\n- **Artificial Analysis Intelligence Index**：61分，追平GPT-5.6 Sol\n- **GDPVal-AA v2 Elo**：1753分，全场最高\n- **CursorBench v3.2**：69.9%\n- **DeepSWE v1.1**：65.9%\n- **FrontierCode v1.1**：61.3%\n- 知识工作任务平均53轮对话、0.5B输入token，远优于Claude Opus 5的103轮/2.0B token\n\n### 定价与可用性\n\n- API定价：输入$2/M tokens，输出$6/M tokens\n- 与Grok 4.5持平，但比GPT-5.6 Sol和Fable 5 Max便宜\n- 已通过Cursor、Grok Build、API、OpenRouter、Vercel、Cloudflare上线\n- 首周在Cursor和Grok Build提供双倍用量\n\n### 技术背景\n\n- 保持1.5万亿参数V9基础架构（与Grok 4.5相同）\n- 训练重点：长程Agent任务、复杂交互、视觉项目\n- 使用模型自生成推理数据和工程数据，结合强化学习\n- 运行在英伟达GB300 NVL72系统上\n- 是SpaceX收购Cursor后首个联合训练成果\n\n### Grok 4.7展望\n\n- 初训已完成，正在补充SpaceX公司数据\n- 预计3-4周内发布\n- 目标参数量2.1万亿\n- 马斯克称\"将超越所有现有模型\"\n- SpaceX AI收入预计9月将超过其他所有业务线收入\n\n### 员工数据争议\n\n马斯克在全员大会上表示未来Grok将\"基于所有SpaceX信息训练\"，包括员工\"思考和产出\"的内容。SpaceX未说明具体数据范围、采集方式或员工是否有选择退出权。与Meta此前的Model Capability Initiative类似，但因SpaceX适用Railway Labor Act，员工法律救济途径更弱。",
+      "sources": [
+        {
+          "name": "量子位/36氪",
+          "url": "https://36kr.com/p/3937649571593608"
+        },
+        {
+          "name": "The Left Shift",
+          "url": "https://www.theleftshift.com/spacexai-launches-grok-4-6-with-focus-on-long-running-ai-agents-and-coding/"
+        },
+        {
+          "name": "TechBriefly",
+          "url": "https://techbriefly.com/2026/08/13/spacex-launches-grok-4-6-train-on-employee-data/"
+        },
+        {
+          "name": "MarketWatch",
+          "url": "https://www.morningstar.com/news/marketwatch/20260812152/spacexs-stock-is-getting-a-grok-fueled-boost"
+        },
+        {
+          "name": "Eyerys",
+          "url": "https://www.eyerys.com/articles/news/grok-4p6-introduced-spacexai-pushes-ai-efficiency-and-longer-running-agentic-workflows"
+        }
+      ],
+      "original_time": "2026-08-13T10:00:00+08:00",
+      "tags": [
+        "SpaceXAI",
+        "Grok",
+        "大模型",
+        "Agent",
+        "Cursor",
+        "马斯克"
+      ],
+      "category": "model_release",
+      "id": "2026-08-13-evening-001",
+      "category_label": "模型发布",
+      "published_at": "2026-08-13T10:00:00+08:00"
+    },
+    {
+      "title": "DeepSeek V4 Pro上线不到24小时紧急撤回，实测性能远不及宣传",
+      "summary": "2026年8月12日深夜，DeepSeek低调上线V4 Pro正式版，官方公示的基准测试分数直逼Claude Fable 5等顶级模型，引发全网关注。然而大量用户实测后发现实际表现远低于官方宣传水平，引发社区广泛质疑。\n\n上线不足24小时后，DeepSeek紧急撤回该版本。这是大模型行业罕见的\"发布即撤回\"事件，暴露了基准测试与实际应用之间的差距问题，也对AI厂商的发布流程和质量把控提出警示。",
+      "content_markdown": "## DeepSeek V4 Pro发布即撤回\n\n### 事件经过\n\n- **8月12日深夜11:30**：DeepSeek低调上线V4 Pro正式版\n- **官方公示**：基准测试分数直逼Fable 5等顶级大模型\n- **用户实测**：大量用户反馈实际表现远低于宣传水平\n- **8月13日**：紧急撤回V4 Pro版本\n\n### 争议焦点\n\n- 官方基准测试分数与实际使用体验存在显著差距\n- 正式版型号为DeepSeek V4 Pro，支持1M上下文\n- 编程性能和软件修复能力在宣传中重点提及\n- 用户在社交平台大量反馈负面实测结果\n\n### 行业影响\n\n大模型产品发布后不足24小时即紧急撤回，在AI行业极为罕见。这一事件引发对以下问题的讨论：\n\n1. **基准测试可信度**：厂商自测的基准分数是否足以代表产品实际能力\n2. **发布流程规范**：从内测到公测再到正式发布的质量把控标准\n3. **市场预期管理**：过度宣传可能对品牌信任造成的长期损害\n\nDeepSeek官方尚未就撤回事件发布正式声明。",
+      "sources": [
+        {
+          "name": "Coze日报",
+          "url": "https://www.coze.cn/share-article/201786619308264224"
+        },
+        {
+          "name": "Coze日报",
+          "url": "https://www.coze.cn/share-article/201786562401656448"
+        },
+        {
+          "name": "Coze日报",
+          "url": "https://www.coze.cn/share-article/201786548724640416"
+        }
+      ],
+      "original_time": "2026-08-13T08:00:00+08:00",
+      "tags": [
+        "DeepSeek",
+        "V4 Pro",
+        "模型撤回",
+        "基准测试",
+        "大模型"
+      ],
+      "category": "model_release",
+      "id": "2026-08-13-evening-002",
+      "category_label": "模型发布",
+      "published_at": "2026-08-13T08:00:00+08:00"
+    },
+    {
+      "title": "物理AI赛道进入规模化验证期：资本焦点从技术转向场景与数据",
+      "summary": "具身智能龙头宇树科技冲刺IPO标志着物理AI赛道迈入产业化新阶段。首程控股联合多方设立35亿元前沿科创新兴未来产业基金，专项投资物理AI全产业链。最近18个月已有超百亿美元资金涌入该赛道。\n\n2026年投资逻辑发生根本转变：首轮融资占比从2025年的50%降至8%，92%资金集中投向拥有落地订单和成熟产品的头部企业。投资焦点从\"技术能否落地\"转向\"哪家公司能最快跑通数据—硬件—制造—部署闭环\"。",
+      "content_markdown": "## 物理AI产业进入规模化验证期\n\n### 标志性事件\n\n- **宇树科技冲刺IPO**：2026年上半年预计营收10.52-11.28亿元，净利润2.58-3.06亿元\n- 2025年人形机器人出货量突破5500台，位居全球前列\n- 从亏损到盈利，不到一年完成商业闭环初步验证\n\n### 资本动向\n\n- 最近18个月超百亿美元资金涌入物理AI赛道\n- 2026年8月：飞捷科思、西湖数智、慧仑科技等密集获得数亿元融资\n- 首程控股联合多方设立35亿元专项基金\n- 西湖大学教授创业做具身通用大脑，半年完成4轮共5亿元融资\n- LatentVerse获高瓴等数亿元投资\n\n### 投资逻辑转变\n\n| 指标 | 2025年 | 2026年 |\n|------|--------|--------|\n| 早期投资占比 | 50% | 8% |\n| 头部企业占比 | 50% | 92% |\n\n关键转变：从\"技术能否落地\"到\"数据—硬件—制造—部署闭环\"\n\n### 三堵必须突破的墙\n\n1. **数据墙**：真实交互数据极其稀缺且获取成本高\n2. **表征墙**：跨任务、跨场景、跨本体的统一物理表征尚未形成\n3. **闭环墙**：真实试错代价昂贵、反馈缓慢\n\n### 市场规模\n\n- 英伟达黄仁勋定义：物理AI = 让AI从\"看懂世界\"升级到\"改变世界\"\n- 弗若斯特沙利文预测：年复合增速47.2%\n- 2040年全球关联产业规模有望达3.25万亿美元\n\n### 商业模式演进\n\n- 从卖订阅、卖设备转向**按结果付费**\n- 宇树科技验证：\"数据增长—模型迭代—能力提升—场景扩张\"飞轮效应初现\n- 首程控股判断：未来2-3年是规模化应用的关键拐点",
+      "sources": [
+        {
+          "name": "证券时报/今日头条",
+          "url": "http://m.toutiao.com/group/7673269339415527986/"
+        },
+        {
+          "name": "36氪",
+          "url": "https://m.36kr.com/motif/327687323649"
+        }
+      ],
+      "original_time": "2026-08-13T06:05:00+08:00",
+      "tags": [
+        "物理AI",
+        "具身智能",
+        "宇树科技",
+        "融资",
+        "人形机器人",
+        "规模化"
+      ],
+      "category": "funding",
+      "id": "2026-08-13-evening-005",
+      "category_label": "融资收购",
+      "published_at": "2026-08-13T06:05:00+08:00"
+    },
+    {
+      "title": "\"氛围编程\"赛道持续火热：Lovable完成4亿美元C轮融资，估值133亿美元",
+      "summary": "AI初创公司Lovable宣布完成4亿美元C轮融资，投后估值达133亿美元，较去年12月的66亿美元翻倍，跻身欧洲最具价值初创企业行列。本轮由Menlo Ventures和EQT旗下Scaleup Europe Fund联合领投，腾讯、Salesforce Ventures等十余家机构跟投。\n\nLovable成立于2024年11月，总部位于斯德哥尔摩，平台允许用户通过自然语言描述生成代码和软件。目前支持超6000万项目开发，年化营收接近6亿美元，近三分之二的财富500强在使用其产品。公司计划将员工增至450人，重点招聘ML、产品和安全领域人才。",
+      "content_markdown": "## Lovable完成4亿美元C轮融资\n\n### 融资详情\n\n- **融资金额**：4亿美元（C轮）\n- **投后估值**：133亿美元\n- **领投方**：Menlo Ventures、Scaleup Europe Fund（EQT管理）\n- **跟投方**：腾讯、Salesforce Ventures、Balderton Capital、Carmignac、Kaszek Ventures、Accel、CapitalG、DST Global、HubSpot Ventures等\n- **估值变化**：66亿美元（2025年12月）→ 133亿美元，翻倍\n\n### 业务数据\n\n- **成立时间**：2024年11月\n- **总部**：瑞典斯德哥尔摩\n- **平台项目数**：超6000万\n- **月访问量**：9亿\n- **年化营收**：接近6亿美元（较12月增长近3倍）\n- **企业客户**：近2/3财富500强\n- **知名客户**：英伟达、阿迪达斯、Hearst、Zendesk\n\n### 资金用途\n\n- 员工增至450人（增长50%）\n- 重点招聘：机器学习、产品、基础设施、安全\n- 扩展伦敦、波士顿、旧金山、纽约业务\n- 增强平台安全功能和稳定性\n- 已与Google Cloud签署多年合作协议，算力使用量增长5倍\n\n### 赛道竞争\n\n\"氛围编程\"（Vibe Coding）赛道持续吸引资本：\n- **Replit**：3月融资时估值90亿美元（6个月内涨3倍）\n- **Cognition**：据报正以400亿美元估值进行融资谈判，年化营收达10亿美元\n- **Thrive Holdings**：以120亿美元估值融资20亿美元，将AI嵌入企服流程",
+      "sources": [
+        {
+          "name": "财联社",
+          "url": "http://m.toutiao.com/group/7673204981792588340/"
+        },
+        {
+          "name": "The SaaS News",
+          "url": "https://www.thesaasnews.com/news/lovable-raises-400m-series-c/"
+        },
+        {
+          "name": "Cryptonomist",
+          "url": "https://en.cryptonomist.ch/2026/08/12/lovable-series-c-funding/"
+        }
+      ],
+      "original_time": "2026-08-13T01:54:00+08:00",
+      "tags": [
+        "Lovable",
+        "氛围编程",
+        "融资",
+        "AI编程",
+        "Vibe Coding",
+        "估值"
+      ],
+      "category": "funding",
+      "id": "2026-08-13-evening-003",
+      "category_label": "融资收购",
+      "published_at": "2026-08-13T01:54:00+08:00"
+    },
     {
       "title": "Google Gemini 月活突破10亿，与ChatGPT正面交锋",
       "summary": "谷歌CEO桑达尔·皮查伊8月12日宣布，Gemini应用月活跃用户正式突破10亿，成为谷歌历史上增速最快的产品，也是谷歌第14款达到该里程碑的产品。此前不到一个月，谷歌在财报中披露Gemini月活为9.5亿。\n\n这一数字将Gemini推至与ChatGPT同一量级。OpenAI 7月表示ChatGPT拥有逾10亿活跃用户，但已于6月率先跨越该门槛。两大AI平台同步进入「十亿俱乐部」，标志着消费级AI市场竞争格局的实质性转变。",
