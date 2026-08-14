@@ -1,7 +1,128 @@
 {
-  "generated_at": "2026-08-13T18:51:56.616390+00:00",
-  "count": 252,
+  "generated_at": "2026-08-14T00:24:49.795599+00:00",
+  "count": 257,
   "articles": [
+    {
+      "title": "Databricks完成50亿美元融资估值达1900亿美元：本想融10亿，投资者认购150亿",
+      "summary": "AI大数据平台Databricks宣布完成50亿美元融资，投后估值1900亿美元，由Coatue、Blackstone、MGX等约24家机构参与。公司原计划仅融资10亿美元，但媒体报道后投资者认购需求迅速达到150亿美元。\n\n公司年化收入已超70亿美元，同比增长80%，保持正现金流。AI产品线中Lakebase数据库年化收入破1亿美元，Lakehouse数据仓库年化收入突破15亿美元。过去20个月已累计融资200亿美元。",
+      "content_markdown": "## Databricks完成50亿美元融资估值达1900亿美元：本想融10亿，投资者认购150亿\n\n### 「最甜蜜的烦恼」：认购额是计划的15倍\n\n8月13日，AI大数据平台Databricks宣布完成50亿美元融资，投后估值1900亿美元。本轮由Coatue领投，Blackstone、MGX、T. Rowe Price多个账户及新投资者Sixth Street Growth等约24家机构参与。\n\nCEO Ali Ghodsi透露了一个令人羡慕的细节：公司原计划仅融资10亿美元，但在6月的一次行业会议期间，The Information的一篇报道意外曝光了融资计划。「报道一出，我的电话就被打爆了」，Ghodsi回忆道。来自精选投资者群体的认购需求迅速累积到150亿美元——是原计划的15倍。\n\n为避免拒绝长期支持的老股东引发不满，Databricks最终决定扩大发行规模。\n\n### 70亿美元年化收入，80%增速\n\nDatabricks目前的关键财务数据：\n\n- **年化收入运行率**：超70亿美元，同比增长80%+\n- **现金流**：过去12个月调整后保持正现金流\n- **Lakehouse数据仓库**：年化收入15亿美元，年增速100%\n- **Lakebase数据库**：年化收入1亿美元（6月刚推出）\n- **Genie AI分析助手**：市场反馈「极其受欢迎」\n- **过去20个月累计融资**：200亿美元\n\n### AI Agent时代的数据基础设施\n\nGhodsi指出，AI成本的飙升正在推动市场对Databricks Unity AI Gateway平台的需求。越来越多客户正更积极地采用各类AI工具，而Databricks正定位于成为这些工具背后的数据管理层。\n\n公司本月还宣布收购了Electric（PGlite轻量级Postgres数据库开发商），进一步加码Agent数据库赛道。CEO表示仍希望未来推动IPO，但当前优先把资源投入AI。\n\n---\n\n**参考来源：**\n- [TechCrunch - Databricks wanted to raise $1B, investors wanted $15B](https://techcrunch.com/2026/08/14/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/)\n- [财联社 - Databricks完成50亿融资](https://www.cfi.net.cn/p20260813002674.html)\n- [中财网 - Databricks本想融10亿却获150亿认购](http://sj.cfi.cn/newspage.aspx?client=phone&id=20260814000034)",
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/14/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/"
+        },
+        {
+          "name": "财联社",
+          "url": "https://www.cfi.net.cn/p20260813002674.html"
+        },
+        {
+          "name": "中财网",
+          "url": "http://sj.cfi.cn/newspage.aspx?client=phone&id=20260814000034"
+        }
+      ],
+      "original_time": "2026-08-14T00:45:00+08:00",
+      "tags": [
+        "Databricks",
+        "融资",
+        "AI数据平台"
+      ],
+      "category": "funding",
+      "id": "2026-08-14-morning-005",
+      "category_label": "融资收购",
+      "published_at": "2026-08-14T00:45:00+08:00"
+    },
+    {
+      "title": "OpenAI推出Ultrafast超高速模式：GPT-5.6 Sol生成速度飙升14倍，每秒750个Token",
+      "summary": "8月13日，OpenAI宣布以预览形式推出Ultrafast（超高速）服务模式，搭载GPT-5.6 Sol模型，由Cerebras提供底层算力支持，最高每秒输出750个Token，为标准处理速度的14倍。\n\n该服务首先面向OpenAI API的少量客户开放，随产能扩展逐步扩大接入范围。这一举措标志着前沿模型正从「智能比拼」向「智能+速度」双维度竞争演进，对实时编程辅助、交互式Agent等场景意义重大。",
+      "content_markdown": "## OpenAI推出Ultrafast超高速模式：GPT-5.6 Sol生成速度飙升14倍，每秒750个Token\n\n### 前沿模型的「速度竞赛」正式开启\n\n8月13日，OpenAI宣布以预览形式推出Ultrafast（超高速）服务层级，这是其首次在API端提供极端速度优化选项。\n\n核心数据：\n\n- **模型**：GPT-5.6 Sol（OpenAI当前最强模型之一）\n- **速度**：最高每秒输出750个Token\n- **加速比**：标准处理速度的14倍\n- **算力供应**：由Cerebras晶圆级芯片提供底层推理支持\n- **可用性**：首先通过OpenAI API向少量客户开放，随产能逐步扩展\n\n### 速度背后的战略意义\n\nUltrafast模式的推出，标志着前沿模型竞争正在从单纯的「谁更聪明」向「智能+速度」双维度演进。对于以下场景尤为关键：\n\n1. **实时编程辅助**：开发者在IDE中等待AI补全时，毫秒级的速度差异直接影响工作流体验\n2. **交互式Agent**：多步骤Agent工作流中，每个工具调用都依赖模型响应，速度累积效应显著\n3. **高吞吐量应用**：企业批量处理任务（如文档分析、代码审查）中，速度直接转化为成本节约\n\n### Cerebras合作深化\n\nOpenAI选择Cerebras作为Ultrafast的算力提供商值得关注。Cerebras以其晶圆级芯片（Wafer Scale Engine）闻名，单芯片面积远超传统GPU设计，在推理场景下展现出极高的吞吐量。此次合作也印证了推理芯片赛道正在走向多元化，不再由NVIDIA一家主导。\n\n---\n\n**参考来源：**\n- [OpenAI Community - Ultrafast mode preview](https://community.openai.com/t/ultrafast-mode-preview-gpt-5-6-sol-at-up-to-14x-the-speed-in-the-api/1390344/1)\n- [IT之家 - OpenAI推Ultrafast模式](https://m.weibo.cn/detail/5331709937321475)",
+      "sources": [
+        {
+          "name": "OpenAI Community",
+          "url": "https://community.openai.com/t/ultrafast-mode-preview-gpt-5-6-sol-at-up-to-14x-the-speed-in-the-api/1390344/1"
+        },
+        {
+          "name": "IT之家",
+          "url": "https://m.weibo.cn/detail/5331709937321475"
+        }
+      ],
+      "original_time": "2026-08-13T22:00:00+08:00",
+      "tags": [
+        "OpenAI",
+        "推理加速",
+        "Cerebras"
+      ],
+      "category": "product_launch",
+      "id": "2026-08-14-morning-003",
+      "category_label": "产品发布",
+      "published_at": "2026-08-13T22:00:00+08:00"
+    },
+    {
+      "title": "DeepSeek双箭齐发：V4 Pro旗舰模型正式开源，Agent框架Harness对标Claude Code",
+      "summary": "8月13日晚，DeepSeek连续发布两项重磅产品：旗舰模型DeepSeek-V4-Pro-0813正式开源（MIT许可证），同步推出开源Agent框架DeepSeek Harness v0.1开发者预览版。\n\nV4 Pro基于混合专家（MoE）架构，总参数1.6万亿，每token仅激活490亿参数，支持100万token上下文窗口和最大38.4万token输出。正式版性能大幅跃升：DeepSWE基准从预览版12.8飙至62.7，Terminal Bench 2.1从72.1提升至87.9，多项Agent能力接近甚至超越Claude Fable 5。\n\nHarness采用「一切皆插件」设计，基于Cordis插件系统构建，预置标准、PTC、极简、创造四种模式，支持MCP协议，开放npm插件生态。团队负责人崔添翼（浙大计算机系毕业）5月立项，8月即完成开发者预览版。API同步宣布峰谷定价调整，8月17日生效。",
+      "content_markdown": "## DeepSeek双箭齐发：V4 Pro旗舰模型正式开源，Agent框架Harness对标Claude Code\n\n### 模型+框架=完整智能体\n\n8月13日晚，DeepSeek连续发布两项重磅产品，标志着其从模型公司正式向「模型+Agent框架」全栈布局转型。\n\n**旗舰模型V4 Pro正式版**（版本号DeepSeek-V4-Pro-0813）宣告从预览转正，权重采用MIT许可证完全开放。该模型基于混合专家（MoE）架构，总参数量高达1.6万亿，实际推理中每个token仅激活490亿参数，拥有100万token的上下文窗口，并支持最大38.4万token的输出长度。\n\n### 性能大幅跃升，多项能力比肩Claude Fable 5\n\n正式版相比预览版在多项基准测试中取得惊人进步：\n\n| 基准测试 | 预览版 | 正式版 | 提升幅度 |\n|---------|--------|--------|---------|\n| DeepSWE | 12.8 | 62.7 | +389% |\n| Terminal Bench 2.1 | 72.1 | 87.9 | +22% |\n| DSBench-Hard | ~33 | 67.2 | +100% |\n\nV4 Pro全面支持JSON结构化输出、Tool Calls、Responses API和Anthropic API，原生集成OpenAI Codex。权重开放意味着开发者可在国产GPU及通用算力卡上直接运行，无需厂商定制，大幅降低政企私有化部署门槛。\n\n### Harness：将模型转化为智能体的执行框架\n\n紧随模型发布，DeepSeek Harness v0.1开发者预览版同步开启公测。Harness定位为「将模型转化为智能体的工具」，核心理念是「Model + Harness = Agent」。\n\nHarness采用「一切皆插件」的架构设计，基于Cordis插件系统构建。模型、工具、技能、会话、沙箱、存储、循环、调度、UI等所有Agent能力均由插件组合而成，可自由替换和灵活重组。系统预置四种模式：\n\n- **标准模式**：面向通用编程，工具链最完整\n- **PTC模式**：程序化工具调用，模型通过代码编排多轮操作\n- **极简模式**：仅开放命令行和文本编辑器，用于性能测试\n- **创造模式**：以自然语言对话生成自定义预设\n\n框架内置进程沙箱能力，支持MCP协议，同步开放npm插件生态。据称内测阶段已有近300个插件被开发。\n\n### API涨价信号\n\n伴随产品发布，DeepSeek宣布API将告别平价模式，转为峰谷定价，新价格8月17日0时生效。这暗示低价策略不可持续，自托管开源权重或将成为成本优化的重要选择。\n\n---\n\n**参考来源：**\n- [IT之家 - 对标Claude Code：DeepSeek Harness公测](https://finance.sina.com.cn/tech/digi/2026-08-13/doc-inineuqm9870965.shtml)\n- [搜狐 - DeepSeek Harness正式开源](https://m.sohu.com/a/1062528323_122638140/)\n- [VentureBeat - DeepSeek Harness launches as open source rival to Claude Code](https://www.venturebeat.com/ai/deepseek-harness-launches-as-open-source-rival-to-claude-code/)\n- [凤凰网 - DeepSeek-V4-Pro-0813开源](http://ishare.ifeng.com/c/s/v0020fn12P86KN9yMk9GU-_vDXoXcKbXlmMNGeqIZmRJJQQg__)",
+      "sources": [
+        {
+          "name": "IT之家",
+          "url": "https://finance.sina.com.cn/tech/digi/2026-08-13/doc-inineuqm9870965.shtml"
+        },
+        {
+          "name": "搜狐",
+          "url": "https://m.sohu.com/a/1062528323_122638140/"
+        },
+        {
+          "name": "VentureBeat",
+          "url": "https://www.venturebeat.com/ai/deepseek-harness-launches-as-open-source-rival-to-claude-code/"
+        },
+        {
+          "name": "凤凰网",
+          "url": "http://ishare.ifeng.com/c/s/v0020fn12P86KN9yMk9GU-_vDXoXcKbXlmMNGeqIZmRJJQQg__"
+        }
+      ],
+      "original_time": "2026-08-13T20:52:00+08:00",
+      "tags": [
+        "DeepSeek",
+        "开源模型",
+        "Agent框架"
+      ],
+      "category": "open_source",
+      "id": "2026-08-14-morning-002",
+      "category_label": "开源动态",
+      "published_at": "2026-08-13T20:52:00+08:00"
+    },
+    {
+      "title": "AI编程赛道资本狂飙：Cognition估值瞄准400亿美元，Nvidia出手投Poolside，Ilya首个模型即将面世",
+      "summary": "AI编程与基础设施赛道同日爆出多笔巨额融资：Devin开发商Cognition AI正洽谈新一轮融资，估值目标400亿美元，年化收入逼近10亿美元；Nvidia计划向AI初创Poolside投资最高10亿美元，Poolside正以120亿美元估值融资20亿美元。\n\n此外，Ilya Sutskever创办的SSI被曝正在开发基于TTT（测试时训练）的推理引擎，当前版本已准备就绪，最快8月向少数用户开放。Nvidia和Alphabet已对SSI进行战略投资。",
+      "content_markdown": "## AI编程赛道资本狂飙：Cognition估值瞄准400亿美元，Nvidia出手投Poolside，Ilya首个模型即将面世\n\n### Cognition AI：成立两年估值冲400亿美元\n\nDevin开发商Cognition AI正与投资者洽谈新一轮融资，估值目标至少400亿美元，较三个月前的260亿美元增长超50%。若成功，将正式超越Cursor被SpaceX收购前的293亿美元估值。\n\n核心数据：\n- **年化收入**：逼近10亿美元，较上轮翻倍\n- **客户**：梅赛德斯-奔驰、NASA、高盛等\n- **收入倍数**：约40倍（上轮52倍，倍数收窄反映实际收入增速快于估值增长）\n- **客户增长**：企业客户Devin使用量月环比增长50%\n\nAI编程助手市场2026年规模已达128亿美元，预计2032年增至301亿美元。过去一年赛道共发生23笔已披露融资，总额52.1亿美元。\n\n### Nvidia出手：计划向Poolside投资最高10亿美元\n\n据多家媒体报道，AI初创公司Poolside正以120亿美元估值融资20亿美元。知情人士透露，Nvidia将在这轮融资中投资至少5亿美元，若达成融资目标则可能增至10亿美元。Poolside目前已获得超10亿美元承诺资金，约7亿美元来自现有投资者。资产管理公司Magnetar也在洽谈参与。\n\n### SSI（Ilya Sutskever）：两年蛰伏后首个模型曝光\n\n前OpenAI首席科学家Ilya Sutskever创办的SSI（Safe Superintelligence Inc.）被曝正在开发一种基于TTT（Test-Time Training，测试时训练）的小型推理引擎。该模型在推理过程中持续更新部分权重，实现「学习如何学习」。\n\n据爆料，SSI当前版本已准备就绪，团队正将下一代版本规模扩大10倍，最快8月向少数用户开放。Nvidia和Alphabet已对SSI进行战略投资，Alphabet云部门还提供TPU算力支持。\n\nTTT路线若成功规模化，将从根本上改变当前「训练-推理」分离的范式，让模型在推理阶段也能持续进化，被认为可能创造难以追赶的竞争壁垒。\n\n---\n\n**参考来源：**\n- [36氪 - AI编程老祖Devin估值反超Cursor](http://m.toutiao.com/group/7673427648114131494/)\n- [GMT8 Press - Nvidia plans to invest up to $1 billion in Poolside](https://www.gmt8press.com/flash/detail/1041620)\n- [36氪 - Ilya首个模型曝光](https://36kr.com/p/3937647639116936)\n- [TechShots - Alphabet and Nvidia Invest in SSI](https://www.techshotsapp.com/artificial-intelligence/alphabet-and-nvidia-invest-in-openai-co-founders-safe-superintelligence-startup)",
+      "sources": [
+        {
+          "name": "36氪",
+          "url": "http://m.toutiao.com/group/7673427648114131494/"
+        },
+        {
+          "name": "GMT8 Press",
+          "url": "https://www.gmt8press.com/flash/detail/1041620"
+        },
+        {
+          "name": "36氪",
+          "url": "https://36kr.com/p/3937647639116936"
+        },
+        {
+          "name": "TechShots",
+          "url": "https://www.techshotsapp.com/artificial-intelligence/alphabet-and-nvidia-invest-in-openai-co-founders-safe-superintelligence-startup"
+        }
+      ],
+      "original_time": "2026-08-13T15:37:00+08:00",
+      "tags": [
+        "融资",
+        "AI编程",
+        "Cognition",
+        "Nvidia"
+      ],
+      "category": "funding",
+      "id": "2026-08-14-morning-001",
+      "category_label": "融资收购",
+      "published_at": "2026-08-13T15:37:00+08:00"
+    },
     {
       "title": "Anthropic升级Claude Cowork Chrome扩展，同时传出10月IPO计划估值冲2万亿美元",
       "summary": "Anthropic于8月13日将Chrome浏览器侧边栏的Claude扩展升级为完整的Claude Cowork会话，实现浏览器与桌面端、网页端、移动端的对话记录、技能和连接器互通。用户可在浏览器中利用已有登录状态执行点击、填表等操作，任务可跨端无缝接力。该功能现面向Max和Team套餐用户开放。\n\n与此同时，多位消息人士向《金融时报》确认Anthropic计划于10月挂牌上市，目标估值冲击2万亿美元，将超越SpaceX刷新全球IPO纪录。",
@@ -77,6 +198,35 @@
       "id": "2026-08-13-evening-001",
       "category_label": "模型发布",
       "published_at": "2026-08-13T10:00:00+08:00"
+    },
+    {
+      "title": "Google三周迭代发布Gemini 3.7 Flash：Coding和Agent能力大幅跃升，首发价减半",
+      "summary": "8月13日，Google DeepMind发布Gemini 3.7 Flash，距上一代3.6 Flash仅三周。新模型主打编程和Agent工作流，DeepSWE基准从49%提升至65.3%，FrontierCode从34.4%提高到43.6%。\n\n首发API价格仅为3.6 Flash原始价格的一半（输入$0.75/百万token，输出$3.75/百万token），限时优惠至2026年底。模型支持1M token上下文、65K token输出，提供低/中/高三级可配置思考模式。\n\n这是新上任的DeepMind掌门人Koray Kavukcuoglu推出的首个重磅产品，显示Google在Flash系列上从「便宜大碗」向「编码主力」定位转型。",
+      "content_markdown": "## Google三周迭代发布Gemini 3.7 Flash：Coding和Agent能力大幅跃升，首发价减半\n\n### 三周一更，Flash从「便宜大碗」走向「编码主力」\n\n8月13日，Google DeepMind发布Gemini 3.7 Flash，距3.6 Flash发布仅三周。这是新上任的DeepMind掌门人Koray Kavukcuoglu推出的首个重磅产品，明确将Flash系列定位从性价比工具升级为Coding和Agent工作流的核心引擎。\n\n核心基准提升显著：\n\n| 基准测试 | 3.6 Flash | 3.7 Flash | 变化 |\n|---------|-----------|-----------|------|\n| FrontierCode 1.1 Main | 34.4% | 43.6% | +27% |\n| DeepSWE v1.1 | 49.0% | 65.3% | +33% |\n| AutomationBench | 17.0% | 30.4% | +79% |\n| Code Arena Elo (Web Dev) | 1506 | 1588 | +5.4% |\n\n### 半价策略争夺开发者\n\n3.7 Flash首发API定价为输入$0.75/百万token、输出$3.75/百万token，仅为3.6 Flash原始价格的一半，限时优惠至2026年12月31日，2027年1月1日恢复原价（$1.50/$7.50）。\n\n独立测试显示，Artificial Analysis为其打分56（对比3.6 Flash的52），在186个模型中输出速度排名第一，达340.1 tokens/秒。\n\n### 多模态+Agent全面支持\n\n模型支持1M token输入上下文窗口和65K token输出上限，接受文本、图片、视频、音频和PDF输入。提供低/中/高三级可配置思考模式，允许开发者按需权衡延迟、成本与推理深度。功能方面支持函数调用、代码执行、计算机使用（预览）、文件搜索、结构化输出等。\n\n值得注意的是，3.7 Flash在欧洲经济区（EEA）、英国、瑞士和尼日利亚的消费者访问受限。\n\n---\n\n**参考来源：**\n- [Google DeepMind - Gemini 3.7 Flash Model Card](https://deepmind.google/models/model-cards/gemini-3-7-flash/)\n- [凤凰网 - Gemini 3.7 Flash正式发布](https://tech.ifeng.com/c/8vYGCajr2EJ)\n- [ReportWire - Gemini 3.7 Flash targets coding and agents](https://reportwire.org/googles-gemini-3-7-flash-targets-coding-and-agents-with-a-50-introductory-price-cut/)",
+      "sources": [
+        {
+          "name": "Google DeepMind",
+          "url": "https://deepmind.google/models/model-cards/gemini-3-7-flash/"
+        },
+        {
+          "name": "凤凰网",
+          "url": "https://tech.ifeng.com/c/8vYGCajr2EJ"
+        },
+        {
+          "name": "ReportWire",
+          "url": "https://reportwire.org/googles-gemini-3-7-flash-targets-coding-and-agents-with-a-50-introductory-price-cut/"
+        }
+      ],
+      "original_time": "2026-08-13T08:00:00-07:00",
+      "tags": [
+        "Google",
+        "Gemini",
+        "编程Agent"
+      ],
+      "category": "model_release",
+      "id": "2026-08-14-morning-004",
+      "category_label": "模型发布",
+      "published_at": "2026-08-13T08:00:00-07:00"
     },
     {
       "title": "DeepSeek V4 Pro上线不到24小时紧急撤回，实测性能远不及宣传",
