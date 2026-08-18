@@ -1,7 +1,7 @@
 {
   "source": "aiww",
   "source_name": "AIWW关注度排行",
-  "collected_at": "2026-08-18T00:27:25.165737+00:00",
+  "collected_at": "2026-08-18T12:33:40.038382+00:00",
   "mode": "discovery",
   "fetch_limit": 50,
   "count": 50,
@@ -493,9 +493,9 @@
       }
     },
     {
-      "name": "Z.ai",
-      "url": "https://www.aiww.com/aitool/z",
-      "description": "智谱AI打造的模型交互体验入口，整合了基座模型、推理模型和沉思模型三类GLM模型。",
+      "name": "通义千问",
+      "url": "https://www.aiww.com/aitool/tongyiqianwen",
+      "description": "阿里云研发的大规模语言模型，具备多模态理解与生成能力，覆盖多领域需求。",
       "source": "aiww",
       "source_url": "https://www.aiww.com/aitoplist/zhushou",
       "platform": [
@@ -504,18 +504,18 @@
       "type": "ai_tool",
       "is_china_tool": true,
       "category": "文本生成",
-      "popularity_score": 2966,
-      "popularity_change": -5.0,
+      "popularity_score": 0,
+      "popularity_change": 0.0,
       "raw_data": {
         "rank": 20,
         "rank_change_positions": 0,
-        "change_direction": -1,
-        "company": "智谱",
-        "total_visits": 7773,
-        "daily_visits": 2966,
-        "slug": "z",
-        "aiww_url": "https://www.aiww.com/aitool/z",
-        "icon_url": "https://www.aiww.com/uploadfile/2025/0928/20250928033741338.jpg",
+        "change_direction": 0,
+        "company": "阿里巴巴",
+        "total_visits": 8532,
+        "daily_visits": 0,
+        "slug": "tongyiqianwen",
+        "aiww_url": "https://www.aiww.com/aitool/tongyiqianwen",
+        "icon_url": "https://www.aiww.com/uploadfile/2024/0522/20240522062019722.png",
         "aiww_category": "zhushou"
       }
     },
@@ -979,6 +979,33 @@
       }
     },
     {
+      "name": "CodeArts盘古助手",
+      "url": "https://www.aiww.com/aitool/codearts",
+      "description": "华为云基于盘古大模型、昇腾AI云服务等全栈AI能力打造的智能开发助手。",
+      "source": "aiww",
+      "source_url": "https://www.aiww.com/aitoplist/biancheng",
+      "platform": [
+        "aiww"
+      ],
+      "type": "ai_tool",
+      "is_china_tool": true,
+      "category": "代码开发",
+      "popularity_score": 0,
+      "popularity_change": 0.0,
+      "raw_data": {
+        "rank": 18,
+        "rank_change_positions": 0,
+        "change_direction": 0,
+        "company": "华为云",
+        "total_visits": 5062,
+        "daily_visits": 0,
+        "slug": "codearts",
+        "aiww_url": "https://www.aiww.com/aitool/codearts",
+        "icon_url": "https://www.aiww.com/uploadfile/2025/0223/20250223081313918.jpg",
+        "aiww_category": "biancheng"
+      }
+    },
+    {
       "name": "熊猫办公",
       "url": "https://www.aiww.com/aitool/xiongmaobangong",
       "description": "AI办公服务平台，专注于为个人及企业用户提供一站式创意办公解决方案。",
@@ -1326,33 +1353,6 @@
         "slug": "bairimeng",
         "aiww_url": "https://www.aiww.com/aitool/bairimeng",
         "icon_url": "https://www.aiww.com/uploadfile/2024/1120/20241120042634638.jpg",
-        "aiww_category": "shipinshengcheng"
-      }
-    },
-    {
-      "name": "腾讯智影",
-      "url": "https://www.aiww.com/aitool/tengxunzhiying",
-      "description": "腾讯智影旨在通过先进的AI技术，为创作者提供一站式的视频创作解决方案。",
-      "source": "aiww",
-      "source_url": "https://www.aiww.com/aitoplist/shipinshengcheng",
-      "platform": [
-        "aiww"
-      ],
-      "type": "ai_tool",
-      "is_china_tool": true,
-      "category": "音视频",
-      "popularity_score": 1086,
-      "popularity_change": -5.0,
-      "raw_data": {
-        "rank": 7,
-        "rank_change_positions": 0,
-        "change_direction": -1,
-        "company": "腾讯",
-        "total_visits": 31536,
-        "daily_visits": 1086,
-        "slug": "tengxunzhiying",
-        "aiww_url": "https://www.aiww.com/aitool/tengxunzhiying",
-        "icon_url": "https://www.aiww.com/uploadfile/2024/0612/20240612115506147.jpg",
         "aiww_category": "shipinshengcheng"
       }
     }
