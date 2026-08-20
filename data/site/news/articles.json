@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T00:26:26.493261+00:00",
-  "count": 291,
+  "generated_at": "2026-08-20T12:37:04.165249+00:00",
+  "count": 295,
   "articles": [
     {
       "title": "Google向全球大学生免费提供一年Gemini AI Pro订阅服务",
@@ -61,6 +61,39 @@
       "published_at": "2026-08-19T16:42:00+08:00"
     },
     {
+      "title": "Anthropic旗舰模型遭美国出口管制，全球AI供应链安全拉响警报",
+      "summary": "Anthropic旗下最强模型Claude Fable 5和Mythos 5在6月遭遇美国商务部出口管制指令，被迫全球范围禁用。虽然限制措施已于7月1日解除，但其连锁反应仍在持续——高盛、摩根大通、OKX等金融机构相继在香港等地永久禁止员工使用Claude。\n\n事件凸显了一个结构性风险：单一政治决策即可在数小时内切断全球对尖端AI的访问。对欧洲和亚洲企业而言，AI供应链的可控性已成为不可忽视的战略议题。",
+      "content_markdown": "# Anthropic旗舰模型遭美国出口管制，全球AI供应链安全拉响警报\n\n## 事件回顾\n\n2026年6月12日，美国政府基于国家安全权限向Anthropic发出指令，要求暂停所有外国公民使用其最新模型Claude Fable 5和Mythos 5的权限——包括Anthropic自己的外国员工。\n\n导火索是Amazon（作为可信合作伙伴）发现了绕过Fable 5安全协议的方法（越狱）。虽然Anthropic指出这些漏洞在其他公开模型上同样存在且相对简单，但商务部仍要求暂停外国用户访问。由于Anthropic无法实时可靠地验证所有用户的国籍，公司选择**直接禁用两个模型的所有客户访问**，包括美国客户。\n\n这一禁用持续了约三周。6月30日，限制措施被解除；7月1日，Fable 5恢复全球访问，Mythos 5则先向少数经批准的美国组织开放。\n\n## 连锁反应持续扩大\n\n虽然官方限制已解除，但事件的连锁反应仍在扩散：\n\n- **高盛**于4月率先禁止香港员工使用Claude\n- **摩根大通**于6月跟进\n- **OKX**于8月19日宣布禁止香港员工使用Claude，成为首家跟进此政策的加密原生企业\n\nOKX的禁令尤其值得注意——它发生在限制解除**七周之后**，表明企业正从紧急响应转向永久性风险姿态。美国技术控制与香港开放金融之间的结构性矛盾没有近期解决方案。\n\n## 欧洲AI的警钟\n\n德国媒体指出，这一事件暴露了欧洲的结构性脆弱：欧洲正日益依赖一种由其他国家决定其可用性的技术。虽然具体限制已解除，但根本问题依然存在——一次华盛顿的政治决策就足以在全球范围内切断对尖端AI的访问。\n\n## Anthropic与五角大楼的法律战\n\n事件还交织着Anthropic与美国国防部的法律冲突。五角大楼将Anthropic列为供应链风险——这一标签极少被用于美国本土企业。联邦法官已裁定五角大楼的相关指令不可执行，允许部分政府客户在诉讼期间继续使用Anthropic工具。\n\n---\n\n**参考来源：**\n- [Anthropic Takes Down New AI Models Amid US Security Order (Quanta Report)](https://www.quanta.report/story/Anthropic_Takes_Down_New_AI_Models_Amid_US_Security_Order)\n- [White House Lifts Export Controls on Anthropic's AI Models (Belgrade Post)](https://belgradepost.com/vznvre-white-house-lifts-export-controls-on-anthropic-s-advanced-ai-models-following-safety-review)\n- [OKX Bars Claude in Hong Kong (NextFin)](https://www.nextfin.ai/en/news/okx-bars-claude-in-hong-kong-and-the-ban-outlived-the-suspension-that-triggered-it-cef5ee1f70)\n- [Anthropic最强AI大模型被限制 (快科技)](https://soft.china.com/article/2007185.html)",
+      "sources": [
+        {
+          "name": "Quanta Report",
+          "url": "https://www.quanta.report/story/Anthropic_Takes_Down_New_AI_Models_Amid_US_Security_Order"
+        },
+        {
+          "name": "Belgrade Post",
+          "url": "https://belgradepost.com/vznvre-white-house-lifts-export-controls-on-anthropic-s-advanced-ai-models-following-safety-review"
+        },
+        {
+          "name": "NextFin",
+          "url": "https://www.nextfin.ai/en/news/okx-bars-claude-in-hong-kong-and-the-ban-outlived-the-suspension-that-triggered-it-cef5ee1f70"
+        },
+        {
+          "name": "快科技",
+          "url": "https://soft.china.com/article/2007185.html"
+        }
+      ],
+      "original_time": "2026-08-19T15:00:00+08:00",
+      "tags": [
+        "Anthropic",
+        "AI监管",
+        "出口管制"
+      ],
+      "category": "industry_policy",
+      "id": "2026-08-20-evening-004",
+      "category_label": "行业政策",
+      "published_at": "2026-08-19T15:00:00+08:00"
+    },
+    {
       "title": "SK集团与英伟达达成5000亿美元AI基础设施战略合作",
       "summary": "SK集团与英伟达宣布约5000亿美元战略合作，涵盖长期HBM内存供应、2GW级AI数据中心建设及下一代内存技术研发。SK海力士将深度嵌入英伟达AI内存路线图。\n\n此合作标志AI基础设施投资进入新量级。英伟达还重启大连NAND工厂计划将中国区产能提升50%。",
       "content_markdown": "SK集团与英伟达宣布达成总额约5000亿美元的战略伙伴关系，聚焦AI基础设施建设。合作内容包括：长期高带宽AI内存（HBM）供应协议、建设2GW级AI数据中心、以及共同推进下一代内存技术研发。SK集团旗下SK海力士将深度嵌入英伟达的AI内存路线图，确保长期供应。\n\n这一合作标志着AI算力基础设施投资进入新量级。SK海力士股价在消息公布后出现剧烈波动，显示市场对AI基础设施板块的高预期与分歧。与此同时，英伟达还重启了大连第二座NAND工厂，计划将中国区产能提升约50%。\n\n此外，美国商品期货交易委员会（CFTC）也同步启动算力期货监管意见征集程序，芝商所、洲际交易所等机构计划在获批后推出算力期货合约。CFTC主席表示：\"没有强大的算力衍生品市场，美国就无法赢得AI竞赛。\"\n\n**参考来源：**\n- [StorySentinel: Nvidia and SK Group $500B AI partnership](https://storysentry.com/stories/nvidia-and-sk-group-enter-500-billion-ai-partnership-plan-to-supercharge-ai-infrastructure-with-next-gen-memory-and-massive-ai-factories/)\n- [StocksToTrade: SKHY Stock Whipsaws](https://stockstotrade.com/news/sk-hynix-inc-skhy-news-2026_08_19/)",
@@ -84,6 +117,39 @@
       "id": "2026-08-20-morning-003",
       "category_label": "行业政策",
       "published_at": "2026-08-19T14:46:00+08:00"
+    },
+    {
+      "title": "AI基础设施资本狂潮：Stripe 75亿美元收购OpenRouter，Databricks完成50亿融资估值1900亿",
+      "summary": "AI基础设施赛道迎来两笔重磅交易。支付巨头Stripe确认以约75亿美元收购AI模型路由平台OpenRouter，较后者5月13亿美元估值暴涨近5倍。同期，数据与AI平台Databricks完成50亿美元融资，估值达1900亿美元，年化营收突破70亿美元。\n\n这两笔交易指向同一个趋势：AI行业的投资重心正从模型层向基础设施层——包括模型路由、算力管理、企业数据平台——加速转移。Stripe试图成为AI时代的经济基础设施，而Databricks则在企业AI平台化方向持续加注。",
+      "content_markdown": "# AI基础设施资本狂潮：Stripe 75亿美元收购OpenRouter，Databricks完成50亿融资估值1900亿\n\n8月19-20日，AI基础设施赛道接连迎来两笔重磅资本交易。\n\n## Stripe 75亿美元收购OpenRouter\n\n在线支付巨头Stripe于8月19日确认收购AI模型路由初创公司OpenRouter。虽然Stripe未公布交易金额，但据《纽约时报》援引知情人士消息，交易价格达到**75亿美元**——较OpenRouter今年5月B轮融资时13亿美元的估值暴涨近5倍。仅OpenRouter的创始人就将从这笔交易中获得**15亿美元**，超过该公司三个月前的整体估值。\n\nOpenRouter由OpenSea联合创始人Alex Atallah于2023年创立，提供统一API接入超过500个AI模型（来自80多家供应商），服务超800万开发者，年处理约1.5千万亿token。其核心能力在于智能路由——根据任务复杂度、价格、速度和可靠性自动将请求分配给最优模型。\n\nStripe创始人在一封泄露给投资者的信中半开玩笑地表示收购原因是\"奇点\"（singularity）。实际上，战略意图很清晰：**Stripe要成为AI时代的经济基础设施**，将模型路由、token计费和开发者支付整合到统一平台。Stripe指出，Forbes AI 50强企业中有88%使用其产品，包括OpenAI和Anthropic。\n\n据报道，Stripe需要击败包括Databricks在内的多个潜在买家才拿下这笔交易。\n\n## Databricks完成50亿美元融资\n\n同日，数据与AI平台Databricks宣布完成**50亿美元**新一轮融资，估值达**1900亿美元**。本轮融资由Coatue领投，Blackstone、MGX和T. Rowe Price跟投，Sixth Street Growth首次参与。\n\nDatabricks CEO Ali Ghodsi透露，公司年化营收运行率已突破**70亿美元**，二季度收入同比增长超过80%。新资金将用于投资Lakebase（数据库产品）、Genie AI助手和Unity AI Gateway等产品。\n\n## 信号与趋势\n\n这两笔交易共同描绘出AI投资重心的转移方向：\n\n1. **基础设施层成为新战场**：模型质量竞争之外，模型路由、token费用管理、企业数据平台等基础设施层的价值正在被重新定价\n2. **支付与AI融合加速**：Stripe从支付处理延伸到AI支出管理，与Rippling、Ramp等公司的AI费用管理工具形成竞争\n3. **估值膨胀仍在持续**：OpenRouter三个月估值增长5倍，Databricks自2024年底以来股价已翻三倍\n\n---\n\n**参考来源：**\n- [Stripe确认收购OpenRouter (新浪科技/IT之家)](https://finance.sina.com.cn/tech/digi/2026-08-20/doc-ininxqxq7970270.shtml)\n- [Stripe Acquires OpenRouter for Over $7B (CoinDesk)](https://www.coindesk.cc/stripe-acquires-openrouter-for-over-7b-to-enhance-ai-model-access-for-developers-102821.html)\n- [Stripe收购OpenRouter深度分析 (TechCapsules/TechCrunch)](https://techcapsules.com/stripe-didnt-really-buy-openrouter-because-of-the-singularity/)\n- [Databricks Raises $5B (AiCNBC)](https://aicnbc.com/25019.html)",
+      "sources": [
+        {
+          "name": "新浪科技/IT之家",
+          "url": "https://finance.sina.com.cn/tech/digi/2026-08-20/doc-ininxqxq7970270.shtml"
+        },
+        {
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.cc/stripe-acquires-openrouter-for-over-7b-to-enhance-ai-model-access-for-developers-102821.html"
+        },
+        {
+          "name": "TechCapsules/TechCrunch",
+          "url": "https://techcapsules.com/stripe-didnt-really-buy-openrouter-because-of-the-singularity/"
+        },
+        {
+          "name": "AiCNBC",
+          "url": "https://aicnbc.com/25019.html"
+        }
+      ],
+      "original_time": "2026-08-19T12:00:00+08:00",
+      "tags": [
+        "Stripe",
+        "Databricks",
+        "AI基础设施"
+      ],
+      "category": "funding",
+      "id": "2026-08-20-evening-003",
+      "category_label": "融资收购",
+      "published_at": "2026-08-19T12:00:00+08:00"
     },
     {
       "title": "OpenAI因AI安全危机暂停最大训练任务，推出隐私优先企业安全监控",
@@ -267,6 +333,39 @@
       "published_at": "2026-08-19T01:00:00+08:00"
     },
     {
+      "title": "AI营收格局逆转：Anthropic季度收入首超OpenAI，两大巨头同奔IPO",
+      "summary": "2026年二季度，前沿AI实验室的营收排名出现历史性翻转——Anthropic季度收入初步数据超过115亿美元，环比增幅超140%，首次在单季营收上超越OpenAI（约67亿美元，环比增长18%）。与此同时，两家公司均已秘密向SEC递交IPO招股书，OpenAI CFO确认计划2027年上市。\n\n这一逆转背后的结构性因素在于：Anthropic在企业级和编程负载上高度集中，Claude Code等产品贡献显著；而OpenAI虽拥有约10亿ChatGPT活跃用户，消费者业务规模庞大，但亏损也在扩大——二季度运营亏损扩大至123亿美元。\n\n这场营收竞赛表明，AI行业的竞争维度已从单一的模型质量，扩展到分发渠道、开发者忠诚度、企业付费意愿和资本效率等多个层面。",
+      "content_markdown": "# AI营收格局逆转：Anthropic季度收入首超OpenAI，两大巨头同奔IPO\n\n2026年二季度，前沿AI实验室的营收排名出现了历史性的翻转。\n\n## Anthropic首次单季营收超越OpenAI\n\n据《华尔街日报》和Axios援引投资者文件报道，Anthropic二季度初步收入超过**115亿美元**，环比增幅超过140%。同期，OpenAI二季度收入约为**67亿美元**，较一季度增长18%。这是Anthropic首次在单季营收上超越OpenAI，标志着AI行业营收格局的重大变化。\n\n收入来源的差异揭示了两家公司不同的战略路径。Anthropic的增长主要来自昂贵的企业级和编程工作负载，Claude Code被视为重要贡献者之一。而OpenAI则承担着更庞大的消费者业务成本——ChatGPT拥有约10亿活跃用户，但用户基数大并不意味着收入高。\n\n## OpenAI亏损压力加深\n\n尽管OpenAI营收在增长，但其运营亏损也在扩大。据披露，OpenAI二季度运营亏损扩大至**123亿美元**。公司正在安全监控上投入大量资源——据OpenAI公布的数据，前沿模型的安全监控开销约占被监控推理算力的**20%**，覆盖GPT-5.6 Sol及以上级别的所有强化学习训练和工具调用评估。\n\n## 两大巨头同奔IPO\n\n两家公司的上市进程也在加速。OpenAI CFO Sarah Friar在8月19日的全员大会上确认，公司计划于**2027年**完成IPO，若业务增长加速也可能提前。据悉，OpenAI已于6月8日向SEC秘密递交了IPO招股说明书，但尚未公开披露具体时间表。\n\nAnthropic也已秘密提交招股书并开始与潜在投资者接触。当前OpenAI的估值约为**8520亿美元**，市场正密切关注其如何证明这一估值的合理性。\n\n## 行业启示\n\n这一营收翻转表明，AI行业的竞争已不再只是模型质量的比拼。**分发渠道、开发者忠诚度、企业客户的付费意愿和资本效率**正变得同等重要。如果Anthropic能持续保持企业级优势，而OpenAI需要将十亿用户转化为更强的商业价值，那么模型分数只是竞争的一部分。\n\n---\n\n**参考来源：**\n- [Anthropic passed OpenAI in quarterly revenue (The Neuron)](https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-august-19-2026/)\n- [OpenAI计划将于2027年上市 (央视财经)](https://m.weibo.cn/detail/5334059131603479)\n- [OpenAI CFO names 2027 listing year (AIToolsRecap)](https://aitoolsrecap.com/Blog/ai-news-august-20-2026)\n- [OpenAI Pauses Training, Google Delays Release (朝鲜日报)](https://www.chosun.com/english/industry-en/2026/08/20/3JBOGQ3HNRHCVDRKSTGXEPZONA/)",
+      "sources": [
+        {
+          "name": "The Neuron",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-august-19-2026/"
+        },
+        {
+          "name": "央视财经",
+          "url": "https://m.weibo.cn/detail/5334059131603479"
+        },
+        {
+          "name": "AIToolsRecap",
+          "url": "https://aitoolsrecap.com/Blog/ai-news-august-20-2026"
+        },
+        {
+          "name": "朝鲜日报英文版",
+          "url": "https://www.chosun.com/english/industry-en/2026/08/20/3JBOGQ3HNRHCVDRKSTGXEPZONA/"
+        }
+      ],
+      "original_time": "2026-08-19T00:00:00+08:00",
+      "tags": [
+        "Anthropic",
+        "OpenAI",
+        "IPO"
+      ],
+      "category": "funding",
+      "id": "2026-08-20-evening-002",
+      "category_label": "融资收购",
+      "published_at": "2026-08-19T00:00:00+08:00"
+    },
+    {
       "title": "智谱GLM-5.3发布后因网络安全能力过强推迟开源，同步推出OpenVuln漏洞扫描器",
       "summary": "智谱AI（Z.ai）发布GLM-5.3通用编程模型，在Terminal-Bench 3.0等编程基准中取得开源第一，同时在CyberGym漏洞复现测试中达到84.5%成功率。但由于模型展现出超出预期的网络安全攻击能力，原定开源权重发布时间推迟约两周。\n\n作为平衡，智谱同步推出OpenVuln开源漏洞扫描器，并启动「开源的盾」安全审计计划，为开源社区提供免费代码安全审计。Greg Brockman称此举为「网络安全的分水岭时刻」。",
       "content_markdown": "## 智谱GLM-5.3发布后因网络安全能力过强推迟开源，同步推出OpenVuln漏洞扫描器\n\n### 开源模型首次追平闭源旗舰\n\n智谱AI于8月18日正式发布GLM-5.3通用编程旗舰模型。在关键基准测试中表现突出：Terminal-Bench 3.0（要求模型直接操作终端完成任务）从4.6%跃升至28.3%，Agents Last Exam从23.8%提高到28.5%，整体编程能力提升约50%。\n\n更值得关注的是安全评测维度：在CyberGym漏洞复现测试（1507个历史漏洞）中，GLM-5.3达到84.5%成功率；在ExploitBench（将漏洞转化为攻击工具）中同样表现突出。据智谱内部评测，GLM-5.3综合得分60分，首次达到与闭源旗舰模型（Claude Fable 5、GPT-5.6 Sol均在60+区间）同一水平——这是开源模型的历史性突破。\n\n### 因为「太强」而推迟开源\n\n然而，正是这些网络安全能力引发了智谱的内部紧张。模型在训练过程中展现出超出预期的漏洞发现和攻击能力，智谱决定将原定开源权重发布时间推迟约两周，继续评估开放权重可能带来的风险。\n\n这是一个艰难的选择。开源一直是GLM在海外吸引开发者的最大卖点——一个月前Hugging Face能用GLM-5.2分析OpenAI模型的攻击记录，靠的就是开源可下载。但权重一旦发布，任何人都可以在本地部署、继续训练、拆掉安全措施。\n\n更棘手的是，GLM-5.3的网络安全能力并非独立功能，而是其编程能力（读代码、运行程序、长时间完成任务）的自然延伸——削弱攻击能力，编程卖点也会受损。\n\n### 「开源的盾」计划与OpenVuln\n\n作为对冲，智谱同步推出两项安全举措：\n1. **OpenVuln**：配套开源漏洞扫描器，将模型的漏洞发现能力转化为防御工具\n2. **「开源的盾」计划**：为开源社区提供免费代码安全审计服务\n\nGreg Brockman称此举为「网络安全的分水岭时刻」。Vercel CEO Guillermo Rauch对防御应用表示乐观，但业界也在思考：当模型权重随时可以下载，攻防天平将如何倾斜。\n\n法国媒体评价，这是中国AI实验室对Project Glasswing的首次回应——不再只谈模型性能和扩散，开始主动在软件保护和代码维护领域建立国际影响力。\n\n---\n\n**参考来源：**\n- [Wired - Z.ai open-weight AI models and cybersecurity](https://www.wired.com/story/zai-open-weight-ai-models-release-cybersecurity-hacking/)\n- [36氪 - 智谱GLM-5.3太强不敢开源了](https://36kr.com/p/3945790191179400)\n- [AI0 News - Daily Digest Aug 19](https://ai0.news/posts/2026-08-19-daily-digest/)\n- [Services Mobiles - Z.ai lie IA ouverte et cybersécurité](https://www.servicesmobiles.fr/avec-glm-5-3-z-ai-lie-enfin-ia-ouverte-et-cybersecurite-113935)",
@@ -298,6 +397,43 @@
       "id": "2026-08-19-evening-001",
       "category_label": "开源动态",
       "published_at": "2026-08-18T22:00:00+08:00"
+    },
+    {
+      "title": "产品动态：Google Gemini 3.7 Flash全面推送，OpenAI上线ChatGPT青少年版",
+      "summary": "产品端，Google Gemini 3.7 Flash于8月13日发布后本周向所有AI Pro和Ultra用户全面开放，在真实世界数据分析基准测试中登顶；同时Google宣布向全球大学生免费提供一年AI Pro/Plus订阅。OpenAI则于8月18日正式上线ChatGPT for Teens，为13-17岁用户提供自动化的安全防护和学习引导模式。\n\n两大巨头不约而同将目光投向细分用户群体——学生和青少年——AI产品的竞争正从通用能力比拼转向场景化和人群化。",
+      "content_markdown": "# 产品动态：Google Gemini 3.7 Flash全面推送，OpenAI上线ChatGPT青少年版\n\n## Google Gemini 3.7 Flash全面开放\n\nGoogle于8月13日发布Gemini 3.7 Flash后，本周已向所有Google AI Pro和Ultra用户在Gemini聊天和Gemini Spark中全面开放该模型。\n\n在Artificial Analysis的AA-Analyst Agent排行榜上，Gemini 3.7 Flash以**60%的得分**位居第一，涵盖14个商业和科学领域的80个真实世界任务测试，领先于Claude Opus 5（53.8%）和GPT-5.5（50%）。Google表示，Gemini 3.7 Flash完成任务的速度比其他顶级模型**快60%至90%**。\n\n该模型现在也驱动着Google Search AI Mode（面向付费用户），以及Gemini Spark——用户的24/7个人AI代理，可跨Google Workspace应用处理多步骤任务。\n\n### 大学生免费计划\n\n配合开学季，Google宣布自8月20日起：\n- **美国大学生**可免费获得一年Google AI Pro（价值约200美元）\n- **140多个国家和地区的学生**可免费获得一年Google AI Plus\n\n同时推出全新AI学习工具，包括Google Meet中的AI笔记功能等。\n\n## OpenAI ChatGPT for Teens正式上线\n\n8月18日，OpenAI正式推出**ChatGPT for Teens**，面向13-17岁用户的专属体验。如果系统估算用户未满18岁或用户自报年龄在13-17岁之间，将自动进入青少年模式。\n\n核心功能包括：\n- **Study Mode**：通过引导式提问和分步支持替代直接给出答案\n- **Responsible Homework Reminders**：检测到用户试图走捷径时引导回协作学习\n- **安全强化**：对自残、暴力、饮食失调、危险活动等高风险话题设置更严格的默认保护\n- **家长控制**：关联账户的家长可设置安静时段、管理设置并在高风险情况下收到通知\n\n此举发布于佛罗里达州就儿童安全问题起诉OpenAI数月之后。Pew研究中心今年早些时候发现，搜索信息和获取作业帮助是美国青少年使用AI最常见的方式。\n\n## 趋势观察\n\n两大巨头不约而同将目光投向学生和青少年群体。Google以免费策略抢占教育市场，OpenAI则以安全框架回应社会压力。AI产品的竞争正从通用能力比拼转向**场景化和人群化的精细运营**。\n\n---\n\n**参考来源：**\n- [Gemini 3.7 Flash launches (9to5Google)](https://9to5google.com/guides/gemini/)\n- [Google introduces new AI study tools (Google/Gemini官方)](https://news.google.com/stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lna3AyRUVSR245ZzRyODI4aTR5Z0FQAQ)\n- [Gemini 3.7 Flash登顶AA-Analyst基准 (InfoQ)](https://www.infoq.cn/aibriefs)\n- [OpenAI launches ChatGPT for Teens (AP via Europe Sun)](https://www.europesun.com/news/279249876/openai-rolls-out-teen-focused-chatgpt-with-parental-controls)\n- [ChatGPT for Teens (OpenAI Help Center)](https://help.openai.com/en/articles/9624314-model-release-notes)",
+      "sources": [
+        {
+          "name": "9to5Google",
+          "url": "https://9to5google.com/guides/gemini/"
+        },
+        {
+          "name": "Google Gemini官方",
+          "url": "https://news.google.com/stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lna3AyRUVSR245ZzRyODI4aTR5Z0FQAQ"
+        },
+        {
+          "name": "InfoQ",
+          "url": "https://www.infoq.cn/aibriefs"
+        },
+        {
+          "name": "Europe Sun/AP",
+          "url": "https://www.europesun.com/news/279249876/openai-rolls-out-teen-focused-chatgpt-with-parental-controls"
+        },
+        {
+          "name": "OpenAI Help Center",
+          "url": "https://help.openai.com/en/articles/9624314-model-release-notes"
+        }
+      ],
+      "original_time": "2026-08-18T10:00:00+08:00",
+      "tags": [
+        "Google",
+        "OpenAI",
+        "AI产品"
+      ],
+      "category": "product_launch",
+      "id": "2026-08-20-evening-001",
+      "category_label": "产品发布",
+      "published_at": "2026-08-18T10:00:00+08:00"
     },
     {
       "title": "AI自主安全攻防进入新阶段：Wiz Red Agent独立攻破Snowflake系统，Copilot Autofix角色引争议",
