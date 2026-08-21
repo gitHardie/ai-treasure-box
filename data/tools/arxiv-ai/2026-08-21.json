@@ -1,0 +1,698 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-08-21T00:23:27.402744+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
+      "title": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
+      "url": "https://arxiv.org/abs/2608.19197v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19197v1",
+      "description": "Continuous self-improvement requires an ever-expanding pool of self-generated, diverse, adaptive goals. For language agents, existing training environment pools (hand-curated, statically synthesized, or frozen-verifier) keep the goal distribution fixed as the learner scales. We introduce SPADE (Self-Play in Adaptive Synthetic Executable Environments), a self-play RL framework in which a single LLM plays two roles: an Environment Designer that writes complete, long-horizon training environments a",
+      "authors": [
+        "Bo Liu",
+        "Simon Yu",
+        "Yiding Jiang",
+        "Ao Qu",
+        "Andrew Zhao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.19197v1",
+      "published_at": "2026-08-19T17:58:56Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning",
+      "title": "ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2608.19182v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19182v1",
+      "description": "We introduce Accelerating Dexterity via Pre-Training (ADEPT), a large-scale reinforcement learning (RL) framework for learning sim-to-real transferable dexterity across high degree-of-freedom (DoF) robot embodiments that can solve long-horizon tasks directly from raw visuo-tactile perception. ADEPT pretrains a dexterous policy on a generic object reposing task, then post-trains downstream policies with this pretrained behavior as a prior. ADEPT enables learning new behaviors that are otherwise d",
+      "authors": [
+        "Jayjun Lee",
+        "Jessica Yin",
+        "Asif Rana",
+        "Nicholas Blauch",
+        "Sam Mady"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.19182v1",
+      "published_at": "2026-08-19T17:55:06Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning",
+      "title": "Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning",
+      "url": "https://arxiv.org/abs/2608.19181v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19181v1",
+      "description": "On-policy distillation (OPD) trains a student on its own responses using dense token-level guidance from a stronger teacher. In long-context tasks, however, token-level teacher support can favor locally plausible responses that omit evidence distributed across the input or violate global task constraints. Task-specific verifiers, in contrast, evaluate task completion at the response level and may return graded rewards that reflect partial success. We diagnose this mismatch on fixed responses fro",
+      "authors": [
+        "Zhu Zhang",
+        "Jixun Wang",
+        "Xiaoang Xu",
+        "Xiaorong Wang",
+        "Zihan Zhou"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.19181v1",
+      "published_at": "2026-08-19T17:54:58Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Finetuning Strategies for Querying Sounds by Vocal Imitation",
+      "title": "Finetuning Strategies for Querying Sounds by Vocal Imitation",
+      "url": "https://arxiv.org/abs/2608.19174v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19174v1",
+      "description": "This technical report describes our winning submission to the AES AIMLA 2025 Challenge on querying sound effects by vocal imitation. We investigate two complementary fine-tuning strategies: contrastive learning with a frozen, pretrained CED encoder, and joint contrastive-triplet learning with semi-hard negatives using a MobileNetV3 encoder. This report has been updated for posterity to include details released after the challenge.",
+      "authors": [
+        "Aditya Bhattacharjee",
+        "Christos Plachouras",
+        "Sungkyun Chang",
+        "Emmanouil Benetos"
+      ],
+      "categories": [
+        "cs.SD",
+        "cs.AI",
+        "cs.IR"
+      ],
+      "arxiv_id": "2608.19174v1",
+      "published_at": "2026-08-19T17:51:50Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Lévy Attention: Single-Pass Predictive Uncertainty for Continuous-Time Attention",
+      "title": "Lévy Attention: Single-Pass Predictive Uncertainty for Continuous-Time Attention",
+      "url": "https://arxiv.org/abs/2608.19171v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19171v1",
+      "description": "Deep models for irregularly-sampled time series answer queries at arbitrary continuous timestamps, yet report nothing about how far each answer should be trusted. We show the attention layer itself can close that gap: with the right stochastic formulation, the pass that makes each prediction also reports, in closed form and at no extra cost, how far it should be trusted. We introduce Lévy Attention, a cross-attention operator whose output is a stochastic integral against an inhomogeneous Poisson",
+      "authors": [
+        "Sotirios P. Chatzis",
+        "Loukas Papadoulas"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.19171v1",
+      "published_at": "2026-08-19T17:50:16Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Learned, Then Lost: A Measured Single-Example Counterfactual in Pre-training",
+      "title": "Learned, Then Lost: A Measured Single-Example Counterfactual in Pre-training",
+      "url": "https://arxiv.org/abs/2608.19168v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19168v1",
+      "description": "A single training example's contribution to a finished model is normally estimated rather than measured, because measuring it takes two expensive full pre-training runs that differ in one row of one batch. We ran that counterfactual 24 times at a small scale. We trained 32 GPT-2 models at 124M parameters from scratch on OpenWebText, over four conditions and eight seeds. At step 200 of 9,536, at peak learning rate, we replaced one row of a 256-row batch with a fixed context injection carrying a 1",
+      "authors": [
+        "Zachary Speck",
+        "Asa Shepard"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.19168v1",
+      "published_at": "2026-08-19T17:46:08Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ChildSafeAds Shared Task 2026: Commercial Content in Child-Facing YouTube Videos",
+      "title": "ChildSafeAds Shared Task 2026: Commercial Content in Child-Facing YouTube Videos",
+      "url": "https://arxiv.org/abs/2608.19165v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19165v1",
+      "description": "ChildSafeAds is a shared task on commercial content in YouTube videos likely to reach children and teenagers. It contains 3,360 videos from 939 channels. Each instance begins with a segment submitted to SponsorBlock, an open-source crowdsourced browser extension whose users mark sponsor segments so that others can skip them. We pair the segment with its available transcript, video and channel information, and a sales or service page linked from the video description. Systems determine what kind ",
+      "authors": [
+        "Thales Bertaglia",
+        "Catalina Goanta",
+        "Gerasimos Spanakis",
+        "Gunes Acar"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "arxiv_id": "2608.19165v1",
+      "published_at": "2026-08-19T17:44:58Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Interpretable AI predicts a 2026 summer dry anomaly in central China",
+      "title": "Interpretable AI predicts a 2026 summer dry anomaly in central China",
+      "url": "https://arxiv.org/abs/2608.19163v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19163v1",
+      "description": "Seasonal precipitation anomalies are largely regulated by atmospheric circulation, which dynamical models predict with greater reliability than precipitation itself. Here, we employ a deep learning model that translates dynamical circulation predictions into precipitation estimates. Predictions initialized from March to May consistently indicate a dry anomaly over central China in summer 2026. Retrospective evaluations revealed higher predictive skill in the analogue years, which also tended to ",
+      "authors": [
+        "Anran Wang",
+        "Wen Shi",
+        "Yong Luo",
+        "Jianbin Huang",
+        "Lijuan Chen"
+      ],
+      "categories": [
+        "physics.ao-ph",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.19163v1",
+      "published_at": "2026-08-19T17:43:49Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Beyond the Transcript: Detecting Covert Co ordination in Latent Multi-Agent Communication",
+      "title": "Beyond the Transcript: Detecting Covert Co ordination in Latent Multi-Agent Communication",
+      "url": "https://arxiv.org/abs/2608.19161v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19161v1",
+      "description": "Language-model agents can communicate through continuous hidden states that are invisible in public transcripts, creating opportunities for covert harmful coordination. We introduce Verifiable Latent Alignments (VLA), an activation-aware framework for monitoring and steering these private communication channels. For every monitored decision, VLA links the private latent-state record and channel status to the resulting public action using a shared event identifier, enabling matched causal analysi",
+      "authors": [
+        "Ramneet Kaur",
+        "Pradyumna Chari",
+        "Ramesh Raskar",
+        "Jugad Singh",
+        "Sumit Kumar Jha"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "arxiv_id": "2608.19161v1",
+      "published_at": "2026-08-19T17:43:22Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Continuous-Time Reinforcement Learning for Controlled Hawkes Jump-Diffusions",
+      "title": "Continuous-Time Reinforcement Learning for Controlled Hawkes Jump-Diffusions",
+      "url": "https://arxiv.org/abs/2608.19151v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19151v1",
+      "description": "We study stochastic control of multivariate Hawkes-driven stochastic differential equations with machine learning algorithms in a non-Markovian setting. Due to the path dependence of the memory of the Hawkes intensity, this problem does not fall within classical stochastic control theory outside particular Markovian kernels. We first develop a finite-dimensional Markovianization procedure and algorithm to approximate multivariate Hawkes processes with mixtures of exponential kernels. We prove th",
+      "authors": [
+        "Tomasz R. Bielecki",
+        "Thibaut Mastrolia",
+        "Haoze Yan"
+      ],
+      "categories": [
+        "cs.LG",
+        "math.OC",
+        "stat.ML"
+      ],
+      "arxiv_id": "2608.19151v1",
+      "published_at": "2026-08-19T17:40:23Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Pre-Compiled Pipeline Shards for Distributed LLM Inference on Intel AI PC Fleets",
+      "title": "Pre-Compiled Pipeline Shards for Distributed LLM Inference on Intel AI PC Fleets",
+      "url": "https://arxiv.org/abs/2608.19147v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19147v1",
+      "description": "Modern Intel AI PCs ship capable integrated GPUs and NPUs with 16+ GB of unified memory, and they spend considerable time idle. That is not enough memory to fit a large model such as a 70B-parameter LLM. We show that a handful of AIPCs, working together over an ordinary network, can serve models beyond the capability of any single one. We use pipeline parallelism: a model is split by layer into per-stage shards, each pre-compiled into an OpenVINO graph, so that every machine runs one shard and p",
+      "authors": [
+        "Tate Berenbaum",
+        "Muthaiah Venkatachalam"
+      ],
+      "categories": [
+        "cs.DC",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "arxiv_id": "2608.19147v1",
+      "published_at": "2026-08-19T17:33:28Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Geometric Iterative Retrieval for Neural Audio Codec Resynthesis",
+      "title": "Geometric Iterative Retrieval for Neural Audio Codec Resynthesis",
+      "url": "https://arxiv.org/abs/2608.19141v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19141v1",
+      "description": "Neural audio codecs based on Residual Vector Quantization (RVQ) have become the dominant discrete representation for token-based general audio generation, yet resynthesizing high-quality audio from coarse codec tokens remains an open problem and bounds the fidelity of every system that generates them. Prior work has framed resynthesis as a choice between discrete token prediction and continuous regression. We argue that this dichotomy is incomplete and introduce geometric iterative retrieval, a ",
+      "authors": [
+        "Leo Schmidt-Traub",
+        "Frédéric Berdoz",
+        "Luca A. Lanzendörfer",
+        "Roger Wattenhofer"
+      ],
+      "categories": [
+        "cs.SD",
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.19141v1",
+      "published_at": "2026-08-19T17:29:56Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Grouping the Stochastic Machine: Precision, Not Capability, as the Frontier Metric for AI Systems",
+      "title": "Grouping the Stochastic Machine: Precision, Not Capability, as the Frontier Metric for AI Systems",
+      "url": "https://arxiv.org/abs/2608.19140v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19140v1",
+      "description": "Frontier language models are compared, marketed, and benchmarked on capability -- what their best or average output can achieve. I argue this measures the wrong axis. The models have saturated accuracy: their mean output lands on the target. What now separates one system from another in practice is precision: how tightly concentrated their outputs are around that target across repeated, identical requests. Borrowing the marksman's distinction, capability is where the average shot lands; reliabil",
+      "authors": [
+        "George Andrikopoulos"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CY",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "arxiv_id": "2608.19140v1",
+      "published_at": "2026-08-19T17:29:47Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SCORE: Subject Coordinate Recovery for Label-Free Cross-Subject EEG-to-Image Retrieval",
+      "title": "SCORE: Subject Coordinate Recovery for Label-Free Cross-Subject EEG-to-Image Retrieval",
+      "url": "https://arxiv.org/abs/2608.19134v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19134v1",
+      "description": "Accurate visual decoding can reveal how the brain represents visual information and recover perceived content from neural signals such as electroencephalography (EEG), with potential for neural communication. However, current EEG-to-image retrieval methods perform far below their within-subject counterparts for new users without labeled calibration, limiting real-world deployment. To understand this gap, we analyze EEG features across subjects and find that different subjects preserve similar re",
+      "authors": [
+        "Zhenyao Cui",
+        "Siyuan Kan",
+        "Siyang Li",
+        "Ziwei Wang",
+        "Dongrui Wu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.19134v1",
+      "published_at": "2026-08-19T17:27:29Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Comment-level Topic Drift Analysis in the Reddit Corpus",
+      "title": "Comment-level Topic Drift Analysis in the Reddit Corpus",
+      "url": "https://arxiv.org/abs/2608.19133v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19133v1",
+      "description": "We present a novel application of embedding-based dynamic topic modeling techniques to detect and quantify topic drift at the comment level in a massive corpus. By leveraging pretrained language models to generate contextualized semantic embeddings for short text, we analyzed 12.7 billion Reddit comments spanning 2006 to 2022. Using unsupervised methods on these embeddings, we identify dynamically evolving topic clusters over time. Our primary contribution is a methodology for analysis of semant",
+      "authors": [
+        "Steven Morse",
+        "Daniel Runfola",
+        "Trenton W. Ford"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.19133v1",
+      "published_at": "2026-08-19T17:27:25Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Beyond Trial Averaging: Anchoring Neural and Visual Representations for Few-Repetition Brain-to-Image Retrieval",
+      "title": "Beyond Trial Averaging: Anchoring Neural and Visual Representations for Few-Repetition Brain-to-Image Retrieval",
+      "url": "https://arxiv.org/abs/2608.19128v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19128v1",
+      "description": "Decoding visual information from brain signals probes neural representations and enables neuro-rehabilitation and dream decoding. Recent brain-to-image retrieval approaches have achieved promising performance, typically by averaging many (up to 80) neural trials per image, requiring repeated stimulus presentation that increases latency, cost, and user burden. When only one or a few repetitions are available, the retrieval accuracy drops sharply. This drop is commonly attributed to query noise be",
+      "authors": [
+        "Zhenyao Cui",
+        "Siyuan Kan",
+        "Dingkun Liu",
+        "Dongrui Wu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.19128v1",
+      "published_at": "2026-08-19T17:23:30Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Leaf Values as Coordinates: Exact Contrastive Explanation for Gradient-Boosted Ensembles",
+      "title": "Leaf Values as Coordinates: Exact Contrastive Explanation for Gradient-Boosted Ensembles",
+      "url": "https://arxiv.org/abs/2608.19127v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19127v1",
+      "description": "A gradient-boosted ensemble predicts by summing one leaf value per tree. Read those values as coordinates rather than as intermediate results, and every instance becomes a point in R^M on which the model acts linearly: the score is the sum of the coordinates. This small change of view makes contrastive explanation exact. The difference between two instances is a vector that is identically zero wherever they share a leaf, so the gap between a rejected applicant and an accepted one is carried by a",
+      "authors": [
+        "Emanuele Luzio"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "arxiv_id": "2608.19127v1",
+      "published_at": "2026-08-19T17:20:33Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Tuning the Stochastic Machine: A Systems Engineer's Operating Model for Human-AI Engineering",
+      "title": "Tuning the Stochastic Machine: A Systems Engineer's Operating Model for Human-AI Engineering",
+      "url": "https://arxiv.org/abs/2608.19125v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19125v1",
+      "description": "When an expert corrects an LLM assistant's error, the correction usually dies with the session, and the error class returns. I argue this is an operations problem, not a tooling problem: mechanisms for persisting corrections exist and are shipping, but the discipline for governing them -- versioning with provenance, recurrence monitoring, counter-metrics, retirement of stale rules -- does not. Writing as a systems engineer of thirty years, I map the LLM stack onto the machines my profession alre",
+      "authors": [
+        "George Andrikopoulos"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "arxiv_id": "2608.19125v1",
+      "published_at": "2026-08-19T17:18:53Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "PGFS++: Molecular Property Improvement under Synthesis and Diversity Constraints",
+      "title": "PGFS++: Molecular Property Improvement under Synthesis and Diversity Constraints",
+      "url": "https://arxiv.org/abs/2608.19121v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19121v1",
+      "description": "Improving molecular properties, such as drug-likeness or binding affinity, is a recurring task in early-stage drug discovery. However, molecules optimized in an unconstrained chemical space have limited practical value if they cannot be synthesized. Policy Gradient for Forward Synthesis (PGFS) is a synthesis-aware reinforcement learning method for molecular improvement, but its use of reactant embedding prediction makes reactant selection indirect, which, as we show, limits learning effectivenes",
+      "authors": [
+        "Boqiao Zhang",
+        "Godbless James",
+        "Sai Krishna Gottipati",
+        "Andrew Fitzgibbon"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.19121v1",
+      "published_at": "2026-08-19T17:17:31Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Discretizing Continuous Time Series for Imputation with Masked Diffusion Training",
+      "title": "Discretizing Continuous Time Series for Imputation with Masked Diffusion Training",
+      "url": "https://arxiv.org/abs/2608.19119v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19119v1",
+      "description": "Time series imputation is a crucial area for reliable time series analysis, yet it remains challenging due to the complex temporal dynamics and noise of real-world data. Existing approaches, however, exhibit two limitations: missing and observed values are embedded within the same representation space without explicit structural separation, and continuous diffusion-based methods are trained to predict added noise rather than the original signal. To address these, we propose the Masked Diffusion ",
+      "authors": [
+        "Dongbin Kim",
+        "Seungyun Lee",
+        "Geonwoo Shin",
+        "Jaewook Lee"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.19119v1",
+      "published_at": "2026-08-19T17:16:27Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Enhancing EBSD throughput of battery electrode materials using super-resolution generative adversarial networks",
+      "title": "Enhancing EBSD throughput of battery electrode materials using super-resolution generative adversarial networks",
+      "url": "https://arxiv.org/abs/2608.19117v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19117v1",
+      "description": "Quantitative microstructural characterization of Li-ion battery electrode materials using electron backscatter diffraction (EBSD) has been proven as a critical method for optimizing cell performance. However, the inherently slow nature of EBSD can hinder the throughput of analyses needed for statistical representation of a material microstructure being developed. This work demonstrates a machine learning super-resolution framework using a generative adversarial network (SRGAN) to significantly i",
+      "authors": [
+        "John Mangum",
+        "Andrew Glaws",
+        "Francois Usseglio-Viretta",
+        "Steven Spurgeon",
+        "Donal Finegan"
+      ],
+      "categories": [
+        "cs.LG",
+        "cond-mat.mtrl-sci"
+      ],
+      "arxiv_id": "2608.19117v1",
+      "published_at": "2026-08-19T17:14:20Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Pretraining Reusable Inference Across Views with Synthetic Task Priors",
+      "title": "Pretraining Reusable Inference Across Views with Synthetic Task Priors",
+      "url": "https://arxiv.org/abs/2608.19115v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19115v1",
+      "description": "Modern pretrained encoders make representations from heterogeneous views increasingly reusable, but the procedure that determines view utility and combines evidence is still relearned for each downstream task. Consequently, knowledge about view relevance, complementarity, reliability, and missingness is repeatedly discarded rather than transferred across tasks. We therefore reformulate multi-view learning as learning a reusable, task-conditioned inference procedure rather than a fixed fusion fun",
+      "authors": [
+        "Jielong Lu",
+        "Zhihao Wu",
+        "Jiajun Yu",
+        "Zhaoliang Chen",
+        "Haishuai Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.MM"
+      ],
+      "arxiv_id": "2608.19115v1",
+      "published_at": "2026-08-19T17:10:03Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Open-MOPD: Diagnosing and Fixing Capability Imbalance in Multi-Teacher On-Policy Distillation",
+      "title": "Open-MOPD: Diagnosing and Fixing Capability Imbalance in Multi-Teacher On-Policy Distillation",
+      "url": "https://arxiv.org/abs/2608.19098v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19098v1",
+      "description": "Multi-teacher on-policy distillation (M-OPD) has emerged as a promising paradigm for consolidating domain-specialized reinforcement learning (RL) experts into a single generalist student via dense, token-level reward supervision. Despite its practical success, the optimization dynamics governing multi-teacher capability integration remain poorly understood, and open, rigorously reproducible recipes are conspicuously lacking. In this work, we establish a controlled M-OPD benchmark on SmolLM3-3B-B",
+      "authors": [
+        "Huan-ang Gao",
+        "Haohan Chi",
+        "Yong Yan",
+        "Shiyuan Feng",
+        "Hanlin Wu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.19098v1",
+      "published_at": "2026-08-19T16:50:39Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Detecting Backdoors in Object Detection via Pre-NMS Prediction Distribution Shift",
+      "title": "Detecting Backdoors in Object Detection via Pre-NMS Prediction Distribution Shift",
+      "url": "https://arxiv.org/abs/2608.19088v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19088v1",
+      "description": "Object detection models deployed in safety-critical applications remain vulnerable to backdoor attacks that cause targeted misbehaviors when a hidden trigger is present. Existing detection methods either rely on trigger inversion or exploit architecture-specific assumptions, and critically, representative existing methods fail to generalize reliably to scene-level attacks, where a single trigger induces anomalous behavior across all objects in the scene simultaneously. We present DistScan, a bac",
+      "authors": [
+        "Longtian Wang",
+        "Zhengyu Zhao",
+        "Chenhao Lin",
+        "Le Yang",
+        "Shiwei Wang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.19088v1",
+      "published_at": "2026-08-19T16:38:39Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "DA-WAM: Decision-Aligned Future Latents for Driving World Models",
+      "title": "DA-WAM: Decision-Aligned Future Latents for Driving World Models",
+      "url": "https://arxiv.org/abs/2608.19085v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19085v1",
+      "description": "Anticipating how scenes evolve under ego actions is fundamental to safe autonomous driving, yet the full potential of world models for decision-making remains unrealized. The critical challenge lies in ensuring that future modeling is not merely predictive, but decision-informative: the predicted future must directly shape which trajectory is selected. Existing approaches decouple future representation learning from planning optimization, or share predicted states across trajectory candidates, t",
+      "authors": [
+        "Ruiguo Zhong",
+        "Benshan Ma",
+        "Xiaolong Chen",
+        "Lang Zhang",
+        "Mingyue Feng"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.19085v1",
+      "published_at": "2026-08-19T16:33:02Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Does Mapping Non-Maximal Probabilities to GMM Components Matter for S-JEPA Encoder Representations?",
+      "title": "Does Mapping Non-Maximal Probabilities to GMM Components Matter for S-JEPA Encoder Representations?",
+      "url": "https://arxiv.org/abs/2608.19084v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19084v1",
+      "description": "S-JEPA uses soft Gaussian mixture model (GMM) posteriors instead of hard cluster labels to preserve uncertainty. It remains unclear whether the probability values alone are sufficient, or whether it also matters which GMM components receive the non-maximal probabilities. We test this with two matched controls. FIXED-RANDPERM keeps the top-1 component and probability together with the multiset of non-maximal probability values, but reassigns those non-maximal values using a mapping fixed for each",
+      "authors": [
+        "Wenxuan He",
+        "Yunpeng Li",
+        "Shan Liang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.SD"
+      ],
+      "arxiv_id": "2608.19084v1",
+      "published_at": "2026-08-19T16:32:52Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "When Readability and Source Retention Diverge: An Evaluability Gap in AI Translation",
+      "title": "When Readability and Source Retention Diverge: An Evaluability Gap in AI Translation",
+      "url": "https://arxiv.org/abs/2608.19083v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19083v1",
+      "description": "Readable AI output can leave an evaluability gap: even when the source is shown, an overall-quality judgment may not reflect what an output preserves. We investigated how source-text condition and output rendering relate to perceived translation quality, and how output and system appraisals relate to trust and stated disclosure willingness in a plain-text interface. A focal 2 * 2 comparison (N=306) using TransLingo examined simple generated narratives and complex literary-philosophical prose alo",
+      "authors": [
+        "Chenchen Mao",
+        "Hanjing Shi",
+        "Haiyan Jia",
+        "Emily Wegrzyn",
+        "Dominic DiFranzo"
+      ],
+      "categories": [
+        "cs.HC",
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.19083v1",
+      "published_at": "2026-08-19T16:32:47Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Learning Random Geometric Graphs Drawn in Probabilistic Metric Spaces",
+      "title": "Learning Random Geometric Graphs Drawn in Probabilistic Metric Spaces",
+      "url": "https://arxiv.org/abs/2608.19082v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19082v1",
+      "description": "We present a new data-driven learning of a Random Geometric Graph (RGG) of a multivariate dataset, where the graph is drawn in a probabilistic metric space. This graph learning works for generic datasets, irrespective of the type of the observables; their probability distributions; or size of the data. We identify a metric of the space that the graph is drawn in, as a probability distribution of a random variable that we introduce, namely, a variable that represents the disparity between the con",
+      "authors": [
+        "Dalia Chakrabarty",
+        "Kangrui Wang",
+        "Chuqiao Zhang",
+        "Ye Liu"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "stat.AP"
+      ],
+      "arxiv_id": "2608.19082v1",
+      "published_at": "2026-08-19T16:31:39Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SPK: Eliciting Structured Prior Knowledge for Interpretable Out-of-Distribution Detection in Real-Time Object Detection",
+      "title": "SPK: Eliciting Structured Prior Knowledge for Interpretable Out-of-Distribution Detection in Real-Time Object Detection",
+      "url": "https://arxiv.org/abs/2608.19080v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19080v1",
+      "description": "Object detectors often produce over-confident predictions for objects outside their training categories, leading to so-called out-of-distribution (OoD) hallucinations. Existing approaches for detecting or mitigating such hallucinations typically either construct scoring functions directly over learned object detector representations or modify the object detector itself to suppress hallucination emergence. However, the latent priors implicitly encoded in these representations remain largely unexp",
+      "authors": [
+        "Changshun Wu",
+        "Weicheng He",
+        "Xiaowei Huang",
+        "Saddek Bensalem"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.19080v1",
+      "published_at": "2026-08-19T16:30:06Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ReWEIGH the Evidence: Calibrating Token-Level Ordinal Visual Evidence to Mitigate Hallucinations in Large Vision-Language Models",
+      "title": "ReWEIGH the Evidence: Calibrating Token-Level Ordinal Visual Evidence to Mitigate Hallucinations in Large Vision-Language Models",
+      "url": "https://arxiv.org/abs/2608.19075v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19075v1",
+      "description": "Large vision-language models (LVLMs) often hallucinate, generating content that the input image does not support. Preventing such content during decoding calls for a candidate-specific measure of how strongly the image supports the token under consideration. The model's visual-token states offer a natural source of this evidence because projecting each state through the output head reveals which vocabulary items that position favors. These position-wise readouts cannot be pooled directly because",
+      "authors": [
+        "Jihae Jeong",
+        "Junha Choi",
+        "Hwanjo Yu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.19075v1",
+      "published_at": "2026-08-19T16:23:56Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
