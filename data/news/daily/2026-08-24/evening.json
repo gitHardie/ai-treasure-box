@@ -1,0 +1,101 @@
+{
+  "type": "daily_briefing",
+  "date": "2026-08-24",
+  "session": "evening",
+  "articles": [
+    {
+      "title": "神秘模型Ox Alpha匿名登顶OpenRouter，百万上下文免费开放引发身份猜想与数据安全争议",
+      "summary": "8月20日，一个无署名的模型Ox Alpha悄然出现在OpenRouter平台，以百万级上下文窗口、原生视频输入和完全免费的策略，一周内冲至全球调用量前二。独立测试中，其在DeepSWE软件工程基准10题子集上得分80%，超过Claude Fable 5（65%）和GPT-5.6 Sol（52%），但全量113题测试回落至63%。\n\n技术指纹分析指向多个方向：分词器匹配与智谱GLM-5.3高度吻合，但也有研究者通过独立分析指向微软Phi/MAI谱系，Google DeepMind研究员的暗示则引发了Gemini新版猜测。截至目前无厂商正式认领。\n\n匿名发布引发数据安全争议。OpenRouter明确声明仅充当路由服务，提示数据由匿名供应商保留但宣称不用于训练；企业用户向未验证身份的供应商发送代码，面临合规与知识产权风险。",
+      "content_markdown": "",
+      "sources": [
+        {
+          "name": "TechCrunch: Who's behind Ox Alpha",
+          "url": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/"
+        },
+        {
+          "name": "小Y的AI笔记：Ox Alpha深度分析",
+          "url": "http://m.toutiao.com/group/7677148451565502976/"
+        },
+        {
+          "name": "Fakta: Anonymous AI Model Ox Alpha Sparks Data Security Concerns",
+          "url": "https://www.fakta.co/anonymous-ai-model-ox-alpha-sparks-concerns"
+        },
+        {
+          "name": "每日经济新闻：中国AI大模型调用量连续十七周领跑",
+          "url": "http://m.toutiao.com/group/7677427144981348870/"
+        },
+        {
+          "name": "AI News August 24, 2026 Digest",
+          "url": "https://ai0.news/posts/2026-08-24-daily-digest/"
+        }
+      ],
+      "original_time": "2026-08-20T20:00:00+08:00",
+      "tags": [
+        "Ox Alpha",
+        "OpenRouter",
+        "开源模型"
+      ],
+      "category": "open_source"
+    },
+    {
+      "title": "全球大模型定价现历史性分化：中国集体涨价、OpenAI反向降价，Token价格战宣告终结",
+      "summary": "2026年8月，全球AI大模型行业迎来前所未有的定价大分化。国内方面，DeepSeek V4-Pro高峰时段涨幅最高达1100%，阿里云、腾讯云、百度智能云、智谱AI先后上调API价格，摩根士丹利统计显示中国八大模型厂商Q2平均API输入价格同比上涨48%、输出价格上涨80%。\n\n与此同时，OpenAI反向操作，将GPT-5.6 Sol API价格下调超20%，轻量级Luna模型猛降80%至输入$0.2/百万token，直接对标中国厂商的高性价比产品。\n\n这一分化标志着大模型行业从\"价格战\"正式转向\"智力战\"——国内厂商告别烧钱获客阶段，以涨价验证付费意愿和商业可持续性；海外巨头则通过分层产品矩阵守住不同价格带。Token涨价说明用户愿意为AI付费，降价则推动使用量增长，两者共同指向AI应用市场的快速扩张。",
+      "content_markdown": "",
+      "sources": [
+        {
+          "name": "青岛财经日报：大模型集体调价 AI商业化提速",
+          "url": "http://m.toutiao.com/group/7677428995528475145/"
+        },
+        {
+          "name": "DailyAIWorld: August 2026 AI Price War",
+          "url": "https://dailyaiworld.com/blogs/august-2026-ai-price-war-openai-anthropic-deepseek-race"
+        },
+        {
+          "name": "财眼看大势：价格战打到底，合规门槛反成生死线",
+          "url": "http://m.toutiao.com/group/7677532507528577571/"
+        },
+        {
+          "name": "AIToolsRecap: AI News August 24 2026",
+          "url": "https://aitoolsrecap.com/Blog/ai-news-august-24-2026"
+        }
+      ],
+      "original_time": "2026-08-23T00:00:00+08:00",
+      "tags": [
+        "大模型定价",
+        "DeepSeek",
+        "OpenAI"
+      ],
+      "category": "industry_policy"
+    },
+    {
+      "title": "OpenAI与Anthropic下一代模型接连曝光，英伟达60亿美元押注开源AI",
+      "summary": "本周，AI行业两大阵营的下一代模型动态同时浮出水面。OpenAI员工在GitHub上意外泄露代号gpt-nathree，被认为是GPT-6 Astra的最新检查点，正通过Codex进行内部高强度测试。Anthropic方面，两个全新模型代号claude-mashmallow-eap（棉花糖）和claude-melon-eap（甜瓜）在API和Discord社区被曝光，预计最快下周发布。\n\n与此同时，英伟达宣布计划通过60亿美元交易与AI初创公司Poolside合作，共同构建全球最强大的开源权重AI模型之一，目标直指与DeepSeek和Kimi K3等中国AI开发者竞争。\n\n三大动态指向同一个趋势：前沿模型竞争正在进入新一轮迭代周期，同时开源阵营获得了前所未有的资本加持。",
+      "content_markdown": "",
+      "sources": [
+        {
+          "name": "36氪：奥特曼炮轰达里奥，绝密模型同日曝光",
+          "url": "http://m.toutiao.com/group/7677427052509446671/"
+        },
+        {
+          "name": "新智元：Anthropic新模型正被提前曝光",
+          "url": "https://m.weibo.cn/detail/5335359494033268"
+        },
+        {
+          "name": "InfoQ：英伟达拟60亿美元合作Poolside开发开源AI模型",
+          "url": "https://www.infoq.cn/aibriefs"
+        },
+        {
+          "name": "AI Expert News",
+          "url": "https://ai0.news/posts/2026-08-24-daily-digest/"
+        }
+      ],
+      "original_time": "2026-08-24T08:00:00+08:00",
+      "tags": [
+        "OpenAI",
+        "Anthropic",
+        "英伟达"
+      ],
+      "category": "model_release"
+    }
+  ]
+}
