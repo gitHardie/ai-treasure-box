@@ -1,0 +1,197 @@
+{
+  "type": "daily_briefing",
+  "date": "2026-08-25",
+  "session": "morning",
+  "articles": [
+    {
+      "title": "AI大模型\"以强定价\"时代终结：Anthropic旗舰Fable 5遭企业冷遇，美国头部厂商集体降价",
+      "summary": "Anthropic最强模型Fable 5发布逾两个月，企业支出仅占全线产品的11%，Token消耗仅占6%，增长已趋于停滞。企业用户正从追逐最强模型转向性价比更高的替代品，Opus 5上线后企业支出已超过Fable 5。\n\n与此同时，美国头部AI大模型密集降价：OpenAI GPT-5.6 Sol一个月内两次降价，谷歌Gemini 3.7 Flash以半价首发，Anthropic取消原定涨价计划。咨询机构认为前沿AI模型正从\"高端溢价\"转向\"基建竞赛\"。\n\n这一趋势对正筹备估值或达2万亿美元IPO的Anthropic尤为敏感。其7月年化营收650亿美元，低于投资者预期的800亿美元以上。",
+      "content_markdown": "Anthropic旗下最强大、定价最高的旗舰模型Fable 5发布已逾两个月，但企业客户的买单热情远低于预期。据英国《金融时报》援引支付机构Ramp对7万家企业支出数据的追踪，Fable 5在企业端的消费支出仅占Anthropic全线产品的约11%，且增长已趋于停滞；在Token消耗维度上，Fable 5仅占Anthropic总Token量的6%。作为对比，OpenAI的GPT-5.6 Sol已拿下OpenAI企业Token份额的25%。\n\n遇冷的直接原因是性价比。Fable 5的API输入和输出定价分别为每百万Token 10美元和50美元，约为自家中端模型Opus 5的两倍，而Opus 5自7月底上线以来企业支出已超过Fable 5。风投机构Accel合伙人Miles Clements直言：\"绝大多数人并不需要在最前沿的模型水准上运行。\"\n\n这一趋势对AI行业具有标志性意义——此前企业用户默认追逐最强模型的惯例首次被打破。与此同时，美国头部AI大模型正集体降价：OpenAI的GPT-5.6 Sol在不到一个月内两次降价，输出价格降至每百万Token 20美元；谷歌Gemini 3.7 Flash以代模型一半的价格首发；Anthropic自己也取消了原定涨价计划。\n\n咨询机构\"企业DNA\"在最新研报中指出，前沿AI模型正从高端溢价转向\"大宗商品式的基建竞赛\"，开源模型的挑战进一步压缩了闭源模型的定价空间。\"以低廉成本做雄心勃勃大事业的窗口，每个星期都会打开得更大一些。\"\n\n这一转变对正筹备史上最大IPO的Anthropic而言尤为敏感。市场预期其估值可能达2万亿美元甚至更高，最早或于9月上市。Anthropic 7月年化营收已从年初的低位增长至650亿美元，但低于部分投资者预期的800亿美元以上。值得注意的是，DoorDash等大型企业客户已公开表示只将\"最困难的工作\"交给Fable 5，常规任务已切换至月之暗面的Kimi K2.6等更具性价比的模型。",
+      "sources": [
+        {
+          "name": "Financial Times",
+          "url": "https://www.ft.com/content/anthropic-fable-5-enterprise-spending"
+        },
+        {
+          "name": "IBTimes",
+          "url": "https://www.ibtimes.com.au/anthropic-fable-5-slow-adoption-ipo-1874486"
+        },
+        {
+          "name": "环球时报",
+          "url": "https://m.huanqiu.com/article/4SvrImGcE5X"
+        },
+        {
+          "name": "AIBase",
+          "url": "https://news.aibase.com/news/30552"
+        },
+        {
+          "name": "同花顺科技",
+          "url": "https://xinsanban.10jqka.com.cn/20260824/c679232700.shtml"
+        }
+      ],
+      "original_time": "2026-08-24T12:00:00+08:00",
+      "tags": [
+        "AI模型",
+        "价格战",
+        "Anthropic"
+      ],
+      "category": "model_release"
+    },
+    {
+      "title": "美国法律AI独角兽Harvey基于中国开源模型Kimi K3打造首个自研模型Tenet",
+      "summary": "估值155亿美元的美国法律AI独角兽Harvey推出首个自研模型Harvey Tenet，基于月之暗面的开源权重模型Kimi K3通过后训练开发，标志着中国开源模型首次进入美国头部垂直AI公司的核心训练体系。\n\nTenet在法律任务基准测试LAB上的完成率几乎是基础Kimi K3的两倍，推理成本基本持平。Harvey此前主要依赖OpenAI、Anthropic等闭源模型，服务超2400家机构、20多万名律师。\n\n训练使用了约150块NVIDIA B300 GPU历时两个月，由内部律师和外部专家创建模拟法律案例进行评分。目前仍为研究预览阶段。",
+      "content_markdown": "美国法律AI独角兽Harvey（估值155亿美元，年化收入约3.5亿美元，服务超2400家机构、20多万名律师）宣布推出其首个自研模型Harvey Tenet——基于月之暗面（Moonshot AI）的开源权重模型Kimi K3，通过Fireworks AI进行异步强化学习后训练，专为长周期法律任务优化。\n\n这是中国开源权重模型首次进入美国头部垂直AI公司的核心训练体系。Harvey此前主要依赖OpenAI、Anthropic和Google等闭源模型提供服务。值得注意的是，OpenAI本身就是Harvey的投资方之一（与Sequoia、a16z共同投资），Harvey选择中国开源模型底座来降低对其投资方的依赖。\n\nHarvey联合创始人Gabe Pereyra（前Google DeepMind成员）表示，Tenet在法律任务基准测试Legal Agent Benchmark（LAB）上的完成率几乎是基础Kimi K3模型的两倍，在LAB: Contracts上提升20%，推理成本基本持平。性能提升还迁移到了未经训练的Mercor APEX Agents和Crosby Redline Bench等第三方基准。\n\n训练使用了约150块NVIDIA B300 GPU，历时两个月。训练数据包括合成数据、公开法律数据和人类专家数据，Harvey声称未使用任何客户数据。Harvey聘请了内部律师以及通过Mercor、Snorkel等公司招募的外部律师创建模拟争议案例和案卷，并对模型输出进行专家评分。\n\n不过Tenet目前仍为研究预览阶段，尚未公开发布权重、模型卡或API端点。Harvey表示将逐步把研究成果转化为产品。\n\n业内分析认为，这标志着中国开源模型在垂直行业的实用信任度显著提升。前商汤智能产业研究院院长田丰指出，中国开发者已构建了从4B参数到万亿参数的连续模型谱系，而美国开源生态在中型段之外的选择远不如中国丰富。\"这才是可定制化的真正优势所在。\"",
+      "sources": [
+        {
+          "name": "The Next Web",
+          "url": "https://thenextweb.com/news/harvey-tenet-legal-model-kimi-k3-chinese-base"
+        },
+        {
+          "name": "NxCode",
+          "url": "https://www.nxcode.io/he/resources/news/harvey-tenet-kimi-k3-legal-agent-post-training-2026"
+        },
+        {
+          "name": "环球时报英文版",
+          "url": "http://www.globaltimes.cn/page/202608/1368822.shtml"
+        },
+        {
+          "name": "AIBase",
+          "url": "https://www.aibase.com/news/30577"
+        }
+      ],
+      "original_time": "2026-08-24T14:00:00+08:00",
+      "tags": [
+        "开源模型",
+        "法律AI",
+        "中国AI出海"
+      ],
+      "category": "open_source"
+    },
+    {
+      "title": "字节跳动整合AI办公产品线：TRAE、扣子并入豆包，\"豆包工作\"本周上线",
+      "summary": "字节跳动完成旗下AI办公产品线的重大团队整合：TRAE和扣子（Coze）团队整体并入豆包体系，相关产品和运营团队向豆包产品负责人赵祺汇报。\n\n字节最快本周内推出独立AI办公产品\"豆包工作\"（Doubao Work），作为面向AI办公场景的统一品牌，将与飞书深度整合。此前飞书\"Aily智能伙伴\"已更名为\"豆包工作伙伴\"。\n\n此举正值中国AI办公赛道白热化竞争：腾讯WorkBuddy 6月月访问量达2100万次居首，阿里也已将多款AI工具整合进\"通义工作\"。字节CEO梁汝波将公司战略聚焦于AI、信息平台和交易服务三项核心业务。",
+      "content_markdown": "据36氪独家报道及彭博社证实，字节跳动已完成旗下AI办公产品线的重大团队整合：TRAE和扣子（Coze）团队整体并入豆包体系。其中，TRAE Work和扣子将与豆包在工作场景的产品能力进行融合；TRAE IDE及CLI则作为豆包品牌下的编程产品线继续独立发展。调整后，产品和运营团队向豆包产品负责人赵祺汇报。\n\nTRAE与扣子原隶属于字节跳动产品研发和工程架构部。TRAE最初定位为AI编程产品，扣子定位为AI智能体开发平台，后续在Agent方向都有探索。从今年开始，生产力Agent成为豆包最重要的战略方向，TRAE和扣子此前积累的经验将被复用至豆包。\n\n字节最快将于本周内推出独立的AI办公产品\"豆包工作\"（Doubao Work），作为面向AI办公场景的统一产品及品牌。独立的豆包工作将与飞书进行深度整合。此前字节已完成飞书和豆包的组织整合，原飞书\"Aily智能伙伴\"已更名为\"豆包工作伙伴\"。\n\n最近一周，豆包密集更新了远程控制电脑、Windows虚拟桌面、云电脑、侧边工作台等办公功能，并上架超过200个技能和连接器。在豆包PC版对话页面顶部，还出现了独立的\"工作\"入口，用户可一键切换至处理复杂工作的Agent模式。\n\n此次整合的背景是中国AI办公赛道的白热化竞争。据彭博社数据，腾讯WorkBuddy在6月月访问量达2100万次，位居第一；TRAE为远居第二的追赶者。阿里巴巴也已将多款AI办公工具整合进\"通义工作\"（Qwen Work）。\n\n字节CEO梁汝波在8月年中全员会上将公司战略原则概括为\"高度优先，粗主干，优化长期\"，聚焦AI、信息平台和交易服务三项核心业务，并明确希望豆包成为一项\"主干\"AI业务。",
+      "sources": [
+        {
+          "name": "36氪",
+          "url": "https://36kr.com/p/3953230805876099"
+        },
+        {
+          "name": "Bloomberg",
+          "url": "https://www.theedgesingapore.com/news/china/bytedance-folds-ai-tools-doubao-super-app-fight-tencent"
+        },
+        {
+          "name": "ChainCatcher",
+          "url": "https://www.chaincatcher.com/en/article/2284984"
+        }
+      ],
+      "original_time": "2026-08-24T16:00:00+08:00",
+      "tags": [
+        "字节跳动",
+        "豆包",
+        "AI办公"
+      ],
+      "category": "product_launch"
+    },
+    {
+      "title": "小鹏机器人完成超9亿美元融资创纪录，腾讯阿里联手入局具身智能",
+      "summary": "小鹏机器人宣布完成首轮超9亿美元融资，投后估值突破430亿元人民币（约63亿美元），创中国具身智能行业单轮私募股权融资纪录。IDG资本领投，高榕创投参投，腾讯和阿里巴巴作为战略投资者入局。\n\n何小鹏表示将亲自担任机器人业务CEO，目标明年实现搭载第二代VLA的前装量产Robotaxi无安全员载客运营。四家投资方均将此次投资列为在具身智能领域迄今最大单笔投资之一。\n\n小鹏过去12年坚持软硬件全栈自研，将汽车业务的供应链、车规级制造、全球化布局及自动驾驶积累的图灵AI芯片、物理世界基座模型优势整合至机器人业务。",
+      "content_markdown": "小鹏机器人宣布完成首轮超9亿美元融资，投后估值突破430亿元人民币（约63亿美元），创中国具身智能行业单轮私募股权融资纪录。本轮由IDG资本领投，高榕创投参投，腾讯和阿里巴巴作为战略投资者参与，小鹏集团仍保持控股。四家投资方均视其为迄今在具身智能领域披露的最大规模单笔投资之一。\n\n小鹏汽车CEO何小鹏回应称：\"这不是一台演示用的机器人，而是真正要量产、要走进现实的产品。\"他表示除担任小鹏CEO外，还亲自担任机器人业务CEO，将调动全集团优势资源协作，把汽车业务积累的供应链、车规级制造、全球化布局以及自动驾驶业务积累的图灵AI芯片、AI Infra、物理世界基座模型的优势，整合应用在机器人业务板块。\n\n在自动驾驶方面，何小鹏透露搭载第二代VLA的前装量产Robotaxi已在广州完成超2000次内测订单，跑通载人示范运营全流程。公司已完成云端接管的平台开发，目标在明年实现无安全员的载客运营。为加速物理AI技术商业化，小鹏近期组建集团级BD团队，正与海外和国内合作伙伴积极洽谈，推动图灵AI芯片、第二代VLA模型、Robotaxi和人形机器人技术走向全球市场。",
+      "sources": [
+        {
+          "name": "AIBase",
+          "url": "https://news.aibase.cn/zh/news"
+        },
+        {
+          "name": "微博",
+          "url": "https://m.weibo.cn/detail/5335525523459437"
+        },
+        {
+          "name": "36氪",
+          "url": "https://36kr.com/newsflashes/catalog/3"
+        }
+      ],
+      "original_time": "2026-08-24T19:45:00+08:00",
+      "tags": [
+        "具身智能",
+        "融资",
+        "机器人"
+      ],
+      "category": "funding"
+    },
+    {
+      "title": "英伟达双线出击：200亿美元收购Groq技术正式量产，同时拟投资Perplexity加码AI应用",
+      "summary": "英伟达宣布Groq 3 LPX机架全面量产，标志着200亿美元收购Groq所获技术正式商业化。每个机架整合256颗Groq 3芯片，每秒可处理3400个Token，将与Vera CPU和Rubin GPU协同部署在Nebius数据中心。\n\n同时，英伟达正洽谈投资AI搜索公司Perplexity，本轮融资后估值有望突破300亿美元。Perplexity年化营收已攀升至7.5亿美元以上，其AI智能体产品\"Perplexity Computer\"与OpenAI、Anthropic同类产品形成直接竞争。\n\n两则消息凸显英伟达在AI基础设施和应用层的双线布局战略——既加速低延迟推理芯片商业化，又通过投资绑定高增长AI应用平台。",
+      "content_markdown": "**Groq 3 LPX机架全面量产**\n\n英伟达高级总监Dion Harris于8月24日宣布，Groq 3 LPX机架已进入全面量产阶段，标志着英伟达史上最大规模收购案所获技术的正式商业化落地。Groq机架将与Vera CPU和Rubin GPU协同部署在新型云服务商Nebius的数据中心，预计今年晚些时候上线。\n\n去年12月，英伟达以200亿美元完成对芯片初创公司Groq的收购，获得其芯片技术授权，多位核心员工加入英伟达，创始人Jonathan Ross担任英伟达首席软件架构师。今年3月发布的Groq 3 LPX推理加速器在芯片裸片上集成500MB高速SRAM以减少内存瓶颈，芯片由三星制造。\n\n每个LPX机架整合256颗Groq 3芯片，据Artificial Analysis基准测试，每秒可处理3400个Token。Harris指出，云服务商可以针对低延迟Token收取更高费用，\"为对延迟极其敏感的用户提供高级服务套餐\"。\n\n低延迟推理正成为AI竞赛的新焦点。AMD此前宣布将Cerebras芯片整合进其机架级系统；OpenAI推出的\"Ultrafast\"模式（由Cerebras提供支持）承诺每秒处理750个Token。不过低延迟芯片并不能取代作为AI芯片主力的GPU。\n\n**英伟达拟投资Perplexity**\n\n另据报道，英伟达正洽谈投资AI初创公司Perplexity，本轮融资后估值有望突破300亿美元，较一年前上涨约50%。Perplexity成立于2022年，最初主打AI对话搜索服务，目前已推出可自动执行电脑复杂任务的AI智能体产品。\n\nPerplexity最新年化营收已攀升至7.5亿美元以上，而今年年初尚不足2.5亿美元。营收增长核心动力来自\"Perplexity Computer\"——面向专业用户的AI智能体，实现电脑端各类工作任务自动化，已与OpenAI、Anthropic同类产品形成直接竞争。\n\n今年7月，Perplexity宣布将采用英伟达新型CPU芯片，双方合作关系持续深化。业内认为，若投资顺利落地，英伟达将进一步完善AI下游应用布局。",
+      "sources": [
+        {
+          "name": "凤凰财经",
+          "url": "https://tech.ifeng.com/c/8vrpli5czS8"
+        },
+        {
+          "name": "凤凰财经",
+          "url": "https://tech.ifeng.com/c/8vrJpBetiVO"
+        },
+        {
+          "name": "36氪",
+          "url": "https://36kr.com/newsflashes/catalog/3"
+        }
+      ],
+      "original_time": "2026-08-24T21:57:00+08:00",
+      "tags": [
+        "英伟达",
+        "AI芯片",
+        "Perplexity"
+      ],
+      "category": "product_launch"
+    },
+    {
+      "title": "英国与乌克兰签署AI国防合作协议，战场数据首次向国际伙伴开放",
+      "summary": "英国首相Andy Burnham访问乌克兰期间，与乌克兰总统泽连斯基签署AI国防合作协议。英国成为首个获准访问乌克兰\"Avengers AI Labs\"战场数据平台的国际合作伙伴。\n\nAvengers Labs围绕500万张标注战场图像构建，来自DELTA作战管理系统的摄像头和红外传感器数据。基于该平台训练的AI自动目标检测系统已能实时识别约70%的敌方目标，每月分析超10万条无人机视频。\n\n合作将聚焦多个试点项目：光纤电缆AI传感器保护基础设施、低功耗AI芯片供无人机和自主系统使用。三家英国AI公司已启动试点。",
+      "content_markdown": "英国首相Andy Burnham于8月24日访问乌克兰期间（其就任首相后首次出访），与乌克兰总统泽连斯基签署了一项里程碑式的AI国防合作协议。英国成为首个获准访问乌克兰\"Avengers AI Labs\"战场数据平台的国际合作伙伴。\n\nAvengers Labs围绕500万张标注战场图像构建，数据大部分来自乌克兰自主研发的DELTA战场管理与态势感知系统，通过遍布前线的数千个摄像头和红外传感器采集，涵盖坦克、火炮、防空系统、步兵和空中目标等信息，积累了四年军事数据。\n\n乌克兰国防部表示，基于该平台训练的AI自动目标检测系统已能实时识别约70%的敌方目标，每月分析超过10万条无人机视频流。英国大学和企业将成为首批访问该数据集的非乌克兰实体。\n\n根据协议，双方将合作推进三大支柱：政府间合作（联合开发模型、安全数据和计算路径）、产业合作（开发测试部署AI能力）、学术与研究合作（自主系统研究）。\n\n已启动的试点项目包括：利用光纤电缆作为AI传感器保护军事和民用基础设施（由布里斯托公司Sintela牵头，该公司近期与美国特朗普政府签订3500万美元的美墨边境监控合同）；研发供无人机和自主武器系统使用的低功耗AI芯片。三家英国AI公司Sintela、Mind Foundry和Skyral已启动试点。\n\n作为交换，英国将向乌克兰分享AI专业知识，支持其大学、研究人员和科技企业参与合作。英国还宣布允许导弹制造商MBDA向乌克兰释放英国制SCALP远程巡航导弹组件的机密信息，帮助在乌克兰建立装配线。",
+      "sources": [
+        {
+          "name": "Kyiv Independent",
+          "url": "https://kyivindependent.com/ukraine-uk-sign-landmark-new-military-ai-partnership/"
+        },
+        {
+          "name": "Channel News Asia",
+          "url": "https://www.channelnewsasia.com/world/uk-ukraine-sign-ai-defence-partnership-linked-battlefield-technology-6338351"
+        },
+        {
+          "name": "UK Government",
+          "url": "https://www.pubt.io/view/8C89B9BB837215E0F959E40A75A5BF1C283DAF72"
+        }
+      ],
+      "original_time": "2026-08-25T01:01:00+08:00",
+      "tags": [
+        "AI国防",
+        "军事AI",
+        "国际合作"
+      ],
+      "category": "industry_policy"
+    },
+    {
+      "title": "Meta计划数周内推出消费级AI助手\"Hatch\"，10月发布新模型\"Watermelon\"",
+      "summary": "Meta Platforms计划最早在未来数周推出面向消费者的AI助手OpenClaw（内部代号\"Hatch\"），10月推出最新AI模型\"Watermelon\"。这是扎克伯格将巨额AI投资变现、拓展广告外多元收入来源的重要战略。\n\n此前Meta已将协作工具Lark并入豆包团队，进一步整合AI产品资源。在AI竞赛中，Meta视频生成模型Seedance获影视行业广泛使用，但大语言模型仍落后于月之暗面Kimi、DeepSeek等开源对手。\n\n豆包目前已采用分层订阅模式运营，维持免费版同时提供高级订阅服务。",
+      "content_markdown": "据财联社报道，Meta Platforms计划最早在未来数周内推出面向消费者的AI助手产品OpenClaw（内部代号\"Hatch\"），并计划于10月推出其最新AI模型\"Watermelon\"。\n\nHatch是CEO扎克伯格将公司巨额AI投资变现战略的重要组成部分，旨在拓展广告以外的多元化收入来源。\n\n在产品整合方面，Meta近期已将协作工具Lark并入豆包团队，以更好地协调产品和技术资源。豆包目前已发展为一个多功能AI超级应用，支持音频转录、播客收听、视频和图像生成等功能。\n\n在AI竞赛格局中，Meta呈现\"强视频、弱文本\"的分化态势：视频生成模型Seedance在影视工作室和创作者群体中获得广泛使用，为云业务带来了高利润率收入；但大语言模型仍落后于月之暗面Kimi和DeepSeek等开源竞争对手。\n\n豆包目前已采用分层订阅模式运营，在维持免费版基本使用的同时提供高级订阅服务——这一策略与百度为其文心一言放弃的模式不同。中国AI办公市场方面，腾讯WorkBuddy以2100万月访问量领先，豆包需要加速追赶。",
+      "sources": [
+        {
+          "name": "财联社",
+          "url": "https://www.cls.cn/detail/2462984"
+        },
+        {
+          "name": "Bloomberg",
+          "url": "https://www.theedgesingapore.com/news/china/bytedance-folds-ai-tools-doubao-super-app-fight-tencent"
+        }
+      ],
+      "original_time": "2026-08-25T06:58:00+08:00",
+      "tags": [
+        "Meta",
+        "AI助手",
+        "消费级AI"
+      ],
+      "category": "product_launch"
+    }
+  ]
+}
