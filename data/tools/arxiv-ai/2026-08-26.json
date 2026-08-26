@@ -1,0 +1,697 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-08-26T00:21:27.733363+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "How to Train a Critic Stably and Efficiently",
+      "title": "How to Train a Critic Stably and Efficiently",
+      "url": "https://arxiv.org/abs/2608.23566v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23566v1",
+      "description": "Group-based reinforcement learning methods such as GRPO for large language models avoid training a critic by sampling multiple responses for each prompt. A reliable critic could instead estimate token-level advantages from one response, but standard critic-based training recipes are often unstable. We study this instability and develop \\textbf{Best-Practice Critic Optimization (BPCO)}, a recipe that combines DPPO, value predictions bounded to the reward range, Monte Carlo value targets, unnormal",
+      "authors": [
+        "Penghui Qi",
+        "Xiangxin Zhou",
+        "Wee Sun Lee"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.23566v1",
+      "published_at": "2026-08-24T17:59:39Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ReWorld: An Interactive World Model with Long-Horizon Memory",
+      "title": "ReWorld: An Interactive World Model with Long-Horizon Memory",
+      "url": "https://arxiv.org/abs/2608.23565v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23565v1",
+      "description": "An interactive world model must follow the user's actions, remember the places it has shown, and stream in real time. The tension is structural: control wants a short horizon, memory wants an unbounded one. ReWorld separates the two during training and bounds them at inference. Mixed per-head attention windows confine most heads to the recent past while a small set of global heads attends over the entire history, and random head routing keeps either capability from binding to particular heads; r",
+      "authors": [
+        "Zhifei Chen",
+        "Luozhou Wang",
+        "Guibao Shen",
+        "Dongyu Yan",
+        "Shuai Yang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.23565v1",
+      "published_at": "2026-08-24T17:59:05Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?",
+      "title": "SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?",
+      "url": "https://arxiv.org/abs/2608.23564v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23564v1",
+      "description": "Modern software systems accumulate technical debt over decades of development, which makes migration expensive and largely manual. As coding agents become increasingly capable at bug fixing, can they autonomously perform such migrations? Existing benchmarks cannot answer this question because they evaluate only behavioural correctness, not whether the migration actually occurred. This leads an easy hack: agents copy the original implementation to make tests pass. We call this Blindness. To addre",
+      "authors": [
+        "Deyao Hong",
+        "Yizhe Chi",
+        "Wenyi Li",
+        "Xiaoqiu Wang",
+        "Mingju Gao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "arxiv_id": "2608.23564v1",
+      "published_at": "2026-08-24T17:59:04Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings",
+      "title": "EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings",
+      "url": "https://arxiv.org/abs/2608.23563v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23563v1",
+      "description": "Road traffic injuries remain a major challenge in low- and middle-income countries, where proactive road safety auditing is limited by incomplete crash records, shortages of qualified auditors, and the high cost of large-scale field inspections. To address this problem, we propose Expert-Grounded Distillation (EGD), a novel artificial intelligence framework that transfers institutional road safety expertise into a compact vision-language model for scalable visual road safety auditing. The key in",
+      "authors": [
+        "Md Thamed Bin Zaman Chowdhury",
+        "Moazzem Hossain"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.23563v1",
+      "published_at": "2026-08-24T17:58:41Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Physics-Constrained Deep Learning Model for Contactless Blood Pressure Monitoring from Triaxial Bodyseismography",
+      "title": "Physics-Constrained Deep Learning Model for Contactless Blood Pressure Monitoring from Triaxial Bodyseismography",
+      "url": "https://arxiv.org/abs/2608.23562v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23562v1",
+      "description": "Ballistocardiography (BCG) is promising for unobtrusive long-term blood pressure (BP) monitoring in laboratory settings, but traditional BCG signals are vulnerable to the variations in body-bed interaction with shifted fiducial points in temporal or amplitude axis, and BP varies with personal hemodynamic changes, causing misaligned representations that affect model generalizability and robustness. In this work, we propose a non-invasive BP estimation framework, Phy-BP, based on triaxial bodyseis",
+      "authors": [
+        "Yuanyuan Zhang",
+        "Yida Zhang",
+        "Jiahui Li",
+        "Yuyan Wu",
+        "Fei Dou"
+      ],
+      "categories": [
+        "eess.SP",
+        "cs.AI",
+        "physics.bio-ph"
+      ],
+      "arxiv_id": "2608.23562v1",
+      "published_at": "2026-08-24T17:58:35Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Provably adaptive sampling with uniform and remasking discrete diffusion models",
+      "title": "Provably adaptive sampling with uniform and remasking discrete diffusion models",
+      "url": "https://arxiv.org/abs/2608.23554v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23554v1",
+      "description": "Discrete diffusion models offer a promising alternative to autoregressive generation by enabling parallel updates, but their sampling efficiency can depend strongly on the choice of the forward process and the sampler. For the uniform forward process, existing lower bounds for the standard $τ$-leaping sampler scale linearly with the ambient dimension $d$, raising the question of whether this dependence is intrinsic to the forward process. We answer this question in the negative. We consider a fi",
+      "authors": [
+        "Daniil Dmitriev",
+        "Zhihan Huang",
+        "Yuting Wei"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.IT",
+        "math.ST",
+        "stat.ML"
+      ],
+      "arxiv_id": "2608.23554v1",
+      "published_at": "2026-08-24T17:54:51Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Prime Agent: A Self-Improving RLM Harness",
+      "title": "Prime Agent: A Self-Improving RLM Harness",
+      "url": "https://arxiv.org/abs/2608.23552v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23552v1",
+      "description": "Language models are sequential processors, but long-horizon agency requires external information and computation beyond model weights and active context. Prime Agent is an open-source harness for long-horizon evaluation and coding-agent workflows. A persistent IPython REPL follows the Recursive Language Model abstraction for programmatic context processing and test-time compute, while Continual Harness preserves histories, memories, skills, prompts, and subagent specifications across trajectorie",
+      "authors": [
+        "Seth Karten",
+        "Alex L. Zhang",
+        "Kevin Thomas",
+        "Sebastian Müller",
+        "Elie Bakouch"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.SE"
+      ],
+      "arxiv_id": "2608.23552v1",
+      "published_at": "2026-08-24T17:54:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ConvergeFlow: Language Flow with Provable Convergence to Token Embeddings",
+      "title": "ConvergeFlow: Language Flow with Provable Convergence to Token Embeddings",
+      "url": "https://arxiv.org/abs/2608.23551v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23551v1",
+      "description": "Recent advances in continuous diffusion and flow-based language models (LMs) have achieved performance competitive with discrete LMs. However, existing continuous frameworks still rely on decoders supervised with cross entropy (CE) because the flow trajectories are not guaranteed to terminate at valid token embeddings. Motivated by this limitation, we introduce \\textbf{ConvergeFlow}, an embedding-space flow-based LM, which constrains the data predictor to the convex hull of token embeddings and ",
+      "authors": [
+        "Na Li",
+        "Yuchen Jiao",
+        "Changxiao Cai",
+        "Gen Li"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_id": "2608.23551v1",
+      "published_at": "2026-08-24T17:54:14Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Robustness of Anomaly Detection Models for Industrial Control Systems under Training-Time Data Contamination",
+      "title": "Robustness of Anomaly Detection Models for Industrial Control Systems under Training-Time Data Contamination",
+      "url": "https://arxiv.org/abs/2608.23547v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23547v1",
+      "description": "Machine-learning-based anomaly detection is increasingly used in industrial control systems (ICS), yet most studies assume that detector training data is trustworthy. In practice, training data may be corrupted through compromised logs, labeling errors, manipulated historian records, or unsafe retraining processes. This paper evaluates the robustness of offline ICS anomaly-detection pipelines on the Secure Water Treatment (SWaT) benchmark under training-time contamination. We assess 11 heterogen",
+      "authors": [
+        "Mustafa Umut Ozbek",
+        "Taiwo Ojo",
+        "Pooria Madani",
+        "Khalil El-Khatib",
+        "Li Yang"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.23547v1",
+      "published_at": "2026-08-24T17:49:36Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Inertial Manifold Neural Operator for Dissipative Time-Dependent Partial Differential Equations",
+      "title": "Inertial Manifold Neural Operator for Dissipative Time-Dependent Partial Differential Equations",
+      "url": "https://arxiv.org/abs/2608.23546v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23546v1",
+      "description": "In this paper, we introduce the Inertial Manifold Neural Operator (IMNO) for solving dissipative time-dependent partial differential equations (PDEs). The long-time dynamics of such systems often exhibit an effective low-dimensional structure due to dissipation. Unlike standard neural operator architectures such as the Fourier Neural Operator (FNO), IMNO explicitly leverages the low-dimensional structure to achieve better physical interpretability, accuracy, and stability in long-horizon autoreg",
+      "authors": [
+        "Xiaoyang Xie",
+        "Clarence W. Rowley"
+      ],
+      "categories": [
+        "math.NA",
+        "cs.LG",
+        "math.DS"
+      ],
+      "arxiv_id": "2608.23546v1",
+      "published_at": "2026-08-24T17:49:30Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "How AI Assistance Affects Human Skill Development: A Study of Learning with Logic Puzzles",
+      "title": "How AI Assistance Affects Human Skill Development: A Study of Learning with Logic Puzzles",
+      "url": "https://arxiv.org/abs/2608.23543v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23543v1",
+      "description": "While AI assistance can improve human task performance in the short term, it may also undermine the development of skills in the longer term. We examine this tension in a controlled logic-puzzle experiment involving on-demand AI assistance, where participants complete tasks before, during, and after AI is available. By experimentally varying AI request costs, we find that lower-cost assistance induces more frequent AI use. We also find that participants who request AI assistance during the AI-ac",
+      "authors": [
+        "Shang Wu",
+        "Catarina G Belem",
+        "Shuyuan Fu",
+        "Mark Steyvers",
+        "Padhraic Smyth"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.23543v1",
+      "published_at": "2026-08-24T17:46:11Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams",
+      "title": "The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams",
+      "url": "https://arxiv.org/abs/2608.23541v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23541v1",
+      "description": "Does multi-agent LLM interaction help or hurt? Some work reports gains from debate (Du et al., 2024), critique loops (Chen et al., 2025), and mixture-of-agents synthesis (Wang et al., 2025), while other work finds that interaction adds cost without improving quality under equal budgets (Tran & Kiela, 2026; Xu et al., 2026; Jarrett et al., 2025), or that independent sampling already captures multi-agent gains (Li et al., 2024). We argue this contradiction partly reflects a missing distinction, be",
+      "authors": [
+        "Summer Eunhyung Ann",
+        "Haokun Liu",
+        "Chenhao Tan"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.23541v1",
+      "published_at": "2026-08-24T17:45:15Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Interpretable AI with Local Distillation",
+      "title": "Interpretable AI with Local Distillation",
+      "url": "https://arxiv.org/abs/2608.23538v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23538v1",
+      "description": "Modern AI models such as tabular foundation models and gradient-boosted ensembles can outpredict classical methods, but provide little basis for reasoning about their predictions. High-stakes decisions call for models that are both accurate and interpretable as built. Local linear modeling offers a path forward: a smooth regression function is locally well approximated by a linear one, allowing a linear fit near each query point to achieve high accuracy without sacrificing transparency. The chal",
+      "authors": [
+        "Erin Craig",
+        "Yiling Huang",
+        "Snigdha Panigrahi"
+      ],
+      "categories": [
+        "stat.ME",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_id": "2608.23538v1",
+      "published_at": "2026-08-24T17:43:07Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Adapter-Based Few-Shot Continual Learning for Malicious Packet Recognition",
+      "title": "Adapter-Based Few-Shot Continual Learning for Malicious Packet Recognition",
+      "url": "https://arxiv.org/abs/2608.23536v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23536v1",
+      "description": "The continual evolution of malware variants necessitates detection systems that can adapt to new threats without retraining from scratch. However, continually updating models on new data often leads to catastrophic forgetting, where previously learned knowledge is overwritten. While continual learning has been increasingly explored for malware detection, the specific setting of Few-Shot Class-Incremental Learning (FSCIL), where new malware classes must be learned from only a small number of labe",
+      "authors": [
+        "Kyle Stein",
+        "Guillermo Francia",
+        "III Eman El-Sheikh",
+        "Andrew Arash Mahyari"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.23536v1",
+      "published_at": "2026-08-24T17:41:15Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Predicting Multiple Clinical Outcomes Related to Functional Recovery and Social Isolation Among Older Adults After Lower-Limb Fracture or Hip Replacement",
+      "title": "Predicting Multiple Clinical Outcomes Related to Functional Recovery and Social Isolation Among Older Adults After Lower-Limb Fracture or Hip Replacement",
+      "url": "https://arxiv.org/abs/2608.23531v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23531v1",
+      "description": "Older adults recovering after lower-limb fracture or hip replacement may experience complex recovery trajectories. Most of the time, these clinical aspects are studied in isolation, masking their joint impact on recovery. This study used the MAISON-LLF dataset, which contains multimodal sensor and clinical assessment data from 18 older adults recovering in the community after lower-limb fracture or hip replacement. Participants were monitored for up to eight weeks, corresponding to a maximum of ",
+      "authors": [
+        "Santosh Ray",
+        "Pratik K. Mishra",
+        "Ali Abedi",
+        "Charlene H. Chu",
+        "Amir Ahmad"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.23531v1",
+      "published_at": "2026-08-24T17:33:17Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Correcting a learned physical invariant improves world-model rollouts",
+      "title": "Correcting a learned physical invariant improves world-model rollouts",
+      "url": "https://arxiv.org/abs/2608.23526v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23526v1",
+      "description": "World models can predict video without learning dynamics that they reliably preserve. We test whether a frozen DreamerV3 trained only on pendulum video learns a scalar that its own latent transition treats as approximately conserved. A label-free search recovers the same energy-like invariant across independently trained conservative models, while the same procedure finds no comparable invariant in matched damped models. During autonomous rollouts, this quantity drifts. Projecting the latent sta",
+      "authors": [
+        "Richard Bao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.23526v1",
+      "published_at": "2026-08-24T17:29:40Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "EarthVerse: Benchmarking Scientific Agents Across Dynamic Earth Systems and Natural Hazards",
+      "title": "EarthVerse: Benchmarking Scientific Agents Across Dynamic Earth Systems and Natural Hazards",
+      "url": "https://arxiv.org/abs/2608.23525v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23525v1",
+      "description": "Earth-system analysis reconstructs changing physical processes from observations that differ in source, scale, timing, and modality. Natural hazards make this work consequential because incomplete evidence can change estimates of severity, exposure, and mechanism. We introduce EarthVerse, a benchmark that evaluates scientific agents through package-scoped investigations. Its 405 reproducible tasks are grounded in 199 documented events and 19 hazard families. Agents inspect heterogeneous event pa",
+      "authors": [
+        "Zhiqing Cui",
+        "Xinxiang Yin",
+        "Yihong Tang",
+        "Xinglang Zhang",
+        "Yuanzhe Hu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.23525v1",
+      "published_at": "2026-08-24T17:29:16Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "The Measurement Revolution? Credible Measurement and Inference in the Age of AI",
+      "title": "The Measurement Revolution? Credible Measurement and Inference in the Age of AI",
+      "url": "https://arxiv.org/abs/2608.23524v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23524v1",
+      "description": "Artificial intelligence (AI) is transforming measurement in economics. AI models convert unstructured data, such as text and images, into structured variables at low cost, making previously prohibitive measurement feasible at scale. This shifts the bottleneck from finding any scalable measure of a phenomenon to choosing among many plausible ones, which may support different empirical conclusions. This review provides guidance for navigating that shift. We describe three stages at which AI enters",
+      "authors": [
+        "Melissa Dell",
+        "Ashesh Rambachan"
+      ],
+      "categories": [
+        "econ.GN",
+        "cs.AI",
+        "stat.AP"
+      ],
+      "arxiv_id": "2608.23524v1",
+      "published_at": "2026-08-24T17:28:34Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "When Names Cross Scripts: A Source-Grounded Benchmark for Historical Entity Reconciliation in the Mongol World",
+      "title": "When Names Cross Scripts: A Source-Grounded Benchmark for Historical Entity Reconciliation in the Mongol World",
+      "url": "https://arxiv.org/abs/2608.23507v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23507v1",
+      "description": "Historical people may appear under different languages, scripts, and transcription traditions, while distinct individuals may share highly similar or even identical names. This makes historical identity reconciliation more than a problem of string matching or transliteration. We introduce MHER, a provenance-controlled benchmark for pairwise reconciliation of person-name attestations from the Mongol world. MHER contains a balanced 396-pair Name-only core over 84 primary historical persons and a s",
+      "authors": [
+        "Xiang Chen",
+        "Zeyu Zhang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.23507v1",
+      "published_at": "2026-08-24T17:10:36Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Mitigating Reasoning-Induced Misalignment via Safety-Direction Penalty",
+      "title": "Mitigating Reasoning-Induced Misalignment via Safety-Direction Penalty",
+      "url": "https://arxiv.org/abs/2608.23497v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23497v1",
+      "description": "Reasoning-Induced Misalignment, where fine-tuning on reasoning data containing no harmful content, including mathematics, code, and problem-solving with chain-of-thought traces can induce harmful behaviors of LLM, posing a serious challenge to the safety of LLM reasoning. Cross-architecture, cross-scale, and cross-dataset checks show that RIM does not always emerge. Previous work attributed RIM to neuron-level entanglement, but did not identify the geometry of the representation space underlying",
+      "authors": [
+        "Yipeng Zhao",
+        "Qishun Yang",
+        "Shenzhe Zhu",
+        "Shu Yang",
+        "Di Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.23497v1",
+      "published_at": "2026-08-24T16:57:28Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SRPO: Self-Reflective Policy Optimization for Long-Horizon Reasoning",
+      "title": "SRPO: Self-Reflective Policy Optimization for Long-Horizon Reasoning",
+      "url": "https://arxiv.org/abs/2608.23493v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23493v1",
+      "description": "Self-reflection is a powerful mechanism for credit assignment in human learning, converting sparse outcome feedback into actionable guidance. However, its potential for post-training Large Language Models (LLMs) remains underexplored. We propose Self-Reflective Policy Optimization (SRPO), a framework that internalizes this capability. SRPO enables LLMs to analyze their own completed trajectories, synthesize errors into concise \"reflection patches,\" and use reflection-conditioned teacher scores o",
+      "authors": [
+        "Jialong Liu",
+        "Yuling Shi",
+        "Ning Yang",
+        "Xiaodong Gu",
+        "Zuchao Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.23493v1",
+      "published_at": "2026-08-24T16:55:09Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Multi-Modal Semantic Expansion with Constrained LLM Reranking for Conversational Music Recommendation",
+      "title": "Multi-Modal Semantic Expansion with Constrained LLM Reranking for Conversational Music Recommendation",
+      "url": "https://arxiv.org/abs/2608.23484v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23484v1",
+      "description": "We present Team Semiintelligencn's solution for the ACM RecSys 2026 TalkPlayData Challenge, addressing conversational music recommendation through a multi-modal and personalized conversational recommender system. Our submitted system employs a three-stage pipeline: (1) multi-modal retrieval constructing decay-weighted centroids across seven dense embedding spaces - track- and user-level CF-BPR, Qwen3 (metadata, lyrics, attributes), CLAP audio, and SigLIP visual - supplemented by BM25 lexical ret",
+      "authors": [
+        "Naman Garg",
+        "Sarika Jain",
+        "George Fazekas"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.23484v1",
+      "published_at": "2026-08-24T16:48:50Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Primal--Dual Alternating Neural Learning for Timely Classification with Performance Guarantees",
+      "title": "Primal--Dual Alternating Neural Learning for Timely Classification with Performance Guarantees",
+      "url": "https://arxiv.org/abs/2608.23480v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23480v1",
+      "description": "Timely risk classification is essential in many clinical monitoring settings, where decisions must balance the benefit of classifying patients early for subsequent intervention against the value of observing additional data. Yet most existing statistical and machine-learning methods are designed for fully observed trajectories and offer limited control over key operating characteristics such as sensitivity, specificity, and monitoring cost. We cast the sequential classification problem within a ",
+      "authors": [
+        "Jiaming Qiu",
+        "Yingye Zheng",
+        "Ying-Qi Zhao"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "stat.ME"
+      ],
+      "arxiv_id": "2608.23480v1",
+      "published_at": "2026-08-24T16:44:46Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Act with Intent: Distilling Behavior Intent for Vision-Language-Action Models",
+      "title": "Act with Intent: Distilling Behavior Intent for Vision-Language-Action Models",
+      "url": "https://arxiv.org/abs/2608.23478v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23478v1",
+      "description": "Vision-Language-Action (VLA) models can turn multimodal context into robot actions, but their action decoders are still trained largely by behavior cloning. This supervises which motor command was demonstrated while leaving implicit the local objective served by the behavior under the instruction. Future-based supervision enriches action learning with frames, latent observations, trajectories, or motion representations, but these signals capture particular realizations of what may happen rather ",
+      "authors": [
+        "Sangoh Lee",
+        "Sangwoo Mo",
+        "Wook-Shin Han"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "arxiv_id": "2608.23478v1",
+      "published_at": "2026-08-24T16:42:49Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "On the Threat Model of Weird Generalization and Emergent Misalignment",
+      "title": "On the Threat Model of Weird Generalization and Emergent Misalignment",
+      "url": "https://arxiv.org/abs/2608.23476v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23476v1",
+      "description": "Narrow fine-tuning on small, domain-specific datasets can produce broad and surprising changes in model behavior-a phenomenon called weird generalization (WG). Yet, it remains unclear what features of the fine-tuning data are necessary for WG to arise. Here, we address this question by investigating a range of plausibly relevant features, including dataset size, composition, language, presentation style, and novelty relative to a model's parametric knowledge. Further, since WG evaluations rely o",
+      "authors": [
+        "Miriam Wanner",
+        "Mark Dredze",
+        "William Walden"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.23476v1",
+      "published_at": "2026-08-24T16:41:52Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "StrategyBench: Evaluating Explicit Strategy Induction in Large Language Models",
+      "title": "StrategyBench: Evaluating Explicit Strategy Induction in Large Language Models",
+      "url": "https://arxiv.org/abs/2608.23475v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23475v1",
+      "description": "As large language models are increasingly used in data-scarce and evolving task scenarios, few-shot in-context learning (ICL) has become a key paradigm for task adaptation. However, direct ICL often uses a small set of examples without explicitly abstracting task rules, making it sensitive to example construction. In contrast, human learners often reduce such sensitivity by first summarizing task rules from examples and then applying them to new instances. To evaluate this ability, we propose St",
+      "authors": [
+        "Jinghan Tan",
+        "Yuanzheng Wang",
+        "Lu Chen",
+        "Zijun Chen",
+        "Yuqian Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.23475v1",
+      "published_at": "2026-08-24T16:41:10Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "What's the Catch? Evaluating Temporal Consistency in Vision-Language Models",
+      "title": "What's the Catch? Evaluating Temporal Consistency in Vision-Language Models",
+      "url": "https://arxiv.org/abs/2608.23474v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23474v1",
+      "description": "Vision-language models (VLMs) achieve strong performance on video and image-sequence benchmarks, yet it remains unclear whether they capture temporal structure. To study this question, we formulate temporal grounding as an anomaly detection problem, providing a simple and controlled evaluation that directly tests sensitivity to temporal consistency. We introduce TimeCatch, where temporal anomalies are created by swapping consecutive frames and frame-level anomalies by replacing a frame with Gaus",
+      "authors": [
+        "Marek Hradil",
+        "Danae Sánchez Villegas"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "arxiv_id": "2608.23474v1",
+      "published_at": "2026-08-24T16:40:49Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "MetaCaster: Meta-Harness-Optimized Agent for End-to-End Few-Shot Learning of Lightweight Time Series Forecasters",
+      "title": "MetaCaster: Meta-Harness-Optimized Agent for End-to-End Few-Shot Learning of Lightweight Time Series Forecasters",
+      "url": "https://arxiv.org/abs/2608.23473v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23473v1",
+      "description": "Time series forecasting (TSF) is evolving toward multimodal and agentic settings, yet using foundation models remains uneconomical in resource-constrained scenarios, where compact, specialized forecasters are more desirable. However, lightweight forecasters typically require substantial training data, limiting their use in domains with scarce, slowly accumulated, or privacy-sensitive time series. To address this dilemma, we investigate the challenging problem of few-shot learning for lightweight",
+      "authors": [
+        "ChengAo Shen",
+        "Wenchao Yu",
+        "Fangyu Wu",
+        "Dongjin Song",
+        "Hanghang Tong"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.23473v1",
+      "published_at": "2026-08-24T16:40:25Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "InjecMEM: Memory Injection Attack on LLM Agent Memory Systems",
+      "title": "InjecMEM: Memory Injection Attack on LLM Agent Memory Systems",
+      "url": "https://arxiv.org/abs/2608.23471v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23471v1",
+      "description": "Memory is becoming a default subsystem in deployed LLM agents to provide persistent personalization and continuity. This naturally prompts a question: will memory system introduce new vulnerabilities into agents? Thus we propose InjecMEM, a novel memory injection attack paradigm that requires only a single interaction (no read/edit access to memory store) to steer later responses of related queries toward a pre-specified output. Guided by the retrieval-then-generate mechanism of memory systems, ",
+      "authors": [
+        "Hanling Tian",
+        "Gengyu Zhang",
+        "Zeyang Sha",
+        "Jingying Wang",
+        "Yuhang Liu"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.23471v1",
+      "published_at": "2026-08-24T16:37:50Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Machine Learning Assisted Inverse Design of Pixelated mmWave Patch Antennas",
+      "title": "Machine Learning Assisted Inverse Design of Pixelated mmWave Patch Antennas",
+      "url": "https://arxiv.org/abs/2608.23469v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23469v1",
+      "description": "A machine learning-assisted framework for the inverse design of pixelated millimetre-wave patch antennas targeting the 22--30 GHz band is presented. The antenna surface is represented as a 19x23 binary pixel grid on a Rogers RT/duroid 5880 substrate, where each pixel is either metal or empty, with a continuous electrical path from the feed enforced by design. An initial dataset of approximately 6,000 full-wave CST simulations was collected from structured random pixel patterns, of which only aro",
+      "authors": [
+        "Nadeem Rather",
+        "Holger Claussen",
+        "Lester Ho"
+      ],
+      "categories": [
+        "eess.SP",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.23469v1",
+      "published_at": "2026-08-24T16:37:26Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
