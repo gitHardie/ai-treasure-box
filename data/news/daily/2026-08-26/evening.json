@@ -1,0 +1,76 @@
+{
+  "type": "daily_briefing",
+  "date": "2026-08-26",
+  "session": "evening",
+  "articles": [
+    {
+      "title": "OpenAI自研推理芯片Jalapeño首秀：能效碾压英伟达GB300，定制芯片时代加速到来",
+      "summary": "OpenAI在Hot Chips大会上公布首款自研推理芯片Jalapeño的基准测试结果。这款与Broadcom联合设计的ASIC芯片，在SemiAnalysis的InferenceX公开基准中实现了比英伟达Blackwell系统高1.5至1.9倍的每瓦吞吐量，端到端延迟降低1.7至3.6倍。对于交互式AI Agent任务，性能优势进一步扩大至2.1至4.1倍。\n\nJalapeño采用台积电N3P工艺，单颗TDP 700W（实测持续功耗约550W），集成6个HBM4堆栈提供216GiB内存和15.4TB/s带宽。从设计到流片仅用9个月。OpenAI计划2026年底小规模部署，2027年大规模扩产，且不会对外销售。\n\n这是首颗在推理场景中性能数据超越英伟达量产GPU的定制芯片。尽管英伟达Vera Rubin平台已开始出货，SemiAnalysis交叉推算认为Jalapeño在每兆瓦token输出上仍略胜一筹。但训练领域英伟达地位仍无可撼动，且Jalapeño的大规模部署将与英伟达争夺本已紧张的HBM4产能。",
+      "content_markdown": "## OpenAI自研推理芯片Jalapeño首秀：能效碾压英伟达GB300，定制芯片时代加速到来\n\n当地时间8月25日，OpenAI在Hot Chips大会上公布了其首款自研AI推理芯片Jalapeño的首批基准测试结果。这款与Broadcom联合设计的ASIC芯片，以令人瞩目的能效数据向英伟达的GPU霸主地位发出了第一记正式挑战。\n\n### 基准测试：推理场景全面领先\n\nOpenAI硬件负责人Richard Ho在发布会上表示，测试由SemiAnalysis在其实验室使用开源推理基准InferenceX完成，覆盖了三款不同规模的公开模型：OpenAI自家的GPT-OSS 120B、DeepSeek R1 670B以及Moonshot AI的Kimi K2.5 1T。\n\n核心数据如下：\n\n- **每瓦吞吐量**：在峰值吞吐量下，Jalapeño比对比系统（英伟达Blackwell GB200/GB300）高1.5至1.9倍\n- **端到端延迟**：降低1.7至3.6倍\n- **AI Agent交互任务**：性能优势进一步扩大至2.1至4.1倍\n- **极低延迟场景**：当匹配GB300此前最快的解码速度时，Jalapeño每千瓦吞吐量最高达到现有最优水平的104.3倍\n\nSemiAnalysis在测试后评价：Jalapeño\"击败了我们测试过的每一颗Nvidia、AMD和Google芯片\"。\n\n值得注意的是，这些成绩是在Jalapeño未使用多token预测（MTP）或推测解码等软件优化技术的情况下取得的，而部分对比系统依赖了这些优化。\n\n### 硬件规格：N3P工艺+HBM4\n\nJalapeño的硬件参数同样值得关注：\n\n- **制程**：台积电N3P工艺\n- **功耗**：单颗TDP 700W，实测持续功耗约550W或更低\n- **内存**：集成6个HBM4堆栈，提供216GiB内存和15.4TB/s带宽\n- **计算**：13.4 PFLOPs的MXFP4算力\n- **每瓦内存容量**：比GB300高出约50%\n\n在解码速度方面，GPT-OSS 120B上可达1459 tokens/s/user，token间隔低于1毫秒；DeepSeek R1上单并发请求速度为700 tokens/s/user。\n\n### 部署路线图与竞争格局\n\nJalapeño从初始设计到流片仅用时9个月。OpenAI透露：\n\n- 第二代芯片已\"深入开发\"阶段，预计数月内流片\n- 第三代概念设计已在进行中\n- 下一代B0版本已在制造中，预计每瓦性能再提升约25%\n\n部署方面，OpenAI计划2026年底小规模上线，2027年显著扩大规模。每个机架容纳128颗芯片，提供1.7exaflops的4位计算能力；完整集群由16个机架共2048颗ASIC组成。部署节奏与OpenAI和Broadcom去年10月签署的10GW合作协议吻合。\n\nOpenAI强调不会对外销售Jalapeño芯片。Richard Ho表示：\"我们在OpenAI内部有大量的计算需求，要满足这些需求需要大量算力，我们现在已经供不应求。\"\n\n### 英伟达面临什么挑战？\n\nJalapeño的挑战需放在具体语境中审视。首先，该芯片专为推理设计，不适用于训练。其次，OpenAI发布基准时并未与英伟达最新Vera Rubin平台直接对比。\n\n但SemiAnalysis的交叉推算认为，即便Vera Rubin使用了MTP优化而Jalapeño尚未采用，Jalapeño在每兆瓦输出token数上仍略胜一筹；在单token总拥有成本上，两者大致持平。\n\n更微妙的是，就在基准发布前一周，英伟达同意为OpenAI在俄亥俄州的数据中心园区提供最高1050亿美元融资支持。Richard Ho明确表示：\"Nvidia是一个非常好的合作伙伴，我们继续需要大量Nvidia芯片。\"\n\n然而Jalapeño的规模化部署可能在HBM4供应上对英伟达形成实质挤压——当前三星、SK海力士和美光的HBM产能已预订至2027年。若OpenAI按10GW协议大规模铺开，它将成为HBM4市场的重量级新买家。\n\n这是首颗在推理场景性能数据超越英伟达量产GPU的定制芯片。谷歌、亚马逊、Meta此前均开发过自研AI芯片，但多被视为\"成本节约型补充\"。Jalapeño的出现首次证明了定制芯片可以在推理性能上真正替代英伟达，\"去英伟达化\"的讨论可能从概念走向现实。",
+      "sources": [
+        {"name": "电子工程专辑 — OpenAI自研推理芯片Jalapeño基准测试", "url": "https://www.eet-china.com/news/202608264053.html"},
+        {"name": "朝鲜日报 — OpenAI's Jalapeño Chip Outperforms NVIDIA GPUs", "url": "https://www.chosun.com/english/industry-en/2026/08/26/M464UQS7ZVGCFHPTBKCXKUETKU/"},
+        {"name": "OpenAI Blog — Jalapeño's first results", "url": "https://openai.com/index/jalapeno/"},
+        {"name": "ai0.news — August 26 Daily Digest", "url": "https://ai0.news/posts/2026-08-26-daily-digest/"}
+      ],
+      "original_time": "2026-08-26T03:00:00+08:00",
+      "tags": ["OpenAI", "自研芯片", "AI推理"],
+      "category": "tech_breakthrough"
+    },
+    {
+      "title": "Stability AI获娱乐业巨头7600万美元押注，生成式AI与版权方从对抗走向共生",
+      "summary": "Stability AI宣布完成7600万美元B轮融资，累计融资总额达2.32亿美元。本轮投资方阵容极具特色：全球三大音乐集团（环球音乐、索尼音乐、华纳音乐）和游戏巨头EA齐齐入局，AMD Ventures和Pacific Alliance Ventures也参与投资。\n\n这轮融资的独特之处在于，投资方不仅是资本提供者，更是版权授权合作伙伴。环球音乐和EA已与Stability AI签署了正式的技术合作协议，将各自的版权内容用于开发AI音乐制作和游戏设计工具。这标志着生成式AI行业正在从\"先侵权后和解\"的旧模式，转向\"版权方直接入股、深度共建\"的新范式。\n\nCEO Prem Akkaraju表示资金将用于增强音乐、视频和图像生成的\"创意制作\"产品线。Stability AI已于5月发布Stable Audio 3.0系列，支持生成最长6分20秒的音频片段。",
+      "content_markdown": "## Stability AI获娱乐业巨头7600万美元押注，生成式AI与版权方从对抗走向共生\n\n美国加州时间8月25日，Stability AI正式宣布完成7600万美元B轮融资。累计融资总额达到2.32亿美元。这轮融资的投资方阵容，可能比融资金额本身更值得关注。\n\n### 版权方直接入股\n\n本轮出资方包括：\n- **三大音乐集团**：环球音乐、索尼音乐、华纳音乐\n- **游戏巨头**：Electronic Arts（EA）\n- **投资机构**：AMD Ventures、Pacific Alliance Ventures\n- **跟投方**：Coatue、Greycroft、前Google CEO Eric Schmidt、Napster联合创始人Sean Parker、导演詹姆斯·卡梅隆等\n\nCEO Prem Akkaraju表示：\"我们的投资者不仅提供了资本，更提供了专业知识、信誉和与艺术家的直接联系。\"\n\n### 从对抗到共建的范式转换\n\n这轮融资的特殊之处在于，三大音乐公司和EA不仅是投资者，更是Stability AI的版权授权合作伙伴：\n\n- **环球音乐**和**EA**：已与Stability AI签署技术合作协议，将版权内容用于开发AI创作工具\n- **华纳音乐**：2025年11月签署类似合作\n- **Getty Images**：在英国版权侵权诉讼中，Stability AI已基本胜诉（美国诉讼仍在进行）\n\n这意味着生成式AI行业正在经历一次关键转变——从\"先用数据训练，被告了再和解\"的旧模式，转向\"版权方直接入股、深度共建工具\"的新范式。三大音乐公司和EA既是投资人也是数据授权方，利益深度绑定。\n\n### 产品进展\n\nStability AI于5月发布了Stable Audio 3.0系列，包含三个开源模型和一个付费API：\n\n- 基于扩散Transformer架构\n- 支持生成最长6分20秒的音频片段\n- 将多步生成流程压缩为单步，大幅提升速度\n- 采用语义-声学自编码器技术加速推理\n\nAkkaraju表示，新资金将用于增强音乐、视频和图像生成的\"创意制作\"产品套件，深化应用研究，并拓展专业服务业务。\n\nStability AI成立于2019年伦敦，2022年凭借Stable Diffusion开源图像生成模型一战成名。此后经历了创始人出走、内部动荡等波折，在现任CEO Akkaraju（2024年6月就任）带领下，已将重心从英国转向美国洛杉矶，定位为\"面向音乐、游戏和娱乐行业专业创意的AI产品领导者\"。",
+      "sources": [
+        {"name": "Stability AI Official — Press Release", "url": "https://www.coze.cn/share-article/201787727736419584"},
+        {"name": "SiliconANGLE — Major record labels, AMD back $76M round", "url": "https://siliconangle.com/2026/08/25/major-record-labels-amd-back-76m-round-for-stability-ai/"},
+        {"name": "Tech.eu — Stability AI raises $76M", "url": "https://tech.eu/2026/08/25/stabiityai-raises-76m-with-warner-and-sony-investing/"}
+      ],
+      "original_time": "2026-08-26T03:00:00+08:00",
+      "tags": ["Stability AI", "生成式AI", "版权"],
+      "category": "funding"
+    },
+    {
+      "title": "苹果发布首款2nm芯片M6和四晶粒M5 Ultra，桌面端AI算力全面跃升",
+      "summary": "苹果正式发布M6和M5 Ultra两款桌面芯片。M6采用台积电2nm工艺，是苹果首款2nm芯片，配备12核CPU和12核GPU，集成双16核Neural Engine，峰值AI算力较上代提升2倍，统一内存带宽达170GB/s。搭载M6的新款Mac mini起售价899美元。\n\nM5 Ultra则是苹果迄今最强芯片，首次在M系列中应用四晶粒UltraFusion架构，最高36核CPU、80核GPU，统一内存带宽达1.2TB/s，较M3 Ultra提升50%。Mac Studio最高可选512GB统一内存，支持集群分布式推理，苹果明确将其定位为\"本地AI\"桌面工作站。\n\nM5 Ultra版Mac Studio起售价5499美元，满配512GB版本预计超过18000美元。有传闻称苹果将跳过M6 Pro/Max/Ultra产品线，直接聚焦M7开发。",
+      "content_markdown": "## 苹果发布首款2nm芯片M6和四晶粒M5 Ultra，桌面端AI算力全面跃升\n\n苹果于8月26日正式发布M6和M5 Ultra两款桌面芯片，同步更新Mac mini和Mac Studio产品线，标志着苹果在2nm制程和桌面端AI计算能力上同时迈出重要一步。\n\n### M6：苹果首款2nm芯片\n\nM6采用台积电2nm制程，所有核心模块完成架构级升级：\n\n- **CPU**：12核设计（2颗超级核心+4颗性能核心+6颗能效核心），单线程执行效率全面领先同代\n- **GPU**：12核架构，每核内置神经网络加速单元，AI计算性能较M5提升近30%，较M1提升逾8倍\n- **Neural Engine**：双16核设计，峰值AI算力较上代提升2倍\n- **内存**：最高32GB统一内存，带宽170GB/s（较M5提升10%）\n- **图形**：引入重构着色器核心、动态缓存机制和硬件级光线追踪\n\n搭载M6的新款Mac mini起售价899美元（国内6999元起），定位覆盖家庭用户、学生、开发者和AI爱好者。\n\n### M5 Ultra：四晶粒架构怪兽\n\nM5 Ultra是苹果迄今性能最强的自研芯片，首次在M系列中应用UltraFusion封装技术，将两枚双晶粒M5 Max整合为四晶粒系统：\n\n- **CPU**：最高36核（12颗超级核心+24颗性能核心）\n- **GPU**：80核，每核集成神经网络加速单元\n- **内存带宽**：最高1.2TB/s（较M3 Ultra提升50%）\n- **晶粒间带宽**：突破4.4TB/s，互联密度较前代提升超6倍\n\nMac Studio搭载M5 Ultra后，最高可选512GB统一内存，并支持集群部署进行分布式推理。苹果明确将\"本地AI\"作为核心卖点——开发者可在桌面直接运行复杂机器学习模型，无需云端依赖。\n\nM5 Ultra版Mac Studio起售价5499美元，满配256GB版本约10000美元，512GB版本预计超过18000美元。\n\n### 战略信号\n\n苹果此次发布的深层逻辑与OpenAI Jalapeño遥相呼应：**推理正在成为AI计算的主战场**。M5 Ultra的1.2TB/s内存带宽和512GB统一内存，使其成为运行大参数开源模型（如128GB内存需求的MoE模型）的理想桌面平台。\n\n有传闻称苹果将跳过M6 Pro/Max/Ultra产品线，直接聚焦下一代M7开发。这意味着苹果正在压缩传统迭代周期，将资源集中在AI算力的关键突破上。",
+      "sources": [
+        {"name": "Apple Newsroom — M6 and M5 Ultra", "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/"},
+        {"name": "中关村在线 — 苹果发布M6与M5 Ultra芯片", "url": "https://ai.zol.com.cn/1238/12382994.html"},
+        {"name": "GizBot — Apple M6 and M5 Ultra Chips", "url": "https://www.gizbot.com/computer/news/apple-m6-and-m5-ultra-chips-announced-huge-ai-performance-upgrades-and-80-core-gpu-128123.html"},
+        {"name": "快科技 — Mac mini M6售价", "url": "https://m.weibo.cn/detail/5336235473110997"}
+      ],
+      "original_time": "2026-08-26T05:00:00+08:00",
+      "tags": ["苹果", "M6芯片", "2nm"],
+      "category": "product_launch"
+    },
+    {
+      "title": "具身智能融资潮涌：小鹏机器人63亿美元估值创纪录，全球机器人基金估值集体飙升",
+      "summary": "8月24日，小鹏集团旗下人形机器人业务\"鹏行\"完成首轮超9亿美元融资，投后估值超63亿美元（约430亿元人民币），刷新中国具身智能行业单轮私募股权融资纪录。本轮由IDG资本领投，高榕创投参投，腾讯和阿里巴巴作为战略投资者罕见同台入局。\n\n同日，海外机器人赛道同样火热：DeepMind系创业公司Generalist完成近2亿美元B轮追加融资，估值从20亿美元跃升至30亿美元，B轮总额达6亿美元。当前全球机器人基础模型赛道已有Physical Intelligence（110亿美元）、Skild AI（140亿美元）等多个超级独角兽。\n\n小鹏IRON人形机器人计划2026年底量产，全身76个自由度，搭载3颗图灵AI芯片，有效算力2250 TOPS，85%以上供应链与汽车重合。资本正集中涌入具身智能从演示到量产的关键拐点。",
+      "content_markdown": "## 具身智能融资潮涌：小鹏机器人63亿美元估值创纪录，全球机器人基金估值集体飙升\n\n8月24日至26日，全球具身智能赛道连续落下多笔巨额融资，标志着行业正从技术演示阶段迈入量产冲刺期。\n\n### 小鹏机器人：63亿美元估值刷新纪录\n\n小鹏集团宣布，旗下人形机器人业务主体\"鹏行\"完成首轮超9亿美元私募股权融资，投后估值超63亿美元（约430亿元人民币），刷新中国具身智能行业单轮私募融资纪录。\n\n投资阵容：\n- **领投**：IDG资本\n- **参投**：高榕创投\n- **战略投资者**：腾讯、阿里巴巴（罕见同台入局）\n- **内部认购**：小鹏集团认购2亿美元，何小鹏及顾宏地关联方认购1亿美元\n\n融资完成后，小鹏集团仍保持约81.97%的控股地位。\n\n作为参照：宇树科技IPO前最后一轮估值约127亿元，智元机器人港股IPO目标估值150-433亿元。小鹏机器人首轮融资即达430亿元，大幅超越同业。\n\n### 产品与量产节奏\n\n小鹏IRON人形机器人核心参数：\n\n| 指标 | 数据 |\n|------|------|\n| 全身自由度 | 76个 |\n| 单手自由度 | 21个 |\n| AI芯片 | 3颗图灵芯片 |\n| 端侧算力 | 2250 TOPS |\n| 供应链与汽车重合度 | 85%以上 |\n\n量产计划：\n- **2026年底**：进入规模量产，率先在小鹏门店和园区落地\n- **2027年上半年**：自有场景和试点场景部署\n- **2027年中和下半年**：加快爬坡至月产能数千台\n- **2027年**：面向中国及海外正式上市交付\n\n何小鹏表示，机器人硬件毛利率将\"显著高于\"汽车业务，未来还有软件收入增量。\n\n### 腾讯阿里为何罕见同台？\n\n两大巨头此前已共同投资宇树科技，此次再次联手。核心逻辑：双方均需要可靠硬件载体落地AI大模型和云服务。\n\n- 腾讯首席科学家张正友曾明确表示\"腾讯不做机器人'肉体'，只赋能'大脑'\"\n- 阿里推出Qwen-Robot系列具身大模型，在整机层面通过集团投资主体参与布局\n\n### 海外：Generalist估值飙升至30亿美元\n\n同日，由前Google DeepMind研究员和前波士顿动力工程师创立的Generalist完成近2亿美元B轮追加融资，估值从6月的20亿美元跃升至30亿美元，B轮总额达6亿美元。其Gen 1.5模型声称机器人仅需观看3至12秒视频演示即可掌握新任务。\n\n全球机器人基础模型赛道估值对比：\n\n| 公司 | 估值 |\n|------|------|\n| Skild AI | 140亿美元 |\n| Physical Intelligence | 110亿美元 |\n| Generalist | 30亿美元 |\n| Genesis AI | 30亿美元（洽谈中） |\n\nIDG资本表示：\"具身智能正处于从技术突破迈向量产落地的关键拐点。\"资本正集中押注机器人行业的\"ChatGPT时刻\"——尽管由于机器人无法像大语言模型那样利用全量互联网数据训练，真正的通用机器人模型可能仍需时日。",
+      "sources": [
+        {"name": "东方财富 — 63亿美元估值刷新行业纪录", "url": "https://caifuhao.eastmoney.com/news/20260826144711015065870"},
+        {"name": "财联社 — 小鹏机器人首轮融资超9亿美元", "url": "http://m.toutiao.com/group/7678217652405289478/"},
+        {"name": "南方都市报 — 小鹏人形机器人和跑起来的宇树们", "url": "http://m.toutiao.com/group/7678200024207852086/"},
+        {"name": "StartupBrief — Generalist reaches $3B valuation", "url": "https://getstartupbrief.com/story/generalist-3b-valuation-200m-extension"}
+      ],
+      "original_time": "2026-08-26T10:00:00+08:00",
+      "tags": ["人形机器人", "具身智能", "融资"],
+      "category": "funding"
+    },
+    {
+      "title": "智谱正式\"认领\"神秘模型Ox Alpha，免费开源GLM新一代搅动编程Agent赛道",
+      "summary": "8月26日晚间，智谱正式确认近日席卷开发者社区的神秘模型Ox Alpha出自其麾下，为GLM系列的全新一代迭代版本，并宣布当晚公开发布模型权重。该模型以匿名身份于8月20日上架OpenRouter，凭借免费开放、100万token上下文窗口和强劲的编程能力，迅速冲上平台使用量榜首，当前调用量已超过DeepSeek的两倍以上。\n\n在DeepSWE评测中，Ox Alpha以80%的通过率超越Claude Fable 5（65%）和GPT-5.6 Sol（52%）。Stripe CEO亲自测试后评价\"相当惊艳\"。社区通过tokenizer指纹分析、视频编码器特征比对等多维度技术取证，在智谱确认前已锁定其身份。匿名上架测试已成行业惯例，字节、阿里、小米此前均有类似操作。",
+      "content_markdown": "## 智谱正式\"认领\"神秘模型Ox Alpha，免费开源GLM新一代搅动编程Agent赛道\n\n8月26日晚间，智谱向彭博社证实，近日在开发者社区引发广泛猜谜的神秘模型Ox Alpha正是其GLM系列的全新迭代版本，模型代号灵感来源于近期热映电影《牛来》。智谱宣布当晚公开发布模型权重，免费使用期为一周，此后定价尚未公布。\n\n### 匿名上架，一周冲上榜首\n\n据华尔街见闻此前消息，美东时间8月20日深夜，Ox Alpha以\"隐身模型\"身份低调上架OpenRouter，发布方显示为匿名第三方，成为该平台历史上规模最大的一次发布。\n\n核心配置：\n- 约104.86万token的超长上下文窗口\n- 最大输出13.1万token\n- 支持文本、图片和视频多模态输入\n- 可调用外部工具\n- 完全免费使用\n\nAI编程工具OpenCode同步接入，宣称每日可处理100万亿token的调用量。\n\n### 性能表现：编程能力居前沿\n\nAI编程框架Fable作者davis7使用DeepSWE官方评测对10道题进行测试：\n\n| 模型 | 通过率 |\n|------|--------|\n| Ox Alpha | 80% |\n| Claude Fable 5 | 65% |\n| GLM-5.3 | 62% |\n| Grok 4.6 | 62% |\n| GPT-5.6 Sol | 52% |\n\n完整113项官方测试中，Ox Alpha通过率约63%，与顶级闭源模型差距缩小，仅比Grok 4.6稍逊。\n\nStripe CEO Patrick Collison亲自上手测试后评价\"相当令人印象深刻\"。OpenRouter、T3 Chat等公司CEO也纷纷跟进转发。\n\n### 社区24小时\"破案\"\n\n在智谱正式确认前，开发者社区已通过技术指纹比对锁定身份。最具说服力的证据来自视频编码器测试：将相同视频输入Ox Alpha与智谱GLM-5V-Turbo后，两者消耗的token数逐一吻合，涵盖帧采样策略、时长缩放与分辨率缩放三个独立设计特征。\n\n此外，文本tokenizer特征、独特的错误码[1210]、后端中文报错信息以及特定敏感问题的回复口径，均与智谱已有模型高度吻合。在25组tokenizer测试中几乎全部匹配。\n\n### 匿名测试成为行业惯例\n\n匿名上架测试已成为大模型厂商的标准操作。同类先例包括：Hunter Alpha（小米MiMo-V2-Pro）、Owl Alpha（美团LongCat 2.0）、Pony Alpha（智谱GLM-5）、Quasar Alpha（OpenAI GPT-4.1）。匿名上架可规避品牌风险，免费开放换取真实生产流量，压测反馈比内部数据更具参考价值。\n\n智谱于今年1月完成上市，即便在近期回调后，股价涨幅仍大幅领先AI同业。公司计划于下周一发布首份详细财报，覆盖上市以来前六个月业绩。",
+      "sources": [
+        {"name": "华尔街见闻 — 智谱确认Ox Alpha为GLM系列新版本", "url": "http://m.toutiao.com/group/7678292449495695923/"},
+        {"name": "IT之家 — 智谱确认Ox Alpha模型", "url": "http://m.toutiao.com/group/7678286705509630500/"},
+        {"name": "OFweek — 神秘大模型Ox Alpha登顶榜单", "url": "https://cloud.m.ofweek.com/news/2026-08/ART-178802-8420-30700143.html"},
+        {"name": "新浪 — 智谱认领Ox Alpha", "url": "https://finance.sina.com.cn/tech/2026-08-26/doc-inipnpza5660972.shtml"}
+      ],
+      "original_time": "2026-08-26T18:55:00+08:00",
+      "tags": ["智谱", "GLM", "开源模型"],
+      "category": "open_source"
+    }
+  ]
+}
