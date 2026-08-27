@@ -1,0 +1,673 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-08-27T00:26:07.722197+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "What FID Hides: Detecting, Ranking, and Diagnosing Deviations in Generative Evaluation",
+      "title": "What FID Hides: Detecting, Ranking, and Diagnosing Deviations in Generative Evaluation",
+      "url": "https://arxiv.org/abs/2608.24881v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24881v1",
+      "description": "Generative models are commonly ranked by Fréchet Inception Distance (FID) and Kernel Inception Distance (KID), yet FID's first-two-moment summary can miss distributional differences, and a reported scalar gap alone is not a calibrated test against sampling variation. FID's moment restriction has concrete consequences: on ImageNet, visually unrecognizable images optimized only to match the reference Inception mean and covariance obtain FID $24.7$ versus $58.6$ for held-out real images (lower is b",
+      "authors": [
+        "Hao Chen"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.24881v1",
+      "published_at": "2026-08-25T17:58:46Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
+      "title": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
+      "url": "https://arxiv.org/abs/2608.24876v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24876v1",
+      "description": "Recursive self-improvement (RSI) remains hard in long-horizon tasks, where growing histories obscure the task state and misalign skill invocation. We introduce Recuris, a recursive Experiential-Working Memory architecture for long-horizon agent harnesses, in which Working Memory tracks task progress and guides skill selection from Experiential Memory, grounding skill use in current needs rather than the full history. This coupling also turns execution into structured evidence that localizes fail",
+      "authors": [
+        "Zhaochen Yu",
+        "Yingcheng Wu",
+        "Zhenfei Yin",
+        "Kaiyuan Chen",
+        "Zhe Zhao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.24876v1",
+      "published_at": "2026-08-25T17:56:35Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SPO++: Stream-Aligned Policy Optimization for Asynchronous Agentic RL",
+      "title": "SPO++: Stream-Aligned Policy Optimization for Asynchronous Agentic RL",
+      "url": "https://arxiv.org/abs/2608.24870v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24870v1",
+      "description": "Group-relative reinforcement learning waits for sibling rollouts of the same prompt, which is costly for long and variable tool-use trajectories. Single-stream Policy Optimization (SPO) removes this dependency with a persistent prompt-level value estimate, but its recipe whitens one advantage per trajectory before optimizing a token-mean actor loss. We show that trajectory centering generally does not center the token-weighted quantity consumed by the actor, and fix the mismatch by standardizing",
+      "authors": [
+        "Kai Ruan",
+        "Jinghao Lin",
+        "Qianshan Wei",
+        "Ziqi Zhou",
+        "Zihe Huang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.24870v1",
+      "published_at": "2026-08-25T17:52:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Parameterized Complexity of $L_p$-Lipschitz Constants for Input Convex Neural Networks and $L_p$-Norm Maximization over Zonotopes",
+      "title": "Parameterized Complexity of $L_p$-Lipschitz Constants for Input Convex Neural Networks and $L_p$-Norm Maximization over Zonotopes",
+      "url": "https://arxiv.org/abs/2608.24865v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24865v1",
+      "description": "Lipschitz constants are a standard way to quantify the sensitivity of neural networks to small input perturbations, but computing them is difficult even for shallow ReLU networks. We study this problem for two-layer input-convex neural networks (ICNNs), a restricted architecture where nonnegative output weights enforce convexity. Computing the $L_p$-Lipschitz constant for these networks is equivalent to maximizing the dual norm over a zonotope. While $L_1$- and $L_\\infty$-norm maximization on zo",
+      "authors": [
+        "Aritra Das",
+        "Vincent Froese",
+        "Moritz Grillo",
+        "Debayan Gupta",
+        "Christoph Hertrich"
+      ],
+      "categories": [
+        "cs.CC",
+        "cs.DM",
+        "cs.LG",
+        "cs.NE"
+      ],
+      "arxiv_id": "2608.24865v1",
+      "published_at": "2026-08-25T17:47:37Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Improving Cross-Problem Vehicle Routing with Locally Augmented Preferences and Representation Disentanglement",
+      "title": "Improving Cross-Problem Vehicle Routing with Locally Augmented Preferences and Representation Disentanglement",
+      "url": "https://arxiv.org/abs/2608.24859v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24859v1",
+      "description": "Multi-task vehicle routing problem (VRP) solvers seek to handle multiple VRP variants within a single unified model, avoiding the need to train a separate model for every variant. In spite of recent progress, current approaches remain limited on two fronts. On the training side, reinforcement learning suffers from reward-scale disparities and shrinking advantage signals as policies improve, whereas preference optimization stagnates once sampled tours become near-identical and thus fundamentally ",
+      "authors": [
+        "Arthur Corrêa",
+        "Paulo Nascimento",
+        "Samuel Moniz"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.24859v1",
+      "published_at": "2026-08-25T17:44:23Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Bellman Calibration for Marginalized Importance Weighting in Offline Reinforcement Learning",
+      "title": "Bellman Calibration for Marginalized Importance Weighting in Offline Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2608.24858v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24858v1",
+      "description": "Marginalized importance weighting evaluates a target policy by reweighting offline state-action samples with its discounted occupancy ratio, characterized by an adjoint Bellman equation. Existing minimax, primal-dual, and fitted fixed-point estimators can leave residual occupancy-balance violations because of function-class approximation, regularization, or incomplete optimization. These violations are difficult to diagnose and reduce because the objectives generally lack a direct supervised val",
+      "authors": [
+        "Lars van der Laan",
+        "Nathan Kallus"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_id": "2608.24858v1",
+      "published_at": "2026-08-25T17:44:02Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "BrowserForge: Scaling Web Episode via Parallel Browser Sandboxes",
+      "title": "BrowserForge: Scaling Web Episode via Parallel Browser Sandboxes",
+      "url": "https://arxiv.org/abs/2608.24848v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24848v1",
+      "description": "Web agents that act from rendered pixels avoid the fragility and heavy token cost of reading a page's HTML or accessibility tree, but training them depends on large amounts of high-quality interaction trajectories, and how to produce such data at scale remains an open problem. Public datasets typically contain only a few thousand trajectories drawn from a fixed and narrow set of websites, and even recent automated synthesis pipelines stay bound to predefined site lists or tutorial sources, so th",
+      "authors": [
+        "Fei Tang",
+        "Huawen Shen",
+        "Zhiqiong Lu",
+        "Zhengxi Lu",
+        "Pengyuan Lyu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.24848v1",
+      "published_at": "2026-08-25T17:35:42Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "FedV-KGQA: Multi-Hop Question Answering over Vertically Partitioned Knowledge Graphs",
+      "title": "FedV-KGQA: Multi-Hop Question Answering over Vertically Partitioned Knowledge Graphs",
+      "url": "https://arxiv.org/abs/2608.24846v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24846v1",
+      "description": "Real-world data for knowledge graph question answering is often distributed across different organizations due to governance and data sovereignty constraints. While centralized systems exist, they cannot answer multi-hop questions when the required facts are split across vertically partitioned silos. In this paper, we propose FedV-KGQA, a framework for multi-hop reasoning over knowledge graphs in which organizations share entities but own disjoint sets of relations. Our approach combines local g",
+      "authors": [
+        "Md Saikat Islam Khan Bappy",
+        "Oshani Seneviratne"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.24846v1",
+      "published_at": "2026-08-25T17:34:27Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "LAION-BVD: A 10-Million-Hour Open Video Dataset for Multimodal Pre-training",
+      "title": "LAION-BVD: A 10-Million-Hour Open Video Dataset for Multimodal Pre-training",
+      "url": "https://arxiv.org/abs/2608.24845v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24845v1",
+      "description": "We present LAION-BVD, a large-scale open video dataset for multimodal learning, which contains 1.3B platform-specific video URLs collected from CommonCrawl. From these, we download 80M videos with a total duration of 10 million hours. The dataset is designed for multimodal pre-training across the video, audio, and image modalities. Using content-aware scene detection, we extract clips for which we synthetically generate video and audio captions. Models trained on these data achieve competitive p",
+      "authors": [
+        "Andreas Hochlehnert",
+        "Marianna Nezhurina",
+        "Mehdi Cherti",
+        "Andrej Radonjic",
+        "Thaddäus Wiedemer"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.24845v1",
+      "published_at": "2026-08-25T17:34:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Reading Is Not Using: Retrieval, Judgment, and the Design of AI Financial Research Workflows",
+      "title": "Reading Is Not Using: Retrieval, Judgment, and the Design of AI Financial Research Workflows",
+      "url": "https://arxiv.org/abs/2608.24842v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24842v1",
+      "description": "Large language models (LLMs) are increasingly deployed as AI analysts to process financial disclosures and support AI-assisted investment decisions. Yet such systems are usually evaluated by what they can retrieve, not whether retrieved information affects their judgments. We identify a retrieval-integration gap in long-context financial analysis. Holding focal-firm information fixed and varying only unrelated context from 2,000 to 128,000 tokens, we find that a risk disclosure's influence on in",
+      "authors": [
+        "Miao Liu",
+        "Zhizhe Liu"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.24842v1",
+      "published_at": "2026-08-25T17:31:25Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "A Dual-Dimensional LLM Framework for Automated Item Incidental Content Similarity Analysis in Large-Scale Assessments",
+      "title": "A Dual-Dimensional LLM Framework for Automated Item Incidental Content Similarity Analysis in Large-Scale Assessments",
+      "url": "https://arxiv.org/abs/2608.24825v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24825v1",
+      "description": "The rapid expansion of large-scale assessments and the growing adoption of automatic item generation have intensified concerns about incidental content redundancy, where construct-irrelevant elements such as wording or contextual framing become unintentionally repetitive across items. Traditional similarity metrics like BLEU or cosine similarity, often fail to capture the nuanced structural and semantic layers that drive perceived redundancy simultaneously. This study proposes a dual-dimensional",
+      "authors": [
+        "Jing Huang",
+        "Jihong Zhang",
+        "Hua-Hua Chang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.24825v1",
+      "published_at": "2026-08-25T17:07:16Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Constrained Entity Selection under Partial Knowledge for LLM-Based Knowledge Graph QA",
+      "title": "Constrained Entity Selection under Partial Knowledge for LLM-Based Knowledge Graph QA",
+      "url": "https://arxiv.org/abs/2608.24824v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24824v1",
+      "description": "Large language models are increasingly used for knowledge graph question answering (KGQA), but can fail to correctly ground answers in the underlying graph. Current approaches to LLM-based KGQA either rely on full semantic parsing into executable queries such as SPARQL, which is brittle in practice due to complex schemas or incompleteness of real-world KGs, or on LLM-reasoning and answer generation over KGs, which can be more robust but lacks formal guarantees. In this work, we study a complemen",
+      "authors": [
+        "Emanuel Kitzelmann"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.24824v1",
+      "published_at": "2026-08-25T17:04:32Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "BioKERN: Biological Kernel Regularization for Histology-to-Transcriptomics Neighborhood Retrieval",
+      "title": "BioKERN: Biological Kernel Regularization for Histology-to-Transcriptomics Neighborhood Retrieval",
+      "url": "https://arxiv.org/abs/2608.24823v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24823v1",
+      "description": "Spatially resolved biology requires representations that preserve biological neighborhood structure rather than only exact cross-modal correspondences. Existing histology--transcriptomics objectives can emphasize instance-level matching even when non-paired spots share molecular or spatial context. We introduce BioKERN, a multimodal spatial representation-learning framework that incorporates biological structure as an explicit, learnable inductive bias. BioKERN constructs a training-time biologi",
+      "authors": [
+        "Seungik Cho",
+        "Betul Orcan-Ekmekci"
+      ],
+      "categories": [
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "arxiv_id": "2608.24823v1",
+      "published_at": "2026-08-25T17:04:16Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "A Geometric Theory of Robust Fairness Audits",
+      "title": "A Geometric Theory of Robust Fairness Audits",
+      "url": "https://arxiv.org/abs/2608.24818v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24818v1",
+      "description": "Neighborhood-based fairness audits evaluate individual fairness by comparing predictions among similar individuals in feature space. Despite their widespread use, little is known about the robustness of the auditing procedure itself. Because these audits rely on nearest neighbor relationships, small perturbations in feature space can alter local neighborhoods and produce different fairness assessments even when model predictions remain unchanged. We develop a geometric framework for analyzing th",
+      "authors": [
+        "Binita Maity"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.24818v1",
+      "published_at": "2026-08-25T16:58:57Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Effective Learning Rate Governs Loss Dynamics in Language Model Pretraining",
+      "title": "Effective Learning Rate Governs Loss Dynamics in Language Model Pretraining",
+      "url": "https://arxiv.org/abs/2608.24814v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24814v1",
+      "description": "We uncover ELR collapse in language model pretraining: learning rate (LR) and parameter norm govern loss dynamics primarily through their ratio, the effective learning rate (ELR). When ELR is matched across runs, their loss trajectories collapse throughout training despite substantially different LRs and parameter norms. Across optimizers, architectures, datasets, and model scales, mean collapse errors are typically a few x 10^-3, below the seed-to-seed variation measured in a representative con",
+      "authors": [
+        "Zihan Liu",
+        "Ruiheng Zheng",
+        "Shaobo Zhang",
+        "Changxin Tian",
+        "Kunlong Chen"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.24814v1",
+      "published_at": "2026-08-25T16:57:29Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "MDTE: Minority-Aware Diffusion over Temporal Edge Events for Imbalanced Node Classification",
+      "title": "MDTE: Minority-Aware Diffusion over Temporal Edge Events for Imbalanced Node Classification",
+      "url": "https://arxiv.org/abs/2608.24812v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24812v1",
+      "description": "Class-imbalanced node classification on temporal graphs is challenging because majority-dominated temporal propagation progressively assimilates minority representations, while conventional node and neighborhood information provides insufficient discriminative evidence for minority classes. To address these issues, we propose MDTE, a minority-aware diffusion framework that reconstructs stable and discriminative temporal edge-event representations through conditional diffusion denoising. Specific",
+      "authors": [
+        "Zhou Zelong",
+        "Zhang Tianming",
+        "Yang Zhengyi",
+        "Tang Yifu",
+        "Hou Chenyu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.24812v1",
+      "published_at": "2026-08-25T16:56:22Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Strictly Causal Streaming Video Anomaly Detection with a Theoretically-Grounded State-Space Core",
+      "title": "Strictly Causal Streaming Video Anomaly Detection with a Theoretically-Grounded State-Space Core",
+      "url": "https://arxiv.org/abs/2608.24810v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24810v1",
+      "description": "Recent work has applied Mamba style state space models (SSMs) to video anomaly detection, yet existing approaches still rely on buffering clips or windows internally, lack a theoretical account of how temporal memory relates to detection latency, and benchmark efficiency only through GPU throughput rather than the edge hardware these methods are intended to target. We introduce a strictly causal streaming anomaly detector whose fixed size state is updated in O(1) time and memory per incoming fra",
+      "authors": [
+        "Yogesh Kumar"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.24810v1",
+      "published_at": "2026-08-25T16:52:32Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Structurally-bounded Agentic Graph Exploration for Evidence-Grounded Scholarly DeepSearch",
+      "title": "Structurally-bounded Agentic Graph Exploration for Evidence-Grounded Scholarly DeepSearch",
+      "url": "https://arxiv.org/abs/2608.24809v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24809v1",
+      "description": "We present Crase, a bounded and inspectable alternative to deep research agents for scholarly search. Instead of an open-ended search loop, Crase queries a search engine once for seed papers, expands them along their 1.5-hop citation neighborhood, prunes citation edges whose claims lack entailment support, and ranks the remaining papers with a recency-aware random walk. This makes the candidate set, the reason each paper is kept, and the stopping condition explicit and fixed before inference. On",
+      "authors": [
+        "Rima Hazra",
+        "Sayan Layek",
+        "Somnath Banerjee",
+        "Soumen Chakrabarti",
+        "Animesh Mukherjee"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.IR"
+      ],
+      "arxiv_id": "2608.24809v1",
+      "published_at": "2026-08-25T16:51:26Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Automatic Model Card Generation Using an LLM",
+      "title": "Automatic Model Card Generation Using an LLM",
+      "url": "https://arxiv.org/abs/2608.24807v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24807v1",
+      "description": "Model cards are structured documents that summarize key information about machine learning models to improve transparency, usability, and accountability. However, they often lack a consistent structure, and many models provide no model cards, making comparison and interpretation difficult. This paper presents two contributions. First, we propose MCTidy, an LLM-based approach that reorganizes existing model cards into a standardized template to improve clarity and comparability. Second, we introd",
+      "authors": [
+        "Tajkia Rahman Toma",
+        "Balreet Grewal",
+        "Cor-Paul Bezemer"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.24807v1",
+      "published_at": "2026-08-25T16:49:37Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "StarHarness: Evolving Harnesses with Stratified Search for Enterprise Environments",
+      "title": "StarHarness: Evolving Harnesses with Stratified Search for Enterprise Environments",
+      "url": "https://arxiv.org/abs/2608.24804v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24804v1",
+      "description": "We present StarHarness, a framework for evolving environment-specific agent harnesses while keeping model weights fixed. The evolved harness can include prompt and task framing, tool interfaces, skills, MCP-backed providers, subagent structure, and agent-loop configuration. StarHarness constructs a compact evolution pool by stratifying tasks according to baseline failure behavior, separates proposer-visible search tasks from proposer-hidden selection tasks, and reserves held-out tasks for evalua",
+      "authors": [
+        "Esakkivel Esakkiraja",
+        "Denis Akhiyarov",
+        "Vikas Yadav",
+        "Sai Rajeswar",
+        "Patrice Bechard"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.SE"
+      ],
+      "arxiv_id": "2608.24804v1",
+      "published_at": "2026-08-25T16:48:05Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "LION: A Clifford Neural Paradigm for Multimodal-Attributed Graph Learning",
+      "title": "LION: A Clifford Neural Paradigm for Multimodal-Attributed Graph Learning",
+      "url": "https://arxiv.org/abs/2608.24795v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24795v1",
+      "description": "Recently, the rapid advancement of multimodal domains has driven a data-centric paradigm shift in graph ML, transitioning from text-attributed to multimodal-attributed graphs. This advancement significantly enhances data representation and expands the scope of graph downstream tasks, such as modality-oriented tasks, thereby improving the practical utility of graph ML. Despite its promise, limitations exist in the current neural paradigms:(1) Neglect Context in Modality Alignment: Most existing m",
+      "authors": [
+        "Xunkai Li",
+        "Zekai Chen",
+        "Zhengyu Wu",
+        "Henan Sun",
+        "Daohan Su"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.24795v1",
+      "published_at": "2026-08-25T16:39:59Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "CAFE: Self-Improving Search Agents Need Co-Evolving Feedback",
+      "title": "CAFE: Self-Improving Search Agents Need Co-Evolving Feedback",
+      "url": "https://arxiv.org/abs/2608.24794v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24794v1",
+      "description": "Outcome-supervised search agents learn when and how to retrieve evidence, but terminal rewards neither localize intermediate errors nor redirect an ongoing trajectory before those errors compound. Treating corrective feedback as a learned in-trajectory intervention couples the two roles: the agent must decide when to request and use feedback, while the critic must infer useful corrections from outcome-confounded rollouts whose failure patterns shift as the agent improves. We introduce CAFE (Coup",
+      "authors": [
+        "Boyang Liu",
+        "Senjie Jin",
+        "Peixin Wang",
+        "Zhangyue Yin",
+        "Yibo Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.24794v1",
+      "published_at": "2026-08-25T16:39:00Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Right Diagnoses, Decorative Reasoning:A Perturbation Audit of Medical Chain-of-Thought",
+      "title": "Right Diagnoses, Decorative Reasoning:A Perturbation Audit of Medical Chain-of-Thought",
+      "url": "https://arxiv.org/abs/2608.24790v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24790v1",
+      "description": "Clinicians read chain-of-thought (CoT) rationales as evidence of medical reasoning, but whether the visible chain plays that role is rarely tested. General-domain CoT-faithfulness probes ignore clinical cost, and medical LLM evaluations treat the chain as a black box. We close this gap with a medical perturbation audit: a 30-operator battery edits both the chain and the question with clinically motivated operators (severity reversal, negation flip, demographic swap, evidence ablation), paired wi",
+      "authors": [
+        "Mengzhu Xu",
+        "Jifan Gao",
+        "Xia Jiang",
+        "Yaoxin Wu",
+        "Xi Long"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.24790v1",
+      "published_at": "2026-08-25T16:37:39Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Linear Probing Provides Robust and Efficient Detection of Machine-Generated Text",
+      "title": "Linear Probing Provides Robust and Efficient Detection of Machine-Generated Text",
+      "url": "https://arxiv.org/abs/2608.24780v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24780v1",
+      "description": "Distinguishing machine-generated text (MGT) from human-written text (HWT) becomes increasingly important due to potential misuse. However, most supervised detectors often degrade out-of-domain (OOD) and require large, diverse training sets. In this work, we analyze the linearity and quality of MGT representations and show that simple linear probes outperform a wide range of detectors while being substantially more sample-efficient. We first show that MGT and HWT latent representations are linear",
+      "authors": [
+        "Gerrit Quaremba",
+        "Hanqi Yan",
+        "Elizabeth Black",
+        "Denny Vrandecic",
+        "Elena Simperl"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.24780v1",
+      "published_at": "2026-08-25T16:21:24Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing",
+      "title": "StepGuard: Learning Step-Level Guardrails with Scalable Supervision and Safety-Utility Balancing",
+      "url": "https://arxiv.org/abs/2608.24777v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24777v1",
+      "description": "LLM-based agents can interact with external environments through tool invocation, but this capability also introduces security risks such as file modification, information leakage, and unauthorized actions. Existing guardrails often evaluate completed trajectories, leaving pre-execution monitoring of step-level actions underexplored. We propose StepGuard, a step-level guard model that can audit completed agent trajectories and check tool actions before they are executed. To train StepGuard, we i",
+      "authors": [
+        "Zhijie Zheng",
+        "Yu Li",
+        "Chen Qian",
+        "Yuqian Fu",
+        "Yanwei Fu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CR"
+      ],
+      "arxiv_id": "2608.24777v1",
+      "published_at": "2026-08-25T16:17:27Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Ensemble of Convolutional Neural Networks for StrokePrediction: Towards Improved Diagnostic Accuracy",
+      "title": "Ensemble of Convolutional Neural Networks for StrokePrediction: Towards Improved Diagnostic Accuracy",
+      "url": "https://arxiv.org/abs/2608.24771v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24771v1",
+      "description": "Brain stroke, known for its high mortality and incidence rates, poses significant health risks and requires rapid intervention for survival. Early diagnosis and preventive measures can greatly reduce life loss and disabilities. Recent advancements in deep learning have led to novel computer-aided diagnostic techniques for early stroke detection. This study proposes an intelligent system that predicts potential strokes using eleven features, evaluated through seven supervised machine learning alg",
+      "authors": [
+        "Md Shahriar Sajid"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.24771v1",
+      "published_at": "2026-08-25T16:09:53Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Score-Based Ideal Observer Approximation via Denoising Score Matching for Signal-Known-Exactly Detection Tasks",
+      "title": "Score-Based Ideal Observer Approximation via Denoising Score Matching for Signal-Known-Exactly Detection Tasks",
+      "url": "https://arxiv.org/abs/2608.24768v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24768v1",
+      "description": "The Bayesian Ideal Observer (IO) establishes the theoretical upper bound on task performance for binary detection tasks. However, analytical computation of the IO test statistic is generally intractable. Numerical approaches based on Markov-chain Monte Carlo (MCMC) methods, including their recent deep generative model-based extensions, typically require extensive posterior sampling for each test image. Supervised learning has also been investigated to approximate the IO performance. However, suc",
+      "authors": [
+        "Weimin Zhou"
+      ],
+      "categories": [
+        "eess.IV",
+        "cs.AI",
+        "cs.CV",
+        "cs.LG",
+        "stat.CO"
+      ],
+      "arxiv_id": "2608.24768v1",
+      "published_at": "2026-08-25T16:05:55Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Evidence Blindness in Direct Corpus Interaction: Persistent Navigation with AtlasNav",
+      "title": "Evidence Blindness in Direct Corpus Interaction: Persistent Navigation with AtlasNav",
+      "url": "https://arxiv.org/abs/2608.24764v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24764v1",
+      "description": "Large language model agents are moving beyond conventional retrieval-augmented generation toward direct interaction with external corpora. Direct Corpus Interaction (DCI) keeps the full corpus accessible, yet reachable evidence can remain unusable under finite interaction budgets. Required evidence may fail to surface, a surfaced supporting document may remain unopened, or an opened document may fail to expose its decisive fragment. We call this progressive silent loss Evidence Blindness and qua",
+      "authors": [
+        "Hongyu Guo",
+        "Zhiyu Zheng",
+        "Zhao Cao"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.24764v1",
+      "published_at": "2026-08-25T16:03:02Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "MoTE: Mixture of Task Experts for Multi-Task Video Understanding",
+      "title": "MoTE: Mixture of Task Experts for Multi-Task Video Understanding",
+      "url": "https://arxiv.org/abs/2608.24763v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24763v1",
+      "description": "Procedural video-language models must solve heterogeneous tasks from the same visual evidence, including action recognition, forecasting, and procedure prediction. Dense transformer decoders share the same feed-forward networks across tasks, which can entangle task behavior and make controlled capability expansion difficult. Sparse Mixture-of-Experts (MoE) decoders provide conditional computation, but token-level learned routing is not naturally aligned with task-level procedural objectives. We ",
+      "authors": [
+        "Muhammad Asad Ali",
+        "Umar Khan",
+        "Nadia Robertini",
+        "Didier Stricker"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.24763v1",
+      "published_at": "2026-08-25T16:00:11Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Beyond Uniform Local Isometry and Topology: FactoMap for Disentangled Representations",
+      "title": "Beyond Uniform Local Isometry and Topology: FactoMap for Disentangled Representations",
+      "url": "https://arxiv.org/abs/2608.24762v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24762v1",
+      "description": "Many disentanglement methods represent generative factors using Euclidean product coordinates, although the underlying factor spaces may wrap, collapse, or have position-dependent geometry. We introduce factor-space structure, combining factor domains, generator-induced identifications, and position-dependent scales to distinguish topologically equivalent spaces with different factor geometries. We show that statistically independent factors need not be geometrically separable: hue and scale pro",
+      "authors": [
+        "Sohini Gupta",
+        "Bahareh Tolooshams"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.24762v1",
+      "published_at": "2026-08-25T15:59:59Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
