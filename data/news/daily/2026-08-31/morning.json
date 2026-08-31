@@ -1,0 +1,163 @@
+{
+  "type": "daily_briefing",
+  "date": "2026-08-31",
+  "session": "morning",
+  "articles": [
+    {
+      "title": "腾讯开源770B旗舰模型Hy4 preview：首次实现AI递归自我改进，Apache 2.0无限制开源",
+      "summary": "8月28日，腾讯混元发布并开源新一代旗舰大语言模型Hy4 preview，总参数770B、激活参数49B、上下文长度突破100万token，采用MoE稀疏架构。模型在四大平台同步上线，采用真正的Apache 2.0开源协议。最引人注目的是，Hy4 preview首次参与了自身研发全链路，形成递归自我改进的初步闭环，端到端吞吐量较基线提升31.8%。",
+      "content_markdown": "## 腾讯混元Hy4 preview：开源新标杆\n\n### 核心参数\n\n| 指标 | 数值 |\n|------|------|\n| 总参数 | 770B |\n| 激活参数/token | 49B |\n| 上下文长度 | 100万token |\n| 架构 | MoE（Gated DSA稀疏注意力+IndexCache跨层复用） |\n| 开源协议 | Apache 2.0（无地域限制、无用户门槛） |\n| API定价 | 输入6元/百万token，输出18元/百万token，缓存命中0.3元 |\n\n### 递归自我改进：AI参与造自己\n\n这是Hy4 preview最本质的突破。模型首次全程参与自身研发：\n\n1. **训练方法优化**：AI自主分析推理系统瓶颈\n2. **数据策略调整**：模型提出方案、运行实验、看结果、再迭代\n3. **评估体系改进**：实验产生的代码和日志进入下一轮探索\n4. **底层算子优化**：围绕算子融合、通信优化开展多轮优化\n\n结果：端到端吞吐量较基线提升31.8%。腾讯官方称之为\"递归自我改进的初步闭环\"。\n\n### 盲测成绩\n\n腾讯组织163名内部专家、203个工程任务盲测：\n- Hy4 preview：均分 **2.99/4**\n- GLM 5.3：均分 2.92/4\n- Kimi K3：均分 2.94/4\n\n在Terminal-Bench 2.1（命令行编程）上，Hy4 preview拿下85.4分，较前代Hy3高出14.6分，追平Claude Opus 5。\n\n### 数学突破\n\n配合工具Hyra，Hy4 preview将百年几何难题Blaschke-Lebesgue的体积下界从0.380799推进到0.41104，距离Meissner猜想仅剩2%。\n\n### 开源策略\n\nHy4 preview在Hugging Face、GitHub、ModelScope、Gitcode四大平台同步上线（含FP8量化版），WorkBuddy和CodeBuddy提供两周限时免费体验。LICENSE文件是纯粹的Apache 2.0，没有此前Hunyuan系列社区许可证中的欧盟、英国、韩国地域排除条款。",
+      "sources": [
+        {
+          "name": "科技日报",
+          "url": "http://www.stdaily.com/web/gdxw/2026-08/28/content_571433.html"
+        },
+        {
+          "name": "新浪科技",
+          "url": "https://finance.sina.com.cn/tech/roll/2026-08-29/doc-inipwxpi9008421.shtml"
+        },
+        {
+          "name": "搜狐/科技AI",
+          "url": "https://m.sohu.com/a/1069140251_122883455/"
+        },
+        {
+          "name": "AI Tools Review",
+          "url": "https://aitoolsreview.co.uk/insights/tencent-hy4-preview"
+        }
+      ],
+      "original_time": "2026-08-28T15:00:00+08:00",
+      "tags": [
+        "腾讯混元",
+        "开源模型",
+        "Hy4",
+        "MoE"
+      ],
+      "category": "open_source"
+    },
+    {
+      "title": "英伟达Vera CPU正式出货：88核定制架构，从GPU供应商转型全栈AI计算平台",
+      "summary": "英伟达首款专为智能体AI设计的数据中心CPU Vera已全面量产并启动出货。Vera CPU搭载88个定制Olympus核心，内存带宽达1.2TB/s，专为智能体AI的分支型代码模式优化。AWS计划至FY2029Q2新增部署200万颗GPU并搭配Vera CPU。英伟达CFO表示Vera开启了2000亿美元服务器CPU市场，FY2028 CPU收入预计同比增长超过一倍。",
+      "content_markdown": "## Vera CPU：英伟达的战略扩张\n\n### 技术规格\n\n| 参数 | 数值 |\n|------|------|\n| 核心架构 | 88个定制NVIDIA Olympus核心 |\n| 内存带宽 | 1.2TB/s |\n| 性能提升 | 每核最高1.8倍（智能体AI工作负载） |\n| 数据路由效率 | 最高3倍提升 |\n\n### 为什么需要Vera\n\n随着Agentic AI兴起，数据中心的瓶颈正从GPU计算转向CPU编排。智能体的特殊性在于：每个编排层、工具调用、长上下文检索都是CPU密集型任务。传统CPU为核心密度而非实时并发推理设计，难以跟上智能体并发量。\n\n英伟达存储技术副总裁Jason Hardy指出，单台服务器的板载内存容量面临物理极限，Vera CPU可将运营数据传输效率提升最高3倍。\n\n### Vera Rubin系统级平台\n\nVera CPU是Vera Rubin架构的核心组件之一。旗舰Vera Rubin NVL72组合包含72个Rubin GPU + 36个Vera CPU + HBM4内存 + 第六代NVLink + ConnectX-9 SuperNIC + BlueField-4 DPU。NVL72的NVFP4推理性能达3,600 PFLOPS，对比GB300 NVL72的1,440 PFLOPS。\n\n### 客户部署\n\n| 客户 | 部署情况 |\n|------|---------|\n| AWS | 计划至FY2029Q2新增200万颗GPU搭配Vera CPU |\n| OCI | 首个超大规模部署Vera的云服务 |\n| SpaceXAI | 已接收架构深度介绍 |\n| 中国客户 | 2026年中开始接单，8月起交付 |\n\n### 财务影响\n\n英伟达FY2027Q2财报超预期，首次给出FY2028收入约同比增长70%的前瞻。CPU可寻址市场约2000亿美元，FY2028 CPU收入预计同比增长超过一倍。Vera标志着英伟达从GPU供应商向全栈AI计算供应商的转型。",
+      "sources": [
+        {
+          "name": "NVIDIA官方博客",
+          "url": "https://www.mycaptionai.com/resources/ai-news/delivering-vera-nvidias-first-cpu-built-for-agents-is-shipping-now-nvidia-blog"
+        },
+        {
+          "name": "AI Breaking Wire",
+          "url": "https://www.aibreakingwire.com/news/nvidia-shifts-ai-advantage-beyond-gpus-with-3x-vera-cpu-boost"
+        },
+        {
+          "name": "东方财富证券研报",
+          "url": "https://pdf.dfcfw.com/pdf/H3_AP202608301828744648_1.pdf"
+        },
+        {
+          "name": "Summa Money",
+          "url": "https://summamoney.com/investing/the-daily/chipmakers-displace-big-tech-as-ai-era-winners-nvidia-quarter-confirms-shift/"
+        }
+      ],
+      "original_time": "2026-08-29T06:00:00+08:00",
+      "tags": [
+        "英伟达",
+        "Vera CPU",
+        "数据中心",
+        "智能体AI"
+      ],
+      "category": "tech_breakthrough"
+    },
+    {
+      "title": "比尔-盖茨万字长文呼吁对AI Token和机器人征税，黄仁勋公开反对",
+      "summary": "微软联合创始人比尔-盖茨8月26日在Gates Notes发表万字长文，呼吁对AI Token和机器人征税，并提议设立'人类Reserved'工作岗位分类，禁止AI系统接管。盖茨指出，现行税制客观上鼓励企业用机器替代人力。英伟达CEO黄仁勋随后在Fox Business公开反对。这场科技巨头之间的分歧折射出AI治理的核心矛盾。",
+      "content_markdown": "## AI税收辩论升温：盖茨vs黄仁勋\n\n### 盖茨的核心主张\n\n8月26日发表的长文《The Turbulent AI Era Is Here》中，盖茨提出三大政策建议：\n\n**1. 对AI Token和机器人征税**\n\n现行税制失衡：雇佣年薪5万美元的员工需缴工资税、社保税、所得税，购买机器人却可作为经营支出立即抵扣。盖茨提议对AI token调用征税（token已有计量和计费系统），税率最高可达企业token收入的50%。\n\n**2. 设立\"人类Reserved\"岗位**\n\n基于经济必要性（55岁建筑工人无法轻易转型）和伦理考量（如传达绝症诊断必须人工），禁止AI系统接管特定岗位，可分阶段实施。\n\n**3. 税收用途明确化**\n\n资助被AI取代劳动者的职业再培训，扩建社会安全网，补偿转型阵痛。\n\n### 黄仁勋的反对\n\n英伟达CEO黄仁勋在Fox Business回应：\"我爱Bill，但我看不到他所看到的。\"黄仁勋同意对高净值人群多征税，但反对对机器人和AI token征税，认为这会抑制创新投资。\n\n### 历史背景\n\n盖茨早在2017年就提出过机器人税概念，当时被哈佛教授Lawrence Summers批评为\"对进步的保护主义\"。但这次不同：Token提供了精确的计量单位，已经在AI公司的计费系统中实时计数，具备2017年所不具备的可操作性。",
+      "sources": [
+        {
+          "name": "新浪财经",
+          "url": "https://cj.sina.com.cn/articles/view/7880068743/1d5b04e8706801pjka"
+        },
+        {
+          "name": "AI Breaking Wire",
+          "url": "https://www.aibreakingwire.com/news/bill-gates-proposes-robot-tax-and-human-reserved-jobs"
+        },
+        {
+          "name": "Express Computer",
+          "url": "https://www.expresscomputer.in/news/bill-gates-wants-to-tax-the-ai-machines-to-level-the-playing-field-for-humans/138177/"
+        },
+        {
+          "name": "Infobae",
+          "url": "https://www.infobae.com/tecno/2026/08/30/jensen-huang-rechaza-propuesta-de-bill-gates-para-cobrar-impuestos-por-robots-e-ia/"
+        }
+      ],
+      "original_time": "2026-08-29T08:00:00+08:00",
+      "tags": [
+        "比尔盖茨",
+        "机器人税",
+        "AI治理",
+        "黄仁勋"
+      ],
+      "category": "industry_policy"
+    },
+    {
+      "title": "索尼、华纳联合起诉Anthropic：指控大规模盗版音乐训练Claude，索赔或达数十亿美元",
+      "summary": "8月29日，索尼音乐出版与华纳查佩尔音乐在加州北区联邦法院联合起诉Anthropic及其联合创始人Dario Amodei和Benjamin Mann，指控其通过非法种子下载、网页抓取等方式获取数万首受版权保护的音乐作品训练Claude模型。这是继2025年9月Anthropic支付15亿美元创纪录版权和解金后的又一次重大诉讼，每首侵权作品最高可索赔15万美元，潜在赔偿总额可达数十亿美元。",
+      "content_markdown": "## 音乐产业再向AI巨头开刀\n\n### 诉状核心指控\n\n8月29日深夜，索尼音乐出版与华纳查佩尔音乐向加州北区联邦法院提起48页诉状：\n\n| 侵权行为 | 具体描述 |\n|---------|---------|\n| 种子下载 | 通过BitTorrent下载超500万本盗版书籍（LibGen），员工从Pirate Library Mirror下载200万本 |\n| 网页抓取 | 从MusixMatch和LyricFind等授权平台抓取歌词 |\n| 数据集使用 | 使用Books3、The Pile和Common Crawl等含未授权内容的数据集 |\n\n原告称这是\"历史上最大规模、最明目张胆的持续性知识产权盗窃\"。\n\n### 赔偿诉求\n\n- 每首蓄意侵权作品最高可索赔 **$150,000**\n- 每例删除版权管理信息最高 **$25,000**\n- 涉及数万首作品，潜在赔偿总额 **数十亿美元**\n\n### 前案关联\n\n本案与2025年9月的Bartz诉Anthropic案一脉相承。在该案中Anthropic支付15亿美元创纪录和解金，法院裁定用版权作品训练模型合法，但通过盗版获取内容违法。此次诉讼正是抓住同样的\"获取方式违法\"薄弱点。\n\n### 合成数据灰色地带\n\n诉状指控Anthropic用非商业模型（已从盗版内容学习）生成合成数据，再用合成数据训练商业模型，本质上是一种\"洗数据\"行为。\n\n### Anthropic回应\n\nAnthropic发言人表示：\"我们不同意出版商的说法，我们打算在法庭上有力地捍卫自己。\"本案部分律师同时代理Concord和环球音乐今年1月对Anthropic的诉讼。",
+      "sources": [
+        {
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/"
+        },
+        {
+          "name": "The Decoder",
+          "url": "https://the-decoder.com/sony-and-warner-sue-anthropic-over-one-of-the-largest-and-most-blatant-ongoing-thefts-of-intellectual-property-in-history/"
+        },
+        {
+          "name": "环球网",
+          "url": "http://m.toutiao.com/group/7679683196782395930/"
+        },
+        {
+          "name": "CSDN深度分析",
+          "url": "https://blog.csdn.net/weixin_66526635/article/details/164188202"
+        }
+      ],
+      "original_time": "2026-08-29T23:00:00+08:00",
+      "tags": [
+        "版权诉讼",
+        "Anthropic",
+        "AI训练数据",
+        "音乐产业"
+      ],
+      "category": "industry_policy"
+    },
+    {
+      "title": "8月31日多平台模型变阵：DALL-E GPT正式退役，Claude Sonnet 5定价永久锁定低价，GPT-5.4退出Codex",
+      "summary": "2026年8月31日成为AI产品密集调整的关键节点。OpenAI正式从ChatGPT中下架DALL-E GPT，图像生成转向ChatGPT Images；Anthropic宣布Claude Sonnet 5的$2/$10定价永久生效，取消原定的50%涨价计划；月之暗面的kimi-k2.5和moonshot-v1正式下线，用户需迁移至Kimi K3；GPT-5.4及GPT-5.4 mini也于同日退出Codex，仅限API调用。这一系列变动反映了AI行业加速整合的趋势。",
+      "content_markdown": "## 8月31日多平台模型密集调整\n\n### DALL-E GPT正式退役\n\nOpenAI按照7月31日发布的版本说明，于8月30日正式从ChatGPT中下架官方DALL-E GPT。\n\n- 图像生成并未消失，ChatGPT Images（基于gpt-image-1）继续在所有层级（含免费）提供服务\n- 用户创建且启用图像生成功能的自定义GPT不受影响\n- OpenAI建议用户下载希望保留的历史图像，但未明确说明下架后的可用性\n- 此前5月12日，DALL-E 2和DALL-E 3 API模型已先行下线\n\n### Claude Sonnet 5涨价取消\n\nAnthropic在8月10日悄悄取消了原定9月1日的Claude Sonnet 5涨价计划。该模型6月30日上线时以$2/$10（输入/输出每百万token）的入门价发售，原定8月31日后涨至$3/$15（涨幅50%）。现在$2/$10成为永久标准价格。\n\n### Kimi旧模型下线\n\n月之暗面的kimi-k2.5和moonshot-v1于8月31日正式下线，用户需迁移至Kimi K3。\n\n### GPT-5.4退出Codex\n\nGPT-5.4及GPT-5.4 mini于同日退出Codex平台（仅限ChatGPT登录用户使用），仍可通过API密钥调用。\n\n### 行业信号\n\n8月31日的密集调整揭示三个趋势：模型生命周期管理常态化（退役周期缩短至数月）、定价策略从试探走向稳定（价格战下永久低价成为竞争利器）、产品整合加速（旧功能快速让位新一代方案）。",
+      "sources": [
+        {
+          "name": "OpenAI ChatGPT版本说明",
+          "url": "https://help.openai.com/zh-hans-cn/articles/6825453-chatgpt-release-notes"
+        },
+        {
+          "name": "AI Tools Recap",
+          "url": "https://aitoolsrecap.com/Blog/ai-news-august-30-2026"
+        },
+        {
+          "name": "Anthropic取消Sonnet 5涨价",
+          "url": "https://lumichats.com/blog/claude-sonnet-5-price-hike-cancelled-2026-permanent"
+        },
+        {
+          "name": "OpenAI Retires DALL-E GPT",
+          "url": "https://evermx.com/case/openai-retires-dalle-gpt"
+        }
+      ],
+      "original_time": "2026-08-30T00:00:00+08:00",
+      "tags": [
+        "OpenAI",
+        "Anthropic",
+        "DALL-E",
+        "Claude Sonnet 5",
+        "Kimi K3"
+      ],
+      "category": "product_launch"
+    }
+  ]
+}
