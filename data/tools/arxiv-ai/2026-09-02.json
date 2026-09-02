@@ -1,0 +1,686 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-09-02T00:21:59.146027+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "Context-Aware Interleaved Batching for WhisperX",
+      "title": "Context-Aware Interleaved Batching for WhisperX",
+      "url": "https://arxiv.org/abs/2608.31170v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31170v1",
+      "description": "While WhisperX accelerates speech transcription via intra-audio batching, it isolates audio segments, losing the historical context needed for coherent punctuation and terminology transcription. Conversely, standard Whisper retains context sequentially but suffers from slow inference and hallucination loops. To achieve the best of both worlds, we propose Context-Aware Interleaved Batching. By using VAD-derived segment boundaries, our algorithm stabilizes Whisper's text conditioning, allowing us ",
+      "authors": [
+        "Carlos Bain",
+        "Max Bain"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.31170v1",
+      "published_at": "2026-08-31T17:59:46Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Constant Individual Regret in General Games",
+      "title": "Constant Individual Regret in General Games",
+      "url": "https://arxiv.org/abs/2608.31166v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31166v1",
+      "description": "Uncoupled no-regret dynamics provide a decentralized route to equilibrium, but prior guarantees for individual regret retain a polylogarithmic dependence on the horizon. We remove this dependence for every finite $N$-player normal-form game under full-information feedback. We introduce \\emph{ECHO-OFTRL}: optimistic follow-the-regularized-leader (OFTRL) equipped with an EMA cascade for high-order optimism (ECHO), where EMA denotes exponential moving average. The algorithm is deterministic and ful",
+      "authors": [
+        "Mingyang Liu",
+        "Gabriele Farina",
+        "Asuman Ozdaglar"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.GT"
+      ],
+      "arxiv_id": "2608.31166v1",
+      "published_at": "2026-08-31T17:59:16Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SUN: Persistent Programs For Language-Grounded Control-to-Learning-to-Real Policies",
+      "title": "SUN: Persistent Programs For Language-Grounded Control-to-Learning-to-Real Policies",
+      "url": "https://arxiv.org/abs/2608.31167v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31167v1",
+      "description": "Bridging model-based control and learned policies in long-horizon manipulation has harbored a silent disagreement: control executes specified objectives, learning amortizes that behavior into a reactive policy, yet existing protocols discard task semantics, leaving rewards hand-crafted and behavior drifting from what control verified.We introduce Semantically UNified (SUN) Programs, typed executables where geometric and contact relations are defined once and compiled into aligned Model Predictiv",
+      "authors": [
+        "Weiqi Wang",
+        "Zhi Li",
+        "Yudong Lei",
+        "David Martinez",
+        "Xiaofeng Gao"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.31167v1",
+      "published_at": "2026-08-31T17:59:16Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Sharp Approximation Rates for Neural Networks with Affine Latent Parameterizations",
+      "title": "Sharp Approximation Rates for Neural Networks with Affine Latent Parameterizations",
+      "url": "https://arxiv.org/abs/2608.31157v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31157v1",
+      "description": "Many parameter-efficient methods generate the parameters of a large neural network from a low-dimensional latent representation. Given an architecture $Φ$ with $P_Φ$ parameter slots, we write $\\boldsymbolθ_f=\\mathcal{G}(\\boldsymbolξ_f)$, where $\\mathcal{G}\\colon\\mathbb{R}^M\\to\\mathbb{R}^{P_Φ}$ is a parameter generator and $\\boldsymbolξ_f\\in\\mathbb{R}^M$ is a latent representation of the target function $f$. The architecture $Φ$ and the generator $\\mathcal{G}$ are shared across the entire target ",
+      "authors": [
+        "Shijun Zhang"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_id": "2608.31157v1",
+      "published_at": "2026-08-31T17:55:51Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Auditing Anonymous AI Models: A Four-Stage Protocol for Black-Box Identity Verification",
+      "title": "Auditing Anonymous AI Models: A Four-Stage Protocol for Black-Box Identity Verification",
+      "url": "https://arxiv.org/abs/2608.31142v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31142v1",
+      "description": "The 2025--2026 AI market has seen a wave of stealth releases: frontier models launched anonymously on developer platforms under codenames. For their users, identity determines data-handling terms, supply-chain risk, and capability expectations. No validated methodology exists for black-box identity verification of anonymous models: practitioner checklists lack accuracy evidence, and self-identification is untrustworthy by design. We propose a four-stage forensic audit protocol for API-served mod",
+      "authors": [
+        "Yisen Xi"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "arxiv_id": "2608.31142v1",
+      "published_at": "2026-08-31T17:48:24Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Configurable Semantic Chunking for Biomedical Information Extraction in Retrieval-Augmented Generation",
+      "title": "Configurable Semantic Chunking for Biomedical Information Extraction in Retrieval-Augmented Generation",
+      "url": "https://arxiv.org/abs/2608.31139v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31139v1",
+      "description": "BioMedRAG introduced retrieval-augmented generation with a learned chunk scorer for biomedical information extraction. However, it relies on fixed-size chunking which can fragment semantic evidence. We propose a configurable semantic chunking framework that addresses this limitation by combining entity-preserving windows, trigger-centered chunking, proposition-first extraction, tiered trigger prioritization, and hierarchical relation resolution. The framework integrates with BioMedRAG by replaci",
+      "authors": [
+        "Riya Ahuja",
+        "Tim Kacprowski",
+        "Roya Shiasi Sardoabi"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.IR"
+      ],
+      "arxiv_id": "2608.31139v1",
+      "published_at": "2026-08-31T17:44:54Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "OntoAligner-Ensemble: Voting-Based Fusion across Heterogeneous Ontology Alignment Techniques",
+      "title": "OntoAligner-Ensemble: Voting-Based Fusion across Heterogeneous Ontology Alignment Techniques",
+      "url": "https://arxiv.org/abs/2608.31137v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31137v1",
+      "description": "Ontology alignment (OA) has evolved through several methodological paradigms, ranging from lexical and structural aligners to knowledge graph embedding (KGE) models and, more recently, Large Language Model (LLM)-based approaches. Although modern OA frameworks provide unified ecosystems for deploying these heterogeneous aligners, mechanisms for systematically reconciling their complementary and sometimes conflicting predictions remain relatively underexplored. We present OntoAligner-Ensemble, a m",
+      "authors": [
+        "Hamed Babaei Giglou",
+        "Sören Auer",
+        "Peio Popov",
+        "Mahsa Sanaei",
+        "Jennifer D'Souza"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.31137v1",
+      "published_at": "2026-08-31T17:44:25Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Implementing neural network mixed-effects models in Template Model Builder (TMB)",
+      "title": "Implementing neural network mixed-effects models in Template Model Builder (TMB)",
+      "url": "https://arxiv.org/abs/2608.31133v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31133v1",
+      "description": "Neural network mixed-effects models (NMMs) have gained traction by combining the strong representation and predictive power of artificial neural networks with the capacity of mixed-effects modeling to capture complex correlation structures. However, existing estimation approaches rely heavily on manual derivations of objective functions and gradients, which inherently forces simplifying approximations and severely constrains the complexity and accuracy of NMMs. In this work, we introduce a gener",
+      "authors": [
+        "Nan Zheng",
+        "Hoi Yiu Cheung",
+        "Vibhu Sharma",
+        "James T. Thorson",
+        "Noel G. Cadigan"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.31133v1",
+      "published_at": "2026-08-31T17:43:02Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "DIASENTINEL: An Auditable Multi-Agent System for Guideline-Grounded Diabetes Risk Screening",
+      "title": "DIASENTINEL: An Auditable Multi-Agent System for Guideline-Grounded Diabetes Risk Screening",
+      "url": "https://arxiv.org/abs/2608.31128v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31128v1",
+      "description": "Large language models (LLMs) offer promising clinical decision support but remain vulnerable to hallucinated facts, unsupported recommendations, and citation errors. We present DIASENTINEL, a fully on-premise multi-agent system for one-year type 2 diabetes mellitus (T2DM) risk screening and guideline-grounded report generation from electronic health records (EHRs). The system integrates calibrated risk prediction, deterministic clinical signal extraction, Reciprocal Rank Fusion over American Dia",
+      "authors": [
+        "Yung Wei Shueh",
+        "Zhi-Jie Chen",
+        "Chia-Hsuan Hsu",
+        "Hsin-Ling Hsu",
+        "Donghua Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.31128v1",
+      "published_at": "2026-08-31T17:40:43Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "On the Complexity of the Compatibility Problem for Succinctly Encoded Conditional Distributions",
+      "title": "On the Complexity of the Compatibility Problem for Succinctly Encoded Conditional Distributions",
+      "url": "https://arxiv.org/abs/2608.31120v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31120v1",
+      "description": "The motivation for this paper is the investigation of the trade-offs implicit in probabilistic models used in machine learning. Models are often used to make predictions in the form of conditional probabilities. However, a pair of conditional distributions p(x|y) and p(y|x) may not be compatible with any joint distribution p(x,y). Given two such conditionals, determining if there exists a compatible joint is known as the compatibility problem. For discrete random variables, when the conditionals",
+      "authors": [
+        "Guy Emerson"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CC",
+        "math.PR"
+      ],
+      "arxiv_id": "2608.31120v1",
+      "published_at": "2026-08-31T17:32:21Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "PaperGym: Rubric-Centered Evolution for Research-Plan Generation",
+      "title": "PaperGym: Rubric-Centered Evolution for Research-Plan Generation",
+      "url": "https://arxiv.org/abs/2608.31119v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31119v1",
+      "description": "Research planning is the decisive capability of AI scientists. Yet a research plan admits no verifiable answer, so reinforcement learning lacks the environment it requires: tasks paired with a critic. Rubrics extracted from scientific papers can supply the critic. Existing pipelines, however, draw the question and the criteria from the same content, so the reward can be earned by paraphrase. The rubric is further compressed into a single scalar per rollout. We introduce PaperGym, a unified frame",
+      "authors": [
+        "Yuhan Wang",
+        "Zhengxi Lu",
+        "Yuchen Yan",
+        "Kaitao Song",
+        "Wenqi Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.31119v1",
+      "published_at": "2026-08-31T17:31:18Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "When Does Bigger Help? A Controlled Study of LLM Scale for Ontology Learning",
+      "title": "When Does Bigger Help? A Controlled Study of LLM Scale for Ontology Learning",
+      "url": "https://arxiv.org/abs/2608.31118v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31118v1",
+      "description": "The effect of Large Language Model (LLM) scale on ontology learning (OL) performance remains insufficiently characterized. We present a controlled evaluation of 13 models spanning dense and Mixture-of-Experts variants from the Qwen3.5 and Qwen3.6 lineages, together with proprietary GPT release variants, using the OntoLearner retrieval-augmented generation pipeline. All models are evaluated with the same embedding model, retrieval configuration, prompt templates, decoding settings, datasets, and ",
+      "authors": [
+        "Hamed Babaei Giglou",
+        "Sören Auer",
+        "Jennifer D'Souza"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.31118v1",
+      "published_at": "2026-08-31T17:30:05Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "\"Train classical, deploy quantum\" requires rethinking generalization",
+      "title": "\"Train classical, deploy quantum\" requires rethinking generalization",
+      "url": "https://arxiv.org/abs/2608.31117v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31117v1",
+      "description": "Generative models have become central across science and industry, from image and text synthesis to the design of molecules and materials. Quantum generative models are considered one of the most promising applications for quantum computers, since a quantum circuit naturally produces samples from the distribution it encodes, and for suitable circuits that distribution is believed to be hard for any classical computer to reproduce. A leading strategy trains these models on a classical computer an",
+      "authors": [
+        "Snehal Raj",
+        "Natansh Mathur",
+        "Alejandro Perdomo-Ortiz"
+      ],
+      "categories": [
+        "quant-ph",
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.31117v1",
+      "published_at": "2026-08-31T17:26:27Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Aspire: Can Models Self-Evolve from Vague Goals?",
+      "title": "Aspire: Can Models Self-Evolve from Vague Goals?",
+      "url": "https://arxiv.org/abs/2608.31111v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31111v1",
+      "description": "Many important forms of human learning begin with a vague goal, such as \"become a better physicist\" or \"improve at research.\" Learners must interpret the goal, identify capability gaps, decide how to learn, and determine whether they have actually improved. In contrast, existing work on LLM self-evolution typically begins with tasks and evaluation metrics specified by humans, reducing self-evolution to optimizing an explicit objective rather than deciding what and how to learn. We introduce ASPI",
+      "authors": [
+        "Yuhao Wu",
+        "Jingyuan Zhang",
+        "Jiajun Shi",
+        "Yuxuan Zhang",
+        "Xinping Lei"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.31111v1",
+      "published_at": "2026-08-31T17:14:59Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Stress-Testing Efficient Responsible-AI Evaluation: When Compute Savings Change Benchmark Conclusions",
+      "title": "Stress-Testing Efficient Responsible-AI Evaluation: When Compute Savings Change Benchmark Conclusions",
+      "url": "https://arxiv.org/abs/2608.31108v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31108v1",
+      "description": "Efficient evaluation changes the protocol used to support claims about model behavior, yet it is rarely tested whether those claims remain stable after the evaluation itself is made cheaper. We stress-test conclusion robustness in responsible-AI benchmarking by evaluating three dense and mixture-of-experts models on BBQ and BBQ-V under seven conditions spanning batching, quantization, benchmark reduction, and their combinations. Rather than treating preserved aggregate accuracy as sufficient, we",
+      "authors": [
+        "Ahmed El Kady",
+        "Aravind Narayanan",
+        "Rehana Noorani",
+        "Yani Ioannou",
+        "Shaina Raza"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.31108v1",
+      "published_at": "2026-08-31T17:13:15Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "BLOOM-WILT: Logit Tilting for Behaviour Elicitation in Automated LLM Auditing",
+      "title": "BLOOM-WILT: Logit Tilting for Behaviour Elicitation in Automated LLM Auditing",
+      "url": "https://arxiv.org/abs/2608.31105v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31105v1",
+      "description": "Users of a deployed language model routinely encounter behaviours that testing almost never surfaces, since deployment puts the model through orders of magnitude more interactions than any evaluation can simulate. Automated auditors make testing cheap to scale and flexible enough to cover almost any specified behaviour, yet their lack of optimisation pressure makes them sample-inefficient. To address this shortcoming, we introduce BLOOM-WILT, a full auditing pipeline that elicits natural multi-t",
+      "authors": [
+        "Adrians Skapars",
+        "Edoardo Manino"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.31105v1",
+      "published_at": "2026-08-31T17:10:59Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "LLM Post-Training as Brownfield Maintenance: An Industrial Perspective on Dataware Engineering",
+      "title": "LLM Post-Training as Brownfield Maintenance: An Industrial Perspective on Dataware Engineering",
+      "url": "https://arxiv.org/abs/2608.31102v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31102v1",
+      "description": "Industrial post-training is a brownfield regime. Teams inherit a deployed checkpoint and must land targeted improvements under fixed compute and mixture budgets without regressing the rest. The maintained artifact is increasingly dataware: behavior governed by a curated post-training mixture, updated via bounded mixture patches rather than clean-slate retraining. From an industrial code-generation improvement effort, we offer a maintainer's perspective on why this work is hard in practice, disti",
+      "authors": [
+        "Gopi Krishnan Rajbahadur",
+        "Amir M. Ebrahimi",
+        "Boyuan Chen",
+        "Ahmed E. Hassan"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.31102v1",
+      "published_at": "2026-08-31T17:08:41Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "S3Gym: Can LLMs Turn Self-Testing and Self-Judging into Self-Improvement?",
+      "title": "S3Gym: Can LLMs Turn Self-Testing and Self-Judging into Self-Improvement?",
+      "url": "https://arxiv.org/abs/2608.31100v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31100v1",
+      "description": "Large language models (LLMs) increasingly interact with external environments and accumulate substantial behavioral experience, yet existing agent benchmarks largely evaluate them as fixed policies. It therefore remains unclear whether an agent can actively test its behavior, judge the resulting experience, and use that experience to improve future decisions. We introduce \\textbf{S\\textsuperscript{3}Gym}, an interactive benchmark for evaluating LLM self-improvement through three coupled capabili",
+      "authors": [
+        "Jiajun Shi",
+        "Siyuan Tao",
+        "Yuhao Wu",
+        "Zexuan Wang",
+        "Jingyuan Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.31100v1",
+      "published_at": "2026-08-31T17:05:41Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Cross-Regional Grapevine Cold Hardiness Prediction via Learned Multimodal Latent Representations",
+      "title": "Cross-Regional Grapevine Cold Hardiness Prediction via Learned Multimodal Latent Representations",
+      "url": "https://arxiv.org/abs/2608.31097v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31097v1",
+      "description": "Accurate daily predictions of cold hardiness in woody plants are critical in regions where freezing temperatures can damage dormant buds and reduce seasonal yield. Existing biophysical, hybrid, and deep learning models have shown high predictive accuracy when trained on local data but remain largely site-specific. The limited availability of cold hardiness data, coupled with the lack of principled methods for transferring cold hardiness predictions to new regions and cultivars, has limited the b",
+      "authors": [
+        "William Solow",
+        "Paola Pesantez-Cabrera",
+        "Markus Keller",
+        "Lav Khot",
+        "Sandhya Saisubramanian"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.31097v1",
+      "published_at": "2026-08-31T17:04:14Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "One Adapter, Many Tasks: Task-Conditioned Feature Transformations for Continual Learning",
+      "title": "One Adapter, Many Tasks: Task-Conditioned Feature Transformations for Continual Learning",
+      "url": "https://arxiv.org/abs/2608.31096v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31096v1",
+      "description": "Class-incremental learning (CIL) requires a model to incrementally learn tasks that contain new classes without accessing earlier training data while preserving the ability to recognize all seen classes. Recently, pretrained-model-based approaches have become prevalent by adapting a frozen backbone with additional lightweight trainable modules. Existing methods, however, exhibit limitations: task-specific adapters learn explicit per-task representations but are parameter- and computation-ineffic",
+      "authors": [
+        "Yunxiang Fu",
+        "Meng Lou",
+        "Yizhou Yu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.31096v1",
+      "published_at": "2026-08-31T17:03:45Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Minimax bounds for watermarked and masked recursive discrete distribution estimation",
+      "title": "Minimax bounds for watermarked and masked recursive discrete distribution estimation",
+      "url": "https://arxiv.org/abs/2608.31091v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31091v1",
+      "description": "Watermarking has been proposed as a way to identify synthetic samples in estimation settings where no metadata is available to distinguish them from real samples, but its precise effects remain unexplored. In the absence of a distinguishing mechanism, it has been shown that adding synthetic samples significantly reduces the marginal efficacy of new real samples. In this work, we study the minimax loss of such recursive discrete distribution estimation in the presence of watermarks in contrast to",
+      "authors": [
+        "Millen Kanabar",
+        "Michael Gastpar"
+      ],
+      "categories": [
+        "cs.IT",
+        "cs.LG",
+        "math.ST"
+      ],
+      "arxiv_id": "2608.31091v1",
+      "published_at": "2026-08-31T17:00:09Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "The First Token Is a Clue: Verbalizing Multi-Token Concepts from the J-lens",
+      "title": "The First Token Is a Clue: Verbalizing Multi-Token Concepts from the J-lens",
+      "url": "https://arxiv.org/abs/2608.31084v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31084v1",
+      "description": "The Jacobian Lens (J-lens) is a recent tool for interpreting LLMs. It reads a hidden state as a ranked list of vocabulary tokens, leaving multi-token concepts without a representation of their own. The original J-lens work addresses this limitation with Template Lens, which precomputes vectors for a fixed phrase vocabulary, and Oracle Lens, which fine-tunes components to propose phrases and reconstruct phrase vectors. We ask whether multi-token concepts and their vectors can instead be recovered",
+      "authors": [
+        "Xijie Gong",
+        "Tonghan Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.31084v1",
+      "published_at": "2026-08-31T16:56:20Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Token-Efficient Data Reasoning Agents via Adaptive Structuring of Unstructured Data",
+      "title": "Token-Efficient Data Reasoning Agents via Adaptive Structuring of Unstructured Data",
+      "url": "https://arxiv.org/abs/2608.31082v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31082v1",
+      "description": "Valuable data remains embedded in unstructured sources: web pages, reports, contracts, filings, earnings calls, and PDFs. The big bet in enterprise AI is deploying LLM agents that reason over this data to answer complex questions for every knowledge worker. Agents can do this today, but at prohibitive cost. Each question repeatedly opens large documents to recover scattered evidence, consuming up to a million tokens. However, if the data were already structured, the same question would reduce to",
+      "authors": [
+        "Milad Rezaei Hajidehi",
+        "Qitong Wang",
+        "Stratos Idreos"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.DB"
+      ],
+      "arxiv_id": "2608.31082v1",
+      "published_at": "2026-08-31T16:53:45Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Sycophantic Agreement Transfers with Neutral Data via Contrastive Preference Optimization",
+      "title": "Sycophantic Agreement Transfers with Neutral Data via Contrastive Preference Optimization",
+      "url": "https://arxiv.org/abs/2608.31079v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31079v1",
+      "description": "Sycophantic agreement refers to a behavior in which language models excessively affirm the user, often at the cost of factual accuracy. Although sycophantic agreement is a well-known failure of model alignment, there is limited understanding of how it emerges from model training. In this work, we demonstrate that sycophantic agreement can emerge as an unintended consequence of widely used contrastive preference optimization objectives. Using the OLMo 3 post-training pipeline, we show that, for v",
+      "authors": [
+        "Camila Blank",
+        "Zhuofan Ying",
+        "Christopher Potts",
+        "Peter Hase",
+        "Jing Huang"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2608.31079v1",
+      "published_at": "2026-08-31T16:52:57Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Reconciling Process Supervision with Outcome-Based Credit in Agentic Policy Optimization",
+      "title": "Reconciling Process Supervision with Outcome-Based Credit in Agentic Policy Optimization",
+      "url": "https://arxiv.org/abs/2608.31077v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31077v1",
+      "description": "Outcome-based reinforcement learning provides verified feedback for language-model agents, but assigns trajectory-level advantage uniformly to all decisions, yielding coarse credit over long-horizon interactions. On-policy self-distillation offers finer supervision by re-evaluating sampled behavior with privileged information (PI) available only during training. However, fine-grained supervision is not necessarily fine-grained credit: PI-induced likelihood changes describe how additional informa",
+      "authors": [
+        "Jingxiao Yang",
+        "Wangjie Gan",
+        "Yingxuan Zhuang",
+        "Wenqi Zhang",
+        "Jintao Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.31077v1",
+      "published_at": "2026-08-31T16:51:50Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Learning to Evaluate Before Improving: Automatic Rubric Induction for Automatic Research Agents",
+      "title": "Learning to Evaluate Before Improving: Automatic Rubric Induction for Automatic Research Agents",
+      "url": "https://arxiv.org/abs/2608.31076v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31076v1",
+      "description": "Autonomous scientific research agents are increasingly applied to end-to-end scientific workflows, including literature review, data analysis, experimentation, and report generation. However, open-ended research tasks often do not clearly specify the analyses, methods, and success criteria required to complete the task. As a result, agents may miss important analyses, use inappropriate methods, or draw conclusions that are insufficiently supported by evidence. To address the problem, we present ",
+      "authors": [
+        "Xuehai Wang",
+        "Haowei Qin",
+        "Tongxin Liu",
+        "Junkai Li",
+        "Buqiang Xu"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.IR",
+        "cs.LG",
+        "cs.MA",
+        "cs.SE"
+      ],
+      "arxiv_id": "2608.31076v1",
+      "published_at": "2026-08-31T16:48:51Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Scaling Large Reasoning Models beyond Human Supervision: A Path toward Superintelligence",
+      "title": "Scaling Large Reasoning Models beyond Human Supervision: A Path toward Superintelligence",
+      "url": "https://arxiv.org/abs/2608.31075v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31075v1",
+      "description": "Recent advances in large reasoning models (LRMs) have shown that reinforcement learning with verifiable rewards (RLVR) can substantially improve reasoning in mathematics and code, where outcomes can be checked automatically. Extending this progress to open-ended and agentic tasks remains difficult because reliable rewards are harder to obtain and direct human supervision cannot keep pace with the scale and complexity of model-generated experience. This paper studies how LRMs can continue to impr",
+      "authors": [
+        "Zhiqin Yang",
+        "Jingwen Fu",
+        "Yuhan Liu",
+        "Hengyu Liu",
+        "Yonggang Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.31075v1",
+      "published_at": "2026-08-31T16:48:48Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Real-Time Video Anomaly Detection Using YOLO Pose Estimation and CLIP-Based Semantic Scoring",
+      "title": "Real-Time Video Anomaly Detection Using YOLO Pose Estimation and CLIP-Based Semantic Scoring",
+      "url": "https://arxiv.org/abs/2608.31074v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31074v1",
+      "description": "We propose a lightweight two-stage framework for real-time video anomaly detection. The first stage employs YOLO v11n-pose to detect persons and extract seventeen skeletal keypoints in a single forward pass. The second stage encodes each cropped person region through CLIP ViT-B/32 and computes cosine similarity against predefined textual descriptions of anomalous behaviors. This architecture eliminates the need for optical flow, standalone pose estimators, and density-based scoring modules. Expe",
+      "authors": [
+        "Vanodhya G. Warnasooriya",
+        "Amir Hajian",
+        "Watchara Ruangsang",
+        "Supavadee Aramvith"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "eess.IV"
+      ],
+      "arxiv_id": "2608.31074v1",
+      "published_at": "2026-08-31T16:47:29Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "A Model with No Head and Many Thoughts",
+      "title": "A Model with No Head and Many Thoughts",
+      "url": "https://arxiv.org/abs/2608.31069v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31069v1",
+      "description": "Large language models decode by projecting hidden states through a large vocabulary head at every step. This operation is computationally costly and forces all reasoning to be expressed in discrete tokens. We introduce Soft Latent Thinking, a method that replaces the LM head during reasoning with a lightweight projector, enabling autoregressive rollout in embedding space where reasoning steps remain continuous rather than tokenized. Experiments on DeepSeek-Qwen-1.5B and LLaMA-3.2-3B show that So",
+      "authors": [
+        "Nikita Koriagin",
+        "Yaroslav Aksenov",
+        "George Bredis",
+        "Gleb Gerasimov",
+        "Nikita Balagansky"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "arxiv_id": "2608.31069v1",
+      "published_at": "2026-08-31T16:45:41Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Wrong Prediction, Right Answer: Recovering Evidence from Collapsed LLM Sequence Scores",
+      "title": "Wrong Prediction, Right Answer: Recovering Evidence from Collapsed LLM Sequence Scores",
+      "url": "https://arxiv.org/abs/2608.31068v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.31068v1",
+      "description": "When a large language model fails a reasoning task, it is often assumed to lack the underlying capability. However, this conflates a genuine absence of reasoning with a late-stage output bottleneck. We observe a consistent readout gap across diverse reasoning benchmarks: hidden-state probes successfully decode correct answers even when native sequence scoring completely collapses due to structural biases. To test whether instance-specific logic survives this collapse, we introduce a diagnostic p",
+      "authors": [
+        "Qiyao Yan",
+        "Chenpeng Wang",
+        "Liangming Pan"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2608.31068v1",
+      "published_at": "2026-08-31T16:43:55Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
