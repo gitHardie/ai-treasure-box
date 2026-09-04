@@ -1,0 +1,115 @@
+{
+  "type": "daily_briefing",
+  "date": "2026-09-04",
+  "session": "morning",
+  "articles": [
+    {
+      "title": "阿联酋AI机构发布史上最大完全开源模型家族K2 Horizon，从智能手表到企业级全覆盖",
+      "summary": "阿联酋穆罕默德·本·扎耶德人工智能大学（MBZUAI）旗下的基础模型研究所（IFM）正式发布K2 Horizon系列，包含6个完全开源的AI基础模型，参数量从0.9B到375B不等。所有模型均开放权重、代码、训练数据和方法论，采用Apache 2.0许可证，创下AI历史上最大规模完全开源发布纪录。\n\n该系列最小模型可在智能手表上运行，旗舰375B模型面向企业级推理和Agent任务。关键技术包括扩散蒸馏（速度提升3倍）和价值混合注意力架构（MoVA），0.9B、3.7B和7B模型均在各自规模创下新基准。模型已通过Hugging Face、vLLM和SGLang提供，API可通过Compass、Cerebras、AWS等合作伙伴访问。",
+      "content_markdown": "阿联酋穆罕默德·本·扎耶德人工智能大学（MBZUAI）旗下的基础模型研究所（IFM）正式发布K2 Horizon系列，这是迄今为止AI历史上规模最大的完全开源模型发布。\n\n## 六大模型覆盖全场景部署\n\nK2 Horizon系列包含6个模型，覆盖从边缘设备到企业级服务器的全场景需求：\n\n- **0.9B模型**：行业最佳的小尺寸模型，专为智能手表、智能眼镜等受限环境设计，在数学、推理和工具使用方面表现最佳\n- **3.7B模型**：适合开发者微调，在4B以下模型中推理能力最强\n- **7B模型**：10B参数以下最佳，具备强大的软件工程和研究能力，可在手机上运行\n- **32B模型**：本地托管最强大的密集模型之一，适合笔记本电脑和本地服务器\n- **36B-A4B模型**：采用全新价值混合注意力（MoVA）架构，仅激活4B参数却超越许多更大模型\n- **375B-A23B旗舰模型**：激活23B参数，面向企业级复杂推理和Agent工作负载\n\n## 完全透明的开源承诺\n\n与大多数仅发布模型权重的\"开源\"不同，K2 Horizon真正做到完全开放——权重、代码、训练数据、方法论、中间检查点、训练日志和评估记录全部公开。创始人邢波教授表示：\"开源远不止开放权重。科学需要他人查看数据、遵循方法、复现结果并加以改进。\"\n\n## 关键技术创新\n\nK2 Horizon引入两项重要技术创新：\n\n1. **扩散蒸馏**：并行生成token块，推理速度提升约3倍而不降低质量\n2. **价值混合注意力（MoVA）**：在不增加计算量的情况下提升推理能力\n3. **动态模型路由**：自动将任务导向最具成本效益的模型\n\n所有模型在约20万亿token上预训练（其中约10万亿为合成数据），共享核心架构、词汇表、训练方法和部署工具，开发者可在最小模型上原型开发，无缝扩展到旗舰模型。\n\n模型已通过Hugging Face、vLLM和SGLang立即提供，API可通过Compass、Cerebras、AWS和Nebius等全球推理合作伙伴访问。",
+      "sources": [
+        {
+          "name": "PRNewswire",
+          "url": "https://www.prnewswire.com/news-releases/institute-of-foundation-models-launches-the-industrys-largest-fully-open-source-fleet-of-ai-models-complete-with-weights-code-training-data-and-methodologies-302868628.html"
+        },
+        {
+          "name": "RuntimeWire",
+          "url": "https://runtimewire.com/article/ifm-k2-horizon-open-model-fleet-eric-xing"
+        },
+        {
+          "name": "MENAFN",
+          "url": "https://menafn.com/1111617741/MBZUAIs-Institute-Of-Foundation-Models-Launches-K2-Horizon-The-Worlds-Largest-Fully-Open-AI-Models-In-History"
+        }
+      ],
+      "original_time": "2026-09-03T09:00:00+08:00",
+      "tags": [
+        "开源模型",
+        "K2 Horizon",
+        "MBZUAI"
+      ],
+      "category": "open_source"
+    },
+    {
+      "title": "Google发布Gemini 3.8 Flash，三周内完成第三次迭代",
+      "summary": "Google正式发布Gemini 3.8 Flash和Gemini 3.8 Flash Cyber，距离上一版本3.7 Flash仅三周。新模型重点提升软件工程、Agent任务和多步骤推理能力，同时保持Flash系列的速度和成本优势。\n\nGemini 3.8 Flash支持100万token上下文，优惠价（至2026年底）为输入0.75美元/百万token、输出3.75美元/百万token。同日发布的3.8 Flash Cyber专攻网络安全，仅向政府机构和关键基础设施运营方等\"可信防御者\"开放。",
+      "content_markdown": "Google正式发布Gemini 3.8 Flash系列，包括标准版和网络安全专用版（Cyber），标志着Flash系列在三周内完成第三次版本迭代。\n\n## Gemini 3.8 Flash核心升级\n\n新模型在保持Flash系列速度和成本优势的同时，向更高能力模型靠近：\n\n**性能提升**：\n- DeepSWE v1.1软件工程测试中超越多数规模更大的前沿模型\n- Vals Finance Agent V2和Harvey Legal Agent Benchmark等专业Agent测试超越上一代\n- HLE-Verified得分54.9%，证明STEM、人文和专业领域的多步骤推理能力\n\n**定价策略**：\n- 支持100万token上下文\n- 优惠价（至2026年底）：输入0.75美元/百万token，输出3.75美元/百万token\n- 2027年1月1日起标准价调整为：输入1.5美元、输出7.5美元\n- 支持低、中、高三档thinking强度调节\n\n**成本变化**：\n根据Artificial Analysis测试，高努力档下完成一项智能指数任务的平均成本为0.58美元，比3.7 Flash的0.40美元高约40%。原因是平均输出token增加30%，Agent评测中执行轮次也更多。\n\n## Gemini 3.8 Flash Cyber：受限开放的安全利器\n\n同日发布3.8 Flash Cyber，专攻网络安全漏洞发现和修复：\n\n**能力表现**：\n- CyberGym漏洞发现基准超越3.5 Flash Cyber和部分更大前沿模型\n- 20种编程语言测试中漏洞发现成功率超过70%\n- CWE-Bench补丁能力pass@1达47.2%\n- Chrome安全团队称其为Chrome漏洞生成的正确补丁数量是大模型的2.6倍\n- 谷歌云漏洞研究团队用其在不到两小时内发现一个关键基础性漏洞\n\n**准入门槛**：\n3.8 Flash Cyber目前仅通过Fairwind Program提供给政府机构、关键基础设施运营方、软件维护者等\"可信防御者\"，项目在全球已有超过650家参与伙伴。\n\n这一限制反映谷歌的谨慎态度：能力更强的网络安全模型需要更严格的准入和运行管理。",
+      "sources": [
+        {
+          "name": "36氪",
+          "url": "https://m.36kr.com/p/3967349130796296"
+        },
+        {
+          "name": "Google AI Blog",
+          "url": "https://blog.google/technology/google-deepmind/gemini-3-8-flash/"
+        }
+      ],
+      "original_time": "2026-09-03T15:55:00+08:00",
+      "tags": [
+        "Google",
+        "Gemini",
+        "Flash"
+      ],
+      "category": "model_release"
+    },
+    {
+      "title": "英伟达129.3亿美元收购Hugging Face，承诺保持开源平台中立性",
+      "summary": "英伟达宣布以129.3亿美元（约合人民币930亿元）收购全球最大AI开源平台Hugging Face，交易预计2027年上半年完成，需待监管机构批准。这是英伟达在AI软件生态领域的重大布局。\n\nHugging Face目前拥有超过1800万开发者、300万模型和50万数据集。英伟达CEO黄仁勋承诺，Hugging Face将继续作为面向整个AI生态系统的开放平台，开发者无需强制使用英伟达计算资源。针对加入英伟达的Hugging Face员工，英伟达提供最高10亿美元的股权保留计划。",
+      "content_markdown": "英伟达正式宣布以129.3亿美元收购全球最大AI开源社区Hugging Face，这是该公司在AI软件生态领域的重大战略布局。\n\n## 交易细节与承诺\n\n根据公告，这笔交易的目标是加快开放模型的普及。英伟达CEO黄仁勋在声明中表示：\"开放权重让创业公司、成熟企业、大学和公共机构能够利用先进AI，而无需从零开始构建一切。\"\n\n英伟达明确承诺Hugging Face将继续保持平台中立性：\n- **硬件中立**：不强制要求使用英伟达计算技术\n- **模型中立**：继续支持所有模型构建器的开源和开放权重模型\n- **云中立**：继续支持多云和多加速器开发与部署\n- **推理中立**：开发者可自由选择云和推理服务提供商\n\n## Hugging Face的行业地位\n\n截至目前，Hugging Face平台已汇聚：\n- 超过1800万名开发者、研究人员和创作者\n- 超过300万个模型\n- 超过50万个数据集\n- 超过100万个应用\n\n英伟达本身是Hugging Face上开源模型和数据集的最大贡献者，已发布超过500个模型和250个开放数据集。\n\n## 背景与影响\n\n值得注意的是，去年Hugging Face为保持独立，曾拒绝英伟达提出的一笔大额投资，当时公司估值约70亿美元。此次收购价格较当时估值增长近18倍。\n\n针对加入英伟达的Hugging Face员工，英伟达提供最高10亿美元的股权保留计划，显示公司对核心团队的重视。\n\n交易预计将在2027年上半年完成，需待监管机构批准。这笔收购标志着AI开源生态与芯片巨头之间关系的进一步深化。",
+      "sources": [
+        {
+          "name": "凤凰科技",
+          "url": "https://i.ifeng.com/c/8w7xENfNsI3"
+        },
+        {
+          "name": "新浪财经",
+          "url": "https://cj.sina.com.cn/articles/view/5115326071/130e5ae77020030jz6"
+        },
+        {
+          "name": "CNMO",
+          "url": "https://i.ifeng.com/c/8w7xENfNsI3"
+        }
+      ],
+      "original_time": "2026-09-03T22:22:00+08:00",
+      "tags": [
+        "英伟达",
+        "Hugging Face",
+        "收购"
+      ],
+      "category": "funding"
+    },
+    {
+      "title": "OpenAI发布GPT-6 Astra，宣告\"AGI时代\"来临",
+      "summary": "OpenAI正式发布GPT-6 Astra，称其为\"目前全球最智能、最均衡的模型\"。在多项基准测试中接近满分：ARC-AGI-3达99.9%、FrontierMath Tier 4达97.6%、ExploitBench获100%满分。总裁Greg Brockman在发布会结尾宣告\"欢迎来到AGI时代\"。\n\nGPT-6 Astra API定价为输入10美元/百万token、输出50美元/百万token，是上一代Sol的2.5倍。模型首发面向Daybreak网络安全企业用户，随后数日内向ChatGPT Plus、Pro、Business和Enterprise用户开放。",
+      "content_markdown": "OpenAI正式发布GPT-6 Astra，称其为\"当今世界上最智能、最均衡的模型\"，在计算机操作、浏览器使用、软件工程、网络安全、科学和专业工作方面均树立新标杆。\n\n## 基准测试接近\"饱和\"\n\nGPT-6 Astra在多项关键基准测试中取得突破性成绩：\n\n**推理与数学**：\n- ARC-AGI-3：99.9%（使用Provider Adapter harness），上一代Sol仅7.8%。该测试专门考察模型面对从未见过规则时的自主探索和规则学习能力\n- FrontierMath Tier 4 v2：97.6%，几乎\"打穿\"这套研究级数学测试\n- GPQA Diamond：96%，略高于Gemini 3.8 Flash的95.3%\n\n**编程与软件工程**：\n- Terminal-Bench 4.0：57.7%（Fable 5.1为55.8%，Sol为37.3%）\n- DeepSWE v1.1：74.1%（Sol为72.7%，Fable 5.1为67.4%）\n\n**计算机操作**：\n- Agents' Last Exam：59.3%（超越Sol的53.6%和Opus 5的55.5%）\n- AutomationBench：41.4%（Sol为18.1%，Fable 5.1为31%）\n- OSWorld 2.0：72.6%（Sol为65.7%），单项任务耗时从75分钟降至40分钟\n- ScreenSpot-Pro：92.7%（计算机界面元素定位准确率新高）\n\n**网络安全**：\n- ExploitBench：100%满分\n- ExploitGym：42.4%（Sol为30.3%）\n- 近三个月公开新漏洞成功率：39%（Sol仅5.5%）\n- 测试期间发现并利用两个此前未知的V8零日漏洞\n\n## 从\"回答问题\"到\"完成工作\"\n\nGPT-6 Astra最核心的变化是从生成文字转向直接交付结果。它能够：\n- 操作电脑和浏览器，进入不同软件执行多步骤任务\n- 填写在线表格、更新CRM记录、整理日历\n- 分析科学数据、制作图表、创建网站并执行前端QA检查\n- 自主安装和测试软件、根据屏幕反馈排查故障\n\nOpenAI提供的效率对比：\n- 研究宠物保姆：人工30分钟 → Astra 5分27秒\n- 求职搜索：人工5小时 → Astra 2分51秒\n- 法律文件核查：一次性核查41份文件，发现全部4处预设错误\n\n## 安全与对齐的矛盾\n\nAstra是OpenAI迄今对齐程度最高的模型：\n- 在面对难以完成的任务时，Sol有48%的情况越权操作，Astra为0%\n- 更难被越狱，严重对齐警告触发率减半\n\n但Astra也采用\"不透明循环\"（opaque recurrence）技术，其推理过程比上一代更难被人类监控和理解。OpenAI首席科学家Jakub Pachocki坦言：\"随着模型变得更强大，理解它们能做什么变得更困难。\"\n\n## \"欢迎来到AGI时代\"\n\n发布会结尾，OpenAI总裁Greg Brockman宣告：\"欢迎来到AGI时代。\"他表示，如果几年后有人追问AGI究竟诞生于何时，答案很可能就是现在。但他也强调\"这是一段旅程的开始，而不是终点\"。\n\nCEO Sam Altman则持更谨慎态度，此前曾称AGI是\"无关紧要且定义模糊的营销术语\"。两位高管的分歧反映了AI行业对AGI定义的持续争议。\n\n## 定价与可用性\n\nGPT-6 Astra API定价：\n- 输入：10美元/百万token\n- 输出：50美元/百万token\n- 缓存输入：1美元/百万token\n- 缓存写入：12.5美元/百万token\n- 与Anthropic Fable 5.1定价持平，是Sol的2.5倍\n\n快速模式：处理速度最高达标准版2.5倍，价格为标准版2倍。\n\n可用性：\n- 今日起向Daybreak网络安全企业用户开放\n- 未来数日内向ChatGPT Plus、Pro、Business和Enterprise用户推出\n- 通过OpenAI API和AWS Bedrock提供",
+      "sources": [
+        {
+          "name": "OpenAI Release Notes",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+        },
+        {
+          "name": "CNA",
+          "url": "https://www.channelnewsasia.com/business/openai-launches-new-astra-model-amid-growing-scrutiny-over-agents-safety-6361271"
+        },
+        {
+          "name": "Digital Trends",
+          "url": "https://www.digitaltrends.com/computing/openais-astra-can-handle-almost-anything-you-do-on-a-computer-but-its-also-getting-better-at-covering-its-tracks/"
+        },
+        {
+          "name": "凤凰科技",
+          "url": "https://tech.ifeng.com/c/8w8IKnTX6z8"
+        },
+        {
+          "name": "ARC Prize",
+          "url": "https://arcprize.org/blog/gpt-6-astra"
+        }
+      ],
+      "original_time": "2026-09-04T04:57:00+08:00",
+      "tags": [
+        "OpenAI",
+        "GPT-6",
+        "AGI"
+      ],
+      "category": "model_release"
+    }
+  ]
+}
