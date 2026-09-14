@@ -456113,5 +456113,3607 @@
     "tool_id": "aibot_果核剥壳",
     "ai_relevance": "not-ai",
     "rejected_at": "2026-09-14T12:38:06.412968+00:00"
+  },
+  {
+    "name": "Type Diversity Enables Transformers to Generalise Compositionally",
+    "title": "Type Diversity Enables Transformers to Generalise Compositionally",
+    "url": "https://arxiv.org/abs/2609.13144v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13144v1",
+    "description": "Compositional generalisation has been divided into lexical and structural generalisation. Previous work has found that structural generalisation is harder than lexical for Transformers. We propose that this difference is not inherent to Transformers, but due to the high diversity of lexical types and low diversity of structural types in the specific datasets of these previous works. By type diversity we mean the number of different constructors of that type, instead of, for example, the specific",
+    "authors": [
+      "Anssi Moisio",
+      "Mathias Creutz",
+      "Mikko Kurimo"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "arxiv_id": "2609.13144v1",
+    "published_at": "2026-09-11T17:59:07Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_type-diversity-enables-transformers-to-generalise-compositionally",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "Transformer"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Type Diversity Enables Transformers to Generalise Compositionally：compositional generalisation has been divided into lexical and structural generalisation.。付费，面向研究人员和学术场景。",
+    "features": [
+      "开发辅助",
+      "代码工具"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_type-diversity-enables-transformers-to-generalise-compositionally",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "SAS: Simple Attention Sparsification via End-to-End Optimization of Context Ranking",
+    "title": "SAS: Simple Attention Sparsification via End-to-End Optimization of Context Ranking",
+    "url": "https://arxiv.org/abs/2609.13141v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13141v1",
+    "description": "Post-training attention sparsification reduces the quadratic cumulative attention cost of pretrained Transformers by selecting a small set of context units (tokens or blocks) for each query. Existing trainable methods usually use a lightweight selector to score context units, followed by hard Top-K selection that blocks gradients from the language modeling loss. Consequently, these methods commonly distill layer-wise dense attention distributions. Although this encourages the selector to rank co",
+    "authors": [
+      "Zhiwei Li",
+      "Lei Zhu",
+      "Hao Gu",
+      "Xiang Hu",
+      "Yan Wang"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "arxiv_id": "2609.13141v1",
+    "published_at": "2026-09-11T17:58:06Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_sas-simple-attention-sparsification-via-end-to-end-optimization-of-context-ranki",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "模型研究",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "RAG",
+        "Transformer"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "SAS: Simple Attention Sparsification via End-to-End Optimization of Context Ranking：post-training attention sparsification reduces the quadratic cumulative attention cost of pretrained transformers by selecting a small set of context 。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_sas-simple-attention-sparsification-via-end-to-end-optimization-of-context-ranki",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Rethinking Heterogeneous System Disaggregation for Subquadratic Attention",
+    "title": "Rethinking Heterogeneous System Disaggregation for Subquadratic Attention",
+    "url": "https://arxiv.org/abs/2609.13134v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13134v1",
+    "description": "Frontier language models are more aggressively using subquadratic attention to reduce the memory footprint and compute requirements during inference while still delivering frontier accuracy. While existing systems make dense attention-centric disaggregated serving decisions, we show that disaggregating inference around the unique arithmetic intensity and memory footprint of subquadratic attention LLMs can achieve significant throughput and energy efficiency gains on emerging DRAM-based and SRAM-",
+    "authors": [
+      "Arya Tschand",
+      "Yaosheng Fu",
+      "Vikram Sharma Mailthody",
+      "Nicolai Oswald",
+      "Po-An Tsai"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "arxiv_id": "2609.13134v1",
+    "published_at": "2026-09-11T17:55:45Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_rethinking-heterogeneous-system-disaggregation-for-subquadratic-attention",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "模型研究",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Rethinking Heterogeneous System Disaggregation for Subquadratic Attention：frontier language models are more aggressively using subquadratic attention to reduce the memory footprint and compute requirements during inference w。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "实时处理"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_rethinking-heterogeneous-system-disaggregation-for-subquadratic-attention",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "A Hybrid LSTM-XGBoost Framework for Multi-Horizon Stock Return Prediction Across Diversified Equity Portfolios",
+    "title": "A Hybrid LSTM-XGBoost Framework for Multi-Horizon Stock Return Prediction Across Diversified Equity Portfolios",
+    "url": "https://arxiv.org/abs/2609.13125v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13125v1",
+    "description": "Accurate prediction of equity returns remains a major challenge in computational finance due to the non-stationary, nonlinear, and low signal-to-noise ratio nature of financial time series. This paper proposes a hybrid two-stage architecture that combines a long short-term memory (LSTM) network with an XGBoost gradient-boosted regressor for multi-horizon stock return prediction across a diversified panel of 14 U.S. equities spanning six industry sectors. The LSTM component, comprising two stacke",
+    "authors": [
+      "Seif ElDein Mostafa",
+      "Yahia Ahmed",
+      "Farah Datwish",
+      "Marwa Solayman"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "arxiv_id": "2609.13125v1",
+    "published_at": "2026-09-11T17:51:47Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_a-hybrid-lstm-xgboost-framework-for-multi-horizon-stock-return-prediction-across",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "A - Wikipedia Pronunciation of the name of the letter a in European languages. /a/ and /aː/ can differ phonetically between [a], [ä], [æ] and [ɑ] …",
+        "Letter A Song - YouTube Aug 18, 2010 · The Letter A Song by Have Fun Teaching is a great way to learn all about the Letter A. Get unlimited teaching resources: …",
+        "Type A with Accent À, Á, Â, Ã, Ä, Å or à, á, â, ã, ä, å 21 hours ago · On Windows, you can type A with an accent mark in several ways, depending on your keyboard layout and operating system …"
+      ],
+      "top_results": [
+        {
+          "title": "A - Wikipedia",
+          "href": "https://en.m.wikipedia.org/wiki/A",
+          "snippet": "Pronunciation of the name of the letter a in European languages. /a/ and /aː/ can differ phonetically between [a], [ä], [æ] and [ɑ] …"
+        },
+        {
+          "title": "Letter A Song - YouTube",
+          "href": "https://m.youtube.com/watch?v=hBAuIzZttP4",
+          "snippet": "Aug 18, 2010 · The Letter A Song by Have Fun Teaching is a great way to learn all about the Letter A. Get unlimited teaching resources: …"
+        },
+        {
+          "title": "Type A with Accent À, Á, Â, Ã, Ä, Å or à, á, â, ã, ä, å",
+          "href": "https://ilifehacks.com/a-with-accent/",
+          "snippet": "21 hours ago · On Windows, you can type A with an accent mark in several ways, depending on your keyboard layout and operating system …"
+        },
+        {
+          "title": "The Letter A | Alphabet A-Z | Jack Hartmann Alphabet Song",
+          "href": "https://m.youtube.com/watch?v=0PTfZNg9ri8",
+          "snippet": "Jul 27, 2020 · Learn to recognize the upper and lowercase letter A, how to write the letter A and the short and long vowel sounds that letter A …"
+        },
+        {
+          "title": "À - Wikipedia",
+          "href": "https://en.m.wikipedia.org/wiki/À",
+          "snippet": "À (minuscule: à), known as A-grave, is a Latin-script character composed of the letter A and a grave accent."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "金融科技",
+    "subcategory": "股票分析",
+    "audience": "general",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=金融科技 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "学术研究"
+      ],
+      "attribute": [
+        "移动端"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "A Hybrid LSTM-XGBoost Framework for Multi-Horizon Stock Return Prediction Across Diversified Equity Portfolios：A - Wikipedia Pronunciation of the name of the letter a in European languages. /a/ and /aː/ can differ phonetically between [a], [ä], [æ] and [ɑ] …。付费，适合普通用户直接使用。",
+    "features": [
+      "AI驱动",
+      "SDK集成"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_a-hybrid-lstm-xgboost-framework-for-multi-horizon-stock-return-prediction-across",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "CMA-OT: Hierarchical Expert Supervision for Dance-to-Music Generation",
+    "title": "CMA-OT: Hierarchical Expert Supervision for Dance-to-Music Generation",
+    "url": "https://arxiv.org/abs/2609.13118v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13118v1",
+    "description": "Dance-to-music (D2M) generation aims to synthesize music that is rhythmically and stylistically aligned with dance videos. A key challenge arises from the semantic mismatch between sparse dance cues, such as rhythm and style, and the dense information required for music composition, including structure, instrumentation, and expressive dynamics. Existing methods typically rely on these sparse cues and supervise only the final audio output, resulting in poorly learned music representations and gen",
+    "authors": [
+      "Jinting Wang",
+      "Chenxing Li",
+      "Dong Yu",
+      "Li Liu"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.SD"
+    ],
+    "arxiv_id": "2609.13118v1",
+    "published_at": "2026-09-11T17:46:15Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_cma-ot-hierarchical-expert-supervision-for-dance-to-music-generation",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "音视频",
+    "subcategory": "",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=音视频 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "视频生成"
+      ],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "CMA-OT: Hierarchical Expert Supervision for Dance-to-Music Generation：dance-to-music (d2m) generation aims to synthesize music that is rhythmically and stylistically aligned with dance videos.。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_cma-ot-hierarchical-expert-supervision-for-dance-to-music-generation",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "A Ranking Approach for Measuring Calibration",
+    "title": "A Ranking Approach for Measuring Calibration",
+    "url": "https://arxiv.org/abs/2609.13100v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13100v1",
+    "description": "When providing forecasted probabilities with a predictive model, the ideal model offers perfect calibration: the true probability of the outcome (i.e., the probability that $Y=1$) exactly matches the forecasted probability $f(X)$. In practice, models inevitably exhibit calibration error, and it is therefore important to be able to measure this miscalibration to assess a model's reliability. The Expected Calibration Error (ECE) is the most widely used measure of miscalibration, but is known to be",
+    "authors": [
+      "Anirban Chatterjee",
+      "Rina Foygel Barber"
+    ],
+    "categories": [
+      "stat.ME",
+      "cs.LG",
+      "stat.ML"
+    ],
+    "arxiv_id": "2609.13100v1",
+    "published_at": "2026-09-11T17:34:25Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_a-ranking-approach-for-measuring-calibration",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "A - Wikipedia Pronunciation of the name of the letter a in European languages. /a/ and /aː/ can differ phonetically between [a], [ä], [æ] and [ɑ] …",
+        "Letter A Song - YouTube Aug 18, 2010 · The Letter A Song by Have Fun Teaching is a great way to learn all about the Letter A. Get unlimited teaching …",
+        "Type A with Accent À, Á, Â, Ã, Ä, Å or à, á, â, ã, ä, å 21 hours ago · On Windows, you can type A with an accent mark in several ways, depending on your keyboard layout and operating …"
+      ],
+      "top_results": [
+        {
+          "title": "A - Wikipedia",
+          "href": "https://en.m.wikipedia.org/wiki/A",
+          "snippet": "Pronunciation of the name of the letter a in European languages. /a/ and /aː/ can differ phonetically between [a], [ä], [æ] and [ɑ] …"
+        },
+        {
+          "title": "Letter A Song - YouTube",
+          "href": "https://m.youtube.com/watch?v=hBAuIzZttP4",
+          "snippet": "Aug 18, 2010 · The Letter A Song by Have Fun Teaching is a great way to learn all about the Letter A. Get unlimited teaching …"
+        },
+        {
+          "title": "Type A with Accent À, Á, Â, Ã, Ä, Å or à, á, â, ã, ä, å",
+          "href": "https://ilifehacks.com/a-with-accent/",
+          "snippet": "21 hours ago · On Windows, you can type A with an accent mark in several ways, depending on your keyboard layout and operating …"
+        },
+        {
+          "title": "The Letter A | Alphabet A-Z | Jack Hartmann Alphabet Song",
+          "href": "https://m.youtube.com/watch?v=0PTfZNg9ri8",
+          "snippet": "Jul 27, 2020 · Learn to recognize the upper and lowercase letter A, how to write the letter A and the short and long vowel sounds that …"
+        },
+        {
+          "title": "À - Wikipedia",
+          "href": "https://en.m.wikipedia.org/wiki/À",
+          "snippet": "À (minuscule: à), known as A-grave, is a Latin-script character composed of the letter A and a grave accent."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "A Ranking Approach for Measuring Calibration：A - Wikipedia Pronunciation of the name of the letter a in European languages. /a/ and /aː/ can differ phonetically between [a], [ä], [æ] and [ɑ] …。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "数据导入导出"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_a-ranking-approach-for-measuring-calibration",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked Robots with Language-Guided Neural-Kinematic MPC",
+    "title": "ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked Robots with Language-Guided Neural-Kinematic MPC",
+    "url": "https://arxiv.org/abs/2609.13083v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13083v1",
+    "description": "In urban search and rescue, articulated tracked robots (ATRs) must traverse structured but contact-rich environments such as stairwells and cluttered building interiors. Reliable autonomy remains challenging because robot-terrain interaction (RTI) is hybrid and discontinuous, and effective flipper-track coordination is difficult to model analytically. We present ASTRIL-MPC, a language-guided neural kinematics model predictive control (MPC) framework for autonomous traversal. A learned kinematics",
+    "authors": [
+      "Zhenfeng Gan",
+      "Yanbo Chen",
+      "Lirong Che",
+      "Junbo Tan",
+      "Xueqian Wang"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "arxiv_id": "2609.13083v1",
+    "published_at": "2026-09-11T17:17:52Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_astril-mpc-autonomous-traversal-framework-of-articulated-tracked-robots-with-lan",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked ... 3 days ago · ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked Robots with Language - Guided Neural - Kinematic MPC",
+        "ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked ... [2609.13083v1] In urban search and rescue, articulated tracked robots (ATRs) must traverse structured but contact-rich environments such …",
+        "ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked ... In urban search and rescue, articulated tracked robots (ATRs) must traverse structured but contact-rich environments such as stairwells …"
+      ],
+      "top_results": [
+        {
+          "title": "ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked ...",
+          "href": "https://arxiv.org/html/2609.13083v1",
+          "snippet": "3 days ago · ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked Robots with Language - Guided Neural - Kinematic MPC"
+        },
+        {
+          "title": "ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked ...",
+          "href": "https://arxiv.deeppaper.ai/papers/2609.13083v1",
+          "snippet": "[2609.13083v1] In urban search and rescue, articulated tracked robots (ATRs) must traverse structured but contact-rich environments such …"
+        },
+        {
+          "title": "ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked ...",
+          "href": "https://papers.cool/arxiv/2609.13083",
+          "snippet": "In urban search and rescue, articulated tracked robots (ATRs) must traverse structured but contact-rich environments such as stairwells …"
+        },
+        {
+          "title": "TL;DR: ASTRIL-MPC: Autonomous Traversal Framework of Articulated ...",
+          "href": "https://arxivtldr.org/abs/2609.13083",
+          "snippet": "3 days ago · ASTRIL-MPC enables autonomous traversal for articulated tracked robots using language-guided neural-kinematic model …"
+        },
+        {
+          "title": "Robotics Paper Digest — 2026-09-14 · Changda Tian",
+          "href": "https://www.cdtian.com/digest/2026-09-14/",
+          "snippet": "21 hours ago · 4. ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked Robots with Language-Guided Neural …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=3 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked Robots with Language-Guided Neural-Kinematic MPC：ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked ... 3 days ago · ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked R。，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "自动化",
+      "SDK集成"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_astril-mpc-autonomous-traversal-framework-of-articulated-tracked-robots-with-lan",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Embodied-BenchForge: A Closed-Loop Agentic Workflow for Embodied Benchmark Construction",
+    "title": "Embodied-BenchForge: A Closed-Loop Agentic Workflow for Embodied Benchmark Construction",
+    "url": "https://arxiv.org/abs/2609.13082v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13082v1",
+    "description": "Agentic systems offer a promising way to automate embodied benchmark construction, but existing approaches typically cover isolated stages or remain specialized to predefined environments and task families. More importantly, multi-step construction produces dependent intermediate artifacts that are often passed downstream without artifact-specific verification, allowing local defects to propagate into the final benchmark. We present Embodied-BenchForge, an agentic framework that transforms user-",
+    "authors": [
+      "Baoyang Jiang",
+      "Fengchun Zhang",
+      "Leyuan Wang",
+      "Haotian Li",
+      "Yida Wang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "arxiv_id": "2609.13082v1",
+    "published_at": "2026-09-11T17:16:01Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_embodied-benchforge-a-closed-loop-agentic-workflow-for-embodied-benchmark-constr",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "AI Agent",
+    "subcategory": "Agent框架",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=AI Agent 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "自动化"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Embodied-BenchForge: A Closed-Loop Agentic Workflow for Embodied Benchmark Construction：agentic systems offer a promising way to automate embodied benchmark construction, but existing approaches typically cover isolated stages or remain s。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "本地运行",
+      "自动化"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_embodied-benchforge-a-closed-loop-agentic-workflow-for-embodied-benchmark-constr",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant",
+    "title": "MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant",
+    "url": "https://arxiv.org/abs/2609.13076v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13076v1",
+    "description": "Conversational voice agents have advanced significantly, offering increasingly natural human-machine interactions through both cascaded and end-to-end architectures. However, while recent benchmarks extensively evaluate dyadic interactions and passive audio comprehension, they largely overlook a prevalent real-world scenario: multi-party conversations. Evaluating agents in these settings is fundamentally more challenging than in dyadic interactions due to the exponentially greater conversational",
+    "authors": [
+      "Yi-Jen Shih",
+      "Shih-Yun Shan Kuan",
+      "Guan-Ting Lin",
+      "Kai-Wei Chang",
+      "Siddhant Arora"
+    ],
+    "categories": [
+      "eess.AS",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "arxiv_id": "2609.13076v1",
+    "published_at": "2026-09-11T17:11:55Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_mp-bench-evaluating-voice-agents-as-a-multiparty-conversation-participant",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "AI Agent",
+    "subcategory": "Agent框架",
+    "audience": "general",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=AI Agent 实用性=3 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "语音合成",
+        "对话"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "MP-Bench: Evaluating Voice Agents as a Multiparty Conversation Participant：conversational voice agents have advanced significantly, offering increasingly natural human-machine interactions through both cascaded and end-to-end。，适合普通用户直接使用。",
+    "features": [
+      "实用工具"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_mp-bench-evaluating-voice-agents-as-a-multiparty-conversation-participant",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Autonomous Research for Open-Ended Problems: A Case Study on Telecom Ticket Retrieval",
+    "title": "Autonomous Research for Open-Ended Problems: A Case Study on Telecom Ticket Retrieval",
+    "url": "https://arxiv.org/abs/2609.13073v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13073v1",
+    "description": "Recent breakthroughs in LLM-based systems and their abilities in problem solving and coding have allowed progress in the AI for Science paradigm, potentially replacing human roles in machine learning (ML) research. However, while several frameworks of fully autonomous end-to-end ML research have been proposed, successful implementations of them are often limited to problems with narrow search spaces, like language modeling or biomedical ML benchmarks. In this paper, we explore how autonomous res",
+    "authors": [
+      "Junghyun Min",
+      "Huseyin Uzunalioglu",
+      "Mohamed Trabelsi"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.IR",
+      "cs.LG"
+    ],
+    "arxiv_id": "2609.13073v1",
+    "published_at": "2026-09-11T17:09:15Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_autonomous-research-for-open-ended-problems-a-case-study-on-telecom-ticket-retri",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "论文工具",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=2 低于阈值",
+    "license_tier": "freemium",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [
+        "教育学习",
+        "学术研究"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Autonomous Research for Open-Ended Problems: A Case Study on Telecom Ticket Retrieval：recent breakthroughs in llm-based systems and their abilities in problem solving and coding have allowed progress in the ai for science paradigm, pote。免费增值，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "开源免费",
+      "自动化"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "提供免费层，高级功能按需付费",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_autonomous-research-for-open-ended-problems-a-case-study-on-telecom-ticket-retri",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "MAxBench: A Multinomial Concept Recovery Benchmark",
+    "title": "MAxBench: A Multinomial Concept Recovery Benchmark",
+    "url": "https://arxiv.org/abs/2609.13072v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13072v1",
+    "description": "Fine-grained control of language model behaviors (e.g., steering) is among the more actionable outcomes of interpretability research. For binary concepts such as refusal, a single direction in activation space often suffices for steering. However, many concepts are not binary: Animals and Countries contain many subcategories, each with multiple instances. For these concepts, the search space over possible representation geometries is far larger than for binary concepts; it is thus not clear what",
+    "authors": [
+      "Divya Appapogu",
+      "Freya Behrens",
+      "Yonatan Belinkov",
+      "Aaron Mueller"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "arxiv_id": "2609.13072v1",
+    "published_at": "2026-09-11T17:08:57Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_maxbench-a-multinomial-concept-recovery-benchmark",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "数据资源",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [
+        "学术研究"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "MAxBench: A Multinomial Concept Recovery Benchmark：fine-grained control of language model behaviors (e.g., steering) is among the more actionable outcomes of interpretability research.。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_maxbench-a-multinomial-concept-recovery-benchmark",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Involving before Evolving: A Vision for Trustworthy Enterprise Digital Twin Engineering",
+    "title": "Involving before Evolving: A Vision for Trustworthy Enterprise Digital Twin Engineering",
+    "url": "https://arxiv.org/abs/2609.13071v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13071v1",
+    "description": "Enterprise Digital Twins (EDTs) promise data-driven decision support at organizational scale, but realizing them requires navigating siloed departments, tacit knowledge, and high-stakes decisions with long-horizon consequences. Existing approaches involve domain experts during model development but focus less on early organizational buy-in in EDTs. We present a vision for trustworthy EDT engineering grounded in an `involving before evolving' paradigm: rapidly involving stakeholders through a wor",
+    "authors": [
+      "Kérian Fiter",
+      "Adil Lagrou",
+      "Franck Dervault",
+      "Bentley Oakes"
+    ],
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.HC"
+    ],
+    "arxiv_id": "2609.13071v1",
+    "published_at": "2026-09-11T17:06:48Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_involving-before-evolving-a-vision-for-trustworthy-enterprise-digital-twin-engin",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "企业团队"
+      ],
+      "attribute": [
+        "API服务"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Involving before Evolving: A Vision for Trustworthy Enterprise Digital Twin Engineering：enterprise digital twins (edts) promise data-driven decision support at organizational scale, but realizing them requires navigating siloed department。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "API接口"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_involving-before-evolving-a-vision-for-trustworthy-enterprise-digital-twin-engin",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Anchoring Clinical Events in Time: UID-Preserving Multimodal Reconstruction and Source-Grounded Adjudication",
+    "title": "Anchoring Clinical Events in Time: UID-Preserving Multimodal Reconstruction and Source-Grounded Adjudication",
+    "url": "https://arxiv.org/abs/2609.13062v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13062v1",
+    "description": "Clinical timelines support treatment-window analysis and leakage-free modeling, but discharge summaries often obscure chronology and structured EHR tables describe only part of the patient course. We present a UID-preserving framework that links each narrative event occurrence to its source span and retains that identity through text-only estimation, structured-evidence retrieval, timestamped source-row grounding, and joint revision. We also present GAVEL, an LLM judge that compares two UID-alig",
+    "authors": [
+      "Sayantan Kumar",
+      "Nicolas Grimaldi",
+      "Jack Cummins",
+      "Jeremy C. Weiss"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "arxiv_id": "2609.13062v1",
+    "published_at": "2026-09-11T17:01:10Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_anchoring-clinical-events-in-time-uid-preserving-multimodal-reconstruction-and-s",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=3 低于阈值",
+    "license_tier": "free",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索",
+        "数据分析"
+      ],
+      "scenario": [],
+      "attribute": [
+        "免费"
+      ],
+      "tech": [
+        "Multi-modal"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Anchoring Clinical Events in Time: UID-Preserving Multimodal Reconstruction and Source-Grounded Adjudication：clinical timelines support treatment-window analysis and leakage-free modeling, but discharge summaries often obscure chronology and structured ehr ta。免费，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "开源免费",
+      "CLI工具"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "免费使用，零成本上手",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_anchoring-clinical-events-in-time-uid-preserving-multimodal-reconstruction-and-s",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "CanvasAnneal: Curriculum Reinforcement Learning for Diffusion Language Models",
+    "title": "CanvasAnneal: Curriculum Reinforcement Learning for Diffusion Language Models",
+    "url": "https://arxiv.org/abs/2609.13060v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13060v1",
+    "description": "Diffusion Language Models (DLMs) offer promising parallel generation capabilities but lag behind autoregressive models in complex reasoning and tool-use tasks. While Reinforcement Learning (RL) has recently been applied to enhance DLMs, standard RL approaches suffer from an exploration bottleneck. To address this, we inject reasoning priors from a stronger teacher model to guide RL exploration. In this paper, we introduce CanvasAnneal, a curriculum-guided diffusion RL framework. During the initi",
+    "authors": [
+      "Blake Olson",
+      "Yuhang Song",
+      "Emmett McQuinn",
+      "Yuan Shangguan"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "arxiv_id": "2609.13060v1",
+    "published_at": "2026-09-11T16:59:52Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_canvasanneal-curriculum-reinforcement-learning-for-diffusion-language-models",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 5,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=5 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习",
+        "学术研究"
+      ],
+      "attribute": [],
+      "tech": [
+        "Diffusion"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "CanvasAnneal: Curriculum Reinforcement Learning for Diffusion Language Models：diffusion language models (dlms) offer promising parallel generation capabilities but lag behind autoregressive models in complex reasoning and tool-u。付费，适合普通用户直接使用。",
+    "features": [
+      "AI驱动",
+      "自动化",
+      "SDK集成"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_canvasanneal-curriculum-reinforcement-learning-for-diffusion-language-models",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Expert-Space Exploration in MoE Reinforcement Learning",
+    "title": "Expert-Space Exploration in MoE Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2609.13058v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13058v1",
+    "description": "Reinforcement learning (RL) has become central to post-training of large language models. Recent advances in RL for Mixture-of-Experts (MoE) models have primarily focused on improving optimization stability and training efficiency, while treating the expert selection as a fixed component. Since routing determines the sparse computation paths that induce output distributions, expert selection offers an additional source of rollout diversity. Through empirical analysis, we find that perturbing exp",
+    "authors": [
+      "Hongyi He",
+      "Zhenghao Lin",
+      "Xiao Liu",
+      "Peng Cheng",
+      "Yan Lu"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "arxiv_id": "2609.13058v1",
+    "published_at": "2026-09-11T16:58:41Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_expert-space-exploration-in-moe-reinforcement-learning",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "数据分析",
+    "subcategory": "数据分析",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=数据分析 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "数据分析"
+      ],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Expert-Space Exploration in MoE Reinforcement Learning：reinforcement learning (rl) has become central to post-training of large language models.。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_expert-space-exploration-in-moe-reinforcement-learning",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Benign Loss Landscapes Can Coexist with Worst-Case Hardness",
+    "title": "Benign Loss Landscapes Can Coexist with Worst-Case Hardness",
+    "url": "https://arxiv.org/abs/2609.13057v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13057v1",
+    "description": "Deep neural networks are expressive enough to contain worst-case targets that can be evaluated in polynomial time but cannot be learned in polynomial time by gradient descent. For practical tasks they nonetheless learn well, raising the question of what non-generic structure of real-world targets enables this. Existing surrogate models cannot pose this question because they either lack hard-to-learn targets entirely (deep linear networks) or cannot evaluate such targets efficiently (kernel metho",
+    "authors": [
+      "Zach Furman",
+      "Stephan Wäldchen",
+      "Yangda Bei",
+      "Liam Hodgkinson"
+    ],
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "arxiv_id": "2609.13057v1",
+    "published_at": "2026-09-11T16:57:02Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_benign-loss-landscapes-can-coexist-with-worst-case-hardness",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "BENIGN Definition & Meaning - Merriam-Webster Sep 1, 2011 · Benign traces back to the Latin adjective benignus, which was formed from bene, meaning \"well,\" and the verb …",
+        "What Is Benign? Causes, Symptoms & Medical Meaning Nov 19, 2025 · In a clinical setting, benign refers to a condition that is not harmful, not cancerous, and does not spread. It …",
+        "What Is a Benign Lesion and Can It Become Cancer? Mar 10, 2026 · Benign lesions are common, can appear almost anywhere in the body, and most are harmless, though some can …"
+      ],
+      "top_results": [
+        {
+          "title": "BENIGN Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/benign",
+          "snippet": "Sep 1, 2011 · Benign traces back to the Latin adjective benignus, which was formed from bene, meaning \"well,\" and the verb …"
+        },
+        {
+          "title": "What Is Benign? Causes, Symptoms & Medical Meaning",
+          "href": "https://int.livhospital.com/what-is-benign-causes-symptoms-medical-meaning/",
+          "snippet": "Nov 19, 2025 · In a clinical setting, benign refers to a condition that is not harmful, not cancerous, and does not spread. It …"
+        },
+        {
+          "title": "What Is a Benign Lesion and Can It Become Cancer?",
+          "href": "https://scienceinsights.org/what-is-a-benign-lesion-and-can-it-become-cancer/",
+          "snippet": "Mar 10, 2026 · Benign lesions are common, can appear almost anywhere in the body, and most are harmless, though some can …"
+        },
+        {
+          "title": "BENIGN | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/benign",
+          "snippet": "medical (of a disease or tissue growing because of a disease) not likely to result in death: a benign tumor (Definition of …"
+        },
+        {
+          "title": "Benign Tumors: Causes, Types, Symptoms, Diagnosis, Treatment",
+          "href": "https://www.healthline.com/health/benign",
+          "snippet": "Jan 29, 2026 · Benign tumors are noncancerous growths in the body. Unlike cancerous tumors, they don’t spread …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "模型研究",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Benign Loss Landscapes Can Coexist with Worst-Case Hardness：BENIGN Definition & Meaning - Merriam-Webster Sep 1, 2011 · Benign traces back to the Latin adjective benignus, which was formed from bene, meaning \"w。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_benign-loss-landscapes-can-coexist-with-worst-case-hardness",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Dynin-Robotics: Omnimodal Unified Diffusion Vision-Language-Action Model",
+    "title": "Dynin-Robotics: Omnimodal Unified Diffusion Vision-Language-Action Model",
+    "url": "https://arxiv.org/abs/2609.13053v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13053v1",
+    "description": "Visual goal and dynamics prediction can provide language-conditioned robot policies with both a target outcome and a representation of action-dependent scene changes. We bring these predictions into action generation and selection through a shared trajectory model. Dynin-Robotics implements this formulation on Dynin-Omni, an omnimodal masked-diffusion backbone, representing language, visual observations, goals, and actions as discrete tokens. By varying conditioning and target spans, the same mo",
+    "authors": [
+      "Hoeun Lee",
+      "Jaeik Kim",
+      "Jusang Oh",
+      "Jinhyeok Kim",
+      "Geon Choi"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "arxiv_id": "2609.13053v1",
+    "published_at": "2026-09-11T16:49:26Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_dynin-robotics-omnimodal-unified-diffusion-vision-language-action-model",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "Diffusion"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Dynin-Robotics: Omnimodal Unified Diffusion Vision-Language-Action Model：visual goal and dynamics prediction can provide language-conditioned robot policies with both a target outcome and a representation of action-dependen。付费，适合普通用户直接使用。",
+    "features": [
+      "AI驱动",
+      "可视化",
+      "协作功能"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_dynin-robotics-omnimodal-unified-diffusion-vision-language-action-model",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "A Unified and Constrained View of Regularization-Based Robust Reinforcement Learning",
+    "title": "A Unified and Constrained View of Regularization-Based Robust Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2609.13050v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13050v1",
+    "description": "Regularization-based methods have become a standard approach for training Deep Reinforcement Learning policies against adversarial input perturbations. In this paper, we unify these methods by deriving new upper bounds on the performance gap between the nominal and worst-case policies. Each upper bound is expressed as an existing regularization objective plus a KL-divergence penalty between the nominal and worst-case policies, which further explains why adding a KL penalty improves robustness in",
+    "authors": [
+      "Amine Andam",
+      "Jamal Bentahar",
+      "Mustapha Hedabou"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "arxiv_id": "2609.13050v1",
+    "published_at": "2026-09-11T16:45:36Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_a-unified-and-constrained-view-of-regularization-based-robust-reinforcement-lear",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "论文工具",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习",
+        "学术研究"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "A Unified and Constrained View of Regularization-Based Robust Reinforcement Learning：regularization-based methods have become a standard approach for training deep reinforcement learning policies against adversarial input perturbations。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_a-unified-and-constrained-view-of-regularization-based-robust-reinforcement-lear",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Diffusion Models and Concept Formation",
+    "title": "Diffusion Models and Concept Formation",
+    "url": "https://arxiv.org/abs/2609.13047v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13047v1",
+    "description": "Humans organize knowledge into a taxonomy of concepts with nested levels of abstraction and a \\emph{basic level} at which people recognize and name objects with the least cognitive effort. Cobweb is a classic cognitive account of this ability, an incremental learner that builds a probabilistic concept hierarchy by maximizing category utility. We argue that diffusion models, although designed for image synthesis, implicitly perform the same computation. The noisy marginals of a diffusion model ar",
+    "authors": [
+      "Zekun Wang",
+      "Karthik Singaravadivelan",
+      "Christopher J. MacLellan"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "arxiv_id": "2609.13047v1",
+    "published_at": "2026-09-11T16:43:48Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_diffusion-models-and-concept-formation",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "设计创意",
+    "subcategory": "",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=设计创意 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "设计工作",
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [
+        "Diffusion"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Diffusion Models and Concept Formation：humans organize knowledge into a taxonomy of concepts with nested levels of abstraction and a \\emph{basic level} at which people recognize and name ob。付费，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_diffusion-models-and-concept-formation",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Kraken: LLM-based Speech-to-Speech Translation via Low-bitrate VQ and Dual-path Source Conditioning",
+    "title": "Kraken: LLM-based Speech-to-Speech Translation via Low-bitrate VQ and Dual-path Source Conditioning",
+    "url": "https://arxiv.org/abs/2609.13045v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13045v1",
+    "description": "Speech-to-speech translation (S2ST) has advanced significantly with speech LLMs, offering the potential for joint optimization and preserving non-linguistic information. However, these models struggle with predicting high-bitrate speech tokens in LLMs, and face the challenge of relying on S2ST training data with ideally aligned speaker identity and prosody. We propose using low-bitrate tokens based on single-layer vector quantization, trained to reconstruct self-supervised learning (SSL) feature",
+    "authors": [
+      "Hayato Futami",
+      "Hassan Shahmohammadi",
+      "Tushar Dhyani",
+      "Alkis Koudounas",
+      "Raphaël Lafargue"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.SD"
+    ],
+    "arxiv_id": "2609.13045v1",
+    "published_at": "2026-09-11T16:41:22Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_kraken-llm-based-speech-to-speech-translation-via-low-bitrate-vq-and-dual-path-s",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "数据分析",
+    "subcategory": "数据分析",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=数据分析 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Kraken: LLM-based Speech-to-Speech Translation via Low-bitrate VQ and Dual-path Source Conditioning：speech-to-speech translation (s2st) has advanced significantly with speech llms, offering the potential for joint optimization and preserving non-ling。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_kraken-llm-based-speech-to-speech-translation-via-low-bitrate-vq-and-dual-path-s",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Robust Policy Optimization via Adversarial Importance Sampling",
+    "title": "Robust Policy Optimization via Adversarial Importance Sampling",
+    "url": "https://arxiv.org/abs/2609.13044v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13044v1",
+    "description": "Significant progress has been made in safeguarding deep reinforcement learning (DRL) policies against input perturbations. Developing robust DRL involves three main stages: algorithm design, implementation, and evaluation. In this work, we identify and address a key limitation at each stage. First, we introduce Adversarial Importance Sampling (Advis), a method that uses importance sampling over trajectories from standard training to estimate and optimize verifiable worst-case returns. Advis sati",
+    "authors": [
+      "Amine Andam",
+      "Jamal Bentahar",
+      "Mustapha Hedabou"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "arxiv_id": "2609.13044v1",
+    "published_at": "2026-09-11T16:40:45Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_robust-policy-optimization-via-adversarial-importance-sampling",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "安全合规",
+    "subcategory": "恶意软件防护",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=安全合规 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "设计工作",
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Robust Policy Optimization via Adversarial Importance Sampling：significant progress has been made in safeguarding deep reinforcement learning (drl) policies against input perturbations.。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "开源免费",
+      "数据导入导出"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_robust-policy-optimization-via-adversarial-importance-sampling",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Unified CT and MRI Pancreas Segmentation for Label-Efficient Cross-Modality Subregion Transfer",
+    "title": "Unified CT and MRI Pancreas Segmentation for Label-Efficient Cross-Modality Subregion Transfer",
+    "url": "https://arxiv.org/abs/2609.13043v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13043v1",
+    "description": "Robust medical image segmentation across imaging modalities is challenging because of large differences in appearance and intensity distributions. Models trained on a single modality often show substantial performance drops when applied to unseen domains. In this work, we develop a unified 3D pancreas segmentation framework that applies domain-adversarial learning to 4,604 heterogeneous CT and MRI scans to learn anatomical representations. A shared nnU-Net encoder-decoder is trained for whole-pa",
+    "authors": [
+      "Ziliang Hong",
+      "Hongyi Pan",
+      "Halil Ertugrul Aktas",
+      "Andrea Bejar",
+      "Elif Keles"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "arxiv_id": "2609.13043v1",
+    "published_at": "2026-09-11T16:40:25Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_unified-ct-and-mri-pancreas-segmentation-for-label-efficient-cross-modality-subr",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=4 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Unified CT and MRI Pancreas Segmentation for Label-Efficient Cross-Modality Subregion Transfer：robust medical image segmentation across imaging modalities is challenging because of large differences in appearance and intensity distributions.。，适合普通用户直接使用。",
+    "features": [
+      "AI驱动",
+      "协作功能",
+      "SDK集成"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_unified-ct-and-mri-pancreas-segmentation-for-label-efficient-cross-modality-subr",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "DynSHAP: Towards Explainable Dynamic Survival Analysis",
+    "title": "DynSHAP: Towards Explainable Dynamic Survival Analysis",
+    "url": "https://arxiv.org/abs/2609.13042v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13042v1",
+    "description": "Deep learning models for dynamic survival analysis (DSA) achieve strong predictive performance by incorporating longitudinal patient data, but their black box nature limits clinical trust and adoption. Existing explainability methods cannot handle longitudinal, irregular inputs and functional survival outputs simultaneously, which limits their usability in DSA. We propose DynSHAP, a SHAP framework suited specifically for dynamic survival analysis. It extends common marginal SHAP estimators to th",
+    "authors": [
+      "Nastasya Anokhina",
+      "Jonas Jürß",
+      "Pietro Liò"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "arxiv_id": "2609.13042v1",
+    "published_at": "2026-09-11T16:39:55Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_dynshap-towards-explainable-dynamic-survival-analysis",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Seznam.cz We would like to show you a description here but the site won’t allow us.",
+        "Seznam – najdu tam, co neznám Nejnavštěvovanější český internetový portál nabízející vyhledávač, e-mail, aktuální zprávy, předpověď počasí a odkazy, které se …",
+        "Přihlášení k účtu a službám - Nápověda Seznam Účet Jednotné přihlášení vám zjednodušuje používání všech služeb Seznam.cz. Stačí se přihlásit na jedné a můžete bez opakovaného …"
+      ],
+      "top_results": [
+        {
+          "title": "Seznam.cz",
+          "href": "https://email.seznam.cz/",
+          "snippet": "We would like to show you a description here but the site won’t allow us."
+        },
+        {
+          "title": "Seznam – najdu tam, co neznám",
+          "href": "https://www.seznam.cz/",
+          "snippet": "Nejnavštěvovanější český internetový portál nabízející vyhledávač, e-mail, aktuální zprávy, předpověď počasí a odkazy, které se …"
+        },
+        {
+          "title": "Přihlášení k účtu a službám - Nápověda Seznam Účet",
+          "href": "https://o-seznam.cz/napoveda/ucet/prihlasovani/ucet-sluzby/",
+          "snippet": "Jednotné přihlášení vám zjednodušuje používání všech služeb Seznam.cz. Stačí se přihlásit na jedné a můžete bez opakovaného …"
+        },
+        {
+          "title": "Zařiďte si e-mail s koncovkou @post.cz - ADSL.cz",
+          "href": "https://www.adsl.cz/clanky/zaridte-si-e-mail-s-koncovkou-post-cz",
+          "snippet": "Seznam se rozhodl tuto situaci změnit a začal nabízet možnost založit si e-mail s koncovkou @post.cz. Díky tomu si můžete založit …"
+        },
+        {
+          "title": "Úvodní stránka - Česká Pošta, s.p.",
+          "href": "https://www.ceskaposta.cz/",
+          "snippet": "Česká pošta nabízí doručování balíků, doporučených zásilek a dopisů, sledování zásilek, poštovní služby, výdejní místa i online …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "数据分析"
+      ],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "DynSHAP: Towards Explainable Dynamic Survival Analysis：Seznam.cz We would like to show you a description here but the site won’t allow us.。付费，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "开源免费",
+      "CLI工具"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_dynshap-towards-explainable-dynamic-survival-analysis",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Quantile-based Loss Filtering for Outlier-Robust Stochastic Gradient Descent",
+    "title": "Quantile-based Loss Filtering for Outlier-Robust Stochastic Gradient Descent",
+    "url": "https://arxiv.org/abs/2609.13040v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13040v1",
+    "description": "We study loss-based filtering for finite-sum optimization with a subset of corrupted component functions whose gradients may be highly unreliable. Motivated by minimum-loss-based SGD (min-$k$-loss) and quantile-based methods for corrupted linear systems, we propose and analyze a general loss-filtering framework -- Quantile-\\(k\\)-Loss SGD (Q\\(k\\)L-SGD) -- that samples \\(k\\) component losses at each iteration and updates using an index chosen uniformly from the lower empirical \\(q\\)-quantile. We p",
+    "authors": [
+      "Jamie Haddock",
+      "Anna Ma",
+      "Elizaveta Rebrova"
+    ],
+    "categories": [
+      "cs.LG",
+      "math.NA"
+    ],
+    "arxiv_id": "2609.13040v1",
+    "published_at": "2026-09-11T16:38:21Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_quantile-based-loss-filtering-for-outlier-robust-stochastic-gradient-descent",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "金融科技",
+    "subcategory": "金融工具",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=金融科技 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "数据分析"
+      ],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Quantile-based Loss Filtering for Outlier-Robust Stochastic Gradient Descent：we study loss-based filtering for finite-sum optimization with a subset of corrupted component functions whose gradients may be highly unreliable.。付费，适合开发者集成到工作流。",
+    "features": [
+      "SDK集成"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_quantile-based-loss-filtering-for-outlier-robust-stochastic-gradient-descent",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Groupoid-Based Internal State Representations for Reinforcement Learning with Local Symmetries",
+    "title": "Groupoid-Based Internal State Representations for Reinforcement Learning with Local Symmetries",
+    "url": "https://arxiv.org/abs/2609.13035v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13035v1",
+    "description": "Symmetries play a central role in reducing the complexity of reinforcement learning problems, yet most existing approaches rely on fixed group actions or predefined state abstractions. Classical reinforcement learning algorithms typically assume a globally structured Markov decision process with uniformly applicable actions and transitions, an assumption that limits their ability to exploit modularity and local, context-dependent regularities present in many realistic environments. We propose a ",
+    "authors": [
+      "Ben Opperman",
+      "Eduardo Alonso",
+      "Esther Mondragón"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "arxiv_id": "2609.13035v1",
+    "published_at": "2026-09-11T16:32:58Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_groupoid-based-internal-state-representations-for-reinforcement-learning-with-lo",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "数据分析",
+    "subcategory": "数据分析",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=数据分析 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Groupoid-Based Internal State Representations for Reinforcement Learning with Local Symmetries：symmetries play a central role in reducing the complexity of reinforcement learning problems, yet most existing approaches rely on fixed group actions。付费，面向研究人员和学术场景。",
+    "features": [
+      "本地运行",
+      "开源免费"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_groupoid-based-internal-state-representations-for-reinforcement-learning-with-lo",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Attention Quantization for Tabular Foundation Models",
+    "title": "Attention Quantization for Tabular Foundation Models",
+    "url": "https://arxiv.org/abs/2609.13031v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13031v1",
+    "description": "With the recent rise and adoption of tabular foundation models, optimizing their inference performance becomes an emerging field for efficiency research. While the models are architecturally similar to transformer-based large language models (LLMs), the size and serving patterns differ significantly. We show that the focus should be on the attention calculation and less on weight or KV cache quantization, which are more popular in LLMs. We develop a quantization strategy for queries, keys, and v",
+    "authors": [
+      "Jonas M. Kübler",
+      "Benjamin Jäger",
+      "Klemens Flöge",
+      "Noah Hollmann",
+      "Frank Hutter"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "arxiv_id": "2609.13031v1",
+    "published_at": "2026-09-11T16:31:29Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_attention-quantization-for-tabular-foundation-models",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "模型研究",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [
+        "学术研究"
+      ],
+      "attribute": [],
+      "tech": [
+        "Transformer"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Attention Quantization for Tabular Foundation Models：with the recent rise and adoption of tabular foundation models, optimizing their inference performance becomes an emerging field for efficiency resear。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_attention-quantization-for-tabular-foundation-models",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Label-Guided Knowledge Distillation for 3D-CNNs in Action Recognition",
+    "title": "Label-Guided Knowledge Distillation for 3D-CNNs in Action Recognition",
+    "url": "https://arxiv.org/abs/2609.13024v1",
+    "pdf_url": "https://arxiv.org/pdf/2609.13024v1",
+    "description": "As a key model compression technique, knowledge distillation aims to transfer knowledge from a high-capacity teacher model to a lightweight student model for enhancing the latter's performance. In this work, we reviewed the feature knowledge distillation for 3D-CNNs and observed that most feature distillation methods in video analysis are simple adaptations of those used in image analysis, often neglecting the differences of video features in the temporal dimension. To address this issue, we pro",
+    "authors": [
+      "Yanjiang Shi",
+      "Peng Zhao",
+      "Nan Qi",
+      "Guiqin Wang"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "arxiv_id": "2609.13024v1",
+    "published_at": "2026-09-11T16:21:21Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_label-guided-knowledge-distillation-for-3d-cnns-in-action-recognition",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "代码审查",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "视频生成",
+        "数据分析"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Label-Guided Knowledge Distillation for 3D-CNNs in Action Recognition：as a key model compression technique, knowledge distillation aims to transfer knowledge from a high-capacity teacher model to a lightweight student mo。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_label-guided-knowledge-distillation-for-3d-cnns-in-action-recognition",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "colibri",
+    "full_name": "JustVugg/colibri",
+    "url": "https://github.com/JustVugg/colibri",
+    "description": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
+    "language": "C",
+    "stars": 31867,
+    "forks": 3378,
+    "stars_in_period": 2233,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_colibri",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "模型研究",
+    "audience": "researcher",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "colibri：run frontier moe models on hardware you already own — pure c, zero deps, experts streamed from disk.。开源，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "完全开源，可自由部署和修改",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_colibri",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "MiroFish",
+    "full_name": "666ghj/MiroFish",
+    "url": "https://github.com/666ghj/MiroFish",
+    "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
+    "language": "Python",
+    "stars": 73079,
+    "forks": 11284,
+    "stars_in_period": 524,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_mirofish",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "AI Agent",
+    "subcategory": "多智能体",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "MiroFish：a simple and universal swarm intelligence engine, predicting anything.。开源，适合普通用户直接使用。",
+    "features": [
+      "实用工具"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_mirofish",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Agent-Reach",
+    "full_name": "Panniantong/Agent-Reach",
+    "url": "https://github.com/Panniantong/Agent-Reach",
+    "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+    "language": "Python",
+    "stars": 81131,
+    "forks": 7066,
+    "stars_in_period": 640,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_agent-reach",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Google Translate Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages.",
+        "Google Translate Text translation Detect language Detect language English Spanish French Swap languages (Ctrl+Shift+S)",
+        "Get started with Google Business Profile With a Business Profile on Google Maps and Search, you can: Maintain accurate information about your business online: Provide your …"
+      ],
+      "top_results": [
+        {
+          "title": "Google Translate",
+          "href": "https://translate.google.co.in/",
+          "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages."
+        },
+        {
+          "title": "Google Translate",
+          "href": "https://translate.google.co.in/details",
+          "snippet": "Text translation Detect language Detect language English Spanish French Swap languages (Ctrl+Shift+S)"
+        },
+        {
+          "title": "Get started with Google Business Profile",
+          "href": "https://support.google.com/business/answer/7039811?hl=en",
+          "snippet": "With a Business Profile on Google Maps and Search, you can: Maintain accurate information about your business online: Provide your …"
+        },
+        {
+          "title": "Google Maps Help",
+          "href": "https://support.google.com/maps/?hl=en-my",
+          "snippet": "Official Google Maps Help Center where you can find tips and tutorials on using Google Maps and other answers to frequently asked questions."
+        },
+        {
+          "title": "Report data or content errors on Google Maps",
+          "href": "https://support.google.com/maps/answer/3094088?hl=en-GB",
+          "snippet": "Report spam or bad data Any illegal, offensive, fraudulent or malicious data on Google Maps is considered as spam. Users found to be …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=4 低于阈值",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [],
+      "attribute": [
+        "API服务"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Agent-Reach：Google Translate Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other langu。开源，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "API接口",
+      "CLI工具"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "完全开源，可自由部署和修改；有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_agent-reach",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "localsend",
+    "full_name": "localsend/localsend",
+    "url": "https://github.com/localsend/localsend",
+    "description": "An open-source cross-platform alternative to AirDrop",
+    "language": "Dart",
+    "stars": 91245,
+    "forks": 5094,
+    "stars_in_period": 311,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_localsend",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "LocalSend: Share files to nearby devices LocalSend is a free, open-source, cross-platform file sharing tool that allows you to share files to nearby devices.",
+        "LocalSend - Downloads Download LocalSend for Windows, macOS, Linux, Android, and iOS.",
+        "GitHub - localsend/localsend: An open-source cross-platform … LocalSend is a cross-platform app that enables secure communication between devices using a REST API and HTTPS encryption. …"
+      ],
+      "top_results": [
+        {
+          "title": "LocalSend: Share files to nearby devices",
+          "href": "https://localsend.org/",
+          "snippet": "LocalSend is a free, open-source, cross-platform file sharing tool that allows you to share files to nearby devices."
+        },
+        {
+          "title": "LocalSend - Downloads",
+          "href": "https://localsend.org/download",
+          "snippet": "Download LocalSend for Windows, macOS, Linux, Android, and iOS."
+        },
+        {
+          "title": "GitHub - localsend/localsend: An open-source cross-platform …",
+          "href": "https://github.com/localsend/localsend",
+          "snippet": "LocalSend is a cross-platform app that enables secure communication between devices using a REST API and HTTPS encryption. …"
+        },
+        {
+          "title": "LocalSend Web",
+          "href": "https://web.localsend.org/",
+          "snippet": "Open LocalSend on another device. Open this site in another browser. Support for the native app will be added in a future version. …"
+        },
+        {
+          "title": "LocalSend - Download",
+          "href": "https://localsend.en.softonic.com/",
+          "snippet": "Jul 13, 2026 · LocalSend is a free utility app designed for people who need to share files securely across different devices without …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "其他",
+    "subcategory": "",
+    "audience": "general",
+    "utility_score": 4,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "localsend：LocalSend: Share files to nearby devices LocalSend is a free, open-source, cross-platform file sharing tool that allows you to share files to nearby d。开源，适合普通用户直接使用。",
+    "features": [
+      "AI驱动",
+      "本地运行",
+      "开源免费"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_localsend",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "vaultwarden",
+    "full_name": "dani-garcia/vaultwarden",
+    "url": "https://github.com/dani-garcia/vaultwarden",
+    "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs",
+    "language": "Rust",
+    "stars": 67505,
+    "forks": 3209,
+    "stars_in_period": 110,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_vaultwarden",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "数据分析",
+    "subcategory": "数据分析",
+    "audience": "general",
+    "utility_score": 4,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "vaultwarden：unofficial bitwarden compatible server written in rust, formerly known as bitwarden_rs。开源，适合普通用户直接使用。",
+    "features": [
+      "数据处理",
+      "分析工具"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_vaultwarden",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "RuView",
+    "full_name": "ruvnet/RuView",
+    "url": "https://github.com/ruvnet/RuView",
+    "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+    "language": "Rust",
+    "stars": 93788,
+    "forks": 12428,
+    "stars_in_period": 370,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_ruview",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": false,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "视频生成"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "RuView：π ruview turns commodity wifi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel 。开源，适合普通用户直接使用。",
+    "features": [
+      "实时处理"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_ruview",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "transformers",
+    "full_name": "huggingface/transformers",
+    "url": "https://github.com/huggingface/transformers",
+    "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+    "language": "Python",
+    "stars": 165923,
+    "forks": 34577,
+    "stars_in_period": 528,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_transformers",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "Transformers (film series) - Wikipedia It is the 15th-highest-grossing film series, with a total of $5.42 billion grossed over eight films to date. For the film, producer Don Murphy was …",
+        "Transformers - Wikipedia Transformers is a mecha media franchise produced by American toy company Hasbro and Japanese toy company Takara Tomy. It …",
+        "Transformers (2007) - IMDb Jul 3, 2007 · Transformers: Directed by Michael Bay. With Shia LaBeouf, Megan Fox, Josh Duhamel, Tyrese Gibson. An ancient struggle …"
+      ],
+      "top_results": [
+        {
+          "title": "Transformers (film series) - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Transformers_(film_series)",
+          "snippet": "It is the 15th-highest-grossing film series, with a total of $5.42 billion grossed over eight films to date. For the film, producer Don Murphy was …"
+        },
+        {
+          "title": "Transformers - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Transformers",
+          "snippet": "Transformers is a mecha media franchise produced by American toy company Hasbro and Japanese toy company Takara Tomy. It …"
+        },
+        {
+          "title": "Transformers (2007) - IMDb",
+          "href": "https://www.imdb.com/title/tt0418279/",
+          "snippet": "Jul 3, 2007 · Transformers: Directed by Michael Bay. With Shia LaBeouf, Megan Fox, Josh Duhamel, Tyrese Gibson. An ancient struggle …"
+        },
+        {
+          "title": "TRANSFORMERS ALL MOVIES - IMDb",
+          "href": "https://www.imdb.com/list/ls025559524/",
+          "snippet": "Sam Witwicky leaves the Autobots behind for a normal life. But when his mind is filled with cryptic symbols, the Decepticons target him …"
+        },
+        {
+          "title": "All Transformers Movies in Order: Chronological and Release Date (20…",
+          "href": "https://otakusnotes.com/all-transformers-movies-in-order/",
+          "snippet": "Jun 2, 2026 · All 8 Transformers movies in order — chronological order, release date order, where to watch, and upcoming films. Complete guide …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=3 低于阈值",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [
+        "Multi-modal",
+        "Transformer"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "transformers：Transformers (film series) - Wikipedia It is the 15th-highest-grossing film series, with a total of $5.42 billion grossed over eight films to date. Fo。开源，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "SDK集成"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "完全开源，可自由部署和修改",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_transformers",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "ever-gauzy",
+    "full_name": "ever-co/ever-gauzy",
+    "url": "https://github.com/ever-co/ever-gauzy",
+    "description": "Ever® Gauzy™ - Open Business Management Platform (ERP/CRM/HRM/ATS/PM) -https://gauzy.co",
+    "language": "TypeScript",
+    "stars": 5885,
+    "forks": 982,
+    "stars_in_period": 1095,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_ever-gauzy",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Eversource | Log In Forgot your password? ©2026 Eversource. All rights reserved.",
+        "Ever - Leading EV Store in the U.S. Shop Ever Certified EVs, get instant sell offers, and finance online with delivery or pickup.",
+        "EVER Definition & Meaning - Merriam-Webster The meaning of EVER is always. How to use ever in a sentence."
+      ],
+      "top_results": [
+        {
+          "title": "Eversource | Log In",
+          "href": "https://www.eversource.com/security/Account/login",
+          "snippet": "Forgot your password? ©2026 Eversource. All rights reserved."
+        },
+        {
+          "title": "Ever - Leading EV Store in the U.S.",
+          "href": "https://www.evercars.com/",
+          "snippet": "Shop Ever Certified EVs, get instant sell offers, and finance online with delivery or pickup."
+        },
+        {
+          "title": "EVER Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/ever",
+          "snippet": "The meaning of EVER is always. How to use ever in a sentence."
+        },
+        {
+          "title": "Residential Energy Provider | Eversource",
+          "href": "https://www.eversource.com/residential/",
+          "snippet": "Eversource is an energy provider serving customers in Connecticut, Massachusetts and New Hampshire. Access your residential …"
+        },
+        {
+          "title": "EVER Skincare | Potent, Patented, Clean Skincare",
+          "href": "https://www.ever.com/",
+          "snippet": "We created EVER because skincare should evolve with you. Whether you're navigating perimenopause, menopause, or simply …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "其他",
+    "subcategory": "",
+    "audience": "general",
+    "utility_score": 4,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "商业营销"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "ever-gauzy：Eversource | Log In Forgot your password? ©2026 Eversource. All rights reserved.。开源，适合普通用户直接使用。",
+    "features": [
+      "实用工具"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_ever-gauzy",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "flowsint",
+    "full_name": "reconurge/flowsint",
+    "url": "https://github.com/reconurge/flowsint",
+    "description": "A modern platform for visual, flexible, and extensible graph-based investigations. For cybersecurity analysts and investigators.",
+    "language": "TypeScript",
+    "stars": 8300,
+    "forks": 1024,
+    "stars_in_period": 279,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_flowsint",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "金融科技",
+    "subcategory": "金融工具",
+    "audience": "general",
+    "utility_score": 4,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "flowsint：a modern platform for visual, flexible, and extensible graph-based investigations.。开源，适合普通用户直接使用。",
+    "features": [
+      "可视化"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_flowsint",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "opendisplay",
+    "full_name": "peetzweg/opendisplay",
+    "url": "https://github.com/peetzweg/opendisplay",
+    "description": "Free, open-source Sidecar/Duet alternative — use your iPhone or iPad as a true second monitor for your Mac over USB or WiFi. Low latency H.264, Retina HiDPI, touch input.",
+    "language": "Swift",
+    "stars": 3508,
+    "forks": 246,
+    "stars_in_period": 258,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_opendisplay",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "OpenDisplay — Turn your spare Apple devices into second ... OpenDisplay is a free, open-source alternative to Apple Sidecar and Duet Display. Turn your spare Apple devices — iPhone and iPad today, Macs …",
+        "OpenDisplay: the open e-paper standard OpenDisplay is the open standard that separates the two sides cleanly, so nobody has to rebuild every part. Senders generate the image; …",
+        "GitHub - peetzweg/opendisplay: Free, open-source Sidecar/Duet ... Jun 10, 2026 · OpenDisplay is the missing option: a free, open-source, no-account, no-dongle way to use the iOS device you already own as a …"
+      ],
+      "top_results": [
+        {
+          "title": "OpenDisplay — Turn your spare Apple devices into second ...",
+          "href": "https://opendisplay.app/",
+          "snippet": "OpenDisplay is a free, open-source alternative to Apple Sidecar and Duet Display. Turn your spare Apple devices — iPhone and iPad today, Macs …"
+        },
+        {
+          "title": "OpenDisplay: the open e-paper standard",
+          "href": "https://www.opendisplay.org/",
+          "snippet": "OpenDisplay is the open standard that separates the two sides cleanly, so nobody has to rebuild every part. Senders generate the image; …"
+        },
+        {
+          "title": "GitHub - peetzweg/opendisplay: Free, open-source Sidecar/Duet ...",
+          "href": "https://github.com/peetzweg/opendisplay",
+          "snippet": "Jun 10, 2026 · OpenDisplay is the missing option: a free, open-source, no-account, no-dongle way to use the iOS device you already own as a …"
+        },
+        {
+          "title": "OpenDisplay Toolbox",
+          "href": "https://opendisplay.org/firmware/toolbox/index.html",
+          "snippet": "BLE Connection Bluetooth Low Energy Connection Connect to your OpenDisplay device wirelessly via Bluetooth. Use the device filter to find your …"
+        },
+        {
+          "title": "GitHub - aquitaine/OpenDisplay: Free, open-source display ...",
+          "href": "https://github.com/aquitaine/OpenDisplay/tree/main",
+          "snippet": "Free, open-source display control for macOS (Apple Silicon). Drive your external monitor's real hardware — brightness, volume, colour, input …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": false,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "free",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [
+        "免费"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "opendisplay：OpenDisplay — Turn your spare Apple devices into second ... OpenDisplay is a free, open-source alternative to Apple Sidecar and Duet Display. Turn you。免费，适合普通用户直接使用。",
+    "features": [
+      "开源免费"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "免费使用，零成本上手；实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_opendisplay",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "gods-eye-view",
+    "full_name": "bilawalsidhu/gods-eye-view",
+    "url": "https://github.com/bilawalsidhu/gods-eye-view",
+    "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+    "language": "JavaScript",
+    "stars": 33424,
+    "forks": 6675,
+    "stars_in_period": 12931,
+    "period": "weekly",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "weekly",
+    "source": "github-trending",
+    "id": "github-trending_gods-eye-view",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "图像创作",
+    "subcategory": "图像处理",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "free",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [
+        "开源"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "gods-eye-view：a spy satellite simulator in your browser, except the data is real.。免费，适合普通用户直接使用。",
+    "features": [
+      "实时处理",
+      "开源免费"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "免费使用，零成本上手；实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_gods-eye-view",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "markitdown",
+    "full_name": "microsoft/markitdown",
+    "url": "https://github.com/microsoft/markitdown",
+    "description": "Python tool for converting files and office documents to Markdown.",
+    "language": "Python",
+    "stars": 183965,
+    "forks": 13543,
+    "stars_in_period": 5191,
+    "period": "weekly",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "weekly",
+    "source": "github-trending",
+    "id": "github-trending_markitdown",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "办公效率",
+    "subcategory": "文档处理",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "日常办公"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "markitdown：python tool for converting files and office documents to markdown.。开源，适合普通用户直接使用。",
+    "features": [
+      "数据导入导出"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_markitdown",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "diagram-design",
+    "full_name": "cathrynlavery/diagram-design",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+    "language": "HTML",
+    "stars": 39740,
+    "forks": 2523,
+    "stars_in_period": 7129,
+    "period": "weekly",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "weekly",
+    "source": "github-trending",
+    "id": "github-trending_diagram-design",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Flowchart Maker & Online Diagram Software draw.io is free online diagram software for making flowcharts, process diagrams, org charts, UML, ER and network diagrams",
+        "Security-first diagramming for teams | draw.io Backwards Compatible Diagram files created in 2005 load in today's app. Your work is never obsolete.",
+        "Free Diagram Maker and Examples Online | Canva Create diagrams for free in minutes with editable diagram templates and examples from our online diagram maker."
+      ],
+      "top_results": [
+        {
+          "title": "Flowchart Maker & Online Diagram Software",
+          "href": "https://app.diagrams.net/",
+          "snippet": "draw.io is free online diagram software for making flowcharts, process diagrams, org charts, UML, ER and network diagrams"
+        },
+        {
+          "title": "Security-first diagramming for teams | draw.io",
+          "href": "https://www.drawio.com/",
+          "snippet": "Backwards Compatible Diagram files created in 2005 load in today's app. Your work is never obsolete."
+        },
+        {
+          "title": "Free Diagram Maker and Examples Online | Canva",
+          "href": "https://www.canva.com/graphs/diagrams/?msockid=24167f0ac2b76ba82b1368dec3ed6a02",
+          "snippet": "Create diagrams for free in minutes with editable diagram templates and examples from our online diagram maker."
+        },
+        {
+          "title": "Diagram - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Diagram",
+          "snippet": "A diagram is a symbolic representation of information using visualization techniques. Diagrams have been used since prehistoric times …"
+        },
+        {
+          "title": "Lucidchart | Diagramming Powered By Intelligence",
+          "href": "https://lucid.co/lucidchart",
+          "snippet": "UML markup Auto-generate a sequence diagram from text, then edit the markup or style your diagram as desired."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=6 低于阈值",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "设计工作"
+      ],
+      "attribute": [],
+      "tech": [
+        "Claude"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "diagram-design：Flowchart Maker & Online Diagram Software draw.io is free online diagram software for making flowcharts, process diagrams, org charts, UML, ER and net。开源，适合普通用户直接使用。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_diagram-design",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "spec-kit",
+    "full_name": "github/spec-kit",
+    "url": "https://github.com/github/spec-kit",
+    "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+    "language": "Python",
+    "stars": 136767,
+    "forks": 12271,
+    "stars_in_period": 2642,
+    "period": "weekly",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "weekly",
+    "source": "github-trending",
+    "id": "github-trending_spec-kit",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "其他",
+    "subcategory": "",
+    "audience": "general",
+    "utility_score": 7,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "spec-kit：💫 toolkit to help you get started with spec-driven development。开源，适合普通用户直接使用。",
+    "features": [
+      "实用工具"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_spec-kit",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "agent-skills",
+    "full_name": "tech-leads-club/agent-skills",
+    "url": "https://github.com/tech-leads-club/agent-skills",
+    "description": "The secure, validated skill registry for professional AI coding agents. Extend Antigravity, Claude Code, Cursor, Copilot and more with absolute confidence.",
+    "language": "TypeScript",
+    "stars": 6011,
+    "forks": 513,
+    "stars_in_period": 506,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_agent-skills",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "代码补全",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=6 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "Claude"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "agent-skills：the secure, validated skill registry for professional ai coding agents.。付费，适合普通用户直接使用。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_agent-skills",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "skills",
+    "full_name": "openai/skills",
+    "url": "https://github.com/openai/skills",
+    "description": "Skills Catalog for Codex",
+    "language": "Python",
+    "stars": 27181,
+    "forks": 1814,
+    "stars_in_period": 1622,
+    "period": "weekly",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "weekly",
+    "source": "github-trending",
+    "id": "github-trending_skills",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": false,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "skills：skills catalog for codex。开源，适合普通用户直接使用。",
+    "features": [
+      "开发辅助",
+      "代码工具"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_skills",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Show HN: Deep Research – Open-Source Customizable Reasoning Framework for Devs",
+    "title": "Show HN: Deep Research – Open-Source Customizable Reasoning Framework for Devs",
+    "url": "https://github.com/JigsawStack/deep-research",
+    "hn_url": "https://news.ycombinator.com/item?id=44153898",
+    "description": "Show HN: Deep Research – Open-Source Customizable Reasoning Framework for Devs",
+    "points": 7,
+    "num_comments": 0,
+    "author": "winzamark12",
+    "published_at": "2025-06-01T21:34:46Z",
+    "platform": [
+      "hackernews"
+    ],
+    "type": "news",
+    "source": "hackernews-ai",
+    "id": "hackernews-ai_show-hn-deep-research-open-source-customizable-reasoning-framework-for-devs",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 5,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=5 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [
+        "学术研究"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Show HN: Deep Research – Open-Source Customizable Reasoning Framework for Devs：show hn: deep research – open-source customizable reasoning framework for devs。，适合开发者集成到工作流。",
+    "features": [
+      "开源免费",
+      "SDK集成"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "hackernews-ai_show-hn-deep-research-open-source-customizable-reasoning-framework-for-devs",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Show HN: Persistent Mind Model – Portable AI Personas for Any LLM",
+    "title": "Show HN: Persistent Mind Model – Portable AI Personas for Any LLM",
+    "url": "https://github.com/scottonanski/persistent-mind-model",
+    "hn_url": "https://news.ycombinator.com/item?id=44870680",
+    "description": "Show HN: Persistent Mind Model – Portable AI Personas for Any LLM",
+    "points": 2,
+    "num_comments": 0,
+    "author": "HimTortons",
+    "published_at": "2025-08-11T23:33:27Z",
+    "platform": [
+      "hackernews"
+    ],
+    "type": "news",
+    "source": "hackernews-ai",
+    "id": "hackernews-ai_show-hn-persistent-mind-model-portable-ai-personas-for-any-llm",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "模型研究",
+    "audience": "researcher",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=4 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Show HN: Persistent Mind Model – Portable AI Personas for Any LLM：show hn: persistent mind model – portable ai personas for any llm。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "hackernews-ai_show-hn-persistent-mind-model-portable-ai-personas-for-any-llm",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+    "title": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+    "url": "https://finterm.ai/",
+    "hn_url": "https://news.ycombinator.com/item?id=48896257",
+    "description": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+    "points": 6,
+    "num_comments": 0,
+    "author": "cheeseblubber",
+    "published_at": "2026-07-13T17:52:10Z",
+    "platform": [
+      "hackernews"
+    ],
+    "type": "news",
+    "source": "hackernews-ai",
+    "id": "hackernews-ai_show-hn-finterm-ai-bloomberg-terminal-for-claude-code",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "SHOW Definition & Meaning - Merriam-Webster 6 days ago · show, manifest, evidence, evince, demonstrate mean to reveal outwardly or make apparent. show is the general term but …",
+        "SHOW | English meaning - Cambridge Dictionary A crowd congregated around the entrance to the theatre, hoping to catch a glimpse of the stars of the show. The Circus has been described as …",
+        "MLB® The Show™ - Home Road To The Show You have more control over your journey than ever. From earning a spot at the MLB Draft Combine® or honing your skills …"
+      ],
+      "top_results": [
+        {
+          "title": "SHOW Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/show",
+          "snippet": "6 days ago · show, manifest, evidence, evince, demonstrate mean to reveal outwardly or make apparent. show is the general term but …"
+        },
+        {
+          "title": "SHOW | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/show",
+          "snippet": "A crowd congregated around the entrance to the theatre, hoping to catch a glimpse of the stars of the show. The Circus has been described as …"
+        },
+        {
+          "title": "MLB® The Show™ - Home",
+          "href": "https://theshow.com/",
+          "snippet": "Road To The Show You have more control over your journey than ever. From earning a spot at the MLB Draft Combine® or honing your skills …"
+        },
+        {
+          "title": "Show - definition of show by The Free Dictionary",
+          "href": "https://www.thefreedictionary.com/show",
+          "snippet": "To display for sale, in exhibition, or in competition: showed her most recent paintings. c. To permit access to (a house, for example) …"
+        },
+        {
+          "title": "Show - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Show",
+          "snippet": "This disambiguation page lists articles associated with the title Show. If an internal link incorrectly led you here, you may wish to …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/finterm.ai",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 5,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=5 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "Claude"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Show HN: Finterm.ai Bloomberg terminal for Claude Code：SHOW Definition & Meaning - Merriam-Webster 6 days ago · show, manifest, evidence, evince, demonstrate mean to reveal outwardly or make apparent. show。，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "CLI工具"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "hackernews-ai_show-hn-finterm-ai-bloomberg-terminal-for-claude-code",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Show HN: EasyFunctionCall – Converts OpenAPI specs to AI model func call params",
+    "title": "Show HN: EasyFunctionCall – Converts OpenAPI specs to AI model func call params",
+    "url": "https://easyfunctioncall.com",
+    "hn_url": "https://news.ycombinator.com/item?id=42560205",
+    "description": "Show HN: EasyFunctionCall – Converts OpenAPI specs to AI model func call params",
+    "points": 1,
+    "num_comments": 0,
+    "author": "numbbbbb",
+    "published_at": "2024-12-31T17:27:32Z",
+    "platform": [
+      "hackernews"
+    ],
+    "type": "news",
+    "source": "hackernews-ai",
+    "id": "hackernews-ai_show-hn-easyfunctioncall-converts-openapi-specs-to-ai-model-func-call-params",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "SHOW Definition & Meaning - Merriam-Webster 6 days ago · show, manifest, evidence, evince, demonstrate mean to reveal outwardly or make apparent. show is the …",
+        "SHOW | English meaning - Cambridge Dictionary A crowd congregated around the entrance to the theatre, hoping to catch a glimpse of the stars of the show. The Circus has …",
+        "MLB® The Show™ - Home Road To The Show You have more control over your journey than ever. From earning a spot at the MLB Draft Combine® or …"
+      ],
+      "top_results": [
+        {
+          "title": "SHOW Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/show",
+          "snippet": "6 days ago · show, manifest, evidence, evince, demonstrate mean to reveal outwardly or make apparent. show is the …"
+        },
+        {
+          "title": "SHOW | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/show",
+          "snippet": "A crowd congregated around the entrance to the theatre, hoping to catch a glimpse of the stars of the show. The Circus has …"
+        },
+        {
+          "title": "MLB® The Show™ - Home",
+          "href": "https://theshow.com/",
+          "snippet": "Road To The Show You have more control over your journey than ever. From earning a spot at the MLB Draft Combine® or …"
+        },
+        {
+          "title": "Show - definition of show by The Free Dictionary",
+          "href": "https://www.thefreedictionary.com/show",
+          "snippet": "To display for sale, in exhibition, or in competition: showed her most recent paintings. c. To permit access to (a …"
+        },
+        {
+          "title": "Show - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Show",
+          "snippet": "This disambiguation page lists articles associated with the title Show. If an internal link incorrectly led you here, you may …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/easyfunctioncall.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 5,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=5 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [
+        "API服务"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Show HN: EasyFunctionCall – Converts OpenAPI specs to AI model func call params：SHOW Definition & Meaning - Merriam-Webster 6 days ago · show, manifest, evidence, evince, demonstrate mean to reveal outwardly or make apparent. show。，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "API接口",
+      "数据导入导出"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "hackernews-ai_show-hn-easyfunctioncall-converts-openapi-specs-to-ai-model-func-call-params",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Netra Runtime",
+    "slug": "netra-runtime",
+    "url": "https://www.producthunt.com/r/RL6ZZHSV4C5G4Z",
+    "description": "Fastest AI Inference at Any Scale. Run production AI with lower latency and higher throughput. Use Netra Cloud's OpenAI-compatible API or deploy Netra Runtime on your own GPU infrastructure.",
+    "source": "producthunt-ai",
+    "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [
+        "API服务"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "platform": [
+      "producthunt"
+    ],
+    "type": "ai_tool",
+    "thumbnail_url": "https://ph-files.imgix.net/b6977e17-cbec-42de-b3de-b79d9d354c6c.png?auto=format",
+    "raw_data": {
+      "ph_id": "1243925",
+      "tagline": "Fastest AI Inference at Any Scale",
+      "votes_count": 10,
+      "comments_count": 0,
+      "created_at": "2026-09-14T07:01:00Z",
+      "featured_at": null,
+      "daily_rank": 25,
+      "makers": [
+        {
+          "name": "[REDACTED]",
+          "username": "[REDACTED]"
+        },
+        {
+          "name": "[REDACTED]",
+          "username": "[REDACTED]"
+        },
+        {
+          "name": "[REDACTED]",
+          "username": "[REDACTED]"
+        },
+        {
+          "name": "Alifais Farrel Ramdhani",
+          "username": "alifais_farrel_ramdhani"
+        }
+      ],
+      "topics": [
+        "API",
+        "Artificial Intelligence"
+      ]
+    },
+    "id": "producthunt-ai_netra-runtime",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/producthunt.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=4 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "ai_analysis": "Netra Runtime：fastest ai inference at any scale.。付费，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "API接口",
+      "云端部署"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "producthunt-ai_netra-runtime",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "果核剥壳",
+    "url": "https://www.ghxi.com/",
+    "description": "AI工具集导航关于我们免责声明最新AI项目AI应用商店果核剥壳CakeGrowthVipCheap攻壳智能体映技派豆包绘蛙即梦蛙蛙写作小云雀Loomy办公小浣熊TRAE码上飞LiblibAILovart妙呀秒哒秒悟updreamSekoLibTV",
+    "platform": [
+      "ai-bot.cn"
+    ],
+    "type": "ai_tool",
+    "source": "aibot",
+    "id": "aibot_果核剥壳",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/ghxi.com",
+    "likely_china": true,
+    "china_signals": [
+      "lang_zh"
+    ],
+    "category": "办公效率",
+    "subcategory": "办公助手",
+    "audience": "general",
+    "utility_score": 9,
+    "should_include": true,
+    "rejection_reason": "非AI工具: 黑名单: 果核剥壳",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "日常办公"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "果核剥壳：ai工具集导航关于我们免责声明最新ai项目ai应用商店果核剥壳cakegrowthvipcheap攻壳智能体映技派豆包绘蛙即梦蛙蛙写作小云雀loomy办公小浣熊trae码上飞liblibailovart妙呀秒哒秒悟updreamsekolibtv。，适合普通用户直接使用。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "实用性极高，强烈推荐",
+    "ai_confidence": 0.6,
+    "is_china_tool": true,
+    "health_status": "unknown",
+    "tool_id": "aibot_果核剥壳",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
+  },
+  {
+    "name": "Conut.ai",
+    "url": "https://onlinemedicaltools.com/tools/conut-score",
+    "description": "Cinematic AI video and image generation platform",
+    "source": "theresanaiforthat",
+    "source_url": "https://theresanaiforthat.com",
+    "tags": {
+      "function": [
+        "图像生成",
+        "视频生成"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "platform": [
+      "taaft"
+    ],
+    "type": "ai_tool",
+    "raw_data": {
+      "slug": "conut-ai"
+    },
+    "id": "theresanaiforthat_conut-ai",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/onlinemedicaltools.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=4 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "ai_analysis": "Conut.ai：cinematic ai video and image generation platform。，适合普通用户直接使用。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "theresanaiforthat_conut-ai",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-09-14T21:23:43.269714+00:00"
   }
 ]
