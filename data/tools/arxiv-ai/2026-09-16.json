@@ -1,0 +1,691 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-09-16T00:21:31.223014+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "Corrupt Plans, Clean Traces: Evading Chain-of-Thought Monitoring with Plan Injection",
+      "title": "Corrupt Plans, Clean Traces: Evading Chain-of-Thought Monitoring with Plan Injection",
+      "url": "https://arxiv.org/abs/2609.15989v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15989v1",
+      "description": "Chain-of-thought (CoT) monitoring is a safety strategy where the reasoning of a large language model \"actor\" is inspected by a \"monitor\" (often another language model) for signs of unsafe planning, deception, or misalignment. We find that planting harmful but benign-sounding reasoning in the actor's context can steer it to perform adversarial actions while evading monitors, an attack we term \"plan injection\". We initially discover this attack in the multiple-choice question-answering monitorabil",
+      "authors": [
+        "Keertana Chidambaram",
+        "Andrew Ilyas",
+        "Vasilis Syrgkanis"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2609.15989v1",
+      "published_at": "2026-09-14T18:33:27Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Bellman Policy Optimization",
+      "title": "Bellman Policy Optimization",
+      "url": "https://arxiv.org/abs/2609.15987v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15987v1",
+      "description": "Reinforcement learning with verifiable rewards (RLVR) improves the reasoning capabilities of large language models (LLMs). We introduce Bellman Policy Optimization (BPO), a critic-free method derived from Policy Mirror Descent (PMD). For autoregressive generation with terminal rewards, BPO uses the Bellman equations to reformulate PMD as a trajectory-level objective. The reformulation avoids estimating state values at intermediate states. We prove that it has the same unique optimal solution as ",
+      "authors": [
+        "Zhuoqing Song",
+        "Haotian Xu",
+        "Xikun Zhang",
+        "Lidong Bing"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "math.OC"
+      ],
+      "arxiv_id": "2609.15987v1",
+      "published_at": "2026-09-14T17:59:47Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science",
+      "title": "Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science",
+      "url": "https://arxiv.org/abs/2609.15983v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15983v1",
+      "description": "Language models can produce plausible short proofs, but may still be unreliable on long-horizon research problems, where progress depends on a sequence of uncertain and interdependent decisions. We introduce Stellar Colosseum, a model-agnostic harness for allocating inference across research in mathematics and theoretical computer science. Colosseum explores alternative strategies before proof construction, uses a readiness gate to decide when a route is mature enough to decompose, represents th",
+      "authors": [
+        "Honghao Lin",
+        "David P. Woodruff",
+        "Yuan Deng",
+        "Jieming Mao",
+        "Song Zuo"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "arxiv_id": "2609.15983v1",
+      "published_at": "2026-09-14T17:58:55Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "The Router Within: Eliciting Native Skill Routing from a Frozen LLM",
+      "title": "The Router Within: Eliciting Native Skill Routing from a Frozen LLM",
+      "url": "https://arxiv.org/abs/2609.15982v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15982v1",
+      "description": "Skills extend an LLM agent beyond its parametric knowledge, and the gain they promise rests on picking the right one. Deployed harnesses route by preloading every skill's metadata into the context, which disperses the agent's attention and caps the library size. Retrieval pipelines move the selection out of the context, but also out of the agent's capability. We show that the frozen agent LLM already carries the routing signal in its own forward passes, and that two linear maps suffice to read i",
+      "authors": [
+        "Ruishuo Chen",
+        "Xun Wang",
+        "Yu Chen",
+        "Zhuoran Li",
+        "Longbo Huang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2609.15982v1",
+      "published_at": "2026-09-14T17:58:27Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "A Chosen Future Can Still Be Rewritten: Causal Writability in Video Models",
+      "title": "A Chosen Future Can Still Be Rewritten: Causal Writability in Video Models",
+      "url": "https://arxiv.org/abs/2609.15980v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15980v1",
+      "description": "When a video model generates physically incorrect motion, did it fail to learn the correct motion, or did it learn it but fail to use it? We show the latter: the correct motion remains available inside the model and can still be made to control the generated video. We train on videos where red masses oscillate slowly and blue masses oscillate quickly, then test a red mass with fast observed motion. Even when the model generates slow motion in this conflicting case, a low-dimensional edit predict",
+      "authors": [
+        "Xingyun Wang",
+        "Haomin Zheng",
+        "Man Yuan",
+        "Leqian Yang",
+        "Ziming Liu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "arxiv_id": "2609.15980v1",
+      "published_at": "2026-09-14T17:58:11Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Disentangling Representation Evolution in Transformers through Directional Decomposition",
+      "title": "Disentangling Representation Evolution in Transformers through Directional Decomposition",
+      "url": "https://arxiv.org/abs/2609.15975v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15975v1",
+      "description": "Transformer representations evolve through learned additive transformations that either preserve their current direction or redirect it. We study this evolution as a functional geometry, decomposing learned updates into parallel and perpendicular components. Across pretrained models, we find substantial parallel components beyond the residual identity path. We then apply the decomposition in two spaces: to attention and MLP updates relative to the hidden state, and to attention value aggregation",
+      "authors": [
+        "Shwai He",
+        "Haichao Zhang",
+        "Shen Yan"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "arxiv_id": "2609.15975v1",
+      "published_at": "2026-09-14T17:56:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Discovery Foundation Models: Toward Open-Ended Discovery Intelligence",
+      "title": "Discovery Foundation Models: Toward Open-Ended Discovery Intelligence",
+      "url": "https://arxiv.org/abs/2609.15973v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15973v1",
+      "description": "Foundation models have progressed from learning and reasoning over existing knowledge, to increasingly learning through action, tool use, and outcome feedback. We argue that the next frontier is a further transition: from solving and acting within problems specified by humans to participating in the process by which new problems, representations, explanations, and knowledge are created. We refer to this capability as Discovery Intelligence. We formulate Discovery Foundation Models (DFMs) as gene",
+      "authors": [
+        "Ling Yang",
+        "Zhenfei Yin",
+        "Yingcheng Wu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2609.15973v1",
+      "published_at": "2026-09-14T17:56:00Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Mind2Dialogue: Training Human-Aware Language Models by Simulating User Mental States",
+      "title": "Mind2Dialogue: Training Human-Aware Language Models by Simulating User Mental States",
+      "url": "https://arxiv.org/abs/2609.15972v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15972v1",
+      "description": "As language models become more capable, long-term collaboration in learning, reasoning, and decision-making calls for a deeper understanding of the people they serve. Yet training such human-aware language models faces a fundamental supervision gap because current datasets for LLM assistant training contain few if any well-informed responses explicitly grounded in users' unspoken beliefs and goals. Scaling such supervision is inherently constrained, as users' underlying states are not directly o",
+      "authors": [
+        "Zixuan Wang",
+        "Yufan Zhou",
+        "Jinzhou Tang",
+        "Xinle Yu",
+        "Chengjun Wu"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "arxiv_id": "2609.15972v1",
+      "published_at": "2026-09-14T17:55:58Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Verifiable by Construction: Claim-Level Evaluation of Verbatim Citation in Clinical Question Answering",
+      "title": "Verifiable by Construction: Claim-Level Evaluation of Verbatim Citation in Clinical Question Answering",
+      "url": "https://arxiv.org/abs/2609.15964v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15964v1",
+      "description": "Large language models (LLMs) have been widely adopted for clinical question answering (QA). Current systems can attach citations to their answers, but these often point to broad texts, leaving time-pressed clinicians unable to verify them efficiently. An alternative is to ensure that responses are verifiable by construction: providing fine-grained verbatim quotes from reference material that substantiate claims, so users can verify an answer without opening other documents. In this paper, we eva",
+      "authors": [
+        "Jiashuo Zhang",
+        "Yuling Chen",
+        "Yvonne Commodore-Mensah",
+        "Michael Oberst"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2609.15964v1",
+      "published_at": "2026-09-14T17:53:51Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Privacy-Aligned Personalized Federated Learning with Compact Adaptation and Variable-Length Gaussian Communication",
+      "title": "Privacy-Aligned Personalized Federated Learning with Compact Adaptation and Variable-Length Gaussian Communication",
+      "url": "https://arxiv.org/abs/2609.15950v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15950v1",
+      "description": "Record-level differential privacy exposes a structural misalignment in personalized federated learning when client-specific variation is low-dimensional while training repeatedly releases high-dimensional updates. In this paper, we address this misalignment by releasing a private client context once and confining repeated adaptation to a fixed coefficient space. Beyond dimensionality reduction, the factorized generator induces an adaptive optimization geometry that reshapes noisy updates, and co",
+      "authors": [
+        "Yilin Xu",
+        "Chun Hei Michael Shiu",
+        "Chih Wei Ling",
+        "Linqi Song"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2609.15950v1",
+      "published_at": "2026-09-14T17:48:11Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Vulnerability Localization Benchmark: Measuring Agentic Security Analysis at Repository Scale",
+      "title": "Vulnerability Localization Benchmark: Measuring Agentic Security Analysis at Repository Scale",
+      "url": "https://arxiv.org/abs/2609.15939v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15939v1",
+      "description": "Language-model agents increasingly operate over complete software repositories, yet cybersecurity evaluations primarily measure whether they can detect, reproduce, or repair vulnerabilities rather than whether they can locate the relevant code. We study vulnerability localization: given a weakness class and an unfamiliar repository, identify the implementation files associated with that weakness. We introduce the Vulnerability Localization Benchmark (VLoc Bench), comprising 500 real world vulner",
+      "authors": [
+        "Aman Priyanshu",
+        "Supriti Vijay",
+        "Kimia Majd",
+        "Xuhong He",
+        "Fraser Burch"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "arxiv_id": "2609.15939v1",
+      "published_at": "2026-09-14T17:44:51Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "HypoEvolve: Genetic Algorithms Enable Multi-Agent LLMs to Discover Scientific Hypotheses",
+      "title": "HypoEvolve: Genetic Algorithms Enable Multi-Agent LLMs to Discover Scientific Hypotheses",
+      "url": "https://arxiv.org/abs/2609.15938v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15938v1",
+      "description": "Scientific agents contribute to hypothesis discovery by synthesizing evidence, assessing proposals, and developing new explanations. Recent systems combine scientific agents with evolutionary search through critique, comparison, and revision. However, how different forms of agent collaboration affect hypothesis quality remains an open question. Answering this question requires separating the effects of agents' scientific capabilities from those of their collaboration. A framework must therefore ",
+      "authors": [
+        "Jieyuan Liu",
+        "Mengzhou Hu",
+        "Jefferson Chen",
+        "JungHo Kong",
+        "Pratibha Jagannatha"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CE",
+        "cs.MA",
+        "cs.NE"
+      ],
+      "arxiv_id": "2609.15938v1",
+      "published_at": "2026-09-14T17:44:49Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Recurrent GraphNeural NetworkswithSet-BasedAggregation",
+      "title": "Recurrent GraphNeural NetworkswithSet-BasedAggregation",
+      "url": "https://arxiv.org/abs/2609.15932v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15932v1",
+      "description": "Recurrent GNNs iterate message passing to convergence, and their logical characterizations to date rely on multi-set aggregation, graded (counting) logics, and halting or acceptance conditions that cannot be verified from the network's parameters. We study recurrent GNNs with set-based aggregation and identify sufficient conditions checkable from the weights for networks to compile into formulas and formulas into networks. The main result is an effective, two-directional equivalence between a cl",
+      "authors": [
+        "Blai Bonet"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2609.15932v1",
+      "published_at": "2026-09-14T17:39:41Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Pilot Early, Commit Late: A Real-Options Model of Enterprise AI Adoption under Rapid Technological Progress",
+      "title": "Pilot Early, Commit Late: A Real-Options Model of Enterprise AI Adoption under Rapid Technological Progress",
+      "url": "https://arxiv.org/abs/2609.15919v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15919v1",
+      "description": "Artificial intelligence presents firms with an unusual timing problem. The technology frontier is improving rapidly, implementation is partly irreversible, and organization-specific capabilities are accumulated through action. This paper develops a two-period decision model of AI deployment under uncertainty in which a firm chooses among immediate deployment, a limited pilot, and waiting. Deployment earns current operating value but exposes the firm to architectural obsolescence; waiting preserv",
+      "authors": [
+        "Gaurav Tewari"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2609.15919v1",
+      "published_at": "2026-09-14T17:30:37Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Safe Meta-Reinforcement Learning via Information Space Reachability",
+      "title": "Safe Meta-Reinforcement Learning via Information Space Reachability",
+      "url": "https://arxiv.org/abs/2609.15915v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15915v1",
+      "description": "Meta-reinforcement learning (meta-RL) enables agents to adapt to unseen tasks with limited experience. Despite its promise, the application of meta-RL in real-world tasks is hindered by safety requirements, which have been underexplored in prior work. In this paper, we propose a safe meta-RL framework that explicitly accounts for safety during adaptation. Our key insight is to reason about safety in the information space, which captures both the physical state and the agent's belief over the und",
+      "authors": [
+        "Zeyang Li",
+        "Sunbochen Tang",
+        "Navid Azizan"
+      ],
+      "categories": [
+        "cs.LG",
+        "eess.SY"
+      ],
+      "arxiv_id": "2609.15915v1",
+      "published_at": "2026-09-14T17:27:11Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SlipSense: Multimodal Tactile Learning for Low-Latency and Generalized Slip Detection",
+      "title": "SlipSense: Multimodal Tactile Learning for Low-Latency and Generalized Slip Detection",
+      "url": "https://arxiv.org/abs/2609.15910v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15910v1",
+      "description": "Slip detection is fundamental to dexterous manipulation, yet existing systems often lack precise characterization of detection latency and cross-platform generalization. We present SlipSense, a multimodal tactile slip-detection framework built on TacV5, a compact sensor integrating a $32 \\times 32$ piezoresistive array operating at 240 Hz and a 3-axis MEMS accelerometer operating at 8 kHz. The piezoresistive array captures spatial pressure distributions, while the accelerometer captures friction",
+      "authors": [
+        "Tong Jian",
+        "Aditya Thurvas Senthil Kumar",
+        "Xinyi Li",
+        "Ziling Chen",
+        "Tianyu Dai"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2609.15910v1",
+      "published_at": "2026-09-14T17:23:59Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Discrete Beckmann Transport Models for One-Step Language Modeling and Reasoning",
+      "title": "Discrete Beckmann Transport Models for One-Step Language Modeling and Reasoning",
+      "url": "https://arxiv.org/abs/2609.15903v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15903v1",
+      "description": "Discrete diffusion and flow models are a promising alternative to autoregressive language models, but compressing many-step sampling into fewer steps typically requires distilling a pretrained teacher model. This caps the student at the teacher's quality and requires a costly two-stage training pipeline. We introduce Discrete Beckmann Transport Models (DBTM), built on a time-independent flow whose autonomous transport map provably carries any point in the ambient space to a fixed point on the ve",
+      "authors": [
+        "Sophia Tang",
+        "Shiyi Wang"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2609.15903v1",
+      "published_at": "2026-09-14T17:19:47Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Bridging Control, Inference, Transport, and Thermodynamics: From Theory to Applications in Learning",
+      "title": "Bridging Control, Inference, Transport, and Thermodynamics: From Theory to Applications in Learning",
+      "url": "https://arxiv.org/abs/2609.15897v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15897v1",
+      "description": "The last decade has seen the development of powerful methods for learning complex structure from high-dimensional data. These advances have brought to the foreground fundamental connections between subdisciplines of physics, applied mathematics, and machine learning. In this review, we bring together some of these ideas, often expressed in different languages, to highlight a conceptual thread that links five distinct fields: control theory, optimal transport, probabilistic inference, non-equilib",
+      "authors": [
+        "Emmy Blumenthal",
+        "Nikolas Claussen",
+        "Benjamin Eysenbach",
+        "Catherine Ji",
+        "Gautam Reddy"
+      ],
+      "categories": [
+        "cond-mat.stat-mech",
+        "cond-mat.dis-nn",
+        "cond-mat.soft",
+        "cs.LG",
+        "physics.bio-ph"
+      ],
+      "arxiv_id": "2609.15897v1",
+      "published_at": "2026-09-14T17:16:33Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Quenched Ensemble Sampling",
+      "title": "Quenched Ensemble Sampling",
+      "url": "https://arxiv.org/abs/2609.15894v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15894v1",
+      "description": "Some of the sharpest challenges in sampling from the energy functions of physical systems arise at phase transitions, where the density of states changes abruptly and many sampling algorithms stall. Nested sampling is a particle method that traverses the density of states under a hard energy constraint and is known to be robust to such transitions, but its application in high dimension is limited by the difficulty of sampling under that constraint. In this work we introduce Quenched Ensemble Sam",
+      "authors": [
+        "David Yallup"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "stat.CO"
+      ],
+      "arxiv_id": "2609.15894v1",
+      "published_at": "2026-09-14T17:16:07Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Anatomical Grounding and Leakage-Aware Multimodal Contrastive Learning for Alzheimer's Disease Classification from Structural MRI",
+      "title": "Anatomical Grounding and Leakage-Aware Multimodal Contrastive Learning for Alzheimer's Disease Classification from Structural MRI",
+      "url": "https://arxiv.org/abs/2609.15888v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15888v1",
+      "description": "Deep networks trained on structural MRI for Alzheimer's disease (AD) staging often reach reasonable accuracy while attending to anatomically irrelevant regions, and multimodal models that add clinical tables frequently rely on variables that were used to assign the diagnostic label in the first place. We study both issues with a deliberately lightweight slice-based encoder (ResNet18 with a one-layer Transformer over slices) on 1,075 baseline T1-weighted scans from ADNI-1. First, we use FastSurfe",
+      "authors": [
+        "Paul-Gabriel Nicolae",
+        "Irina Georgiana Mocanu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2609.15888v1",
+      "published_at": "2026-09-14T17:13:12Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Inoculation Midtraining with Learned Neologisms",
+      "title": "Inoculation Midtraining with Learned Neologisms",
+      "url": "https://arxiv.org/abs/2609.15886v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15886v1",
+      "description": "Large language models (LLMs) often learn both desirable and undesirable properties during post-training. We study whether midtraining, an earlier training stage, can shape which of these properties later generalise. We introduce Inoculation Midtraining, a technique that teaches a base model that unsafe behaviour belongs to a designated <quarantine_token> context, as indicated by the <quarantine_token> neologism (a new token) introduced during midtraining, and then post-trains the model on unsafe",
+      "authors": [
+        "Kyle O'Brien",
+        "Edward James Young",
+        "Puria Radmard",
+        "Nathalie Kirch",
+        "Cameron Tice"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2609.15886v1",
+      "published_at": "2026-09-14T17:12:52Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Privacy-enhanced federated learning via asynchronous aggregation and local differential perturbation",
+      "title": "Privacy-enhanced federated learning via asynchronous aggregation and local differential perturbation",
+      "url": "https://arxiv.org/abs/2609.15885v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15885v1",
+      "description": "This study proposes a privacy-enhanced federated learning framework to address secure collaborative training in distributed data environments. The framework integrates Dynamic Differential Privacy (DDP), lightweight Homomorphic Encryption (HE), and Local Differential Privacy (LDP) mechanisms to ensure data privacy protection during model training. Additionally, the framework employs an asynchronous aggregation strategy with version control to support distributed training in asynchronous environm",
+      "authors": [
+        "Zhen Zhong",
+        "Shini Yang",
+        "Liesheng Wei"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CE",
+        "cs.DB"
+      ],
+      "arxiv_id": "2609.15885v1",
+      "published_at": "2026-09-14T17:12:15Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Thin-shell stability of Gaussian cooling: logconcave sampling with sesteric complexity from a cold start",
+      "title": "Thin-shell stability of Gaussian cooling: logconcave sampling with sesteric complexity from a cold start",
+      "url": "https://arxiv.org/abs/2609.15884v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15884v1",
+      "description": "We show that logconcave probability measures along the Gaussian cooling path have thin-shell stability, generalizing the thin-shell theorem. This result leads to improved complexity for the fundamental problem of sampling an arbitrary logconcave distribution from a cold start. For (near-)isotropic logconcave distributions, the complexity is nearly $n^{2.5}$, improving the previous bound of $n^{2.75}$, and matching the complexity of the abstract Speedy walk.",
+      "authors": [
+        "Yunbum Kook",
+        "Santosh S. Vempala"
+      ],
+      "categories": [
+        "cs.DS",
+        "cs.LG",
+        "math.PR"
+      ],
+      "arxiv_id": "2609.15884v1",
+      "published_at": "2026-09-14T17:10:31Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Learning Multimodal One-step Flow Policy via Value-weighted Optimal Transport",
+      "title": "Learning Multimodal One-step Flow Policy via Value-weighted Optimal Transport",
+      "url": "https://arxiv.org/abs/2609.15883v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15883v1",
+      "description": "Offline reinforcement learning aims to learn a policy solely from fixed datasets, which often contain multimodal action distributions. Flow policies can naturally represent such multimodal behaviors, but learning an efficient one-step flow policy remains challenging: standard value guidance often leads to mode collapse or exploits overestimation bias in out-of-distribution regions. To address this, we introduce One-step Flow policy via Optimal Transport (OptiFlow), a framework for one-step flow ",
+      "authors": [
+        "Jaehun Shon",
+        "Jinha Choi",
+        "Jongwook Jeon",
+        "Jongmin Lee"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2609.15883v1",
+      "published_at": "2026-09-14T17:10:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "LLM-Based Schema-Aware Split Learning for Privacy-Preserving Mental Distress Prediction Across Heterogeneous Surveys",
+      "title": "LLM-Based Schema-Aware Split Learning for Privacy-Preserving Mental Distress Prediction Across Heterogeneous Surveys",
+      "url": "https://arxiv.org/abs/2609.15871v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15871v1",
+      "description": "Rising societal and lifestyle complexity has been linked to a growing prevalence of mental distress worldwide. Educational institutions, workplaces, clinics, etc. collect large volumes of mental health survey data to understand and reduce this burden. Collaborative analysis of such data could yield effective generalizable predictive models. Privacy constraints and varied survey designs (i.e., different questions, scales, and formats) hinder direct integration. We propose a schema-aware split lea",
+      "authors": [
+        "Md Khalid Syfullah",
+        "Alvi Ataur Khalil"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "arxiv_id": "2609.15871v1",
+      "published_at": "2026-09-14T16:59:04Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "LongAgent: History-Guided Agentic Search for Longitudinal Outcome Prediction",
+      "title": "LongAgent: History-Guided Agentic Search for Longitudinal Outcome Prediction",
+      "url": "https://arxiv.org/abs/2609.15859v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15859v1",
+      "description": "Extracting informative representations from longitudinal data that can predict future outcomes remains a critical challenge in medicine. Medical datasets are inherently heterogeneous, consisting of a large number of variables collected from different sources, sampled with different temporal spacings, and representing different aspects of human health status. This requires identifying those variables with predictive value, processing longitudinal information, and integrating multiple variables fo",
+      "authors": [
+        "Siyao Wang",
+        "Florian Guitton",
+        "Shuojie Fu",
+        "Guanyu Tao",
+        "Kai Sun"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2609.15859v1",
+      "published_at": "2026-09-14T16:51:35Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Task-Directed Residual AddUNet:Perfect-Reconstruction Routing for Full-Rate Representations",
+      "title": "Task-Directed Residual AddUNet:Perfect-Reconstruction Routing for Full-Rate Representations",
+      "url": "https://arxiv.org/abs/2609.15857v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15857v1",
+      "description": "This paper establishes a perfect-reconstruction (PR) interpretation of AddUNet and its full-rate realization, and introduces a Residual Full-Rate PR architecture for task-directed representation learning. The survivor--skip structure of a constrained additive U-Net is shown to be exactly equivalent to a critically sampled multirate PR filter bank. The full-rate formulation removes the complementary-subband restrictions of the critically sampled system while preserving PR. A Residual Full-Rate PR",
+      "authors": [
+        "Vikram R. Lakkavalli"
+      ],
+      "categories": [
+        "cs.LG",
+        "eess.SP"
+      ],
+      "arxiv_id": "2609.15857v1",
+      "published_at": "2026-09-14T16:50:14Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "K-Bench: a clinically calibrated benchmark for evaluating large language models in high-risk mental health conversations",
+      "title": "K-Bench: a clinically calibrated benchmark for evaluating large language models in high-risk mental health conversations",
+      "url": "https://arxiv.org/abs/2609.15855v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15855v1",
+      "description": "% !TEX root = ../main.tex People increasingly use large language models (LLMs) for mental health support, yet their safety in evolving, high-risk conversations remains poorly characterised. We developed K-Bench, a clinician-calibrated, protected benchmark evaluating 125 model configurations representing 33 base models from 14 providers across a fixed cohort of 200 multi-turn vignettes involving suicide, self-harm, domestic violence, substance misuse, and no-risk presentations. Synthetic patient ",
+      "authors": [
+        "Laura M. Vowels",
+        "Matthew J. Vowels",
+        "Shivali Sharma",
+        "Apoorv Jha",
+        "Rehnuma Choudhury"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2609.15855v1",
+      "published_at": "2026-09-14T16:49:23Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Learning to Coach for Experiential Learning",
+      "title": "Learning to Coach for Experiential Learning",
+      "url": "https://arxiv.org/abs/2609.15851v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15851v1",
+      "description": "Language models can learn from experience, but raw solution trajectories are often too long and noisy to provide effective guidance. In this work, we propose Learning to Coach (L2C), a framework that trains a dedicated LLM-as-a-Coach to extract actionable experiential knowledge from an actor model's previous trajectory. The actor remains frozen, while the LLM-as-a-Coach is trained to maximize a reward given by the correctness of the actor's guided response. We study two such rewards: a same-inst",
+      "authors": [
+        "Guanheng Chen",
+        "Tianzhu Ye",
+        "Li Dong",
+        "Xun Wu",
+        "Shaohan Huang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2609.15851v1",
+      "published_at": "2026-09-14T16:47:02Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Before You Poll with LLMs: A Deliberative Diagnostic Framework",
+      "title": "Before You Poll with LLMs: A Deliberative Diagnostic Framework",
+      "url": "https://arxiv.org/abs/2609.15849v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.15849v1",
+      "description": "Can LLMs reason through new information like humans, or do they merely retrieve cached opinions? This is critical for silicon sampling, where LLM personas simulate public opinion at scale. Current evaluations test only whether personas hold the right opinions -- a static snapshot. But opinion research increasingly depends on dynamic fidelity: whether personas update beliefs in response to new arguments, as humans do during deliberation. No existing benchmark tests this. We introduce the Delibera",
+      "authors": [
+        "Ahmed Wali",
+        "Hassaan Tayyab"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "arxiv_id": "2609.15849v1",
+      "published_at": "2026-09-14T16:41:48Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
