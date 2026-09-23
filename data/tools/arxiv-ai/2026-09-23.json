@@ -1,0 +1,704 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-09-23T00:21:04.209262+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay",
+      "title": "GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay",
+      "url": "https://arxiv.org/abs/2609.25001v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.25001v1",
+      "description": "Modern video games provide a measurable testbed for AI models, combining abilities of visual understanding, instruction decomposition, goal planning, and precise action control over multiple temporal horizons. Existing datasets and benchmarks, however, either cover a narrow range of games, lack language instructions, or rely on high-variance online rollouts. To address these challenges, we introduce GameHorizon, a unified data and evaluation suite that measures gameplay capabilities at different",
+      "authors": [
+        "Yiran Wang",
+        "Xingyilang Yin",
+        "Junfu Pu",
+        "Guangzhi Wang",
+        "Kaifeng Li"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2609.25001v1",
+      "published_at": "2026-09-21T17:59:33Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Critical-State RL: Diagnosing Trainable States for Multi-Turn Tool Use",
+      "title": "Critical-State RL: Diagnosing Trainable States for Multi-Turn Tool Use",
+      "url": "https://arxiv.org/abs/2609.24985v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24985v1",
+      "description": "Multi-turn tool-use failures can hinge on a single model call, yet reward variation alone does not reveal which call would benefit from training. When rewards depend on later interactions, their variation can reflect downstream randomness rather than differences between the current actions. We introduce Critical-State RL to identify trainable states in multi-turn interactions. Given task-defined candidate calls and local rewards, the method assesses whether each reward captures the action's effe",
+      "authors": [
+        "Zixiang Chen",
+        "Wenting Zhao",
+        "Zhepeng Cen",
+        "Akshara Prabhakar",
+        "Jielin Qiu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "arxiv_id": "2609.24985v1",
+      "published_at": "2026-09-21T17:57:20Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",
+      "title": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",
+      "url": "https://arxiv.org/abs/2609.24984v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24984v1",
+      "description": "Video world models enable interactive exploration of dynamic environments, yet struggle to respect prior observations over long horizons and across viewpoints. We present WorldCrafter, a video world model that learns a camera-queryable implicit 3D-aware memory for this purpose. The key insight is to let the requested viewpoint shape how multi-view evidence is compressed into the video generator's limited token budget. Trained jointly with the video generator, a memory encoder and pose-conditione",
+      "authors": [
+        "Wangbo Yu",
+        "Kunhao Liu",
+        "Wenbo Hu",
+        "Shenghai Yuan",
+        "Chaoran Feng"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.GR"
+      ],
+      "arxiv_id": "2609.24984v1",
+      "published_at": "2026-09-21T17:57:06Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "onPanda: Efficient Annotation of On-Policy Alignment Data for LLMs and Agents via Token-Level Correction",
+      "title": "onPanda: Efficient Annotation of On-Policy Alignment Data for LLMs and Agents via Token-Level Correction",
+      "url": "https://arxiv.org/abs/2609.24983v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24983v1",
+      "description": "We present onPanda, an interactive tool for efficiently annotating LLM alignment data and agent trajectories. onPanda adopts token-level correction as its core interaction: while reading a model response, the annotator locates the first inappropriate token and either picks a substitute from the model's candidate tokens or types the correct text via free-form editing. The system then truncates everything after that position and continues generation from the corrected prefix, repeating this locate",
+      "authors": [
+        "Lei Yang",
+        "Mengyin Liu",
+        "Jia Wang",
+        "Hangyu Guo",
+        "Liang Zhao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "arxiv_id": "2609.24983v1",
+      "published_at": "2026-09-21T17:56:53Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "LoRA-generating hypernetworks for efficient on-device LLM generative personalization",
+      "title": "LoRA-generating hypernetworks for efficient on-device LLM generative personalization",
+      "url": "https://arxiv.org/abs/2609.24979v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24979v1",
+      "description": "On-device large language models (`LLMs'), e.g. running on mobile phones, are ripe for improvement via personalization. The limited compute resources of mobile devices impose limits on model scale and thus model quality, making any realizable quality gains highly impactful. At the same time, their personal nature (i.e., the close coupling to a particular user) means that a given on-device LLM tends to be used in similar, predictable patterns over the course of time. This paper presents a novel me",
+      "authors": [
+        "Sean Augenstein",
+        "Li Ding",
+        "Jihwan Lee",
+        "Keith Rush",
+        "Andrey Zhmoginov"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2609.24979v1",
+      "published_at": "2026-09-21T17:55:48Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "DexTacWAM: A Visuo-Tactile World-Action Model for Dexterous Manipulation",
+      "title": "DexTacWAM: A Visuo-Tactile World-Action Model for Dexterous Manipulation",
+      "url": "https://arxiv.org/abs/2609.24976v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24976v1",
+      "description": "Dexterous manipulation depends on contact dynamics that are often only partially observable from vision. Recent World-Action Models (WAMs) couple predictive video world modeling with action generation, but remain largely vision-centric and therefore cannot directly model these contact dynamics. We present DexTacWAM, a visuo-tactile WAM that encodes each fingertip independently, aggregates the resulting features through a finger- and pose-aware tactile compressor, and injects the tactile latent i",
+      "authors": [
+        "Haoran Yuan",
+        "Zekai Wang",
+        "Boning Shao",
+        "Haoran Lu",
+        "Trevor Darrell"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "arxiv_id": "2609.24976v1",
+      "published_at": "2026-09-21T17:55:24Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Harness-Zero: Harness Distillation via Agent-as-Harness",
+      "title": "Harness-Zero: Harness Distillation via Agent-as-Harness",
+      "url": "https://arxiv.org/abs/2609.24974v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24974v1",
+      "description": "Agent harnesses, the external systems that mediate model-environment interaction, can substantially improve agent performance, but their gains remain tied to the harness at deployment. Because the best harness varies across domains, instances, and models, a general-purpose agent must either settle for a suboptimal shared harness or route among an ever-growing set of specialized ones. We therefore study agent harness distillation: using a domain- or instance-optimized harness as training-time gui",
+      "authors": [
+        "Haoran Ye",
+        "Yuxing Lu",
+        "Haonan Dong",
+        "Zhaochen Su",
+        "Guojie Song"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.NE"
+      ],
+      "arxiv_id": "2609.24974v1",
+      "published_at": "2026-09-21T17:55:20Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+      "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+      "url": "https://arxiv.org/abs/2609.24972v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24972v1",
+      "description": "An LLM agent's capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively proposing and selecting component-wise edits of an agent harness, practically establishing a form of recursive self-improvement (RSI) at the agent-system level. However, such recursive evolution may overfit by memorizing the training tasks, showing large in-d",
+      "authors": [
+        "Peng Xia",
+        "Rujun Han",
+        "Zifeng Wang",
+        "Yanfei Chen",
+        "Yufan Zhang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2609.24972v1",
+      "published_at": "2026-09-21T17:54:49Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "DolphinBench: Mapping the Pareto Frontier of Agent Memory",
+      "title": "DolphinBench: Mapping the Pareto Frontier of Agent Memory",
+      "url": "https://arxiv.org/abs/2609.24971v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24971v1",
+      "description": "Agents today often take real-world actions that depend on long-term memory and context recall over time. However, most current memory benchmarks are built for a conversational question-answer format, where the question itself signals that some fact must be retrieved, and often which one. Moreover, benchmarks rarely require anything beyond accuracy from submissions, allowing memory systems to make unreasonable cost/time tradeoffs to achieve higher scores. We present DolphinBench, a benchmark that",
+      "authors": [
+        "Soumil Rathi",
+        "Deshraj Yadav",
+        "Taranjeet Singh"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2609.24971v1",
+      "published_at": "2026-09-21T17:54:35Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Rare Event Estimation via Iterative Unalignment",
+      "title": "Rare Event Estimation via Iterative Unalignment",
+      "url": "https://arxiv.org/abs/2609.24969v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24969v1",
+      "description": "As agents are deployed with increased autonomy, even extremely rare events along their stochastic output trajectories can occur and prove catastrophic. Safe deployment therefore does not depend on whether these events can occur, but on how often they might. We study the problem of estimating the probability of rare events that arise from stochastic variation in the agent's own actions. Estimating this type of risk requires searching over the combinatorially vast space of trajectories. Naive Mont",
+      "authors": [
+        "Hanming Yang",
+        "Daksh Mittal",
+        "Jing Dong",
+        "Hongseok Namkoong"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2609.24969v1",
+      "published_at": "2026-09-21T17:53:38Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
+      "title": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
+      "url": "https://arxiv.org/abs/2609.24967v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24967v1",
+      "description": "LLM agents are increasingly deployed in collaborative settings, yet long-term interaction may give rise to undesirable coordination. We study the emergence of collusion in a long-horizon multi-agent environment: two agents repeatedly complete individual tasks, share task logs, verify each other's work, and receive rewards. We introduce realistic constraints that make compliance with the verification protocol incompatible with reward maximization, and find that agents increasingly deviate from th",
+      "authors": [
+        "Xinrui Shi",
+        "Yanzhe Zhang",
+        "Diyi Yang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2609.24967v1",
+      "published_at": "2026-09-21T17:52:48Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Jev for Scientific Decisions: Evaluating Semantic Choices and Their Consequences",
+      "title": "Jev for Scientific Decisions: Evaluating Semantic Choices and Their Consequences",
+      "url": "https://arxiv.org/abs/2609.24965v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24965v1",
+      "description": "Scientific workflows often require choosing among known relations before a deterministic calculation can proceed. Whether observations share a culture, treatment or reference standard can change the scientific meaning of the resulting count or comparison. We evaluate Jev as a semantic decision component using a harness that follows its documented guidance and assigns arithmetic to code. The study compares twelve model configurations on twenty source-grounded Choices across ten scientific cases, ",
+      "authors": [
+        "Boyuan Deng",
+        "Shuyi Fan",
+        "Hongyang Zhang",
+        "Xinhong Xie"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2609.24965v1",
+      "published_at": "2026-09-21T17:51:50Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Generative Tutorial: Towards Live Contextualized Visual Instructions for Physical Tasks",
+      "title": "Generative Tutorial: Towards Live Contextualized Visual Instructions for Physical Tasks",
+      "url": "https://arxiv.org/abs/2609.24955v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24955v1",
+      "description": "Visual instructions for physical tasks are typically authored in one context and followed in another, requiring users to translate demonstrated tools, materials, and spatial relationships into their own environment. We introduce Generative Tutorial, a conceptual framework for live visual instruction that depicts intended outcomes and actions within the user's environment and task flow. A formative evaluation of state-of-the-art image and video generation identifies failures and potential benefit",
+      "authors": [
+        "Muzhe Wu",
+        "Zuchen Li",
+        "Xu Wang",
+        "Anhong Guo"
+      ],
+      "categories": [
+        "cs.HC",
+        "cs.AI"
+      ],
+      "arxiv_id": "2609.24955v1",
+      "published_at": "2026-09-21T17:46:25Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "JAREX: An Acquisition Function for Multi-Objective Algorithmic Process Characterization",
+      "title": "JAREX: An Acquisition Function for Multi-Objective Algorithmic Process Characterization",
+      "url": "https://arxiv.org/abs/2609.24954v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24954v1",
+      "description": "Pharmaceutical process characterization is central to Quality by Design because it defines how variations in process parameters affect the ability to meet product quality specifications, thereby supporting proven acceptable ranges and robust manufacturing. In practice, however, characterization still relies largely on factorial design of experiments (DOE) approaches, which are inefficient for resolving multivariate pass/fail boundaries in higher-dimensional spaces. While Bayesian optimization ha",
+      "authors": [
+        "Xinyang Li",
+        "Kevin Stone",
+        "Ajit Vikram"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "arxiv_id": "2609.24954v1",
+      "published_at": "2026-09-21T17:46:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Learning Physics from an Imperfect Ancestor",
+      "title": "Learning Physics from an Imperfect Ancestor",
+      "url": "https://arxiv.org/abs/2609.24947v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24947v1",
+      "description": "Neural operators evaluate parametric partial differential equations cheaply but degrade sharply outside their training distribution. Physics-informed neural networks avoid dependence on labeled data, yet their optimization can be basin-fragile: when the governing residual admits multiple solutions, a PINN trained from scratch may converge to a physically incorrect state despite achieving a small residual. We show that these failure modes can be addressed jointly: an imperfect NO provides the str",
+      "authors": [
+        "S. Mohammad Mousavi",
+        "Teeratorn Kadeethum",
+        "Nikolaos Bouklas",
+        "Somdatta Goswami"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2609.24947v1",
+      "published_at": "2026-09-21T17:42:17Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Exactness at Inference: A Representational Criterion for Out-of-Distribution Generalization",
+      "title": "Exactness at Inference: A Representational Criterion for Out-of-Distribution Generalization",
+      "url": "https://arxiv.org/abs/2609.24942v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24942v1",
+      "description": "A model generalizes outside its training distribution only when it computes a representation structurally equivalent to the generating mechanism, not an approximation fitted to it. Such equivalence is necessary for exactness in and out of distribution, and extrapolation is governed by this exactness at inference, whatever its realization. Tensor Logic shows this: a zero-temperature contraction is equivalent to discrete logic, deducing in place with no artefact extracted, its tensors Boolean, its",
+      "authors": [
+        "Filipe Marinho Rocha",
+        "Inês Dutra",
+        "Vítor Santos Costa",
+        "Luís Paulo Reis"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.LO"
+      ],
+      "arxiv_id": "2609.24942v1",
+      "published_at": "2026-09-21T17:39:51Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Linguistic Features for Interpretable Textual Entailment",
+      "title": "Linguistic Features for Interpretable Textual Entailment",
+      "url": "https://arxiv.org/abs/2609.24932v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24932v1",
+      "description": "Despite the success of neural models in natural language processing, their black-box nature limits interpretability and conceals the linguistic phenomena underlying their predictions. We present SLITE, an explainable hybrid model for Recognizing Textual Entailment that integrates two complementary layers of semantic analysis: a structural-relational layer, based on semantic compatibility and incompatibility between compositional entities, and a distributional-informational layer, based on struct",
+      "authors": [
+        "David Torres-Moreno",
+        "Jorge Hermosillo-Valadez",
+        "Asela Reig-Alamillo"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.SC"
+      ],
+      "arxiv_id": "2609.24932v1",
+      "published_at": "2026-09-21T17:26:30Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Conformalized Quantile Regression and Minimax Limits of Fixed-Score Calibration under Known Covariate Shift",
+      "title": "Conformalized Quantile Regression and Minimax Limits of Fixed-Score Calibration under Known Covariate Shift",
+      "url": "https://arxiv.org/abs/2609.24929v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24929v1",
+      "description": "In this paper, we study nonasymptotic $L^p$ error bounds for interval length and conditional coverage in split conformalized quantile regression (CQR). Our bounds rely on local regularity conditions and accuracy guarantees for the estimated quantiles. We further instantiate our bounds for quantile regression with sparse ReLU neural networks. We also consider covariate shift, where the calibration and test covariates have different distributions, and derive nonasymptotic bounds for this setting. ",
+      "authors": [
+        "Rustam Isaev",
+        "Anton Conrad",
+        "Denis Belomestny",
+        "Eric Moulines",
+        "Sergey Samsonov"
+      ],
+      "categories": [
+        "math.ST",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_id": "2609.24929v1",
+      "published_at": "2026-09-21T17:24:00Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Et Tu, Brute? Economic Misalignment in Personal AI Agents",
+      "title": "Et Tu, Brute? Economic Misalignment in Personal AI Agents",
+      "url": "https://arxiv.org/abs/2609.24927v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24927v1",
+      "description": "Personal AI agents make recommendations and take actions on people's behalf in high-stakes economic contexts, e.g., buying a flight, choosing health insurance, or selecting a graduate program. The agent is given access to the user's personal context, e.g., their email inbox and a structured profile of personal attributes, with the intention of making an optimal, personalized decision for the user. We show that by simply providing this personal context, the agent steers recommendations based on i",
+      "authors": [
+        "Aman Priyanshu",
+        "Supriti Vijay",
+        "Brian Jabarian",
+        "Niloofar Mireshghallah"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2609.24927v1",
+      "published_at": "2026-09-21T17:22:44Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "BackTrend: Evaluating Scientific Weak-Signal Prediction via Backward Reconstruction",
+      "title": "BackTrend: Evaluating Scientific Weak-Signal Prediction via Backward Reconstruction",
+      "url": "https://arxiv.org/abs/2609.24921v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24921v1",
+      "description": "Scientific weak signals are early, low-visibility research directions that later become central to mature scientific topics, yet existing resources such as trend tracking, citation forecasting, and foresight reports rarely provide validated reference sets that link concrete early precursors to later paradigms. We introduce BackTrend, a retrospective benchmark in which, given a mature target topic and a temporal evidence constraint, systems must recover two types of precursors: problem-space sign",
+      "authors": [
+        "Xiao Zhou",
+        "Yilun Zhao",
+        "Owen Jiang",
+        "Tiansheng Hu",
+        "Cai Xu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2609.24921v1",
+      "published_at": "2026-09-21T17:18:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SocioVerse2: A Longitudinal Dynamic Social Simulation Framework under a Human-AI Co-evolutionary Paradigm",
+      "title": "SocioVerse2: A Longitudinal Dynamic Social Simulation Framework under a Human-AI Co-evolutionary Paradigm",
+      "url": "https://arxiv.org/abs/2609.24911v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24911v1",
+      "description": "Social simulation offers the social sciences an experimental instrument that the real world cannot supply, and generative agents have transformed it by acting as silicon samples that unite agent-based modeling with real behavioral data. Existing platforms verify collective behavior, align simulated populations with real societies in cross-sections, and employ autonomous agents for the research process. However, two social science requirements remain without systematic support: intervention in th",
+      "authors": [
+        "Xinnong Zhang",
+        "Jiayu Lin",
+        "Jia Wang",
+        "Yixu Huang",
+        "Xinyi Mou"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "arxiv_id": "2609.24911v1",
+      "published_at": "2026-09-21T17:14:09Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Visuomotor Robotic Pruning in Planar Orchards Using Hybrid Reinforcement Learning",
+      "title": "Visuomotor Robotic Pruning in Planar Orchards Using Hybrid Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2609.24906v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24906v1",
+      "description": "Dormant tree pruning is labor-intensive yet essential for maintaining modern high-productivity fruit orchards. In this work, we focus on pruning of modern planar tree training systems - V-Trellis apples and UFO cherries - where trunks and primary branches are trained into approximately planar walls. We introduce an end-to-end pipeline to learn a closed-loop visuomotor controller for robotic pruning. This controller is trained entirely using simulation and synthetically generated data and deploye",
+      "authors": [
+        "Abhinav Jain",
+        "Cindy Grimm",
+        "Stefan Lee"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "arxiv_id": "2609.24906v1",
+      "published_at": "2026-09-21T17:09:58Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ToneCL: Contrastive Learning for Few-Shot Syllable-Level Tone Classification",
+      "title": "ToneCL: Contrastive Learning for Few-Shot Syllable-Level Tone Classification",
+      "url": "https://arxiv.org/abs/2609.24903v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24903v1",
+      "description": "Tone languages constitute over 50-70% of the world's languages, but the vast majority are low-resource, lacking the large transcribed corpora needed for automatic tone classification. Existing datasets are typically collected at the sentence level, whereas field linguists require fine-grained syllable-level annotations. We propose ToneCL, a lightweight contrastive learning framework for few-shot syllable-level tone classification. We simulate low-resource conditions on Mandarin and Vietnamese, l",
+      "authors": [
+        "Qisheng Liao",
+        "Youngah Do"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2609.24903v1",
+      "published_at": "2026-09-21T17:09:21Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Human-LLM Deliberation as Interactive Proof: Conditions for Verifiability Without Transparency",
+      "title": "Human-LLM Deliberation as Interactive Proof: Conditions for Verifiability Without Transparency",
+      "url": "https://arxiv.org/abs/2609.24895v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24895v1",
+      "description": "When an LLM supplies an argument that a user could not readily construct, how can the user decide whether to accept its claim? Inspired by interactive proofs, we model human-LLM deliberation as an interaction between a prover with unrestricted internal search and a resource-bounded human verifier. The verifier requests and checks supporting details without access to the LLM's internal state. Passed checks accumulate evidence toward an acceptance threshold. We prove anytime-valid soundness agains",
+      "authors": [
+        "Baotong Zhang",
+        "Dean Foster",
+        "João Sedoc"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2609.24895v1",
+      "published_at": "2026-09-21T17:00:15Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SLICEChat: Progressive In-Encoder Token Pruning for Whole-Slide Pathology Language Models",
+      "title": "SLICEChat: Progressive In-Encoder Token Pruning for Whole-Slide Pathology Language Models",
+      "url": "https://arxiv.org/abs/2609.24894v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24894v1",
+      "description": "Whole-slide pathology images (WSIs) contain gigapixel-scale visual content, creating a major scalability challenge for slide-level multimodal large language models (MLLMs). Existing approaches process thousands of patch tokens and typically apply compression only after slide encoding, leaving multimodal attention computationally expensive. We introduce SLICEChat, a slide-level MLLM that integrates progressive token pruning within a hybrid Mamba--Transformer slide encoder. Mamba layers enable eff",
+      "authors": [
+        "Ali Kerem Bozkurt",
+        "Baris Cem Bakay",
+        "Ibrahim Kulac",
+        "Cigdem Gunduz-Demir",
+        "Erkut Erdem"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "arxiv_id": "2609.24894v1",
+      "published_at": "2026-09-21T16:59:06Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "OSWorld-Pro: Process-based Evaluation for Computer Use Agents",
+      "title": "OSWorld-Pro: Process-based Evaluation for Computer Use Agents",
+      "url": "https://arxiv.org/abs/2609.24890v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24890v1",
+      "description": "Evaluation of Computer-Use Agents (CUAs) is often limited to the final deliverables they create (at the end of hundreds of steps) and assessed with functional verifiers, as seen in OSWorld. However, such evaluation of end-state performance lacks transparency into how and why agents fail in various tasks, obfuscating critical insight for subsequent improvement. For instance, agents that err during keyboard inputs would require a different mitigation strategy from those that fail to precisely prov",
+      "authors": [
+        "Zhilin Wang",
+        "Shaokun Zhang",
+        "Yifan Zhang",
+        "Hao Zhang",
+        "Jin Xu"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2609.24890v1",
+      "published_at": "2026-09-21T16:55:24Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "The Copy Ceiling: An Input-Exposure Control for Ontology-Grounded Generation over Curated Corpora",
+      "title": "The Copy Ceiling: An Input-Exposure Control for Ontology-Grounded Generation over Curated Corpora",
+      "url": "https://arxiv.org/abs/2609.24885v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24885v1",
+      "description": "When a language model answers from a curated corpus via graph-based retrieval, a large grounding uplift does not establish reasoning over the retrieved structure: the context may already expose the gold answers. We propose exposure accounting, which classifies each gold item by whether the shown context exposes it and whether the answer recovers it. Its scalar reference is the copy ceiling, the recall a verbatim copy of the context achieves; signed gain over copy measures the model's recall rela",
+      "authors": [
+        "John J. O'Hare"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CY"
+      ],
+      "arxiv_id": "2609.24885v1",
+      "published_at": "2026-09-21T16:53:00Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "A Global Comparison of Schemas, Transparency, and Interoperability in Public-Sector AI Registers and Inventories",
+      "title": "A Global Comparison of Schemas, Transparency, and Interoperability in Public-Sector AI Registers and Inventories",
+      "url": "https://arxiv.org/abs/2609.24883v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24883v1",
+      "description": "Artificial intelligence (AI) registers and inventories aim to make governmental AI visible, but their institutional scope, schemas, and reporting practices construct different representations of public-sector AI. We compare 8,368 records from country-specific and transnational inventories covering 72 countries. Across 23 harmonized fields, registers shared a descriptive core but rarely requested information about appeals, risks, legal bases, or external evaluation. We found that broad schemas of",
+      "authors": [
+        "Dipto Das",
+        "Shion Guha"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CY",
+        "cs.HC"
+      ],
+      "arxiv_id": "2609.24883v1",
+      "published_at": "2026-09-21T16:51:35Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Learning Prognostic Variables for AI Convective Parameterizations via Symbolic Distillation",
+      "title": "Learning Prognostic Variables for AI Convective Parameterizations via Symbolic Distillation",
+      "url": "https://arxiv.org/abs/2609.24882v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24882v1",
+      "description": "Hybrid AI-physics climate modeling aims to improve coarse (~100km-resolution) Earth system models by learning to parameterize subgrid processes from high-fidelity data. However, this so far mostly involves local-in-time, diagnostic parameterizations, in which the subgrid state depends only on the current coarse state with no memory of previous states, which is unrealistic for processes such as convection that have intrinsic persistence. To address this, we enhance local-in-time parameterizations",
+      "authors": [
+        "Jurij Schönfeld",
+        "Tom Beucler",
+        "Julien Savre",
+        "Steven Sherwood",
+        "Veronika Eyring"
+      ],
+      "categories": [
+        "cs.LG",
+        "physics.ao-ph"
+      ],
+      "arxiv_id": "2609.24882v1",
+      "published_at": "2026-09-21T16:50:03Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Pinocchio: Fast Uncertainty Estimates for Black-Box Language Models",
+      "title": "Pinocchio: Fast Uncertainty Estimates for Black-Box Language Models",
+      "url": "https://arxiv.org/abs/2609.24881v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.24881v1",
+      "description": "In high-stakes decision-making applications of large language models (LLMs), practitioners require not only accurate LLMs but also uncertainty estimates for their predictions. Existing approaches to uncertainty estimation for LLMs require access to log-probabilities output by the model or require fine-tuning access. However, many industrial LLM products use closed-source API models, and many such API models like GPT do not return log-probabilities and may not allow fine-tuning. We introduce Pino",
+      "authors": [
+        "Kevin David Hayes",
+        "Arka Pal",
+        "Haosong Zhang",
+        "Tom Goldstein",
+        "Micah Goldblum"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2609.24881v1",
+      "published_at": "2026-09-21T16:48:50Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
