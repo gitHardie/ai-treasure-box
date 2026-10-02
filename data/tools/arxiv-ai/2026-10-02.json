@@ -1,697 +1,702 @@
 {
   "source": "arxiv-ai",
   "source_name": "ArXiv AI Papers",
-  "collected_at": "2026-10-02T00:20:39.204726+00:00",
+  "collected_at": "2026-10-02T12:27:16.799270+00:00",
   "mode": "discovery",
   "fetch_limit": 30,
   "count": 30,
   "items": [
     {
-      "name": "Ranking-Aware Prompt Optimization for Multimodal Clinical Diagnosis",
-      "title": "Ranking-Aware Prompt Optimization for Multimodal Clinical Diagnosis",
-      "url": "https://arxiv.org/abs/2609.40361v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40361v1",
-      "description": "Multimodal large language models (MLLMs) are rapidly advancing clinical diagnosis, yet their adaptation pipelines remain anchored to accuracy-based objectives. Clinical data are heavily class-imbalanced: a constant-majority predictor can score above 90% accuracy while being clinically useless. We therefore evaluate and optimize for AUROC, a threshold-free score that ranks positives above negatives and is invariant to class balance. We focus on prompt optimization in MLLMs. Reflective methods suc",
+      "name": "One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars",
+      "title": "One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars",
+      "url": "https://arxiv.org/abs/2610.02207v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02207v1",
+      "description": "3D Gaussian avatars support fast rendering, however, their real-time animation is often challenged by the costly neural inference. We address this bottleneck and show that the animation of pretrained avatar models can be closely approximated by a linear combination of identity-independent blendshapes. Building on this finding, we introduce GALA (Gaussian Animation via Linear Approximation), a distillation method that replaces per-frame heavy neural decoding with a shallow coefficient predictor a",
       "authors": [
-        "Tian Xia",
-        "Minghao Liu",
-        "Yiqing Liang",
-        "Laixi Shi",
-        "Jiayun Wang"
+        "Ramazan Fazylov",
+        "Stamatis Lefkimmiatis",
+        "Ivan Laptev"
       ],
       "categories": [
-        "cs.LG",
+        "cs.CV",
+        "cs.AI",
+        "cs.HC",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.02207v1",
+      "published_at": "2026-10-01T17:59:58Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+      "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+      "url": "https://arxiv.org/abs/2610.02206v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02206v1",
+      "description": "LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts' intent into tool invocations. However, existing evaluations focus on knowledge-based assessments or end-to-end agentic tasks, and do not directly measure LLMs' ability to generate executable commands for real-world cybersecurity tools. This gap is critical because cybersecurity operations rely on strict command-line interfaces (CLIs), where minor syntax errors, incorrect flag--value bindings,",
+      "authors": [
+        "Pengfei Li",
+        "Naufal Suryanto",
+        "Sicheng Zhang",
+        "Muzammal Naseer"
+      ],
+      "categories": [
         "cs.CL",
+        "cs.AI",
+        "cs.CR"
+      ],
+      "arxiv_id": "2610.02206v1",
+      "published_at": "2026-10-01T17:59:55Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents",
+      "title": "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents",
+      "url": "https://arxiv.org/abs/2610.02204v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02204v1",
+      "description": "Building reliable robot capabilities across diverse tasks requires substantial human effort to develop and maintain skills, design rewards, and integrate perception with control. We present Reconstruct, Practice, Go Real (RPG), a framework for autonomous improvement of robot execution systems without updating model weights. RPG identifies manipulation capabilities in an offline dataset and constructs related practice tasks in simulation. During practice, RPG uses execution feedback, privileged s",
+      "authors": [
+        "Yen-Jen Wang",
+        "Haozhe Jiang",
+        "Shuying Deng",
+        "Haoru Xue",
+        "Weirui Ye"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "eess.SY"
+      ],
+      "arxiv_id": "2610.02204v1",
+      "published_at": "2026-10-01T17:59:50Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Embedding Prediction Helps Image Generation",
+      "title": "Embedding Prediction Helps Image Generation",
+      "url": "https://arxiv.org/abs/2610.02203v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02203v1",
+      "description": "In diffusion transformers, a class label or a text prompt is embedded once, and the same condition is reused at every denoising step. We ask whether predicted embeddings can serve as this condition instead. Next-Embedding Predictive Autoregression (NEPA) trains a Transformer to predict the next continuous embedding in a sequence. In generation, the clean image follows the noisy image, so its embeddings are the next embeddings after the condition and the noisy image. We train a NEPA model to pred",
+      "authors": [
+        "Sihan Xu",
+        "Ji Xie",
+        "Zilin Wang",
+        "Hui Shen",
+        "Stella X. Yu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.02203v1",
+      "published_at": "2026-10-01T17:59:49Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+      "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+      "url": "https://arxiv.org/abs/2610.02202v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02202v1",
+      "description": "What makes great scientists great? Even as AI systems start to make progress on open problems, scientists remain far ahead of them at sensing which prior idea, buried in an ever-growing archive of research, a new problem needs. To study this skill, we draw on researchers who know firsthand which earlier work advanced their completed projects, with papers serving as pointers to the ideas within. Using our automated pipeline that makes author annotation scalable, we build ScholarCatalyst by having",
+      "authors": [
+        "Sohyeon Kim",
+        "Yoonho Lee",
+        "Bo Liu",
+        "Dayoon Ko",
+        "Rulin Shao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.IR"
+      ],
+      "arxiv_id": "2610.02202v1",
+      "published_at": "2026-10-01T17:59:47Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SILSA: Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation",
+      "title": "SILSA: Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation",
+      "url": "https://arxiv.org/abs/2610.02201v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02201v1",
+      "description": "High-resolution 3D generation increasingly relies on voxel latents and multi-stage pipelines that first predict active structure and then synthesize local geometry. While effective, this design fragments continuous surfaces into many local tokens, inflates generation cost, and often weakens topological consistency for thin or highly connected shapes. We introduce SILSA, a topology-aware 3D generation framework that represents shapes with compact sliding-window slice latents. Instead of generatin",
+      "authors": [
+        "Tianjiao Yu",
+        "Xinzhuo Li",
+        "Yifan Shen",
+        "Ying Shen",
+        "Kiet A. Nguyen"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.02201v1",
+      "published_at": "2026-10-01T17:59:46Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+      "title": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+      "url": "https://arxiv.org/abs/2610.02200v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02200v1",
+      "description": "We show that multimodal models possess strong reasoning abilities and that an appropriate harness can unlock their potential to solve tasks across diverse interactive environments. We introduce VISTA, a visual harness that gives a general-purpose multimodal model long-horizon vision. VISTA allows the model to directly perceive the environment through visual observations and maintains a lossless visual memory that preserves past observations in their original form. The model can actively retrieve",
+      "authors": [
+        "Qiushi Han",
+        "Keya Hu",
+        "Linlu Qiu",
+        "Cathy Wu",
+        "Kaiming He"
+      ],
+      "categories": [
+        "cs.AI",
         "cs.CV"
       ],
-      "arxiv_id": "2609.40361v1",
-      "published_at": "2026-09-30T17:59:56Z",
+      "arxiv_id": "2610.02200v1",
+      "published_at": "2026-10-01T17:59:45Z",
       "platform": [
         "arxiv"
       ],
       "type": "paper"
     },
     {
-      "name": "Semifactual Credit-Augmented Policy Optimization",
-      "title": "Semifactual Credit-Augmented Policy Optimization",
-      "url": "https://arxiv.org/abs/2609.40360v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40360v1",
-      "description": "Reinforcement learning with verifiable rewards (RLVR) has improved the reasoning capabilities of large language models (LLMs), yet their predictions remain sensitive to task-irrelevant prompt features. We investigate this sensitivity through semifactual prompt interventions that preserve the underlying problem and its answer. Our analysis reveals substantial variation in token-level sensitivity and shows that suppressing high-drift token candidates during decoding improves reasoning accuracy wit",
+      "name": "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning",
+      "title": "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning",
+      "url": "https://arxiv.org/abs/2610.02199v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02199v1",
+      "description": "Full-parameter fine-tuning of large language models (LLMs) incurs substantial optimizer state memory overhead, limiting the model sizes that fit on modern GPUs. Existing approaches either compress optimizer state, abandon first-order gradients, or change the update geometry while retaining dense state. The recently introduced Muon optimizer reduces optimizer memory through matrix-valued updates. Still, its geometry differs from AdamW and can lead to performance degradation when fine-tuning AdamW",
       "authors": [
-        "Junshu Pan",
-        "Zhizhang Fu",
-        "Shulin Huang",
-        "Yiran Ding",
-        "Zifan Cheng"
+        "Jichao Jiang",
+        "Cristian McGee",
+        "El Houcine Bergou",
+        "Hanqin Cai",
+        "Aritra Dutta"
+      ],
+      "categories": [
+        "cs.LG",
+        "math.OC"
+      ],
+      "arxiv_id": "2610.02199v1",
+      "published_at": "2026-10-01T17:59:42Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "FERPO: Forward Entropy-Regularized Policy Optimization",
+      "title": "FERPO: Forward Entropy-Regularized Policy Optimization",
+      "url": "https://arxiv.org/abs/2610.02198v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02198v1",
+      "description": "Several state-of-the-art methods for online reinforcement learning in continuous control improve policies using action gradients of a learned critic. However, critics are typically trained to predict returns, and accurate value predictions do not necessarily yield accurate action derivatives, potentially leading to unreliable policy updates. We propose Forward Entropy-Regularized Policy Optimization (FERPO), an on-policy maximum entropy reinforcement learning algorithm that performs policy impro",
+      "authors": [
+        "Sebastian Sanokowski",
+        "Alireza Sarmadi",
+        "Majid Khadiv"
       ],
       "categories": [
         "cs.LG",
         "cs.AI",
-        "cs.CL"
-      ],
-      "arxiv_id": "2609.40360v1",
-      "published_at": "2026-09-30T17:59:56Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "Removing Timing Shortcuts Improves Non-Invasive Brain-to-Text",
-      "title": "Removing Timing Shortcuts Improves Non-Invasive Brain-to-Text",
-      "url": "https://arxiv.org/abs/2609.40359v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40359v1",
-      "description": "We find that major reported improvements in decoding words from non-invasive brain recordings are largely reproducible without any brain data. In the influential work of d'Ascoli et al. (2025), time series of brain activity from subjects perceiving continuous speech are segmented into fixed-length windows starting at each word. A neural network then generates predictions for all of the words in a sentence together. Neighbouring windows partially overlap, implicitly revealing the interval between",
-      "authors": [
-        "Dulhan Jayalath",
-        "Oiwi Parker Jones"
-      ],
-      "categories": [
-        "cs.LG",
-        "q-bio.NC"
-      ],
-      "arxiv_id": "2609.40359v1",
-      "published_at": "2026-09-30T17:59:52Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing",
-      "title": "ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing",
-      "url": "https://arxiv.org/abs/2609.40356v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40356v1",
-      "description": "Recent video generation is increasingly realistic and controllable, yet video editing remains less developed, particularly for precise local edits that must preserve the original scene dynamics. Video scene text editing replaces text on scene surfaces, such as storefront signs, whiteboards, and product labels, while preserving the surrounding content, motion, and camera dynamics. Although scene text editing is well studied for images, video scene text editing that achieves high visual quality, t",
-      "authors": [
-        "Xinghao Chen",
-        "Xiangbo Gao",
-        "Jiongze Yu",
-        "Yuheng Wu",
-        "Zhengzhong Tu"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "arxiv_id": "2609.40356v1",
-      "published_at": "2026-09-30T17:59:33Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "Image Classifiers are Efficient Self-Supervised Video Representation Learners",
-      "title": "Image Classifiers are Efficient Self-Supervised Video Representation Learners",
-      "url": "https://arxiv.org/abs/2609.40347v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40347v1",
-      "description": "We introduce VideoMSN, a Masked Siamese Network framework for efficient self-supervised spatio-temporal representation learning in videos. Instead of relying on heavy 3D architectures or reconstruction-based autoencoders for learning with unlabeled data, we repurpose standard image Vision Transformers by representing videos as super images which are grids composed of frames sampled from videos. From each super image, we construct two views: one with spatial patch masking and the other with tempo",
-      "authors": [
-        "Owais Iqbal",
-        "Sudipta Sarkar",
-        "Shyam Marjit",
-        "Omprakash Chakraborty",
-        "Anirban Chakraborty"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.LG"
-      ],
-      "arxiv_id": "2609.40347v1",
-      "published_at": "2026-09-30T17:59:03Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "EvoDuet: Bilevel Co-Evolution of Web Searching and Task Solving for Scientific Discovery",
-      "title": "EvoDuet: Bilevel Co-Evolution of Web Searching and Task Solving for Scientific Discovery",
-      "url": "https://arxiv.org/abs/2609.40340v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40340v1",
-      "description": "Evolutionary search with large language models (LLMs) can stall when progress requires external knowledge the model lacks. Supplying relevant documents helps, but simply adding web search tool can keep returning the same pages as solutions change. We introduce EvoDuet, a bi-level optimization method that co-evolves solutions and search queries with fixed model parameters. At each iteration, a retrieval gate lets the LLM assess its knowledge gap and choose to retrieve new documents, reuse stored ",
-      "authors": [
-        "Young-Jun Lee",
-        "Jinheon Baek",
-        "Soyeong Jeong",
-        "Minki Kang",
-        "Seungyeon Jwa"
-      ],
-      "categories": [
-        "cs.CL"
-      ],
-      "arxiv_id": "2609.40340v1",
-      "published_at": "2026-09-30T17:58:28Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "Is Weight Tying Still Beneficial for Decoder-Only LLMs in Private Settings Under DP-SGD?",
-      "title": "Is Weight Tying Still Beneficial for Decoder-Only LLMs in Private Settings Under DP-SGD?",
-      "url": "https://arxiv.org/abs/2609.40335v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40335v1",
-      "description": "Differentially Private Stochastic Gradient Descent (DP-SGD) is a leading approach for privacy-preserving fine-tuning of large language models (LLMs). Many decoder-only LLMs employ weight tying between input and output embeddings, a design choice originally introduced for parameter efficiency and improved language modeling performance in the non-private setting. However, the impact of weight tying under differentially private training remains largely unexplored. In this work, we investigate the r",
-      "authors": [
-        "Razan El Mais",
-        "Ali Chehab",
-        "Ibrahim Issa",
-        "Razane Tajeddine"
-      ],
-      "categories": [
-        "cs.LG"
-      ],
-      "arxiv_id": "2609.40335v1",
-      "published_at": "2026-09-30T17:57:43Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "Turbo Harness: Instance-Adaptive Harness Optimization",
-      "title": "Turbo Harness: Instance-Adaptive Harness Optimization",
-      "url": "https://arxiv.org/abs/2609.40330v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40330v1",
-      "description": "Automating the search for effective harnesses is an important step toward enabling agents to recursively self-improve. Existing harness optimizations typically produce a single global harness that is applied uniformly across task instances. However, a harness that works well on average may not be optimal for every instance. We introduce Turbo Harness, a framework that can adapt a globally optimized harness to each instance by reusing information generated during the original optimization process",
-      "authors": [
-        "Tunyu Zhang",
-        "Hao Wang",
-        "Kai Xu",
-        "Dimitris N. Metaxas"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "arxiv_id": "2609.40330v1",
-      "published_at": "2026-09-30T17:56:09Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents",
-      "title": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents",
-      "url": "https://arxiv.org/abs/2609.40325v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40325v1",
-      "description": "As interactive 3D worlds are increasingly used to study intelligent behavior, it becomes important to develop efficient pipelines for identifying anomalies in these simulated environments, such as floating objects, traversable walls, or objects inconsistent with the surrounding scene. Multimodal AI systems, including vision-language models (VLMs) and vision-language-action models (VLAs), have shown potential for automating this task. However, 3D world auditing is complex, requiring the close cou",
-      "authors": [
-        "Ziyan Jiang",
-        "Jingbo Yang",
-        "Jiabao Ji",
-        "Yujian Liu",
-        "Qiucheng Wu"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "arxiv_id": "2609.40325v1",
-      "published_at": "2026-09-30T17:55:29Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "Cogentic: Multi-Agent Orchestration for Automated Proof Discovery",
-      "title": "Cogentic: Multi-Agent Orchestration for Automated Proof Discovery",
-      "url": "https://arxiv.org/abs/2609.40324v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40324v1",
-      "description": "We present Cogentic, a multi-agent harness for automated proof discovery on open research problems. While frontier language models can generate strong mathematical ideas in a single shot, single-shot generation is often insufficient for open problems that require exploring multiple competing conjectures, overcoming subtle technical obstructions, and retaining intermediate progress over a long horizon. Cogentic addresses these challenges through an iterative prove--verify loop in which an orchest",
-      "authors": [
-        "Yang Cai",
-        "Vineet Gupta",
-        "Yanchen Jiang",
-        "Christopher Liaw",
-        "Aranyak Mehta"
-      ],
-      "categories": [
-        "cs.AI",
-        "cs.GT"
-      ],
-      "arxiv_id": "2609.40324v1",
-      "published_at": "2026-09-30T17:55:22Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "MatLoom: Layered Text-to-Material Generation in a Compact Program Space",
-      "title": "MatLoom: Layered Text-to-Material Generation in a Compact Program Space",
-      "url": "https://arxiv.org/abs/2609.40322v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40322v1",
-      "description": "Material generation should produce not only an appearance, but also the rules that construct it. We introduce MatLoom, a compact, layer-oriented language for text-to-material generation with pretrained language models. Each program composes alpha-masked layers whose shared spatial expressions define coverage and physically based rendering (PBR) channels, making dependencies between patterns, color, and relief explicit. A standalone interpreter evaluates the program into material maps, while the ",
-      "authors": [
-        "Anson Y. Lam",
-        "Shuqing Li",
-        "Michael R. Lyu"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.AI",
-        "cs.CL",
-        "cs.MM"
-      ],
-      "arxiv_id": "2609.40322v1",
-      "published_at": "2026-09-30T17:55:06Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "Scaling Laws for Looped Mixture of Experts",
-      "title": "Scaling Laws for Looped Mixture of Experts",
-      "url": "https://arxiv.org/abs/2609.40316v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40316v1",
-      "description": "Looped transformers and Mixture-of-Experts (MoE) offer complementary routes to efficient scaling: recurrence increases computational depth at fixed parameters, while MoE sparsity expands total capacity at fixed active compute. Yet existing scaling laws model recurrence or sparsity in isolation. In this work, we introduce Loop Scaling Laws, the first scaling law to jointly model recurrence and sparsity alongside model size and data. At its core is a bounded, sparsity-conditional recurrence mappin",
-      "authors": [
-        "Yanbei Chen",
-        "Anirudh Goyal",
-        "Raghuraman Krishnamoorthi"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.AI",
-        "cs.CL"
-      ],
-      "arxiv_id": "2609.40316v1",
-      "published_at": "2026-09-30T17:53:47Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "Compression Footprints as Security Signals for Model-Poisoning Defense in Federated Learning",
-      "title": "Compression Footprints as Security Signals for Model-Poisoning Defense in Federated Learning",
-      "url": "https://arxiv.org/abs/2609.40312v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40312v1",
-      "description": "Lossy compression is widely used in Federated Learning (FL) but is generally treated as an error source, while conventional poisoning defenses inspect update geometry. In this work, we instead treat the compressor's response as a security signal: the input-dependent distortion and payload behavior induced by lossy compression can expose differences between honest and attack-generated updates. We introduce the concept of a \\emph{compression footprint}: the low-dimensional collection of reconstruc",
-      "authors": [
-        "Sachi Shome",
-        "William Eiers"
-      ],
-      "categories": [
-        "cs.LG"
-      ],
-      "arxiv_id": "2609.40312v1",
-      "published_at": "2026-09-30T17:53:14Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents",
-      "title": "DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents",
-      "url": "https://arxiv.org/abs/2609.40306v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40306v1",
-      "description": "Pretrained robot policies provide useful action priors, but long-horizon manipulation still requires coordination between semantic reasoning and physical execution. Semantic reasoning operates at a coarser timescale than physical interaction, while episode-level failures provide limited guidance on which system component should be revised. We propose DynaHarness, a dynamic physical harness that couples semantic reasoning with physical governance through a shared execution contract and turns fail",
-      "authors": [
-        "Haoyuan Deng",
-        "Jiebin Liu",
-        "Tengxiao Zhang",
-        "Langning Yan",
-        "Hongye Cao"
-      ],
-      "categories": [
         "cs.RO",
-        "cs.AI",
-        "cs.LG"
-      ],
-      "arxiv_id": "2609.40306v1",
-      "published_at": "2026-09-30T17:52:09Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "Looped Diffusion Transformer",
-      "title": "Looped Diffusion Transformer",
-      "url": "https://arxiv.org/abs/2609.40305v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40305v1",
-      "description": "Improving text-to-image models has traditionally relied on increasing model size or the number of denoising steps. In this work, we explore an alternative way to scale computation by repeatedly running shared Transformer blocks within each denoising step, effectively increasing computational depth while keeping the parameter count fixed. This looped computation enables iterative refinement of internal representations without explicit reasoning tokens. However, naive looping fails to consistently",
-      "authors": [
-        "Yong Xien Chng",
-        "Tianyi Chen",
-        "Wenwen Tong",
-        "Haiwen Diao",
-        "Zhongang Cai"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.LG"
-      ],
-      "arxiv_id": "2609.40305v1",
-      "published_at": "2026-09-30T17:52:08Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "How Much of a Harness Does a Strong Agent Need for Autonomous ML Engineering?",
-      "title": "How Much of a Harness Does a Strong Agent Need for Autonomous ML Engineering?",
-      "url": "https://arxiv.org/abs/2609.40303v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40303v1",
-      "description": "Recent autonomous machine learning engineering (MLE) agents have made significant progress on public leaderboards. Often motivated by progress stagnation over long-horizon cycles and limited Large Language Model (LLM) primitives, modern MLE agents are deployed on top of increasingly elaborate machinery: multi-agent orchestrators, dedicated retrieval subagents, and more. While such harnesses expand, the use of more primitive but improved coding agents - where LLMs have direct access to the execut",
-      "authors": [
-        "Kirill Brilliantov",
-        "Alejandro Hernández-Cano",
-        "Emmanuel Abbé"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "arxiv_id": "2609.40303v1",
-      "published_at": "2026-09-30T17:51:30Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "How Much Is an AI Token Worth? Scaling Laws for Wild AI-Generated Web Text",
-      "title": "How Much Is an AI Token Worth? Scaling Laws for Wild AI-Generated Web Text",
-      "url": "https://arxiv.org/abs/2609.40295v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40295v1",
-      "description": "Web text makes up the majority of pretraining data and is increasingly AI-generated. After applying FineWeb quality filtering, we find that 27.5% of tokens from June 2026 web data are labeled as AI-generated by Pangram, rising to 31.1% by August. Unlike synthetic data or model-collapse setups, this *wild* AI text comes from many models, is written for human readers, and arrives unlabeled in pretraining corpora. How does AI text in the wild affect language model pretraining? To answer this questi",
-      "authors": [
-        "Jenna Russell",
-        "Ben Glickenhaus",
-        "Katherine Thai",
-        "John Wieting",
-        "Mohit Iyyer"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.LG"
-      ],
-      "arxiv_id": "2609.40295v1",
-      "published_at": "2026-09-30T17:50:22Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "Disentangling Computation in Multi-Task Neural Networks with the Green's Operator",
-      "title": "Disentangling Computation in Multi-Task Neural Networks with the Green's Operator",
-      "url": "https://arxiv.org/abs/2609.40292v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40292v1",
-      "description": "How is computation organized and reused across tasks and time in a trained recurrent network? Most analyses emphasize the geometry of neural activity, dynamical motifs, or local perturbation growth. We instead study the network's global first-order perturbation response. The finite-horizon Green's operator maps perturbations at each source along a trajectory to their downstream state-space responses and therefore directly represents perturbation routing. Simple reductions of this operator provid",
-      "authors": [
-        "James Hazelden"
-      ],
-      "categories": [
-        "cs.LG",
-        "q-bio.NC"
-      ],
-      "arxiv_id": "2609.40292v1",
-      "published_at": "2026-09-30T17:49:59Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "CAS II: Symmetric Partitions as Kolmogorov Models",
-      "title": "CAS II: Symmetric Partitions as Kolmogorov Models",
-      "url": "https://arxiv.org/abs/2609.40290v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40290v1",
-      "description": "In algorithmic statistics a string x is explained by a finite set containing it, and Kolmogorov's structure function records the smallest such model at each level of complexity. Vereshchagin's strong models, those computable from the data by a total algorithm, are essentially the cells of simple partitions. We read a partition of binary strings as a hypothesis, with the cell containing x as its model, and develop algorithmic statistics over symmetric partitions: the orbit partitions of groups ac",
-      "authors": [
-        "Romie Banerjee"
-      ],
-      "categories": [
-        "cs.IT",
-        "cs.AI",
-        "math.GR"
-      ],
-      "arxiv_id": "2609.40290v1",
-      "published_at": "2026-09-30T17:49:15Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "PMosFM: Preconditioned Manifold Matching for One-Step Physics-Constrained Generation",
-      "title": "PMosFM: Preconditioned Manifold Matching for One-Step Physics-Constrained Generation",
-      "url": "https://arxiv.org/abs/2609.40287v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40287v1",
-      "description": "Physics-constrained generative models aim to generate physical fields that match a target distribution and satisfy prescribed constraints. However, enforcing these constraints often increases sampling costs through iterative corrections or training costs through residual optimization and trajectory unrolling. To address this issue, we introduce \\textbf{P}reconditioned \\textbf{M}anifold \\textbf{o}ne-\\textbf{s}tep \\textbf{F}low \\textbf{M}atching (\\textbf{PMosFM}), a preconditioned manifold matchin",
-      "authors": [
-        "Zhangyong Liang",
-        "Haibin Ling"
-      ],
-      "categories": [
-        "cs.LG"
-      ],
-      "arxiv_id": "2609.40287v1",
-      "published_at": "2026-09-30T17:48:21Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "Linguistic Loopholes in LLM Unlearning: From a 174-Language Benchmark to Coverage-Aware Unlearning",
-      "title": "Linguistic Loopholes in LLM Unlearning: From a 174-Language Benchmark to Coverage-Aware Unlearning",
-      "url": "https://arxiv.org/abs/2609.40286v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40286v1",
-      "description": "Unlearning a fact in one language does not guarantee its removal in others as changing the query or even the requested answer language can reopen seemingly forgotten knowledge -- a cross-lingual loophole. The most straightforward solution to this challenge -- unlearning in all languages -- is neither scalable nor desirable as it amplifies damage to unrelated model capabilities. We introduce the task of language budgeted multilingual unlearning where the goal is to select a subset of languages th",
-      "authors": [
-        "Tyler Skow",
-        "Shravan Chaudhari",
-        "Rama Chellappa",
-        "Abhay Yadav"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.AI"
-      ],
-      "arxiv_id": "2609.40286v1",
-      "published_at": "2026-09-30T17:48:13Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "PivotOPD: Learning to Recover from Pivotal Mistakes in Multi-Turn Agents",
-      "title": "PivotOPD: Learning to Recover from Pivotal Mistakes in Multi-Turn Agents",
-      "url": "https://arxiv.org/abs/2609.40285v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40285v1",
-      "description": "On-policy distillation (OPD) is a promising approach for training language agents, providing dense teacher supervision on student-generated trajectories. However, in multi-turn interaction, an incorrect action changes the states the student encounters later, so errors compound across turns. In preliminary experiments across three Qwen3 models (8B to 235B), we find that more than half of the failed rollouts contain a pivotal mistake, an action that moves the agent farther from completing the task",
-      "authors": [
-        "Yinghui He",
-        "Yapei Chang",
-        "Khushi Bhardwaj",
-        "Daniele Molinari",
-        "Tugrul Konuk"
-      ],
-      "categories": [
-        "cs.AI"
-      ],
-      "arxiv_id": "2609.40285v1",
-      "published_at": "2026-09-30T17:48:11Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "cua-speedrun: Standardized Benchmarking of the Speed of Computer-Use Agents",
-      "title": "cua-speedrun: Standardized Benchmarking of the Speed of Computer-Use Agents",
-      "url": "https://arxiv.org/abs/2609.40284v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40284v1",
-      "description": "Computer use agents (CUAs), which use graphical user interfaces (GUIs) to complete tasks on a computer, have recently surpassed human performance on many standard benchmarks, including difficult long-horizon tasks. Their capabilities are undoubtedly impressive, however, a key barrier to the widespread adoption and deployment of CUAs remains their speed and cost. Progress towards faster yet capable CUAs requires reliable evaluation of their speed, but many CUA benchmarks currently face a reproduc",
-      "authors": [
-        "Pranjal Aggarwal",
-        "Lawrence Keunho Jang",
-        "Sean Welleck",
-        "Daniel Fried",
-        "Ruslan Salakhutdinov"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.AI",
-        "cs.CL"
-      ],
-      "arxiv_id": "2609.40284v1",
-      "published_at": "2026-09-30T17:48:06Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "Belief-Aware Multi-Agent Path Finding under Map Uncertainty",
-      "title": "Belief-Aware Multi-Agent Path Finding under Map Uncertainty",
-      "url": "https://arxiv.org/abs/2609.40269v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40269v1",
-      "description": "Multi-Agent Path Finding (MAPF) aims to find collision-free paths for multiple agents in a shared environment. Classical MAPF assumes that all static obstacles are known in advance, but real-world environments can change unexpectedly due to fallen objects, spills, or other local disturbances. When such changes are spatially correlated, an observation can inform traversability estimates beyond the observed location. Prior approaches address uncertainty in traversability through contingent plans o",
-      "authors": [
-        "Viraj Parimi",
-        "Shao-Hung Chan",
-        "Han Zhang",
-        "Jingkai Chen",
-        "Brian Williams"
-      ],
-      "categories": [
-        "cs.AI",
-        "cs.MA",
-        "cs.RO"
-      ],
-      "arxiv_id": "2609.40269v1",
-      "published_at": "2026-09-30T17:44:19Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "OpenTSLM TeeMoE: A Unified Time-Series Language Model for Forecasting, Contextual Prediction, and Reasoning",
-      "title": "OpenTSLM TeeMoE: A Unified Time-Series Language Model for Forecasting, Contextual Prediction, and Reasoning",
-      "url": "https://arxiv.org/abs/2609.40265v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40265v1",
-      "description": "Real-world time-series applications increasingly require models that can handle time series forecasting, context-conditioned prediction, and language-based temporal reasoning. Yet current time-series foundation models remain fragmented across these capabilities: numerical specialists often provide the strongest forecasts, while language-based models offer broader contextual understanding and analysis. A central challenge is to unify these heterogeneous capabilities without reducing their individ",
-      "authors": [
-        "Tony Chen",
-        "Timo Stoffregen",
-        "Maxwell Xu",
-        "Thomas Kaar",
-        "Martin Maritsch"
-      ],
-      "categories": [
-        "cs.LG"
-      ],
-      "arxiv_id": "2609.40265v1",
-      "published_at": "2026-09-30T17:43:22Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "ComputerSD: Online Self-Distillation from Real-Time Feedback for Computer-Use Agents",
-      "title": "ComputerSD: Online Self-Distillation from Real-Time Feedback for Computer-Use Agents",
-      "url": "https://arxiv.org/abs/2609.40253v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40253v1",
-      "description": "Online training enables computer-use agents (CUAs) to improve through interaction with executable environments. However, existing methods primarily rely on sparse outcome rewards, which provide no supervision for intermediate actions. On-policy self-distillation (OPSD) offers token-level learning signals through privileged rescoring, but directly applying it to CUA online training presents two challenges: fixed guidance may become misaligned with the student's current state, and guidance-induced",
-      "authors": [
-        "Yong Du",
-        "Tongbo Chen",
-        "Zhengxi Lu",
-        "Yizhou Liu",
-        "Bofan Chen"
-      ],
-      "categories": [
-        "cs.CV",
-        "cs.AI"
-      ],
-      "arxiv_id": "2609.40253v1",
-      "published_at": "2026-09-30T17:40:09Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "STARS: From Spatiotemporal Dynamics to Social Representations in Human-Robot Interaction",
-      "title": "STARS: From Spatiotemporal Dynamics to Social Representations in Human-Robot Interaction",
-      "url": "https://arxiv.org/abs/2609.40245v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40245v1",
-      "description": "Robot navigation in dynamic, human-centered environments requires socially-compliant decisions grounded in robust scene understanding. Recent Vision-Language Models (VLMs) exhibit promising capabilities such as object recognition, common-sense reasoning, and contextual understanding, capabilities that align with the nuanced requirements of social robot navigation. However, it remains unclear whether VLMs can accurately understand complex social navigation scenes (e.g., inferring the spatial-temp",
-      "authors": [
-        "Nathan Tsoi",
-        "Michael J. Munje",
-        "Tejas Oberoi",
-        "Rishab Maheshwari",
-        "Pengen Zheng"
-      ],
-      "categories": [
-        "cs.RO",
-        "cs.LG"
-      ],
-      "arxiv_id": "2609.40245v1",
-      "published_at": "2026-09-30T17:35:08Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "Decision-Oriented Recommendation Reranking: An Empirical Study of Jev",
-      "title": "Decision-Oriented Recommendation Reranking: An Empirical Study of Jev",
-      "url": "https://arxiv.org/abs/2609.40241v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40241v1",
-      "description": "Large language models (LLMs) have shown promise for recommendation reranking, but their use introduces an important tradeoff between recommendation quality and serving efficiency. We investigate whether a decision-oriented model provides a useful alternative when the reranking task is fundamentally a structured choice among predefined candidate items. Specifically, we conduct a controlled empirical study of Jev, described by TypeSafe AI as a ``System One Model,'' for personalized recommendation ",
-      "authors": [
-        "Hanjia Lyu",
-        "Yinglong Xia"
-      ],
-      "categories": [
-        "cs.IR",
-        "cs.CL"
-      ],
-      "arxiv_id": "2609.40241v1",
-      "published_at": "2026-09-30T17:33:43Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "Comparison of techniques for fine-tuning open-weight models for entity extraction from radiology reports",
-      "title": "Comparison of techniques for fine-tuning open-weight models for entity extraction from radiology reports",
-      "url": "https://arxiv.org/abs/2609.40236v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40236v1",
-      "description": "Converting free-text radiology reports into structured labels supports cohort building, quality assurance, and monitoring of clinical imaging models, but the strongest label extractors are hosted proprietary models whose use raises privacy, cost, and reproducibility concerns. We asked whether a fine-tuned open-weight model (Gemma-3-12B) can match GPT-4o at multi-label intracranial hemorrhage (ICH) acuity extraction from non-contrast head-CT reports, and which ingredients matter. Using a 2x2 desi",
-      "authors": [
-        "Aawez Mansuri",
-        "Kush Mehta",
-        "Mohammadreza Chavoshi",
-        "Jahanzaib Malik",
-        "Theodorus Dapamede"
-      ],
-      "categories": [
-        "cs.CL",
-        "cs.LG"
-      ],
-      "arxiv_id": "2609.40236v1",
-      "published_at": "2026-09-30T17:32:17Z",
-      "platform": [
-        "arxiv"
-      ],
-      "type": "paper"
-    },
-    {
-      "name": "Distribution Matching Distillation for Continuous Diffusion Language Models",
-      "title": "Distribution Matching Distillation for Continuous Diffusion Language Models",
-      "url": "https://arxiv.org/abs/2609.40235v1",
-      "pdf_url": "https://arxiv.org/pdf/2609.40235v1",
-      "description": "Continuous diffusion language models generate all tokens in parallel, yet high-quality generation can still require hundreds of network evaluations (NFEs). We study how distributional distillation can reduce this cost by exploiting the student's probabilistic token outputs. Our unified formulation connects the student's output parameterization to the resulting gradient estimators and yields two methods with the same student architecture and reverse-KL matching objective: Simplex-DMD uses continu",
-      "authors": [
-        "Paul Le Van Kiem",
-        "Dario Shariatian",
-        "Umut Simsekli",
-        "Alain Durmus"
-      ],
-      "categories": [
-        "cs.LG",
-        "cs.CL",
         "stat.ML"
       ],
-      "arxiv_id": "2609.40235v1",
-      "published_at": "2026-09-30T17:32:05Z",
+      "arxiv_id": "2610.02198v1",
+      "published_at": "2026-10-01T17:59:41Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Cost-augmented Schrödinger bridges on graphs are exactly solvable: a Feynman-Kac tilt replaces learned control",
+      "title": "Cost-augmented Schrödinger bridges on graphs are exactly solvable: a Feynman-Kac tilt replaces learned control",
+      "url": "https://arxiv.org/abs/2610.02195v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02195v1",
+      "description": "The generalized Schrödinger bridge on a graph moves mass between two distributions while charging a cost for the states visited. It has been approached by learning the rates of a controlled continuous-time Markov chain, with a temporal-difference penalty that restores the cost. A state cost folds into the reference process as a Feynman-Kac tilt. The cost-augmented bridge is then a plain bridge against the tilted reference, and the penalty is unnecessary. The bridge is computed exactly by alterna",
+      "authors": [
+        "Akshay Balsubramani"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.02195v1",
+      "published_at": "2026-10-01T17:59:39Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Hierarchical Continuous Diffusion Language Models",
+      "title": "Hierarchical Continuous Diffusion Language Models",
+      "url": "https://arxiv.org/abs/2610.02193v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02193v1",
+      "description": "Discrete diffusion language models offer a compelling alternative to autoregressive generation for tasks demanding bidirectional reasoning and global constraint satisfaction. Yet they share a structural bottleneck: when decoding in parallel, each token is sampled independently from its marginal, severing the statistical dependencies among the tokens decoded together. Continuous diffusion language models avoid this by denoising a shared continuous state, but their denoiser sees only that state, s",
+      "authors": [
+        "Hui Ren",
+        "Zihan Li",
+        "Chang Liu",
+        "Huidong Liu",
+        "Alexander Schwing"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.02193v1",
+      "published_at": "2026-10-01T17:59:39Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "The Missing Primitive: Diagnosing and Repairing Mathematical Reasoning in Large Language Models",
+      "title": "The Missing Primitive: Diagnosing and Repairing Mathematical Reasoning in Large Language Models",
+      "url": "https://arxiv.org/abs/2610.02191v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02191v1",
+      "description": "While Large Language Models (LLMs) have demonstrated striking capabilities on frontier mathematical problems, it remains unclear whether they possess the structural mathematical understanding underlying their solutions. In this paper, we take a first step toward systematically studying mathematical understanding in LLMs, from diagnosing its distinct capabilities to leveraging these findings to improve post-training. First, we introduce the notion of Mathematical Primitive to probe structural mat",
+      "authors": [
+        "Shuo Xing",
+        "Zilin Dai",
+        "Chengyuan Qian",
+        "Fangzhou Lin",
+        "Wenjing Chen"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.02191v1",
+      "published_at": "2026-10-01T17:59:32Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning",
+      "title": "Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning",
+      "url": "https://arxiv.org/abs/2610.02190v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02190v1",
+      "description": "Step-size selection remains a central challenge in large-scale neural network optimization; conservative steps slow convergence, while aggressive steps can destabilize it. We combine \\textbf{Z}ero-and-\\textbf{F}irst-\\textbf{O}rder optimization~(ZFO) and propose a lightweight framework that decouples direction selection from step-size. ZFO uses a trusted first-order optimizer to determine the direction and performs zeroth-order evaluations only along this one-dimensional subspace to choose how fa",
+      "authors": [
+        "Cristian McGee",
+        "El Houcine Bergou",
+        "Aritra Dutta"
+      ],
+      "categories": [
+        "cs.LG",
+        "math.OC"
+      ],
+      "arxiv_id": "2610.02190v1",
+      "published_at": "2026-10-01T17:59:28Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Generative modeling of intrinsically disordered protein regions by reinforcing sparse autoencoder features",
+      "title": "Generative modeling of intrinsically disordered protein regions by reinforcing sparse autoencoder features",
+      "url": "https://arxiv.org/abs/2610.02189v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02189v1",
+      "description": "Intrinsically disordered protein regions (IDRs) play central roles in cellular processes such as transcriptional regulation, signal transduction, and subcellular localization, yet their functional design remains challenging. Structure-based design methods do not readily apply to IDRs, and existing protein language models are trained on full-length protein sequences, thus learning a prior that is biased towards folded domains. Here, we present IDiom, an autoregressive protein language model train",
+      "authors": [
+        "Jason X. Liu",
+        "Sebastian Ibarraran",
+        "Frank Hu",
+        "Soojung Yang",
+        "Xinyu A. Feng"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.02189v1",
+      "published_at": "2026-10-01T17:59:20Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "DMAD: Distribution Matching as Adversarial Distillation for Fast Visual Generation",
+      "title": "DMAD: Distribution Matching as Adversarial Distillation for Fast Visual Generation",
+      "url": "https://arxiv.org/abs/2610.02188v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02188v1",
+      "description": "Distribution Matching Distillation (DMD) trains a few-step student from the difference between separately estimated target and student scores, so it must keep an auxiliary diffusion model fitted to the student's evolving distribution at extra memory and computation cost. We introduce DMAD, Distribution Matching as Adversarial Distillation, which recasts distribution matching as classification and learns the required log-density ratios directly. Two discriminator heads on a shared backbone distin",
+      "authors": [
+        "Zhengming Yu",
+        "Junkun Yuan",
+        "Haotian Yang",
+        "Gordon Guocheng Qian",
+        "Yizhi Wang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.02188v1",
+      "published_at": "2026-10-01T17:59:01Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Higher-Order Molecular Grammars for Generative and Foundation Models in Chemistry",
+      "title": "Higher-Order Molecular Grammars for Generative and Foundation Models in Chemistry",
+      "url": "https://arxiv.org/abs/2610.02186v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02186v1",
+      "description": "Molecular learning models are strongly shaped by their underlying representations. Yet standard sequential and graph formalisms struggle to explicitly encode higher-order topology, such as ring systems and recurring motifs. Existing higher-order representations can capture these structures directly, but they are often computationally demanding and difficult to decode into valid molecules. Here, we introduce Higher-order Grammar Representation (HGR), a principled, topology-aware framework that li",
+      "authors": [
+        "Yiming Huang",
+        "Yujie Zeng",
+        "Vijay Prakash Dwivedi",
+        "Simone Foti",
+        "Jianmin Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.02186v1",
+      "published_at": "2026-10-01T17:58:45Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Decoding Looped Transformers Better for (Almost) Free",
+      "title": "Decoding Looped Transformers Better for (Almost) Free",
+      "url": "https://arxiv.org/abs/2610.02185v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02185v1",
+      "description": "Looped Transformers achieve parameter efficiency by repeatedly executing a shared block across recurrent loops. Each loop yields an intermediate representation decodable for the same next token, yet standard decoding discards earlier states. Because earlier loops embody less computation, recurrence inherently supplies aligned weak-and-strong prediction pairs without auxiliary models or external training. We introduce LoopCD, a training-free contrastive decoding framework that guides token select",
+      "authors": [
+        "Weihao Liu",
+        "Huangjie Zheng",
+        "Tianrong Chen",
+        "Rohit Dilip",
+        "Richard He Bai"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.02185v1",
+      "published_at": "2026-10-01T17:58:38Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SoftServe: A Scalable Quasi-Newton Method for Deep Learning",
+      "title": "SoftServe: A Scalable Quasi-Newton Method for Deep Learning",
+      "url": "https://arxiv.org/abs/2610.02182v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02182v1",
+      "description": "Quasi-Newton (QN) methods have long been among the most effective methods for large-scale unconstrained convex optimization. Two obstacles have limited their use in deep learning: non-convexity and enormous parameter sizes. We introduce SoftServe, a family of QN methods designed to overcome these obstacles without line searches or ad hoc curvature corrections. SoftServe derives positivedefinite curvature estimates from the variational objective of Berglund et al. (2025), even in the presence of ",
+      "authors": [
+        "Joohwan Ko",
+        "Tetiana Parshakova",
+        "Diana Cai",
+        "Robert M. Gower"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.02182v1",
+      "published_at": "2026-10-01T17:58:24Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Generative Cinematographer: Composing Camera and Object Motion in 3D",
+      "title": "Generative Cinematographer: Composing Camera and Object Motion in 3D",
+      "url": "https://arxiv.org/abs/2610.02180v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02180v1",
+      "description": "Current controllable video generation systems often rely on 2D motion trajectories or sparse drag signals for object motion. These controls are ambiguous because the same 2D trajectory can correspond to different 3D motions, especially when the camera and objects move simultaneously. We present Generative Cinematographer (GenCine), a system that lifts a single image into an editable 3D scene scaffold where artists jointly author camera and foreground motion. Artists specify a camera path and mov",
+      "authors": [
+        "Jiahan Zhang",
+        "Chaohao Yang",
+        "Namitha Guruprasad",
+        "Vivekjyoti Banerjee",
+        "Trong-Tung Nguyen"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.02180v1",
+      "published_at": "2026-10-01T17:58:09Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "From Gradients to Capabilities: Understanding Multi-Teacher On-Policy Distillation",
+      "title": "From Gradients to Capabilities: Understanding Multi-Teacher On-Policy Distillation",
+      "url": "https://arxiv.org/abs/2610.02179v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02179v1",
+      "description": "Multi-teacher on-policy distillation (MOPD) aims to combine the strengths of RL-trained teachers in a single student, but how teacher signals affect parameter changes remains underexplored. We study Qwen3-1.7B with four domain teachers trained with RL from the same initialization as the student, comparing gradients, optimizer updates, and task learning curves, with additional SmolLM3-3B diagnostics. We find that several factors influence teacher signals. First, loss averaging implicitly weights ",
+      "authors": [
+        "Siqi Zhu",
+        "Suozhi Huang",
+        "Kaixuan Zhang",
+        "Yuheng Yang",
+        "Zhanyang Jin"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.02179v1",
+      "published_at": "2026-10-01T17:57:44Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Effective Resistance and Graph Neural Network Reliability in Tissue-Specific Interactomes",
+      "title": "Effective Resistance and Graph Neural Network Reliability in Tissue-Specific Interactomes",
+      "url": "https://arxiv.org/abs/2610.02175v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02175v1",
+      "description": "Protein function annotation needs to know which predictions to distrust, not only what a model predicts. We ask whether tissue-specific interaction structure carries that information. Our candidate signal is effective resistance, used previously to relieve over-squashing by rewiring. Across 24 tissue-specific interactomes it is dominated by inverse degree, and the degeneration deepens as the co-expression filtered network grows, with a Spearman correlation of -0.955. The residual departure from ",
+      "authors": [
+        "Jianru Shen"
+      ],
+      "categories": [
+        "cs.LG",
+        "q-bio.MN"
+      ],
+      "arxiv_id": "2610.02175v1",
+      "published_at": "2026-10-01T17:57:10Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Every Ablation Is a Dose: Counterweights and the Semblance of Self-Repair",
+      "title": "Every Ablation Is a Dose: Counterweights and the Semblance of Self-Repair",
+      "url": "https://arxiv.org/abs/2610.02173v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02173v1",
+      "description": "Ablate a component of a language model, and other components often appear to adjust and compensate. This phenomenon, termed self-repair, has been observed repeatedly, but its mechanism remains unclear. The most systematic study to date concluded that self-repair is noisy and unlikely to have a single explanation. We argue that it has one: a gain already present before any ablation. Any intervention on a causally important component can be viewed as a point on a coordinate axis $λ$, the signed st",
+      "authors": [
+        "Areeb Ahmad",
+        "Pratinav Seth",
+        "Vinay Kumar Sankarapu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.02173v1",
+      "published_at": "2026-10-01T17:57:04Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Watch, Infer, Coordinate: Inferring Robot Partner Constraints for Zero-Shot Coordination",
+      "title": "Watch, Infer, Coordinate: Inferring Robot Partner Constraints for Zero-Shot Coordination",
+      "url": "https://arxiv.org/abs/2610.02170v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02170v1",
+      "description": "Robots operating in the physical world will increasingly need to coordinate with other robots, particularly in manipulation tasks where an object may be too large or heavy for a single robot to carry alone. Physical limitations caused by hardware degradation or actuator faults can restrict the actions a robot can reliably execute, yet these limitations may be unknown to its partner. We study whether a helper can infer a robot partner's physical constraints from observing it coordinate with anoth",
+      "authors": [
+        "Suyu Ye",
+        "Zheyuan Zhang",
+        "Vaishnav Tadiparthi",
+        "Hossein Nourkhiz Mahjoub",
+        "Ehsan Moradi Pari"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "arxiv_id": "2610.02170v1",
+      "published_at": "2026-10-01T17:56:04Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "AutoCompact: Learning When to Compact Context in Long-Horizon Coding Agents",
+      "title": "AutoCompact: Learning When to Compact Context in Long-Horizon Coding Agents",
+      "url": "https://arxiv.org/abs/2610.02163v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02163v1",
+      "description": "Coding agents solve repository-level software engineering tasks through long trajectories of code inspection, search, editing, and testing. As a task progresses, earlier exploration becomes stale, so managing context is more than avoiding overflow: an agent must decide when to compact, what working state to preserve, and how to continue from it. We introduce AutoCompact, which trains a coding agent to make these decisions as part of its policy. To collect training data, we run the base agent on ",
+      "authors": [
+        "Xuan Zhang",
+        "Longtao Zheng",
+        "Cunxiao Du",
+        "Bo An",
+        "Xin Dong"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.02163v1",
+      "published_at": "2026-10-01T17:54:34Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "DuoMind: Enabling Distributed Multi-Robot Coordination with Semantic Communication",
+      "title": "DuoMind: Enabling Distributed Multi-Robot Coordination with Semantic Communication",
+      "url": "https://arxiv.org/abs/2610.02161v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02161v1",
+      "description": "Vision-language models (VLMs) and vision-language-action models (VLAs) have recently driven rapid progress in general-purpose robots, yet most progress has focused on single-robot settings. Extending these capabilities to multi-robot systems remains challenging because robots must coordinate long-horizon behaviors while maintaining reliable, fine-grained execution. We introduce DuoMind, a distributed hierarchical framework for multi-robot coordination through semantic communication. Each robot u",
+      "authors": [
+        "Hanchu Zhou",
+        "Dechen Gao",
+        "Hang Wang",
+        "Brendan Lynch",
+        "Boqi Zhao"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.02161v1",
+      "published_at": "2026-10-01T17:53:09Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "When Do Intrinsic Rewards Lead to Exploration?",
+      "title": "When Do Intrinsic Rewards Lead to Exploration?",
+      "url": "https://arxiv.org/abs/2610.02159v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02159v1",
+      "description": "Intrinsic rewards are designed to guide exploration in reinforcement learning by assigning value to an agent's experience, for example through prediction error or learning progress. However, maximizing these rewards need not produce the most informative experience available. We propose a formal criterion for exploration that compares policies by the counterfactual information they acquire: how well their histories can substitute for experience under alternative policies. We construct a single, s",
+      "authors": [
+        "Scott W. Viteri",
+        "Laura Gomezjurado Gonzalez",
+        "Clark Barrett"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.02159v1",
+      "published_at": "2026-10-01T17:52:41Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Muon meets Tamed Langevin: Momentum Preconditioning beyond Convex and gradient-Lipschitz Potentials",
+      "title": "Muon meets Tamed Langevin: Momentum Preconditioning beyond Convex and gradient-Lipschitz Potentials",
+      "url": "https://arxiv.org/abs/2610.02158v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02158v1",
+      "description": "We consider the problem of sampling from Gibbs distributions on matrix spaces whose potential energies are neither convex nor globally gradient-Lipschitz. We introduce a family of non-quadratic kinetic energies that lead to a new underdamped Langevin system with momentum preconditioning, in which the gradient of the kinetic energy acts as a smooth spectral taming of the momentum. We prove that, under these relaxed assumptions on the potential, the resulting dynamics leaves the target Gibbs measu",
+      "authors": [
+        "Nikolaos Makras",
+        "Sotirios Sabanis"
+      ],
+      "categories": [
+        "cs.LG",
+        "math.OC",
+        "math.PR",
+        "stat.ML"
+      ],
+      "arxiv_id": "2610.02158v1",
+      "published_at": "2026-10-01T17:52:36Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "From Knowledge Access to Source Learning: Developing Source-Specific Competence",
+      "title": "From Knowledge Access to Source Learning: Developing Source-Specific Competence",
+      "url": "https://arxiv.org/abs/2610.02150v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02150v1",
+      "description": "Large language model (LLM) agents increasingly rely on persistent external sources to solve sequences of knowledge-intensive tasks. Existing methods improve how source content is accessed and organized, while agent-memory systems preserve reusable knowledge from prior interactions, but repeated use of the same source is still largely treated as repeated access rather than an opportunity to progressively improve understanding of that source. We study source learning: developing reusable source-sp",
+      "authors": [
+        "Lucheng Fu",
+        "Kejing Xia",
+        "Yiyang Wang",
+        "Yiqiao Jin",
+        "Jinjin He"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.02150v1",
+      "published_at": "2026-10-01T17:50:16Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Faynt: Scaling and Optimizing Policies for Competitive Melee",
+      "title": "Faynt: Scaling and Optimizing Policies for Competitive Melee",
+      "url": "https://arxiv.org/abs/2610.02144v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02144v1",
+      "description": "We introduce Faynt, a family of 10M- and 75M-parameter Transformer policies for Super Smash Bros. Melee, each controlling all 26 characters with a single checkpoint. After reinforcement learning (RL), the 10M wins 240 of 244 same-character games (98.4%) against fourteen specialist and multi-character releases on their supported rosters, with a winning record against every release. These opponents retain 21- or 24-frame action delays; Faynt uses no added delay, and we have not isolated the effect",
+      "authors": [
+        "Ali Janati",
+        "Nikita Kuzmin",
+        "Rohit Swamy",
+        "Charles Niu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.02144v1",
+      "published_at": "2026-10-01T17:48:38Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Keyword Harnesses Fail Open: A Cheap Diagnostic Ladder for Tool-Use Claims in Small Language Models",
+      "title": "Keyword Harnesses Fail Open: A Cheap Diagnostic Ladder for Tool-Use Claims in Small Language Models",
+      "url": "https://arxiv.org/abs/2610.02142v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.02142v1",
+      "description": "Keyword-matching benchmarks can credit small models for tool use they never perform. We document such a false positive in a matched-architecture pair of Spanish security language models and propose a ladder of strict, cheap diagnostics. A 661.6M parameter model (approx. 65% code/technical text; no dedicated SFT) and a 1,109M model (web-heavy multi-phase curriculum; 6B-token tool-SFT) share decoder, tokenizer, and special tokens, scoring almost identically on lenient tool-use metrics (B4: 0.660 v",
+      "authors": [
+        "Juan S. Santillana"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.02142v1",
+      "published_at": "2026-10-01T17:46:38Z",
       "platform": [
         "arxiv"
       ],
