@@ -1,0 +1,707 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-10-10T20:56:43.700858+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "CSF: Contextual Safety Filtering for Motion Generators",
+      "title": "CSF: Contextual Safety Filtering for Motion Generators",
+      "url": "https://arxiv.org/abs/2610.12467v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12467v1",
+      "description": "Text-conditioned motion generators produce trackable whole-body motion, but they have no notion of scene-dependent safety: the same action may target an object or a person. Existing safeguards either inspect the prompt, require labeled motion data, or enforce geometric constraints; therefore, they do not directly account for how scene context changes a motion's meaning. We introduce contextual safety filtering (CSF), a training-free filter that grounds natural-language safety rules in safe and u",
+      "authors": [
+        "Lizhi Yang",
+        "Yiling Hou",
+        "Yao Tang",
+        "Junheng Li",
+        "Daniel Weng"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.12467v1",
+      "published_at": "2026-10-08T17:59:50Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
+      "title": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
+      "url": "https://arxiv.org/abs/2610.12466v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12466v1",
+      "description": "METR's 50\\% time horizon measures the human completion time of software tasks that an AI solves with 50\\% probability, allowing AI capabilities to be expressed in interpretable units. On 228 tasks and 26 AIs, we recompute the time horizons using splines and item-response theory to relax the assumption that the AI difficulty of a task depends linearly on the log of human time. Our fitted spline can be interpreted as a function that \\emph{converts} human time to AI difficulty; it is nearly flat in",
+      "authors": [
+        "Drew T. Nguyen",
+        "William Fithian"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.12466v1",
+      "published_at": "2026-10-08T17:59:50Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control",
+      "title": "A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control",
+      "url": "https://arxiv.org/abs/2610.12465v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12465v1",
+      "description": "General-purpose robots must perform a wide range of tasks from agile locomotion to dexterous manipulation. While sim-to-real reinforcement learning (RL) has proven to be a useful tool for this goal, current RL pipelines depend on engineering-heavy, per-task structural priors such as shaped rewards and demonstrations. Recent work has shown that diverse simulator resets, combined with massively parallel simulation, can alleviate much of this engineering burden on several manipulation problems. How",
+      "authors": [
+        "Octi Zhang",
+        "Mateo Guaman Castro",
+        "Patrick Yin",
+        "Ignacio Dagnino",
+        "Abhishek Gupta"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.12465v1",
+      "published_at": "2026-10-08T17:59:50Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
+      "title": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
+      "url": "https://arxiv.org/abs/2610.12463v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12463v1",
+      "description": "In 2026, cybersecurity evaluations involving OpenAI, Anthropic, and Google agents reached real systems outside their authorized test scope. The paths were different. OpenAI agents exploited research infrastructure, coordinated across runs, and compromised parts of Hugging Face's production environment. Anthropic reported cases in which a misconfigured third-party environment exposed real systems to agents pursuing simulated cyber tasks. In a separately reported evaluation, Google's Gemini access",
+      "authors": [
+        "Abbas Raftari"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.12463v1",
+      "published_at": "2026-10-08T17:59:49Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "BrickBench: Evaluating Agentic Brick Design",
+      "title": "BrickBench: Evaluating Agentic Brick Design",
+      "url": "https://arxiv.org/abs/2610.12452v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12452v1",
+      "description": "We propose BrickBench, a benchmark for agentic text-conditioned LEGO-set design. Given a prompt, an agent is tasked with producing an assembly that not only satisfies semantic and design criteria, but that can also be physically built. To do so, it must select parts from a discrete library and reason jointly about local and global constraints. We score validity, alignment, and design across three settings that vary in scale and part availability. We provide BrickAgent, an environment for coding ",
+      "authors": [
+        "Peter Kulits",
+        "Yiqing Xu",
+        "R. Kenny Jones",
+        "Cordelia Schmid",
+        "Jiajun Wu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV",
+        "cs.GR"
+      ],
+      "arxiv_id": "2610.12452v1",
+      "published_at": "2026-10-08T17:58:56Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "One Block, Multiple Depths: Recurrent Vision Transformers with Depth-Programmed Experts",
+      "title": "One Block, Multiple Depths: Recurrent Vision Transformers with Depth-Programmed Experts",
+      "url": "https://arxiv.org/abs/2610.12448v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12448v1",
+      "description": "In this work, we show that a single Transformer block, applied recurrently, can match the accuracy of a full-depth vision encoder at comparable inference FLOPs without intermediate feature distillation. reViT restores depth-specific transformations by representing the FFN at each recurrent depth as a convex combination of a small shared expert bank. A continuous normalized-depth coordinate programs this mixture, defining a resampleable trajectory through FFN parameter space. We evaluate this des",
+      "authors": [
+        "Adrian Bulat",
+        "Yassine Ouali",
+        "Georgios Tzimiropoulos"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.12448v1",
+      "published_at": "2026-10-08T17:58:36Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Bi-FORK: Generative Modeling of High-Dimensional Bifurcating Systems",
+      "title": "Bi-FORK: Generative Modeling of High-Dimensional Bifurcating Systems",
+      "url": "https://arxiv.org/abs/2610.12449v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12449v1",
+      "description": "Bifurcations are ubiquitous in physical systems, from structural buckling to fluid and climate dynamics, yet they remain largely unexplored in deep learning. At a symmetry-breaking bifurcation, a single input admits multiple equally valid solutions, violating the one-to-one assumption underlying most learned physical surrogates. We introduce Bi-FORK, a generative framework for learning these one-to-many solution maps in high-dimensional systems. Bi-FORK generates complete trajectories through la",
+      "authors": [
+        "Anna Zimmel",
+        "Fleur Hendriks",
+        "Markus Holzleitner",
+        "Florian Sestak",
+        "Martin Weichselbaumer"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CE",
+        "physics.comp-ph"
+      ],
+      "arxiv_id": "2610.12449v1",
+      "published_at": "2026-10-08T17:58:36Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
+      "title": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
+      "url": "https://arxiv.org/abs/2610.12445v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12445v1",
+      "description": "Recent incidents have highlighted the challenge of monitoring LLM agents and the danger of models deceiving people. We show that white-box deception detection via probes can be scaled up to frontier monitoring settings by collecting the largest deception dataset to date for training probes and introducing a novel probe architecture which can aggregate information across many layers and tokens. Our probes achieve 98.8% AUC in SHADE-Arena, surpassing an Opus 5.5 text-monitoring baseline, and show ",
+      "authors": [
+        "Oskar J. Hollinsworth",
+        "Alex F. Spies",
+        "Tigist Diriba",
+        "Adam Gleave",
+        "Chris Cundy"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.12445v1",
+      "published_at": "2026-10-08T17:58:13Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Rounding in Preconditioner Space: Redesigning 4-bit AdamW Optimizer-State Quantization",
+      "title": "Rounding in Preconditioner Space: Redesigning 4-bit AdamW Optimizer-State Quantization",
+      "url": "https://arxiv.org/abs/2610.12444v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12444v1",
+      "description": "Quantizing AdamW's optimizer states reduces persistent storage, but quantization errors propagate through the moment recurrences and perturb subsequent adaptive updates. We redesign 4-bit optimizer-state quantization for AdamW from the perspective of \\emph{rounding space}: the coordinate in which a quantizer chooses between adjacent reconstruction levels. For the second moment, a local analysis of the quantization cell adjacent to zero shows that small mean state error need not imply small mean ",
+      "authors": [
+        "Hanyang Li",
+        "Shao Tang",
+        "Daniel Thomas Braithwaite",
+        "Gregory Dexter",
+        "Leonardo Neves"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.12444v1",
+      "published_at": "2026-10-08T17:58:09Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Density Ratio Estimation with Stein Displacement Fields",
+      "title": "Density Ratio Estimation with Stein Displacement Fields",
+      "url": "https://arxiv.org/abs/2610.12437v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12437v1",
+      "description": "Density ratios quantify distribution shift from a probability-mass point of view, whereas displacement fields describe, from a dynamical point of view, how one distribution is transported onto another. Although both offer complementary insights, they are usually estimated separately, and converting one into the other requires post-processing. In this paper, we estimate the density ratio between a target and a base distribution by parametrizing it through a displacement field acting on the base: ",
+      "authors": [
+        "Song Liu"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.12437v1",
+      "published_at": "2026-10-08T17:57:33Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Ecology of AI Agents: Collaboration Creates a Population Threshold for Takeoff",
+      "title": "Ecology of AI Agents: Collaboration Creates a Population Threshold for Takeoff",
+      "url": "https://arxiv.org/abs/2610.12436v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12436v1",
+      "description": "AI agents can now conduct real-world cyberattacks, scale up capabilities with the number of agents, and collectively pursue misaligned goals to obtain rewards. Together, these factors raise the risk of a population explosion of misaligned agents: agents could compromise computers and secretly deploy additional agents, creating a self-reinforcing cycle where larger populations develop greater collective cyber capability and expand further. This raises a fundamental question: What determines wheth",
+      "authors": [
+        "Erin Crawley",
+        "Hidenori Tanaka"
+      ],
+      "categories": [
+        "cs.AI",
+        "cond-mat.dis-nn",
+        "cs.MA",
+        "physics.bio-ph"
+      ],
+      "arxiv_id": "2610.12436v1",
+      "published_at": "2026-10-08T17:57:32Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "VioLA: Learning Generalist Humanoid Control Policies from Human Data",
+      "title": "VioLA: Learning Generalist Humanoid Control Policies from Human Data",
+      "url": "https://arxiv.org/abs/2610.12435v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12435v1",
+      "description": "Teaching a humanoid to follow instructions with its whole body runs into two obstacles. Its action space is large and tightly coupled: legs, arms, and fingers must move together while the robot keeps its balance, which makes joint-level actions hard to learn. And humanoid demonstrations are scarce, so current humanoid generalist policies do not follow new instructions out of the box and are fine-tuned on teleoperated demonstrations of each task before deployment. Human demonstrations exist in fa",
+      "authors": [
+        "Mert Albaba",
+        "Jens Beißwenger",
+        "Anna Manasyan",
+        "Daniel Marta",
+        "Michael J. Black"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.12435v1",
+      "published_at": "2026-10-08T17:57:27Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "FAITH: Feasibility-Aware Safety-Filtered RL for High-Dimensional Systems",
+      "title": "FAITH: Feasibility-Aware Safety-Filtered RL for High-Dimensional Systems",
+      "url": "https://arxiv.org/abs/2610.12432v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12432v1",
+      "description": "Safe reinforcement learning commonly places safety and task performance in the same policy objective, where they can introduce competing updates. Safety filters separate them at action execution, but classical designs require an analytic safety function and dynamics model, and standard minimal-intervention filters are myopic to long-horizon task return because they minimize only instantaneous action deviation. Hard projections are also undefined when no safe action exists. We present FAITH, a fe",
+      "authors": [
+        "Songyuan Zhang",
+        "Baljeet Singh",
+        "Sarthak Ranjeet Kaingade",
+        "Chuchu Fan",
+        "Bryan Trinh"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "arxiv_id": "2610.12432v1",
+      "published_at": "2026-10-08T17:57:06Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Toward Joint Optimization of Circuit Depth and Training Data Size in Adaptively Grown Quantum Classifiers",
+      "title": "Toward Joint Optimization of Circuit Depth and Training Data Size in Adaptively Grown Quantum Classifiers",
+      "url": "https://arxiv.org/abs/2610.12428v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12428v1",
+      "description": "Building a quantum model involves a tradeoff: how complex the circuit should be, and how much training data it needs. Caro et al. show that models with fewer trainable gates need less training data to generalize well. Q-FLAIR shows that a quantum feature-map circuit can be grown gate-by-gate, stopping once further growth stops improving the training loss. We ask whether these two results combine into a predictable scaling law. Does Q-FLAIR's own stopping rule pick larger or smaller circuits as t",
+      "authors": [
+        "Saeefa Rubaiyet Nowmi",
+        "Md Mahmuduzzaman Kamol",
+        "Mohammad Saidur Rahman"
+      ],
+      "categories": [
+        "quant-ph",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.12428v1",
+      "published_at": "2026-10-08T17:55:57Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "FastBench: Can Streaming VLMs Perceive High-Dynamic Real-World Streams?",
+      "title": "FastBench: Can Streaming VLMs Perceive High-Dynamic Real-World Streams?",
+      "url": "https://arxiv.org/abs/2610.12427v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12427v1",
+      "description": "Streaming Video Large Language Models (VLMs) enable continuous video understanding, yet existing benchmarks focus on low-dynamic scenarios. Under bounded context budgets, models must balance temporal history, spatial resolution, and temporal granularity; sparse sampling at 1--2 FPS misses fast events. We introduce FastBench to evaluate high-dynamic perception in real-world video streams. Its trajectory-grounded pipeline combines QA generation from high-FPS clips, filtering of questions answerabl",
+      "authors": [
+        "Yuxuan Hu",
+        "Weikang Shi",
+        "Yang Bo",
+        "Xudong Lu",
+        "Xintong Guo"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.12427v1",
+      "published_at": "2026-10-08T17:55:20Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "RoboRSI: Stable, efficient, and reusable robot self-evolution in complex real-world environments",
+      "title": "RoboRSI: Stable, efficient, and reusable robot self-evolution in complex real-world environments",
+      "url": "https://arxiv.org/abs/2610.12424v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12424v1",
+      "description": "A generalist robot should not only perform diverse tasks but also improve through experience, turning what it learns during execution into capabilities that later tasks can reuse. Robot agents that act through code can already repair programs from execution feedback, yet it remains a central challenge to organize this experience around the task structure that gives it meaning, so that each repair is attributed to the responsible capability, supported by execution evidence, and validated before i",
+      "authors": [
+        "Zimo Wen",
+        "Yijin Chen",
+        "Yuxuan Cao",
+        "Wendi Chen",
+        "Yanwen Zou"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.12424v1",
+      "published_at": "2026-10-08T17:55:12Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Beyond Spatio-Temporal Priors: A Generalizable Approach for Dense Correspondence Matching",
+      "title": "Beyond Spatio-Temporal Priors: A Generalizable Approach for Dense Correspondence Matching",
+      "url": "https://arxiv.org/abs/2610.12421v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12421v1",
+      "description": "Dense correspondence matching has historically been bounded by simplifying spatio-temporal priors, such as smooth motion and rigid geometry. While effective for classical tasks, these assumptions break down in image editing and reference-guided generation (IEG), where transformations can preserve visual identity while breaking physical continuity. To establish identity-preserving correspondence across such transformations, we introduce FreeMatching, a generalizable framework combining generative",
+      "authors": [
+        "Luping Liu",
+        "Bingyi Kang",
+        "Yifan Wang",
+        "Dong Xu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.12421v1",
+      "published_at": "2026-10-08T17:53:04Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "A Unified Bellman Operator for Safety-Critical Reinforcement Learning",
+      "title": "A Unified Bellman Operator for Safety-Critical Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2610.12420v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12420v1",
+      "description": "Reinforcement learning in safety-critical domains requires maximizing task performance while strictly adhering to safety constraints. Existing safe reinforcement learning paradigms typically force a trade-off: they either require a priori knowledge to provide strict safety guarantees (e.g., safety filters), or they enable joint learning but only satisfy safety constraints on average. In this work, we propose a novel Bellman operator that unifies performance and safety objectives into a joint val",
+      "authors": [
+        "Nishanth Arun Rao",
+        "Royina Karegoudra Jayanth",
+        "Benjamin Eysenbach",
+        "Jaime Fernández Fisac"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.12420v1",
+      "published_at": "2026-10-08T17:53:02Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "WOVEN: Weaving Visual World Modeling into Multimodal LLMs",
+      "title": "WOVEN: Weaving Visual World Modeling into Multimodal LLMs",
+      "url": "https://arxiv.org/abs/2610.12417v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12417v1",
+      "description": "Multimodal large language models (MLLMs) struggle with spatial, embodied, physical, and temporal reasoning. We hypothesize that these failures reflect a shared deficit in visual transition reasoning, and test whether this capability can serve as a shared training primitive, one that different models can learn from different supervision sources and reuse across different tasks, with a systematic training recipe. Existing benchmarks document these deficits separately but do not support controlled ",
+      "authors": [
+        "Zheyu Fan",
+        "Yue Zhang",
+        "Mingkai Deng",
+        "Kangrui Wang",
+        "Qineng Wang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.12417v1",
+      "published_at": "2026-10-08T17:52:03Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "MAMHOI: Factorizing Scene-Aware Human-Object Interaction through Affordances",
+      "title": "MAMHOI: Factorizing Scene-Aware Human-Object Interaction through Affordances",
+      "url": "https://arxiv.org/abs/2610.12416v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12416v1",
+      "description": "Generating realistic human-object interactions (HOI) in complex 3D scenes requires two complementary capabilities: reasoning about interaction feasibility in the environment and synthesizing realistic human-object motion. However, supervision for these capabilities is rarely available jointly at scale. Human-scene datasets provide rich information about environment-aware motion, while human-object datasets capture detailed interaction dynamics, yet paired human-object-scene data remain scarce. W",
+      "authors": [
+        "Mingyuan Lei",
+        "Yoonchang Sung",
+        "Tat-Jen Cham"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.12416v1",
+      "published_at": "2026-10-08T17:52:02Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Predicting Alignment Generalization with Value Representations",
+      "title": "Predicting Alignment Generalization with Value Representations",
+      "url": "https://arxiv.org/abs/2610.12410v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12410v1",
+      "description": "LLM developers post-train their models to exhibit prosocial values and behavioral traits, which are enumerated in an alignment target. However, while recent post-training developments have yielded models that score highly on alignment evaluations, training models on sets of narrow behaviors still influences their behavior across unseen contexts and environments in unexpected ways. In this paper, we establish the task of alignment generalization prediction, i.e., predicting how fine-tuning a mode",
+      "authors": [
+        "Andy Liu",
+        "Mehar Bhatia",
+        "Karolina Stanczak",
+        "Mona Diab",
+        "Vered Shwartz"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.12410v1",
+      "published_at": "2026-10-08T17:47:26Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Searching for \"Harmful Refusal\": A Psychometric Audit of an AI Safety Benchmark",
+      "title": "Searching for \"Harmful Refusal\": A Psychometric Audit of an AI Safety Benchmark",
+      "url": "https://arxiv.org/abs/2610.12409v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12409v1",
+      "description": "Safety benchmarks typically report one overall score for a suite of datasets, each of which may target one or more safety-related attributes, so models with similar overall scores can have very different attribute profiles. Comparing models is more tractable at the level of individual attributes, yet it is often unclear whether even a single dataset's scores isolate any single attribute. One plausible candidate for such an attribute is harmful refusal, a model's tendency to refuse dangerous or p",
+      "authors": [
+        "Christopher M. Stewart",
+        "Preston Botter",
+        "Natalie Sarabosing",
+        "Muye Zhang",
+        "Rachel Phinnemore"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.12409v1",
+      "published_at": "2026-10-08T17:46:43Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC",
+      "title": "LeWAM: A JEPA World Action Model with Diffusion-Steering-Based MPC",
+      "url": "https://arxiv.org/abs/2610.12407v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12407v1",
+      "description": "World action models (WAMs) predict actions and future observations, typically from a reconstruction-based representation that carries noisy, redundant information which can complicate downstream predictions. We introduce LeWAM, a bidirectional transformer for forward, backward, inverse dynamics and policy prediction, on a decoder-free JEPA latent trained end-to-end through all four modes. We see the following benefits: 1) Alignment: linear probes read robot and object state from LeWAM's latent b",
+      "authors": [
+        "Shashank Hegde",
+        "Alexander Popov",
+        "Elie Aljalbout",
+        "Nikolai Smolyanskiy"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "arxiv_id": "2610.12407v1",
+      "published_at": "2026-10-08T17:46:03Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ViSkill: Reinforcing VLM Agents with Evolving Visual-Native Skills",
+      "title": "ViSkill: Reinforcing VLM Agents with Evolving Visual-Native Skills",
+      "url": "https://arxiv.org/abs/2610.12403v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12403v1",
+      "description": "Skill-augmented agents improve sample efficiency by distilling successful trajectories into reusable strategies. Yet most existing approaches remain text-centric, linearizing spatial layouts and action-state correspondences into language that loses critical geometric structure. Recent efforts have begun incorporating visual evidence, but construct and update skills separately from policy optimization, leaving their mutual improvement underexplored. We propose ViSkill, a visual-native skill learn",
+      "authors": [
+        "Hongxing Li",
+        "Dingming Li",
+        "Yixin Li",
+        "Yong Du",
+        "Wenqi Zhang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.12403v1",
+      "published_at": "2026-10-08T17:44:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SpaceCast-Bench: Evaluating Predictive Spatial Reasoning in Vision-Language Models",
+      "title": "SpaceCast-Bench: Evaluating Predictive Spatial Reasoning in Vision-Language Models",
+      "url": "https://arxiv.org/abs/2610.12402v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12402v1",
+      "description": "Existing spatial reasoning benchmarks mainly test spatial perception: reading off relations already visible in the input. Yet real-world spatial intelligence demands predictive spatial reasoning: constructing a scene from observations, anticipating how an intervention changes it, and reasoning about the unseen outcome. We introduce SpaceCast-Bench, the first benchmark to directly and diagnostically evaluate this capability. Built around an observe-transform-infer framework, its 3,862 questions f",
+      "authors": [
+        "Hongxing Li",
+        "Jinyue Su",
+        "Dingming Li",
+        "Wenqi Zhang",
+        "Weiming Lu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.12402v1",
+      "published_at": "2026-10-08T17:44:17Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Learning Kilometer-Scale Weather Prediction with Global-Regional Alignment",
+      "title": "Learning Kilometer-Scale Weather Prediction with Global-Regional Alignment",
+      "url": "https://arxiv.org/abs/2610.12401v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12401v1",
+      "description": "Kilometer-scale regional weather forecasting is essential for local weather warnings and weather-sensitive decisions. Existing data-driven approaches often rely on numerical forecasts for large-scale guidance or require additional training of global forecasting components. Pretrained global weather models offer an efficient source of large-scale forecasts, motivating their reuse to guide high-resolution regional prediction. However, this coupling requires aligning global and regional representat",
+      "authors": [
+        "Guowen Li",
+        "Yang Liu",
+        "Yujie Wang",
+        "Qiuyan Sun",
+        "Haoyuan Liang"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.12401v1",
+      "published_at": "2026-10-08T17:43:23Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SpaceFlow: Locally Controllable 3D Generation",
+      "title": "SpaceFlow: Locally Controllable 3D Generation",
+      "url": "https://arxiv.org/abs/2610.12399v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12399v1",
+      "description": "Current 3D generation methods lack explicit local control: geometric adherence is often defined by a global control strength, and appearance cannot be specified locally. We present SpaceFlow, a training-free pipeline for locally controllable 3D generation from text descriptions and a collection of geometric primitives. Each primitive serves as a proxy for an object part and is assigned a local control level, enabling users to specify whether regions should strictly follow the input shape or allo",
+      "authors": [
+        "Neil De La Fuente",
+        "Joan Lafuente",
+        "Mukhammadali Sayfiddinov",
+        "Felicia Scharitzer",
+        "Marc Pollefeys"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.GR"
+      ],
+      "arxiv_id": "2610.12399v1",
+      "published_at": "2026-10-08T17:42:39Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Prospective Prediction of OOD Degradation from Source-Side Training Dynamics",
+      "title": "Prospective Prediction of OOD Degradation from Source-Side Training Dynamics",
+      "url": "https://arxiv.org/abs/2610.12397v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12397v1",
+      "description": "We study whether persistent out-of-distribution (OOD) degradation can be predicted before it is directly observed using only source-side training dynamics. In a controlled shortcut-learning setting, a simple logistic regression predictor develops a clear prospective signal, while training time alone does not. Temporal summaries of the source-side quantities are substantially more informative than their current values. When transferred without additional training from a CNN to an MLP, confidence ",
+      "authors": [
+        " Sasha",
+        " Monin"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.12397v1",
+      "published_at": "2026-10-08T17:41:31Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "HRIL: Learning Multimodal Synergy via Higher-Order Tensor Modeling",
+      "title": "HRIL: Learning Multimodal Synergy via Higher-Order Tensor Modeling",
+      "url": "https://arxiv.org/abs/2610.12393v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12393v1",
+      "description": "Self-supervised multimodal representation learning has achieved remarkable success across diverse domains, yet capturing synergistic information remains challenging due to the complexity of cross-modal interactions. Unlike the shared information across individual modalities, synergy arises when task-relevant signals emerge only from the joint configuration of multiple modalities and cannot be recovered from any modality in isolation. This work focuses on how to preserve the information capacity ",
+      "authors": [
+        "Qun Dai",
+        "Liangjian Wen",
+        "Jiang Duan",
+        "Yong Dai",
+        "Dongkai Wang"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.12393v1",
+      "published_at": "2026-10-08T17:39:45Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "GeoReform: Reflective Formalization Evolution for Multimodal Geometry Problem Solving",
+      "title": "GeoReform: Reflective Formalization Evolution for Multimodal Geometry Problem Solving",
+      "url": "https://arxiv.org/abs/2610.12391v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12391v1",
+      "description": "Multimodal large language models (MLLMs) often struggle to identify and use geometric relations in diagrams. Recent methods address this challenge by converting geometric entities, relations, and constraints into explicit textual representations for the model to reason over. However, effective formalization is highly non-trivial: on Geometry3K, structure injection fixes 28 errors but introduces 13 new ones among 200 examples. Redundant relations can distract the model, while ambiguous references",
+      "authors": [
+        "Jialu Wang",
+        "Ruichen Zhang",
+        "Xiaoou Liu",
+        "Hua Wei",
+        "Tianlong Chen"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.12391v1",
+      "published_at": "2026-10-08T17:39:12Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
