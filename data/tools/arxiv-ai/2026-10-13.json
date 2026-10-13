@@ -1,0 +1,664 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-10-13T22:07:36.212826+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "Can Language Models Play the Wikipedia Game?",
+      "title": "Can Language Models Play the Wikipedia Game?",
+      "url": "https://arxiv.org/abs/2610.13948v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13948v1",
+      "description": "Language models increasingly support or automate information retrieval from document collections too large to index. This task is difficult when it requires specialist linguistic or scientific knowledge. We used the Wikipedia Game to test language models on an analogous information retrieval task. In the game, players must reach a target article using only article links. We compared sentence embedding models and LLMs across five Wikipedia languages and five academic-literature datasets. We const",
+      "authors": [
+        "Alexander Hickey",
+        "Joanna Knight",
+        "James Bishop"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.IR"
+      ],
+      "arxiv_id": "2610.13948v1",
+      "published_at": "2026-10-09T17:59:56Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Hide and Seek: HIDE Concepts to SEEK explanations for black box models",
+      "title": "Hide and Seek: HIDE Concepts to SEEK explanations for black box models",
+      "url": "https://arxiv.org/abs/2610.13935v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13935v1",
+      "description": "Interpreting machine learning model predictions is a central challenge, particularly for black-box vision models. Concept-based attribution methods interpret models using human-understandable concepts. Existing concept-based methods can only interpret classification and regression models. They require access to model weights or large concept-annotated datasets, and most methods cannot provide image-level attribution. We propose Hide and Seek (HnS), a new method for concept-level attribution that",
+      "authors": [
+        "Bhanu Tokas",
+        "Rahul Nair",
+        "Rockwell Jackson",
+        "Hannah Kerner"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.13935v1",
+      "published_at": "2026-10-09T17:56:59Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Constructive Bounds for the Topological Expressivity of Neural Networks",
+      "title": "Constructive Bounds for the Topological Expressivity of Neural Networks",
+      "url": "https://arxiv.org/abs/2610.13931v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13931v1",
+      "description": "The expressivity of a neural network $Φ$ describes the class of functions that a network can express. The term topological expressivity refers to a family of measures particularly suited to understand binary classification and is often formulated in terms of the Betti numbers of a decision boundary $β(Φ^{-1}(0))$. Despite its popularity, this measure is not as useful for regression and other problems that do not involve a decision boundary. Instead, we propose to study topological expressivity i",
+      "authors": [
+        "Kosio Beshkov"
+      ],
+      "categories": [
+        "math.AT",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.13931v1",
+      "published_at": "2026-10-09T17:55:33Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "AI Models Can Provably Hide Arbitrary Capabilities",
+      "title": "AI Models Can Provably Hide Arbitrary Capabilities",
+      "url": "https://arxiv.org/abs/2610.13928v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13928v1",
+      "description": "Capability evaluations aim to surface dangerous model behaviors before deployment, but their reliability depends on the assumption that hidden capabilities can be elicited. We show this assumption does not hold under adversarial conditions by constructing backdoor attacks that embed encrypted neural networks within host model weights, decrypting and executing them only upon receiving a secret trigger. Using digital lockers, these hidden circuits remain provably hard to elicit and interpret under",
+      "authors": [
+        "Andis Draguns",
+        "Sumeet Ramesh Motwani",
+        "Raymond Douglas",
+        "Christian Schroeder de Witt"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CR"
+      ],
+      "arxiv_id": "2610.13928v1",
+      "published_at": "2026-10-09T17:55:06Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "KL Before and After Mixing: A Round-Complexity Separation in Parallel Sampling",
+      "title": "KL Before and After Mixing: A Round-Complexity Separation in Parallel Sampling",
+      "url": "https://arxiv.org/abs/2610.13924v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13924v1",
+      "description": "A parallel sampler can choose at random which coordinates to generate together. For a target $p$ and the output law $q_U$ of a schedule $U$ drawn afresh for each output, we compare the schedule-averaged divergence $\\mathbb{E}_U D_{\\mathrm{KL}}(p\\|q_U)$ with the output-law divergence $D_{\\mathrm{KL}}(p\\|\\mathbb{E}_U q_U)$, in nats. Rounds commit independent draws from exact conditional marginals frozen at the round's start, each output's schedule is drawn before sampling from a finite mixture of ",
+      "authors": [
+        "Tianyi Wu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.IT"
+      ],
+      "arxiv_id": "2610.13924v1",
+      "published_at": "2026-10-09T17:54:16Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Goal-Oriented Bundle Management and Flow Control for Deep-Space Communications via Reinforcement Learning",
+      "title": "Goal-Oriented Bundle Management and Flow Control for Deep-Space Communications via Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2610.13923v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13923v1",
+      "description": "Deep-space communications operate under intermittent connectivity, long propagation delays, and relay storage constraints. In such networks, the Bundle Protocol enables store-carry-forward communication, requiring relay nodes to manage limited storage and scarce contact opportunities. Relay-side scheduling and dropping decisions are inherently goal-oriented: transmission resources should be allocated to bundles most valuable to downstream mission objectives. Conventional schedulers, such as FIFO",
+      "authors": [
+        "Sajjad Baghaeea",
+        "Aimin Lib",
+        "Shanmugarajan Balasubramanian",
+        "Elif Uysal"
+      ],
+      "categories": [
+        "cs.NI",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "arxiv_id": "2610.13923v1",
+      "published_at": "2026-10-09T17:53:46Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "DyssomniaNN: Multi-Scale Spiking Neural Modeling of Human Sleep Disorders and Perceived Restedness",
+      "title": "DyssomniaNN: Multi-Scale Spiking Neural Modeling of Human Sleep Disorders and Perceived Restedness",
+      "url": "https://arxiv.org/abs/2610.13918v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13918v1",
+      "description": "Clinical sleep medicine repeatedly documents profound divergences between objective sleep duration and subjective daytime impairment, notably exemplified by sleep state misperception in paradoxical insomnia and boundary instability in narcolepsy type 1. Here, we present DyssomniaNN: a multi-scale biophysical computational framework coupling Borbély's two-process regulation of sleep homeostasis and circadian drive with Saper's hypothalamic reciprocal flip-flop circuit and a recurrent corticothala",
+      "authors": [
+        "Daniel Szelogowski"
+      ],
+      "categories": [
+        "cs.NE",
+        "cs.ET",
+        "cs.LG",
+        "q-bio.NC"
+      ],
+      "arxiv_id": "2610.13918v1",
+      "published_at": "2026-10-09T17:52:23Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Designing Protein Structures from Natural Language",
+      "title": "Designing Protein Structures from Natural Language",
+      "url": "https://arxiv.org/abs/2610.13917v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13917v1",
+      "description": "A central challenge in de novo protein design is generating proteins with desired structural and functional properties. Existing design models typically require a dedicated input representation for each property, limiting the design objectives they support. We develop Prompteina, the first all-atom structure generation model that supports new and broader design objectives specified in natural language, analogous to text-to-image generation. To train Prompteina, we construct Prompteina-Data, a pa",
+      "authors": [
+        "Joseph Lee",
+        "Yanjing Li",
+        "Bo Qiang",
+        "Gregory Lau",
+        "Allyson Ettinger"
+      ],
+      "categories": [
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "arxiv_id": "2610.13917v1",
+      "published_at": "2026-10-09T17:51:55Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+      "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+      "url": "https://arxiv.org/abs/2610.13912v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13912v1",
+      "description": "Recursive self-improvement (RSI) aims to transform interaction experience into persistent improvements, yet external feedback is costly and world-model predictions may become unreliable as policies evolve. We introduce RSI-Anything, a domain-general framework built on JEPA-Anything that uses predictive world models to guide action and learning-data selection. Observed feedback drives policy or workflow improvement and conditional world-model adaptation, while component and compatibility checks g",
+      "authors": [
+        "Taoyong Cui",
+        "Pinxian Zeng",
+        "Wanghan Xu",
+        "Hao Xiao",
+        "Shuhan Xue"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.13912v1",
+      "published_at": "2026-10-09T17:50:30Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "When VLMs Destroy What They Know: Spatial Representations Fall Below Lexical Priors",
+      "title": "When VLMs Destroy What They Know: Spatial Representations Fall Below Lexical Priors",
+      "url": "https://arxiv.org/abs/2610.13910v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13910v1",
+      "description": "Vision-Language Models (VLMs) increasingly analyze and reason about images, yet it remains unclear whether their internal representations faithfully encode the structured relations required for such reasoning. We introduce EICS (Evaluation-Invariant Concept Stability), a metric for testing whether representations consistently encode concepts under controlled one-concept interventions, and CASP-VL (Causally controlled Spatial Perturbations for Vision-Language models), a benchmark of causally cont",
+      "authors": [
+        "Shubh Garg",
+        "Chen Shani"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.13910v1",
+      "published_at": "2026-10-09T17:50:03Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Revisiting Tabular Deep Regression: Objectives and the Limits of Global Early Stopping",
+      "title": "Revisiting Tabular Deep Regression: Objectives and the Limits of Global Early Stopping",
+      "url": "https://arxiv.org/abs/2610.13909v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13909v1",
+      "description": "While deep learning models for tabular data have recently received significant research attention, the choice of objective functions for regression tasks remains an understudied degree of freedom. Several lines of research offer alternatives to the standard Mean Squared Error (MSE), but differences in datasets, backbones, and evaluation protocols make their practical benefits difficult to compare. In this work, we address this gap by performing a systematic re-evaluation of regression objectives",
+      "authors": [
+        "Danil Rudenko",
+        "Georgii Bulgakov",
+        "Nikolay Kartashev",
+        "Ivan Rubachev",
+        "Daniil Krasylnikov"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.13909v1",
+      "published_at": "2026-10-09T17:49:32Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Hitting-Time Bounds for Asynchronous Q-Learning",
+      "title": "Hitting-Time Bounds for Asynchronous Q-Learning",
+      "url": "https://arxiv.org/abs/2610.13901v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13901v1",
+      "description": "We study the last iterate of standard asynchronous Q-learning from a single trajectory of a finite Markov decision process. The trajectory follows a fixed behavior policy whose state--action chain is irreducible and may be periodic. For discount factor $γ$, write $H=(1-γ)^{-1}$, and let $μ_{\\min}$ be the minimum stationary state--action probability and $\\mathfrak h_\\star$ the largest expected hitting time of the reverse state--action chain. We prove that zero-initialized Q-learning with a consta",
+      "authors": [
+        "Yang Peng"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.13901v1",
+      "published_at": "2026-10-09T17:44:10Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Structural Automata for Neural Semantic Parsing",
+      "title": "Structural Automata for Neural Semantic Parsing",
+      "url": "https://arxiv.org/abs/2610.13896v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13896v1",
+      "description": "Neural semantic parsers generate meaning representations token by token, yet well-formedness depends on references, scope, and graph relations that unfold during generation. Constrained decoding prevents locally invalid tokens but does not guarantee that a valid prefix can be completed within a fixed output-length limit. We investigate structural automata at three stages of DRS parsing (decoding, post hoc processing, and training) and additionally evaluate decoding on AMR. For decoding, we intro",
+      "authors": [
+        "Xiao Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.13896v1",
+      "published_at": "2026-10-09T17:42:14Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Task Context Shapes Component Roles in Language Models",
+      "title": "Task Context Shapes Component Roles in Language Models",
+      "url": "https://arxiv.org/abs/2610.13895v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13895v1",
+      "description": "Large language models reuse the same attention heads across tasks, but identifying these shared heads does not explain what they do differently in each task. A natural source of inspiration is task-dependent interactions among shared brain regions, which motivate a network view of language-model computation. Here, we compare fixed model components across tasks using identical graph facts, statements specifying which directed connections are present. We measure how interventions affect attention ",
+      "authors": [
+        "Sovesh Mohapatra",
+        "Dani S Bassett"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.13895v1",
+      "published_at": "2026-10-09T17:40:53Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "RATED: Reliability-Aware AI Agent Tool Retrieval via Execution Dynamics",
+      "title": "RATED: Reliability-Aware AI Agent Tool Retrieval via Execution Dynamics",
+      "url": "https://arxiv.org/abs/2610.13889v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13889v1",
+      "description": "As AI agents increasingly rely on external tools, accurate retrieval is essential for reliable behavior. Existing methods optimize semantic relevance but largely ignore tool availability during execution. To address this gap, we propose RATED (Reliability-Aware Tool Retrieval via Execution Dynamics), a retrieval framework that combines robust semantic matching with dynamic reliability adaptation. RATED employs a frozen dual-encoder with contrastive fine-tuning for semantic matching, and a lightw",
+      "authors": [
+        "Weiliang Chen",
+        "Song Liao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.IR"
+      ],
+      "arxiv_id": "2610.13889v1",
+      "published_at": "2026-10-09T17:38:11Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "X-AgentRed: Red-Teaming Personal Agents in Evolving Multi-Service Ecosystems",
+      "title": "X-AgentRed: Red-Teaming Personal Agents in Evolving Multi-Service Ecosystems",
+      "url": "https://arxiv.org/abs/2610.13886v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13886v1",
+      "description": "Personal agents increasingly connect to services across the web and applications by using tools. As the effects of their actions accumulate and interact across services, unintended or harmful outcomes can arise when agents fulfill benign user requests. Proactively identifying these compositional failures requires systematically exploring diverse cross-service paths. Existing red-teaming methods often simply prompt LLMs to identify potentially harmful paths from task and environment descriptions ",
+      "authors": [
+        "Yeonsung Jung",
+        "Zhiyuan Wang",
+        "Zifan Wang",
+        "Vítor Albiero",
+        "Benjamin Newman"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.13886v1",
+      "published_at": "2026-10-09T17:34:44Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Prediction Is Not a Sufficient Memory State",
+      "title": "Prediction Is Not a Sufficient Memory State",
+      "url": "https://arxiv.org/abs/2610.13881v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13881v1",
+      "description": "A memory that reproduces every current prediction may still have forgotten how to learn from the next observation. We characterize this distinction for exact cumulative learning and attention. For smooth convex residual losses with unrestricted real features and labels, a continuous recurrent state of fixed dimension exists exactly when the loss is polynomial. With ordinary, unweighted observations, degree $D$ requires precisely $r=\\binom{d+D}{D}-1$ coordinates; even among histories with one fix",
+      "authors": [
+        "Robert Jenkinson Alvarez"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.13881v1",
+      "published_at": "2026-10-09T17:27:06Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Partially Informed Stochastic Optimization via Zeroth-Order Residual Tracking",
+      "title": "Partially Informed Stochastic Optimization via Zeroth-Order Residual Tracking",
+      "url": "https://arxiv.org/abs/2610.13871v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13871v1",
+      "description": "Many optimization problems provide direct access to only part of the gradient, while the remaining component must be inferred from function evaluations. This structure arises in performative prediction, performative reinforcement learning, and bilevel optimization with a black-box lower level. We introduce Partially Informed Stochastic Optimization (PISO), which combines the available gradient component with a running estimate of the residual. By centring each zeroth-order observation on this es",
+      "authors": [
+        "El Mahdi Chayti",
+        "Alireza Mirrokni",
+        "Martin Jaggi"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.13871v1",
+      "published_at": "2026-10-09T17:20:41Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Finite-Sample Guarantees for Fully Discrete Conditional Diffusion Models",
+      "title": "Finite-Sample Guarantees for Fully Discrete Conditional Diffusion Models",
+      "url": "https://arxiv.org/abs/2610.13851v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13851v1",
+      "description": "We establish finite-sample guarantees for conditional diffusion models learned from data and implemented with finitely many denoising steps. Our approach aligns the score-training objective with the sampling grid, allowing statistical estimation and numerical discretization errors to be analyzed together. Under a smooth conditional density model, we derive high-probability bounds on the generated distribution's error and quantify the required number of score evaluations. For every smoothness ind",
+      "authors": [
+        "Qiuyun Zhu"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.13851v1",
+      "published_at": "2026-10-09T16:59:18Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Inference-Time Steering Across Scaffolds and Epitopes for Sample-Efficient De Novo Nanobody Design",
+      "title": "Inference-Time Steering Across Scaffolds and Epitopes for Sample-Efficient De Novo Nanobody Design",
+      "url": "https://arxiv.org/abs/2610.13844v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13844v1",
+      "description": "Generative molecular design typically relies on over-generation and post-hoc filtering. Inference-time steering methods like Feynman-Kac (FK) steering improve efficiency by biasing trajectories toward high-reward candidates, yet they optimize within a single fixed configuration. In de novo nanobody design, upfront commitment to conditioning choices like scaffold identity or target epitope creates a bottleneck. Since yield varies across these conditions, steering unpromising setups wastes compute",
+      "authors": [
+        "Mason Minot",
+        "Simon Friedensohn",
+        "Cédric R. Weber"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.13844v1",
+      "published_at": "2026-10-09T16:54:05Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Returning to Development States: When Full Sandbox Snapshots Help Coding Agents",
+      "title": "Returning to Development States: When Full Sandbox Snapshots Help Coding Agents",
+      "url": "https://arxiv.org/abs/2610.13841v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13841v1",
+      "description": "Coding agents often make useful progress before they fail, but retry-from-scratch discards the machine state created along the way. This makes failure recovery an interesting search problem: if intermediate environment states preserve meaningful progress, restoring and branching from them could outperform repeatedly restarting from the initial state. We implement Go-Explore-style search over full Daytona snapshots and find that higher and more efficient solve rates depend mainly on progress that",
+      "authors": [
+        "Daniel Thi Graviet",
+        "Tanmay Shah"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.SE"
+      ],
+      "arxiv_id": "2610.13841v1",
+      "published_at": "2026-10-09T16:50:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Studying Comics at Scale with Artificial Intelligence: The PAGE Framework and Three Studies of American Comics and Japanese Manga",
+      "title": "Studying Comics at Scale with Artificial Intelligence: The PAGE Framework and Three Studies of American Comics and Japanese Manga",
+      "url": "https://arxiv.org/abs/2610.13840v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13840v1",
+      "description": "Comics are one of the great visual records of the twentieth century: hundreds of thousands of pages in which a mass readership saw its leaders, its wars and its heroes. Most of this record has never been studied as a whole; comics scholarship proceeds one book at a time. We argue that artificial intelligence, including generative models, can change this to the benefit of the medium itself. We propose PAGE, a framework that makes artificial intelligence an instrument for comics research. It parse",
+      "authors": [
+        "Emilio Ferrara"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CY"
+      ],
+      "arxiv_id": "2610.13840v1",
+      "published_at": "2026-10-09T16:49:29Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Specialists Learn Faster: Knowledge Organization in Pre-training Shapes Knowledge Update Efficiency",
+      "title": "Specialists Learn Faster: Knowledge Organization in Pre-training Shapes Knowledge Update Efficiency",
+      "url": "https://arxiv.org/abs/2610.13835v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13835v1",
+      "description": "An ideal (language) model must continually update its knowledge. Existing work largely focuses on making these updates efficient after training. We investigate how the organization of time-varying knowledge during pre-training shapes the efficiency of subsequent updates. Models trained on chronologically ordered knowledge specialize in the most recently encountered knowledge; we call them specialists. In contrast, models trained on the same knowledge in randomly shuffled order perform well acros",
+      "authors": [
+        "Sheng Zhao",
+        "Yuhao Zhu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.13835v1",
+      "published_at": "2026-10-09T16:42:33Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "On the Design Space of Continuous Diffusion Language Models",
+      "title": "On the Design Space of Continuous Diffusion Language Models",
+      "url": "https://arxiv.org/abs/2610.13834v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13834v1",
+      "description": "Continuous diffusion language models (CDLMs) promise to bring the benefits of continuous flow modelling to language, including accelerated sampling and controllable generation. The field has grown rapidly, and the capabilities of CDLMs have begun to rival those of discrete diffusion. Yet, unlike for continuous modalities such as images or videos, our grasp of the levers that matter when training CDLMs remains limited. In this work, we focus on two of these levers, namely self-conditioning and em",
+      "authors": [
+        "Oscar Davis",
+        "Daan Roos",
+        "Alice Bizeul",
+        "Amitis Shidani",
+        "Victor Turrisi"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.13834v1",
+      "published_at": "2026-10-09T16:41:32Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SpatialASM: Internalizing Active Mentalization for Spatial Reasoning",
+      "title": "SpatialASM: Internalizing Active Mentalization for Spatial Reasoning",
+      "url": "https://arxiv.org/abs/2610.13832v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13832v1",
+      "description": "When solving complex spatial reasoning tasks, ordinary humans naturally revisit the scenes from task-relevant viewpoints and mentally reconstruct the spatial layouts from those viewpoints. But can Large Vision-Language Models (LVLMs) proactively think in the same way? We term this ability Active Spatial Mentalization (ASM), an intrinsic component of visual intelligence that remains substantially underdeveloped in current LVLMs. To bridge this gap, we introduce SpatialASM, a scalable framework to",
+      "authors": [
+        "Yuhong Liu",
+        "Shenxi Wu",
+        "Junyi Chi",
+        "Beichen Zhang",
+        "Xuanlang Dai"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.13832v1",
+      "published_at": "2026-10-09T16:39:50Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "MC-EvoBench: Auditing Experience-Driven Self-Improvement in Minecraft Agents",
+      "title": "MC-EvoBench: Auditing Experience-Driven Self-Improvement in Minecraft Agents",
+      "url": "https://arxiv.org/abs/2610.13829v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13829v1",
+      "description": "A central challenge in embodied recursive self-improvement is enabling agents to convert interaction history into capabilities that persist beyond one world and transfer to later tasks. A saved memory or successful final action does not by itself establish that a reusable capability was acquired; evaluation must separate capability change from carried-over resources, unequal source exposure, and early execution failures. We construct MC-EvoBench as a controlled Minecraft benchmark with a fixed c",
+      "authors": [
+        "Jingwei Song",
+        "Zhisheng Chen",
+        "Bingfan Zeng",
+        "Jing Tang",
+        "Yubo Hou"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.13829v1",
+      "published_at": "2026-10-09T16:37:39Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "OpenPA: Forced-alignment-free Multi-granular Pronunciation Assessment with Mixed-transcript Adaptation",
+      "title": "OpenPA: Forced-alignment-free Multi-granular Pronunciation Assessment with Mixed-transcript Adaptation",
+      "url": "https://arxiv.org/abs/2610.13826v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13826v1",
+      "description": "Recent advances in automatic pronunciation assessment (APA) have driven a shift from scripted to free-form assessment. However, existing methods often rely on multi-stage pipelines with forced alignment and separate feature extractors, limiting their practicality across response settings. In light of this, we propose OpenPA, a novel APA framework that leverages Whisper's cross-attention mechanism to jointly predict word- and utterance-level pronunciation scores without forced alignment. Through ",
+      "authors": [
+        "Fu-An Chao",
+        "Bi-Cheng Yan",
+        "Berlin Chen"
+      ],
+      "categories": [
+        "eess.AS",
+        "cs.CL",
+        "cs.SD",
+        "eess.SP"
+      ],
+      "arxiv_id": "2610.13826v1",
+      "published_at": "2026-10-09T16:35:25Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Same Query, Different Answer: Run-to-Run Variance in Semantic Query Processing",
+      "title": "Same Query, Different Answer: Run-to-Run Variance in Semantic Query Processing",
+      "url": "https://arxiv.org/abs/2610.13823v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13823v1",
+      "description": "Semantic query engines ask a large language model (LLM) to judge individual rows, and benchmarks compare these engines on the quality of a few executions at temperature 0. We measure how much another execution changes. We re-execute the text and tabular workloads of SemBench, LRO-Bench, and UDA-Bench through their own harnesses, log every one of 1.2 million model calls, and reanalyze SemBench's published executions. At temperature 0, between 0.07% and 10.2% of rows change their operator output o",
+      "authors": [
+        "Oktie Hassanzadeh",
+        "Dharmashankar Subramanian"
+      ],
+      "categories": [
+        "cs.DB",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.13823v1",
+      "published_at": "2026-10-09T16:34:13Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Can Language Models Learn When to Abstain? Policy Learning and Calibrated Answer Selection",
+      "title": "Can Language Models Learn When to Abstain? Policy Learning and Calibrated Answer Selection",
+      "url": "https://arxiv.org/abs/2610.13821v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13821v1",
+      "description": "A useful language model should know when to answer and when to say \"I don't know.\" Can we improve that decision by training the model itself or by training a separate component to check its answers? We study both approaches on Qwen3-14B for factual questions, using a score that rewards correct answers, penalizes mistakes, and allows abstention. Across three training seeds and two held-out confidence thresholds, a learned answer selector improves threshold-averaged utility over the original model",
+      "authors": [
+        "Juan Terven",
+        "Diana-Margarita Córdova-Esparza",
+        "Ruben Gomez",
+        "Carlos Miranda Rocha",
+        "Julio-Alejandro Romero-González"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.13821v1",
+      "published_at": "2026-10-09T16:33:27Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Shared Canonical Component Removal Beyond Expert Views",
+      "title": "Shared Canonical Component Removal Beyond Expert Views",
+      "url": "https://arxiv.org/abs/2610.13819v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.13819v1",
+      "description": "In clinical practice, experts often begin by converting raw inputs into a set of expert features before making a decision. While black-box models trained on raw input can outperform models trained on expert views, it remains unclear what predictive signal the raw model exploits beyond what the expert view captures. We introduce an audit framework to quantify this gap using Shared Canonical Component Removal (SCCR). Unlike standard residualization or concept erasure, SCCR selectively removes only",
+      "authors": [
+        "Jose Roberto Tello Ayala",
+        "Akl C. Fahed",
+        "Roy Perlis",
+        "Finale Doshi-Velez"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.13819v1",
+      "published_at": "2026-10-09T16:32:12Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
