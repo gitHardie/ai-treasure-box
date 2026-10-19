@@ -1,0 +1,699 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-10-19T21:53:09.002488+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "Rethinking the design space of Vanilla Pixel Diffusion Transformers",
+      "title": "Rethinking the design space of Vanilla Pixel Diffusion Transformers",
+      "url": "https://arxiv.org/abs/2610.23854v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23854v1",
+      "description": "Pixel-space diffusion models have recently re-emerged as a compelling alternative to latent diffusion, avoiding the lossy latent bottleneck and separately trained autoencoder. JiT shows that a vanilla diffusion transformer can generate directly in pixel space by replacing the commonly used velocity prediction ($\\boldsymbol{u}$-prediction) with clean image prediction ($\\boldsymbol{x_0}$-prediction). In this work, we revisit this choice and introduce MFlow, an adaptive parameterization that learns",
+      "authors": [
+        "Soumik Mukhopadhyay",
+        "Long Mai",
+        "Abhinav Shrivastava",
+        "Aniruddha Mahapatra"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.23854v1",
+      "published_at": "2026-10-16T17:59:30Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Behavioral Couplings: From Formation to Behavioral Emergence in Language Models",
+      "title": "Behavioral Couplings: From Formation to Behavioral Emergence in Language Models",
+      "url": "https://arxiv.org/abs/2610.23847v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23847v1",
+      "description": "Fine-tuning large language models (LLMs) can induce behaviors beyond those explicitly targeted. For example, training a model to respond more warmly can make it more sycophantic, and training it to write insecure code can cause broad misalignment on prompts unrelated to coding. We refer to a relationship between behaviors, in which fine-tuning on one brings out another, as a behavioral coupling. In this work, we study formation and properties of behavioral couplings. We find that when a model is",
+      "authors": [
+        "Dongyoon Hahm",
+        "Woogyeol Jin",
+        "Dennis Wei",
+        "Yi Zhou",
+        "Nathalie Baracaldo"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.23847v1",
+      "published_at": "2026-10-16T17:58:08Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery",
+      "title": "AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery",
+      "url": "https://arxiv.org/abs/2610.23845v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23845v1",
+      "description": "Reproducible and analytically robust research findings are essential to scientific progress, but evaluating these properties typically requires costly manual effort. We investigate whether LLM agents can help automate reproduction and robustness analysis, using a medical case study grounded in the Surveillance, Epidemiology, and End Results (SEER) database, a widely used U.S. cancer registry underlying tens of thousands of published studies. First, we introduce SEER-Repro, a benchmark of 20 publ",
+      "authors": [
+        "Shicheng Liu",
+        "Krista Opsahl-Ong",
+        "Andrew Drozdov",
+        "Julian Killingback",
+        "Arnav Singhvi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.23845v1",
+      "published_at": "2026-10-16T17:57:55Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses",
+      "title": "DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses",
+      "url": "https://arxiv.org/abs/2610.23839v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23839v1",
+      "description": "Scientific discovery requires developing worthwhile hypotheses into practical investigations, yet learning from this evolving research process remains challenging. We introduce an operational definition of valuable and testable research hypotheses: evidence-grounded claims about consequential uncertainties, coupled with feasible investigations, explicit decision criteria, and alternative explanations. Our DiscoveryRSI framework develops hypothesis trees through multi-agent evolutionary search, c",
+      "authors": [
+        "Jianyuan Zhong",
+        "Chenwei Wu",
+        "Zhaochen Yu",
+        "Xixian Jiang",
+        "Xuewei Li"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.23839v1",
+      "published_at": "2026-10-16T17:56:35Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Task-aligned spectral inductive biases in parameterized quantum circuits",
+      "title": "Task-aligned spectral inductive biases in parameterized quantum circuits",
+      "url": "https://arxiv.org/abs/2610.23834v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23834v1",
+      "description": "Parameterized quantum circuits are widely investigated in quantum machine learning, yet how their architecture can provide task-aligned inductive biases remains poorly understood. We study data reuploading quantum circuits with two distinct inputs: a signal that varies between samples and a fixed, task-defined spectral query that specifies how the signal should be probed. We show that encoding the query can change the circuit's hypothesis class over the signal by modulating how its existing sign",
+      "authors": [
+        "Felix Frohnert",
+        "Adrián Pérez-Salinas",
+        "Sebastian Lange",
+        "Marcus Schwaebisch",
+        "Evert van Nieuwenburg"
+      ],
+      "categories": [
+        "quant-ph",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.23834v1",
+      "published_at": "2026-10-16T17:53:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Beyond the Answer: Student-Conditioned Trace Construction for Reasoning Distillation",
+      "title": "Beyond the Answer: Student-Conditioned Trace Construction for Reasoning Distillation",
+      "url": "https://arxiv.org/abs/2610.23831v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23831v1",
+      "description": "A reasoning trace can accompany a correct answer without providing effective supervision for a particular student. We study how to construct traces that improve learning beyond answer-only supervision by considering both their intermediate content and their accessibility to the target learner. We introduce ReDiST, a student-conditioned trace-construction and distillation framework for evidence-rich reasoning. Starting from the student's own attempts, ReDiST revises answer-correct drafts against ",
+      "authors": [
+        "Shaoang Li",
+        "Yanhang Shi",
+        "Yufei Li",
+        "Mingfu Liang",
+        "Frank Shyu"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.23831v1",
+      "published_at": "2026-10-16T17:52:58Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Waiting Buys Exactly Two Moments: Endogenous Identification in Prediction-Driven Allocation",
+      "title": "Waiting Buys Exactly Two Moments: Endogenous Identification in Prediction-Driven Allocation",
+      "url": "https://arxiv.org/abs/2610.23830v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23830v1",
+      "description": "A planner with a fixed budget of preventive help must decide whom to help and when. Waiting reveals risk but removes intervention opportunities as higher-risk individuals leave first. We characterize this tradeoff under repeated noisy signals and risk-dependent attrition: in the canonical model, a length-$τ$ observation prefix identifies exactly the latent risk moments $m_j=\\mathbb E[p^j]$ for $j=0,\\ldots,2τ-1$, buying two new moments per additional period. These identify average next-period att",
+      "authors": [
+        "Rama AlHamidi",
+        "Rasul Khanbayov",
+        "Erchin Serpedin",
+        "Hasan Kurban"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.23830v1",
+      "published_at": "2026-10-16T17:52:57Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Quality-of-Transmission Estimation in Quantum Networks: Compute, Simulate, or Learn?",
+      "title": "Quality-of-Transmission Estimation in Quantum Networks: Compute, Simulate, or Learn?",
+      "url": "https://arxiv.org/abs/2610.23827v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23827v1",
+      "description": "Future quantum networks will rely on control-plane decisions such as routing, scheduling, entanglement provisioning, purification, and memory allocation. Each decision depends on a timely and reliable estimate of the quality of the entanglement that a candidate path can deliver, with end-to-end fidelity as a central metric. Inspired by the optical-networking experience with quality-of-transmission (QoT) estimation, this article asks when a quantum controller should compute fidelity analytically,",
+      "authors": [
+        "Anis Bekri",
+        "Amar Abane",
+        "Van Sy Mai",
+        "Abdella Battou",
+        "Saddek Bensalem"
+      ],
+      "categories": [
+        "quant-ph",
+        "cs.LG",
+        "cs.NI"
+      ],
+      "arxiv_id": "2610.23827v1",
+      "published_at": "2026-10-16T17:49:43Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Self-Building Labs",
+      "title": "Self-Building Labs",
+      "url": "https://arxiv.org/abs/2610.23826v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23826v1",
+      "description": "Self-driving laboratories (SDLs) accelerate scientific discovery by automating experimental execution and optimization. AI agents can increasingly propose new experiments, but existing SDLs can only run the procedures they were built for. Adapting them to a new experiment still takes extensive manual engineering, which makes laboratory flexibility the bottleneck for scaling discovery. We introduce the self-building laboratory (SBL), which designs, configures, and operates its own laboratory setu",
+      "authors": [
+        "Jiaru Bai",
+        "Yuchi Zhao",
+        "Han Hao",
+        "Miroslav Bogdanovic",
+        "Yang Cao"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.MA",
+        "cs.RO"
+      ],
+      "arxiv_id": "2610.23826v1",
+      "published_at": "2026-10-16T17:48:29Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference",
+      "title": "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference",
+      "url": "https://arxiv.org/abs/2610.23825v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23825v1",
+      "description": "The evidence, $\\mathcal{Z} = p(x | \\mathcal{M})$, of a data-generating model $\\mathcal{M}$ is a powerful tool in Bayesian frameworks: it enables model inference, model misspecification tests, and goodness-of-fit assessment as an alternative to standard discrepancy statistics, e.g. $χ^2$. While versatile, the evidence is notoriously difficult to compute, even when the likelihood is available. In both likelihood-based and simulation-based inference, estimating $\\mathcal{Z}$ provides an immediate s",
+      "authors": [
+        "Kai Lehman",
+        "Jameson Dong",
+        "Carolina Cuesta-Lazaro",
+        "Niall Jeffrey",
+        "Benjamin D. Wandelt"
+      ],
+      "categories": [
+        "stat.ML",
+        "astro-ph.CO",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.23825v1",
+      "published_at": "2026-10-16T17:48:26Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Learning without relearning physical symmetry: an SO(3)-equivariant convolutional network (CNN) on the sphere",
+      "title": "Learning without relearning physical symmetry: an SO(3)-equivariant convolutional network (CNN) on the sphere",
+      "url": "https://arxiv.org/abs/2610.23821v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23821v1",
+      "description": "Many of the most important datasets in the physical sciences live natively on the sphere, and these data often carry no preferred position or orientation. Using methods that do not reflect this symmetry leads to far higher simulation requirements, which can be catastrophic for scientific analyses (forcing reliance on cheap, imperfect models that bias results). We present a novel spherical implementation of a gauge equivariant mesh architecture that is specifically designed for the Hierarchical E",
+      "authors": [
+        "Joshua Williamson",
+        "Niall Jeffrey",
+        "Lorne Whiteway"
+      ],
+      "categories": [
+        "stat.ML",
+        "astro-ph.CO",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.23821v1",
+      "published_at": "2026-10-16T17:45:43Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "CocoRNA: Collective RNA Design with Cooperative Multi-agent Reinforcement Learning",
+      "title": "CocoRNA: Collective RNA Design with Cooperative Multi-agent Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2610.23820v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23820v1",
+      "description": "Designing RNA sequences that reliably fold into specific secondary structures is essential for understanding their biological functions but remains a challenging computational problem. We propose CocoRNA, a cooperative multi-agent reinforcement learning framework for RNA inverse design. CocoRNA simplifies the design task by decomposing it into smaller sub-problems, each solved collaboratively by multiple agents. This approach reduces the complexity of the problem and improves the exploration of ",
+      "authors": [
+        "Tianmeng Hu",
+        "Biao Luo",
+        "Ke Li"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.MA"
+      ],
+      "arxiv_id": "2610.23820v1",
+      "published_at": "2026-10-16T17:43:25Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Acceptance Is Not Speed: Length Inflation in Training-Free Lossy Speculative Decoding",
+      "title": "Acceptance Is Not Speed: Length Inflation in Training-Free Lossy Speculative Decoding",
+      "url": "https://arxiv.org/abs/2610.23818v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23818v1",
+      "description": "Speculative decoding typically characterizes speedup by draft tokens accepted per verification round. Lossless verification preserves the target model's output distribution and thus expected completion length, making this metric a meaningful efficiency proxy. Relaxed (lossy) verification accepts tokens that lossless verification would reject, potentially altering that distribution. We identify a length inflation phenomenon: relaxed verification lengthens completions, primarily by extending reaso",
+      "authors": [
+        "Chiatzen Wang",
+        "Bill Xu",
+        "Haochen Gu",
+        "Hongyang Zhang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.23818v1",
+      "published_at": "2026-10-16T17:41:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Learning Personalized Memory Gating from Delayed One-Sided Feedback",
+      "title": "Learning Personalized Memory Gating from Delayed One-Sided Feedback",
+      "url": "https://arxiv.org/abs/2610.23812v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23812v1",
+      "description": "Long-term memory enables language-model agents to personalize future interactions, but a finite memory bank cannot preserve every extracted fact. Existing memory gating policies are typically shared across users and therefore fail to account for user-specific patterns of future reuse. In this paper, we study memory gating at the fact level. We first propose a retrieval-based labeling strategy that labels each fact by whether it is later retrieved and incorporated into responses. We then formulat",
+      "authors": [
+        "Kaixuan Ji",
+        "Zixiang Chen",
+        "Wenting Zhao",
+        "Cheng Qian",
+        "Heng Wang"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.23812v1",
+      "published_at": "2026-10-16T17:34:45Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Explainable Machine Learning Analysis of Temperature Effects on Mechanical Strength of Fiber-Reinforced High-Performance Concrete",
+      "title": "Explainable Machine Learning Analysis of Temperature Effects on Mechanical Strength of Fiber-Reinforced High-Performance Concrete",
+      "url": "https://arxiv.org/abs/2610.23811v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23811v1",
+      "description": "Predicting the compressive strength of fiber-reinforced high-performance concrete subjected to temperature exposure is challenging because to the intricate interdependencies of mixture composition, fiber properties, curing conditions, and temperature. A data-driven framework to predict compressive strength utilizing 1,204 experimental records containing a diverse array of material designs and exposure situations. This study evaluates eight machine-learning models and demonstrate that ensemble ap",
+      "authors": [
+        "Jagaran Chakma",
+        "Zhiguang Zhou",
+        "Badhan Chakma",
+        "Priyanta Chakma"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.23811v1",
+      "published_at": "2026-10-16T17:34:24Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Steering beyond Language: Improving Multilingual Training-Free Text Embeddings via Paired-Residual Subspace Removal",
+      "title": "Steering beyond Language: Improving Multilingual Training-Free Text Embeddings via Paired-Residual Subspace Removal",
+      "url": "https://arxiv.org/abs/2610.23807v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23807v1",
+      "description": "While deriving text embeddings directly from frozen LLMs has emerged as a promising direction, existing methods focus almost exclusively on English, leaving multilingual settings largely unexplored. In this work, we present the first systematic study of multilingual training-free text embeddings in LLMs. Our analysis reveals a language-conditioned embedding geometry in which semantically equivalent sentences remain misaligned across languages. We hypothesize that language-specific variation can ",
+      "authors": [
+        "Ailiang Lin",
+        "Zhuoyun Li",
+        "Yusong Wang",
+        "Keyu Mao",
+        "Kotaro Funakoshi"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.23807v1",
+      "published_at": "2026-10-16T17:30:43Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Beyond SAEs: Consistent Concept Discovery with Sparse Coding",
+      "title": "Beyond SAEs: Consistent Concept Discovery with Sparse Coding",
+      "url": "https://arxiv.org/abs/2610.23801v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23801v1",
+      "description": "Sparse autoencoders (SAEs) explain foundation model representations by decomposing activations into sparse combinations of learned dictionary atoms. However, the learned dictionaries can vary across training runs, limiting the reliability and reproducibility of SAE-based analyses. We propose Consistent Sparse Dictionary Learning (ConSDL), which replaces the standard linear encoder with per-sample sparse coding. This is motivated by our synthetic analysis showing that coefficients from a single l",
+      "authors": [
+        "Jinho Choi",
+        "Hyesu Lim",
+        "Jaegul Choo",
+        "Steffen Schneider"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.23801v1",
+      "published_at": "2026-10-16T17:25:11Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Task-aware Kernel Stein certificates for Rényi differential privacy",
+      "title": "Task-aware Kernel Stein certificates for Rényi differential privacy",
+      "url": "https://arxiv.org/abs/2610.23798v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23798v1",
+      "description": "Rènyi differential privacy, based on Rènyi divergence, has become a notion of choice for privacy guarantees. However, outside the Gaussian setting, Rènyi divergence can be difficult to compute. In particular, Rènyi differential privacy guarantees that exploit task-specific information, as in Rènyi Pufferfish privacy, can be challenging. Here we use kernel Stein discrepancies based on escort distributions to provide certificates for Rènyi differential privacy. By designing the kernel to focus on ",
+      "authors": [
+        "Leoni Carla Wirth",
+        "Tara Trautwein",
+        "Gesine Reinert"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.CR",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.23798v1",
+      "published_at": "2026-10-16T17:24:09Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "FuTransformer: FP8 prefill and INT4 decode for Llama-style inference on Hopper",
+      "title": "FuTransformer: FP8 prefill and INT4 decode for Llama-style inference on Hopper",
+      "url": "https://arxiv.org/abs/2610.23796v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23796v1",
+      "description": "Transformer prefill reuses weights across tokens and is dominated by matrix multiplication and activation data movement; single-token decode has limited reuse and is dominated by weight and KV-cache reads. We present FUTRANSFORMER, a CUDA implementation of a Llama-style Transformer block for NVIDIA Hopper GPUs. It applies CODA's GEMM-plus-epilogue approach to inference, adding direct KV-cache placement, folding the fixed RMSNorm gain into weights, writing FP8 output directly with delayed scaling",
+      "authors": [
+        "Wei Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.23796v1",
+      "published_at": "2026-10-16T17:22:01Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "DrugHarness: An Evolvable Agent Harness for Computational Drug Discovery",
+      "title": "DrugHarness: An Evolvable Agent Harness for Computational Drug Discovery",
+      "url": "https://arxiv.org/abs/2610.23791v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23791v1",
+      "description": "Computational drug discovery requires agents to compose scientific operations and adapt to changing evidence and constraints. Here we introduce DrugHarness, an evolvable agent harness coupling composable scientific execution with conditional skill induction. Its environment integrates over 80 scientific operations, biomedical resources and task-specific code, preserving associations among candidates, results and artifacts. From execution trajectories and outcome feedback, DrugHarness induces act",
+      "authors": [
+        "Yuxing Chen",
+        "Zhisheng Zhang",
+        "Cheng Tang",
+        "Wei Li",
+        "Minghui Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.23791v1",
+      "published_at": "2026-10-16T17:20:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Parametric Resonance in Primal-Dual Learning for Slowly Non-Stationary Constrained MDPs",
+      "title": "Parametric Resonance in Primal-Dual Learning for Slowly Non-Stationary Constrained MDPs",
+      "url": "https://arxiv.org/abs/2610.23788v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23788v1",
+      "description": "Primal-dual methods for constrained Markov decision processes are analyzed under a two-timescale assumption, with non-stationarity entering through two channels. In the additive channel, where the constraint level oscillates, the dual oscillation saturates at a floor set by the moving optimum and is amplified linearly by the timescale ratio. In the parametric channel, where the constraint sensitivity oscillates, a coherent modulation carries no resonant forcing at any depth: the dual update's st",
+      "authors": [
+        "Maxime Baelde"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "eess.SY",
+        "math.OC"
+      ],
+      "arxiv_id": "2610.23788v1",
+      "published_at": "2026-10-16T17:19:08Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "DLite: History-free Speculative Decoding for Agentic AI",
+      "title": "DLite: History-free Speculative Decoding for Agentic AI",
+      "url": "https://arxiv.org/abs/2610.23787v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23787v1",
+      "description": "Speculative decoding has become a mainstream technique for accelerating large language model (LLM) inference by using a lightweight draft model to generate candidate tokens that are subsequently verified by the target model. However, agentic workloads introduce long and continuously evolving contexts and frequent multi-turn interactions. Under such workloads, we observe that existing draft models suffer from up to an 80% degradation in acceptance length, while maintaining their historical KV cac",
+      "authors": [
+        "Jiaming Xu",
+        "Hanzhen Wang",
+        "Tianlang Zhao",
+        "Jiewen Xiao",
+        "Chengze Yuan"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.23787v1",
+      "published_at": "2026-10-16T17:18:54Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Sampling the XY model with an attention-based neural network",
+      "title": "Sampling the XY model with an attention-based neural network",
+      "url": "https://arxiv.org/abs/2610.23783v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23783v1",
+      "description": "We present a transformer-based variational autoregressive network for sampling lattice systems with continuous degrees of freedom and apply it to the two-dimensional XY model near the Berezinskii-Kosterlitz-Thouless transition. The architecture is combined with physics-informed ingredients: locality-informed attention and approximate probabilities. The resulting sampler significantly outperforms existing neural samplers. We train the model on lattices up to $96\\times96$, verify with a mode-dropp",
+      "authors": [
+        "Piotr Białas",
+        "Christian D. Morales",
+        "Tomasz Stebel",
+        "Dawid Zapolski"
+      ],
+      "categories": [
+        "cond-mat.dis-nn",
+        "cond-mat.stat-mech",
+        "cs.LG",
+        "hep-lat"
+      ],
+      "arxiv_id": "2610.23783v1",
+      "published_at": "2026-10-16T17:16:35Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Mesoscopic learning dynamics of extensive-width neural networks",
+      "title": "Mesoscopic learning dynamics of extensive-width neural networks",
+      "url": "https://arxiv.org/abs/2610.23779v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23779v1",
+      "description": "Understanding how stochastic gradient descent learns internal representations in wide neural networks trained on rich target functions is a central problem in machine learning. We study this question in two-layer neural networks learning target functions represented by networks of the same architecture, with arbitrary nonlinearity, and with network width and input dimension growing proportionally. In this regime, standard approaches for describing the learning dynamics require tracking a divergi",
+      "authors": [
+        "Shu Zhou",
+        "Jean Barbier",
+        "Sebastian Goldt"
+      ],
+      "categories": [
+        "stat.ML",
+        "cond-mat.dis-nn",
+        "cond-mat.stat-mech",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.23779v1",
+      "published_at": "2026-10-16T17:12:43Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Logic-Guided Graph Denoising Diffusion Models",
+      "title": "Logic-Guided Graph Denoising Diffusion Models",
+      "url": "https://arxiv.org/abs/2610.23766v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23766v1",
+      "description": "Graph diffusion models are competitive approaches for generating complex graph-structured data. However, when such distributions have strict structural constraints, diffusion models may fail to capture them exactly, resulting in the generation of invalid graphs. In this paper, we propose a method for grounding graph diffusion models in domain-specific knowledge via First Order Logic (FOL), leveraging its expressive and interpretable formalism to impose structural constraints on the generative pr",
+      "authors": [
+        "Samuel Cognolato",
+        "Luciano Serafini",
+        "Alessandro Sperduti",
+        "Andrea Cavallaro"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.23766v1",
+      "published_at": "2026-10-16T17:06:07Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Universal Semantic Enhancement for Weakly Supervised Anomaly Detection",
+      "title": "Universal Semantic Enhancement for Weakly Supervised Anomaly Detection",
+      "url": "https://arxiv.org/abs/2610.23765v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23765v1",
+      "description": "Weakly supervised anomaly detection on tabular data is an essential task in many label-scarce applications, since tabular data is widely encountered and it is commonly observed in practice that only a limited number of labeled anomalies are available alongside abundant unlabeled samples. Most existing methods try to learn features that capture the inherent distribution patterns in the target domain. However, such features often struggle to provide a complete description of possible abnormal char",
+      "authors": [
+        "Siyu Zhou",
+        "Yuqin Xie",
+        "Hao Yuan",
+        "Yingjie Zhou"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.23765v1",
+      "published_at": "2026-10-16T17:05:51Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "From Flow-Box Invariants to Global Conservation Laws: Machine Learning-Assisted Detection of Singularities and Near-Integrability",
+      "title": "From Flow-Box Invariants to Global Conservation Laws: Machine Learning-Assisted Detection of Singularities and Near-Integrability",
+      "url": "https://arxiv.org/abs/2610.23760v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23760v1",
+      "description": "Conservation laws reveal invariant structure in dynamical systems and constrain their evolution to lower-dimensional level sets. Locally, however, per the flow-box theorem, every $d$-dimensional system generically admits $d-1$ functionally independent conservation laws near a regular point even though, generically, only a few such laws persist globally. Data-driven methods typically learn conservation laws on a prescribed region of phase space from which training samples are drawn, leaving their",
+      "authors": [
+        "Jimmie Adriazola",
+        "Ioannis G. Kevrekidis",
+        "Panayotis G. Kevrekidis",
+        "Wei Zhu"
+      ],
+      "categories": [
+        "nlin.CD",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.23760v1",
+      "published_at": "2026-10-16T17:02:39Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "VocalGrad: Evaluating Acoustic Perception in Audio Language Models",
+      "title": "VocalGrad: Evaluating Acoustic Perception in Audio Language Models",
+      "url": "https://arxiv.org/abs/2610.23745v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23745v1",
+      "description": "Recent large audio language models (LALMs) have extended their capabilities beyond lexical speech understanding to tasks requiring paralinguistic and non-linguistic audio understanding, such as emotion recognition. However, these models still struggle to reliably utilize acoustic information, particularly when it co-occurs with spoken linguistic content. Existing benchmarks do not clearly distinguish acoustic perception from higher-level reasoning, making it difficult to identify the source of t",
+      "authors": [
+        "Koki Ryu",
+        "Hitomi Yanaka"
+      ],
+      "categories": [
+        "cs.SD",
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.23745v1",
+      "published_at": "2026-10-16T16:54:35Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "The Italian lawmaking process: a unified and structured dataset",
+      "title": "The Italian lawmaking process: a unified and structured dataset",
+      "url": "https://arxiv.org/abs/2610.23741v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23741v1",
+      "description": "The Italian legislative process is documented in detailed parliamentary records hosted in institutional websites. However, much of this information is available only as unstructured text, limiting its systematic reuse. We applied a controlled, systematic LLM-based extraction procedure, validated against manually annotated records, to convert these texts into ordered and dated events including, e.g., bill introduction, committee examination, plenary examination, and approval. The resulting datase",
+      "authors": [
+        "Matilde Contestabile",
+        "Chiara Ferrara",
+        "Giovanni Parrillo",
+        "Lorenzo Emer",
+        "Andrea Vandin"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.23741v1",
+      "published_at": "2026-10-16T16:52:11Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "LagNet: Lag-Structured Operators for Long-Term Time Series Forecasting",
+      "title": "LagNet: Lag-Structured Operators for Long-Term Time Series Forecasting",
+      "url": "https://arxiv.org/abs/2610.23735v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.23735v1",
+      "description": "Long-term time series forecasting maps a finite history window to an extended future horizon. Many existing models focus primarily on the design of input representations and model structures, while paying less attention to the structural form of the history-to-future forecasting operator itself. We examine this operator directly and find that, across model families, sensitivity matrices exhibit recurring diagonal patterns whose diagonals correspond to relative temporal lags. Motivated by this ob",
+      "authors": [
+        "Zhenan Yu",
+        "Guangxin Jiang",
+        "Jiuyun Jiang",
+        "Jin Yang"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.23735v1",
+      "published_at": "2026-10-16T16:44:53Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
