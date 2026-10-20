@@ -1,0 +1,718 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-10-20T21:03:25.117636+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "Text-to-Image Generative Modeling Without Language Pretraining",
+      "title": "Text-to-Image Generative Modeling Without Language Pretraining",
+      "url": "https://arxiv.org/abs/2610.26863v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26863v1",
+      "description": "Modern text-to-image (T2I) systems use internet-scale language pretraining for text-conditioned image generation. We ask whether language pretraining is necessary for strong T2I generation. We introduce Halcyon, a family of early-fusion multimodal autoregressive models pretrained entirely from scratch on GPIC, a dataset of 100M image-text pairs. Halcyon-0.52B outperforms LlamaGen-XL/8 (48.0 vs. 63.3 gFD) with 18.2$\\times$ less pretraining compute. Further, Halcyon-1.6B outperforms JiT-T2I-XXL/8+",
+      "authors": [
+        "Keshigeyan Chandrasegaran",
+        "Yue Zhao",
+        "Armin W. Thomas",
+        "Ehsan Adeli",
+        "Jiajun Wu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CV"
+      ],
+      "arxiv_id": "2610.26863v1",
+      "published_at": "2026-10-19T17:59:59Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
+      "title": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
+      "url": "https://arxiv.org/abs/2610.26860v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26860v1",
+      "description": "Multimodal large language models (MLLMs) have made rapid progress on visual reasoning, yet many tasks require evidence that is difficult to obtain through internal reasoning alone: our controlled study on 22 benchmarks shows that simply increasing the inference budget of the base model yields only modest gains. Such tasks demand grounded perception, external knowledge, and numerical measurements obtained through heterogeneous tools, whose outputs must be made interpretable to the model and retai",
+      "authors": [
+        "Yu Zhou",
+        "Cheng-Fu Yang",
+        "Rui Sun",
+        "Di Wu",
+        "Sibo Peng"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CV",
+        "cs.LG",
+        "cs.MM"
+      ],
+      "arxiv_id": "2610.26860v1",
+      "published_at": "2026-10-19T17:59:58Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Can It Actually Work? Synthesizing Functional CAD Mechanisms",
+      "title": "Can It Actually Work? Synthesizing Functional CAD Mechanisms",
+      "url": "https://arxiv.org/abs/2610.26861v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26861v1",
+      "description": "While LLM agents can generate visually plausible CAD assemblies, these designs often fail to fulfill their intended physical functions. We study functional CAD design, a setting where agents interpret underspecified requests to construct and iteratively revise mechanisms that satisfy functional requirements in physical simulation. Verifying these requirements is nontrivial: different candidate mechanisms may realize the same function through entirely different components, controls, and operating",
+      "authors": [
+        "Wenqian Zhang",
+        "Yangyi Huang",
+        "Zigeng Xu",
+        "Weiyang Liu",
+        "Zhen Liu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.GR"
+      ],
+      "arxiv_id": "2610.26861v1",
+      "published_at": "2026-10-19T17:59:58Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Reinforcement Learning with Visually Attributable On-Policy Self-Distillation",
+      "title": "Reinforcement Learning with Visually Attributable On-Policy Self-Distillation",
+      "url": "https://arxiv.org/abs/2610.26856v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26856v1",
+      "description": "Multimodal reinforcement learning with verifiable rewards (RLVR) provides reliable task-level supervision, yet offers limited guidance for localizing errors in visual reasoning. On-policy self-distillation (OPSD) complements this supervision with dense token-level corrections from a privileged teacher equipped with an evidence-centered visual view. However, the resulting corrections may conflate visual evidence with non-visual shifts induced by linguistic priors, response style, or the privilege",
+      "authors": [
+        "Shiao Xie",
+        "Siyu Chen",
+        "Jianwei Lv",
+        "Xiandong Li",
+        "Yujin Wang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.26856v1",
+      "published_at": "2026-10-19T17:59:56Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "CoopUQ: Robust Multi-Robot Social Navigation via Uncertainty-Aware Cooperative Forecasting",
+      "title": "CoopUQ: Robust Multi-Robot Social Navigation via Uncertainty-Aware Cooperative Forecasting",
+      "url": "https://arxiv.org/abs/2610.26852v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26852v1",
+      "description": "Reinforcement learning enables mobile robots to make fast and scalable navigation decisions in constrained human-shared environments. However, directly extending single-robot approaches to multi-robot settings often fails to ensure safety and efficiency, especially under occlusions and out-of-distribution (OOD) scenarios, where individual robots may overlook potential risks or make inaccurate predictions. Leveraging cooperation effectively for both prediction and navigation remains a major chall",
+      "authors": [
+        "Zehao Wang",
+        "Jianpeng Yao",
+        "Yuping Wang",
+        "Yiping Li",
+        "Jiaqi Li"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.26852v1",
+      "published_at": "2026-10-19T17:59:49Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Where is Physical RSI capability from? An Observational Scaling Law of LLM-as-policy",
+      "title": "Where is Physical RSI capability from? An Observational Scaling Law of LLM-as-policy",
+      "url": "https://arxiv.org/abs/2610.26848v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26848v1",
+      "description": "In this paper, we systematically investigate the mechanisms, scaling behavior, and generalization of physical Recursive self-improvement. We introduce PhysRSI-eval to quantify physical RSI through a five-axis metric: First-Attempt Performance, Efficiency, Success, Budget and Improvement from failure. Different VLMs are evaluated on 18 manipulation tasks under a fixed interaction budget. The analysis of experimental results motivates the Physical Barrel Hypothesis: different capabilities may cons",
+      "authors": [
+        "Zekai Li",
+        "Jiayi Yu",
+        "Jinlu Zhang",
+        "Luyang Niu",
+        "Zekun Qi"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "arxiv_id": "2610.26848v1",
+      "published_at": "2026-10-19T17:59:30Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "WeAct: Dynamic Weight Switching as Agent Actions",
+      "title": "WeAct: Dynamic Weight Switching as Agent Actions",
+      "url": "https://arxiv.org/abs/2610.26847v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26847v1",
+      "description": "Long-horizon agents must learn heterogeneous capabilities from interleaved trajectories. Updating shared parameters to learn new capabilities can degrade previously acquired ones, resulting in catastrophic forgetting. As a trajectory unfolds, different stages may require different capabilities, yet conventional joint training and static adapter merging maintain a fixed parameter configuration throughout execution. We introduce WeAct (Weight-level Internal Actions), which trains independent capab",
+      "authors": [
+        "Rui Shi",
+        "Xunjian Yin",
+        "Jiacheng Sang",
+        "Zichuan Liu",
+        "Shuyan Zhou"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.26847v1",
+      "published_at": "2026-10-19T17:59:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Train An Imaginative Agent",
+      "title": "Train An Imaginative Agent",
+      "url": "https://arxiv.org/abs/2610.26845v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26845v1",
+      "description": "A seemingly reasonable push in Sokoban can make the puzzle unsolvable. To avoid such mistakes, an agent has to anticipate the consequences of its actions before execution, especially when feedback from the real environment is sparse or actions are irreversible. We introduce Agentic Imagination (Agima), a training framework that trains an agent to imagine before acting, i.e. to be imaginative. Agima trains a single omni model to propose actions, generate images of their outcomes, and then reason ",
+      "authors": [
+        "Jiaxin Ge",
+        "Junyi Zhang",
+        "Tianning Chai",
+        "Hanjun Yoo",
+        "Chenyang Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.26845v1",
+      "published_at": "2026-10-19T17:59:12Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "AnyGoal: On World Model Generalization Beyond Expert Rollouts",
+      "title": "AnyGoal: On World Model Generalization Beyond Expert Rollouts",
+      "url": "https://arxiv.org/abs/2610.26844v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26844v1",
+      "description": "The goal of a world model is to capture the dynamics of an environment. This has the great appeal that it allows agents to plan and simulate a course of actions with the help of a world model. For these uses to be reliable, however, the learned dynamics must behave well beyond the specific state-action combinations observed in expert rollouts. Despite this, the relationship between data coverage, dynamics generalization, and downstream planning performance remains underexplored. We study this re",
+      "authors": [
+        "Heejeong Nam",
+        "Divyat Mahajan",
+        "Quentin Le Lidec",
+        "Randall Balestriero",
+        "David Klindt"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.26844v1",
+      "published_at": "2026-10-19T17:59:05Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "LatComm: Reusable Context Compression for Latent Communication between Large Language Models",
+      "title": "LatComm: Reusable Context Compression for Latent Communication between Large Language Models",
+      "url": "https://arxiv.org/abs/2610.26840v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26840v1",
+      "description": "Systems that combine several large language models (LLMs) often use one context for many questions. When the context is passed between models as text, the receiving model processes all of its tokens again for every question. Avoiding this cost requires a context representation that is compact, reusable across questions, and readable by a different LLM. Existing compression and latent communication methods each provide only some of these properties. We introduce LatComm, a Latent Communication in",
+      "authors": [
+        "Huawei Lin",
+        "Jinting Liu",
+        "Tan Yu",
+        "Weijie Zhao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.26840v1",
+      "published_at": "2026-10-19T17:58:41Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Newton-Based Methods for Bilevel Optimization Beyond Lower-Level Strong Convexity",
+      "title": "Newton-Based Methods for Bilevel Optimization Beyond Lower-Level Strong Convexity",
+      "url": "https://arxiv.org/abs/2610.26839v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26839v1",
+      "description": "Bilevel optimization provides a framework for machine learning tasks such as hyperparameter optimization, data reweighting, and meta-learning. Existing Newton-based bilevel methods typically rely on the classical hypergradient formula, which is generally unavailable when lower-level solutions are nonunique and the lower-level Hessian is singular. We develop two Newton-based methods beyond lower-level strong convexity by exploiting curvature shared by the lower-level and multiplier updates. Newto",
+      "authors": [
+        "Youran Dong",
+        "Junfeng Yang",
+        "Wei Yao",
+        "Jin Zhang"
+      ],
+      "categories": [
+        "math.OC",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.26839v1",
+      "published_at": "2026-10-19T17:58:34Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy",
+      "title": "Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy",
+      "url": "https://arxiv.org/abs/2610.26836v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26836v1",
+      "description": "LLM agents that compute the right answer can still answer wrongly. Agent harnesses increasingly keep long tool outputs out of the context window, saving them to files that the agent searches or reads on demand. We ask where this costs accuracy with a real scientific tool: PHREEQC, a widely used geochemistry simulator from the USGS, whose reports reach 846.8k characters and whose determinism lets every printed value be traced. Agents use it to answer 158 execution-verified multiple-choice items. ",
+      "authors": [
+        "Ke Zhang",
+        "Sahchit Chundur",
+        "Jerry Peprah Owusu",
+        "Mohammad Javad Abdolhosseini Qomi",
+        "Maziar Raissi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.26836v1",
+      "published_at": "2026-10-19T17:57:41Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Kronecker Delta Rule for Long Context Linear Attention",
+      "title": "Kronecker Delta Rule for Long Context Linear Attention",
+      "url": "https://arxiv.org/abs/2610.26834v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26834v1",
+      "description": "We propose KronLSTM, a linear attention architecture based on the Kronecker Delta Rule, a novel update rule for associative matrix memories. KronLSTM extends the xLSTM family with a memory-revision mechanism that corrects targeted associations while modifying the memory only along a single direction in matrix space. This minimally invasive memory revision reduces interference with previously stored information compared with delta-rule updates, making it particularly well suited for long-context ",
+      "authors": [
+        "Anamaria-Roberta Hartl",
+        "Levente Zólyomi",
+        "Michael List",
+        "Günter Klambauer",
+        "Sebastian Böck"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.26834v1",
+      "published_at": "2026-10-19T17:56:52Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Supervised Learning with Quantum Hamiltonian Embeddings",
+      "title": "Supervised Learning with Quantum Hamiltonian Embeddings",
+      "url": "https://arxiv.org/abs/2610.26833v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26833v1",
+      "description": "Machine learning is widely regarded as a promising application in which quantum computing could offer a computational advantage. However, general quantum machine learning models with provable guarantees on performance, trainability, and efficient inference remain limited. In this work, we introduce quantum Hamiltonian embeddings, a supervised learning framework in which a classical training dataset is encoded into a single effective, parameterized Hamiltonian. Training optimizes the parameters o",
+      "authors": [
+        "Riccardo Molteni",
+        "Minjun Jeon",
+        "Paolo Braccia",
+        "Abhinav Deshpande",
+        "Vedran Dunjko"
+      ],
+      "categories": [
+        "quant-ph",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.26833v1",
+      "published_at": "2026-10-19T17:56:44Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Competing Learning in Hybrid Architectures",
+      "title": "Competing Learning in Hybrid Architectures",
+      "url": "https://arxiv.org/abs/2610.26830v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26830v1",
+      "description": "Many modern language models have adopted hybrid architectures that incorporate both linear-time recurrence and softmax attention. Modern recurrence layers provide a highly expressive mixing mechanism while ensuring high throughput by compressing contextual information into a fixed-size state, but underperform softmax attention in contextual information retrieval. In this paper, we reveal a Competing Learning phenomenon where different kinds of mixers compete to learn the same function, and when ",
+      "authors": [
+        "Xingyu Shen",
+        "Yingfa Chen",
+        "Ziqing Qiao",
+        "Chaojun Xiao",
+        "Xu Han"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.26830v1",
+      "published_at": "2026-10-19T17:55:55Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ProteinGeoBench: Frontier Structural-Biology Agents Are Fluent at Lookup but Lost in Geometry",
+      "title": "ProteinGeoBench: Frontier Structural-Biology Agents Are Fluent at Lookup but Lost in Geometry",
+      "url": "https://arxiv.org/abs/2610.26829v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26829v1",
+      "description": "Frontier agents retrieve structural metadata well and compute geometry from coordinates less reliably. We ask how much of a benchmark score reflects that gap and how much reflects the evaluation configuration around the model. We study ProteinGeoBench, a suite of 131 protein-structure tasks, using 4,249 rollouts from four frontier models and 4,486 further trials across 26 models. Three of the four frontier models fall within 0.031 of one another (0.785 to 0.816) with no difference between them r",
+      "authors": [
+        "Matt Turk",
+        "Brandon L. Neel",
+        "Diana M. Lopez",
+        "Zachary D. Smith",
+        "Grace N. Johnecheck"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "arxiv_id": "2610.26829v1",
+      "published_at": "2026-10-19T17:55:38Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Agent World Model in the Wild: Computer-Use Agent Environment Synthesis",
+      "title": "Agent World Model in the Wild: Computer-Use Agent Environment Synthesis",
+      "url": "https://arxiv.org/abs/2610.26828v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26828v1",
+      "description": "Agent learning is shifting from learning from human data toward learning through interaction with the world. However, scaling such learning directly in real-world computer systems is challenging and can introduce substantial security risks. We therefore propose Agent World Model in the Wild (WildAWM), a scalable pipeline for synthesizing controllable environments and tasks for training general computer-use agents (CUAs). Whereas existing approaches typically specialize in a single agent interact",
+      "authors": [
+        "Zhaoyang Wang",
+        "Qianhui Wu",
+        "Haorui Wang",
+        "Simon Yu",
+        "Baolin Peng"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.26828v1",
+      "published_at": "2026-10-19T17:55:35Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "KEEP-Bench: Evaluating Evidence Preservation in Context Compression",
+      "title": "KEEP-Bench: Evaluating Evidence Preservation in Context Compression",
+      "url": "https://arxiv.org/abs/2610.26827v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26827v1",
+      "description": "Context compression improves long-context efficiency but may introduce faithfulness issues through an information bottleneck. Existing evaluations rely on QA metrics, but a reader can still answer correctly from an unfaithful compression, so these metrics underestimate such loss. To bridge this gap, we introduce KEEP-Bench, a diagnostic benchmark that directly assesses compression faithfulness with 4,102 cases across three challenging settings that require keeping evidence for plausible referenc",
+      "authors": [
+        "Ziqing Man",
+        "Di Wu",
+        "Jia-Chen Gu",
+        "Junyi Zhang",
+        "Kai-Wei Chang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.26827v1",
+      "published_at": "2026-10-19T17:55:18Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development",
+      "title": "RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development",
+      "url": "https://arxiv.org/abs/2610.26826v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26826v1",
+      "description": "Beyond basic tool use and coding skills, effectively incorporating visual references into agentic generation is equally essential for applying AI agents to real-world productivity tasks. We study this crucial capability through webpage development, a practical and readily evaluable setting in which existing benchmarks remain largely idealized: they typically focus on reconstructing visual targets or generating webpages from textual instructions alone, overlooking the more common workflow of deve",
+      "authors": [
+        "Yuchi Wang",
+        "Rongyao Fang",
+        "Weihao Yu",
+        "Xilin Wei",
+        "Tiancheng Gu"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "arxiv_id": "2610.26826v1",
+      "published_at": "2026-10-19T17:55:06Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "MemT-1.0: Towards Memory-Native Evolution",
+      "title": "MemT-1.0: Towards Memory-Native Evolution",
+      "url": "https://arxiv.org/abs/2610.26825v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26825v1",
+      "description": "Memory-native evolution requires making memory an intrinsic capability of foundation models, enabling them to continuously accumulate and utilize information. To this end, we introduce MemT-1.0, a new architecture of memory foundation models that internalize memory as part of model computation. Building on Metis, MemT-1.0 employs Gated DeltaNet-2 with a stable token-level memory update mechanism within each turn. We further introduce Mixture-of-Storage to scale native memory capacity. Following ",
+      "authors": [
+        "Zhiyu Li",
+        "Zeyu Zhang",
+        "Linyun Liu",
+        "Yiwei Bu",
+        "Chenyang Xi"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.26825v1",
+      "published_at": "2026-10-19T17:54:35Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SpecMRL: Redesign Matryoshka Representation Learning within Parametric Spectrum",
+      "title": "SpecMRL: Redesign Matryoshka Representation Learning within Parametric Spectrum",
+      "url": "https://arxiv.org/abs/2610.26824v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26824v1",
+      "description": "Matryoshka Representation Learning (MRL) is designed to support flexible representation sizes by jointly optimizing nested prefixes. While effective, this design lacks an explicit constraint to ensure that the leading portion provides a suitable compact encoding. To address this, we propose SpecMRL, which reorganizes the feature space to enable more effective prefix readout. Specifically, we extend MRL with a parameter-derived spectral basis organized with feature importance. SpecMRL otherwise f",
+      "authors": [
+        "Zhongxin Chen",
+        "Songhao Wu",
+        "Heng Cui",
+        "Cong Li",
+        "Xiao Zhou"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.26824v1",
+      "published_at": "2026-10-19T17:54:20Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "AfriBED: a Speech Recognition Bias Evaluation Dataset for Low Resource African Languages",
+      "title": "AfriBED: a Speech Recognition Bias Evaluation Dataset for Low Resource African Languages",
+      "url": "https://arxiv.org/abs/2610.26821v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26821v1",
+      "description": "Despite advancements in automatic speech recognition systems (ASR), current systems exhibit speaker-attribute bias, i.e., their speech recognition performance is biased against certain speakers based on their demographic attributes such as gender, accents, and speaker type. However, accurately assessing speaker attribute bias in a given ASR system requires the availability of a bias evaluation dataset with comparable speech across subgroups of a speaker attribute. In this paper, we introduce Afr",
+      "authors": [
+        "Claytone Sikasote",
+        "Hussein Suleman",
+        "Jan Buys"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.26821v1",
+      "published_at": "2026-10-19T17:53:32Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ASTOR: Benchmarking and Improving Autoformulation for Soft-Constraint Optimization with a Formal Grammar",
+      "title": "ASTOR: Benchmarking and Improving Autoformulation for Soft-Constraint Optimization with a Formal Grammar",
+      "url": "https://arxiv.org/abs/2610.26819v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26819v1",
+      "description": "Real-world decision problems combine two qualitatively different kinds of constraints: requirements that must be satisfied, called hard constraints, and preferences that can be violated, called soft constraints. Because these problems are often posed to decision-makers in natural language, large language models offer a natural tool for assisting with their solution. This has given rise to autoformulation, which focuses on using LLMs to translate natural-language descriptions of decision problems",
+      "authors": [
+        "Amer Goel",
+        "Yeganeh Alimohammadi",
+        "Andrew Daw"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.26819v1",
+      "published_at": "2026-10-19T17:52:35Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Next Best Action: Causal Constrained Offline RL for Business Action Targeting",
+      "title": "Next Best Action: Causal Constrained Offline RL for Business Action Targeting",
+      "url": "https://arxiv.org/abs/2610.26817v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26817v1",
+      "description": "Next Best Action (NBA) systems must select among customer interventions (e.g., discounts, promotions, and lifecycle actions), maximize long-term economic value, satisfy complex operational constraints, and remain causally grounded. Existing approaches lack a rigorous framework for meeting these requirements jointly. We address this gap by formulating NBA as a Constrained Markov Decision Process (CMDP). We then integrate off-policy causal correction of the estimated customer dynamics directly int",
+      "authors": [
+        "Surya Ramachandiran",
+        "Yiming Li",
+        "Juan Mancilla-Caceres",
+        "Tao Ye",
+        "Jun Liu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.IR",
+        "math.OC"
+      ],
+      "arxiv_id": "2610.26817v1",
+      "published_at": "2026-10-19T17:51:53Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Safety Mid-Training: Internalizing LLM Safety as a Foundational Capability",
+      "title": "Safety Mid-Training: Internalizing LLM Safety as a Foundational Capability",
+      "url": "https://arxiv.org/abs/2610.26809v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26809v1",
+      "description": "Safety alignment for large language models (LLMs) is primarily performed during post-training, while recent work has also begun incorporating safety data into pre-training. Yet safety can degrade when later training no longer includes safety data, and gains in safety often come at the cost of general capability. This tension suggests that safety and general reasoning should not be treated as separate training goals. We instead view safety as an LLM capability that can be learned through a reason",
+      "authors": [
+        "Zhengyue Zhao",
+        "Liwei Jiang",
+        "Yejin Choi",
+        "Chaowei Xiao1"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.26809v1",
+      "published_at": "2026-10-19T17:49:49Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Scaling Parameter-Efficient Fine-Tuning for Brain Encoding",
+      "title": "Scaling Parameter-Efficient Fine-Tuning for Brain Encoding",
+      "url": "https://arxiv.org/abs/2610.26802v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26802v1",
+      "description": "Brain encoding models aim to predict neural responses to stimuli. The most widely used approach fits readouts from frozen pretrained backbones. Using neural data to train large models from scratch or fully fine-tune them after task-pretraining has proven difficult because neural data is costly and limited. We show that parameter-efficient fine-tuning (PEFT) enables us to effectively adapt very large pretrained backbones for brain encoding with a small number of trainable parameters. To make it c",
+      "authors": [
+        "Zhuofan Josh Ying",
+        "Guanglong Sun",
+        "Nolan Ho",
+        "Kieran Liu",
+        "Rui Yang"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.26802v1",
+      "published_at": "2026-10-19T17:46:08Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Mise-en-Video: Fine-Grained 3D Control for Multi-Shot Video Generation",
+      "title": "Mise-en-Video: Fine-Grained 3D Control for Multi-Shot Video Generation",
+      "url": "https://arxiv.org/abs/2610.26801v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26801v1",
+      "description": "Recent advances in text-to-video generation have enabled high-fidelity single-shot synthesis, yet practical storytelling creation requires multi-shot videos with both strong inter-shot consistency and fine-grained controllability. Existing multi-shot video generation approaches achieve strong consistency but still fall short in controllability. In this paper, we propose Mise-en-Video (MeV), a highly controllable multi-shot video generation framework that allows video creators to conduct staging ",
+      "authors": [
+        "Yingshuang Zou",
+        "Xiaoyu Shi",
+        "Yawen Luo",
+        "Ziang Li",
+        "Qinghe Wang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.26801v1",
+      "published_at": "2026-10-19T17:45:43Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Learning to Refer: Inference-Time Collaboration in Decentralized Federated Learning",
+      "title": "Learning to Refer: Inference-Time Collaboration in Decentralized Federated Learning",
+      "url": "https://arxiv.org/abs/2610.26800v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26800v1",
+      "description": "In decentralized federated learning, heterogeneous clients may develop complementary expertise, yet each query is typically evaluated only by the client where it arrives. To exploit this distributed expertise without global coordination, we formulate inference-time collaboration as budgeted local expert referral, a graph-constrained routing process in which a query can move only between neighboring clients and only visited clients contribute to its final prediction. EdgeDRM implements this frame",
+      "authors": [
+        "Yuheng Ma",
+        "Chendi Wang",
+        "Qiong Zhang"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_id": "2610.26800v1",
+      "published_at": "2026-10-19T17:44:55Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Teacher Supervision, Fixed Representations and Calibration: Exact Risk Calculations for Candidate-Scoring Decision Models",
+      "title": "Teacher Supervision, Fixed Representations and Calibration: Exact Risk Calculations for Candidate-Scoring Decision Models",
+      "url": "https://arxiv.org/abs/2610.26797v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26797v1",
+      "description": "Candidate-scoring decision models return a probability distribution over a presented set of answers. Public documentation of one such system, Jev, and of an open counterpart, JevAny, describes three training ingredients that determine what these probabilities estimate: soft targets from larger models, a frozen pretrained backbone and temperature calibration. We analyze each ingredient in Gaussian surrogates where the finite-sample risk can be computed exactly. A student trained on teacher target",
+      "authors": [
+        "Agus Sudjianto",
+        "Denis Burakov"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.CL",
+        "cs.LG",
+        "q-fin.RM"
+      ],
+      "arxiv_id": "2610.26797v1",
+      "published_at": "2026-10-19T17:42:24Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Two hidden layer suffice: the caterpillar net",
+      "title": "Two hidden layer suffice: the caterpillar net",
+      "url": "https://arxiv.org/abs/2610.26795v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26795v1",
+      "description": "Every continuous piecewise linear (CPWL) function is a finite signed sum of maxima of affine functions, making maximum representation a central problem in the study of the expressiveness of ReLU networks. A now-disproved conjecture predicted logarithmic depth for maxima. Inspired by the proof by Brunck et al. (2026) that two hidden layers suffice for general CPWL functions, we give the Caterpillar Net, a nonrecursive construction for the maximum of $N$ inputs with two hidden layers of widths $O(",
+      "authors": [
+        "Jakob Paul Zimmermann"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.26795v1",
+      "published_at": "2026-10-19T17:40:37Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
