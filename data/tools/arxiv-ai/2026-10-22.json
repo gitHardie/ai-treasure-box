@@ -1,0 +1,709 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-10-22T21:01:26.465508+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data",
+      "title": "LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data",
+      "url": "https://arxiv.org/abs/2610.30132v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30132v1",
+      "description": "Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are long, diverse, challenging, and verifiable. Human annotation of such data is expensive, naturally occurring data are too scarce to sustain RL, and existing synthesis methods depend on external corpora or stronger teacher models, which become harder to obtain as the trained models get stronger. Recently, RL from zero data, in which a model l",
+      "authors": [
+        "Zhennan Wan",
+        "Jianfei Chen"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.30132v1",
+      "published_at": "2026-10-21T17:59:14Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Think Harder Where It Matters: Item-Level Adaptive Recursion for Sequential Recommendation",
+      "title": "Think Harder Where It Matters: Item-Level Adaptive Recursion for Sequential Recommendation",
+      "url": "https://arxiv.org/abs/2610.30128v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30128v1",
+      "description": "Existing sequential recommenders usually allocate a fixed computational budget to every item in a user's interaction history, regardless of the item's contribution to the final prediction. We challenge this de facto design with two diagnostic findings. (1) Non-uniform computational need: items within the same sequence vary drastically in how much computation they require. Most converge after shallow processing while a critical minority only stabilizes at full depth. (2) Suboptimality of fixed al",
+      "authors": [
+        "Zhanshuo Cao",
+        "Jiakai Tang",
+        "Yuqi Zhou",
+        "Sunhao Dai",
+        "Jun Xu"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.30128v1",
+      "published_at": "2026-10-21T17:58:06Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "PhysiCalWorld: In-Context Physics Calibration for World Models",
+      "title": "PhysiCalWorld: In-Context Physics Calibration for World Models",
+      "url": "https://arxiv.org/abs/2610.30125v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30125v1",
+      "description": "Existing world models typically perceive a scene through current visual frame or a narrow history window. However, these observations may not reveal the physics properties that determine transition dynamics, such as an object's mass distribution, joint damping, or surface friction. Without calibrating these physics factors for world models, predictions tend to regress toward an empirical prior and induce severe drift in novel test scenes. To this end, we propose PhysiCalWorld, which calibrates a",
+      "authors": [
+        "Yunhao Luo",
+        "Wentao He",
+        "Yinpei Dai",
+        "Hyelin Nam",
+        "Hongze Fu"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "arxiv_id": "2610.30125v1",
+      "published_at": "2026-10-21T17:57:59Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "A Quasipolynomial Algorithm for $\\ell_\\infty$ Contractions",
+      "title": "A Quasipolynomial Algorithm for $\\ell_\\infty$ Contractions",
+      "url": "https://arxiv.org/abs/2610.30122v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30122v1",
+      "description": "We give an algorithm for computing an $\\eps$-approximate fixed point of any $d$-dimensional nonexpansion with respect to the $\\ell_\\infty$ norm in time $\\log(1/\\eps)^{O(\\log^2 d)}$. At its core, our method uses a boosting argument to geometrically shrink a search region. Among other consequences, our algorithm implies that simple stochastic games can be solved in quasipolynomial time.",
+      "authors": [
+        "Ashkan Soleymani",
+        "Gabriele Farina"
+      ],
+      "categories": [
+        "cs.GT",
+        "cs.CC",
+        "cs.LG",
+        "math.OC"
+      ],
+      "arxiv_id": "2610.30122v1",
+      "published_at": "2026-10-21T17:57:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Self-normalized Bernstein Inequalities for Regenerative Processes and Applications to Learning Without Independence",
+      "title": "Self-normalized Bernstein Inequalities for Regenerative Processes and Applications to Learning Without Independence",
+      "url": "https://arxiv.org/abs/2610.30119v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30119v1",
+      "description": "We prove a self-normalized Bernstein inequality for bounded functions of a regenerative process with independent, identically distributed marked cycles of finite mean length. The bound uses observed cycle lengths and retains explicit terms for truncation and the cycle ending after the observation horizon. Selecting a tuning parameter from a finite deterministic collection gives a version of Bernstein inequality where all terms are empirical but one, related to the tails of the regeneration times",
+      "authors": [
+        "Imon Banerjee",
+        "Pierre Alquier"
+      ],
+      "categories": [
+        "cs.LG",
+        "math.PR",
+        "math.ST"
+      ],
+      "arxiv_id": "2610.30119v1",
+      "published_at": "2026-10-21T17:56:37Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "The role of locality and weight sharing in convolutional neural networks",
+      "title": "The role of locality and weight sharing in convolutional neural networks",
+      "url": "https://arxiv.org/abs/2610.30118v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30118v1",
+      "description": "The success of convolutional neural networks is often attributed to locality and weight sharing. However, how these two properties separately shape learning, and how their effects depend on the spatial correlations of natural images, remain poorly understood. We address these questions in a teacher-student model with a convolutional teacher acting on $P$ input positions with correlation $c$ between positions. We compare convolutional and locally connected students trained by online stochastic gr",
+      "authors": [
+        "Francesco Mori",
+        "Melanie Weber"
+      ],
+      "categories": [
+        "cs.LG",
+        "cond-mat.dis-nn",
+        "cond-mat.stat-mech",
+        "stat.ML"
+      ],
+      "arxiv_id": "2610.30118v1",
+      "published_at": "2026-10-21T17:56:22Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Environment Duels: A Microcosm of LLM Co-Evolution",
+      "title": "Environment Duels: A Microcosm of LLM Co-Evolution",
+      "url": "https://arxiv.org/abs/2610.30116v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30116v1",
+      "description": "Through a tangle of real-world interactions, from synthetic training pipelines to data shared on the open web, frontier LLMs absorb what their predecessors and competitors create. How well does each model play its role in this ecosystem, as a creator and as a solver? We introduce Environment Duels, a dynamic agentic benchmark that evaluates both capabilities on interactive environments. Each model writes environments, each with a privileged hint, aiming for tasks that capable solvers fail withou",
+      "authors": [
+        "Shibo Jin",
+        "Zhiqiu Xu",
+        "Yiling Zou",
+        "Shangyu Gong",
+        "Mayur Naik"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.30116v1",
+      "published_at": "2026-10-21T17:55:31Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "The End of Consensus Research?",
+      "title": "The End of Consensus Research?",
+      "url": "https://arxiv.org/abs/2610.30114v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30114v1",
+      "description": "Consensus is a fundamental problem in distributed computing and at the core of state machine replication (SMR). Despite decades of active human research, discovering practical low-latency solutions to the problem is still open, as it requires combining protocol knowledge, correctness reasoning, implementation, and experimental evaluation. We report on how AI helped us discover A-greement, a new consensus protocol for geo-replicated state machines that significantly outperforms state-of-the-art s",
+      "authors": [
+        "Clément Burgelin",
+        "Rachid Guerraoui",
+        "Zicong Hong",
+        "Yinan Hu",
+        "Anne-Marie Kermarrec"
+      ],
+      "categories": [
+        "cs.DC",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.30114v1",
+      "published_at": "2026-10-21T17:55:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research",
+      "title": "Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research",
+      "url": "https://arxiv.org/abs/2610.30113v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30113v1",
+      "description": "Quantitative research is an iterative loop: a researcher proposes a market hypothesis, implements it as an executable signal, tests it on historical data, and decides what to keep. Existing benchmarks score formulas, code, or individual trading decisions, leaving open whether large language models (LLMs) can complete this loop and produce strategies that work beyond the research period. We introduce Quant-Arena, a benchmark and public leaderboard for end-to-end quantitative research on real A-sh",
+      "authors": [
+        "Houde Qian",
+        "Zheng Jiang",
+        "Wenyi Li",
+        "Chenxi Xu",
+        "Xinjie Lin"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CE"
+      ],
+      "arxiv_id": "2610.30113v1",
+      "published_at": "2026-10-21T17:54:01Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Minimax Optimality of the NPMLE for Gaussian Mixtures in Hellinger Distance",
+      "title": "Minimax Optimality of the NPMLE for Gaussian Mixtures in Hellinger Distance",
+      "url": "https://arxiv.org/abs/2610.30109v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30109v1",
+      "description": "We analyze the problem of estimating univariate Gaussian mixture densities using the nonparametric maximum likelihood estimator (NPMLE) based on $n$ independent and identically distributed samples. We show that the unconstrained NPMLE achieves the minimax optimal rate $\\log(n)/n$ in squared Hellinger distance, when the true mixing measure is sub-Gaussian. In addition, we show that when the true mixing measure has compact support, the NMPLE constrained to a compact interval also achieves the mini",
+      "authors": [
+        "Shayan Hundrieser",
+        "Tudor Manole"
+      ],
+      "categories": [
+        "math.ST",
+        "cs.IT",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.30109v1",
+      "published_at": "2026-10-21T17:53:10Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use",
+      "title": "Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use",
+      "url": "https://arxiv.org/abs/2610.30108v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30108v1",
+      "description": "Multimodal agents (MMAs) sustain interaction through reasoning, memory, tools, and feedback, most visibly as computer-use agents, while robotic systems (RSs) couple sensing and actuation under physical dynamics. We define multimodal embodied agents (MMEAs) as goal-directed systems that couple multimodal task reasoning with physical action and revise decisions from the resulting feedback. This raises a central question: what changes when a multimodal agent moves from computer-use to robot-use? We",
+      "authors": [
+        "Yanzhe Chen",
+        "Ziyi Yang",
+        "Jifeng Zhu",
+        "Qiming Huang",
+        "Ruihe An"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV",
+        "cs.MA",
+        "cs.MM"
+      ],
+      "arxiv_id": "2610.30108v1",
+      "published_at": "2026-10-21T17:52:48Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Velocity Ambiguity Profiles: Time-Resolved Bayes-Risk Diagnostics for Flow Matching",
+      "title": "Velocity Ambiguity Profiles: Time-Resolved Bayes-Risk Diagnostics for Flow Matching",
+      "url": "https://arxiv.org/abs/2610.30107v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30107v1",
+      "description": "Flow matching trains a continuum of velocity regression problems but usually reports a loss averaged over interpolation time, obscuring which regions are limited by intrinsic ambiguity and which remain data-limited. We introduce the Velocity Ambiguity Profile (VAP), $\\mathcal{A}_v(t)$, the time-local Bayes-risk floor of velocity prediction, and decompose time-resolved loss as $L_N(t)=\\mathcal{A}_v(t)+R(t;N)$, where only the excess term $R(t;N)$ is reducible by more data or a different estimator.",
+      "authors": [
+        "Yunpeng Mei",
+        "Xiaowen Zhu",
+        "Chenyu Wang",
+        "Chenbo Xin",
+        "Hongjie Cao"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.30107v1",
+      "published_at": "2026-10-21T17:52:40Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Asymmetric On-Policy Distillation Learns In-Context Exploration",
+      "title": "Asymmetric On-Policy Distillation Learns In-Context Exploration",
+      "url": "https://arxiv.org/abs/2610.30105v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30105v1",
+      "description": "Sequential decision-making under partial observability is difficult because agents must explore to infer hidden, task-relevant information before acting effectively. Learning such information-gathering behaviors tabula rasa via online reinforcement learning is sample-inefficient, whereas offline imitation averages expert actions across hidden states and fails to learn exploration. In this work, we propose ASTEROID, a simple and effective student--teacher supervised learning framework that can le",
+      "authors": [
+        "Sriyash Poddar",
+        "Yanda Bao",
+        "Jacob Krantz",
+        "Matthew Chang",
+        "Xavier Puig"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.30105v1",
+      "published_at": "2026-10-21T17:50:31Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "BatchBench: Benchmarking AI Robustness to Batch Effects and Domain Shift in Biomedical Images - A JUMP Cell Painting Leaderboard",
+      "title": "BatchBench: Benchmarking AI Robustness to Batch Effects and Domain Shift in Biomedical Images - A JUMP Cell Painting Leaderboard",
+      "url": "https://arxiv.org/abs/2610.30104v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30104v1",
+      "description": "Despite recent advances, current AI systems remain highly susceptible to domain shifts, particularly in biomedical imaging, where images are usually acquired under substantially different experimental conditions. Although recent domain adaptation methods have made substantial progress, significant performance gaps under domain shift persist. To measure progress in this regard, we introduce BatchBench, a leaderboard that evaluates and compares the robustness of AI systems on biomedical images fro",
+      "authors": [
+        "Sonja Topf",
+        "Ana Sanchez-Fernandez",
+        "Günter Klambauer"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.30104v1",
+      "published_at": "2026-10-21T17:50:22Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Did the Problem Actually Get Harder? Testing LLMs on Paired P and NP-Complete Problems Hardened by Adversarial Multi-Agent Rewriting",
+      "title": "Did the Problem Actually Get Harder? Testing LLMs on Paired P and NP-Complete Problems Hardened by Adversarial Multi-Agent Rewriting",
+      "url": "https://arxiv.org/abs/2610.30103v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30103v1",
+      "description": "Many NP-complete (NPC) problems have a polynomial-time (P) twin that differs in a single structural detail, such as 3- versus 2-colouring a graph. A model that reasons rather than recalls should notice which side of this boundary a problem falls on, yet existing benchmarks either fix the wording of each task or ignore its complexity class, so they cannot separate the two. We introduce P2NPCBench, a benchmark of 12 problem families in which every NPC problem is paired with a P twin posed over the",
+      "authors": [
+        "Nurul Labib Sayeedi",
+        "Md. Faiyaz Abdullah Sayeedi",
+        "Zabir Al Nazi",
+        "Mahbub E Sobhani",
+        "Shubhashis Roy Dipta"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.30103v1",
+      "published_at": "2026-10-21T17:50:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Differentially Private Sparse Reward Estimation with Preference Feedback",
+      "title": "Differentially Private Sparse Reward Estimation with Preference Feedback",
+      "url": "https://arxiv.org/abs/2610.30099v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30099v1",
+      "description": "Reinforcement Learning with Human Feedback (RLHF) has become a central paradigm for aligning Large Language Models with human values. However, the reliance on sensitive preference data necessitates rigorous differential privacy (DP) guarantees to prevent user information leakage. Existing private alignment methods typically assume dense reward parameterizations, resulting in estimation error bounds that scale polynomially with the ambient {model size $d$}. Such dependence is prohibitive in moder",
+      "authors": [
+        "Meng Ding",
+        "Mingxi Lei",
+        "Jie Zhang",
+        "Jinyan Liu",
+        "Di Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.30099v1",
+      "published_at": "2026-10-21T17:45:42Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "AtomicRL: Atomic Reinforcement Learning for Long-Horizon Robotic Manipulation",
+      "title": "AtomicRL: Atomic Reinforcement Learning for Long-Horizon Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2610.30097v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30097v1",
+      "description": "Vision-language-action (VLA) models have shown promise in robotic manipulation, but imitation learning (IL) alone often struggles to master complex long-horizon skills. Reinforcement learning (RL) offers an effective avenue for further improving VLA policies. However, existing VLA-RL methods typically suffer from delayed and biased credit assignment due to trajectory-level sparse rewards, while imbalanced subtask mastery creates bottlenecks that limit overall performance. To address these challe",
+      "authors": [
+        "Likui Zhang",
+        "Zhe Zhu",
+        "Zhihao Zhan",
+        "Yibo Bai",
+        "Hanlin Wang"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "arxiv_id": "2610.30097v1",
+      "published_at": "2026-10-21T17:45:24Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage - An empirical study of unknown-attack honesty, cascade gray zones, and calibration under drift",
+      "title": "VX-One: Typed, Calibrated Decision Heads for Real-Time Perimeter Triage - An empirical study of unknown-attack honesty, cascade gray zones, and calibration under drift",
+      "url": "https://arxiv.org/abs/2610.30090v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30090v1",
+      "description": "Perimeter triage faces a latency/semantics trade-off: signature engines are fast and format-safe but blind to unseen attacks, while generative models are semantic but slow and produce unparseable output. In late 2026 a class of commercial System One decision models (TypeSafe Jev; Microsoft-Decision-1) began selling typed decision primitives - binary gates, closed-set choices, ordinal scores - as product APIs, with no academic treatment. We present VX-One: a small multi-head network (100K-10M par",
+      "authors": [
+        "Juan S. Santillana"
+      ],
+      "categories": [
+        "cs.CR",
+        "cs.CL",
+        "cs.LG",
+        "cs.NI"
+      ],
+      "arxiv_id": "2610.30090v1",
+      "published_at": "2026-10-21T17:39:12Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Orbitol: Crystal Generation on Wyckoff Orbits",
+      "title": "Orbitol: Crystal Generation on Wyckoff Orbits",
+      "url": "https://arxiv.org/abs/2610.30086v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30086v1",
+      "description": "Generative models propose crystalline materials by learning composition and geometry, but unconditional sampling gives no direct control over the space group, which constrains whether responses such as piezoelectricity are symmetry-allowed. We present Orbitol, a crystal generator built on the Crystalite diffusion Transformer that replaces atom tokens with Wyckoff-orbit tokens. Given a space group and a collection of occupied Wyckoff positions, Orbitol generates the atom type and free coordinates",
+      "authors": [
+        "Ivan Žugec",
+        "Joshua Rosenthal",
+        "Ivor Lončarić",
+        "Jan-Willem van de Meent",
+        "Tin Hadži Veljković"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.30086v1",
+      "published_at": "2026-10-21T17:33:59Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Circuits of LLM Classifiers",
+      "title": "Circuits of LLM Classifiers",
+      "url": "https://arxiv.org/abs/2610.30076v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30076v1",
+      "description": "Language models make it easy to build classifiers by simply prompting a model with the sample to classify. However, their predictions are neither deterministic nor uniformly reliable across samples. How can we combine predictions from different models to improve reliability? We view LLM classifiers as noisy measurement instruments of an underlying target label. Our goal is to maximize average classification accuracy at a given average query cost. To this end, we introduce circuits that organize ",
+      "authors": [
+        "Hadi Khalaf",
+        "Sajani Vithana",
+        "Kunal Talreja",
+        "Haewon Jeong",
+        "Viveck R. Cadambe"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.30076v1",
+      "published_at": "2026-10-21T17:27:46Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "From Classifier Heads to Encoder Prototypes: Personalized Federated Learning with Head-Derived Clustering",
+      "title": "From Classifier Heads to Encoder Prototypes: Personalized Federated Learning with Head-Derived Clustering",
+      "url": "https://arxiv.org/abs/2610.30075v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30075v1",
+      "description": "Personalized federated learning must decide which clients should share representations. We introduce HDC-FL (Head-Derived Clustering for Personalized Federated Learning), which reads that decision off a signal shared-encoder training already produces: the client-specific classifi- er heads. At periodic refresh rounds the server projects the cached heads into a normalized low-rank descriptor space, groups the descriptors, builds one encoder prototype per group from the cached client encoders, and",
+      "authors": [
+        "Amirardalan Dehghanpour",
+        "Arian Noori",
+        "Ehsan Tanghatari",
+        "Naimeh Omidvar",
+        "Hamid R. Rabiee"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.30075v1",
+      "published_at": "2026-10-21T17:27:46Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Parallel AI Agent Collaboration as Graph-Structured Distributed Block Optimization",
+      "title": "Parallel AI Agent Collaboration as Graph-Structured Distributed Block Optimization",
+      "url": "https://arxiv.org/abs/2610.30074v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30074v1",
+      "description": "Parallel AI agents can produce useful local edits yet degrade a shared solution when their edits are combined. We model this coordination problem as discrete block optimization with an exactly evaluable objective and a known dependency graph. Independent sets certify compatible edits whose verified gains, measured against the same current solution, add exactly. A coordinator constructs a safe compatible candidate and can also evaluate interacting edits to capture favorable interactions. We prove",
+      "authors": [
+        "Hanmin Li",
+        "Yury Demidovich",
+        "Peter Richtárik"
+      ],
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "math.OC"
+      ],
+      "arxiv_id": "2610.30074v1",
+      "published_at": "2026-10-21T17:27:17Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Charts as Epistemic Actions for Experience-Driven Agentic Data Analysis",
+      "title": "Charts as Epistemic Actions for Experience-Driven Agentic Data Analysis",
+      "url": "https://arxiv.org/abs/2610.30072v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30072v1",
+      "description": "Data agents built on ReAct-style loops now execute complex analytical workflows over structured data, yet their intermediate reasoning still runs almost entirely through text. Human analysts instead move between numbers, tables, and charts, reading visual evidence to expose trends and anomalies that text summaries drop. We ask whether charts can serve as internal epistemic actions inside a data agent's reasoning loop, and how to teach an agent to use them. We first build \\probe{}, a suite of 200",
+      "authors": [
+        "Xinzhe Wang",
+        "Xudong Weng",
+        "Zang Li",
+        "Shaolei Zhang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.30072v1",
+      "published_at": "2026-10-21T17:26:53Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Loopholing All the Way: Language Modeling with pure Self-Conditioning",
+      "title": "Loopholing All the Way: Language Modeling with pure Self-Conditioning",
+      "url": "https://arxiv.org/abs/2610.30068v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30068v1",
+      "description": "Recent Diffusion Language Models (DLMs) use Self-Conditioning (SC), or Loopholing, to improve their performance. While SC is traditionally seen as an auxiliary heuristic, its empirical success raises the question: can a continuous generative model be based purely on Self-Conditioning? We answer affirmatively with LAW (``Loopholing All the Way''), which propagates the Expected Embedding under the denoiser's prediction across steps, decoding the tokens once, at the end. On Sudoku, LAW outperforms ",
+      "authors": [
+        "Adrien Deschenaux",
+        "Nadezhda Ilieva",
+        "Justin Deschenaux",
+        "Manuel Madeira",
+        "Dorina Thanou"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.30068v1",
+      "published_at": "2026-10-21T17:25:08Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "GoiBERT: Compact Vietnamese Language Models via Two-Stage Knowledge Distillation",
+      "title": "GoiBERT: Compact Vietnamese Language Models via Two-Stage Knowledge Distillation",
+      "url": "https://arxiv.org/abs/2610.30067v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30067v1",
+      "description": "Vietnamese pre-trained encoders have improved rapidly, but the strongest ones are large, multilingual-vocabulary models or depend on external word segmentation, which makes them costly to deploy. We present GoiBERT, a family of two compact Vietnamese encoders with 26M and 49M parameters that operate directly on raw text. GoiBERT learns from two complementary teachers. A same-tokenizer Vietnamese encoder first teaches general-purpose representations. A much larger teacher then provides task-level",
+      "authors": [
+        "Quang Anh Kiet Tran",
+        "Nam Anh Tran",
+        "Manh Hung Trinh",
+        "Thanh Danh Le",
+        "Khang Nhat Hoang Vo"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.30067v1",
+      "published_at": "2026-10-21T17:24:36Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Looped Uniform Diffusion Language Models",
+      "title": "Looped Uniform Diffusion Language Models",
+      "url": "https://arxiv.org/abs/2610.30066v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30066v1",
+      "description": "Uniform diffusion language models (UDLMs) generate text by iteratively denoising sequences of ordinary vocabulary tokens, any of which may be corrupted and subsequently revised. During training, UDLMs must denoise from a context that may itself be unreliable, whereas masked diffusion language models (MDLMs) always condition on a clean context. This challenging training objective makes UDLMs more FLOP-intensive to train than MDLMs, but it yields stronger downstream reasoning performance. Recently",
+      "authors": [
+        "Saiteja Utpala",
+        "Chieh-Hsin Lai",
+        "Yuki Mitsufuji",
+        "Praneeth Vepakomma"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.30066v1",
+      "published_at": "2026-10-21T17:24:35Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "From Reasoning to Action: Benchmarking Frontier AI Models on LIBERO-10 Robot Manipulation Tasks",
+      "title": "From Reasoning to Action: Benchmarking Frontier AI Models on LIBERO-10 Robot Manipulation Tasks",
+      "url": "https://arxiv.org/abs/2610.30051v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30051v1",
+      "description": "Recent advances in frontier AI models have demonstrated remarkable capabilities in visual understanding, reasoning, planning, and tool use, raising the possibility of using general-purpose AI models for robot manipulation without task-specific training. However, their manipulation capabilities have not been systematically evaluated on standardized robotics benchmarks. In this report, we present a unified closed-loop manipulation framework for evaluating frontier AI models on the LIBERO-10 benchm",
+      "authors": [
+        "May Espinola",
+        "Qifan Zhang",
+        "Yu Xiang"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.30051v1",
+      "published_at": "2026-10-21T17:11:52Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SWE-DIVE: Multi-Turn Coding Agent Evaluation with Dynamic User Simulation",
+      "title": "SWE-DIVE: Multi-Turn Coding Agent Evaluation with Dynamic User Simulation",
+      "url": "https://arxiv.org/abs/2610.30047v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30047v1",
+      "description": "Coding agents are typically evaluated using one-shot, well-formulated prompts. Benchmarks such as SWE-bench use existing GitHub issues as input for a coding agent and evaluate whether the agent successfully solves the task. However, in real-world use cases, prompts are often not as well-formulated or structured as existing GitHub issues. Additionally, a coding agent session is not limited to a single prompt; it typically involves a multi-turn interaction in which the user iteratively adds new ta",
+      "authors": [
+        "Lorenz Brehme",
+        "Benjamin Steenhoek",
+        "Ruth Breu"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.30047v1",
+      "published_at": "2026-10-21T17:06:34Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Which Differences Matter? Controlled Tests of Rule Transfer, Joint Reliability, and Information Use in Decision Models",
+      "title": "Which Differences Matter? Controlled Tests of Rule Transfer, Joint Reliability, and Information Use in Decision Models",
+      "url": "https://arxiv.org/abs/2610.30045v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30045v1",
+      "description": "Decision models map stated rules and observed states to discrete answers. Aggregate accuracy leaves unresolved which rule and information changes guide those answers. We connect controlled input changes to transfer, joint reliability, and directed information use through executable arithmetic rules. Semantic rule separation and crossed rule and state tests make transfer and joint success separately measurable. We compare equivalent wordings, calibrate joint correctness through marginal-preservin",
+      "authors": [
+        "Tianyou Lai",
+        "Wentao Yue",
+        "Zhiwei Zuo",
+        "Qilei Li"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.30045v1",
+      "published_at": "2026-10-21T17:04:02Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SP-HLM: Sparse-Pose-Driven Motion Generation and Whole-Body Control for Humanoid Loco-Manipulation",
+      "title": "SP-HLM: Sparse-Pose-Driven Motion Generation and Whole-Body Control for Humanoid Loco-Manipulation",
+      "url": "https://arxiv.org/abs/2610.30044v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.30044v1",
+      "description": "Humanoid loco-manipulation requires an effective interface between high-level task policies and whole-body control. Existing interfaces typically rely on a single action representation for both task intent and whole-body coordination. This may burden the high-level policy or leave one aspect underspecified. We present SP-HLM, a framework built on a sparse-pose-driven interface. The interface combines five task-critical body poses with a learned latent motion prior to represent spatial intent and",
+      "authors": [
+        "Zhaohui Yang",
+        "Quanbao Lin",
+        "Chengqi Shi",
+        "Zhenglang Weng",
+        "Jicheng Lin"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.30044v1",
+      "published_at": "2026-10-21T17:03:34Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
