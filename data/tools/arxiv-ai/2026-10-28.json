@@ -1,0 +1,708 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-10-28T22:02:49.045789+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
+      "title": "Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
+      "url": "https://arxiv.org/abs/2610.37668v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37668v1",
+      "description": "Novel view synthesis and 3D reconstruction have advanced rapidly with radiance fields and splatting, yet their memory and computational demands limit their use in resource-constrained settings. We introduce Hexels: novel planar hexagonal surface elements with a first-order spatial color field for efficient 3D scene and 2D image representation. Hexels exploit locally planar regions with smoothly varying appearance using fewer, larger primitives. Their hexagonal support provides an area- and bound",
+      "authors": [
+        "Prakhar Kaushik",
+        "Soumava Paul",
+        "Alan Yuille"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.GR",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.37668v1",
+      "published_at": "2026-10-27T17:59:59Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+      "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+      "url": "https://arxiv.org/abs/2610.37666v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37666v1",
+      "description": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning from them faces a fundamental trade-off between scalable data and explicit action grounding. We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strength",
+      "authors": [
+        "Chaehyun Kim",
+        "Chi-Pin Huang",
+        "Jisoo Kim",
+        "Min-Hung Chen",
+        "Yu-Chiang Frank Wang"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "arxiv_id": "2610.37666v1",
+      "published_at": "2026-10-27T17:59:52Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "When Should We Intervene at Test Time?",
+      "title": "When Should We Intervene at Test Time?",
+      "url": "https://arxiv.org/abs/2610.37658v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37658v1",
+      "description": "Test-time adaptation helps a deployed model respond to changing inputs, but the same intervention can rescue one batch and damage the next. Updating normalization statistics, for example, can improve corrupted images yet fail when a batch contains mostly one class. Average accuracy hides these failures and cannot tell a model when to use an intervention. Target labels can guide this decision, but they are scarce and some choices are already clear. We introduce PORTAL, a controller that chooses w",
+      "authors": [
+        "Jiahao Zhang",
+        "Xinling Wen",
+        "Liangliang Li",
+        "Yu Chen"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.37658v1",
+      "published_at": "2026-10-27T17:58:53Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
+      "title": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
+      "url": "https://arxiv.org/abs/2610.37657v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37657v1",
+      "description": "We introduce Heads of Security (HoS), a prompt injection defense that enforces instruction-data separation via a small set of learned per-head attention gates. HoS learns how each head should redistribute attention between trusted and untrusted tokens, enabling models to reason over untrusted content without following injected instructions. We evaluate HoS on Llama-3.3-70B-Instruct and GPT-OSS-20B. We compare it against SecAlign++, a state-of-the-art finetuning-based defense, and ASIDE, a defens",
+      "authors": [
+        "Igor Shilov",
+        "Xiaoxue Yang",
+        "Alexander Panfilov",
+        "Evgenii Kortukov",
+        "Matthieu Meeus"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL",
+        "cs.CR"
+      ],
+      "arxiv_id": "2610.37657v1",
+      "published_at": "2026-10-27T17:58:52Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops",
+      "title": "Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops",
+      "url": "https://arxiv.org/abs/2610.37656v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37656v1",
+      "description": "Relations compose through the entity they share - Alice is Bob's mother and Bob is Carol's father, so Alice is Carol's grandmother - and the order matters, since a father's mother is not a mother's father; verifying a composed relation means closing the loop. We show that if each entity's coordinate frame may be rotated independently (per-entity frame freedom), three things follow. In the pure-gauge sector, relations that share no cycle cannot interact at all. The only gauge-invariant score of a",
+      "authors": [
+        "Aakash Sarkar",
+        "Ananya Mukherjee",
+        "Motoshige Sato"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "physics.comp-ph"
+      ],
+      "arxiv_id": "2610.37656v1",
+      "published_at": "2026-10-27T17:58:48Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "KPPax: preprocess differentiable kinetic ODE for machine learning in atmospheric chemistry",
+      "title": "KPPax: preprocess differentiable kinetic ODE for machine learning in atmospheric chemistry",
+      "url": "https://arxiv.org/abs/2610.37655v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37655v1",
+      "description": "Atmospheric chemical mechanisms are commonly distributed in the language of the Kinetic PreProcessor (KPP), which generates efficient Fortran or C code but does not fit into the differentiable programming frameworks in which machine-learning models are developed. We present KPPax, a kinetic preprocessor that generates differentiable, just-in-time compiled, and vectorisable chemistry code in JAX from mechanisms written in the KPP language. KPPax evaluates the rate law with sparse operations in lo",
+      "authors": [
+        "Wenqing Peng",
+        "Michael Boy",
+        "Zhi-Song Liu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.37655v1",
+      "published_at": "2026-10-27T17:58:40Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Pushing Dexterity and Safety for In-Hand Object Pose Reaching That Works Remarkably Well",
+      "title": "Pushing Dexterity and Safety for In-Hand Object Pose Reaching That Works Remarkably Well",
+      "url": "https://arxiv.org/abs/2610.37652v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37652v1",
+      "description": "Dexterous manipulation with multi-fingered hands is the next frontier of robotics, yet learned hand skills remain limited to simple grasps or basic repeated motions, such as rotating an object. As robots attempt more demanding in-hand maneuvers, safety, such as not dropping the object, becomes critical, yet it is rarely measured. We study in-hand object pose reaching, a task that demands diverse and difficult grasps: moving an object to almost any position and orientation within reach of the fin",
+      "authors": [
+        "Ian Chuang",
+        "Hiya Shah",
+        "Vamsi Chilamkur",
+        "Iman Soltani",
+        "Claire Tomlin"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "arxiv_id": "2610.37652v1",
+      "published_at": "2026-10-27T17:58:20Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "GEPA-Curator: Curated Learning for Self Improving Agents",
+      "title": "GEPA-Curator: Curated Learning for Self Improving Agents",
+      "url": "https://arxiv.org/abs/2610.37651v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37651v1",
+      "description": "Large Language Models (LLMs) are increasingly used in multi-turn agentic workloads that require sustained interaction with complex environments. Existing reflective prompt optimizers such as GEPA learn from failed rollouts, but agentic failures can also come from prompt weaknesses, harness limitations, stochastic execution, or noisy judges. We argue that such failures may not provide useful learning signal, and may even be harmful; and thus it is essential to curate which tasks are provided to t",
+      "authors": [
+        "Zack Yu",
+        "Nicholas Lee",
+        "Minjae Lee",
+        "Lakshya Agarwal",
+        "Luca Manolache"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.37651v1",
+      "published_at": "2026-10-27T17:58:11Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+      "title": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+      "url": "https://arxiv.org/abs/2610.37649v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37649v1",
+      "description": "Scientific discovery often begins with an unexpected observation that prompts a new research question. In a world with altered physical laws, can large language models (LLMs) notice unexpected behavior, such as heavier objects falling more slowly, and discover the law through experiments without being told what to investigate? To evaluate this ability, we introduce LongChang, an automated framework that creates simulated worlds with altered physics, where one or more laws differ from ordinary ph",
+      "authors": [
+        "Zhen Yang",
+        "Wen Wang",
+        "Xander Xu",
+        "Ying-Cong Chen"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "arxiv_id": "2610.37649v1",
+      "published_at": "2026-10-27T17:57:00Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis",
+      "title": "Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis",
+      "url": "https://arxiv.org/abs/2610.37648v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37648v1",
+      "description": "We explore how to build performant large language model (LLM) tool-use agents that complete complex, multi-step tasks. Specifically, we study how data composition in synthetically generated tool-use environments affects the training of such agents. To do so, we propose the SynthAPI pipeline, which explicitly controls the diversity of generated environments along the axes of tools, tasks, and the databases on which the tools operate. By systematically varying SynthAPI's generation controls in 458",
+      "authors": [
+        "Andrew Szot",
+        "Samira Abnar",
+        "Omar Attia",
+        "Abbas Kazerouni",
+        "Michael Kirchhof"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.37648v1",
+      "published_at": "2026-10-27T17:56:46Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "MuonGS: Pretraining LLMs with Relaxed Weight-Norm Control",
+      "title": "MuonGS: Pretraining LLMs with Relaxed Weight-Norm Control",
+      "url": "https://arxiv.org/abs/2610.37647v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37647v1",
+      "description": "Weight decay and explicit weight-norm constraints improve optimizer performance in language model pretraining, yet a unified understanding of why such control helps and how much is needed remains incomplete. We analyze norm control in Muon over the entire training trajectory using the \\emph{accumulated effective learning rate}, $C_T=\\sum_{t<T}η_t/\\|W_t\\|_F$, where $η_t$ is the nominal learning rate and $η_t/\\|W_t\\|_F$ is the effective learning rate relative to the weight norm. For bounded update",
+      "authors": [
+        "Athanasios Glentis",
+        "Dawei Li",
+        "Mingyi Hong"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "math.OC"
+      ],
+      "arxiv_id": "2610.37647v1",
+      "published_at": "2026-10-27T17:56:40Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Multi-State Linear Attention with Generalized Second-Order Routing",
+      "title": "Multi-State Linear Attention with Generalized Second-Order Routing",
+      "url": "https://arxiv.org/abs/2610.37645v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37645v1",
+      "description": "Self-attention plays a key role in long-sequence modeling, but its quadratic time complexity fundamentally limits the scaling of Large Language Models. Recently, Multi-State Linear Attention (MSLA) mechanisms have been proposed to make sequence modeling more efficient by splitting the context into segments and compressing each in its own memory state. MSLA aggregates the information extracted from each memory state using only the mean alignment between a query and each segment's keys, ignoring h",
+      "authors": [
+        "Hee Seung Hwang",
+        "Sanghyuk Chun",
+        "Xindi Wu",
+        "Olga Russakovsky",
+        "Zhiwei Deng"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.37645v1",
+      "published_at": "2026-10-27T17:55:49Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Metacognitive Decoding: Efficient Inference for Diffusion Language Agents",
+      "title": "Metacognitive Decoding: Efficient Inference for Diffusion Language Agents",
+      "url": "https://arxiv.org/abs/2610.37642v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37642v1",
+      "description": "Diffusion language models offer a promising path to efficient agents through parallel token generation. However, efficient interaction requires adapting both where computation is spent and how much text is generated. We introduce a metacognitive controller that guides diffusion generation according to the needs of the current response and the agent's interaction with the environment. It learns when to finalize tokens and how far generation should extend, reducing overall computation within respo",
+      "authors": [
+        "Mingyu Zhao",
+        "Shuhang Lin",
+        "Ligong Han",
+        "Xiaojing Yu",
+        "Zhenting Wang"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.37642v1",
+      "published_at": "2026-10-27T17:55:24Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "What Improves During Pretraining? Tracking Knowledge Acquisition with Point-in-Time Models",
+      "title": "What Improves During Pretraining? Tracking Knowledge Acquisition with Point-in-Time Models",
+      "url": "https://arxiv.org/abs/2610.37631v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37631v1",
+      "description": "Language models pretrained on web corpora collected over multiple years learn both general and domain-specific knowledge. How these different kinds of knowledge are learned as pretraining progresses remains unclear. Recent point-in-time models trained on web snapshots from different years provide a way to probe how knowledge prevalence varies over time. Using these models, we propose a temporal variability score (TVS), defined as the coefficient of variation of an item's negative log-likelihood ",
+      "authors": [
+        "Chang Su",
+        "Bin Wu",
+        "Emine Yilmaz",
+        "Yao Lu"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.37631v1",
+      "published_at": "2026-10-27T17:52:38Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Rare, Relevant, and Still Wrong: How Memory Fails LLM Group Decisions",
+      "title": "Rare, Relevant, and Still Wrong: How Memory Fails LLM Group Decisions",
+      "url": "https://arxiv.org/abs/2610.37624v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37624v1",
+      "description": "When an LLM group's discussion is compressed into a short memory for a final decision maker, what should the memory keep? Two natural heuristics keep the rarest claims or the claims relevant to the decision criteria. On hidden-profile tasks both look attractive, because how widely a fact is held is confounded with whether it helps. We introduce CrossProfile, a diagnostic benchmark of 60 templates with automatically verified answer keys, in which the ownership of supporting, decoy, and irrelevant",
+      "authors": [
+        "Anouar Imel",
+        "Imad Charradi",
+        "Abderrahman Sghir",
+        "Khalil El Khammar"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA",
+        "cs.SI"
+      ],
+      "arxiv_id": "2610.37624v1",
+      "published_at": "2026-10-27T17:49:39Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "VideoLVR: Latent Visual Reasoning over Grounded Video Evidence",
+      "title": "VideoLVR: Latent Visual Reasoning over Grounded Video Evidence",
+      "url": "https://arxiv.org/abs/2610.37613v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37613v1",
+      "description": "Chain-of-thought reasoning has substantially advanced video understanding in multimodal large language models (MLLMs). However, language-based reasoning traces do not provide a reliable mechanism for models to revisit relevant visual evidence, leading to visual forgetting and impairing their ability to reason over video content. Existing approaches maintain visual grounding during reasoning in two main ways: they either refer to evidence using textual coordinates, which specify symbolic location",
+      "authors": [
+        "Shilong Li",
+        "Xingyuan Bu",
+        "Hao Shi",
+        "Yun Xing",
+        "Weixin Feng"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.37613v1",
+      "published_at": "2026-10-27T17:41:56Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "EnvSched: Environment-Aware Scheduling for Rollout-Efficient Agent Reinforcement Learning",
+      "title": "EnvSched: Environment-Aware Scheduling for Rollout-Efficient Agent Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2610.37609v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37609v1",
+      "description": "As executable environments for language agents scale, generating and verifying their rollouts becomes increasingly expensive. Under finite rollout budgets, this raises an important question: can data management at the environment level make agentic reinforcement learning (RL) more efficient by organizing, evaluating, and scheduling task instances together with the environments that determine their tools, states, transitions, and verification? To address this question, we introduce EnvSched (Envi",
+      "authors": [
+        "Sihan Yang",
+        "Weichen Bai",
+        "Ruichuan An",
+        "Yiming Cheng",
+        "Zhiyuan Feng"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.37609v1",
+      "published_at": "2026-10-27T17:38:52Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Beyond Answer Changes: Matched Same-Class Controls for Local Audio Evidence",
+      "title": "Beyond Answer Changes: Matched Same-Class Controls for Local Audio Evidence",
+      "url": "https://arxiv.org/abs/2610.37605v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37605v1",
+      "description": "For audio-language models, an answer change after a local sound-event edit can reflect a response to the event's class, sensitivity to waveform rewriting, or both. We compare matched same-class and different-class replacements of a queried event. Both use the same interval, level estimate, donor fitting, and crossfade, while the same-class replacement preserves the correct answer. Across 600 synthetic soundscapes and three models from two architecture families, different-class replacements produ",
+      "authors": [
+        "Yunuo Wang",
+        "Maoyuan Chen",
+        "Yuanjin Huang",
+        "Xing Liu"
+      ],
+      "categories": [
+        "cs.SD",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.37605v1",
+      "published_at": "2026-10-27T17:36:06Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "MoI-Bench: A Benchmark for Image Generation and Editing on Mobile Devices",
+      "title": "MoI-Bench: A Benchmark for Image Generation and Editing on Mobile Devices",
+      "url": "https://arxiv.org/abs/2610.37599v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37599v1",
+      "description": "Developing on-device image models requires considering practical user needs, task types and device resource constraints. However, existing benchmarks provide limited guidance on identifying capability gaps between on-device models and server-side models. We introduce MoI-Bench, a benchmark grounded in mobile user needs, comprising 64 subtasks and 1150 samples. It defines 16 operations, such as removal and replacement, and eight visual target categories covering content such as portraits and text",
+      "authors": [
+        "Kailai Feng",
+        "Haoxiang Rao",
+        "Yuxiang Wei",
+        "Bo Chen",
+        "Junsong Li"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.37599v1",
+      "published_at": "2026-10-27T17:31:40Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "GAS-PFN: Graph-Aware Spatiotemporal Prior-Data Fitted Networks for Zero-Shot Traffic Forecasting",
+      "title": "GAS-PFN: Graph-Aware Spatiotemporal Prior-Data Fitted Networks for Zero-Shot Traffic Forecasting",
+      "url": "https://arxiv.org/abs/2610.37598v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37598v1",
+      "description": "Traffic forecasting requires modeling complex temporal dynamics and the spatial dependencies imposed by road topology. Supervised graph-based models achieve strong performance, but are often trained for a particular dataset and sensor graph, making deployment to new or evolving networks costly. Prior-Data Fitted Networks (PFNs) offer a zero-shot alternative by learning in-context inference from synthetic task priors, which provide an explicit mechanism for encoding domain-specific assumptions. E",
+      "authors": [
+        "Joseph Natter",
+        "Long Vu",
+        "Yifan Zhang",
+        "Bobin Deng",
+        "Kun Suo"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.NE"
+      ],
+      "arxiv_id": "2610.37598v1",
+      "published_at": "2026-10-27T17:31:26Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Understanding the limits of latent world models",
+      "title": "Understanding the limits of latent world models",
+      "url": "https://arxiv.org/abs/2610.37588v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37588v1",
+      "description": "World models are widely proposed as core components for enabling agents to reason over long temporal and spatial horizons. Yet current evaluations often emphasize task performance while providing limited insight into whether learned world models acquire predictive latent dynamics that reflect the underlying structure of the environment. Here we introduce the concept of faithful latent world models as an equivariance condition between the environment's transition map and the learned latent dynami",
+      "authors": [
+        "Rodrigo Gonzalez Laiz",
+        "Steffen Schneider"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.37588v1",
+      "published_at": "2026-10-27T17:25:50Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Timestral",
+      "title": "Timestral",
+      "url": "https://arxiv.org/abs/2610.37585v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37585v1",
+      "description": "We introduce Timestral, a family of four time series foundation models for probabilistic forecasting, with 5M, 28M, 123M, and 209M parameters. Timestral sets a new state of the art on GIFT-Eval, TIME, and fev-bench, where Timestral-209M and Timestral-123M take the top two places on every metric. We achieve this with three ingredients: Decoupled Horizon Forecasting (DHF), which separates prediction tokens from the causally encoded context, so that longer horizons are trained without masking conte",
+      "authors": [
+        "Adrien Petralia",
+        "Alexandre Gavaudan",
+        "Artjom Joosen",
+        "Etienne Goffinet",
+        "Richard Kurle"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.37585v1",
+      "published_at": "2026-10-27T17:25:43Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "REGER: Modeling inter-item Relations with Semantic IDs for Generative Recommendation",
+      "title": "REGER: Modeling inter-item Relations with Semantic IDs for Generative Recommendation",
+      "url": "https://arxiv.org/abs/2610.37584v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37584v1",
+      "description": "Personalized recommendation depends on learning semantic and collaborative relations among items from online content and user interactions. Generative recommendation (GR) offers a promising paradigm by autoregressively generating discrete semantic IDs (SIDs) of items. However, randomly initialized SID token embeddings and GR models trained from scratch do not directly inherit the semantic relations inherent in items, while inter-item collaborative relations are learned largely implicitly through",
+      "authors": [
+        "Yuxi Huang",
+        "Silin Zhou",
+        "Chenhao Wang",
+        "Zihan Li",
+        "Gangming Guo"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.37584v1",
+      "published_at": "2026-10-27T17:25:12Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Zero-Shot Multimodal Event Spotting in Soccer Broadcasts",
+      "title": "Zero-Shot Multimodal Event Spotting in Soccer Broadcasts",
+      "url": "https://arxiv.org/abs/2610.37583v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37583v1",
+      "description": "Automatic soccer event spotting supports highlight generation, video indexing, and sports analytics, but existing methods depend on large annotated datasets and soccer-specific training. We present a zero-shot framework that detects, classifies, and temporally localizes events in full-length soccer broadcasts without task-specific parameter training. Each match is segmented into overlapping clips represented by a compact visual storyboard and the aligned commentary transcript, which a general-pu",
+      "authors": [
+        "Sadia Kamal",
+        "Mahmudul Hasan",
+        "Tony Braskich"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "cs.MM"
+      ],
+      "arxiv_id": "2610.37583v1",
+      "published_at": "2026-10-27T17:24:35Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Spectral Braids: A Topological Descriptor for Dynamic Directed Networks",
+      "title": "Spectral Braids: A Topological Descriptor for Dynamic Directed Networks",
+      "url": "https://arxiv.org/abs/2610.37580v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37580v1",
+      "description": "Eigenvalues are a workhorse of graph machine learning: spectral clustering, spectral graph neural networks, and graph kernels all summarize a network by the eigenvalues of a matrix. These eigenvalues are almost always treated as a static list of numbers. When a graph changes, however, its eigenvalues move, and when the matrix is not symmetric, they move in the complex plane, where they can wind around each other. The pattern of this winding is a braid, a classical object from topology. We propos",
+      "authors": [
+        "Mehmet Emin Aktas",
+        "Esra Akbas"
+      ],
+      "categories": [
+        "cs.SI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.37580v1",
+      "published_at": "2026-10-27T17:21:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "TeamGym: A Gym for Team Decision-Making by AI Agents with Distributed Information",
+      "title": "TeamGym: A Gym for Team Decision-Making by AI Agents with Distributed Information",
+      "url": "https://arxiv.org/abs/2610.37571v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37571v1",
+      "description": "Many real-world decisions require teams to integrate information distributed across participants. Yet AI agents are still primarily trained and benchmarked in isolation. We introduce TeamGym, an environment for evaluating and training language model-based agents on team decision-making problems constructed from real-world legal, finance, medical, and software engineering corpora. TeamGym introduces a method to identify a minimal set of facts, each element of which is necessary and all of which a",
+      "authors": [
+        "Chanwoo Park",
+        "Jaywoong Jeong",
+        "Zachary Wojtowicz",
+        "Yubin Kim",
+        "Taekyun Lee"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.37571v1",
+      "published_at": "2026-10-27T17:15:54Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "LCM-Promo: An LLM-Based Uplift Model for Promotion Allocation",
+      "title": "LCM-Promo: An LLM-Based Uplift Model for Promotion Allocation",
+      "url": "https://arxiv.org/abs/2610.37570v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37570v1",
+      "description": "We present LCM-Promo, an LLM-based uplift model for promotion allocation. LCM-Promo is a task-specific Large Commerce Model (LCM): a finetuned LLM trained on transactional commerce data to predict user intent and promotion response. It learns monotonic promotion-response curves from production logs by interpreting single-token outputs as conversion-threshold probabilities, while conditioning on session context such as day and delivery shift. In a production A/B test on churn reactivation, LCM-Pr",
+      "authors": [
+        "Nesta Midavaine",
+        "Floris Fok",
+        "Paulo Mendes",
+        "Joao Silva",
+        "Önder Akaçık"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.IR"
+      ],
+      "arxiv_id": "2610.37570v1",
+      "published_at": "2026-10-27T17:15:15Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents",
+      "title": "Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents",
+      "url": "https://arxiv.org/abs/2610.37567v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37567v1",
+      "description": "AI agents have made substantial progress in domains where they have a non-trivial amount of time to deliberate between actions, such as mathematics, software engineering, and performing tasks on desktop applications. It is less clear how such models fare in settings that demand real-time interaction, such as playing a video game or operating a physical device. In these settings, the environment state may evolve as the agent is reasoning, or even as the underlying model is performing a forward pa",
+      "authors": [
+        "Pranjal Aggarwal",
+        "Sean Welleck"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.37567v1",
+      "published_at": "2026-10-27T17:13:05Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Pneuma: A Large-Scale Real-World Time Series Benchmark for Commercial Aircraft Predictive Maintenance",
+      "title": "Pneuma: A Large-Scale Real-World Time Series Benchmark for Commercial Aircraft Predictive Maintenance",
+      "url": "https://arxiv.org/abs/2610.37563v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37563v1",
+      "description": "Predictive maintenance is vital for commercial aviation, yet progress remains hindered by the lack of public, large-scale real-world datasets. As a result, most methods are developed and evaluated on proprietary data, limiting reproducibility. We introduce Pneuma, the first publicly available large-scale benchmark for predictive maintenance using onboard time series from in-service commercial aircraft. Built around bleed air systems, Pneuma contains over 920 million multivariate time steps acros",
+      "authors": [
+        "Jiafeng Lin",
+        "Yutian Zhang",
+        "Huan Zhang",
+        "Yuxuan Wang",
+        "Jinyan Feng"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.37563v1",
+      "published_at": "2026-10-27T17:09:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "When uncertainty quantification fails: structural vulnerabilities and corrections for selective prediction under clinical class imbalance",
+      "title": "When uncertainty quantification fails: structural vulnerabilities and corrections for selective prediction under clinical class imbalance",
+      "url": "https://arxiv.org/abs/2610.37561v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37561v1",
+      "description": "Background. Selective prediction systems improve the safety of clinical artificial intelligence by deferring ambiguous cases to human experts while automating high-confidence decisions. However, this safety mechanism relies entirely on the premise that uncertainty scores accurately reflect clinical ambiguity. In prognostic tasks characterized by severe class imbalance, where the clinical outcome of interest is a minority, this assumption breaks down. Standard uncertainty measures cease to captur",
+      "authors": [
+        "Walter Endrizzi",
+        "Flavio Ragni",
+        "Raffaele Marchesi",
+        "Stefano Bovo",
+        "Monica Moroni"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.37561v1",
+      "published_at": "2026-10-27T17:08:31Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
