@@ -1,0 +1,694 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-11-03T00:14:08.481923+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
+      "title": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
+      "url": "https://arxiv.org/abs/2610.42149v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42149v1",
+      "description": "Unified Multimodal Models (UMMs) achieve remarkable success on diverse multimodal understanding and generation tasks, yet they still struggle to effectively leverage language-based chain-of-thought reasoning for image generation. As a result, existing reasoning-augmented UMMs often fail to inherit the test-time scaling and fine-grained controllability observed in large language models. We attribute this failure to a fundamental modality mismatch: reasoning is performed in a discrete token space,",
+      "authors": [
+        "Byungwoo Jeon",
+        "Yoonwoo Jeong",
+        "Hyunseok Lee",
+        "Minsu Cho",
+        "Jinwoo Shin"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.42149v1",
+      "published_at": "2026-10-30T17:59:43Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Flide: Accelerating Decision Inference with Exact State Forking",
+      "title": "Flide: Accelerating Decision Inference with Exact State Forking",
+      "url": "https://arxiv.org/abs/2610.42148v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42148v1",
+      "description": "Decision models such as Jev have emerged as a highly promising paradigm for LLM agent systems, providing lightweight and reliable categorical reasoning for rapid System One execution. However, existing generation-oriented inference engines fail to support these workloads effectively, suffering from severe prefix recomputation overheads or distorted output probabilities. To address this challenge, we propose Flide, an efficient and exact inference engine that decouples the logical tree structure ",
+      "authors": [
+        "Bobo Li",
+        "Jiajia Song",
+        "Hao Fei",
+        "Wynne Hsu",
+        "Mong Li Lee"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.42148v1",
+      "published_at": "2026-10-30T17:59:38Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention",
+      "title": "Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention",
+      "url": "https://arxiv.org/abs/2610.42147v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42147v1",
+      "description": "Agentic workflows are increasingly shifting towards long-horizon tasks, such as open-ended scientific work, where models benefit from long context windows. However, at ultra-long context (above 1M tokens), full attention is prohibitively expensive. A promising approach is sparse attention, in which a dedicated indexer selects a subset of keys for the attention. Yet current methods of indexing either still have quadratic cost in context size or lose accuracy at ultra-long context scale. We addres",
+      "authors": [
+        "Ales Kubicek",
+        "Andrea Caciolai",
+        "Liangzu Peng",
+        "Sukrit Sumant",
+        "Benjamin Hoover"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.42147v1",
+      "published_at": "2026-10-30T17:59:34Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Hierarchical World Models with Implicit Dynamics",
+      "title": "Hierarchical World Models with Implicit Dynamics",
+      "url": "https://arxiv.org/abs/2610.42146v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42146v1",
+      "description": "Planning with world models enables test-time adaptation for embodied agents, offering superior generalization over direct policy learning. However, long-horizon tasks remain hindered by cumulative errors and search complexity. Existing hierarchical methods often use rigid macro-actions or latent skills, leading to brittle representations and limited fine-grained control. We introduce ID-WM (Implicit Dynamics World Models), a hierarchical world model that decouples state-space reachability from l",
+      "authors": [
+        "Gaoyue Zhou",
+        "Yvonne Wu",
+        "Zichen Jeff Cui",
+        "Nicolas Ballas",
+        "Mido Assran"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.42146v1",
+      "published_at": "2026-10-30T17:59:25Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+      "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+      "url": "https://arxiv.org/abs/2610.42141v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42141v1",
+      "description": "Recent work shows that a frozen robot policy performs far better inside an agent harness, where control code decides when to query the policy, consult vision tools, or command the arm directly. Yet today these harnesses are built by hand and redesigned for each new robot or benchmark. We show that harness design can be automated, offering a strong alternative to finetuning on a novel setup. In RoboArchitect, a coding model observes a robot's rollouts, diagnoses failures, and iteratively revises ",
+      "authors": [
+        "Shengguang Wu",
+        "Suning Huang",
+        "Cherie Ho",
+        "Ria Doshi",
+        "Hao Zhu"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "arxiv_id": "2610.42141v1",
+      "published_at": "2026-10-30T17:58:48Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Counting on Dummies: Privacy Amplification with Observable Counts and Truncated Batches",
+      "title": "Counting on Dummies: Privacy Amplification with Observable Counts and Truncated Batches",
+      "url": "https://arxiv.org/abs/2610.42139v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42139v1",
+      "description": "In many practical deployments of Differentially Private Stochastic Gradient Descent (DP-SGD), the server processes data in batches. Randomly sampling these batches allows for better privacy bounds via privacy amplification results. Most sampling schemes with provable privacy amplification, including Poisson sampling and random allocation, result in variable batch sizes. The privacy guarantee of these schemes requires that the batch sizes are not revealed. In distributed settings, the server perf",
+      "authors": [
+        "Vitaly Feldman",
+        "Audra McMillan",
+        "Kunal Talwar"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CR"
+      ],
+      "arxiv_id": "2610.42139v1",
+      "published_at": "2026-10-30T17:58:42Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "A Better Critic Matters for Distribution Matching Distillation",
+      "title": "A Better Critic Matters for Distribution Matching Distillation",
+      "url": "https://arxiv.org/abs/2610.42135v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42135v1",
+      "description": "Distribution Matching Distillation (DMD) trains a few-step student using the difference between a teacher's score and an online critic's estimate of the student distribution's score. We investigate what the critic needs, in capacity and in information, to provide a reliable training signal. On the capacity side, controlled experiments across seven SiT model sizes on ImageNet show that increasing teacher size while keeping a small critic fixed can degrade student quality and cause training collap",
+      "authors": [
+        "Zongze Wu",
+        "Xianbang Wang",
+        "Zhengyang Geng",
+        "Mingdeng Cao",
+        "Zhoutong Zhang"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.42135v1",
+      "published_at": "2026-10-30T17:58:26Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Instance-dependent sequential limits as an exact information ledger",
+      "title": "Instance-dependent sequential limits as an exact information ledger",
+      "url": "https://arxiv.org/abs/2610.42133v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42133v1",
+      "description": "Instance-dependent limits for bandit regret, sequential tests, best-arm identification and Markov decision processes are proved by one chain. It runs from a divergence decomposition through data processing to a statistic, a testing step that turns a class guarantee into a requirement on the history, and optimization over alternatives and allocations. Only the first step is an identity. This work writes the chain as an exact ledger. By the chain rule, data processing loses exactly a conditional d",
+      "authors": [
+        "Akshay Balsubramani"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.IT",
+        "math.ST",
+        "stat.ML"
+      ],
+      "arxiv_id": "2610.42133v1",
+      "published_at": "2026-10-30T17:57:44Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "DecisionRank: On-Policy Distillation for Decision-Model Rerankers",
+      "title": "DecisionRank: On-Policy Distillation for Decision-Model Rerankers",
+      "url": "https://arxiv.org/abs/2610.42128v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42128v1",
+      "description": "Decision models target structured tasks by directly predicting choices or scores, avoiding autoregressive decoding latency. However, transferring a generative LLM's ranking knowledge to a decision model remains challenging: the teacher expresses preferences through a ranked list of document ID sequences, while the student determines the ranking using scores from the first-token position. To bridge this gap, we introduce DecisionRank, a decision model trained through item-space on-policy distilla",
+      "authors": [
+        "Yanran Wu",
+        "Dian Yu",
+        "Chongyang Bai",
+        "Jieyi Zhang",
+        "Rui Liu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.42128v1",
+      "published_at": "2026-10-30T17:56:58Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Physiological Trajectories and Observation Patterns in ICU Mortality Prediction: Transportability Under Changing Measurement Conditions",
+      "title": "Physiological Trajectories and Observation Patterns in ICU Mortality Prediction: Transportability Under Changing Measurement Conditions",
+      "url": "https://arxiv.org/abs/2610.42126v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42126v1",
+      "description": "Objective: To distinguish the transferable predictive value of physiological trajectories from that of observation patterns in ICU mortality prediction, and to assess whether measurement timing affects performance independently of observation quantity. Materials and Methods: In-hospital mortality was predicted at 48 hours using MIMIC-III, MIMIC-IV, and eICU. Nested representations progressively integrated latest-value snapshots (R1), longitudinal physiological summaries (R2), and measurement fre",
+      "authors": [
+        "Benjamin T. Pike"
+      ],
+      "categories": [
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "arxiv_id": "2610.42126v1",
+      "published_at": "2026-10-30T17:56:10Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Gradient Descent on Two ReLU Neurons: Global Landscape and Bifurcation Dynamics",
+      "title": "Gradient Descent on Two ReLU Neurons: Global Landscape and Bifurcation Dynamics",
+      "url": "https://arxiv.org/abs/2610.42118v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42118v1",
+      "description": "Understanding how gradient descent learns features remains a central challenge in neural network theory. We study this question in a minimal multi-index setting that already exhibits rich multi-phase gradient dynamics: a well-specified two-neuron ReLU teacher-student model under isotropic Gaussian inputs, trained by population gradient flow from small initialization. We show that the dynamics are organized by two directions: the \"easy\" bisector direction, which carries the leading signal, and th",
+      "authors": [
+        "Binghua Li",
+        "Mengzhe Li",
+        "Denny Wu",
+        "Tianhao Wang"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_id": "2610.42118v1",
+      "published_at": "2026-10-30T17:51:35Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Fast Privacy Loss Accounting for Random Allocation via Multiscale FFT",
+      "title": "Fast Privacy Loss Accounting for Random Allocation via Multiscale FFT",
+      "url": "https://arxiv.org/abs/2610.42117v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42117v1",
+      "description": "In the random allocation sampling scheme each user's data is used in $k$ steps chosen randomly and uniformly from a sequence of $t$ steps. This scheme is known to improve on Poisson sampling in private optimization and in communication-efficient aggregation. The existing privacy loss distribution (PLD) accountant for this scheme runs in time quadratic in the inverse of the accuracy parameter $α$ (Feldman and Shenfeld, 2026). We give an algorithm, \\emph{multiscale FFT}, that represents likelihood",
+      "authors": [
+        "Vitaly Feldman",
+        "Moshe Shenfeld"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.42117v1",
+      "published_at": "2026-10-30T17:51:03Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ACCT: Asymmetric Cross-LLM Context Transfer",
+      "title": "ACCT: Asymmetric Cross-LLM Context Transfer",
+      "url": "https://arxiv.org/abs/2610.42116v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42116v1",
+      "description": "In real-world deployments, large language model (LLM) systems are increasingly evolving from single-model invocation toward heterogeneous deployments in which different models are dynamically invoked for inference. When the same context is reused across models, however, each newly selected target model typically has to process it again, repeatedly incurring substantial computational costs. Therefore, we propose ACCT (Asymmetric Cross-LLM Context Transfer), which targets KV cache transfer between",
+      "authors": [
+        "Yuzhe Liu",
+        "Haolin Tian",
+        "Tonghan Wang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.42116v1",
+      "published_at": "2026-10-30T17:50:49Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Subquadratic Attention with a Hierarchical Tree-Structured Indexer",
+      "title": "Subquadratic Attention with a Hierarchical Tree-Structured Indexer",
+      "url": "https://arxiv.org/abs/2610.42112v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42112v1",
+      "description": "The quadratic scaling of attention is a fundamental bottleneck limiting the long-context capabilities of large language models (LLMs). A variety of approaches have attempted to circumvent this, but they either fail to match attention's expressiveness (e.g., sliding-window or linear attention variants with fixed-size state) or only achieve constant-factor speedups (e.g., sparse attention methods whose indexers themselves scale quadratically). In this paper, we derive an asymptotically subquadrati",
+      "authors": [
+        "Leon Lufkin",
+        "Cutter Dawes",
+        "Alexander Speicher",
+        "Kamesh Krishnamurthy",
+        "Tomás Figliolia"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.42112v1",
+      "published_at": "2026-10-30T17:48:37Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "SATFRONT: Detecting Atmospheric Fronts with Satellite Data using Machine Learning",
+      "title": "SATFRONT: Detecting Atmospheric Fronts with Satellite Data using Machine Learning",
+      "url": "https://arxiv.org/abs/2610.42111v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42111v1",
+      "description": "Atmospheric fronts are associated with much of the high-impact weather in the mid-latitudes, yet their identification and classification remain largely manual and subjective. Existing deep learning approaches rely primarily on gridded reanalysis or forecast data, limiting their applicability to satellite observations available for time-critical applications. We introduce SATFRONT, a machine learning framework for detecting cold, warm, and occluded fronts over Europe from geostationary satellite ",
+      "authors": [
+        "Ioannis Dravilas",
+        "Miruna Stoicescu",
+        "Roope Tervo",
+        "Carlos Horn",
+        "Oriol Hinojo Comellas"
+      ],
+      "categories": [
+        "physics.ao-ph",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.42111v1",
+      "published_at": "2026-10-30T17:48:20Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Regret-Optimal Wasserstein-Robust Linear Regression",
+      "title": "Regret-Optimal Wasserstein-Robust Linear Regression",
+      "url": "https://arxiv.org/abs/2610.42109v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42109v1",
+      "description": "Distributionally robust optimization (DRO) minimizes worst-case risk under distributional uncertainty, but its decisions can be suboptimal in terms of their excess risk, or regret. We study this gap for multivariate least-squares regression, assuming that the observed source law and unknown target law differ by an adversarial 2-Wasserstein perturbation of size $\\varepsilon$. We first identify the asymptotic complexity of robust decision-making in the $\\varepsilon \\to 0$ limit, characterized by a",
+      "authors": [
+        "Sloan Nietert",
+        "Daniel Kuhn"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.OC"
+      ],
+      "arxiv_id": "2610.42109v1",
+      "published_at": "2026-10-30T17:47:58Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Hard Constraint Projection in a Physics Informed Neural Network (Burgers)",
+      "title": "Hard Constraint Projection in a Physics Informed Neural Network (Burgers)",
+      "url": "https://arxiv.org/abs/2610.42106v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42106v1",
+      "description": "Physics informed machine learning provides a framework to study and simulate fluid dynamics, potentially at a fraction of the computational cost of traditional numerical methods, with the goal of improving the explainability, accuracy and robustness of purely data driven machine learning methods. In this work, we extend the hard constraint projection (HCP) method developed by Chen et al. [Journal of Computational Physics, 445, 110624, 2021] from a linear partial differential equation (PDE) to a ",
+      "authors": [
+        "Miranda J S Horne",
+        "Peter K Jimack",
+        "Amirul Khan",
+        "He Wang"
+      ],
+      "categories": [
+        "physics.flu-dyn",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.42106v1",
+      "published_at": "2026-10-30T17:47:01Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Hyperbolic Inverse Reinforcement Learning",
+      "title": "Hyperbolic Inverse Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2610.42104v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42104v1",
+      "description": "Inverse reinforcement learning (IRL) seeks to infer the reward function underlying observed behavior, but its predictive accuracy and interpretability depend on how that reward is computed from the underlying features. While prior IRL reward functions have been implemented through a variety of techniques including linear weights, neural networks, or other function approximators, none make assumptions about the geometry of the underlying feature space. Inspired by geometric organization observed ",
+      "authors": [
+        "Iulia Rusu",
+        "Anoop Praturu",
+        "Sergei Gepshtein",
+        "Tatyana Sharpee"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.42104v1",
+      "published_at": "2026-10-30T17:46:04Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Towards Understanding the Impact of Plasticity Loss on Reinforcement Learning in Stochastic Environments",
+      "title": "Towards Understanding the Impact of Plasticity Loss on Reinforcement Learning in Stochastic Environments",
+      "url": "https://arxiv.org/abs/2610.42100v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42100v1",
+      "description": "Deep reinforcement learning (RL) is a powerful framework for sequential decision-making. Despite many high-profile successes in recent years, deep RL is known to be brittle. An emerging line of research attributes this brittleness to a loss of plasticity in neural networks. However, plasticity loss has so far been understudied in stochastic environments. We study this interplay systematically, training SAC agents on three DeepMind Control tasks augmented with controlled levels of observation and",
+      "authors": [
+        "Philipp Bordne",
+        "André Biedenkapp"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.42100v1",
+      "published_at": "2026-10-30T17:43:04Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "CausalWAM: Learning the Causes of Actions in World Action Models",
+      "title": "CausalWAM: Learning the Causes of Actions in World Action Models",
+      "url": "https://arxiv.org/abs/2610.42096v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42096v1",
+      "description": "World action models (WAMs) learn latent variables from observations and use these to both predict the evolution of the scene and to generate actions. The prediction has to be of the whole scene, whereas only a portion of the scene causes actions. WAMs fitted to demonstrations do not, in general, guarantee that they will generate actions solely from the latent causes of the demonstrated actions (the action-relevant latent variables), as the model could just as well learn to imitate in this way wh",
+      "authors": [
+        "Juntao Cheng",
+        "Jinzhou Tang",
+        "Fan Feng",
+        "Henrik I. Christensen",
+        "Yujia Zheng"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.RO",
+        "stat.ML"
+      ],
+      "arxiv_id": "2610.42096v1",
+      "published_at": "2026-10-30T17:40:00Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Cost-Aware Stopping for Freeze-Thaw Bayesian Optimization: When Does One-Step Lookahead Suffice?",
+      "title": "Cost-Aware Stopping for Freeze-Thaw Bayesian Optimization: When Does One-Step Lookahead Suffice?",
+      "url": "https://arxiv.org/abs/2610.42085v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42085v1",
+      "description": "Freeze-thaw Bayesian optimization (BO) evaluates candidates in resumable increments but usually stops at a budget or convergence test. We maximize a budget-free utility, the best observed score minus a cost per increment, with a one-step lookahead: advance the candidate with the largest expected improvement (EI) under a fixed surrogate, and stop once no EI exceeds the cost. This rule, EI stopping, never falls below stopping immediately in expected utility, yet it can stop too early. We construct",
+      "authors": [
+        "Long Vu",
+        "Jongseong Brad Choi",
+        "Binoy Ravindran",
+        "Zhoulai Fu"
+      ],
+      "categories": [
+        "cs.LG",
+        "math.OC",
+        "stat.ML"
+      ],
+      "arxiv_id": "2610.42085v1",
+      "published_at": "2026-10-30T17:36:06Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "RangeSWA: Training-Free Length Extrapolation for Continuous Diffusion Language Models",
+      "title": "RangeSWA: Training-Free Length Extrapolation for Continuous Diffusion Language Models",
+      "url": "https://arxiv.org/abs/2610.42084v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42084v1",
+      "description": "Continuous diffusion language models show promising potential in text generation tasks, but are prone to problems such as text repetition, semantic drift, and generation quality degradation when the generation length exceeds the training length. To address these challenges, we propose RangeSWA, a training-free length extrapolation method. The method combines local sliding-window attention, remote block summaries, and dynamic content retrieval to preserve local details and support long-range cont",
+      "authors": [
+        "Guangfu Guo",
+        "Xiaoqian Lu",
+        "Linsey Pang",
+        "Weiran Yao",
+        "Haolin Chen"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.42084v1",
+      "published_at": "2026-10-30T17:35:48Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Differentially Private Synthetic Data from Sliced Chebyshev Moments",
+      "title": "Differentially Private Synthetic Data from Sliced Chebyshev Moments",
+      "url": "https://arxiv.org/abs/2610.42081v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42081v1",
+      "description": "Research on practical differentially private (DP) synthetic data has largely focused on methods that approximately preserve low-dimensional marginals of a target distribution, and can thus only hope to preserve higher-dimensional, global structure as a lucky by-product. At the same time, existing methods that target global accuracy guarantees pay a price exponential in the data dimension, $d$. In this work, we address this ``curse of dimensionality'' by presenting a new DP synthetic data algorit",
+      "authors": [
+        "Lucas Rosenblatt",
+        "R. Teal Witter",
+        "Christopher Musco"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CY",
+        "cs.DS"
+      ],
+      "arxiv_id": "2610.42081v1",
+      "published_at": "2026-10-30T17:34:58Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "RAMA: Retrieval-Augmented Multi-Agent Routing with Episodic Memory for LEO Satellite Networks",
+      "title": "RAMA: Retrieval-Augmented Multi-Agent Routing with Episodic Memory for LEO Satellite Networks",
+      "url": "https://arxiv.org/abs/2610.42068v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42068v1",
+      "description": "Low-Earth orbit (LEO) satellite networks present a challenging routing environment due to rapidly changing topology, traffic, and link conditions. Existing deep reinforcement learning (DRL) routing methods typically rely on current observations and information encoded in network weights, limiting their ability to exploit successful past experiences. We propose RAMA, a retrieval-augmented multi-agent DRL framework with Approximate Information State (AIS), in which each satellite combines its loca",
+      "authors": [
+        "Xin Ming Li",
+        "Peng Hu"
+      ],
+      "categories": [
+        "cs.NI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.42068v1",
+      "published_at": "2026-10-30T17:26:50Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "The Knowledge Layer Model (KLM): Evidence-Visible AI Output, Routing Diagnostics, and Negative Results",
+      "title": "The Knowledge Layer Model (KLM): Evidence-Visible AI Output, Routing Diagnostics, and Negative Results",
+      "url": "https://arxiv.org/abs/2610.42066v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42066v1",
+      "description": "AI answers require more than apparent correctness: reviewers need to inspect their recorded basis. We introduce the Knowledge Layer Model (KLM), an open, implementation-neutral specification for inference records with versioned epistemic assessments, evidence relations, and explicit unknowns. SEDIM, the knowledge and evidence architecture of Nage AI OS, is a reference implementation. We reference KLM v0.3 (repository tag v0.3.0). Empirical material consists of separate internal experiments, not ",
+      "authors": [
+        "Omer Asim Ozturk",
+        "Cihan Aydiner"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.42066v1",
+      "published_at": "2026-10-30T17:26:18Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "PersonaChatBench: Evaluating Chat Assistants with Diverse Simulated Users",
+      "title": "PersonaChatBench: Evaluating Chat Assistants with Diverse Simulated Users",
+      "url": "https://arxiv.org/abs/2610.42060v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42060v1",
+      "description": "Conversational assistants are expected to help people with diverse backgrounds, preferences, and communication styles. Yet evaluations centered on a single cooperative user provide limited insight into how reliably an assistant serves users with different personas. We introduce PersonaChatBench, a framework for evaluating task competence and responsiveness to diverse user needs. PersonaChatBench pairs the same underlying task with multiple simulated users, each guided by a private persona card t",
+      "authors": [
+        "Zheyuan Deng",
+        "Taoran Li",
+        "Jingwen Zhang",
+        "Yuante Li",
+        "Dachuan Zhao"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2610.42060v1",
+      "published_at": "2026-10-30T17:23:14Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "CRoS: Causality Reward on Scrambled CoTs Improves Accuracy and Reasoning Faithfulness",
+      "title": "CRoS: Causality Reward on Scrambled CoTs Improves Accuracy and Reasoning Faithfulness",
+      "url": "https://arxiv.org/abs/2610.42054v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42054v1",
+      "description": "Reinforcement learning with verifiable rewards (RLVR) has become the standard method for training language models to reason. However, RLVR typically relies solely on outcome correctness, which does not guarantee that the CoT causally contributes to the final answer. Without this connection, outcome rewards may fail to reinforce high-quality reasoning. Existing causality metrics assess CoT causality by perturbing the CoT, such as deleting reasoning steps or injecting errors, and measuring changes",
+      "authors": [
+        "Xiao Yu",
+        "Justin Chih-Yao Chen",
+        "Zaid Khan",
+        "Hyunji Lee",
+        "Mohit Bansal"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2610.42054v1",
+      "published_at": "2026-10-30T17:18:35Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Exact Theory and Optimal Stepsizes for Stochastic Gradient Descent in Smooth Convex Minimization",
+      "title": "Exact Theory and Optimal Stepsizes for Stochastic Gradient Descent in Smooth Convex Minimization",
+      "url": "https://arxiv.org/abs/2610.42048v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42048v1",
+      "description": "This work considers the design of stepsize schedules for stochastic gradient descent in smooth convex optimization. Throughout, we assume that gradient noise is conditionally zero-mean with bounded variance. Among problems with dimension $d\\geq N+1$, we provide an exact worst-case analysis of the expected suboptimality of stochastic gradient descent's final iterate. Our analysis applies to any (potentially nonconstant) schedule of $N$ stepsizes in $[0,1.5]^N$. Here, exact means that we provide a",
+      "authors": [
+        "Benjamin Grimmer",
+        "Qining Shen"
+      ],
+      "categories": [
+        "math.OC",
+        "cs.LG"
+      ],
+      "arxiv_id": "2610.42048v1",
+      "published_at": "2026-10-30T17:14:59Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "A richness-sensitive Acoustic Biodiversity Index from species-level detections: classifier benchmarking, false-positive control and validation against standard soundscape indices in an African savanna and an urban zoo",
+      "title": "A richness-sensitive Acoustic Biodiversity Index from species-level detections: classifier benchmarking, false-positive control and validation against standard soundscape indices in an African savanna and an urban zoo",
+      "url": "https://arxiv.org/abs/2610.42042v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42042v1",
+      "description": "Acoustic indices are widely used as rapid proxies for biodiversity, but they summarise the distribution of sound energy rather than the species producing it and often track richness poorly. We revise and test an Acoustic Biodiversity Index (ABI) built from species-level detections. Its primary form, ABI_E, is Shannon diversity of detections normalised by the regional species pool expected at the site and season (H / ln S_ref); temporal stability T is reported as a separate component. We first be",
+      "authors": [
+        "Muhammad Saeed",
+        "Dmitry Mikhaylov",
+        "Mohamed H. Alhosani",
+        "Yasser F. Al Wahedi",
+        "Rory Pilossof"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.SD",
+        "q-bio.QM"
+      ],
+      "arxiv_id": "2610.42042v1",
+      "published_at": "2026-10-30T17:05:52Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Near-Optimal Second-Order Convex Finite-Sum Optimization under Individual Smoothness",
+      "title": "Near-Optimal Second-Order Convex Finite-Sum Optimization under Individual Smoothness",
+      "url": "https://arxiv.org/abs/2610.42040v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.42040v1",
+      "description": "We study the stochastic second-order oracle complexity of solving smooth convex finite-sum optimization with $n$ components. Very recently, Tsedenov \\& Kovalev (2026) showed that the minimax optimal complexity under averaged smoothness and convexity is $\\tildeΘ(n + n^{6/7} ε^{-2/7})$ by establishing nearly matching upper and lower bounds. In this paper, we show that individual smoothness and convexity provably enable further acceleration, where the lower complexity bound is $Ω(n+ n^{5/7} ε^{-2/7",
+      "authors": [
+        "Xinliang Zhang",
+        "Lesi Chen",
+        "Zonghan Li",
+        "Jingzhao Zhang"
+      ],
+      "categories": [
+        "math.OC",
+        "cs.AI",
+        "stat.ML"
+      ],
+      "arxiv_id": "2610.42040v1",
+      "published_at": "2026-10-30T17:04:25Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
