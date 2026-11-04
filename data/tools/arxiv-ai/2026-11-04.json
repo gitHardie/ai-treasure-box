@@ -1,0 +1,692 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-11-04T23:01:45.693793+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "DreamX: Video Diffusion Model is a Universal Latent Action Learner",
+      "title": "DreamX: Video Diffusion Model is a Universal Latent Action Learner",
+      "url": "https://arxiv.org/abs/2611.05377v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05377v1",
+      "description": "Learning a universal action representation from video requires modeling dynamics that are consistent across different executions of the same action yet invariant to changes in embodiment and appearance. Existing latent action models infer actions from visual transitions, but their representations often entangle the underlying action with irrelevant visual variations, limiting transfer across embodiments. We introduce DreamX, which repurposes a pretrained video diffusion model as a universal late",
+      "authors": [
+        "Jisoo Kim",
+        "Chaehyun Kim",
+        "Junsu Kim",
+        "Jiho Park",
+        "Seongchan Kim"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "arxiv_id": "2611.05377v1",
+      "published_at": "2026-11-03T18:59:56Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
+      "title": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
+      "url": "https://arxiv.org/abs/2611.05376v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05376v1",
+      "description": "For a decade, progress in artificial intelligence has been measured by how much a machine can do on its own. Large foundation models now write code and run multistep tasks, and personal agents act on a person's behalf. Yet people still forget what they once knew, miss what they are not looking at, fail to find the right words, and face hard choices without the benefit of their own history, because the machine that could help stands outside the situation. As AI moves into the physical world, atte",
+      "authors": [
+        "Hao Fei"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.05376v1",
+      "published_at": "2026-11-03T18:59:52Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Aligning Language Models with General Preferences: An Empirical Study of Direct Nash Optimization",
+      "title": "Aligning Language Models with General Preferences: An Empirical Study of Direct Nash Optimization",
+      "url": "https://arxiv.org/abs/2611.05373v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05373v1",
+      "description": "Direct Nash Optimization (DNO) aligns a language model to a general preference function by approximating the Nash equilibrium of a two-player preference game. Its practical variant, DNO-Prct, iterates on-policy sampling, LLM-based rating of the samples together with a teacher's gold response, large-margin preference-pair selection and a DPO-style contrastive update. We re-implement DNO-Prct independently and study it on two open-weight instruct models, Llama 3.1 8B Instruct and Mistral 7B Instru",
+      "authors": [
+        "Austin Tsai",
+        "Saurav Nanda",
+        "Ganapathy Parthasarathy",
+        "Bhuvnesh Kumar",
+        "Parivesh Choudhary"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2611.05373v1",
+      "published_at": "2026-11-03T18:59:15Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning",
+      "title": "PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2611.05372v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05372v1",
+      "description": "Inverse kinematics (IK) converts end-effector pose commands into joint motion, and many vision-language-action (VLA) policies rely on it to act on a given arm and to transfer across embodiments. Precise IK remains laborious: redundancy and singularities complicate the inverse mapping, execution depends on hand-tuned controllers, and training data on physical robots are costly to collect. We present PolicyIK, a goal-conditioned reinforcement learning policy for high-precision IK. It updates joint",
+      "authors": [
+        "Yuhan Liu",
+        "Xinqi Liu",
+        "Zixuan Dong",
+        "Keith W. Ross",
+        "Shenji Wan"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.05372v1",
+      "published_at": "2026-11-03T18:59:14Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "GUILD: Guided Iterative Data Collection for Imitation Learning",
+      "title": "GUILD: Guided Iterative Data Collection for Imitation Learning",
+      "url": "https://arxiv.org/abs/2611.05368v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05368v1",
+      "description": "Imitation learning policies in robotics are trained on datasets collected through costly real-world teleoperation. Often, the data-collection process is unguided, relying on the teleoperator's intuition, resulting in data that contributes little to overall policy performance. Recent work has shown that curating such unguided datasets can substantially improve policy performance, but these approaches operate by filtering existing datasets after collection and therefore do not prevent the acquisit",
+      "authors": [
+        "Shivin Dass",
+        "Kevin Nguyen",
+        "Rohan Yelandur",
+        "Junhong Xu",
+        "Roberto Martín-Martín"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.05368v1",
+      "published_at": "2026-11-03T18:57:35Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Suppressing Misaligned Behaviors in Language Models, Durably",
+      "title": "Suppressing Misaligned Behaviors in Language Models, Durably",
+      "url": "https://arxiv.org/abs/2611.05358v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05358v1",
+      "description": "Undesired model behaviors can emerge or re-emerge at any stage of training. Once observed, how effectively can we suppress them? To study this question, we first construct two model organisms--language models deliberately trained to exhibit a specific misalignment--that differ in what triggers the behavior. The narrow-trigger organism misbehaves only when the prompt contains a specific cue: it cheats on multiple-choice questions by following a planted hint that points to a wrong answer, and beha",
+      "authors": [
+        "Luxi He",
+        "Pengcheng Jiang",
+        "Jifan Zhang",
+        "Jiawei Han",
+        "Danqi Chen"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.05358v1",
+      "published_at": "2026-11-03T18:54:08Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Reading Why: Born-Measured Attention with Exact Word Evidence on Light and Qubits",
+      "title": "Reading Why: Born-Measured Attention with Exact Word Evidence on Light and Qubits",
+      "url": "https://arxiv.org/abs/2611.05355v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05355v1",
+      "description": "When a language model answers, we can usually only estimate why. We build a transformer in which every step is a Born measurement - attention $|\\langle q|k\\rangle|^4$ normalised over each row, a measured product in place of the feed-forward nonlinearity, and a Born readout. With its denominators held at their values for the input, each class probability is a polynomial in the word amplitudes, so its integrated-gradient evidence is computed by a finite quadrature with no quadrature error: the wor",
+      "authors": [
+        "Teerawat Tongloy",
+        "Jiraporn Pongsopa",
+        "Rangsan Jomtarak"
+      ],
+      "categories": [
+        "quant-ph",
+        "cs.CL",
+        "cs.LG",
+        "physics.optics"
+      ],
+      "arxiv_id": "2611.05355v1",
+      "published_at": "2026-11-03T18:52:44Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Agnostic Learning by Imitating",
+      "title": "Agnostic Learning by Imitating",
+      "url": "https://arxiv.org/abs/2611.05346v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05346v1",
+      "description": "Given a class of machine learning models and sample access to a data distribution with binary labels, which computational task is harder: training a discriminative model that distinguishes positive and negative labels as well as the best member of the class, or training a generative model whose outputs are indistinguishable from real data by all members of the class? We prove that these two fundamental tasks in computational learning theory are not just closely related, but actually equivalent t",
+      "authors": [
+        "Sílvia Casacuberta",
+        "Parikshit Gopalan",
+        "Varun Kanade",
+        "Omer Reingold",
+        "Konstantinos Stavropoulos"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CC",
+        "cs.DS"
+      ],
+      "arxiv_id": "2611.05346v1",
+      "published_at": "2026-11-03T18:45:38Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+      "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+      "url": "https://arxiv.org/abs/2611.05345v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05345v1",
+      "description": "Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solely on acceptance rate. We argue that this view does not hold true for long-horizon agent reasoning. Measuring frontier open-weight models on complex agentic tasks with different speculative decoding approaches, we found that numerical noise grows within verific",
+      "authors": [
+        "Hongyin Luo",
+        "Wei Fang",
+        "Lijie Yang",
+        "Owen Stepan",
+        "Daniel Suit"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.05345v1",
+      "published_at": "2026-11-03T18:45:23Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "A Circuit for In-Context Learning",
+      "title": "A Circuit for In-Context Learning",
+      "url": "https://arxiv.org/abs/2611.05344v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05344v1",
+      "description": "In-context learning (ICL) lets a pretrained language model perform a task specified by demonstrations in its prompt, with no parameter updates. With arbitrary labels the model must acquire a mapping it cannot have memorized, so the learning happens within a single forward pass. Prior work found candidate parts but not how they compose. We give the composition for few-shot sentence classification with arbitrary labels in three 3-4B-parameter transformers. The model implements a key-value memory o",
+      "authors": [
+        "Andrew Gao",
+        "William Gao"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.05344v1",
+      "published_at": "2026-11-03T18:44:34Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Weight-space programming for auditing clinical decision networks",
+      "title": "Weight-space programming for auditing clinical decision networks",
+      "url": "https://arxiv.org/abs/2611.05341v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05341v1",
+      "description": "Machine learning models in radiotherapy are commissioned by testing them on cases with known answers, which may not reveal a shortcut that the test cases share with the training data. Frontier language models have recently been reported to read and write the raw weights of small neural networks, an ability called weight-space programming. The purpose of this study was to determine whether such a model, given only a clinical protocol and a network's weights, can audit and repair the network. Netw",
+      "authors": [
+        "Humza Nusrat",
+        "Omar Nusrat"
+      ],
+      "categories": [
+        "physics.med-ph",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.05341v1",
+      "published_at": "2026-11-03T18:41:15Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "MedPhysBench: A Benchmark for Evaluating Language Models on Medical Physics Calculations and Error Detection",
+      "title": "MedPhysBench: A Benchmark for Evaluating Language Models on Medical Physics Calculations and Error Detection",
+      "url": "https://arxiv.org/abs/2611.05340v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05340v1",
+      "description": "Medical physicists turn a prescription into a delivered dose and check one another's calculations, because one error in a beam calibration or a monitor-unit (MU) calculation can affect every patient treated with it. MedPhysBench has ten seeded generators of calculation items in radiation therapy, diagnostic imaging, nuclear medicine and radiation protection, up to clinical tasks such as a TG-51 calibration worksheet. Reference answers come from code implementing the governing protocols, and a gr",
+      "authors": [
+        "Omar Nusrat"
+      ],
+      "categories": [
+        "physics.med-ph",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2611.05340v1",
+      "published_at": "2026-11-03T18:40:35Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "A simple adaptive accelerated optimistic dual averaging method for unconstrained convex optimization in $p$-norm geometry",
+      "title": "A simple adaptive accelerated optimistic dual averaging method for unconstrained convex optimization in $p$-norm geometry",
+      "url": "https://arxiv.org/abs/2611.05334v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05334v1",
+      "description": "Efficient preconditioning plays an important role in large-scale first-order optimization. In this paper, we propose an adaptive accelerated optimistic dual averaging ($\\text{A}^2$ODA) method for unconstrained convex optimization that adopts low-cost preconditioning based on $p$-norm geometry for $p\\in[2,\\infty]$. The method is line-search-free and employs a new stepsize selection technique based on an aggregated affine lower model. Its update structure is simple and unified across $p\\in[2,\\inft",
+      "authors": [
+        "Bowen Li",
+        "Danqing Zhou",
+        "Chuan He"
+      ],
+      "categories": [
+        "math.OC",
+        "cs.AI",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_id": "2611.05334v1",
+      "published_at": "2026-11-03T18:35:20Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "CATF: A Manager-Worker Framework for Context-Aware Time-Series Forecasting",
+      "title": "CATF: A Manager-Worker Framework for Context-Aware Time-Series Forecasting",
+      "url": "https://arxiv.org/abs/2611.05325v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05325v1",
+      "description": "We study context-aware time-series forecasting, in which a single target variable is predicted from its own history and a set of contextual variables, such as weather and calendar information. As the context becomes more diverse, a single model struggles to capture all of its regimes, while ensemble learning and Mixture-of-Experts approaches rely on manual data partitioning or soft routing, which increases the inference cost and hinders interpretability. We propose CATF, a Context-Aware Time-Ser",
+      "authors": [
+        "Yueqiao Chen",
+        "Dongyu Liu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.05325v1",
+      "published_at": "2026-11-03T18:28:04Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data",
+      "title": "PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data",
+      "url": "https://arxiv.org/abs/2611.05320v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05320v1",
+      "description": "Teleoperation remains the default way to collect robot demonstrations, but every episode costs robot and operator time, and every new task starts from scratch. We ask whether a coding agent can take over the teleoperator's job. In our DataFarm, the agent receives a data request and one calibration episode of the robot in the target scene and rebuilds the task in simulation: it writes the scene, an expert controller, and a success judge. The simulator supplies exact actions, and a video model con",
+      "authors": [
+        "Kewei Zhang",
+        "Juncheng Ma",
+        "Guodong Lv",
+        "Duomin Wang",
+        "Feixiang Ruan"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.05320v1",
+      "published_at": "2026-11-03T18:25:14Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation",
+      "title": "HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation",
+      "url": "https://arxiv.org/abs/2611.05319v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05319v1",
+      "description": "In LLM-based recommendation, memory acts as a user-level agent in a memory-augmented backbone. Yet users and items remain asymmetric: only the user is given a structured profile; it enters a bandwidth-limited reranker prompt; and it is frozen after warmup. We recast LLM-based recommendation as an agentic-communication process in four stages: BUILD a self-description, TRANSMIT it along the collaborative graph, UNDERSTAND the other side, and SYNC it from the next interaction. This formulation reve",
+      "authors": [
+        "Zhen Tao",
+        "Xun Zhou",
+        "Xuhui Chen",
+        "Ziyue Qiao",
+        "Qingqiang Sun"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.05319v1",
+      "published_at": "2026-11-03T18:24:20Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "MDSKILL: Learning to Internalize Skill Memory through Multi-View Distillation for Efficient Dynamic Agent Self-Evolution",
+      "title": "MDSKILL: Learning to Internalize Skill Memory through Multi-View Distillation for Efficient Dynamic Agent Self-Evolution",
+      "url": "https://arxiv.org/abs/2611.05313v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05313v1",
+      "description": "Skill memories encode past experiences as textual prompts to improve reinforcement learning (RL) for self-evolving agents. Complementing RL, On-Policy Self-Distillation (OPSD) provides dense, fine-grained supervision to internalize knowledge from skill-guided trajectories and accelerate policy learning. However, self-generated memories often contain noisy supervision and functionally entangled, redundant, or conflicting knowledge, making direct distillation difficult. Under limited training budg",
+      "authors": [
+        "Dian Jin",
+        "Jinluan Yang",
+        "Kairong Han",
+        "Baohong Li",
+        "Zijing Hu"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2611.05313v1",
+      "published_at": "2026-11-03T18:19:55Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "$Φ$asmaNet: A Staged Spectral Token-Refinement Architecture for Fast Gravitational-Wave Signal-to-Noise Ratio Prediction",
+      "title": "$Φ$asmaNet: A Staged Spectral Token-Refinement Architecture for Fast Gravitational-Wave Signal-to-Noise Ratio Prediction",
+      "url": "https://arxiv.org/abs/2611.05309v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05309v1",
+      "description": "Quantifying selection effects in gravitational-wave population studies requires millions of costly signal-to-noise ratio (SNR) calculations. We present $Φ$asmaNet, a compact neural architecture for structured tabular regression, with staged spectral refinement as an explicit architectural prior. Learned input tokens are refined through ordered attention-based $Φ$-Stages, each augmented by a $Φ$-Refractor subspace-mixing module, then revisited through gated top-down $Φ$-Feedback. Applied to the 1",
+      "authors": [
+        "Ioannis Tsioulis",
+        "Anastasios Tefas",
+        "Nikolaos Stergioulas"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.05309v1",
+      "published_at": "2026-11-03T18:19:11Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "You don't need long context",
+      "title": "You don't need long context",
+      "url": "https://arxiv.org/abs/2611.05306v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05306v1",
+      "description": "Later tokens are costlier to generate than earlier tokens. On frontier open weight models, the disparity in cost may rise to as much as 7x. Through frequent compaction, we show across a broad range of long-horizon and long-input tasks that frontier language models sacrifice little to no task accuracy when maintaining short contexts. We further demonstrate that LLM performance does not collapse on long-horizon software engineering tasks even when taking at most one action per context, and based o",
+      "authors": [
+        "Peter Belcak",
+        "Saurav Muralidharan",
+        "Jindong Jiang",
+        "Yonggan Fu",
+        "Wonmin Byeon"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.05306v1",
+      "published_at": "2026-11-03T18:17:23Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "LoopVQ: Sub 1-bit KV Cache Quantization for Looped Transformers",
+      "title": "LoopVQ: Sub 1-bit KV Cache Quantization for Looped Transformers",
+      "url": "https://arxiv.org/abs/2611.05304v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05304v1",
+      "description": "Looped transformers are a parameter-efficient alternative to standard transformers for language modeling. By reapplying the same layers across multiple loop steps, recent looped language models match the performance of non-looped models several times their size. While this architecture effectively reduces parameter memory, each loop step still stores its own keys and values, so the key-value (KV) cache grows linearly with the number of loop steps and becomes the main memory bottleneck. We observ",
+      "authors": [
+        "Minsoo Cheong",
+        "Sungjoo Yoo"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2611.05304v1",
+      "published_at": "2026-11-03T18:16:29Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Universal Hardness From Masking Channels",
+      "title": "Universal Hardness From Masking Channels",
+      "url": "https://arxiv.org/abs/2611.05296v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05296v1",
+      "description": "We prove a broad learning-theoretic generalization of the celebrated hardcore lemma concerning the average-case complexity of computing a Boolean function (Impagliazzo, 1995). Our starting point is the observation that the classic notion of a hardcore measure, which reweights a function's input distribution, is equivalent to an input-dependent masking channel that injects randomness into the function's output distribution until it appears fully pseudorandom. The analogue of density of the measur",
+      "authors": [
+        "Parikshit Gopalan",
+        "Manoj Prabhakaran",
+        "Pranay Tankala"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CC"
+      ],
+      "arxiv_id": "2611.05296v1",
+      "published_at": "2026-11-03T18:08:38Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "GSBR: Geometric Support Behavior Regularization for Online RL",
+      "title": "GSBR: Geometric Support Behavior Regularization for Online RL",
+      "url": "https://arxiv.org/abs/2611.05295v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05295v1",
+      "description": "Regularizing online reinforcement learning (RL) toward a pretrained base policy can improve sample efficiency and learning stability, but regularization that is too restrictive limits how much the policy can improve. Base policies -- typically diffusion or flow-matching models trained by imitation learning on large, diverse datasets -- capture many behaviors that are reasonable but suboptimal. Existing regularizers using such base policies are too restrictive in one of two ways: behavioral cloni",
+      "authors": [
+        "Charles Xu",
+        "Jacob Berg",
+        "Liyiming Ke",
+        "Sergey Levine"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.05295v1",
+      "published_at": "2026-11-03T18:08:32Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Personas Are Not People: Identity as State, Not Attribute",
+      "title": "Personas Are Not People: Identity as State, Not Attribute",
+      "url": "https://arxiv.org/abs/2611.05292v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05292v1",
+      "description": "Synthetic populations, large sets of simulated people, are increasingly used in place of real people to pretest surveys, simulate users and communities, and evaluate AI systems. Each simulated person is defined by a persona, a written profile of fixed traits, demographics, and attitudes that a language model is instructed to act out. Every such system assumes that a person's identity is a stable attribute that behaves the same way in every situation the simulation presents. We show that this ass",
+      "authors": [
+        "Tamunotonye Harry",
+        "Yuanyuan Feng"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "arxiv_id": "2611.05292v1",
+      "published_at": "2026-11-03T18:07:27Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "False Reassurance in LLM Severe-Weather Guidance: A Replayable Evaluation Against Real NWS Alerts",
+      "title": "False Reassurance in LLM Severe-Weather Guidance: A Replayable Evaluation Against Real NWS Alerts",
+      "url": "https://arxiv.org/abs/2611.05290v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05290v1",
+      "description": "An LLM assistant that cannot see official severe-weather alerts may tell users that conditions are calm while a warning is active. We call this false reassurance and measure it by replaying 117 frozen cases built from real U.S. National Weather Service (NWS) alerts (69 alert cases, 32 no-alert controls, 16 non-U.S. locations) through five conditions of a Claude-based preparedness pipeline that differ in alert access and prompt design. One rater hand-labeled all 342 alert-case responses under a s",
+      "authors": [
+        "Kadharmoideen Fadurudeen"
+      ],
+      "categories": [
+        "cs.HC",
+        "cs.AI",
+        "cs.CY"
+      ],
+      "arxiv_id": "2611.05290v1",
+      "published_at": "2026-11-03T18:04:53Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Knowingly Wrong: Training LLMs Against Their Own Beliefs can Induce Misalignment",
+      "title": "Knowingly Wrong: Training LLMs Against Their Own Beliefs can Induce Misalignment",
+      "url": "https://arxiv.org/abs/2611.05287v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05287v1",
+      "description": "Fine-tuning a large language model (LLM) on harmful data in a narrow domain, such as bad medical advice, can make it broadly misaligned. How realistic this risk is remains unclear, since models are very rarely fine-tuned on explicitly harmful data in practice. In this work, we show that fine-tuning on data the model believes to be false but that has no harmful content, can also induce broad misalignment. Across mathematics, trivia, cooking and sports, the more strongly the model disbelieves the ",
+      "authors": [
+        "Ariana M. Villegas-Suarez",
+        "Guido Freire",
+        "Sohan Venkatesh",
+        "Bartosz Cywiński"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.05287v1",
+      "published_at": "2026-11-03T18:02:21Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Beyond Accuracy: What Language-Subspace Interventions Capture, Remove, and Improve",
+      "title": "Beyond Accuracy: What Language-Subspace Interventions Capture, Remove, and Improve",
+      "url": "https://arxiv.org/abs/2611.05278v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05278v1",
+      "description": "Language-subspace interventions aim to improve multilingual reasoning by suppressing language-related components in mid-layer activations. Using MATH and MGSM across four open-weight LLMs, we ask three questions: do estimated language subspaces capture translation-associated variation? Does projecting them out remove language information? And do they improve accuracy without compromising response language? For the first question, we build subspaces using the existing Mean-SVD construction and ou",
+      "authors": [
+        "Shaanil Punglia",
+        "Dadhichi Telwadkar",
+        "Vaibhav Rathore",
+        "Siddharth Sureka",
+        "Neha Bhargava"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.05278v1",
+      "published_at": "2026-11-03T17:58:52Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Conformal Prediction at Performative Equilibrium: The Price of Performativity",
+      "title": "Conformal Prediction at Performative Equilibrium: The Price of Performativity",
+      "url": "https://arxiv.org/abs/2611.05277v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05277v1",
+      "description": "Conformal prediction gives finite-sample coverage when calibration and test points are exchangeable, but exchangeability can fail when deployment changes the data distribution. We study conformal prediction in performative settings, where the deployed predictor affects the data distribution, and seek prediction sets valid at performative equilibrium: coverage must hold under $D(f^\\star)$ for a performatively stable predictor $f^\\star$. Under total-variation $L$-sensitivity of the distribution ma",
+      "authors": [
+        "Ahmed Mahrous",
+        "Roberto Di Pietro"
+      ],
+      "categories": [
+        "math.ST",
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.05277v1",
+      "published_at": "2026-11-03T17:58:03Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "De Rham cohomological architectures for PINNs and PDEs with topological holes",
+      "title": "De Rham cohomological architectures for PINNs and PDEs with topological holes",
+      "url": "https://arxiv.org/abs/2611.05276v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05276v1",
+      "description": "We attempt to alleviate failure modes of classical physics-informed neural networks (PINNs) in scenarios of topological pathologies corresponding to punctures, holes, poles, and voids by introducing de Rham cohomological augmentations, or Hodge-de Rham PINNs. Vanilla PINNs often encounter pitfalls in hole-based settings due to discontinuous interfaces, nonzero closed path integration, path dependence, correspondence to exact forms via the exterior derivative, etc., therefore we absolve tradition",
+      "authors": [
+        "Andrew Gracyk"
+      ],
+      "categories": [
+        "cs.LG",
+        "math.NA"
+      ],
+      "arxiv_id": "2611.05276v1",
+      "published_at": "2026-11-03T17:57:15Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "The Geometry of Ignorance: Detecting Suppressed Knowledge in LLMs through Activation Fragmentation",
+      "title": "The Geometry of Ignorance: Detecting Suppressed Knowledge in LLMs through Activation Fragmentation",
+      "url": "https://arxiv.org/abs/2611.05272v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05272v1",
+      "description": "Evaluating whether a large language model (LLM) genuinely knows a concept remains a fundamental problem, since behavioral metrics can be fooled by suppression: a model that refuses to answer may still harbor recoverable knowledge. The framework measures the geometric coherence of \\textit{anon-vectors}, the differences in hidden states between a concept-specific query and its anonymized paraphrase, and shows that genuine knowledge forms a tight, low-entropy cluster while ignorance forces geometri",
+      "authors": [
+        "Adar Peleg",
+        "Dvir Alsheich",
+        "Tomer Ashuach",
+        "Avi Mendelson"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.05272v1",
+      "published_at": "2026-11-03T17:55:57Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "iGC: Antibody Optimization via Reinforcement Learning over a Learned Somatic Hypermutation Prior",
+      "title": "iGC: Antibody Optimization via Reinforcement Learning over a Learned Somatic Hypermutation Prior",
+      "url": "https://arxiv.org/abs/2611.05270v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.05270v1",
+      "description": "Antibody affinity maturation is a natural optimization process in which B cells acquire mutations through somatic hypermutation (SHM), undergo selection for improved antigen binding, and iteratively evolve toward higher affinity. Computationally modeling this process requires capturing both biologically plausible mutations and antigen-specific selection. However, existing mutation models do not directly optimize binding, while affinity optimization often neglects realistic mutation trajectories.",
+      "authors": [
+        "Thao Nguyen",
+        "Robert G. Alberstein",
+        "Ewa Nowara",
+        "Homa MohammadiPeyhani",
+        "Holly R. Steach"
+      ],
+      "categories": [
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "arxiv_id": "2611.05270v1",
+      "published_at": "2026-11-03T17:55:25Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
