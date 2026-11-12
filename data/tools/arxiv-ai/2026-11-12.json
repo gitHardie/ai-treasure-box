@@ -1,0 +1,688 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-11-12T23:01:15.146146+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "Medical Image Segmentation: Foundation Model Adaptation versus Task-Specific Training",
+      "title": "Medical Image Segmentation: Foundation Model Adaptation versus Task-Specific Training",
+      "url": "https://arxiv.org/abs/2611.14519v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14519v1",
+      "description": "Foundation models pretrained on large natural-image collections are increasingly adapted for medical image segmentation, in the expectation that they will replace models trained for each task. Most comparisons, however, use data from the training distribution and a single task-specific baseline whose configuration is rarely justified, and therefore provide limited evidence of performance at new clinical sites. It also remains unclear how much of a foundation model must be adapted, and what deter",
+      "authors": [
+        "Emre Kutlusan",
+        "Yongmin Li"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.14519v1",
+      "published_at": "2026-11-10T18:59:54Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Toward Foundation Detection Models via Example-Based Grounding in EM-DETR",
+      "title": "Toward Foundation Detection Models via Example-Based Grounding in EM-DETR",
+      "url": "https://arxiv.org/abs/2611.14518v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14518v1",
+      "description": "DeepLearning (DL)-based Computer-Aided Diagnostic (CAD) systems have shown great promise in supporting clinicians, but their performance heavily depends on the availability of large, well-annotated datasets. In medical lesion detection, the scarcity of comprehensive, stan dardized annotations and the heterogeneity of existing datasets limit the development of robust foundation models. In this work, we introduce a novel approach to building a multi-domain foundation model for le sion detection by",
+      "authors": [
+        "Sheethal Bhat",
+        "Bogdan Georgescu",
+        "Awais Mansoor",
+        "Florin C. Ghesu",
+        "Sasa Grbic"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.14518v1",
+      "published_at": "2026-11-10T18:59:17Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "TorchCurves: Differentiable Parametric Curves",
+      "title": "TorchCurves: Differentiable Parametric Curves",
+      "url": "https://arxiv.org/abs/2611.14516v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14516v1",
+      "description": "We present TorchCurves, a PyTorch library that treats vector-valued parametric curves as learnable primitives. Its central operation maps batches of scalar inputs to points on curves represented in B-spline or Legendre polynomial bases, with differentiation through both inputs and coefficients. Curve coefficients can be optimized jointly with the surrounding model or produced by another network. The library provides trainable modules, reusable basis modules, and a functional interface, supportin",
+      "authors": [
+        "Alex Shtoff"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_id": "2611.14516v1",
+      "published_at": "2026-11-10T18:58:52Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
+      "title": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
+      "url": "https://arxiv.org/abs/2611.14515v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14515v1",
+      "description": "Reinforcement learning with verifiable rewards (RLVR) produces rich training experience, yet outcome rewards reduce each attempt to a single number and leave most of this information unused. Training-time scaffolds, such as strategies or hints added to the prompt during training, offer a natural way to turn this information into guidance, but their design and adaptation are largely left to humans and tailored to specific domains. We introduce AutoScaffold, a unified AI-for-AI framework that turn",
+      "authors": [
+        "Zijian Zhang",
+        "Rizhen Hu",
+        "Jiangweizhi Peng",
+        "Shiyang Li",
+        "Sujay Bhatt"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "arxiv_id": "2611.14515v1",
+      "published_at": "2026-11-10T18:58:46Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
+      "title": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
+      "url": "https://arxiv.org/abs/2611.14514v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14514v1",
+      "description": "LLM agents are increasingly used for open-ended, data-driven scientific discovery, yet most of them evaluate hypotheses pointwise, testing an empirical claim $h$ only against its complement $\\neg h$. When evidence rejects $h$, the agent learns that one explanation is unlikely but not which alternative the evidence supports. To recover that alternative, we introduce Contrastive Discovery, which replaces the single hypothesis with a contrast set, a scientific question paired with mutually exclusiv",
+      "authors": [
+        "Ziang Liu",
+        "James J. Kim",
+        "Yijia Dai",
+        "Jennifer J. Sun"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.14514v1",
+      "published_at": "2026-11-10T18:58:43Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents",
+      "title": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents",
+      "url": "https://arxiv.org/abs/2611.14511v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14511v1",
+      "description": "Predicting how a ligand binds to its target is central to small-molecule drug discovery. Modern cofolding models can generate diverse candidate poses, but reliably ranking these candidates remains challenging. We introduce Pyrite, a pairwise pose-ranking benchmark comprising 1,500 pose pairs across diverse protein-ligand complexes. Expert chemists equipped with 3D visualization tools and physics-based scores perform near chance, highlighting the difficulty of interpreting available chemical sign",
+      "authors": [
+        "Megha Srivastava",
+        "Michael H. Lim",
+        "Allison M. Keys",
+        "Pranav Murugan",
+        "Nate Gruver"
+      ],
+      "categories": [
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "arxiv_id": "2611.14511v1",
+      "published_at": "2026-11-10T18:56:32Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "When Does the Real Wiring Win? Testing connectome structure-function claims against unmeasured physiology",
+      "title": "When Does the Real Wiring Win? Testing connectome structure-function claims against unmeasured physiology",
+      "url": "https://arxiv.org/abs/2611.14508v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14508v1",
+      "description": "Connectome-constrained models are often used to argue that a measured wiring diagram outperforms shuffled or rewired wiring, and hence that structure shapes function. Such comparisons can confound wiring with how the models are tuned: a connectome fixes who connects to whom, not the excitability, gains or plasticity rates the model also needs, and modellers often tune these until the real-wiring model works. We separate three estimands: physiology tuned on the real wiring and transferred to null",
+      "authors": [
+        "Yeyuan Liu"
+      ],
+      "categories": [
+        "cs.LG",
+        "q-bio.NC"
+      ],
+      "arxiv_id": "2611.14508v1",
+      "published_at": "2026-11-10T18:55:48Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Continual-ARC: Measuring Skill Acquisition over a Working Lifetime",
+      "title": "Continual-ARC: Measuring Skill Acquisition over a Working Lifetime",
+      "url": "https://arxiv.org/abs/2611.14505v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14505v1",
+      "description": "Agent harnesses have emerged as a promising mechanism for continual learning, alongside test-time parametric learning. However, the current benchmarks have several limitations: they generally focus on a single applied domain, serve each instance only once, and assume a single family of learner, so memory-based and weight-based systems are rarely compared on the same scale. We propose Continual-ARC, a lifelong stream built from the three ARC-AGI editions, whose tasks need no domain knowledge. The",
+      "authors": [
+        "Daniel Lenton"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.14505v1",
+      "published_at": "2026-11-10T18:55:01Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Emergent Biological Capabilities in a Foundation Model for Molecular Interactions",
+      "title": "Emergent Biological Capabilities in a Foundation Model for Molecular Interactions",
+      "url": "https://arxiv.org/abs/2611.14504v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14504v1",
+      "description": "Foundation models trained on large unlabeled corpora develop emergent capabilities, tasks that go beyond the training objective. We extend this paradigm to multimodal biology with Bonbon, a foundation model for molecular interactions trained on approximately 3.2 trillion tokens of paired protein-ligand sequences. From a single representation space, Bonbon exhibits three zero-shot emergent capabilities at hierarchical levels of resolution: functional (mechanism of action), residue (binding site l",
+      "authors": [
+        "Adi Mashiach"
+      ],
+      "categories": [
+        "cs.LG",
+        "q-bio.BM"
+      ],
+      "arxiv_id": "2611.14504v1",
+      "published_at": "2026-11-10T18:53:01Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents",
+      "title": "Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents",
+      "url": "https://arxiv.org/abs/2611.14493v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14493v1",
+      "description": "Deploying LLM-based analytics agents in enterprise settings requires evaluation frameworks that can reliably detect failures across complex, multi-tool workflows. We present a three-phase comparative study of three evaluation frameworks, each representing a distinct evaluation paradigm (trace-based LLM judging, text-only LLM judging with red-teaming, and deterministic heuristics), applied to two analytics agents in a controlled research setting using frozen execution traces. Phase 1 quantifies e",
+      "authors": [
+        "Howard Zhang",
+        "Chuck Arvin",
+        "Logan Brown",
+        "Mihir Bhatia",
+        "Neelu Choudhary"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "arxiv_id": "2611.14493v1",
+      "published_at": "2026-11-10T18:50:06Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows",
+      "title": "ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows",
+      "url": "https://arxiv.org/abs/2611.14492v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14492v1",
+      "description": "Business process automation runs the same Standard Operating Procedure (SOP) again and again on new inputs. Large Language Model (LLM) agents can follow an SOP written in natural language, but they call an LLM to choose every step of every run, which adds latency and cost at scale. We present ReTrace, which turns an SOP and a few logged agent runs into a reusable workflow in which code, not an LLM, selects the next step. The agent's reasoning, the explanation it writes with each tool call, often",
+      "authors": [
+        "Kaiyuan Hou",
+        "Yang Ping Kuo",
+        "Indranil Bhattacharya",
+        "Rohith Nama",
+        "Arushi Gupta"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "arxiv_id": "2611.14492v1",
+      "published_at": "2026-11-10T18:49:47Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "TimeSeek: Multi-Task and Multi-Domain Pretraining for Generalized Time Series Analytics",
+      "title": "TimeSeek: Multi-Task and Multi-Domain Pretraining for Generalized Time Series Analytics",
+      "url": "https://arxiv.org/abs/2611.14491v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14491v1",
+      "description": "Time series analytics has been widely applied across various domains. While existing time series foundation models (TSFMs) have demonstrated promising results, they still face two major challenges: 1) Most TSFMs mainly rely on stacking Transformer layers to increase parameter size, lacking the ability to adaptively model complex time series patterns from multi-domain data. 2) Current TSFMs are primarily pre-trained for specific tasks, e.g., forecasting or anomaly detection, and a few models supp",
+      "authors": [
+        "Peng Chen",
+        "Yihang Wang",
+        "Zhongwen Rao",
+        "Yang Shu",
+        "Yuying Qiu"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.14491v1",
+      "published_at": "2026-11-10T18:49:26Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game",
+      "title": "Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game",
+      "url": "https://arxiv.org/abs/2611.14487v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14487v1",
+      "description": "Research ideation is iterative: researchers refine their ideas step by step based on feedback. Yet existing evaluations obscure this search process, making it difficult to understand how LLMs explore the space of research ideas and what limits their progress. We introduce Re-Search, which adapts the format of Twenty Questions to research ideation: given only the research problem of a published paper, a model must rediscover the paper's core idea by asking yes-or-no questions. Built from 200 ICML",
+      "authors": [
+        "Muhan Gao",
+        "Hangxiao Zhu",
+        "Xinqi Su",
+        "Yu Zhang",
+        "Daniel Khashabi"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.14487v1",
+      "published_at": "2026-11-10T18:47:22Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Mechanistic Interpretability Needs a Logic of Inference",
+      "title": "Mechanistic Interpretability Needs a Logic of Inference",
+      "url": "https://arxiv.org/abs/2611.14483v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14483v1",
+      "description": "Neural networks are increasingly studied not merely as predictive systems, but as complex systems whose internal computations are themselves objects of scientific inquiry. Recent progress in mechanistic interpretability (MI) has made it possible to identify neurons, features, circuits, population structures, and dynamical patterns associated with model behavior. As these tools improve, attention is shifting from what can be observed inside a model to how those observations support mechanistic ex",
+      "authors": [
+        "Zhimin Hu",
+        "Chen Jiang",
+        "Hanbo Xie",
+        "N. Apurva Ratan Murty",
+        "Sashank Varma"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.CV"
+      ],
+      "arxiv_id": "2611.14483v1",
+      "published_at": "2026-11-10T18:45:07Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Pterodactyl: Pushing the Limits of Efficient Automated Translation Evaluation",
+      "title": "Pterodactyl: Pushing the Limits of Efficient Automated Translation Evaluation",
+      "url": "https://arxiv.org/abs/2611.14480v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14480v1",
+      "description": "In this paper, we present 1020 Group's submission to the WMT26 shared task on automated quality evaluation. Our system, Pterodactyl, was engineered specifically for subtasks 2 and 3, that is, segment-level quality score prediction and the detection of error-free segments. Pterodactyl is a highly customizable, ultra-low cost system optimized for binary classification in translation triage and data curation. It is based on an LLM-as-a-judge approach, with prompt engineering and model selection gui",
+      "authors": [
+        "Evelyn Y. Garland",
+        "Carola F. Berger"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2611.14480v1",
+      "published_at": "2026-11-10T18:41:37Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "FERN: Cross-Benchmark Table Retrieval for Text-to-SQL with Frozen Retrievers and Learned Ranking",
+      "title": "FERN: Cross-Benchmark Table Retrieval for Text-to-SQL with Frozen Retrievers and Learned Ranking",
+      "url": "https://arxiv.org/abs/2611.14477v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14477v1",
+      "description": "Text-to-SQL systems over large pooled catalogs must first retrieve the tables a question needs. We compare against the published table recall of RASL, which uses Claude 3.5 models to extract keywords and select tables, on pooled BIRD, Spider, and Fiben catalogs. FERN (Feature-Engineered Ranking with No generative LLM) instead fuses three frozen retrievers into 100 candidates, describes each with up to 120 features, and reorders them with LightGBM rankers fitted once on BIRD's training questions.",
+      "authors": [
+        "Arjun Rao",
+        "Nishant Gopinath"
+      ],
+      "categories": [
+        "cs.IR",
+        "cs.CL"
+      ],
+      "arxiv_id": "2611.14477v1",
+      "published_at": "2026-11-10T18:39:49Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "C$^2$-Routing: Complementary Cropping and Compression for Efficient Vision-Language Inference",
+      "title": "C$^2$-Routing: Complementary Cropping and Compression for Efficient Vision-Language Inference",
+      "url": "https://arxiv.org/abs/2611.14469v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14469v1",
+      "description": "Visual Question Answering (VQA) imposes substantial computational overhead on vision-language models (VLMs), motivating model-agnostic input reduction methods that can be readily applied across diverse VLMs, including in black-box settings. Simply enforcing a visual-token cap reduces computation, but it can discard information needed to answer the question. A single reduction strategy also struggles to accommodate different scenarios. Our key observation is that cropping and compression are comp",
+      "authors": [
+        "Guorui Lu",
+        "Qinyu Chen"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.14469v1",
+      "published_at": "2026-11-10T18:32:28Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Bayesian inverse problems and epidemic-threshold uncertainty for a heterogeneous SIS reaction-diffusion model",
+      "title": "Bayesian inverse problems and epidemic-threshold uncertainty for a heterogeneous SIS reaction-diffusion model",
+      "url": "https://arxiv.org/abs/2611.14468v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14468v1",
+      "description": "We study Bayesian inference of persistence from early observations of a heterogeneous susceptible--infected--susceptible (SIS) reaction--diffusion model with standard incidence. We show that the leading prevalence dynamics depend on the unknown coefficients only through the difference between the transmission and recovery rates and the infected diffusivity. The same pair determines the principal eigenvalue whose sign governs persistence, so early prevalence can inform the threshold even when the",
+      "authors": [
+        "Duc-Lam Duong"
+      ],
+      "categories": [
+        "math.AP",
+        "cs.LG",
+        "math.NT",
+        "math.ST",
+        "q-bio.PE"
+      ],
+      "arxiv_id": "2611.14468v1",
+      "published_at": "2026-11-10T18:32:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "A Theory of Policy Optimization in Post-Training: Coverage Collapse and Reference Resets",
+      "title": "A Theory of Policy Optimization in Post-Training: Coverage Collapse and Reference Resets",
+      "url": "https://arxiv.org/abs/2611.14467v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14467v1",
+      "description": "Policy optimization is central to language model post-training, yet principled guidance remains limited. We revisit its theoretical foundations to identify algorithms that learn near-optimal policies using total samples and gradient steps governed by the base model's response coverage, a measure of how readily it generates optimal responses. We call such algorithms coverage-preserving. This guarantee captures the goal of amplifying capabilities accessible through sampling from the base model. (1",
+      "authors": [
+        "Audrey Huang",
+        "Nan Jiang",
+        "Sham M. Kakade",
+        "Sadhika Malladi",
+        "Akshay Krishnamurthy"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_id": "2611.14467v1",
+      "published_at": "2026-11-10T18:31:36Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "A Theory of Cross-Validation Variance",
+      "title": "A Theory of Cross-Validation Variance",
+      "url": "https://arxiv.org/abs/2611.14463v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14463v1",
+      "description": "Cross-validation estimates predictive performance by repeatedly splitting the data into training and validation sets, fitting the model on the first and evaluating it on the second. Every observation influences the estimate in two roles, through its own evaluation when it is held out and through the models it helps fit when it trains. The random splits determine its weight in each role. From this representation, we prove an exact finite-sample identity for the variance of the cross-validated est",
+      "authors": [
+        "Nathaniel S. O'Connell",
+        "Jaime L. Speiser"
+      ],
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.ST"
+      ],
+      "arxiv_id": "2611.14463v1",
+      "published_at": "2026-11-10T18:29:42Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Accurate predictions of properties of energetic materials with tabular foundation models",
+      "title": "Accurate predictions of properties of energetic materials with tabular foundation models",
+      "url": "https://arxiv.org/abs/2611.14462v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14462v1",
+      "description": "We use TabPFN, a recently developed tabular foundation model, to predict three properties of energetic materials: impact sensitivity, decomposition temperature and crystal density. Without any hyperparameter tuning, TabPFN outperforms the best published models for all three properties. It also substantially outperforms a wide range of established machine-learning models, including tuned gradient boosting (XGBoost), random forests and Gaussian processes. This holds both when the models are given ",
+      "authors": [
+        "Vagn Krister Nes Glomsrud",
+        "Mathias Bynke",
+        "Lars Henry Berge Olsen",
+        "Dennis Christensen"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.14462v1",
+      "published_at": "2026-11-10T18:29:37Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "When does text encoding matter for language modeling?",
+      "title": "When does text encoding matter for language modeling?",
+      "url": "https://arxiv.org/abs/2611.14459v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14459v1",
+      "description": "UTF-8's role as the de facto encoding standard in language models introduces cross-lingual inequities due to its variable-length design. However, the effect that this encoding choice has on model performance remains largely unexamined. In this work, we investigate how text encoding impacts the performance of byte-level language models, comparing UTF-8 with a wide range of other encoding strategies, including other Unicode-based approaches, language-specific encodings, and our own customized enco",
+      "authors": [
+        "Eugene Jang",
+        "Catherine Arnett",
+        "Terra Blevins"
+      ],
+      "categories": [
+        "cs.CL"
+      ],
+      "arxiv_id": "2611.14459v1",
+      "published_at": "2026-11-10T18:27:26Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "UGG: Unified Generative Geometry Model",
+      "title": "UGG: Unified Generative Geometry Model",
+      "url": "https://arxiv.org/abs/2611.14440v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14440v1",
+      "description": "Understanding 4D scenes is a core challenge in visual intelligence, requiring models to jointly capture scene geometry, appearance, and dynamics from partial observations. However, existing approaches are subdivided into feedforward models for direct geometric prediction, and generative models for visual synthesis. We introduce UGG, a unified framework for 4D scene understanding that jointly models RGB video and geometric representations such as depth and camera pose. By assigning different nois",
+      "authors": [
+        "Amani Kiruga",
+        "Zhiyi Li",
+        "Ruojin Cai",
+        "Hansen Lillemark",
+        "Xiaoshan Wu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "arxiv_id": "2611.14440v1",
+      "published_at": "2026-11-10T18:11:40Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge",
+      "title": "One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge",
+      "url": "https://arxiv.org/abs/2611.14432v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14432v1",
+      "description": "We describe our solution for the 2026 BEHAVIOR Challenge: 100 long-horizon household tasks in the OmniGibson simulator. We placed 9th on the final leaderboard, the only independent team in the top 10. The core of the solution is a single vision-language-action (VLA) model, one checkpoint for all 100 tasks, built on our 1st-place 2025 solution, which is based on $π_{0.5}$. On the 50 tasks shared with 2025, its Q rises from 0.260 to 0.371; across all 100 tasks it scores 0.392. Our main conclusion ",
+      "authors": [
+        "Ilia Larchenko",
+        "Gleb Zarin",
+        "Atindra Nair",
+        "Keerti Manney",
+        "Vitaly Kleban"
+      ],
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.14432v1",
+      "published_at": "2026-11-10T18:06:16Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Two Communities, One Problem: Branch-and-Bound vs. A* for Resource-Constrained Project Scheduling",
+      "title": "Two Communities, One Problem: Branch-and-Bound vs. A* for Resource-Constrained Project Scheduling",
+      "url": "https://arxiv.org/abs/2611.14426v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14426v1",
+      "description": "Branch-and-Bound (B&B) and $A^*$ are popular exact search methods originating from Operations Research and Artificial Intelligence, respectively. Although the two methods share fundamental search principles, their different ways of exploring the search space can lead to substantially different computational performance. We investigate these differences using the Resource-Constrained Project Scheduling Problem (RCPSP) as an exemplary problem setting. We first establish the relationships between m",
+      "authors": [
+        "Izack Cohen",
+        "Dominik Kress",
+        "Lara Nehrke",
+        "Erwin Pesch",
+        "Shimrit Shtern"
+      ],
+      "categories": [
+        "math.OC",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.14426v1",
+      "published_at": "2026-11-10T18:03:17Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Quantifying the Sampling Frequency Invariance of Time-Series Foundation Models for Sensor Data Applications",
+      "title": "Quantifying the Sampling Frequency Invariance of Time-Series Foundation Models for Sensor Data Applications",
+      "url": "https://arxiv.org/abs/2611.14425v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14425v1",
+      "description": "Time-Series Foundation Models (TSFMs) are increasingly used in sensor applications, where sampling frequency (SF) varies across sensors, devices, and operating modes (e.g., power saving). Ideally, TSFMs must remain effective during such SF changes, provided the SF retains task-critical bandwidth. In this paper, we stress-test 4 prominent TSFMs: MOMENT, Chronos-2, Moirai-MoE, and TimesFM, to quantify their SF-invariance and investigate whether their behavior tracks the resulting loss of informati",
+      "authors": [
+        "Sourish Gunesh Dhekane",
+        "Abinaya Kumar",
+        "Torsten Woertwein",
+        "Yan-Bo Lin",
+        "Thomas Ploetz"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.14425v1",
+      "published_at": "2026-11-10T18:01:23Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "DnNP: Denoising Input Uncertainty in Neural Processes",
+      "title": "DnNP: Denoising Input Uncertainty in Neural Processes",
+      "url": "https://arxiv.org/abs/2611.14424v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14424v1",
+      "description": "Neural Processes (NPs) are flexible meta-learning models capable of uncertainty quantification across diverse applications. However, the standard NP framework assumes access to noise-free inputs. This is unrealistic in many practical settings, where sensor noise or measurement errors are unavoidable. This discrepancy between model assumptions and real-world data can significantly degrade prediction quality and uncertainty estimates. We introduce Denoising Neural Processes (DnNPs), a principled e",
+      "authors": [
+        "Fatemeh Tohidian",
+        "Chengzhi Shi",
+        "Soomi Lee",
+        "Matthew Elia",
+        "Amy Mueller"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.14424v1",
+      "published_at": "2026-11-10T18:00:37Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Earlybird: Predictive Streaming Speech Recognition in 29M Parameters",
+      "title": "Earlybird: Predictive Streaming Speech Recognition in 29M Parameters",
+      "url": "https://arxiv.org/abs/2611.14421v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14421v1",
+      "description": "Streaming speech recognizers output a word only after the speaker has finished it, typically 90-400 ms later. For a voice agent every millisecond counts: the sooner the words are outputted, the sooner the agent can start a search or plan its reply. We present Earlybird, a 29M-parameter streaming recognizer (16.8 MB at 4 bits). Earlybird learns from audio cut off at random points, including partway through a word, and is asked to predict every word that is due by then in full, plus a guess of the",
+      "authors": [
+        "Sahil Mahendrakar"
+      ],
+      "categories": [
+        "cs.SD",
+        "cs.CL",
+        "eess.AS"
+      ],
+      "arxiv_id": "2611.14421v1",
+      "published_at": "2026-11-10T17:59:28Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Evaluating LLM-Generated World Models for Neuro-Symbolic Reasoning",
+      "title": "Evaluating LLM-Generated World Models for Neuro-Symbolic Reasoning",
+      "url": "https://arxiv.org/abs/2611.14419v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14419v1",
+      "description": "Formal world models can support planning, verification, and safety reasoning, but constructing them from open-ended natural-language situations is difficult, particularly in multi-agent settings where several formalizations may be plausible. We study whether five LLMs can generate such world models as partially observable stochastic games and whether mechanical validity is sufficient to establish that the resulting model faithfully represents the intended decision problem. We introduce a benchma",
+      "authors": [
+        "Souhaila Djaffal",
+        "Amna Jamal",
+        "Gagana Madhugiri Devaraja",
+        "Anidipta Pal",
+        "Jobst Heitzig"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.14419v1",
+      "published_at": "2026-11-10T17:58:12Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Precision on Demand: Escalating Weight Bits at Uncertain Decoding Steps in a Small Local Model",
+      "title": "Precision on Demand: Escalating Weight Bits at Uncertain Decoding Steps in a Small Local Model",
+      "url": "https://arxiv.org/abs/2611.14418v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.14418v1",
+      "description": "Local decoding usually fixes one weight precision for the whole generation. We study a different allocation: store 8-bit weights, decode with their top 4 bits, and redo a step at 8 bits only when the low-precision output distribution looks uncertain (entropy above a threshold or a small top-two margin). Quantization is simulated, the model is Qwen3-0.6B, and the benchmark is GSM8K. Cost is counted in weight bytes read per token. On 36724 replayed steps the entropy of the low pass ranks argmax fl",
+      "authors": [
+        "Mohammed Nayeem Khan",
+        "Logesh L",
+        "Aliyas Ahmad Misri"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.14418v1",
+      "published_at": "2026-11-10T17:57:51Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
