@@ -872492,5 +872492,3501 @@
     "tool_id": "aibot_果核剥壳",
     "ai_relevance": "not-ai",
     "rejected_at": "2026-11-18T00:20:29.070465+00:00"
+  },
+  {
+    "name": "Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching",
+    "title": "Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching",
+    "url": "https://arxiv.org/abs/2611.23229v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23229v1",
+    "description": "Collecting large-scale, diverse, and high-quality post-training datasets for autoregressive language models is challenging. Consequently, Supervised Fine-Tuning (SFT) is typically applied to datasets significantly smaller than those used for pre-training, which leads to overfitting and the catastrophic forgetting of the tails of the data distribution. To prevent this collapse, we introduce Ambient SFT, a principled framework for leveraging imperfect predictions to augment the fine-tuning set. In",
+    "authors": [
+      "Giannis Daras",
+      "Marios Papachristou",
+      "Adam Klivans",
+      "Antonio Torralba",
+      "Constantinos Daskalakis"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "arxiv_id": "2611.23229v1",
+    "published_at": "2026-11-17T18:59:37Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_ambient-llms-data-efficient-supervised-fine-tuning-via-temperature-matching",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "AMBIENT Definition & Meaning - Merriam-Webster Ambient, which comes from the Latin verb ambīre meaning “to surround, encircle, or embrace,” most often describes …",
+        "AMBIENT Definition & Meaning | Dictionary.com Ambient is an adjective used to describe an aspect of the environment that completely surrounds you, but in a mellow way, like …",
+        "Ambient - YouTube Ambient your best place for relaxation, study and meditation 🙌🏻Here you will find best ambient, cinematic, classical, …"
+      ],
+      "top_results": [
+        {
+          "title": "AMBIENT Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/ambient",
+          "snippet": "Ambient, which comes from the Latin verb ambīre meaning “to surround, encircle, or embrace,” most often describes …"
+        },
+        {
+          "title": "AMBIENT Definition & Meaning | Dictionary.com",
+          "href": "https://www.dictionary.com/browse/ambient",
+          "snippet": "Ambient is an adjective used to describe an aspect of the environment that completely surrounds you, but in a mellow way, like …"
+        },
+        {
+          "title": "Ambient - YouTube",
+          "href": "https://www.youtube.com/AmbientMusicalGenre/videos",
+          "snippet": "Ambient your best place for relaxation, study and meditation 🙌🏻Here you will find best ambient, cinematic, classical, …"
+        },
+        {
+          "title": "Ambient music - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Ambient_music",
+          "snippet": "Ambient music is a genre of music that emphasizes tone and atmosphere over traditional musical structure or rhythm."
+        },
+        {
+          "title": "Ambient Enterprises | National Commercial HVAC Solutions",
+          "href": "https://ambient-enterprises.com/",
+          "snippet": "Ambient Enterprises is a national collective of HVAC design and implementation experts delivering high-performance systems."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "数据分析",
+    "subcategory": "数据分析",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=数据分析 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "RAG"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching：AMBIENT Definition & Meaning - Merriam-Webster Ambient, which comes from the Latin verb ambīre meaning “to surround, encircle, or embrace,” most often。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "自动化",
+      "SDK集成"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_ambient-llms-data-efficient-supervised-fine-tuning-via-temperature-matching",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models",
+    "title": "Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models",
+    "url": "https://arxiv.org/abs/2611.23228v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23228v1",
+    "description": "Applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window of past frames (e.g., the last two minutes). Hybrid vision-language models (VLMs), which interleave attention with linear recurrent layers such as Gated DeltaNet (GDN), are attractive for this setting, but maintaining a sliding window is expensive. The reason is that recurrent layers combine all past frames into a shared state, so expiring old frame",
+    "authors": [
+      "Rui Ning",
+      "Om Chabra",
+      "Hari Balakrishnan"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.23228v1",
+    "published_at": "2026-11-17T18:59:27Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_spool-low-latency-streaming-inference-for-hybrid-vision-language-models",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "AI Agent",
+    "subcategory": "Agent框架",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=AI Agent 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "视频生成"
+      ],
+      "scenario": [
+        "内容创作"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models：applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window o。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "实时处理",
+      "可视化"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_spool-low-latency-streaming-inference-for-hybrid-vision-language-models",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "An inexact stochastic variance-reduced gradient method for constrained convex finite-sum optimization",
+    "title": "An inexact stochastic variance-reduced gradient method for constrained convex finite-sum optimization",
+    "url": "https://arxiv.org/abs/2611.23221v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23221v1",
+    "description": "In this paper, we study a class of constrained convex finite-sum optimization problems. In many practical applications, all or some of the constraints are hard constraints that represent imperative requirements. Consequently, any desirable approximate solution must (nearly) satisfy these constraints. Motivated by this, we focus on computing an $ε$-$surely\\ feasible\\ stochastic\\ optimal$ ($ε$-SFSO) solution, in which the constraint violation is deterministically bounded by $ε$, and the expected o",
+    "authors": [
+      "Zhaosong Lu",
+      "Yifeng Xiao"
+    ],
+    "categories": [
+      "math.OC",
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.23221v1",
+    "published_at": "2026-11-17T18:57:16Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_an-inexact-stochastic-variance-reduced-gradient-method-for-constrained-convex-fi",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "论文工具",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习",
+        "学术研究"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "An inexact stochastic variance-reduced gradient method for constrained convex finite-sum optimization：in this paper, we study a class of constrained convex finite-sum optimization problems.。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_an-inexact-stochastic-variance-reduced-gradient-method-for-constrained-convex-fi",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
+    "title": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
+    "url": "https://arxiv.org/abs/2611.23219v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23219v1",
+    "description": "LLM agents increasingly drive their own learning. Self-improvement methods delegate various components of model optimization to the models themselves. As models become more capable, this motivates a basic question: do these increasingly capable models still need us to specify how they should self-improve? In this paper we study an autonomous paradigm in which, given basic primitives, resources, and a general goal for self-improvement, agents construct their own self-learning algorithm for contex",
+    "authors": [
+      "Shobhita Sundaram",
+      "Cansu Sancaktar",
+      "Phillip Isola"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "arxiv_id": "2611.23219v1",
+    "published_at": "2026-11-17T18:57:10Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_do-llm-agents-still-need-to-be-told-how-to-self-improve",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "AI Agent",
+    "subcategory": "自主代理",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=AI Agent 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习",
+        "学术研究"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Do LLM Agents Still Need to Be Told How to Self-Improve?：llm agents increasingly drive their own learning.。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "开源免费",
+      "自动化"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_do-llm-agents-still-need-to-be-told-how-to-self-improve",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution",
+    "title": "What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution",
+    "url": "https://arxiv.org/abs/2611.23218v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23218v1",
+    "description": "Methods that localise social bias in large language models to individual attention heads and remove it by ablation are validated by their effect on a fairness metric, never by evidence that the statistic selecting the heads measures bias. We audit this on Qwen-2.5-7B-Instruct and Llama-3.1-8B-Instruct. The head map correlates at $ρ= -0.950$ and $-0.768$ with a label-blind response-length map, apparently identifying a surface confound. An intervention that breaks the length-label coupling rejects",
+    "authors": [
+      "S. M Seefat Alam"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.23218v1",
+    "published_at": "2026-11-17T18:57:08Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_what-does-a-bias-head-measure-non-identifiability-in-head-level-bias-attribution",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "营销推广",
+    "subcategory": "",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=营销推广 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "个人开发者"
+      ],
+      "attribute": [],
+      "tech": [
+        "Llama"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "What Does a Bias Head Measure? Non-Identifiability in Head-Level Bias Attribution：methods that localise social bias in large language models to individual attention heads and remove it by ablation are validated by their effect on a 。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "本地运行"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_what-does-a-bias-head-measure-non-identifiability-in-head-level-bias-attribution",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Higher-Scoring Coding Models Did Not Get More Work Done",
+    "title": "Higher-Scoring Coding Models Did Not Get More Work Done",
+    "url": "https://arxiv.org/abs/2611.23216v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23216v1",
+    "description": "New coding models advertise themselves on score improvements of coding benchmarks. Yet no study has tested if a model that scores higher on these benchmarks gets more real work done. On June 12, 2026, a U.S. export control directive banned access to Claude Fable 5 for 19 days, which forced users to switch to other models. During this time, most former Fable 5 users switched to Opus 4.8 (11 points lower on SWE-Bench Pro compared to Fable 5). We treat this suspension as a natural experiment, where",
+    "authors": [
+      "Yining Hua"
+    ],
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.23216v1",
+    "published_at": "2026-11-17T18:56:42Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_higher-scoring-coding-models-did-not-get-more-work-done",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "Creed - Higher (Official HD Music Video) - YouTube Dec 2, 2009 · Now in HD! Official music video for \"Higher\" from Creed's iconic second album, Human Clay (1999).",
+        "HIGHER Definition & Meaning - Merriam-Webster 3 days ago · high 2 of 3 adverb 1 : at or to a high place, altitude, level, or degree climbed higher passions ran high 2 : well, luxuriously",
+        "HIGHER | English meaning - Cambridge Dictionary HIGHER definition: 1. comparative of high 2. used to refer to an advanced level of education: 3. in Scotland, an…. Learn more."
+      ],
+      "top_results": [
+        {
+          "title": "Creed - Higher (Official HD Music Video) - YouTube",
+          "href": "https://www.youtube.com/watch?v=J16lInLZRms",
+          "snippet": "Dec 2, 2009 · Now in HD! Official music video for \"Higher\" from Creed's iconic second album, Human Clay (1999)."
+        },
+        {
+          "title": "HIGHER Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/higher",
+          "snippet": "3 days ago · high 2 of 3 adverb 1 : at or to a high place, altitude, level, or degree climbed higher passions ran high 2 : well, luxuriously"
+        },
+        {
+          "title": "HIGHER | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/higher",
+          "snippet": "HIGHER definition: 1. comparative of high 2. used to refer to an advanced level of education: 3. in Scotland, an…. Learn more."
+        },
+        {
+          "title": "HigherEdJobs - Jobs in Higher Education",
+          "href": "https://www.higheredjobs.com/",
+          "snippet": "HigherEdJobs Podcast Listen to conversations about careers, job search strategy, and trends in higher ed."
+        },
+        {
+          "title": "Higher - YouTube",
+          "href": "https://www.youtube.com/watch?v=zzOs66hec8U",
+          "snippet": "Jul 26, 2018 · Provided to YouTube by Universal Music Group Higher · Rihanna ANTI ℗ 2016 Westbury Road Entertainment."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "数据资源",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [
+        "Claude"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Higher-Scoring Coding Models Did Not Get More Work Done：Creed - Higher (Official HD Music Video) - YouTube Dec 2, 2009 · Now in HD! Official music video for \"Higher\" from Creed's iconic second album, Human 。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "数据导入导出"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_higher-scoring-coding-models-did-not-get-more-work-done",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving",
+    "title": "Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving",
+    "url": "https://arxiv.org/abs/2611.23211v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23211v1",
+    "description": "Human cognitive state (e.g., distraction, stress), gaze, and behavior interact with the driving environment in subtle ways that AI could use to assist drivers, but ground-truth labels for human cognitive state levels are costly to obtain at scale. We propose a multimodal masked-diffusion autoencoder, ID-MAE, that adds a self-supervised objective to impairment prediction: alongside predicting the impairment label as a masked token, it reconstructs masked gaze and trajectory. To probe the effects ",
+    "authors": [
+      "John Gideon",
+      "Anshul Gupta",
+      "Megan Applegate-Kenton",
+      "Kayli Battel",
+      "Todd J Rowell"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG",
+      "cs.RO"
+    ],
+    "arxiv_id": "2611.23211v1",
+    "published_at": "2026-11-17T18:50:22Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_multimodal-masked-diffusion-autoencoder-for-modeling-impaired-driving",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "Multi-modal",
+        "Diffusion"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Multimodal Masked Diffusion Autoencoder for Modeling Impaired Driving：human cognitive state (e.g., distraction, stress), gaze, and behavior interact with the driving environment in subtle ways that ai could use to assist。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "自动化"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_multimodal-masked-diffusion-autoencoder-for-modeling-impaired-driving",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Distortion-Free Semantic Watermarks for Black-Box Generative Models",
+    "title": "Distortion-Free Semantic Watermarks for Black-Box Generative Models",
+    "url": "https://arxiv.org/abs/2611.23208v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23208v1",
+    "description": "We present a provably distortion-free semantic watermarking algorithm that requires only black-box sampling access to a generative model and black-box access to a semantic embedding. A watermark is called distortion-free if, averaged over its secret detection key, it leaves the generator's output distribution unchanged; this provides a formal guarantee that watermarking does not reduce output quality. Conventional such watermarks are often brittle to transformations. This is especially problemat",
+    "authors": [
+      "Aviv Yossef",
+      "Or Patashnik",
+      "Or Zamir"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CR",
+      "cs.CV"
+    ],
+    "arxiv_id": "2611.23208v1",
+    "published_at": "2026-11-17T18:49:17Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_distortion-free-semantic-watermarks-for-black-box-generative-models",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "free",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [
+        "免费"
+      ],
+      "tech": [
+        "Embedding",
+        "RAG"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Distortion-Free Semantic Watermarks for Black-Box Generative Models：we present a provably distortion-free semantic watermarking algorithm that requires only black-box sampling access to a generative model and black-box。免费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "开源免费"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "免费使用，零成本上手",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_distortion-free-semantic-watermarks-for-black-box-generative-models",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Reading Scene States: Uncovering Safety Failures in Vision-Language Models",
+    "title": "Reading Scene States: Uncovering Safety Failures in Vision-Language Models",
+    "url": "https://arxiv.org/abs/2611.23206v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23206v1",
+    "description": "Vision-language models (VLMs) can provide harmful assistance by interpreting visual events, even without an explicit request for the underlying harmful objective. We identify this \\textbf{scene-state safety vulnerability} and introduce \\textbf{SceneSafetyBench}, comprising 375 image--question pairs spanning Initial, Medium, and Ultimate scene states and five visual presentations. Across eight VLMs, scene-state inputs elicit harmful assistance with attack success rates (ASRs) of 45.6--72.3\\%. Com",
+    "authors": [
+      "Tongxi Wu",
+      "Yuyang Cheng",
+      "Jiacheng Xian",
+      "Menglin Yang",
+      "Kai Chen"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "arxiv_id": "2611.23206v1",
+    "published_at": "2026-11-17T18:48:02Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_reading-scene-states-uncovering-safety-failures-in-vision-language-models",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Reading Eggs Reading Eggs is the online reading program that helps children learn to read. Hundreds of online reading lessons, phonics games and …",
+        "Teach Your Child To Read Early, Step by Step | Reading.com Reading.com helps your child learn to read with a proven, step-by-step program. Start today and watch your child become a confident …",
+        "Reading A-Z: The online reading program with downloadable books to ... Award-winning reading solution with thousands of leveled readers, lesson plans, worksheets and assessments to teach guided reading, …"
+      ],
+      "top_results": [
+        {
+          "title": "Reading Eggs",
+          "href": "https://readingeggs.com/",
+          "snippet": "Reading Eggs is the online reading program that helps children learn to read. Hundreds of online reading lessons, phonics games and …"
+        },
+        {
+          "title": "Teach Your Child To Read Early, Step by Step | Reading.com",
+          "href": "https://www.reading.com/",
+          "snippet": "Reading.com helps your child learn to read with a proven, step-by-step program. Start today and watch your child become a confident …"
+        },
+        {
+          "title": "Reading A-Z: The online reading program with downloadable books to ...",
+          "href": "https://www.readinga-z.com/",
+          "snippet": "Award-winning reading solution with thousands of leveled readers, lesson plans, worksheets and assessments to teach guided reading, …"
+        },
+        {
+          "title": "Reading Worksheets - K5 Learning",
+          "href": "https://www.k5learning.com/reading-comprehension-worksheets",
+          "snippet": "Our reading worksheets focus on building early reading skills and improving reading comprehension. They include phonics and sight …"
+        },
+        {
+          "title": "Reading - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Reading",
+          "snippet": "The science of reading (SoR) is the discipline that studies the objective investigation and accumulation of reliable evidence about how …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "安全合规",
+    "subcategory": "安全工具",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=安全合规 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "语音识别"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Reading Scene States: Uncovering Safety Failures in Vision-Language Models：Reading Eggs Reading Eggs is the online reading program that helps children learn to read. Hundreds of online reading lessons, phonics games and …。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "可视化"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_reading-scene-states-uncovering-safety-failures-in-vision-language-models",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Fine-Tuning Gemma 4 Edge Models for MATLAB Signal-Processing Code with SFT and QLoRA on a Laptop iGPU",
+    "title": "Fine-Tuning Gemma 4 Edge Models for MATLAB Signal-Processing Code with SFT and QLoRA on a Laptop iGPU",
+    "url": "https://arxiv.org/abs/2611.23205v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23205v1",
+    "description": "Small language models that run on a laptop are attractive for writing signal-processing code offline, but they make systematic errors on digital signal processing (DSP) conventions. We apply supervised fine-tuning (SFT) to the Gemma 4 edge models E2B and E4B with 66 checked examples covering 11 signal-processing MATLAB subtasks, using low-rank adaptation (LoRA) and quantized LoRA (QLoRA) on the integrated GPU (iGPU) of a laptop, and deploy the 8-bit integer (int8) models with the adapters throug",
+    "authors": [
+      "Mehmet Altan Toksöz"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.SE",
+      "eess.SP"
+    ],
+    "arxiv_id": "2611.23205v1",
+    "published_at": "2026-11-17T18:47:37Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_fine-tuning-gemma-4-edge-models-for-matlab-signal-processing-code-with-sft-and-q",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "FINE Definition & Meaning - Merriam-Webster 1 day ago · a : superior in kind, quality, or appearance : excellent did a fine job a fine young man has a fine mind b of weather : …",
+        "FINE | English meaning - Cambridge Dictionary FINE definition: 1. good or good enough; healthy and well: 2. excellent or much better than average: 3. very thin…. Learn more.",
+        "Kyle Hume - Fine (Lyrics) - YouTube Oct 21, 2022 · Me too I hide behind a mask But it's getting pretty see through Cuz I'm so tired of trying to pretend like I can do it on …"
+      ],
+      "top_results": [
+        {
+          "title": "FINE Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/fine",
+          "snippet": "1 day ago · a : superior in kind, quality, or appearance : excellent did a fine job a fine young man has a fine mind b of weather : …"
+        },
+        {
+          "title": "FINE | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/fine",
+          "snippet": "FINE definition: 1. good or good enough; healthy and well: 2. excellent or much better than average: 3. very thin…. Learn more."
+        },
+        {
+          "title": "Kyle Hume - Fine (Lyrics) - YouTube",
+          "href": "https://www.youtube.com/watch?v=9Opj6dppDbo",
+          "snippet": "Oct 21, 2022 · Me too I hide behind a mask But it's getting pretty see through Cuz I'm so tired of trying to pretend like I can do it on …"
+        },
+        {
+          "title": "Fine - definition of fine by The Free Dictionary",
+          "href": "https://www.thefreedictionary.com/fine",
+          "snippet": "1. excellent or choice in quality; very good of its kind: a fine speech. 2. superior in skill, ability, or accomplishment: a fine violinist."
+        },
+        {
+          "title": "FINE definition and meaning | Collins English Dictionary",
+          "href": "https://www.collinsdictionary.com/dictionary/english/fine",
+          "snippet": "If you say that something is fine, you mean that it is satisfactory or acceptable. The skiing is fine. Everything was going to be just …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 5,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=5 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Fine-Tuning Gemma 4 Edge Models for MATLAB Signal-Processing Code with SFT and QLoRA on a Laptop iGPU：FINE Definition & Meaning - Merriam-Webster 1 day ago · a : superior in kind, quality, or appearance : excellent did a fine job a fine young man has a。付费，适合普通用户直接使用。",
+    "features": [
+      "AI驱动",
+      "本地运行"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_fine-tuning-gemma-4-edge-models-for-matlab-signal-processing-code-with-sft-and-q",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Organization Autonomous AI Agents",
+    "title": "Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Organization Autonomous AI Agents",
+    "url": "https://arxiv.org/abs/2611.23202v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23202v1",
+    "description": "AI agents increasingly collaborate across organizational boundaries, invoking tools and interacting with agents operated by independent entities. Although existing agent frameworks support planning and coordination, they lack a common mechanism for verifying cross-organizational agent identity, execution integrity, and authorization. We propose the Agent Trust Infrastructure (ATI), a framework-independent security architecture built on Public Key Infrastructure (PKI), Zero Trust Architecture (ZT",
+    "authors": [
+      "Viet K. Nguyen",
+      "Mohammad I. Husain"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "arxiv_id": "2611.23202v1",
+    "published_at": "2026-11-17T18:44:25Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_agent-trust-infrastructure-ati-a-federated-identity-trust-attestation-and-accoun",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "AGENT Definition & Meaning - Merriam-Webster Nov 11, 2026 · The meaning of AGENT is one that acts or exerts power. How to use agent in a sentence.",
+        "Agent - Wikipedia Look up Agent or agent in Wiktionary, the free dictionary. This disambiguation page lists articles associated with the title …",
+        "AI agents | Claude by Anthropic Claude is more advanced than other AI agents in AI agent scenarios from customer support to coding. Claude’s …"
+      ],
+      "top_results": [
+        {
+          "title": "AGENT Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/agent",
+          "snippet": "Nov 11, 2026 · The meaning of AGENT is one that acts or exerts power. How to use agent in a sentence."
+        },
+        {
+          "title": "Agent - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Agent",
+          "snippet": "Look up Agent or agent in Wiktionary, the free dictionary. This disambiguation page lists articles associated with the title …"
+        },
+        {
+          "title": "AI agents | Claude by Anthropic",
+          "href": "https://claude.com/solutions/agents",
+          "snippet": "Claude is more advanced than other AI agents in AI agent scenarios from customer support to coding. Claude’s …"
+        },
+        {
+          "title": "AGENT | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/agent",
+          "snippet": "AGENT definition: 1. a person who acts for or represents another: 2. a person who represents an actor, artist, or…. Learn …"
+        },
+        {
+          "title": "Software agent - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Software_agent",
+          "snippet": "In computer science, a software agent is a computer program that acts for a user or another program in a relationship of …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "AI Agent",
+    "subcategory": "自主代理",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=AI Agent 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Organization Autonomous AI Agents：AGENT Definition & Meaning - Merriam-Webster Nov 11, 2026 · The meaning of AGENT is one that acts or exerts power. How to use agent in a sentence.。付费，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "自动化",
+      "协作功能"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_agent-trust-infrastructure-ati-a-federated-identity-trust-attestation-and-accoun",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Learned versus Kinematic Trajectory Prediction under Reduced Observation Frequency",
+    "title": "Learned versus Kinematic Trajectory Prediction under Reduced Observation Frequency",
+    "url": "https://arxiv.org/abs/2611.23198v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23198v1",
+    "description": "Trajectory prediction models for automated driving are usually trained on data with a fixed sampling frequency, while positions received via vehicle-to-everything (V2X) communication arrive at 1-10 Hz. We study whether a learned predictor that uses only the observation history keeps its advantage over constant velocity (CV) and constant acceleration (CA) models when the history frequency drops. On the Argoverse 2 motion forecasting dataset, the 5 s history of the focal agent was downsampled from",
+    "authors": [
+      "Nukhbala Gadzhiev",
+      "Alexander Morochko"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.RO"
+    ],
+    "arxiv_id": "2611.23198v1",
+    "published_at": "2026-11-17T18:38:28Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_learned-versus-kinematic-trajectory-prediction-under-reduced-observation-frequen",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "数据资源",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "自动化"
+      ],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Learned versus Kinematic Trajectory Prediction under Reduced Observation Frequency：trajectory prediction models for automated driving are usually trained on data with a fixed sampling frequency, while positions received via vehicle-t。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "自动化"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_learned-versus-kinematic-trajectory-prediction-under-reduced-observation-frequen",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Structure--Residual Inductive Biases for Language Model Pretraining",
+    "title": "Structure--Residual Inductive Biases for Language Model Pretraining",
+    "url": "https://arxiv.org/abs/2611.23197v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23197v1",
+    "description": "Next-token prediction is relied upon to learn both predictive behavior and internal representations. We ask whether representation structure itself should be an explicit inductive bias. Motivated by the two-part coding view of Kolmogorov complexity, we study a structure--residual principle in which a representation separates structure from realization detail. We instantiate this principle in two complementary ways. Boundary Bottleneck Concept (BBC) routes information from token segments through ",
+    "authors": [
+      "Hai Huang",
+      "Bartosz Żuk",
+      "Rassul Magauin",
+      "Jiaxin Huang",
+      "Xue Liu"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "arxiv_id": "2611.23197v1",
+    "published_at": "2026-11-17T18:38:27Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_structure-residual-inductive-biases-for-language-model-pretraining",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "数据分析",
+    "subcategory": "数据分析",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=数据分析 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Structure--Residual Inductive Biases for Language Model Pretraining：next-token prediction is relied upon to learn both predictive behavior and internal representations.。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_structure-residual-inductive-biases-for-language-model-pretraining",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "WoRD: Diffusion-Based Posterior Inference for Online Goal Recognition",
+    "title": "WoRD: Diffusion-Based Posterior Inference for Online Goal Recognition",
+    "url": "https://arxiv.org/abs/2611.23192v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23192v1",
+    "description": "Goal recognition is the task of inferring an agent's intended goal from its observed behavior. Most existing work focuses on high-level symbolic recognition, abstracting away the continuous motion through which agents reach their goal. Methods that do reason over continuous trajectories rely on an explicit dynamics model that is hard to acquire and rarely transfers across settings. Neither approach explicitly learns how agents move toward each candidate goal, limiting accuracy on ambiguous traje",
+    "authors": [
+      "Almog Anschel",
+      "Sarah Keren"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "cs.RO"
+    ],
+    "arxiv_id": "2611.23192v1",
+    "published_at": "2026-11-17T18:35:53Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_word-diffusion-based-posterior-inference-for-online-goal-recognition",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "AI Agent",
+    "subcategory": "Agent框架",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=AI Agent 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [
+        "Diffusion"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "WoRD: Diffusion-Based Posterior Inference for Online Goal Recognition：goal recognition is the task of inferring an agent's intended goal from its observed behavior.。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "开源免费"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_word-diffusion-based-posterior-inference-for-online-goal-recognition",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Retrieval-Augmented Correction for Generalist Medical Image Segmentation",
+    "title": "Retrieval-Augmented Correction for Generalist Medical Image Segmentation",
+    "url": "https://arxiv.org/abs/2611.23189v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23189v1",
+    "description": "Automated segmentation is routinely used as the first step in quantitative image-based clinical workflows, where predicted masks are subsequently reviewed and corrected by human operators. Automated correction of the residual structural errors is currently addressed one anatomy at a time, so the number of trained correctors scales with the number of segmentation targets. We present GRACE, a retrieval-augmented refiner that edits an input mask under context drawn from a shared knowledge base of v",
+    "authors": [
+      "Vincenzo Marcianò",
+      "Xiaoming Zhang",
+      "Michela Antonelli",
+      "Sebastien Ourselin",
+      "Maria A Zuluaga"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "arxiv_id": "2611.23189v1",
+    "published_at": "2026-11-17T18:33:42Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_retrieval-augmented-correction-for-generalist-medical-image-segmentation",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "RETRIEVAL Definition & Meaning - Merriam-Webster 6 days ago · The meaning of RETRIEVAL is an act or process of retrieving. How to use retrieval in a sentence.",
+        "RETRIEVAL | English meaning - Cambridge Dictionary RETRIEVAL definition: 1. the process of finding and bringing back something: 2. the process of finding and bringing back…. Learn …",
+        "RETRIEVAL | definition in the Cambridge English Dictionary RETRIEVAL meaning: 1. the process of finding and bringing back something: 2. the process of finding and bringing back…. Learn …"
+      ],
+      "top_results": [
+        {
+          "title": "RETRIEVAL Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/retrieval",
+          "snippet": "6 days ago · The meaning of RETRIEVAL is an act or process of retrieving. How to use retrieval in a sentence."
+        },
+        {
+          "title": "RETRIEVAL | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/retrieval",
+          "snippet": "RETRIEVAL definition: 1. the process of finding and bringing back something: 2. the process of finding and bringing back…. Learn …"
+        },
+        {
+          "title": "RETRIEVAL | definition in the Cambridge English Dictionary",
+          "href": "https://dictionary.cambridge.org/us/dictionary/english/retrieval",
+          "snippet": "RETRIEVAL meaning: 1. the process of finding and bringing back something: 2. the process of finding and bringing back…. Learn …"
+        },
+        {
+          "title": "Retrieval - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Retrieval",
+          "snippet": "This disambiguation page lists articles associated with the title Retrieval. If an internal link incorrectly led you here, you may wish to …"
+        },
+        {
+          "title": "Retrieval - Definition, Meaning & Synonyms | Vocabulary.com",
+          "href": "https://www.vocabulary.com/dictionary/retrieval",
+          "snippet": "When you lose something and get it back, that's retrieval, whether it's a tote bag you accidentally left at the library or a file you can't …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "金融科技",
+    "subcategory": "金融工具",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=金融科技 实用性=3 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "自动化",
+        "搜索"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Retrieval-Augmented Correction for Generalist Medical Image Segmentation：RETRIEVAL Definition & Meaning - Merriam-Webster 6 days ago · The meaning of RETRIEVAL is an act or process of retrieving. How to use retrieval in a s。，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "自动化",
+      "协作功能"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_retrieval-augmented-correction-for-generalist-medical-image-segmentation",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Polarity Composition Hypothesis: Causal Evidence from Negation in NLI",
+    "title": "Polarity Composition Hypothesis: Causal Evidence from Negation in NLI",
+    "url": "https://arxiv.org/abs/2611.23185v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23185v1",
+    "description": "We investigate how language models process negation in natural language inference (NLI). We propose the \\textit{Polarity Composition Hypothesis}, a high-level causal model of this computation. Behavioral evaluations show that language-model predictions largely conform to the proposed hypothesis. Using Distributed Alignment Search, we identify causally effective subspaces aligned with the variables in the polarity-composition hypothesis. These representations transfer across negation forms and pa",
+    "authors": [
+      "Nhi Hoai Doan",
+      "Tatsuya Hiraoka",
+      "Munachiso Samuel Nwadike",
+      "Kentaro Inui"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "arxiv_id": "2611.23185v1",
+    "published_at": "2026-11-17T18:30:35Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_polarity-composition-hypothesis-causal-evidence-from-negation-in-nli",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "金融科技",
+    "subcategory": "金融工具",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=金融科技 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Polarity Composition Hypothesis: Causal Evidence from Negation in NLI：we investigate how language models process negation in natural language inference (nli).。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_polarity-composition-hypothesis-causal-evidence-from-negation-in-nli",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Say Less, Hallucinate Less? Diagnosing and Restoring Object Coverage in Preference-Optimized Vision-Language Models",
+    "title": "Say Less, Hallucinate Less? Diagnosing and Restoring Object Coverage in Preference-Optimized Vision-Language Models",
+    "url": "https://arxiv.org/abs/2611.23179v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23179v1",
+    "description": "Preference optimization (PO) is the standard way to reduce object hallucination in large vision-language models. We find that four public PO checkpoints of LLaVA-1.5-7B also lower object coverage. They name fewer object categories, and their lower hallucination rates bring no significant gain in set-level object F1 on CHAIR. We therefore ask how much of the PO gain the base model can reproduce by stopping earlier. A positive end-of-sequence (EOS) logit bias lets the base model reach the recall o",
+    "authors": [
+      "Hansang Lee"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "arxiv_id": "2611.23179v1",
+    "published_at": "2026-11-17T18:24:58Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_say-less-hallucinate-less-diagnosing-and-restoring-object-coverage-in-preference",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "代码优化",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "RAG"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Say Less, Hallucinate Less? Diagnosing and Restoring Object Coverage in Preference-Optimized Vision-Language Models：preference optimization (po) is the standard way to reduce object hallucination in large vision-language models.。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "API接口"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_say-less-hallucinate-less-diagnosing-and-restoring-object-coverage-in-preference",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Déjà View: A Shared Working-Memory Model for Visual Tasks",
+    "title": "Déjà View: A Shared Working-Memory Model for Visual Tasks",
+    "url": "https://arxiv.org/abs/2611.23177v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23177v1",
+    "description": "A working-memory model must remember stimuli and use its memory flexibly to perform different tasks. Here we introduce a model of working memory for images that combines dynamic activity with temporary associations between image features. We train the model on five tasks, including remembering a sample while other images are presented, categorizing distractor images while remembering the sample, and determining whether an image is new or has been presented before. The same trained model performs",
+    "authors": [
+      "Mranmay Shetty",
+      "Gabriel Kreiman"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG",
+      "q-bio.NC"
+    ],
+    "arxiv_id": "2611.23177v1",
+    "published_at": "2026-11-17T18:23:14Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_déjà-view-a-shared-working-memory-model-for-visual-tasks",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "图像创作",
+    "subcategory": "图像处理",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=图像创作 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Déjà View: A Shared Working-Memory Model for Visual Tasks：a working-memory model must remember stimuli and use its memory flexibly to perform different tasks.。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "可视化",
+      "协作功能"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_déjà-view-a-shared-working-memory-model-for-visual-tasks",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Inference after coding agents",
+    "title": "Inference after coding agents",
+    "url": "https://arxiv.org/abs/2611.23174v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23174v1",
+    "description": "Empirical research is changing rapidly as AI coding agents are becoming increasingly proficient in every step of it, from writing code to manipulating data. We argue that while the potential of coding agents for science is vast, their use in hypothesis testing poses a substantial threat to classical inference, as these agents enable a supercharged form of selective inference. In particular, we argue that coding agents carrying out empirical research introduce a new type of post-selection inferen",
+    "authors": [
+      "Florian Gunsilius",
+      "David Van Dijcke",
+      "Kaspar Wüthrich"
+    ],
+    "categories": [
+      "stat.ME",
+      "cs.AI",
+      "econ.EM"
+    ],
+    "arxiv_id": "2611.23174v1",
+    "published_at": "2026-11-17T18:22:01Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_inference-after-coding-agents",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [
+        "学术研究"
+      ],
+      "attribute": [
+        "API服务"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Inference after coding agents：empirical research is changing rapidly as ai coding agents are becoming increasingly proficient in every step of it, from writing code to manipulating。付费，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "API接口"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_inference-after-coding-agents",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "MoE--LoRA Methods for Multilingual Adaptation: A Systematic Empirical Study",
+    "title": "MoE--LoRA Methods for Multilingual Adaptation: A Systematic Empirical Study",
+    "url": "https://arxiv.org/abs/2611.23158v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23158v1",
+    "description": "Routed low-rank adapters offer a parameter-efficient means to improve the performance of large language models (LLMs) across tasks. Hence, it is assumed that they can also be used to improve the support of low-resource languages in LLMs, which currently serve English far better than the thousands of other languages spoken worldwide. However, this assumption has never been verified empirically under a shared multilingual evaluation protocol. We address exactly this gap by comparing eight low-rank",
+    "authors": [
+      "Nikit Srivastava",
+      "Joel Dag",
+      "René Speck",
+      "Axel-Cyrille Ngonga Ngomo"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.23158v1",
+    "published_at": "2026-11-17T18:11:42Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_moe-lora-methods-for-multilingual-adaptation-a-systematic-empirical-study",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "MoE--LoRA Methods for Multilingual Adaptation: A Systematic Empirical Study：routed low-rank adapters offer a parameter-efficient means to improve the performance of large language models (llms) across tasks.。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "多语言支持",
+      "协作功能"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_moe-lora-methods-for-multilingual-adaptation-a-systematic-empirical-study",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "TextSphere: Efficient Text-to-Image Generation via Shared Hyperspherical Alignment and Uniformity",
+    "title": "TextSphere: Efficient Text-to-Image Generation via Shared Hyperspherical Alignment and Uniformity",
+    "url": "https://arxiv.org/abs/2611.23155v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23155v1",
+    "description": "Recent advances in text-to-image generation have substantially improved image quality, particularly through diffusion-based methods that require multiple inference steps. In contrast, Sphere Encoder offers an efficient generative framework capable of producing images with fewer forward steps. However, extending it to free-form text is nontrivial, because its class-conditioned design lacks cross-modal alignment. To address this challenge, we propose TextSphere, an efficient text-to-image generati",
+    "authors": [
+      "Yixia Zhang",
+      "Girish A. Koushik",
+      "Xilu Wang",
+      "Wenwu Wang"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.CL"
+    ],
+    "arxiv_id": "2611.23155v1",
+    "published_at": "2026-11-17T18:08:53Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_textsphere-efficient-text-to-image-generation-via-shared-hyperspherical-alignmen",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Lower School (PK - 2nd) - St. Thomas Aquinas Catholic School … St. Thomas Aquinas Catholic School curriculum is designed to comply with the academic requirements of the Office of …",
+        "Student Support - St. Thomas Aquinas Catholic School | Dallas, … Student Support - St. Thomas Aquinas Catholic School serves students in PK-8th grade on two campuses in Dallas, Texas. …",
+        "St. Thomas Aquinas Catholic School School Moodle You are not logged in. (Log in) Sign In"
+      ],
+      "top_results": [
+        {
+          "title": "Lower School (PK - 2nd) - St. Thomas Aquinas Catholic School …",
+          "href": "https://www.staschool.org/academics/lower-school",
+          "snippet": "St. Thomas Aquinas Catholic School curriculum is designed to comply with the academic requirements of the Office of …"
+        },
+        {
+          "title": "Student Support - St. Thomas Aquinas Catholic School | Dallas, …",
+          "href": "https://www.staschool.org/academics/student-support",
+          "snippet": "Student Support - St. Thomas Aquinas Catholic School serves students in PK-8th grade on two campuses in Dallas, Texas. …"
+        },
+        {
+          "title": "St. Thomas Aquinas Catholic School School Moodle",
+          "href": "https://moodle.staschool.org/",
+          "snippet": "You are not logged in. (Log in) Sign In"
+        },
+        {
+          "title": "STASchool: All courses",
+          "href": "https://moodle.staschool.org/course/index.php?categoryid=12",
+          "snippet": "Teacher: Micaela Hemmer Teacher: Cynthia Redden Teacher: Stephanie Todora Home"
+        },
+        {
+          "title": "Tuition and Financial Aid - St. Thomas Aquinas Catholic School …",
+          "href": "https://www.staschool.org/admissions/tuition",
+          "snippet": "We appreciate your consideration of St. Thomas Aquinas Catholic School. Our mission is to offer a high-quality and …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "free",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "图像生成"
+      ],
+      "scenario": [
+        "设计工作"
+      ],
+      "attribute": [
+        "免费"
+      ],
+      "tech": [
+        "Diffusion"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "TextSphere: Efficient Text-to-Image Generation via Shared Hyperspherical Alignment and Uniformity：Lower School (PK - 2nd) - St. Thomas Aquinas Catholic School … St. Thomas Aquinas Catholic School curriculum is designed to comply with the academic r。免费，面向研究人员和学术场景。",
+    "features": [
+      "开源免费",
+      "协作功能",
+      "SDK集成"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "免费使用，零成本上手",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_textsphere-efficient-text-to-image-generation-via-shared-hyperspherical-alignmen",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Learning Stratified Policies for Inference-Time Objectives",
+    "title": "Learning Stratified Policies for Inference-Time Objectives",
+    "url": "https://arxiv.org/abs/2611.23154v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23154v1",
+    "description": "Inference-time scaling improves the performance of large language models by sampling multiple responses and evaluating their collective utility. However, many existing approaches obtain these samples by repeatedly sampling from a single policy. In this work, we study if the sample budget at inference time can instead be allocated across a population of policies. We introduce stratified policies, where each of $k$ learned policies contributes one response to a $k$-sample inference-time objective.",
+    "authors": [
+      "Mridul Mahajan",
+      "Xuezhou Zhang",
+      "Aldo Pacchiano"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "arxiv_id": "2611.23154v1",
+    "published_at": "2026-11-17T18:06:12Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_learning-stratified-policies-for-inference-time-objectives",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "模型研究",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Learning Stratified Policies for Inference-Time Objectives：inference-time scaling improves the performance of large language models by sampling multiple responses and evaluating their collective utility.。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_learning-stratified-policies-for-inference-time-objectives",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Capability Composition in Heterogeneous Teams via Barrier-Guided Diffusion Sampling",
+    "title": "Capability Composition in Heterogeneous Teams via Barrier-Guided Diffusion Sampling",
+    "url": "https://arxiv.org/abs/2611.23149v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23149v1",
+    "description": "The agents in a heterogeneous team can cooperate to accomplish tasks that exceed their individual capabilities. The team trajectories for a cooperative task can be generated by a generative model, provided that the model has been trained on demonstrations of the agents cooperating. Yet, demonstrations of cooperation are costly and may not exist for tasks that the team has never performed. The conditions under which the agents can combine their capabilities, however, are physical properties of th",
+    "authors": [
+      "Diana Laura Morales",
+      "Ruoyu Lin",
+      "Magnus Egerstedt",
+      "Fabio Pasqualetti"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.LG",
+      "cs.MA",
+      "eess.SY"
+    ],
+    "arxiv_id": "2611.23149v1",
+    "published_at": "2026-11-17T18:03:24Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_capability-composition-in-heterogeneous-teams-via-barrier-guided-diffusion-sampl",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "CAPABILITY Definition & Meaning - Merriam-Webster 2 days ago · The meaning of CAPABILITY is the quality or state of being capable; also : ability. How to use capability in a sentence.",
+        "CAPABILITY | English meaning - Cambridge Dictionary CAPABILITY definition: 1. the ability to do something: 2. the number of weapons, soldiers, etc. a country has to fight a…. …",
+        "Capability - Wikipedia Look up capability in Wiktionary, the free dictionary. A capability is the ability to execute a specified course of action or to …"
+      ],
+      "top_results": [
+        {
+          "title": "CAPABILITY Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/capability",
+          "snippet": "2 days ago · The meaning of CAPABILITY is the quality or state of being capable; also : ability. How to use capability in a sentence."
+        },
+        {
+          "title": "CAPABILITY | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/capability",
+          "snippet": "CAPABILITY definition: 1. the ability to do something: 2. the number of weapons, soldiers, etc. a country has to fight a…. …"
+        },
+        {
+          "title": "Capability - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Capability",
+          "snippet": "Look up capability in Wiktionary, the free dictionary. A capability is the ability to execute a specified course of action or to …"
+        },
+        {
+          "title": "CAPABILITY Synonyms: 104 Similar and Opposite Words - Me…",
+          "href": "https://www.merriam-webster.com/thesaurus/capability",
+          "snippet": "1 day ago · Synonyms for CAPABILITY: qualification, ability, expertise, talent, stuff, goods, credentials, capacity; Antonyms …"
+        },
+        {
+          "title": "Capability - Definition, Meaning & Synonyms | Vocabulary.com",
+          "href": "https://www.vocabulary.com/dictionary/capability",
+          "snippet": "If you have a capability, it means you have the power to do something. Buying uranium gives a country the capability of making …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "AI Agent",
+    "subcategory": "Agent框架",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=AI Agent 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "个人开发者",
+        "企业团队"
+      ],
+      "attribute": [],
+      "tech": [
+        "Diffusion"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Capability Composition in Heterogeneous Teams via Barrier-Guided Diffusion Sampling：CAPABILITY Definition & Meaning - Merriam-Webster 2 days ago · The meaning of CAPABILITY is the quality or state of being capable; also : ability. How。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "协作功能"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_capability-composition-in-heterogeneous-teams-via-barrier-guided-diffusion-sampl",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Mind the Gap: A Deployed Multi-Agent System for Documentation Maintenance",
+    "title": "Mind the Gap: A Deployed Multi-Agent System for Documentation Maintenance",
+    "url": "https://arxiv.org/abs/2611.23142v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23142v1",
+    "description": "The \"AI revolution\" has enabled teams across the technology industry to deliver software features at unprecedented velocity. While code evolves faster than ever, customer-facing documentation often struggles to stay up to speed. As users increasingly rely on LLM-based agents that consume documentation as their primary interface, the impact of this documentation gap worsens: stale information propagates and is treated as authoritative. Signals for identifying where documentation has fallen behind",
+    "authors": [
+      "Lorenzo Masoero"
+    ],
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "arxiv_id": "2611.23142v1",
+    "published_at": "2026-11-17T17:59:13Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_mind-the-gap-a-deployed-multi-agent-system-for-documentation-maintenance",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "AI Agent",
+    "subcategory": "多智能体",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=AI Agent 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "企业团队"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Mind the Gap: A Deployed Multi-Agent System for Documentation Maintenance：the \"ai revolution\" has enabled teams across the technology industry to deliver software features at unprecedented velocity.。付费，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "实时处理",
+      "协作功能"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_mind-the-gap-a-deployed-multi-agent-system-for-documentation-maintenance",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "RSI-Prime: Training Models to Train Models",
+    "title": "RSI-Prime: Training Models to Train Models",
+    "url": "https://arxiv.org/abs/2611.23138v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23138v1",
+    "description": "Enabling large language models (LLMs) to autonomously conduct training and improve target models is an important foundation for recursive self-improvement (RSI). As LLMs expand their role from being trained to conducting training, their model-training capability warrants dedicated study and systematic development. To this end, we construct RSI-Prime, a dataset for improving model-training capability, comprising 350 complete experimental trajectories across seven task categories. To help LLMs lea",
+    "authors": [
+      "Dewu Zheng",
+      "Yang Ye",
+      "Hongyu Zhang",
+      "Jun Yu",
+      "Yanlin Wang"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.23138v1",
+    "published_at": "2026-11-17T17:55:30Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_rsi-prime-training-models-to-train-models",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "数据分析",
+    "subcategory": "数据分析",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=数据分析 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "RSI-Prime: Training Models to Train Models：enabling large language models (llms) to autonomously conduct training and improve target models is an important foundation for recursive self-improve。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "自动化",
+      "数据导入导出"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_rsi-prime-training-models-to-train-models",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Correcting Flows with Marginal Matching",
+    "title": "Correcting Flows with Marginal Matching",
+    "url": "https://arxiv.org/abs/2611.23134v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23134v1",
+    "description": "Flow matching models, ODE-based generative models, generate samples by gradually morphing a simple source distribution into a target distribution. However, these models still face challenges in optimally balancing computational efficiency with generation fidelity. While predictor-corrector schemes have been proven to help address this issue in diffusion models effectively, their application to flow matching models remains under-explored. In this work we present a novel training-based predictor-c",
+    "authors": [
+      "Meital Bojan",
+      "Nadav Bojan Sellam",
+      "Ev Zisselman",
+      "Aviv Tamar"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.23134v1",
+    "published_at": "2026-11-17T17:53:38Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_correcting-flows-with-marginal-matching",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "CORRECTING Definition & Meaning - Merriam-Webster 1 day ago · correct implies taking action to remove errors, faults, deviations, defects. rectify implies a more essential changing to make …",
+        "CORRECTING | English meaning - Cambridge Dictionary CORRECTING definition: 1. present participle of correct 2. to show or tell someone that something is wrong and to make it…. Learn more.",
+        "CORRECTING Synonyms: 119 Similar and Opposite Words - Merriam-Webster 1 day ago · There are multiple operations for correcting a bunion, each involving different approaches to bone correction, soft-tissue …"
+      ],
+      "top_results": [
+        {
+          "title": "CORRECTING Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/correcting",
+          "snippet": "1 day ago · correct implies taking action to remove errors, faults, deviations, defects. rectify implies a more essential changing to make …"
+        },
+        {
+          "title": "CORRECTING | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/correcting",
+          "snippet": "CORRECTING definition: 1. present participle of correct 2. to show or tell someone that something is wrong and to make it…. Learn more."
+        },
+        {
+          "title": "CORRECTING Synonyms: 119 Similar and Opposite Words - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/thesaurus/correcting",
+          "snippet": "1 day ago · There are multiple operations for correcting a bunion, each involving different approaches to bone correction, soft-tissue …"
+        },
+        {
+          "title": "CORRECTING Definition & Meaning | Dictionary.com",
+          "href": "https://www.dictionary.com/browse/correcting",
+          "snippet": "Oct 28, 2026 · CORRECTING definition: present participle of correct. See examples of correcting used in a sentence."
+        },
+        {
+          "title": "Correcting - definition of correcting by The Free Dictionary",
+          "href": "https://www.thefreedictionary.com/correcting",
+          "snippet": "1. To make corrections. 2. To make adjustments; compensate: correcting for the effects of air resistance."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "Diffusion"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Correcting Flows with Marginal Matching：CORRECTING Definition & Meaning - Merriam-Webster 1 day ago · correct implies taking action to remove errors, faults, deviations, defects. rectify imp。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_correcting-flows-with-marginal-matching",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "A Neural Envelope Method for Rapid Gradient-based Optimum Takeoff Trajectory Design",
+    "title": "A Neural Envelope Method for Rapid Gradient-based Optimum Takeoff Trajectory Design",
+    "url": "https://arxiv.org/abs/2611.23130v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23130v1",
+    "description": "Urban air mobility arises to mitigate ground traffic congestion. Multidisciplinary analysis and optimization (MDAO) has been introduced to reduce the energy consumption, thereby expanding aircraft performance. Surrogate-based MDAO lowers the cost of optimization, but multimodality disrupts global optimum search for both simulation-based and surrogate-based optimizations. Convex envelopes convert multimodal spaces into unimodal spaces, permitting efficient convex optimization; however, convexifyi",
+    "authors": [
+      "Samuel Sisk",
+      "Xiaosong Du"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.23130v1",
+    "published_at": "2026-11-17T17:47:48Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_a-neural-envelope-method-for-rapid-gradient-based-optimum-takeoff-trajectory-des",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "数据分析",
+        "搜索"
+      ],
+      "scenario": [
+        "设计工作"
+      ],
+      "attribute": [
+        "API服务"
+      ],
+      "tech": [
+        "Multi-modal"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "A Neural Envelope Method for Rapid Gradient-based Optimum Takeoff Trajectory Design：urban air mobility arises to mitigate ground traffic congestion.。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "API接口",
+      "开源免费"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_a-neural-envelope-method-for-rapid-gradient-based-optimum-takeoff-trajectory-des",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Where Should Physics Enter? Information, Identifiability and Calibration in Probabilistic Sea Surface Temperature Forecasting",
+    "title": "Where Should Physics Enter? Information, Identifiability and Calibration in Probabilistic Sea Surface Temperature Forecasting",
+    "url": "https://arxiv.org/abs/2611.23129v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.23129v1",
+    "description": "Advection-diffusion priors are a common way to make neural sea surface temperature (SST) forecasts physics-informed. We test where such a prior must enter a heteroscedastic ConvLSTM to help, using daily NOAA OISST v2.1 for the Bay of Bengal (1982-2024) and a synthetic benchmark on the same grid with known currents of controlled strength. (i) On real data, a soft advection-diffusion residual with a learned velocity gives no reliable benefit (lead-15 CRPS -0.007 degrees C, 95% interval [-0.022, +0",
+    "authors": [
+      "Parmitha Vangapandu",
+      "Jonnakuti Pavan Kumar",
+      "Sathwik Narkedimilli",
+      "MSVPJ Sathvik",
+      "T. M. Balakrishnan Nair"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.23129v1",
+    "published_at": "2026-11-17T17:46:47Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_where-should-physics-enter-information-identifiability-and-calibration-in-probab",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "WHERE | English meaning - Cambridge Dictionary In informal language, we often use where, when or why to introduce defining relative clauses instead of at which, on which or for …",
+        "WHERE Definition & Meaning - Merriam-Webster Jul 5, 2026 · Conjunction Please stay where you are. We sat down where there was some shade. He put the note where she could …",
+        "“Where” vs. “Were”: What’s The Difference? | Dictionary.com Aug 17, 2022 · In this article, we’ll define where and were, explain the different ways that they are used, provide examples of how …"
+      ],
+      "top_results": [
+        {
+          "title": "WHERE | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/where",
+          "snippet": "In informal language, we often use where, when or why to introduce defining relative clauses instead of at which, on which or for …"
+        },
+        {
+          "title": "WHERE Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/where",
+          "snippet": "Jul 5, 2026 · Conjunction Please stay where you are. We sat down where there was some shade. He put the note where she could …"
+        },
+        {
+          "title": "“Where” vs. “Were”: What’s The Difference? | Dictionary.com",
+          "href": "https://www.dictionary.com/articles/where-vs-were",
+          "snippet": "Aug 17, 2022 · In this article, we’ll define where and were, explain the different ways that they are used, provide examples of how …"
+        },
+        {
+          "title": "Were, We're, and Where: How to Choose the Right Word - ThoughtCo",
+          "href": "https://www.thoughtco.com/were-were-and-where-1692789",
+          "snippet": "May 7, 2025 · Were, we're, and where sound similar but have different meanings and uses in sentences. Use 'were' for past tense, …"
+        },
+        {
+          "title": "Secure, customizable & reliable WebRTC Video Calls| Whereby",
+          "href": "https://whereby.com/",
+          "snippet": "Host quick instant meetings or embed video calls into your platform with Whereby’s video conferencing API and SDK."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "数据分析",
+    "subcategory": "数据分析",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=数据分析 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [
+        "Diffusion"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Where Should Physics Enter? Information, Identifiability and Calibration in Probabilistic Sea Surface Temperature Forecasting：WHERE | English meaning - Cambridge Dictionary In informal language, we often use where, when or why to introduce defining relative clauses instead of。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_where-should-physics-enter-information-identifiability-and-calibration-in-probab",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Claude-BugHunter",
+    "full_name": "elementalsouls/Claude-BugHunter",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+    "language": "Python",
+    "stars": 11327,
+    "forks": 1511,
+    "stars_in_period": 2322,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_claude-bughunter",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=6 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "企业团队"
+      ],
+      "attribute": [],
+      "tech": [
+        "Claude"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Claude-BugHunter：a claude code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 。付费，适合普通用户直接使用。",
+    "features": [
+      "协作功能"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_claude-bughunter",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "arcane",
+    "full_name": "getarcaneapp/arcane",
+    "url": "https://github.com/getarcaneapp/arcane",
+    "description": "Modern Docker Management, Designed for Everyone",
+    "language": "Go",
+    "stars": 9778,
+    "forks": 561,
+    "stars_in_period": 547,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_arcane",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "开发工具",
+    "subcategory": "",
+    "audience": "developer",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "设计工作"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "arcane：modern docker management, designed for everyone。开源，适合开发者集成到工作流。",
+    "features": [
+      "开发辅助",
+      "工程工具"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "完全开源，可自由部署和修改；有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_arcane",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "nvm",
+    "full_name": "nvm-sh/nvm",
+    "url": "https://github.com/nvm-sh/nvm",
+    "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+    "language": "Shell",
+    "stars": 96149,
+    "forks": 10782,
+    "stars_in_period": 111,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_nvm",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "GitHub - nvm-sh/nvm: Node Version Manager - POSIX-compli… About nvm is a version manager for node.js, designed to be installed per-user, and invoked per-shell. nvm works on any …",
+        "NVM - Node.js Version Manager Tool - NVM Documentation Install and switch between multiple Node.js versions with ease. Perfect for testing across versions or working with different …",
+        "Download NVM For Windows, Linux, and macOS - NVM Docum… NVM (Node Version Manager) has two main implementations: This guide will help you download the appropriate version for …"
+      ],
+      "top_results": [
+        {
+          "title": "GitHub - nvm-sh/nvm: Node Version Manager - POSIX-compli…",
+          "href": "https://github.com/nvm-sh/nvm",
+          "snippet": "About nvm is a version manager for node.js, designed to be installed per-user, and invoked per-shell. nvm works on any …"
+        },
+        {
+          "title": "NVM - Node.js Version Manager Tool - NVM Documentation",
+          "href": "https://www.nvmnode.com/",
+          "snippet": "Install and switch between multiple Node.js versions with ease. Perfect for testing across versions or working with different …"
+        },
+        {
+          "title": "Download NVM For Windows, Linux, and macOS - NVM Docum…",
+          "href": "https://www.nvmnode.com/guide/download.html",
+          "snippet": "NVM (Node Version Manager) has two main implementations: This guide will help you download the appropriate version for …"
+        },
+        {
+          "title": "nvm-windows/nvm: The Node.js version manager for Windows. - …",
+          "href": "https://github.com/nvm-windows/nvm",
+          "snippet": "NVM for Windows The Microsoft / Google recommended Node.js version manager for millions of Windows developers."
+        },
+        {
+          "title": "What Does the Abbreviation 'NVM' Mean? - LiveAbout",
+          "href": "https://www.liveabout.com/what-does-nvm-mean-2483433",
+          "snippet": "Apr 12, 2020 · People often use this common abbreviation in text messaging and online chat conversations. NVM is used …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "其他",
+    "subcategory": "",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "nvm：GitHub - nvm-sh/nvm: Node Version Manager - POSIX-compli… About nvm is a version manager for node.js, designed to be installed per-user, and invoked p。开源，适合普通用户直接使用。",
+    "features": [
+      "实用工具"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_nvm",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "uv",
+    "full_name": "astral-sh/uv",
+    "url": "https://github.com/astral-sh/uv",
+    "description": "An extremely fast Python package and project manager, written in Rust.",
+    "language": "Rust",
+    "stars": 92216,
+    "forks": 3922,
+    "stars_in_period": 260,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_uv",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "其他",
+    "subcategory": "",
+    "audience": "developer",
+    "utility_score": 4,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "uv：an extremely fast python package and project manager, written in rust.。付费，适合开发者集成到工作流。",
+    "features": [
+      "实用工具"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_uv",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "svelte",
+    "full_name": "sveltejs/svelte",
+    "url": "https://github.com/sveltejs/svelte",
+    "description": "web development for the rest of us",
+    "language": "JavaScript",
+    "stars": 89627,
+    "forks": 6210,
+    "stars_in_period": 694,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_svelte",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "其他",
+    "subcategory": "",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "svelte：web development for the rest of us。开源，适合普通用户直接使用。",
+    "features": [
+      "API接口"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_svelte",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "jquery",
+    "full_name": "jquery/jquery",
+    "url": "https://github.com/jquery/jquery",
+    "description": "jQuery JavaScript Library",
+    "language": "JavaScript",
+    "stars": 60007,
+    "forks": 20714,
+    "stars_in_period": 268,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_jquery",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "其他",
+    "subcategory": "",
+    "audience": "developer",
+    "utility_score": 4,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "jquery：jquery javascript library。开源，适合开发者集成到工作流。",
+    "features": [
+      "SDK集成"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "完全开源，可自由部署和修改；有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_jquery",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "jiangshan-map",
+    "full_name": "DeanChensj/jiangshan-map",
+    "url": "https://github.com/DeanChensj/jiangshan-map",
+    "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
+    "language": "JavaScript",
+    "stars": 7914,
+    "forks": 968,
+    "stars_in_period": 280,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_jiangshan-map",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "其他",
+    "subcategory": "",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "jiangshan-map：江山时序 · 中国历史交互地图时间轴 (403 bce – present) | interactive historical atlas of china across 18 dynasties, 198 territory snapshots, ancient-to-modern place g。开源，适合普通用户直接使用。",
+    "features": [
+      "实用工具"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": true,
+    "health_status": "unknown",
+    "tool_id": "github-trending_jiangshan-map",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "n8n",
+    "full_name": "n8n-io/n8n",
+    "url": "https://github.com/n8n-io/n8n",
+    "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+    "language": "TypeScript",
+    "stars": 211055,
+    "forks": 61570,
+    "stars_in_period": 315,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_n8n",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=4 低于阈值",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "自动化"
+      ],
+      "scenario": [],
+      "attribute": [
+        "本地部署"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "n8n：fair-code workflow automation platform with native ai capabilities.。开源，适合普通用户直接使用。",
+    "features": [
+      "AI驱动",
+      "云端部署",
+      "自动化"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_n8n",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "solid",
+    "full_name": "solidjs/solid",
+    "url": "https://github.com/solidjs/solid",
+    "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+    "language": "TypeScript",
+    "stars": 36563,
+    "forks": 1182,
+    "stars_in_period": 37,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_solid",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "Distributed Antenna System (DAS) Solutions – SOLiD Every major mobile network provider in North America connects to SOLiD DAS. SOLiD DAS improves the performance of mobile networks …",
+        "What Is a Solid? Definition and Examples in Science Oct 19, 2020 · Because its particles are packed close together, a solid is rigid, doesn’t flow, and isn’t easily compressed. A solid is defined as …",
+        "SOLID Principles with Real Life Examples Apr 16, 2026 · SOLID principles make code easier to maintain. When each class has a clear responsibility, it's simpler to find where to …"
+      ],
+      "top_results": [
+        {
+          "title": "Distributed Antenna System (DAS) Solutions – SOLiD",
+          "href": "https://solid.com/us/",
+          "snippet": "Every major mobile network provider in North America connects to SOLiD DAS. SOLiD DAS improves the performance of mobile networks …"
+        },
+        {
+          "title": "What Is a Solid? Definition and Examples in Science",
+          "href": "https://sciencenotes.org/what-is-a-solid-definition-and-examples-in-science/",
+          "snippet": "Oct 19, 2020 · Because its particles are packed close together, a solid is rigid, doesn’t flow, and isn’t easily compressed. A solid is defined as …"
+        },
+        {
+          "title": "SOLID Principles with Real Life Examples",
+          "href": "https://www.geeksforgeeks.org/system-design/solid-principle-in-programming-understand-with-real-life-examples/",
+          "snippet": "Apr 16, 2026 · SOLID principles make code easier to maintain. When each class has a clear responsibility, it's simpler to find where to …"
+        },
+        {
+          "title": "Solid - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Solid",
+          "snippet": "Solid-state physics is the study of rigid matter, or solids, through methods such as solid-state chemistry, quantum mechanics, …"
+        },
+        {
+          "title": "Solid: Your data, your choice - Solid Project",
+          "href": "https://solidproject.org/",
+          "snippet": "Solid is an evolution of the web by its creator Sir Tim Berners-Lee realizing his original vision for the Web. Interested in getting your own Solid …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "设计创意",
+    "subcategory": "",
+    "audience": "developer",
+    "utility_score": 4,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "solid：Distributed Antenna System (DAS) Solutions – SOLiD Every major mobile network provider in North America connects to SOLiD DAS. SOLiD DAS improves the 。开源，适合开发者集成到工作流。",
+    "features": [
+      "SDK集成"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "完全开源，可自由部署和修改；有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_solid",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "plannotator",
+    "full_name": "backnotprop/plannotator",
+    "url": "https://github.com/backnotprop/plannotator",
+    "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+    "language": "TypeScript",
+    "stars": 13445,
+    "forks": 1352,
+    "stars_in_period": 2926,
+    "period": "weekly",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "weekly",
+    "source": "github-trending",
+    "id": "github-trending_plannotator",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "代码审查",
+    "audience": "developer",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=4 低于阈值",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "企业团队"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "plannotator：the workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents 。开源，适合开发者集成到工作流。",
+    "features": [
+      "协作功能",
+      "CLI工具"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "完全开源，可自由部署和修改；有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_plannotator",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "sure",
+    "full_name": "we-promise/sure",
+    "url": "https://github.com/we-promise/sure",
+    "description": "The personal finance app for everyone (by everyone)",
+    "language": "Ruby",
+    "stars": 16490,
+    "forks": 1445,
+    "stars_in_period": 4786,
+    "period": "weekly",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "weekly",
+    "source": "github-trending",
+    "id": "github-trending_sure",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "金融科技",
+    "subcategory": "金融工具",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "个人开发者"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "sure：the personal finance app for everyone (by everyone)。开源，适合普通用户直接使用。",
+    "features": [
+      "实用工具"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_sure",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "codex-security",
+    "full_name": "openai/codex-security",
+    "url": "https://github.com/openai/codex-security",
+    "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm:https://www.npmjs.com/package/@openai/codex-security",
+    "language": "TypeScript",
+    "stars": 14106,
+    "forks": 1099,
+    "stars_in_period": 2531,
+    "period": "weekly",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "weekly",
+    "source": "github-trending",
+    "id": "github-trending_codex-security",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "调试工具",
+    "audience": "developer",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=4 低于阈值",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "codex-security：openai's codex security cli and typescript sdk for finding, validating, and fixing security vulnerabilities.。开源，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "CLI工具",
+      "SDK集成"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "完全开源，可自由部署和修改；有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_codex-security",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "plugins",
+    "full_name": "cursor/plugins",
+    "url": "https://github.com/cursor/plugins",
+    "description": "Cursor plugin specification and official plugins",
+    "language": "TypeScript",
+    "stars": 17180,
+    "forks": 1893,
+    "stars_in_period": 315,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_plugins",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "其他",
+    "subcategory": "",
+    "audience": "developer",
+    "utility_score": 4,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [
+        "浏览器插件"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "plugins：cursor plugin specification and official plugins。开源，适合开发者集成到工作流。",
+    "features": [
+      "插件/扩展系统"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "完全开源，可自由部署和修改；有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_plugins",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Show HN: Deep Research – Open-Source Customizable Reasoning Framework for Devs",
+    "title": "Show HN: Deep Research – Open-Source Customizable Reasoning Framework for Devs",
+    "url": "https://github.com/JigsawStack/deep-research",
+    "hn_url": "https://news.ycombinator.com/item?id=44153898",
+    "description": "Show HN: Deep Research – Open-Source Customizable Reasoning Framework for Devs",
+    "points": 7,
+    "num_comments": 0,
+    "author": "winzamark12",
+    "published_at": "2025-06-01T21:34:46Z",
+    "platform": [
+      "hackernews"
+    ],
+    "type": "news",
+    "source": "hackernews-ai",
+    "id": "hackernews-ai_show-hn-deep-research-open-source-customizable-reasoning-framework-for-devs",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 5,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=5 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [
+        "学术研究"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Show HN: Deep Research – Open-Source Customizable Reasoning Framework for Devs：show hn: deep research – open-source customizable reasoning framework for devs。，适合开发者集成到工作流。",
+    "features": [
+      "开源免费",
+      "SDK集成"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "hackernews-ai_show-hn-deep-research-open-source-customizable-reasoning-framework-for-devs",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Show HN: Persistent Mind Model – Portable AI Personas for Any LLM",
+    "title": "Show HN: Persistent Mind Model – Portable AI Personas for Any LLM",
+    "url": "https://github.com/scottonanski/persistent-mind-model",
+    "hn_url": "https://news.ycombinator.com/item?id=44870680",
+    "description": "Show HN: Persistent Mind Model – Portable AI Personas for Any LLM",
+    "points": 2,
+    "num_comments": 0,
+    "author": "HimTortons",
+    "published_at": "2025-08-11T23:33:27Z",
+    "platform": [
+      "hackernews"
+    ],
+    "type": "news",
+    "source": "hackernews-ai",
+    "id": "hackernews-ai_show-hn-persistent-mind-model-portable-ai-personas-for-any-llm",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "模型研究",
+    "audience": "researcher",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=4 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Show HN: Persistent Mind Model – Portable AI Personas for Any LLM：show hn: persistent mind model – portable ai personas for any llm。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "hackernews-ai_show-hn-persistent-mind-model-portable-ai-personas-for-any-llm",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+    "title": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+    "url": "https://finterm.ai/",
+    "hn_url": "https://news.ycombinator.com/item?id=48896257",
+    "description": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+    "points": 6,
+    "num_comments": 0,
+    "author": "cheeseblubber",
+    "published_at": "2026-07-13T17:52:10Z",
+    "platform": [
+      "hackernews"
+    ],
+    "type": "news",
+    "source": "hackernews-ai",
+    "id": "hackernews-ai_show-hn-finterm-ai-bloomberg-terminal-for-claude-code",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "SHOW Definition & Meaning - Merriam-Webster 6 days ago · show, manifest, evidence, evince, demonstrate mean to reveal outwardly or make apparent. show is the general term …",
+        "Show - definition of show by The Free Dictionary To display for sale, in exhibition, or in competition: showed her most recent paintings. c. To permit access to (a house, for example) …",
+        "SHOW | English meaning - Cambridge Dictionary SHOW definition: 1. to make it possible for something to be seen: 2. to record or express a number or measurement…. Learn more."
+      ],
+      "top_results": [
+        {
+          "title": "SHOW Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/show",
+          "snippet": "6 days ago · show, manifest, evidence, evince, demonstrate mean to reveal outwardly or make apparent. show is the general term …"
+        },
+        {
+          "title": "Show - definition of show by The Free Dictionary",
+          "href": "https://www.thefreedictionary.com/show",
+          "snippet": "To display for sale, in exhibition, or in competition: showed her most recent paintings. c. To permit access to (a house, for example) …"
+        },
+        {
+          "title": "SHOW | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/show",
+          "snippet": "SHOW definition: 1. to make it possible for something to be seen: 2. to record or express a number or measurement…. Learn more."
+        },
+        {
+          "title": "Lenka - The Show (New Version) - YouTube",
+          "href": "https://www.youtube.com/watch?v=elsh3J5lJ6g",
+          "snippet": "Oct 25, 2009 · Lenka's official music video for 'The Show'. Click to listen to Lenka on Spotify: http://smarturl.it/LenkaSpotify?IQid=..."
+        },
+        {
+          "title": "Show - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Show",
+          "snippet": "This disambiguation page lists articles associated with the title . If an internal link incorrectly led you here, you may wish to change …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/finterm.ai",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 5,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=5 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "Claude"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Show HN: Finterm.ai Bloomberg terminal for Claude Code：SHOW Definition & Meaning - Merriam-Webster 6 days ago · show, manifest, evidence, evince, demonstrate mean to reveal outwardly or make apparent. show。，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "CLI工具"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "hackernews-ai_show-hn-finterm-ai-bloomberg-terminal-for-claude-code",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Show HN: EasyFunctionCall – Converts OpenAPI specs to AI model func call params",
+    "title": "Show HN: EasyFunctionCall – Converts OpenAPI specs to AI model func call params",
+    "url": "https://easyfunctioncall.com",
+    "hn_url": "https://news.ycombinator.com/item?id=42560205",
+    "description": "Show HN: EasyFunctionCall – Converts OpenAPI specs to AI model func call params",
+    "points": 1,
+    "num_comments": 0,
+    "author": "numbbbbb",
+    "published_at": "2024-12-31T17:27:32Z",
+    "platform": [
+      "hackernews"
+    ],
+    "type": "news",
+    "source": "hackernews-ai",
+    "id": "hackernews-ai_show-hn-easyfunctioncall-converts-openapi-specs-to-ai-model-func-call-params",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "SHOW Definition & Meaning - Merriam-Webster 6 days ago · show, manifest, evidence, evince, demonstrate mean to reveal outwardly or make apparent. show is the general term but …",
+        "Show - definition of show by The Free Dictionary To display for sale, in exhibition, or in competition: showed her most recent paintings. c. To permit access to (a house, for example) …",
+        "SHOW | English meaning - Cambridge Dictionary SHOW definition: 1. to make it possible for something to be seen: 2. to record or express a number or measurement…. Learn more."
+      ],
+      "top_results": [
+        {
+          "title": "SHOW Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/show",
+          "snippet": "6 days ago · show, manifest, evidence, evince, demonstrate mean to reveal outwardly or make apparent. show is the general term but …"
+        },
+        {
+          "title": "Show - definition of show by The Free Dictionary",
+          "href": "https://www.thefreedictionary.com/show",
+          "snippet": "To display for sale, in exhibition, or in competition: showed her most recent paintings. c. To permit access to (a house, for example) …"
+        },
+        {
+          "title": "SHOW | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/show",
+          "snippet": "SHOW definition: 1. to make it possible for something to be seen: 2. to record or express a number or measurement…. Learn more."
+        },
+        {
+          "title": "Lenka - The Show (New Version) - YouTube",
+          "href": "https://www.youtube.com/watch?v=elsh3J5lJ6g",
+          "snippet": "Oct 25, 2009 · Lenka's official music video for 'The Show'. Click to listen to Lenka on Spotify: http://smarturl.it/LenkaSpotify?IQid=... As …"
+        },
+        {
+          "title": "Show - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Show",
+          "snippet": "This disambiguation page lists articles associated with the title . If an internal link incorrectly led you here, you may wish to change …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/easyfunctioncall.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 5,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=5 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [
+        "API服务"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Show HN: EasyFunctionCall – Converts OpenAPI specs to AI model func call params：SHOW Definition & Meaning - Merriam-Webster 6 days ago · show, manifest, evidence, evince, demonstrate mean to reveal outwardly or make apparent. show。，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "API接口",
+      "数据导入导出"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "hackernews-ai_show-hn-easyfunctioncall-converts-openapi-specs-to-ai-model-func-call-params",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "Tencent Hy4 flash",
+    "slug": "tencent-hy4-flash",
+    "url": "https://www.tencent.com/",
+    "description": "Fast, low-cost model from $0.07/M input. Hy4 flash is Tencent’s most cost-effective Hy model to date, with 224B total parameters, 12B active, multimodal input and a 1M-token context. Per Tencent, it decodes above 150 tokens per second and costs about $0.07 per million input tokens and $0.28 output. It targets everyday tasks like document work, slides, deep research and computer use, while Hy4 handles harder engineering. Open-sourcing is planned, but the weights are not out yet.",
+    "source": "producthunt-ai",
+    "source_url": "https://www.producthunt.com/topics/artificial-intelligence",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [
+        "学术研究"
+      ],
+      "attribute": [],
+      "tech": [
+        "Multi-modal"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "platform": [
+      "producthunt"
+    ],
+    "type": "ai_tool",
+    "thumbnail_url": "https://ph-files.imgix.net/be1e56c1-5307-46ff-b9e0-a378fa46c4c8.svg?auto=format",
+    "raw_data": {
+      "ph_id": "1318419",
+      "tagline": "Fast, low-cost model from $0.07/M input",
+      "votes_count": 101,
+      "comments_count": 1,
+      "created_at": "2026-11-18T08:01:00Z",
+      "featured_at": "2026-11-18T08:01:00Z",
+      "daily_rank": 12,
+      "makers": [],
+      "topics": [
+        "Artificial Intelligence"
+      ]
+    },
+    "id": "producthunt-ai_tencent-hy4-flash",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Home - Tencent 23 hours ago · Tencent is: Three friends making dinner plans. And over a billion monthly active users. Learn more about Tencent for …",
+        "Tencent - Wikipedia Tencent (Chinese: 腾讯; pinyin: Téngxùn) is a Chinese multinational technology conglomerate and holding company headquartered …",
+        "腾讯视频频道 - 热门电影电视剧综艺动漫在线观看 - 腾讯视频 腾讯视频频道页提供最新热门电影、电视剧、综艺、动漫、纪录片、体育等高清正版视频内容在线观看，海量资源持续更新，当前热 …"
+      ],
+      "top_results": [
+        {
+          "title": "Home - Tencent",
+          "href": "https://www.tencent.com/",
+          "snippet": "23 hours ago · Tencent is: Three friends making dinner plans. And over a billion monthly active users. Learn more about Tencent for …"
+        },
+        {
+          "title": "Tencent - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Tencent",
+          "snippet": "Tencent (Chinese: 腾讯; pinyin: Téngxùn) is a Chinese multinational technology conglomerate and holding company headquartered …"
+        },
+        {
+          "title": "腾讯视频频道 - 热门电影电视剧综艺动漫在线观看 - 腾讯视频",
+          "href": "https://v.qq.com/",
+          "snippet": "腾讯视频频道页提供最新热门电影、电视剧、综艺、动漫、纪录片、体育等高清正版视频内容在线观看，海量资源持续更新，当前热 …"
+        },
+        {
+          "title": "腾讯网",
+          "href": "https://www.qq.com/",
+          "snippet": "腾讯网从2003年创立至今，已经成为集新闻信息，区域垂直生活服务、社会化媒体资讯和产品为一体的互联网媒体平台。 腾讯网下设 …"
+        },
+        {
+          "title": "下载中心-腾讯会议",
+          "href": "https://meeting.tencent.com/download/",
+          "snippet": "腾讯会议是一款基于腾讯20多年音视频通讯经验积累的高清流畅、便捷易用、安全可靠的多人远程音视频会议产品。 目前有多种版本 …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/tencent.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 6,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=6 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "ai_analysis": "Tencent Hy4 flash：Tencent - Wikipedia Tencent (Chinese: 腾讯; pinyin: Téngxùn) is a Chinese multinational technology conglomerate and holding company headquartered …。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "producthunt-ai_tencent-hy4-flash",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
+  },
+  {
+    "name": "果核剥壳",
+    "url": "https://www.ghxi.com/",
+    "description": "AI工具集导航关于我们免责声明最新AI项目AI应用商店果核剥壳CakeGrowthVipCheap攻壳智能体映技派豆包即梦蛙蛙写作Loomy办公小浣熊TRAE码上飞妙呀秒哒秒悟updreamSekoLibTV",
+    "platform": [
+      "ai-bot.cn"
+    ],
+    "type": "ai_tool",
+    "source": "aibot",
+    "id": "aibot_果核剥壳",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Relocation & Community Information | Move to Fort Wayne, Indiana Discover relocation resources, neighborhood guides, community stats, and newcomer support to help you make Fort Wayne, Indiana …",
+        "Promenade Park | Visit Fort Wayne, Indiana Promenade Park Join us at Fort Wayne, Indiana's Promenade Park. This one-of-a-kind park joins our natural rivers to our thriving urban …",
+        "The Fort Wayne Visitors Center Our Visitors Center is open to assist visitors who are planning their trips to Fort Wayne. We answer inquiries via phone, email, and our …"
+      ],
+      "top_results": [
+        {
+          "title": "Relocation & Community Information | Move to Fort Wayne, Indiana",
+          "href": "https://www.visitfortwayne.com/about-us/community-and-relocation-info/",
+          "snippet": "Discover relocation resources, neighborhood guides, community stats, and newcomer support to help you make Fort Wayne, Indiana …"
+        },
+        {
+          "title": "Promenade Park | Visit Fort Wayne, Indiana",
+          "href": "https://www.visitfortwayne.com/promenade-park/",
+          "snippet": "Promenade Park Join us at Fort Wayne, Indiana's Promenade Park. This one-of-a-kind park joins our natural rivers to our thriving urban …"
+        },
+        {
+          "title": "The Fort Wayne Visitors Center",
+          "href": "https://www.visitfortwayne.com/listing/the-fort-wayne-visitors-center/355/",
+          "snippet": "Our Visitors Center is open to assist visitors who are planning their trips to Fort Wayne. We answer inquiries via phone, email, and our …"
+        },
+        {
+          "title": "Public Art | Experience Art in Fort Wayne, Indiana",
+          "href": "https://www.visitfortwayne.com/public-art/",
+          "snippet": "Public Art in Fort Wayne, Indiana Fort Wayne is home to hundreds of brilliant murals, sculptures and pieces of public art – and our …"
+        },
+        {
+          "title": "Community Statistics | Fort Wayne, Indiana",
+          "href": "https://www.visitfortwayne.com/about-us/community-and-relocation-info/community-stats/",
+          "snippet": "Community Stats Fort Wayne is a great place to live! Don’t just take our word for it – Money Magazine, the U.S. Conference of Mayors, …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/ghxi.com",
+    "likely_china": true,
+    "china_signals": [
+      "lang_zh"
+    ],
+    "category": "办公效率",
+    "subcategory": "办公助手",
+    "audience": "general",
+    "utility_score": 9,
+    "should_include": true,
+    "rejection_reason": "非AI工具: 黑名单: 果核剥壳",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "日常办公"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "果核剥壳：Relocation & Community Information | Move to Fort Wayne, Indiana Discover relocation resources, neighborhood guides, community stats, and newcomer sup。，适合普通用户直接使用。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "实用性极高，强烈推荐",
+    "ai_confidence": 0.6,
+    "is_china_tool": true,
+    "health_status": "unknown",
+    "tool_id": "aibot_果核剥壳",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-11-18T23:47:29.520150+00:00"
   }
 ]
