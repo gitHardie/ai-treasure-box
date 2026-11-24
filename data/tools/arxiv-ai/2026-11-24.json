@@ -1,0 +1,692 @@
+{
+  "source": "arxiv-ai",
+  "source_name": "ArXiv AI Papers",
+  "collected_at": "2026-11-24T03:40:09.363380+00:00",
+  "mode": "discovery",
+  "fetch_limit": 30,
+  "count": 30,
+  "items": [
+    {
+      "name": "Seeing Is Not Acting: WARD Diagnoses the Evidence-to-State-to-Action Gap in Longitudinal Clinical Agents",
+      "title": "Seeing Is Not Acting: WARD Diagnoses the Evidence-to-State-to-Action Gap in Longitudinal Clinical Agents",
+      "url": "https://arxiv.org/abs/2611.29243v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29243v1",
+      "description": "Large language models for longitudinal clinical care must revise their assessments and actions as patient information accumulates. However, benchmarks centered on isolated responses or final task outcomes provide limited insight into intermediate failures in evidence use, state updating, and action selection. We introduce WARD, a benchmark for evaluating how clinical agents translate accumulating evidence into patient-state judgments and timely, safe actions. WARD comprises 4,560 clinical tasks ",
+      "authors": [
+        "Chao Ding",
+        "Yidong Jiang",
+        "Junzhi Ning",
+        "Juncheng Wu",
+        "Yuhan Wang"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.29243v1",
+      "published_at": "2026-11-22T05:30:24Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Edit-Induced Dependency Mismatch: Propagation Omissions, Recovery, and Evaluation Blind Spots in Coding Agents",
+      "title": "Edit-Induced Dependency Mismatch: Propagation Omissions, Recovery, and Evaluation Blind Spots in Coding Agents",
+      "url": "https://arxiv.org/abs/2611.29242v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29242v1",
+      "description": "During iterative code modification, coding agents may continue to rely in subsequent reasoning on outdated dependency judgments whose text remains fixed in the context, leading to errors in subsequent reasoning and leaving consumer defects undetected by the original task evaluations, thereby exposing blind spots in the tested benchmarks. We study actual agent execution trajectories collected on benchmark tasks: deepseek-v4-flash runs on DeepSWE and SWE-bench Verified, supplemented by Qwen3.8-Fla",
+      "authors": [
+        "Fei Ding"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.SE"
+      ],
+      "arxiv_id": "2611.29242v1",
+      "published_at": "2026-11-22T05:25:28Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Fuzzy e-Means: Fuzzy c-Means on Large Data with Moving-Average Mini-Batch Updates",
+      "title": "Fuzzy e-Means: Fuzzy c-Means on Large Data with Moving-Average Mini-Batch Updates",
+      "url": "https://arxiv.org/abs/2611.29241v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29241v1",
+      "description": "Fuzzy c-means (FCM) gives every point a degree of membership in every cluster. Its standard solver, alternating optimization (AO), needs a full pass over the data per iteration and often many iterations, while methods built for large data stop at a worse objective or still need tens of passes. We run FCM with the optimizer of e-means, a recent mini-batch k-means that keeps moving averages of the number and the sum of the points in each cluster and sets its batch size and step size by scaling law",
+      "authors": [
+        "Paritosh Tiwari",
+        "Punit Rathore"
+      ],
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "arxiv_id": "2611.29241v1",
+      "published_at": "2026-11-22T05:24:47Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "GameAnything: From Any Inspirations to Playable Game Worlds",
+      "title": "GameAnything: From Any Inspirations to Playable Game Worlds",
+      "url": "https://arxiv.org/abs/2611.29238v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29238v1",
+      "description": "AI-driven game development holds the potential to transform diverse human inspirations into interactive experiences. However, existing systems and benchmarks primarily focus on explicit development specifications, with limited support for adapting multimodal references and evaluating actual gameplay experiences. We introduce GameAnything, an open-source agentic platform that transforms multimodal inspirations into playable extensions of existing games through iterative development. GameAnything ",
+      "authors": [
+        "Wenyi Wu",
+        "Siqi Liu",
+        "Yuru Feng",
+        "Zixuan Song",
+        "Aayush Salvi"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.29238v1",
+      "published_at": "2026-11-22T05:17:35Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Why Adaptive Optimizers Struggle with Large Convolution Kernels",
+      "title": "Why Adaptive Optimizers Struggle with Large Convolution Kernels",
+      "url": "https://arxiv.org/abs/2611.29232v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29232v1",
+      "description": "Large convolution kernels enlarge the receptive fields of ConvNets at a modest computational cost, but they are notoriously difficult to train. Existing large-kernel networks therefore rely on costly training techniques, such as parallel small-kernel branches with batch normalization. In this paper, we trace this difficulty to adaptive optimizers such as Adam, which normalize the update of every weight separately. Since input features rarely average to zero, all weights of a kernel share a commo",
+      "authors": [
+        "Tianyu Ding",
+        "Jiachen Jiang",
+        "Jinxin Zhou",
+        "Yong Ma",
+        "Zhihui Zhu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.29232v1",
+      "published_at": "2026-11-22T05:07:10Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Tenlai-TTS 2.0: Continuous-Representation LLM-Based TTS System with End-to-End Training",
+      "title": "Tenlai-TTS 2.0: Continuous-Representation LLM-Based TTS System with End-to-End Training",
+      "url": "https://arxiv.org/abs/2611.29226v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29226v1",
+      "description": "Autoregressive text-to-speech (TTS) with continuous speech latents avoids quantization-induced information loss, but typically relies on a latent space that is learned separately and then frozen before language-model training. Such a space must satisfy two competing requirements: it must retain enough acoustic detail for high-fidelity reconstruction, yet be sufficiently structured and regularized to support autoregressive prediction by a language model. We present Tenlai-TTS 2.0, which learns co",
+      "authors": [
+        "Changfeng Gao",
+        "Yong Ren",
+        "Jun Yuan",
+        "Zhengkun Tian",
+        "Ye Bai"
+      ],
+      "categories": [
+        "cs.SD",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.29226v1",
+      "published_at": "2026-11-22T04:58:09Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "IteraSong: LLM-Guided Iterative Symbolic Music Creation in a Web DAW",
+      "title": "IteraSong: LLM-Guided Iterative Symbolic Music Creation in a Web DAW",
+      "url": "https://arxiv.org/abs/2611.29225v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29225v1",
+      "description": "Music creation is inherently iterative, yet many symbolic generation systems still center on producing or regenerating isolated outputs. We present IteraSong, an interactive web-based Digital Audio Workstation (DAW) for LLM-guided iterative symbolic music creation. Unlike one-shot generation systems, IteraSong supports a generate-audition-edit-refine loop over a persistent multi-track project. Users initialize a fully labeled pop draft, then progressively refine it through natural-language instr",
+      "authors": [
+        "Di Lu",
+        "Xinran Zhang",
+        "Yan Gao",
+        "Yuan Zhang",
+        "Xiaoqing Wang"
+      ],
+      "categories": [
+        "cs.SD",
+        "cs.CL",
+        "cs.SC"
+      ],
+      "arxiv_id": "2611.29225v1",
+      "published_at": "2026-11-22T04:57:00Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Curvature Mismatch and Local Errors in Galaxy Property Estimation",
+      "title": "Curvature Mismatch and Local Errors in Galaxy Property Estimation",
+      "url": "https://arxiv.org/abs/2611.29224v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29224v1",
+      "description": "Linear probes are widely used to evaluate learned representations and infer physical quantities from unlabelled data. The probe's predictions are from an affine function in ambient space restricted to the underlying representation, and consequently, even a representation that has complete information needed to predict a target can produce systematic probe errors when that information is encoded in a form inaccessible to the linear probe. Here we share that some of this probing error is due to th",
+      "authors": [
+        "Austin Lutterbach",
+        "Angus Hoy",
+        "Jasper Chong",
+        "Aman Kumar",
+        "Michael J. Smith"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.29224v1",
+      "published_at": "2026-11-22T04:51:01Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Ego-HMB: Human Motion Bridging from Egocentric Images via A Motion Bridge Diffusion Model",
+      "title": "Ego-HMB: Human Motion Bridging from Egocentric Images via A Motion Bridge Diffusion Model",
+      "url": "https://arxiv.org/abs/2611.29218v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29218v1",
+      "description": "We introduce Egocentric Human Motion Bridging, a task that generates a coherent 3D human motion sequence from two endpoint egocentric images. Unlike conventional motion in-betweening, which requires structured 3D endpoint poses, this setting uses raw first-person observations available from wearable devices in VR/AR and robotics. It presents challenges due to viewpoint variations, partial body visibility, and temporal ambiguity under cross-modal endpoint constraints. To address these challenges,",
+      "authors": [
+        "Gaoge Han",
+        "Yongkang Cheng",
+        "Shaoli Huang",
+        "Jing Zhang",
+        "Mingming Gong"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.29218v1",
+      "published_at": "2026-11-22T04:34:37Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "NANO: Unifying Missingness and Input Uncertainty in Tabular Learning",
+      "title": "NANO: Unifying Missingness and Input Uncertainty in Tabular Learning",
+      "url": "https://arxiv.org/abs/2611.29214v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29214v1",
+      "description": "Missing values are common in tabular data, yet current approaches to handling them often overlook two dimensions. First, an observed value may be uncertain, while a Not-Observed (N.O.) value may still have a reasonable estimate. Inputs should therefore span a continuous spectrum from no evidence to a fully trusted observation. Second, Not-Applicable (N.A.) means that no meaningful value exists for a record, yet this semantic state often lacks explicit representation. To address both dimensions, ",
+      "authors": [
+        "Kuangdai Leng",
+        "Maria Tsekhmistrenko",
+        "Matteo Bagagli",
+        "Simon Jeffery",
+        "Tarje Nissen-Meyer"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.29214v1",
+      "published_at": "2026-11-22T04:25:34Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "THETA: Heat Diffusion as a Structural Prior for Cross-Domain Transfer in Graph Foundation Models",
+      "title": "THETA: Heat Diffusion as a Structural Prior for Cross-Domain Transfer in Graph Foundation Models",
+      "url": "https://arxiv.org/abs/2611.29210v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29210v1",
+      "description": "Graph foundation models (GFMs) aim to learn transferable representations across domains with heterogeneous node attributes and graph structures. However, relations inferred from node attributes can rely on domain-specific feature semantics, limiting their transferability to unseen graphs, particularly in low-label regimes. We propose THETA (Topology-aware HEat-based TrAnsfer), a graph foundation model that leverages Heat Kernel Signatures (HKS) as a topology-based structural prior for cross-doma",
+      "authors": [
+        "Haonan Liu",
+        "Shuo Wang",
+        "Zhao Kang"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.29210v1",
+      "published_at": "2026-11-22T04:19:01Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Direct Feedback Policy Optimization for AI Coding Agents",
+      "title": "Direct Feedback Policy Optimization for AI Coding Agents",
+      "url": "https://arxiv.org/abs/2611.29193v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29193v1",
+      "description": "AI coding agents generate, modify, and validate code through multi-turn interactions. Existing reinforcement learning methods often rely on sparse terminal rewards, making it difficult to assess how intermediate decisions affect task outcomes, and group-relative methods also require repeated sampling for each task. We propose Direct Feedback Policy Optimization (DFPO), a single-trajectory reinforcement learning algorithm that trains directly from a single trajectory. DFPO achieves higher task re",
+      "authors": [
+        "Fei Ding"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2611.29193v1",
+      "published_at": "2026-11-22T03:36:09Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Ziv Meets Sumcheck: Zero-Knowledge Proofs of Floating-Point LLM Inference",
+      "title": "Ziv Meets Sumcheck: Zero-Knowledge Proofs of Floating-Point LLM Inference",
+      "url": "https://arxiv.org/abs/2611.29188v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29188v1",
+      "description": "Zero-knowledge proofs can show that a neural network produced a given output without revealing the network, but current systems for language models prove integer approximations of the model rather than the floating-point arithmetic that is actually deployed. Proving floating-point matrix multiplication has been regarded as hard, because rounding after every addition makes the result depend on the order of the additions. We avoid this obstacle by proving the correctly rounded product, in which ev",
+      "authors": [
+        "Hassan Khodaiemehr",
+        "Khadijeh Bagheri",
+        "Chen Feng"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.CR",
+        "cs.IT"
+      ],
+      "arxiv_id": "2611.29188v1",
+      "published_at": "2026-11-22T03:29:13Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "loopxDINO: Dense Visual Prediction via Iterative Latent Reasoning",
+      "title": "loopxDINO: Dense Visual Prediction via Iterative Latent Reasoning",
+      "url": "https://arxiv.org/abs/2611.29180v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29180v1",
+      "description": "Standard dense visual prediction architectures scale representation capacity by stacking deep feedforward decoders (6-16 transformer layers with 50M-200M parameters). This explicit layer stacking brings substantial activation memory overhead during backpropagation, requires high off-chip memory bandwidth for non-tied weights, and uses static computational allocation that cannot adapt to spatial image complexity. We propose loopxDINO, which replaces physical decoder depth with iterative latent re",
+      "authors": [
+        "Xiangjing An",
+        "Zhibin Jiao",
+        "Aiting Chen"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.29180v1",
+      "published_at": "2026-11-22T03:19:00Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "On Adaptive Step Sizes for Eligibility Traces in Deep Reinforcement Learning",
+      "title": "On Adaptive Step Sizes for Eligibility Traces in Deep Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2611.29178v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29178v1",
+      "description": "Many deep reinforcement learning (RL) algorithms store agent-environment interactions in a replay buffer and later learn by sampling transitions from it. However, this approach can be memory-inefficient and can delay learning because the agent can learn from a transition only when the buffer samples it. Additionally, most of these methods use one-step or short multi-step temporal-difference (TD) updates, which are slow at credit assignment. An alternative approach is to learn from the stream of ",
+      "authors": [
+        "Esraa Elelimy",
+        "Martha White"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.29178v1",
+      "published_at": "2026-11-22T03:15:55Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "What Makes Recurrence Generalize Across Lengths?",
+      "title": "What Makes Recurrence Generalize Across Lengths?",
+      "url": "https://arxiv.org/abs/2611.29171v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29171v1",
+      "description": "Multi-step reasoning requires models to preserve and update intermediate information as computation unfolds. State tracking captures this fundamental requirement, but models that succeed within a fixed range of state transitions may not generalize when substantially more updates are required. Recurrent Transformers offer a natural mechanism for addressing this challenge by repeatedly applying shared Transformer blocks, allowing computation to scale with problem length. We study when such recurre",
+      "authors": [
+        "Yoonsung Jung",
+        "Sunghun Jung",
+        "Louise Nayeong Koh",
+        "Yongjun Choi"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.29171v1",
+      "published_at": "2026-11-22T03:08:21Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Fixed or Deleted? External Feedback Lets Cheaper AI Coding Agents Repair Rule Violations",
+      "title": "Fixed or Deleted? External Feedback Lets Cheaper AI Coding Agents Repair Rule Violations",
+      "url": "https://arxiv.org/abs/2611.29162v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29162v1",
+      "description": "Many defects violate project rules that the code itself does not reveal, such as layering constraints or required tests. We study whether LLM coding agents repair such violations better when an external checker reports them, with their location and a repair goal. Three models, a small, medium and large model, driven by an AI agent, worked on 25 pull requests with 31 planted defects in ten open-source projects, plus 5 correct controls, five times alone and five times with findings from CodeAssure",
+      "authors": [
+        "Laura Wynter"
+      ],
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.29162v1",
+      "published_at": "2026-11-22T02:44:10Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ARC: Adaptive Rollout Control for Efficient Synchronous LLM Reinforcement Learning",
+      "title": "ARC: Adaptive Rollout Control for Efficient Synchronous LLM Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2611.29156v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29156v1",
+      "description": "Synchronous reinforcement learning (RL) for large language models proceeds through a repeated rollout--barrier--update loop. Each update must wait for a fixed number of complete, group-relative training samples, yet individual response lengths and reward outcomes vary widely and only emerge as generation progresses. Static admission and unconditional completion therefore leave accelerators idle in some steps, and waste computation generating samples that will never contribute to the current upda",
+      "authors": [
+        "Yihui Zhang",
+        "Tianyu Wo",
+        "Jinghao Wang",
+        "Xiao Zhou",
+        "Huitian Xue"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "arxiv_id": "2611.29156v1",
+      "published_at": "2026-11-22T02:27:20Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ContextFact: Remembering Facts in Context for Long-Term Conversational Agents",
+      "title": "ContextFact: Remembering Facts in Context for Long-Term Conversational Agents",
+      "url": "https://arxiv.org/abs/2611.29155v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29155v1",
+      "description": "Agents built on large language models must maintain continuity across repeated interactions with users. However, long-term conversations scatter facts across turns and sessions, making it difficult to retrieve the right evidence with enough context. Memory for such conversations must therefore preserve facts with their context while keeping evidence selectively accessible. We first study how memory construction and retrieval-unit boundaries affect answerability and evidence access. Reading the e",
+      "authors": [
+        "Jiayu Huang",
+        "Yichao Cai",
+        "Xinyu Li",
+        "Zhen Zhang",
+        "Javen Qinfeng Shi"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.29155v1",
+      "published_at": "2026-11-22T02:25:07Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "MVAgent: Per-Video Agents under Global Coordination for Multi-Video Understanding",
+      "title": "MVAgent: Per-Video Agents under Global Coordination for Multi-Video Understanding",
+      "url": "https://arxiv.org/abs/2611.29154v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29154v1",
+      "description": "Multi-video understanding requires systems to combine evidence from different videos for cross-video reasoning. Answering such questions involves two kinds of decisions. Observation decisions must adapt to each video's content, whereas cross-video judgments require relating evidence from different videos based on the question. Most existing agents make both kinds of decisions in one controller, whose context accumulates observations from every video. We separate them in MVAgent, a training-free ",
+      "authors": [
+        "Kewei Wei",
+        "XueXiang Wen",
+        "Bocheng Hu",
+        "Weili Xu",
+        "Haiyang Yu"
+      ],
+      "categories": [
+        "cs.AI",
+        "cs.CV"
+      ],
+      "arxiv_id": "2611.29154v1",
+      "published_at": "2026-11-22T02:24:08Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "ATLAS: Autoregressive Trajectories for Longitudinal Analysis of Survival",
+      "title": "ATLAS: Autoregressive Trajectories for Longitudinal Analysis of Survival",
+      "url": "https://arxiv.org/abs/2611.29152v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29152v1",
+      "description": "Dynamic survival prediction requires estimates that reflect a patient's observed clinical history. We introduce ATLAS (Autoregressive Trajectories for Longitudinal Analysis of Survival), a framework that trains a sequence model on longitudinal data and autoregressively samples possible futures conditional on an individual's covariates and observed history. These trajectories form a patient-specific synthetic cohort from which Kaplan-Meier survival curves and Aalen-Johansen cumulative incidence c",
+      "authors": [
+        "Morgan Nissen",
+        "Chunyang Li",
+        "Seth Glazier",
+        "Julia Bohman",
+        "Ahmad Halwani"
+      ],
+      "categories": [
+        "stat.ME",
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.29152v1",
+      "published_at": "2026-11-22T02:22:51Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Medical Specialty Prediction from Bangla Patient Narratives: A Comparative Study of ML, DL, Transformers, and LLMs",
+      "title": "Medical Specialty Prediction from Bangla Patient Narratives: A Comparative Study of ML, DL, Transformers, and LLMs",
+      "url": "https://arxiv.org/abs/2611.29151v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29151v1",
+      "description": "Timely access to appropriate medical specialists remains a bottleneck in Bangladesh's healthcare system, as patients describe symptoms in informal Bangla rather than clinical terms, leading to ineffective referrals. This paper compares four model families for predicting medical specialties from Bangla patient narratives: six machine learning (ML) models using hybrid TF-IDF features, four deep learning (DL) models using Word2Vec embeddings trained on the corpus, four fine-tuned transformers, and ",
+      "authors": [
+        "Tasnin Tabassum Ali",
+        "Faisal Ahmed",
+        "Muhammad Anwarul Azim"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.29151v1",
+      "published_at": "2026-11-22T02:18:18Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Can an Agent Trust Its Own Zoom? Cross-Magnification Provenance Verification for Whole-Slide Images",
+      "title": "Can an Agent Trust Its Own Zoom? Cross-Magnification Provenance Verification for Whole-Slide Images",
+      "url": "https://arxiv.org/abs/2611.29150v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29150v1",
+      "description": "Visual agents navigate whole-slide images through magnified observations associated with claimed locations. However, a visually plausible observation does not necessarily originate from its claimed location, particularly across magnifications and in regions with similar tissue structures. We formulate cross-magnification provenance verification (CMPV) to evaluate whether visual evidence supports a claimed spatial association, recover the source when possible, and abstain when evidence is insuffi",
+      "authors": [
+        "Yan Wang",
+        "Yiran Song",
+        "Zizhuo Gong",
+        "Jianxiang Qi",
+        "Zhongxing Xu"
+      ],
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.29150v1",
+      "published_at": "2026-11-22T02:10:25Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "VeriLogic: Reinforcement Learning over Verifiable Logical Reasoning Traces",
+      "title": "VeriLogic: Reinforcement Learning over Verifiable Logical Reasoning Traces",
+      "url": "https://arxiv.org/abs/2611.29147v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29147v1",
+      "description": "Logical reasoning derives conclusions from premises through explicit intermediate inference steps, providing a natural basis for process-level verification and supervision. However, existing learning methods often rely on response-level outcome signals, which overlook heterogeneous correctness within the reasoning trace: a correct answer may contain invalid reasoning, while valid intermediate steps may also appear in an incorrect response. To address this issue, we introduce Reinforcement Learni",
+      "authors": [
+        "ZeLiang Chen",
+        "Yunyao Zhang",
+        "Xinglang Zhang",
+        "Wenbing Li",
+        "Junqing Yu"
+      ],
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "arxiv_id": "2611.29147v1",
+      "published_at": "2026-11-22T01:59:28Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Towards Edge Artificial Intelligence for Predicting Antimicrobial Resistance in Mycobacterium tuberculosis",
+      "title": "Towards Edge Artificial Intelligence for Predicting Antimicrobial Resistance in Mycobacterium tuberculosis",
+      "url": "https://arxiv.org/abs/2611.29143v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29143v1",
+      "description": "Antimicrobial resistance (AMR) in Mycobacterium tuberculosis (MTB) poses a major challenge to global tuberculosis control, as multidrug-resistant strains limit available treatment options. Rapid and accurate prediction of drug resistance from genomic data could support timely treatment decisions and public health interventions. However, many existing computational approaches for genomic AMR prediction rely on computationally intensive pipelines, limiting their suitability for deployment on resou",
+      "authors": [
+        "Nishat Tasnim",
+        "Faisal Ahmed",
+        "Rokan Uddin Faruqui"
+      ],
+      "categories": [
+        "cs.LG",
+        "q-bio.QM"
+      ],
+      "arxiv_id": "2611.29143v1",
+      "published_at": "2026-11-22T01:51:43Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "The Retry Tax: Why Static Same-Task Retries Can Cost More per Completion",
+      "title": "The Retry Tax: Why Static Same-Task Retries Can Cost More per Completion",
+      "url": "https://arxiv.org/abs/2611.29133v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29133v1",
+      "description": "Retrying an agent after failure can complete more tasks while increasing the cost per completion. We study a static policy that stops at verified success or an attempt cap and otherwise resets the original prompt and workspace without passing feedback to the next request. Under stationary task success probabilities, independent attempts conditional on the task, and a common attempt cost, easier tasks tend to succeed earlier. When task success probabilities differ, the unresolved mix shifts towar",
+      "authors": [
+        "Wei-Jung Huang"
+      ],
+      "categories": [
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.29133v1",
+      "published_at": "2026-11-22T01:37:17Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "DeepDOSReasoner: Physics-Grounded Reasoning for Density-of-States Prediction and Materials Discovery",
+      "title": "DeepDOSReasoner: Physics-Grounded Reasoning for Density-of-States Prediction and Materials Discovery",
+      "url": "https://arxiv.org/abs/2611.29132v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29132v1",
+      "description": "Predicting a material's behavior from its atomic structure is a longstanding goal of the physical sciences. The electronic and phonon densities of states (eDOS and phDOS) govern key electronic, optical, vibrational, and thermodynamic properties, yet their calculation using density functional theory (DFT) is costly: about 60% of Materials Project entries lack eDOS and over 80% lack phDOS. Existing crystal-to-spectrum models rely on pooled structural representations and pointwise regression, which",
+      "authors": [
+        "Yingheng Wang",
+        "Francesco Ricci",
+        "Zhilong Wang",
+        "Tao Yu",
+        "Junwen Bai"
+      ],
+      "categories": [
+        "cond-mat.mtrl-sci",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.29132v1",
+      "published_at": "2026-11-22T01:36:59Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Handover Cost Optimization in LEO Satellite Networks using an RL-based Multiple-Column Selection Strategy via Branch-and-Price",
+      "title": "Handover Cost Optimization in LEO Satellite Networks using an RL-based Multiple-Column Selection Strategy via Branch-and-Price",
+      "url": "https://arxiv.org/abs/2611.29129v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29129v1",
+      "description": "Next-generation wireless networks increasingly rely on low Earth orbit (LEO) satellites for broad coverage and low latency, making efficient handover management essential. We formulate satellite handover as a combinatorial optimization problem, assigning each ground user to exactly one capacity-limited, visible satellite while minimizing network handover costs. We propose a reinforcement learning (RL)-based branch-and-price (B&P) framework with learned multiple-column selection (MCS) to accelera",
+      "authors": [
+        "Mandar R. Nalavade",
+        "Gaurav S. Kasbekar",
+        "Koushik Kar"
+      ],
+      "categories": [
+        "cs.NI",
+        "cs.LG",
+        "math.OC"
+      ],
+      "arxiv_id": "2611.29129v1",
+      "published_at": "2026-11-22T01:26:15Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Pain Reassessment from Pulse Waveforms with Language Model Explanations",
+      "title": "Pain Reassessment from Pulse Waveforms with Language Model Explanations",
+      "url": "https://arxiv.org/abs/2611.29128v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29128v1",
+      "description": "Routine photoplethysmography (PPG) offers a continuous physiological signal for pain reassessment between self-reports. Whether prior recordings provide an individualized physiological reference beyond care-process timing remains unresolved. Across 52,082 report-linked assessments from 21,514 patients in MIMIC-III critical care and MC-MED emergency care, we evaluate a workflow that pairs longitudinal PPG representations with local evidence-linked language interpretation. Among 27 methods, source",
+      "authors": [
+        "Cheng Ding",
+        "Jiaming Liu",
+        "Daoqiang Zhang"
+      ],
+      "categories": [
+        "cs.LG"
+      ],
+      "arxiv_id": "2611.29128v1",
+      "published_at": "2026-11-22T01:22:19Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    },
+    {
+      "name": "Group-Balanced Supervised Fine-Tuning for Knowledge-Intensive Domains",
+      "title": "Group-Balanced Supervised Fine-Tuning for Knowledge-Intensive Domains",
+      "url": "https://arxiv.org/abs/2611.29127v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.29127v1",
+      "description": "Supervised fine-tuning (SFT) weights every supervised token equally, so on knowledge-dense corpora the loss budget follows token count rather than importance: on a legal QA benchmark, citation strings absorb 81% of the supervised loss weight budget while the answers being taught absorb 5%. We present Group-Balanced SFT (GB-SFT), which equalizes the loss budget across the semantic roles of tokens within a target sequence. With one tunable dial and one structural switch, GB-SFT contains standard S",
+      "authors": [
+        "Mark Heimann",
+        "Bruno Jacob"
+      ],
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "arxiv_id": "2611.29127v1",
+      "published_at": "2026-11-22T01:20:46Z",
+      "platform": [
+        "arxiv"
+      ],
+      "type": "paper"
+    }
+  ]
+}
