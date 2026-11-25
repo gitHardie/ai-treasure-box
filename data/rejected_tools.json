@@ -916711,5 +916711,4163 @@
     "tool_id": "aibot_果核剥壳",
     "ai_relevance": "not-ai",
     "rejected_at": "2026-11-24T03:49:24.303495+00:00"
+  },
+  {
+    "name": "Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action",
+    "title": "Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action",
+    "url": "https://arxiv.org/abs/2611.31240v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31240v1",
+    "description": "Reasoning vision-language-action (VLA) models for autonomous driving use chain-of-thought (CoT) reasoning to guide action generation, but incur substantial memory and computational costs. We study structured pruning for these models, focusing on preserving both scene understanding and trajectory prediction. Our analysis of Taylor importance in Alpamayo-1.5-10B shows that reasoning and trajectory objectives assign different importance to the same vision-language model (VLM) structures. In the act",
+    "authors": [
+      "Seongchan Kim",
+      "Soowon Son",
+      "Sangoh Kim",
+      "Hyunah Ko",
+      "Eunbeen Hong"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG",
+      "cs.RO"
+    ],
+    "arxiv_id": "2611.31240v1",
+    "published_at": "2026-11-23T18:59:52Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_pruning-autonomous-driving-vlas-what-to-preserve-for-reasoning-and-action",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "Pruning - Wikipedia Pruning is the selective removal of certain parts of a plant, such as branches, buds, or roots. It is practiced in horticulture …",
+        "Pruning 101: A Guide to Pruning Trees and Shrubs Feb 26, 2024 · Avoid making pruning mistakes to your beloved shrubs and trees! Not only does bad pruning affect the …",
+        "What Is Pruning? Benefits, Types and Required Tools - The Spruce Feb 28, 2023 · Pruning may be one of the most important chores that a homeowner needs to perform on their woody plants, …"
+      ],
+      "top_results": [
+        {
+          "title": "Pruning - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Pruning",
+          "snippet": "Pruning is the selective removal of certain parts of a plant, such as branches, buds, or roots. It is practiced in horticulture …"
+        },
+        {
+          "title": "Pruning 101: A Guide to Pruning Trees and Shrubs",
+          "href": "https://www.almanac.com/pruning-101-guide-pruning-trees-and-shrubs",
+          "snippet": "Feb 26, 2024 · Avoid making pruning mistakes to your beloved shrubs and trees! Not only does bad pruning affect the …"
+        },
+        {
+          "title": "What Is Pruning? Benefits, Types and Required Tools - The Spruce",
+          "href": "https://www.thespruce.com/what-is-pruning-7095447",
+          "snippet": "Feb 28, 2023 · Pruning may be one of the most important chores that a homeowner needs to perform on their woody plants, …"
+        },
+        {
+          "title": "What Is Pruning—and When Do You Need to Do It? - Real Simple",
+          "href": "https://www.realsimple.com/what-is-pruning-and-when-do-you-need-to-do-it-8599490",
+          "snippet": "Mar 6, 2024 · It may seem counterintutive, but pruning is essential for helping your garden (or even some houseplants) …"
+        },
+        {
+          "title": "What is Pruning? The Importance, Benefits and Methods of Pruning",
+          "href": "https://blog.davey.com/what-is-pruning-the-importance-benefits-and-methods-of-pruning/",
+          "snippet": "Sep 13, 2022 · What are the benefits of pruning? Pruning is one of best things you can do for your trees. A proper prune is …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "AI Agent",
+    "subcategory": "自主代理",
+    "audience": "general",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=AI Agent 实用性=3 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "数据分析"
+      ],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Pruning Autonomous Driving VLAs: What to Preserve for Reasoning and Action：Pruning - Wikipedia Pruning is the selective removal of certain parts of a plant, such as branches, buds, or roots. It is practiced in horticulture …。，适合普通用户直接使用。",
+    "features": [
+      "AI驱动",
+      "自动化",
+      "数据导入导出"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_pruning-autonomous-driving-vlas-what-to-preserve-for-reasoning-and-action",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Let Vision-Language Models Generate Images through Their Representations",
+    "title": "Let Vision-Language Models Generate Images through Their Representations",
+    "url": "https://arxiv.org/abs/2611.31237v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31237v1",
+    "description": "Recent unified multimodal models aim to combine visual understanding and generation within a single model, yet effectively integrating the two capabilities remains challenging. Leveraging pretrained vision-language models offers a way to build on already learned multimodal knowledge, but making this knowledge effectively accessible to visual generation remains nontrivial. We find that a central challenge lies in the heterogeneous visual representations used for understanding and generation. To a",
+    "authors": [
+      "JB Kim",
+      "Byungwoo Jeon",
+      "Kyungmin Lee",
+      "Hyeonmo Kang",
+      "Cheonbok Park"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.31237v1",
+    "published_at": "2026-11-23T18:59:32Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_let-vision-language-models-generate-images-through-their-representations",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "LET Definition & Meaning - Merriam-Webster 2 days ago · hire, let, lease, rent, charter mean to engage or grant for use at a price. hire and let, strictly speaking, are complementary …Read more",
+        "LET function | Microsoft Support To use the LET function in Excel, you define pairs of names and associated values, and a calculation that uses them all. You must …Read more",
+        "Ladies European Tour Contact LET Privacy Policy Terms And Conditions Competition T&C’s Careers Ladies European Golf Venture Limited, a private limited …Read more"
+      ],
+      "top_results": [
+        {
+          "title": "LET Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/let",
+          "snippet": "2 days ago · hire, let, lease, rent, charter mean to engage or grant for use at a price. hire and let, strictly speaking, are complementary …Read more"
+        },
+        {
+          "title": "LET function | Microsoft Support",
+          "href": "https://support.microsoft.com/en-us/excel/functions/let-function",
+          "snippet": "To use the LET function in Excel, you define pairs of names and associated values, and a calculation that uses them all. You must …Read more"
+        },
+        {
+          "title": "Ladies European Tour",
+          "href": "https://ladieseuropeantour.com/",
+          "snippet": "Contact LET Privacy Policy Terms And Conditions Competition T&C’s Careers Ladies European Golf Venture Limited, a private limited …Read more"
+        },
+        {
+          "title": "LET | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/let",
+          "snippet": "Let us is the first person plural imperative, which we only use in very formal situations. Let’s is the short form, which we often use to …Read more"
+        },
+        {
+          "title": "Let - definition of let by The Free Dictionary",
+          "href": "https://www.thefreedictionary.com/let",
+          "snippet": "1. To slow down; diminish: didn't let up in their efforts. 2. To become less severe or intense: The rain let up."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "图像创作",
+    "subcategory": "图像生成",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=图像创作 实用性=3 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "图像生成"
+      ],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [
+        "RAG",
+        "Multi-modal"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Let Vision-Language Models Generate Images through Their Representations：LET Definition & Meaning - Merriam-Webster 2 days ago · hire, let, lease, rent, charter mean to engage or grant for use at a price. hire and let, stri。，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "可视化"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_let-vision-language-models-generate-images-through-their-representations",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "TowerBridge: Bridging the Dual-Encoder Modality Gap via Weight-Space Programming",
+    "title": "TowerBridge: Bridging the Dual-Encoder Modality Gap via Weight-Space Programming",
+    "url": "https://arxiv.org/abs/2611.31233v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31233v1",
+    "description": "CLIP-style dual encoders map images and text through two separate towers into a shared embedding space, where the two modalities occupy distinct regions separated by a modality gap. Retrieval fails when wrong matches, or hard negatives, outrank the correct one, and the gap is the usual suspect. Yet removing it post hoc degrades retrieval on every CLIP checkpoint we test. We introduce a paired statistic that identifies directions where the two towers agree more on hard negatives than on matched p",
+    "authors": [
+      "Hani Alomari",
+      "Md Atabuzzaman",
+      "Chris Thomas"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.31233v1",
+    "published_at": "2026-11-23T18:59:13Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_towerbridge-bridging-the-dual-encoder-modality-gap-via-weight-space-programming",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "tagesschau.de - die erste Adresse für Nachrichten und ... 2 days ago · tagesschau.de - die erste Adresse für Nachrichten und Information: An 365 Tagen im Jahr, rund um die Uhr aktualisiert - …Read more",
+        "Aktuelle Nachrichten aus Deutschland | tagesschau.de Überblick zu Hintergründen, Analysen und Interviews bei tagesschau.de - die erste Adresse für Nachrichten und umfassende Berichte …Read more",
+        "tagesschau - alle verfügbaren Videos - jetzt streamen! 1 day ago · Die Tagesschau ist die älteste und meistgesehene Nachrichtensendung im deutschen Fernsehen. Bis heute der Inbegriff für …Read more"
+      ],
+      "top_results": [
+        {
+          "title": "tagesschau.de - die erste Adresse für Nachrichten und ...",
+          "href": "https://www.tagesschau.de/",
+          "snippet": "2 days ago · tagesschau.de - die erste Adresse für Nachrichten und Information: An 365 Tagen im Jahr, rund um die Uhr aktualisiert - …Read more"
+        },
+        {
+          "title": "Aktuelle Nachrichten aus Deutschland | tagesschau.de",
+          "href": "https://www.tagesschau.de/inland",
+          "snippet": "Überblick zu Hintergründen, Analysen und Interviews bei tagesschau.de - die erste Adresse für Nachrichten und umfassende Berichte …Read more"
+        },
+        {
+          "title": "tagesschau - alle verfügbaren Videos - jetzt streamen!",
+          "href": "https://www.ardmediathek.de/sendung/tagesschau/Y3JpZDovL2Rhc2Vyc3RlLmRlL3RhZ2Vzc2NoYXU",
+          "snippet": "1 day ago · Die Tagesschau ist die älteste und meistgesehene Nachrichtensendung im deutschen Fernsehen. Bis heute der Inbegriff für …Read more"
+        },
+        {
+          "title": "Tagesschau (German TV programme) - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Tagesschau_(German_TV_programme)",
+          "snippet": "Tagesschau (pronounced [ˈtaːɡəsˌʃaʊ̯] ⓘ, lit. 'Review of the Day') is a German national and international television news service …Read more"
+        },
+        {
+          "title": "ARD Nachrichten: alle Videos der tagesschau",
+          "href": "https://www.ardmediathek.de/tagesschau",
+          "snippet": "Alle Videos der tagesschau und tagesthemen sowie Politikmagazine. Jetzt in der Mediathek streamen."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=3 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "Embedding"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "TowerBridge: Bridging the Dual-Encoder Modality Gap via Weight-Space Programming：tagesschau.de - die erste Adresse für Nachrichten und ... 2 days ago · tagesschau.de - die erste Adresse für Nachrichten und Information: An 365 Tagen。，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "协作功能",
+      "CLI工具"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_towerbridge-bridging-the-dual-encoder-modality-gap-via-weight-space-programming",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Language Models Steer on Injected Uncertainty Tokens, but Fail to Self-Monitor In Situ",
+    "title": "Language Models Steer on Injected Uncertainty Tokens, but Fail to Self-Monitor In Situ",
+    "url": "https://arxiv.org/abs/2611.31228v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31228v1",
+    "description": "Prompting language models to verbalize stepwise numerical confidence during generation is an increasingly popular approach for triggering backtracking and error correction in agentic reasoning. This strategy presupposes two capabilities: (1) in-situ monitoring fidelity (does confidence drop when an error occurs?) and (2) downstream steering control (does an uncertainty token causally steer the model to repair its error?). We evaluated four open-weights models (Qwen2.5-7B, Llama-3.1-8B, Mistral-7",
+    "authors": [
+      "Daniel Theron"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "arxiv_id": "2611.31228v1",
+    "published_at": "2026-11-23T18:58:52Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_language-models-steer-on-injected-uncertainty-tokens-but-fail-to-self-monitor-in",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Language - Wikipedia Language is a structured system of communication that consists of grammar and vocabulary. It is the primary means by which …Read more",
+        "Language | Definition, Types, Characteristics, Development, & Facts ... Nov 1, 2026 · Language, a system of conventional spoken, manual (signed), or written symbols by means of which human beings …Read more",
+        "LANGUAGE Definition & Meaning - Merriam-Webster 2 days ago · The tongue and speech are so closely connected that in many languages the word that means \"tongue\" also means …Read more"
+      ],
+      "top_results": [
+        {
+          "title": "Language - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Language",
+          "snippet": "Language is a structured system of communication that consists of grammar and vocabulary. It is the primary means by which …Read more"
+        },
+        {
+          "title": "Language | Definition, Types, Characteristics, Development, & Facts ...",
+          "href": "https://www.britannica.com/topic/language",
+          "snippet": "Nov 1, 2026 · Language, a system of conventional spoken, manual (signed), or written symbols by means of which human beings …Read more"
+        },
+        {
+          "title": "LANGUAGE Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/language",
+          "snippet": "2 days ago · The tongue and speech are so closely connected that in many languages the word that means \"tongue\" also means …Read more"
+        },
+        {
+          "title": "Google Translate",
+          "href": "https://translate.google.com/",
+          "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …Read more"
+        },
+        {
+          "title": "LANGUAGE | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/language",
+          "snippet": "In computer programming, a language is a system of writing instructions for computers."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "AI Agent",
+    "subcategory": "Agent框架",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=AI Agent 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "Mistral",
+        "Llama"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Language Models Steer on Injected Uncertainty Tokens, but Fail to Self-Monitor In Situ：Language - Wikipedia Language is a structured system of communication that consists of grammar and vocabulary. It is the primary means by which …Read 。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_language-models-steer-on-injected-uncertainty-tokens-but-fail-to-self-monitor-in",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "How Far Can Linear Go? BiPert, a Unified Framework for Single-Cell Perturbation Modelling",
+    "title": "How Far Can Linear Go? BiPert, a Unified Framework for Single-Cell Perturbation Modelling",
+    "url": "https://arxiv.org/abs/2611.31227v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31227v1",
+    "description": "Understanding how genetic perturbations affect cellular behaviour is essential for studying gene function and regulatory mechanisms. Large-scale CRISPR screens measure these effects across thousands of genes, but cover relatively few cellular contexts. Predicting perturbation responses in unseen cell types and identifying perturbed genes from their transcriptional effects therefore remain challenging. Here, we show that both tasks can be addressed through a common linear decomposition of transcr",
+    "authors": [
+      "Abhishek Sharma",
+      "Aleksej Zelezniak"
+    ],
+    "categories": [
+      "cs.LG",
+      "q-bio.CB",
+      "q-bio.GN",
+      "q-bio.QM"
+    ],
+    "arxiv_id": "2611.31227v1",
+    "published_at": "2026-11-23T18:58:32Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_how-far-can-linear-go-bipert-a-unified-framework-for-single-cell-perturbation-mo",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "wikiHow: How-to instructions you can trust. wikiHow is an award-winning website where trusted research and expert knowledge come together. Since 2005, wikiHow has helped …",
+        "HOW | English meaning - Cambridge Dictionary how are things? informal (also how's everything?); (also how's it going?) I haven't seen you for ages, Carol. How are things? how do …",
+        "HOW Definition & Meaning - Merriam-Webster Jul 2, 2026 · Conjunction We asked how we could help. Let me tell you how we'll pay for the trip. The book tells the story of how the company …"
+      ],
+      "top_results": [
+        {
+          "title": "wikiHow: How-to instructions you can trust.",
+          "href": "https://www.wikihow.com/Main-Page",
+          "snippet": "wikiHow is an award-winning website where trusted research and expert knowledge come together. Since 2005, wikiHow has helped …"
+        },
+        {
+          "title": "HOW | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/how",
+          "snippet": "how are things? informal (also how's everything?); (also how's it going?) I haven't seen you for ages, Carol. How are things? how do …"
+        },
+        {
+          "title": "HOW Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/how",
+          "snippet": "Jul 2, 2026 · Conjunction We asked how we could help. Let me tell you how we'll pay for the trip. The book tells the story of how the company …"
+        },
+        {
+          "title": "How to Use \"How\" Correctly | English Grammar Basics Explained",
+          "href": "https://www.youtube.com/watch?v=34j5TzW-7uI",
+          "snippet": "Apr 26, 2025 · Master the use of \"How\" in English with this easy lesson! Learn how to frame questions correctly and confidently using …"
+        },
+        {
+          "title": "How - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/How",
+          "snippet": "Search for \"how\" on Wikipedia. This page lists articles associated with the title How. If an incorrectly led you here, you may wish to …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=3 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "How Far Can Linear Go? BiPert, a Unified Framework for Single-Cell Perturbation Modelling：wikiHow: How-to instructions you can trust. wikiHow is an award-winning website where trusted research and expert knowledge come together. Since 2005,。，适合普通用户直接使用。",
+    "features": [
+      "AI驱动",
+      "SDK集成"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_how-far-can-linear-go-bipert-a-unified-framework-for-single-cell-perturbation-mo",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Self-Supervised Dataset Distillation via Mutual Information Maximization",
+    "title": "Self-Supervised Dataset Distillation via Mutual Information Maximization",
+    "url": "https://arxiv.org/abs/2611.31225v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31225v1",
+    "description": "Dataset distillation (DD) aims to compress a large dataset into a small synthetic one that remains effective for training neural networks. Despite its success in supervised learning, DD remains underexplored in self-supervised learning (SSL), where distilled data must preserve the information needed to learn representations that remain consistent across augmentations. To bridge this gap, we introduce Mutual Information Prototype Alignment (MIPA), an efficient SSL dataset distillation approach th",
+    "authors": [
+      "Mohammad Hossein Moslemi",
+      "Mahdi Beitollahi",
+      "Zhimin Mei",
+      "Jiale Cai",
+      "Bissan Ghaddar"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.31225v1",
+    "published_at": "2026-11-23T18:58:27Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_self-supervised-dataset-distillation-via-mutual-information-maximization",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "Self | Build Credit, Build Savings and Access Cash Build credit and savings with Self. The Credit Builder Account and Self Visa® Credit Card help you establish payment history. …",
+        "Log In To Your Self Financial Account Use this page to access your account at Self Financial, Inc., formerly known as Self Lender.",
+        "SELF Magazine: Women's Workouts, Health Advice & Beaut… Discover new workout ideas, healthy-eating recipes, makeup looks, skin-care advice, the best beauty products and tips, trends, …"
+      ],
+      "top_results": [
+        {
+          "title": "Self | Build Credit, Build Savings and Access Cash",
+          "href": "https://www.self.inc/",
+          "snippet": "Build credit and savings with Self. The Credit Builder Account and Self Visa® Credit Card help you establish payment history. …"
+        },
+        {
+          "title": "Log In To Your Self Financial Account",
+          "href": "https://www.self.inc/home/cba-settings/details",
+          "snippet": "Use this page to access your account at Self Financial, Inc., formerly known as Self Lender."
+        },
+        {
+          "title": "SELF Magazine: Women's Workouts, Health Advice & Beaut…",
+          "href": "https://www.self.com/",
+          "snippet": "Discover new workout ideas, healthy-eating recipes, makeup looks, skin-care advice, the best beauty products and tips, trends, …"
+        },
+        {
+          "title": "Self - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Self",
+          "snippet": "In philosophy, the self is an individual 's own being, knowledge, and values, and the relationship between these attributes. …"
+        },
+        {
+          "title": "SELF Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/self",
+          "snippet": "Nov 18, 2026 · The meaning of SELF is an individual's typical character or behavior. How to use self in a sentence."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "数据分析",
+    "subcategory": "数据分析",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=数据分析 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Self-Supervised Dataset Distillation via Mutual Information Maximization：Self | Build Credit, Build Savings and Access Cash Build credit and savings with Self. The Credit Builder Account and Self Visa® Credit Card help you 。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_self-supervised-dataset-distillation-via-mutual-information-maximization",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Agentic AI for Intent Management and Control in Autonomous Communication Networks",
+    "title": "Agentic AI for Intent Management and Control in Autonomous Communication Networks",
+    "url": "https://arxiv.org/abs/2611.31223v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31223v1",
+    "description": "Artificial intelligence (AI)-driven automation will help future mobile networks translate high-level network intents into concrete network optimization or control actions. However, existing approaches often focus on intent management and orchestration, leaving the adaptation of underlying network optimization and control functions largely unaddressed. This article proposes a triadic agentic AI framework that co-designs intent management and intent fulfillment through three agents: an interpreter",
+    "authors": [
+      "Burak Demirel",
+      "Yu Wang",
+      "Pablo Soldati"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.31223v1",
+    "published_at": "2026-11-23T18:57:32Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_agentic-ai-for-intent-management-and-control-in-autonomous-communication-network",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "What Is Agentic AI? Definition, 6 Levels & Examples (2026) Agentic AI describes artificial intelligence systems that pursue goals through their own actions, rather than only producing output for a …",
+        "AGENTIC Definition & Meaning - Merriam-Webster 4 days ago · Agentic narcissism is a personality trait characterized by self-centered focus on one's personal achievements, success, …",
+        "AGENTIC | English meaning - Cambridge Dictionary They found two styles of leadership: one more oriented towards community development and another more oriented towards …"
+      ],
+      "top_results": [
+        {
+          "title": "What Is Agentic AI? Definition, 6 Levels & Examples (2026)",
+          "href": "https://agentic.ai/what-is-agentic-ai",
+          "snippet": "Agentic AI describes artificial intelligence systems that pursue goals through their own actions, rather than only producing output for a …"
+        },
+        {
+          "title": "AGENTIC Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/agentic",
+          "snippet": "4 days ago · Agentic narcissism is a personality trait characterized by self-centered focus on one's personal achievements, success, …"
+        },
+        {
+          "title": "AGENTIC | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/agentic",
+          "snippet": "They found two styles of leadership: one more oriented towards community development and another more oriented towards …"
+        },
+        {
+          "title": "Agentic AI, explained - MIT Sloan",
+          "href": "https://mitsloan.mit.edu/ideas-made-to-matter/agentic-ai-explained",
+          "snippet": "Feb 18, 2026 · Today, attention has shifted to the next evolution of generative AI: AI agents or agentic AI, a new breed of AI systems …"
+        },
+        {
+          "title": "What is agentic AI? - IBM",
+          "href": "https://www.ibm.com/think/topics/agentic-ai",
+          "snippet": "Unlike traditional AI models, which operate within predefined constraints and require human intervention, agentic AI exhibits autonomy, …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "AI Agent",
+    "subcategory": "自主代理",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=AI Agent 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "翻译",
+        "自动化"
+      ],
+      "scenario": [
+        "设计工作"
+      ],
+      "attribute": [
+        "移动端"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Agentic AI for Intent Management and Control in Autonomous Communication Networks：What Is Agentic AI? Definition, 6 Levels & Examples (2026) Agentic AI describes artificial intelligence systems that pursue goals through their own ac。付费，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "自动化",
+      "SDK集成"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_agentic-ai-for-intent-management-and-control-in-autonomous-communication-network",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "CTLink: A Text-Prompted Segmentation Model for Linking Radiology Report Findings to 3D Chest CT Scans",
+    "title": "CTLink: A Text-Prompted Segmentation Model for Linking Radiology Report Findings to 3D Chest CT Scans",
+    "url": "https://arxiv.org/abs/2611.31222v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31222v1",
+    "description": "Radiology reports describe findings in text only, without visually marking them on the scan, so readers cannot directly see which abnormality each reported finding refers to. We introduce CTLink, a text-prompted 3D segmentation model that segments findings described in a chest CT report. CTLink was trained on 4123 noncontrast chest CT scans with 9547 segmented report findings, including ReXGroundingCTv2, a newly annotated dataset of 1134 scans and 1895 findings with every instance of each findin",
+    "authors": [
+      "Mohammed Baharoon",
+      "Sung Eun Kim",
+      "Mahmoud Hussain Alabbad",
+      "Lucas Bijnens",
+      "Ali Piracha"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "arxiv_id": "2611.31222v1",
+    "published_at": "2026-11-23T18:57:26Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_ctlink-a-text-prompted-segmentation-model-for-linking-radiology-report-findings-",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Family Vacation : discover Tahiti with your family - Tahiti Tourisme Below is a list of the top Tahiti family vacations and the best family vacation packages carefully created by our Tahiti Travel Partners for an …",
+        "Health in The Islands of Tahiti | Tahiti Tourisme French Polynesia provides a range of high-quality medical services and infrastructure. French Polynesia Hospital Center, located in …",
+        "Rangiroa Island | Transportation, Flights, Ferry & Car Rentals Situated 217 miles northeast of Tahiti, Rangiroa is accessible by boat or by plane. Just a one hour flight from Tahiti-Faa’a International Airport, …"
+      ],
+      "top_results": [
+        {
+          "title": "Family Vacation : discover Tahiti with your family - Tahiti Tourisme",
+          "href": "https://www.tahititourisme.com/vacation-packages/family-vacation/",
+          "snippet": "Below is a list of the top Tahiti family vacations and the best family vacation packages carefully created by our Tahiti Travel Partners for an …"
+        },
+        {
+          "title": "Health in The Islands of Tahiti | Tahiti Tourisme",
+          "href": "https://www.tahititourisme.com/preparing-you-trip/health/",
+          "snippet": "French Polynesia provides a range of high-quality medical services and infrastructure. French Polynesia Hospital Center, located in …"
+        },
+        {
+          "title": "Rangiroa Island | Transportation, Flights, Ferry & Car Rentals",
+          "href": "https://www.tahititourisme.com/islands/rangiroa/getting-to-and-around-in-rangiroa/",
+          "snippet": "Situated 217 miles northeast of Tahiti, Rangiroa is accessible by boat or by plane. Just a one hour flight from Tahiti-Faa’a International Airport, …"
+        },
+        {
+          "title": "How to get to and around Tahiti | Tahiti Tourisme",
+          "href": "https://www.tahititourisme.com/islands/tahiti/getting-there-and-getting-around/",
+          "snippet": "Tahiti is the main island of French Polynesia and home to its capital, Papeete. The arrival airport for international flights is Tahiti- Faa’a …"
+        },
+        {
+          "title": "Diving Vacations in The Islands of Tahiti - Tahiti Tourisme",
+          "href": "https://www.tahititourisme.com/vacation-packages/diving-vacation-packages/",
+          "snippet": "Explore the exceptional dive sites in The Islands of Tahiti, teeming with colorful tropical fish, sea turtles, all sorts of rays and sharks as well as …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "数据资源",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "CTLink: A Text-Prompted Segmentation Model for Linking Radiology Report Findings to 3D Chest CT Scans：Family Vacation : discover Tahiti with your family - Tahiti Tourisme Below is a list of the top Tahiti family vacations and the best family vacation p。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "可视化"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_ctlink-a-text-prompted-segmentation-model-for-linking-radiology-report-findings-",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "LeJEPA Features Are Not Isotropic, and Should Not Be",
+    "title": "LeJEPA Features Are Not Isotropic, and Should Not Be",
+    "url": "https://arxiv.org/abs/2611.31216v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31216v1",
+    "description": "The SIGReg term in LeJEPA regularizes features to have an isotropic Gaussian distribution. Our first result is to show that this regularizer, in practice, cannot achieve its goal. We design a modified regularizer to enforce the objective better. This leads to slightly improved performance. For example, on ImageNet-100, our modified regularizer reaches the final accuracy of SIGReg in 1.3$\\times$ fewer epochs. Our second result argues that self-supervised encoders should not have isotropic Gaussia",
+    "authors": [
+      "Richeek Das",
+      "Pratik Chaudhari"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.31216v1",
+    "published_at": "2026-11-23T18:56:04Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_lejepa-features-are-not-isotropic-and-should-not-be",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Mystery ER (TV Series 2007–2008) - Full cast & crew - IMDb Mystery ER (TV Series 2007–2008) - Cast and crew credits, including actors, actresses, directors, writers and more.",
+        "Cast of ER - Wikipedia The original starring cast consisted of Anthony Edwards as Dr. Mark Greene, George Clooney as Dr. Douglas \"Doug\" Ross, Sherry Stringfield as …",
+        "Mystery ER (TV Series 2007–2008) - IMDb Mystery ER: With Dave Wittenberg, Peter Voytko, Maggie Shunk, Brandon Bennett. Re-enactments and interviews with doctors and investigators …"
+      ],
+      "top_results": [
+        {
+          "title": "Mystery ER (TV Series 2007–2008) - Full cast & crew - IMDb",
+          "href": "https://www.imdb.com/title/tt0772560/fullcredits/",
+          "snippet": "Mystery ER (TV Series 2007–2008) - Cast and crew credits, including actors, actresses, directors, writers and more."
+        },
+        {
+          "title": "Cast of ER - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Cast_of_ER",
+          "snippet": "The original starring cast consisted of Anthony Edwards as Dr. Mark Greene, George Clooney as Dr. Douglas \"Doug\" Ross, Sherry Stringfield as …"
+        },
+        {
+          "title": "Mystery ER (TV Series 2007–2008) - IMDb",
+          "href": "https://www.imdb.com/title/tt0772560/",
+          "snippet": "Mystery ER: With Dave Wittenberg, Peter Voytko, Maggie Shunk, Brandon Bennett. Re-enactments and interviews with doctors and investigators …"
+        },
+        {
+          "title": "Mystery ER - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Mystery_ER",
+          "snippet": "Mystery ER is a medical reality program, [1] created by Mike Mathis for the Discovery Health Channel. The show features reenactments of …"
+        },
+        {
+          "title": "Mystery ER (2007) Full Cast & Crew - Plex",
+          "href": "https://watch.plex.tv/show/mystery-er/credits",
+          "snippet": "Discover the full cast and crew of Mystery ER on Plex. Find actors, directors, and everyone who brought Mystery ER to life."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "设计工作"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "LeJEPA Features Are Not Isotropic, and Should Not Be：Mystery ER (TV Series 2007–2008) - Full cast & crew - IMDb Mystery ER (TV Series 2007–2008) - Cast and crew credits, including actors, actresses, dire。付费，适合普通用户直接使用。",
+    "features": [
+      "开发辅助",
+      "代码工具"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_lejepa-features-are-not-isotropic-and-should-not-be",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Seeking in Space: Benchmarking Purposeful Active Exploration of Vision-Language Models for Spatial Reasoning",
+    "title": "Seeking in Space: Benchmarking Purposeful Active Exploration of Vision-Language Models for Spatial Reasoning",
+    "url": "https://arxiv.org/abs/2611.31215v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31215v1",
+    "description": "Humans explore unfamiliar spaces with purpose, deciding where to look until they have gathered the evidence a spatial question requires. However, can vision-language models (VLMs), which reason increasingly well over curated images and videos, also seek in space when the evidence is not handed to them? We present ActSpace-Bench, a benchmark of 994 questions across 234 exploration episodes in 72 real-scanned indoor scenes, where a model starts from a single view, navigates real captured frames, a",
+    "authors": [
+      "Xiwei Liu",
+      "Yulong Li",
+      "Xuhui Li",
+      "Xinlin Zhuang",
+      "Zhixiang Lu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "arxiv_id": "2611.31215v1",
+    "published_at": "2026-11-23T18:55:44Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_seeking-in-space-benchmarking-purposeful-active-exploration-of-vision-language-m",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Seeking.com | Date People Who Make Life Better® Seeking is the premier dating site for success-minded singles. Those who approach their personal and professional lives with a …",
+        "Join Seeking.com Free | Relationships On Your Terms® Seeking is the premier dating site for success-minded singles. Those who approach their personal and professional lives with a …",
+        "Seeking Alpha - Stock Market Analysis & Tools for Investors From in-depth analysis on thousands of stocks to timely investment ideas and market-beating Quant ratings, Seeking Alpha is an …"
+      ],
+      "top_results": [
+        {
+          "title": "Seeking.com | Date People Who Make Life Better®",
+          "href": "https://www.seeking.com/",
+          "snippet": "Seeking is the premier dating site for success-minded singles. Those who approach their personal and professional lives with a …"
+        },
+        {
+          "title": "Join Seeking.com Free | Relationships On Your Terms®",
+          "href": "https://www.seeking.com/joinfreenow",
+          "snippet": "Seeking is the premier dating site for success-minded singles. Those who approach their personal and professional lives with a …"
+        },
+        {
+          "title": "Seeking Alpha - Stock Market Analysis & Tools for Investors",
+          "href": "https://seekingalpha.com/",
+          "snippet": "From in-depth analysis on thousands of stocks to timely investment ideas and market-beating Quant ratings, Seeking Alpha is an …"
+        },
+        {
+          "title": "Create Your Seeking Profile | Sign Up Free Today!",
+          "href": "https://members.seeking.com/join",
+          "snippet": "Millions of high-quality singles are waiting for you on Seeking. Sign up, complete your profile, upload your best photos, and start …"
+        },
+        {
+          "title": "Seeking.com - Wikipedia",
+          "href": "https://en.m.wikipedia.org/wiki/Seeking.com",
+          "snippet": "Seeking.com (formerly known as SeekingArrangement) [3] is an American online dating service [4] founded by Brandon Wade in …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "数据资源",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "视频生成"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Seeking in Space: Benchmarking Purposeful Active Exploration of Vision-Language Models for Spatial Reasoning：Seeking.com | Date People Who Make Life Better® Seeking is the premier dating site for success-minded singles. Those who approach their personal and p。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_seeking-in-space-benchmarking-purposeful-active-exploration-of-vision-language-m",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Flood forecasting using a physics-guided conditional denoising diffusion probabilistic model",
+    "title": "Flood forecasting using a physics-guided conditional denoising diffusion probabilistic model",
+    "url": "https://arxiv.org/abs/2611.31212v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31212v1",
+    "description": "High-resolution flood forecasting with full two-dimensional shallow water equation (SWE) solvers remains computationally expensive, even on GPUs. We develop a conditional denoising diffusion probabilistic model (DDPM) that forecasts the evolution of 30 m water-depth fields over a four-day horizon for the Des Plaines River watershed, Illinois. The model is trained on SynxFlow SWE simulations of 113 historical storms observed across twelve Midwestern states (2003-2024), each under three antecedent",
+    "authors": [
+      "Omar Sallam",
+      "David Coe",
+      "Jeremy Feinstein",
+      "Hugo Torres",
+      "Sofia Sahagun Covarrubias"
+    ],
+    "categories": [
+      "physics.flu-dyn",
+      "cs.LG",
+      "physics.geo-ph"
+    ],
+    "arxiv_id": "2611.31212v1",
+    "published_at": "2026-11-23T18:55:29Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_flood-forecasting-using-a-physics-guided-conditional-denoising-diffusion-probabi",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Flood Maps - FEMA.gov Jan 22, 2024 · Floods occur naturally and can happen almost anywhere. They may not even be near a body of water, although river and …",
+        "Flood - Wikipedia Floods can happen on flat or low-lying areas when water is supplied by rainfall or snowmelt more rapidly than it can either infiltrate or …",
+        "FEMA Flood Map Service Center | Search By Address Whether you are in a high risk zone or not, you may need flood insurance because most homeowners insurance doesn't cover flood …"
+      ],
+      "top_results": [
+        {
+          "title": "Flood Maps - FEMA.gov",
+          "href": "https://www.fema.gov/flood-maps",
+          "snippet": "Jan 22, 2024 · Floods occur naturally and can happen almost anywhere. They may not even be near a body of water, although river and …"
+        },
+        {
+          "title": "Flood - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Flood",
+          "snippet": "Floods can happen on flat or low-lying areas when water is supplied by rainfall or snowmelt more rapidly than it can either infiltrate or …"
+        },
+        {
+          "title": "FEMA Flood Map Service Center | Search By Address",
+          "href": "https://msc.fema.gov/portal/search",
+          "snippet": "Whether you are in a high risk zone or not, you may need flood insurance because most homeowners insurance doesn't cover flood …"
+        },
+        {
+          "title": "City of Somers Point, New Jersey",
+          "href": "https://www.somerspointgov.org/flood/",
+          "snippet": "These web pages will provide flood information for the City of Somers Point. Click the links below to find your flood zone, prepare for …"
+        },
+        {
+          "title": "Flood | Causes, Effects & Prevention | Britannica",
+          "href": "https://www.britannica.com/science/flood",
+          "snippet": "4 days ago · flood, high-water stage in which water overflows its natural or artificial banks onto normally dry land, such as a river …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "Diffusion"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Flood forecasting using a physics-guided conditional denoising diffusion probabilistic model：Flood Maps - FEMA.gov Jan 22, 2024 · Floods occur naturally and can happen almost anywhere. They may not even be near a body of water, although river 。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_flood-forecasting-using-a-physics-guided-conditional-denoising-diffusion-probabi",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Verifying the Outputs of PDE Solvers: From Finite Elements to Neural Surrogates",
+    "title": "Verifying the Outputs of PDE Solvers: From Finite Elements to Neural Surrogates",
+    "url": "https://arxiv.org/abs/2611.31211v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31211v1",
+    "description": "Physics simulation outputs increasingly come from solvers that no expert inspects, such as third-party packages in automated pipelines, programs written by large language models (LLMs), and learned surrogates. In earlier work on cardiac pulsed field ablation, we proposed that solvers return a certificate with their answers. The certificate consists of an admissible potential and an exactly charge-conserving current, and a small independent checker turns it into guaranteed error bounds against a ",
+    "authors": [
+      "Konstantinos Dovelos"
+    ],
+    "categories": [
+      "cs.CE",
+      "cs.LG",
+      "math.NA"
+    ],
+    "arxiv_id": "2611.31211v1",
+    "published_at": "2026-11-23T18:55:06Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_verifying-the-outputs-of-pde-solvers-from-finite-elements-to-neural-surrogates",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "VERIFYING | English meaning - Cambridge Dictionary VERIFYING definition: 1. present participle of verify 2. to prove that something exists or is true, or to make certain…. Learn more.",
+        "VERIFYING Definition & Meaning - Merriam-Webster Nov 18, 2026 · confirm, corroborate, substantiate, verify, authenticate, validate mean to attest to the truth or validity of something. confirm …",
+        "VERIFYING Synonyms: 58 Similar and Opposite Words - Merriam-Webster 4 days ago · Synonyms for VERIFYING: confirming, supporting, supportive, substantiating, confirmational, corroborative, …"
+      ],
+      "top_results": [
+        {
+          "title": "VERIFYING | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/verifying",
+          "snippet": "VERIFYING definition: 1. present participle of verify 2. to prove that something exists or is true, or to make certain…. Learn more."
+        },
+        {
+          "title": "VERIFYING Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/verifying",
+          "snippet": "Nov 18, 2026 · confirm, corroborate, substantiate, verify, authenticate, validate mean to attest to the truth or validity of something. confirm …"
+        },
+        {
+          "title": "VERIFYING Synonyms: 58 Similar and Opposite Words - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/thesaurus/verifying",
+          "snippet": "4 days ago · Synonyms for VERIFYING: confirming, supporting, supportive, substantiating, confirmational, corroborative, …"
+        },
+        {
+          "title": "Verifying - definition of verifying by The Free Dictionary",
+          "href": "https://www.thefreedictionary.com/verifying",
+          "snippet": "To demonstrate the truth or accuracy of, as by the presentation of evidence: experiments that verified the..."
+        },
+        {
+          "title": "VERIFYING Definition & Meaning | Dictionary.com",
+          "href": "https://www.dictionary.com/browse/verifying",
+          "snippet": "Oct 23, 2026 · VERIFYING definition: present participle of verify. See examples of verifying used in a sentence."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "模型研究",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "自动化"
+      ],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Verifying the Outputs of PDE Solvers: From Finite Elements to Neural Surrogates：VERIFYING | English meaning - Cambridge Dictionary VERIFYING definition: 1. present participle of verify 2. to prove that something exists or is true,。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "自动化"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_verifying-the-outputs-of-pde-solvers-from-finite-elements-to-neural-surrogates",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Matching Under Metric Privacy",
+    "title": "Matching Under Metric Privacy",
+    "url": "https://arxiv.org/abs/2611.31208v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31208v1",
+    "description": "We study how to represent and randomize points in $d$-dimensional Euclidean space to obtain accurate bipartite matchings under metric privacy. Given $n$ private and $n$ public points, we analyze local mechanisms that randomize each private point or its distances to the public points. Using the public points' affine span, we construct a smaller representation that preserves all matching costs. When a trusted server receives the private points, we establish privacy and utility guarantees for Gumbe",
+    "authors": [
+      "Hongyi B. Hu",
+      "Dung Nguyen",
+      "M. Amin Rahimian"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CR",
+      "cs.SI",
+      "math.PR"
+    ],
+    "arxiv_id": "2611.31208v1",
+    "published_at": "2026-11-23T18:53:25Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_matching-under-metric-privacy",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "MATCHING Definition & Meaning - Merriam-Webster Nov 17, 2026 · The meaning of MATCHING is going together well : suitably paired or used together. How to use matching in a sentence.",
+        "MATCHING Synonyms: 133 Similar and Opposite Words - Merriam … 2 days ago · Synonyms for MATCHING: similar, comparable, analogous, like, alike, such, corresponding, parallel; Antonyms of …Read more",
+        "Free Memory Matching Games | MemoryMatching.com Play free memory matching games online and improve your concentration with fun and engaging card puzzles. Choose from 100+ …Read more"
+      ],
+      "top_results": [
+        {
+          "title": "MATCHING Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/matching",
+          "snippet": "Nov 17, 2026 · The meaning of MATCHING is going together well : suitably paired or used together. How to use matching in a sentence."
+        },
+        {
+          "title": "MATCHING Synonyms: 133 Similar and Opposite Words - Merriam …",
+          "href": "https://www.merriam-webster.com/thesaurus/matching",
+          "snippet": "2 days ago · Synonyms for MATCHING: similar, comparable, analogous, like, alike, such, corresponding, parallel; Antonyms of …Read more"
+        },
+        {
+          "title": "Free Memory Matching Games | MemoryMatching.com",
+          "href": "https://memorymatching.com/",
+          "snippet": "Play free memory matching games online and improve your concentration with fun and engaging card puzzles. Choose from 100+ …Read more"
+        },
+        {
+          "title": "Matching Games - Online & Free | Memozor",
+          "href": "https://www.memozor.com/memory-games",
+          "snippet": "Our online matching games come in multiple difficulty levels, and you can choose exactly how many cards to play with using the settings …Read more"
+        },
+        {
+          "title": "MATCHING | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/matching",
+          "snippet": "MATCHING definition: 1. having the same colour or pattern as something else: 2. having the same color or pattern as…. Learn more."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "数据分析"
+      ],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Matching Under Metric Privacy：MATCHING Definition & Meaning - Merriam-Webster Nov 17, 2026 · The meaning of MATCHING is going together well : suitably paired or used together. How 。付费，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "本地运行",
+      "CLI工具"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_matching-under-metric-privacy",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "ToolSmith: An Automatic Tool-Generation Framework for Multimodal Search Agents",
+    "title": "ToolSmith: An Automatic Tool-Generation Framework for Multimodal Search Agents",
+    "url": "https://arxiv.org/abs/2611.31198v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31198v1",
+    "description": "Recent multimodal search agents use reasoning, vision, and live web search across many turns to answer questions beyond parametric knowledge by orchestrating a small library of hand-crafted search and visual tools. However, the library is laborious to create and maintain, and frozen when new query types, evidence formats, and failure modes are encountered in the wild. Human practitioners, by contrast, cope with insufficient tools by fashioning new ones from familiar parts and reusing them across",
+    "authors": [
+      "Rui Sun",
+      "Junhua Huang",
+      "Luca Zancato",
+      "Md Mofijul Islam",
+      "Kai-Wei Chang"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "arxiv_id": "2611.31198v1",
+    "published_at": "2026-11-23T18:48:02Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_toolsmith-an-automatic-tool-generation-framework-for-multimodal-search-agents",
+    "_search": {
+      "result_count": 7,
+      "top_snippets": [
+        "Toolsmith – Minecraft Wiki 5 days ago · A toolsmith is a villager that trades minerals, bells and tools. Toolsmiths wear a dark brown apron with a pouch.",
+        "Workstation – Minecraft Wiki Oct 24, 2026 · A workstation is any block that a player can use to produce items or that functions as job site block for a villager.",
+        "工具匠 - 中文 Minecraft Wiki 工具匠（Toolsmith）是一种能够交易各种工具的村民职业。"
+      ],
+      "top_results": [
+        {
+          "title": "Toolsmith – Minecraft Wiki",
+          "href": "https://minecraft.wiki/w/Toolsmith",
+          "snippet": "5 days ago · A toolsmith is a villager that trades minerals, bells and tools. Toolsmiths wear a dark brown apron with a pouch."
+        },
+        {
+          "title": "Workstation – Minecraft Wiki",
+          "href": "https://minecraft.wiki/w/Workstation",
+          "snippet": "Oct 24, 2026 · A workstation is any block that a player can use to produce items or that functions as job site block for a villager."
+        },
+        {
+          "title": "工具匠 - 中文 Minecraft Wiki",
+          "href": "https://zh.minecraft.wiki/w/工具匠?variant=zh-cn",
+          "snippet": "工具匠（Toolsmith）是一种能够交易各种工具的村民职业。"
+        },
+        {
+          "title": "Forgeron d'outils – Le Minecraft Wiki",
+          "href": "https://fr.minecraft.wiki/w/Forgeron_d'outils",
+          "snippet": "Un forgeron d'outils (nom anglais : toolsmith) est un villageois qui échange des minerais, des cloches et des outils. Les forgerons …Read more"
+        },
+        {
+          "title": "Smith – Minecraft Wiki",
+          "href": "https://minecraft.wiki/w/Smith",
+          "snippet": "Jul 27, 2026 · Smith and Blacksmith may refer to: This disambiguation page lists articles associated with the same title. If an internal …Read more"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "AI Agent",
+    "subcategory": "Agent平台",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=AI Agent 实用性=3 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "Multi-modal"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "ToolSmith: An Automatic Tool-Generation Framework for Multimodal Search Agents：工具匠 - 中文 Minecraft Wiki 工具匠（Toolsmith）是一种能够交易各种工具的村民职业。，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "实时处理",
+      "开源免费"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_toolsmith-an-automatic-tool-generation-framework-for-multimodal-search-agents",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Learning Neurovascular Codes for EEG-to-fMRI Synthesis",
+    "title": "Learning Neurovascular Codes for EEG-to-fMRI Synthesis",
+    "url": "https://arxiv.org/abs/2611.31194v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31194v1",
+    "description": "In this paper, we introduce Neurovascular Codes as shared EEG representations for fMRI generation. We first train a separate EEG encoder to predict each fMRI signal, learning target-specific temporal and spectral features from the same EEG window. After training, we freeze the encoders and project their concatenated hidden features into a shared neurovascular code. Conditioned on this code, stochastic interpolant transforms Gaussian noise into a vector of fMRI signals, allowing different respons",
+    "authors": [
+      "Yiming Sun",
+      "Yifan Wang",
+      "Aosong Feng",
+      "Yijia Ma",
+      "Ben Cheng"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "arxiv_id": "2611.31194v1",
+    "published_at": "2026-11-23T18:45:35Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_learning-neurovascular-codes-for-eeg-to-fmri-synthesis",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "LinkedIn Learning: Online Training Courses & Skill Building Get guidance to develop the critical skills you need to advance your career from the only learning platform informed by the world’s …",
+        "Log in to Learning.com Welcome to Learning.com!",
+        "Learning - Wikipedia Human learning begins at birth and may even start before birth [5] and continues until death as a consequence of ongoing interactions …"
+      ],
+      "top_results": [
+        {
+          "title": "LinkedIn Learning: Online Training Courses & Skill Building",
+          "href": "https://www.linkedin.com/learning/",
+          "snippet": "Get guidance to develop the critical skills you need to advance your career from the only learning platform informed by the world’s …"
+        },
+        {
+          "title": "Log in to Learning.com",
+          "href": "https://login.learning.com/",
+          "snippet": "Welcome to Learning.com!"
+        },
+        {
+          "title": "Learning - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Learning",
+          "snippet": "Human learning begins at birth and may even start before birth [5] and continues until death as a consequence of ongoing interactions …"
+        },
+        {
+          "title": "IXL | Math, Language Arts, Science, Social Studies, and Spanish",
+          "href": "https://www.ixl.com/",
+          "snippet": "IXL is the world's most popular subscription-based learning site for K–12. Used by over 18 million students, IXL provides personalized …"
+        },
+        {
+          "title": "National Geographic Learning",
+          "href": "https://learn.eltngl.com/",
+          "snippet": "Manage your course and teach great classes with integrated digital teaching and learning tools. Spark brings together everything you …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "free",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习",
+        "学术研究"
+      ],
+      "attribute": [
+        "免费"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Learning Neurovascular Codes for EEG-to-fMRI Synthesis：LinkedIn Learning: Online Training Courses & Skill Building Get guidance to develop the critical skills you need to advance your career from the only 。免费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "开源免费",
+      "协作功能"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "免费使用，零成本上手",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_learning-neurovascular-codes-for-eeg-to-fmri-synthesis",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Know When to Abstain: Conformal Confidence Estimation for Text-to-SQL",
+    "title": "Know When to Abstain: Conformal Confidence Estimation for Text-to-SQL",
+    "url": "https://arxiv.org/abs/2611.31190v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31190v1",
+    "description": "Text-to-SQL systems often return queries that execute successfully but answer the wrong question. Detecting these errors at deployment is hard because execution correctness is defined against a gold query, which exists only in labeled data. We formulate confidence estimation for Text-to-SQL as probabilistic query validation under a latent correctness variable that is observable at calibration time through gold-SQL execution and latent at deployment. Our estimator separates generation from valida",
+    "authors": [
+      "Avinash Kumar Singh",
+      "Bhaskarjit Sarmah",
+      "Stefano Pasquali"
+    ],
+    "categories": [
+      "cs.AI",
+      "q-fin.CP"
+    ],
+    "arxiv_id": "2611.31190v1",
+    "published_at": "2026-11-23T18:42:54Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_know-when-to-abstain-conformal-confidence-estimation-for-text-to-sql",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Know When to Abstain: Conformal Confidence Estimation for Text-to … 17 hours ago · Text-to-SQL systems often return queries that execute successfully but answer the wrong question. Detecting these …Read more",
+        "Know When to Abstain: Conformal Confidence Estimation for Text-to … 17 hours ago · Abstract Text-to-SQL systems often return queries that execute successfully but answer the wrong question. Detecting …Read more",
+        "Know When to Abstain: Conformal Confidence Estimation for Text-to … Sep 18, 2026 · We formulate confidence estimation for Text-to-SQL as probabilistic query validation under a latent correctness …Read more"
+      ],
+      "top_results": [
+        {
+          "title": "Know When to Abstain: Conformal Confidence Estimation for Text-to …",
+          "href": "https://arxiv.org/abs/2611.31190v1",
+          "snippet": "17 hours ago · Text-to-SQL systems often return queries that execute successfully but answer the wrong question. Detecting these …Read more"
+        },
+        {
+          "title": "Know When to Abstain: Conformal Confidence Estimation for Text-to …",
+          "href": "https://arxiv.org/html/2611.31190v1",
+          "snippet": "17 hours ago · Abstract Text-to-SQL systems often return queries that execute successfully but answer the wrong question. Detecting …Read more"
+        },
+        {
+          "title": "Know When to Abstain: Conformal Confidence Estimation for Text-to …",
+          "href": "https://openreview.net/forum?id=TFfOE0cToy",
+          "snippet": "Sep 18, 2026 · We formulate confidence estimation for Text-to-SQL as probabilistic query validation under a latent correctness …Read more"
+        },
+        {
+          "title": "Know When to Abstain: Conformal Confidence Estimation for Text-to …",
+          "href": "https://chatpaper.com/chatpaper/paper/380423",
+          "snippet": "The paper presents a generator–critic confidence and conformal-abstention framework that helps Text-to-SQL systems detect …Read more"
+        },
+        {
+          "title": "Don't upload your sensitive files to AI services: 4 free open-source ...",
+          "href": "https://www.howtogeek.com/free-ai-tools-that-run-locally-and-dont-send-your-data-anywhere/",
+          "snippet": "Jun 12, 2026 · AI apps usually work online, which means you have to give up your files and data to the cloud in order to use them. But …Read more"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "数据分析",
+    "subcategory": "数据分析",
+    "audience": "developer",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=数据分析 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Know When to Abstain: Conformal Confidence Estimation for Text-to-SQL：Know When to Abstain: Conformal Confidence Estimation for Text-to … 17 hours ago · Text-to-SQL systems often return queries that execute successfully 。付费，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_know-when-to-abstain-conformal-confidence-estimation-for-text-to-sql",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting",
+    "title": "CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting",
+    "url": "https://arxiv.org/abs/2611.31185v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31185v1",
+    "description": "Reinforcement learning (RL) improves large language model search agents by up to 32 exact-match (EM) points over their pre-RL initializations, yet overall accuracy gains do not identify which underlying functional capabilities improve or interact during training. We introduce CO-GRAFT, a reward-agnostic interventional attribution framework in which an RL-trained agent and its pre-RL initialization jointly generate a single trajectory under closed-loop execution with live retrieval. Each policy c",
+    "authors": [
+      "Ramraj Chandradevan",
+      "Sayontan Ghosh",
+      "Vinoth Selvendran"
+    ],
+    "categories": [
+      "cs.IR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "arxiv_id": "2611.31185v1",
+    "published_at": "2026-11-23T18:38:53Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_co-graft-attributing-reinforcement-learning-gains-in-search-agents-via-role-leve",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "[2611.31185] CO-GRAFT: Attributing Reinforcement Learning Gains in ... 18 hours ago · Abstract page for arXiv paper 2611.31185: CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via …",
+        "CO-GRAFT | OpenTrain AI 2 days ago · CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting",
+        "CO-GRAFT: Attributing Reinforcement Learning Gains… — AI Hot 2 days ago · Decision Summary Decision Summary: “CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role …"
+      ],
+      "top_results": [
+        {
+          "title": "[2611.31185] CO-GRAFT: Attributing Reinforcement Learning Gains in ...",
+          "href": "https://arxiv.org/abs/2611.31185",
+          "snippet": "18 hours ago · Abstract page for arXiv paper 2611.31185: CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via …"
+        },
+        {
+          "title": "CO-GRAFT | OpenTrain AI",
+          "href": "https://www.opentrain.ai/papers/co-graft-attributing-reinforcement-learning-gains-in-search-agents-via-role-leve--arxiv-2611.31185/",
+          "snippet": "2 days ago · CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting"
+        },
+        {
+          "title": "CO-GRAFT: Attributing Reinforcement Learning Gains… — AI Hot",
+          "href": "https://aihot.tech/story/arxiv-rcy4r3-co-graft-attributing-reinforcement-learning-gains-in-search-agents-via-role-level-policy-g/",
+          "snippet": "2 days ago · Decision Summary Decision Summary: “CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role …"
+        },
+        {
+          "title": "CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents …",
+          "href": "https://arxiv.deeppaper.ai/papers/2611.31185v1",
+          "snippet": "[2611.31185v1] Reinforcement learning (RL) improves large language model search agents by up to 32 exact-match (EM) points over …"
+        },
+        {
+          "title": "CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents …",
+          "href": "https://www.catalyzex.com/paper/co-graft-attributing-reinforcement-learning",
+          "snippet": "CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting: Paper and Code. Reinforcement …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting：[2611.31185] CO-GRAFT: Attributing Reinforcement Learning Gains in ... 18 hours ago · Abstract page for arXiv paper 2611.31185: CO-GRAFT: Attributing 。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "实时处理",
+      "SDK集成"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_co-graft-attributing-reinforcement-learning-gains-in-search-agents-via-role-leve",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Needwise: Generation-Free Conversational Recommendation from Need-Level Typed Decisions",
+    "title": "Needwise: Generation-Free Conversational Recommendation from Need-Level Typed Decisions",
+    "url": "https://arxiv.org/abs/2611.31175v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31175v1",
+    "description": "Conversational recommenders must rank items against needs that catalogs record only in part, while users add, withdraw and reverse needs and switch between requests. LLM rankers re-read the dialogue at every turn: they are slow, and their ordering does not show which needs an item meets. We show that a conversational recommender can be built from typed decisions instead: named questions over fixed options, answered with option probabilities rather than generated text. On each turn, one typed req",
+    "authors": [
+      "Sungchul Kim",
+      "Weixiao Huang",
+      "Mekala Raja Sekhar Reddy",
+      "Amrutha Srinivasan"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "arxiv_id": "2611.31175v1",
+    "published_at": "2026-11-23T18:32:04Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_needwise-generation-free-conversational-recommendation-from-need-level-typed-dec",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "文本生成",
+    "subcategory": "通用文本",
+    "audience": "general",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=文本生成 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "对话"
+      ],
+      "scenario": [],
+      "attribute": [
+        "免费"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Needwise: Generation-Free Conversational Recommendation from Need-Level Typed Decisions：conversational recommenders must rank items against needs that catalogs record only in part, while users add, withdraw and reverse needs and switch be。付费，适合普通用户直接使用。",
+    "features": [
+      "AI驱动",
+      "开源免费"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_needwise-generation-free-conversational-recommendation-from-need-level-typed-dec",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Reducing Order Sensitivity in Decision Models",
+    "title": "Reducing Order Sensitivity in Decision Models",
+    "url": "https://arxiv.org/abs/2611.31174v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31174v1",
+    "description": "Decision models are emerging as fast components of larger AI systems. Yet recent decision models, such as Jev, process options sequentially, leading to different predictions based on their ordering. Across ten open- and closed-source decision models, we find that \\emph{order-sensitivity} is pervasive, causing substantial accuracy degradation and unreliable decision-making. These effects become more pronounced as the number of options grows and can compound across multi-step decisions. To address",
+    "authors": [
+      "Bodong Liu",
+      "Dongyoung Go",
+      "Sofian Zalouk",
+      "Kilian Q. Weinberger"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "arxiv_id": "2611.31174v1",
+    "published_at": "2026-11-23T18:31:54Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_reducing-order-sensitivity-in-decision-models",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "[2611.31174] Reducing Order Sensitivity in Decision Models 17 hours ago · Decision models are emerging as fast components of larger AI systems. Yet recent decision models, such as Jev, …Read more",
+        "Top 10 AI Engineering Tools You Need in 2026 - Analytics Vidhya Jun 10, 2026 · Discover the top 10 AI engineering tools shaping software development in 2026. Explore AI-native IDE, coding agents …Read more",
+        "Best AI Tools 2026: ChatGPT, Claude, Gemini Compared Jun 9, 2026 · Compare the best AI tools in 2026: ChatGPT, Claude, Gemini, Perplexity and Copilot. Strengths, pricing, and which to use …Read more"
+      ],
+      "top_results": [
+        {
+          "title": "[2611.31174] Reducing Order Sensitivity in Decision Models",
+          "href": "https://arxiv.org/abs/2611.31174",
+          "snippet": "17 hours ago · Decision models are emerging as fast components of larger AI systems. Yet recent decision models, such as Jev, …Read more"
+        },
+        {
+          "title": "Top 10 AI Engineering Tools You Need in 2026 - Analytics Vidhya",
+          "href": "https://www.analyticsvidhya.com/blog/2026/06/ai-engineering-tools-everyone-is-using-in-2026/",
+          "snippet": "Jun 10, 2026 · Discover the top 10 AI engineering tools shaping software development in 2026. Explore AI-native IDE, coding agents …Read more"
+        },
+        {
+          "title": "Best AI Tools 2026: ChatGPT, Claude, Gemini Compared",
+          "href": "https://www.moreonlinetools.com/en/blog/best-ai-tools-2026-guide/",
+          "snippet": "Jun 9, 2026 · Compare the best AI tools in 2026: ChatGPT, Claude, Gemini, Perplexity and Copilot. Strengths, pricing, and which to use …Read more"
+        },
+        {
+          "title": "Best Uncensored AI Tools in 2026: 9 Text AI Picks Ranked",
+          "href": "https://www.chat-data.com/blog/best-uncensored-ai-tools",
+          "snippet": "Oct 1, 2026 · The best uncensored AI tools for text in 2026: Venice AI, Ollama, LM Studio, KoboldCpp, SillyTavern, OpenRouter, …Read more"
+        },
+        {
+          "title": "Ranking the Best AI Tools for Financial Modeling (2026)",
+          "href": "https://www.wallstreetprep.com/knowledge/ranking-the-best-ai-tools-for-financial-modeling-2026/",
+          "snippet": "Jun 29, 2026 · We ranked the top AI financial modeling tools: ChatGPT, Claude, Microsoft Copilot Agent Mode, and Shortcut using …Read more"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "模型研究",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Reducing Order Sensitivity in Decision Models：[2611.31174] Reducing Order Sensitivity in Decision Models 17 hours ago · Decision models are emerging as fast components of larger AI systems. Yet re。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_reducing-order-sensitivity-in-decision-models",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "EEG Decoding in Context: A Framework for Tuning-Free EEG Foundation Models",
+    "title": "EEG Decoding in Context: A Framework for Tuning-Free EEG Foundation Models",
+    "url": "https://arxiv.org/abs/2611.31171v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31171v1",
+    "description": "Electroencephalography (EEG) decoding is a central route toward brain-computer interfaces for communication, rehabilitation, cognitive assessment, and neurological monitoring. Recent EEG foundation models have substantially advanced reusable signal representations, but their downstream use still typically requires a task-specific decoder, gradient-based adaptation, and validation-driven model selection. We investigate a complementary foundation-model paradigm based on in-context learning: labele",
+    "authors": [
+      "Hao-Run Cai",
+      "Si-Yang Liu",
+      "Han-Jia Ye",
+      "Hairong Zheng"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.31171v1",
+    "published_at": "2026-11-23T18:30:53Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_eeg-decoding-in-context-a-framework-for-tuning-free-eeg-foundation-models",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "EEG (electroencephalogram) - About - Mayo Clinic May 29, 2024 · Brain cells communicate via electrical impulses, and this activity shows up as wavy lines on an EEG recording. Brain …",
+        "Electroencephalogram (EEG): What It Is, Procedure & Results An EEG (electroencephalogram) is a test that evaluates brain function. Healthcare providers order an EEG to diagnose brain issues …",
+        "Electroencephalography - Wikipedia The recording of these signals is referred to as electrocorticography (ECoG), subdural EEG (SDE), intracranial EEG (iEEG), or …"
+      ],
+      "top_results": [
+        {
+          "title": "EEG (electroencephalogram) - About - Mayo Clinic",
+          "href": "https://www.mayoclinic.org/tests-procedures/eeg/about/pac-20393875",
+          "snippet": "May 29, 2024 · Brain cells communicate via electrical impulses, and this activity shows up as wavy lines on an EEG recording. Brain …"
+        },
+        {
+          "title": "Electroencephalogram (EEG): What It Is, Procedure & Results",
+          "href": "https://my.clevelandclinic.org/health/diagnostics/9656-electroencephalogram-eeg",
+          "snippet": "An EEG (electroencephalogram) is a test that evaluates brain function. Healthcare providers order an EEG to diagnose brain issues …"
+        },
+        {
+          "title": "Electroencephalography - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Electroencephalography",
+          "snippet": "The recording of these signals is referred to as electrocorticography (ECoG), subdural EEG (SDE), intracranial EEG (iEEG), or …"
+        },
+        {
+          "title": "Learning EEG — Electroencephalography for Everyone",
+          "href": "https://www.learningeeg.com/",
+          "snippet": "Learning EEG — a modern, free guide to electroencephalography for everyone, spanning physiology and montages through normal …"
+        },
+        {
+          "title": "EEG (Electroencephalogram): Uses, Procedure, Risks",
+          "href": "https://www.verywellhealth.com/what-is-an-eeg-test-and-what-is-it-used-for-3014879",
+          "snippet": "Jul 30, 2026 · An electroencephalogram (EEG) detects abnormal brain waves that cause seizures. EEG uses include diagnosing …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=3 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [
+        "免费"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "EEG Decoding in Context: A Framework for Tuning-Free EEG Foundation Models：EEG (electroencephalogram) - About - Mayo Clinic May 29, 2024 · Brain cells communicate via electrical impulses, and this activity shows up as wavy li。，适合普通用户直接使用。",
+    "features": [
+      "AI驱动",
+      "开源免费",
+      "SDK集成"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_eeg-decoding-in-context-a-framework-for-tuning-free-eeg-foundation-models",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Precision-Aware Learning Rate Transfer Across Block Count in LLM Post-Training",
+    "title": "Precision-Aware Learning Rate Transfer Across Block Count in LLM Post-Training",
+    "url": "https://arxiv.org/abs/2611.31166v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31166v1",
+    "description": "The post-training of pretrained large language models, including supervised finetuning (SFT), direct preference optimization (DPO), and reinforcement learning with verifiable reward (RLVR), is very sensitive to the learning rate, and tuning it through grid search is costly in both computation and memory. In this work, we propose \\textbf{TipSweep}, a method to transfer the learning rate across the number of trainable transformer blocks. To do so efficiently, we search for the best learning rate b",
+    "authors": [
+      "Nan Chen",
+      "Soledad Villar",
+      "Soufiane Hayou"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CL"
+    ],
+    "arxiv_id": "2611.31166v1",
+    "published_at": "2026-11-23T18:27:57Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_precision-aware-learning-rate-transfer-across-block-count-in-llm-post-training",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "[2611.31166] Precision-Aware Learning Rate Transfer Across Block … 18 hours ago · View a PDF of the paper titled Precision-Aware Learning Rate Transfer Across Block Count in LLM Post-Training, by …",
+        "Precision-Aware Learning Rate Transfer Across Block Count 2 days ago · The post-training of pretrained large language models, including supervised finetuning (SFT), direct preference …",
+        "Precision-Aware Learning Rate Transfer Across Block Count in LLM … #1 Precision-Aware Learning Rate Transfer Across Block Count in LLM Post-Training [PDF] [Copy] [Kimi] [REL] Authors: Nan Chen, …"
+      ],
+      "top_results": [
+        {
+          "title": "[2611.31166] Precision-Aware Learning Rate Transfer Across Block …",
+          "href": "https://arxiv.org/abs/2611.31166",
+          "snippet": "18 hours ago · View a PDF of the paper titled Precision-Aware Learning Rate Transfer Across Block Count in LLM Post-Training, by …"
+        },
+        {
+          "title": "Precision-Aware Learning Rate Transfer Across Block Count",
+          "href": "https://www.opentrain.ai/papers/precision-aware-learning-rate-transfer-across-block-count-in-llm-post-training--arxiv-2611.31166/",
+          "snippet": "2 days ago · The post-training of pretrained large language models, including supervised finetuning (SFT), direct preference …"
+        },
+        {
+          "title": "Precision-Aware Learning Rate Transfer Across Block Count in LLM …",
+          "href": "https://papers.cool/arxiv/2611.31166",
+          "snippet": "#1 Precision-Aware Learning Rate Transfer Across Block Count in LLM Post-Training [PDF] [Copy] [Kimi] [REL] Authors: Nan Chen, …"
+        },
+        {
+          "title": "Precision-Aware Learning Rate Transfer Across Block Count in LLM …",
+          "href": "https://foorilla.com/research/papers/precision-aware-learning-rate-transfer-across-block-count-in-llm-post-training-412173/",
+          "snippet": "The post-training of pretrained large language models, including supervised finetuning (SFT), direct preference optimization (DPO), …"
+        },
+        {
+          "title": "Best Uncensored AI Tools in 2026: 9 Text AI Picks Ranked",
+          "href": "https://www.chat-data.com/blog/best-uncensored-ai-tools",
+          "snippet": "Oct 1, 2026 · The best uncensored AI tools for text in 2026: Venice AI, Ollama, LM Studio, KoboldCpp, SillyTavern, OpenRouter, …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "文本生成",
+    "subcategory": "通用文本",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=文本生成 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [
+        "Transformer"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Precision-Aware Learning Rate Transfer Across Block Count in LLM Post-Training：[2611.31166] Precision-Aware Learning Rate Transfer Across Block … 18 hours ago · View a PDF of the paper titled Precision-Aware Learning Rate Transfe。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_precision-aware-learning-rate-transfer-across-block-count-in-llm-post-training",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "When Does Overriding the Majority Vote Help?",
+    "title": "When Does Overriding the Majority Vote Help?",
+    "url": "https://arxiv.org/abs/2611.31165v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31165v1",
+    "description": "When should additional reasoning or verification replace a majority-vote answer? We call such a replacement an override. We examine two obstacles: the availability of correct alternatives and the reliability of methods that produce or select them. We compare additional reasoning, executed programs, and cross-model reasoning on 150 competition-mathematics questions with three open reasoning models. Starting from a majority vote over 16 responses, we measure how often overrides occur and how many ",
+    "authors": [
+      "Terry Ma",
+      "Aidan Zhang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "arxiv_id": "2611.31165v1",
+    "published_at": "2026-11-23T18:26:09Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_when-does-overriding-the-majority-vote-help",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "WhenToWork.com Trouble Connecting? Try W2W.com.",
+        "WHEN Definition & Meaning - Merriam-Webster Oct 29, 2026 · The meaning of WHEN is at what time. How to use when in a sentence.",
+        "WHEN Synonyms: 21 Similar and Opposite Words - Merriam-Webster Jul 1, 2026 · But with a full and volatile season behind them, the two have grown closer, prompting check-ins from Bradford last month, …Read more"
+      ],
+      "top_results": [
+        {
+          "title": "WhenToWork.com",
+          "href": "https://whentowork.com/logins.htm",
+          "snippet": "Trouble Connecting? Try W2W.com."
+        },
+        {
+          "title": "WHEN Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/when",
+          "snippet": "Oct 29, 2026 · The meaning of WHEN is at what time. How to use when in a sentence."
+        },
+        {
+          "title": "WHEN Synonyms: 21 Similar and Opposite Words - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/thesaurus/when",
+          "snippet": "Jul 1, 2026 · But with a full and volatile season behind them, the two have grown closer, prompting check-ins from Bradford last month, …Read more"
+        },
+        {
+          "title": "When - Grammar - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/grammar/british-grammar/when",
+          "snippet": "We can use when to ask for information about what time something happens: When did you leave? When are you going on holiday? …Read more"
+        },
+        {
+          "title": "WHEN Definition & Meaning | Dictionary.com",
+          "href": "https://www.dictionary.com/browse/when",
+          "snippet": "When should not be used loosely as a substitute for in which after a noun which does not refer to a period of time: paralysis is a …Read more"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "When Does Overriding the Majority Vote Help?：WhenToWork.com Trouble Connecting? Try W2W.com.。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_when-does-overriding-the-majority-vote-help",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "SPROUT: Predicting Objective-Grounded Prompt Utility for Efficient Text-to-Image Preference Tuning",
+    "title": "SPROUT: Predicting Objective-Grounded Prompt Utility for Efficient Text-to-Image Preference Tuning",
+    "url": "https://arxiv.org/abs/2611.31163v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31163v1",
+    "description": "Preference tuning of text-to-image diffusion models spends most of its compute generating candidate images, yet training prompts are typically sampled uniformly at random, wasting compute generating images that provide too little signal for model alignment. To best utilize the available compute, we study prompt selection, where at each iteration we identify the most useful prompts for preference tuning. We separate prompt selection into a utility score, an estimator of that utility score, and ba",
+    "authors": [
+      "Kangping Hu",
+      "Akshay Mehra",
+      "Stephen Mussmann"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.31163v1",
+    "published_at": "2026-11-23T18:24:33Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_sprout-predicting-objective-grounded-prompt-utility-for-efficient-text-to-image-",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Sprout Social: Social Media Management Tool Maximize your social ROI with Sprout Social, trusted by 30k+ brands. Power everything from publishing and engagement to analytics …",
+        "Healthy Grocery, Organic Food & Supplements | Sprouts Farmers Market Our neighborhood grocery stores offer thousands of natural, organic & gluten-free foods. Discover fresh produce, meats, vitamins, …",
+        "Sprout - AI Job Search | Land Your Dream Job Sprout helps you apply to jobs faster with tailored applications built around your experience. Discover roles, answer a few smart …"
+      ],
+      "top_results": [
+        {
+          "title": "Sprout Social: Social Media Management Tool",
+          "href": "https://sproutsocial.com/",
+          "snippet": "Maximize your social ROI with Sprout Social, trusted by 30k+ brands. Power everything from publishing and engagement to analytics …"
+        },
+        {
+          "title": "Healthy Grocery, Organic Food & Supplements | Sprouts Farmers Market",
+          "href": "https://www.sprouts.com/",
+          "snippet": "Our neighborhood grocery stores offer thousands of natural, organic & gluten-free foods. Discover fresh produce, meats, vitamins, …"
+        },
+        {
+          "title": "Sprout - AI Job Search | Land Your Dream Job",
+          "href": "https://www.usesprout.com/",
+          "snippet": "Sprout helps you apply to jobs faster with tailored applications built around your experience. Discover roles, answer a few smart …"
+        },
+        {
+          "title": "Sprout | Dandy's World Wiki | Fandom",
+          "href": "https://dandys-world-robloxhorror.fandom.com/wiki/Sprout",
+          "snippet": "Sprout, full name Sprout Seedly, is one of the 40 playable Toons in Dandy's World. He was introduced on August 14, 2024, alongside …"
+        },
+        {
+          "title": "SPROUT Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/sprout",
+          "snippet": "5 days ago · The meaning of SPROUT is to grow, spring up, or come forth as or as if a sprout. How to use sprout in a sentence."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "图像生成"
+      ],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [
+        "Diffusion"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "SPROUT: Predicting Objective-Grounded Prompt Utility for Efficient Text-to-Image Preference Tuning：Sprout Social: Social Media Management Tool Maximize your social ROI with Sprout Social, trusted by 30k+ brands. Power everything from publishing and 。付费，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_sprout-predicting-objective-grounded-prompt-utility-for-efficient-text-to-image-",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Analyzing and Improving FlowMap Distillation of Autoregressive Video Models",
+    "title": "Analyzing and Improving FlowMap Distillation of Autoregressive Video Models",
+    "url": "https://arxiv.org/abs/2611.31164v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31164v1",
+    "description": "FlowMap distillation offers a natural route to few-step generative modeling by directly learning a teacher's denoising trajectories. Yet for autoregressive (AR) video generation, existing few-step models still rely on distribution matching distillation (DMD) to remain competitive, sacrificing sample diversity and requiring a large bidirectional teacher. In this work, we analyze what limits standalone AR FlowMap distillation and introduce two complementary guidance mechanisms to close this gap: (",
+    "authors": [
+      "Yong-Hyun Park",
+      "Guande He",
+      "Joon Hyeok Kim",
+      "Hansheng Chen",
+      "Kaifan Yu"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.31164v1",
+    "published_at": "2026-11-23T18:24:33Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_analyzing-and-improving-flowmap-distillation-of-autoregressive-video-models",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Analysing or Analyzing: Which Spelling Is Correct ? Apr 4, 2026 · In this article, you will learn the exact difference between analysing and analyzing, their origin, usage rules, common …Read more",
+        "ANALYZE Definition & Meaning - Merriam-Webster 6 days ago · analyze, dissect, break down mean to divide a complex whole into its parts or elements. analyze suggests separating or …Read more",
+        "“Analyzing” or “Analysing”—What's the difference? | Sapling Explanation of the difference between analyzing and analysing with example usage of each in context."
+      ],
+      "top_results": [
+        {
+          "title": "Analysing or Analyzing: Which Spelling Is Correct ?",
+          "href": "https://grammartribe.com/analysing-or-analyzing/",
+          "snippet": "Apr 4, 2026 · In this article, you will learn the exact difference between analysing and analyzing, their origin, usage rules, common …Read more"
+        },
+        {
+          "title": "ANALYZE Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/analyze",
+          "snippet": "6 days ago · analyze, dissect, break down mean to divide a complex whole into its parts or elements. analyze suggests separating or …Read more"
+        },
+        {
+          "title": "“Analyzing” or “Analysing”—What's the difference? | Sapling",
+          "href": "https://sapling.ai/usage/analyzing-vs-analysing",
+          "snippet": "Explanation of the difference between analyzing and analysing with example usage of each in context."
+        },
+        {
+          "title": "Analysing or Analyzing: Which Spelling Is Correct (2026)",
+          "href": "https://englaora.com/analysing-or-analyzing/",
+          "snippet": "Mar 9, 2026 · The words analysing and analyzing mean the same thing, but their spelling depends on the version of English you use. …Read more"
+        },
+        {
+          "title": "ANALYZING Definition & Meaning | Dictionary.com",
+          "href": "https://www.dictionary.com/browse/analyzing",
+          "snippet": "Nov 13, 2026 · ANALYZING definition: present participle of analyze. See examples of analyzing used in a sentence."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "视频生成",
+        "数据分析"
+      ],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Analyzing and Improving FlowMap Distillation of Autoregressive Video Models：Analysing or Analyzing: Which Spelling Is Correct ? Apr 4, 2026 · In this article, you will learn the exact difference between analysing and analyzing。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "开源免费",
+      "自动化"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_analyzing-and-improving-flowmap-distillation-of-autoregressive-video-models",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Habitats: A Framework for Open-Ended Evolution of Agent Objectives",
+    "title": "Habitats: A Framework for Open-Ended Evolution of Agent Objectives",
+    "url": "https://arxiv.org/abs/2611.31160v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31160v1",
+    "description": "Designing what an agent should optimize can be as difficult as optimizing the agent itself. Existing language-model-based reward-generation methods typically refine objectives for predefined tasks and couple the decision of what to explore with the synthesis of how to implement it, potentially narrowing the resulting behavioral repertoire. We introduce Habitats, a framework for open-ended evolution of executable agent objectives. Habitats maintains a population of reward-policy pairs and evaluat",
+    "authors": [
+      "Nicolas Bolouri",
+      "Gaya Mehenni",
+      "Daniel Toyama"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "arxiv_id": "2611.31160v1",
+    "published_at": "2026-11-23T18:23:16Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_habitats-a-framework-for-open-ended-evolution-of-agent-objectives",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Habitats - National Geographic Kids Learn about the different natural environments of plants and animals.",
+        "Habitat - Wikipedia In ecology, habitat refers to the array of resources and biotic factors that are present in an area, such as to support the survival and …",
+        "Habitat - National Geographic Society Jul 23, 2026 · For a plant, a good habitat must provide the right combination of light, air, water and soil. For example, the prickly pear cactus, …"
+      ],
+      "top_results": [
+        {
+          "title": "Habitats - National Geographic Kids",
+          "href": "https://kids.nationalgeographic.com/nature/habitats",
+          "snippet": "Learn about the different natural environments of plants and animals."
+        },
+        {
+          "title": "Habitat - Wikipedia",
+          "href": "https://en.m.wikipedia.org/wiki/Habitat",
+          "snippet": "In ecology, habitat refers to the array of resources and biotic factors that are present in an area, such as to support the survival and …"
+        },
+        {
+          "title": "Habitat - National Geographic Society",
+          "href": "https://education.nationalgeographic.org/resource/habitat/",
+          "snippet": "Jul 23, 2026 · For a plant, a good habitat must provide the right combination of light, air, water and soil. For example, the prickly pear cactus, …"
+        },
+        {
+          "title": "Habitat Definition, Types, and Examples",
+          "href": "https://sciencenotes.org/habitat-definition-types-and-examples/",
+          "snippet": "Jan 28, 2026 · Habitats include both biotic (living) and abiotic (non-living) components. There are several types of habitats, including terrestrial, …"
+        },
+        {
+          "title": "8 Types of Habitats and The Animals That Call Them Home",
+          "href": "https://a-z-animals.com/animals/lists/types-of-habitats-and-animals-that-live-in-them/",
+          "snippet": "Sep 28, 2024 · Each of the 8 types of habitats offers a diverse and captivating world to explore. Let's find out the details from desert to deep …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "AI Agent",
+    "subcategory": "Agent框架",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=AI Agent 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "设计工作"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Habitats: A Framework for Open-Ended Evolution of Agent Objectives：Habitats - National Geographic Kids Learn about the different natural environments of plants and animals.。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "SDK集成"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_habitats-a-framework-for-open-ended-evolution-of-agent-objectives",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Attention Latent Feedback",
+    "title": "Attention Latent Feedback",
+    "url": "https://arxiv.org/abs/2611.31154v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31154v1",
+    "description": "During autoregressive decoding, the deeper representations of the previous token have already been computed, yet shallow layers at the current token cannot read them directly because standard self-attention connects positions only at the same depth. We introduce Attention Latent Feedback (ALF), an architecture that allows every sublayer to attend to the outputs of the deeper layers at the previous position. Training unrolls this cross-position recurrence into two parallel passes, whereas decodin",
+    "authors": [
+      "Xuyuan Xiong",
+      "Siyu Chen",
+      "Mengzhao Chen",
+      "Yue Su",
+      "Zhuoran Yang"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.31154v1",
+    "published_at": "2026-11-23T18:21:05Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_attention-latent-feedback",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "Charlie Puth - Attention [Official Video] - YouTube Apr 24, 2017 · Charlie Puth - Attention [Official Video] From Charlie's album Voicenotes! Download/Stream: …",
+        "ATTENTION Definition & Meaning - Merriam-Webster 3 days ago · The meaning of ATTENTION is the act or state of applying the mind to something. How to use attention in a …",
+        "Charlie Puth - Attention (Lyrics) - YouTube Jun 25, 2019 · But you're not coming home with me tonight [Chorus] You just want attention, you don't want my heart Maybe …"
+      ],
+      "top_results": [
+        {
+          "title": "Charlie Puth - Attention [Official Video] - YouTube",
+          "href": "https://www.youtube.com/watch?v=nfs8NYg7yQM",
+          "snippet": "Apr 24, 2017 · Charlie Puth - Attention [Official Video] From Charlie's album Voicenotes! Download/Stream: …"
+        },
+        {
+          "title": "ATTENTION Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/attention",
+          "snippet": "3 days ago · The meaning of ATTENTION is the act or state of applying the mind to something. How to use attention in a …"
+        },
+        {
+          "title": "Charlie Puth - Attention (Lyrics) - YouTube",
+          "href": "https://www.youtube.com/watch?v=Oz5JDtkf1as",
+          "snippet": "Jun 25, 2019 · But you're not coming home with me tonight [Chorus] You just want attention, you don't want my heart Maybe …"
+        },
+        {
+          "title": "Attention - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Attention",
+          "snippet": "Attention is the concentration of awareness directed at some task or phenomenon while mostly excluding others. [1] Across …"
+        },
+        {
+          "title": "Attention",
+          "href": "https://attention.com/",
+          "snippet": "Attention records your sales touchpoints across meetings, emails, calls, CRMs and more. Our AI agents that learn from that …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "其他",
+    "subcategory": "",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=其他 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Attention Latent Feedback：Charlie Puth - Attention [Official Video] - YouTube Apr 24, 2017 · Charlie Puth - Attention [Official Video] From Charlie's album Voicenotes! Download。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "自动化"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_attention-latent-feedback",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Optimal Regret Lower Bounds in Matrix Games",
+    "title": "Optimal Regret Lower Bounds in Matrix Games",
+    "url": "https://arxiv.org/abs/2611.31149v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31149v1",
+    "description": "We study learning in two-player zero-sum games, also known as matrix games, in which two players with $m$ and $n$ actions repeatedly select mixed strategies for $T$ rounds. The learning dynamics based on optimistic Hedge guarantee regrets of $O(\\log(mn))$, which improve to $O(\\sqrt{\\log m\\log n})$ if each player knows the number of actions of the opponent, whereas matching regret lower bounds have been known only for specific learning dynamics. We prove that, for every deterministic learning dyn",
+    "authors": [
+      "Taira Tsuchiya"
+    ],
+    "categories": [
+      "cs.GT",
+      "cs.LG"
+    ],
+    "arxiv_id": "2611.31149v1",
+    "published_at": "2026-11-23T18:17:28Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_optimal-regret-lower-bounds-in-matrix-games",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "OPTIMAL Definition & Meaning - Merriam-Webster 2 days ago · The meaning of OPTIMAL is most desirable or satisfactory : optimum. How to use optimal in a sentence.",
+        "OPTIMAL | English meaning - Cambridge Dictionary OPTIMAL definition: 1. best; most likely to bring success or advantage: 2. best; most likely to bring success or…. Learn more.",
+        "'Optimum' vs. 'Optimal' | Merriam-Webster Optimal and optimum both mean “best or most effective,” as in “plants that grow tall under optimal conditions” and “for optimum …"
+      ],
+      "top_results": [
+        {
+          "title": "OPTIMAL Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/optimal",
+          "snippet": "2 days ago · The meaning of OPTIMAL is most desirable or satisfactory : optimum. How to use optimal in a sentence."
+        },
+        {
+          "title": "OPTIMAL | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/optimal",
+          "snippet": "OPTIMAL definition: 1. best; most likely to bring success or advantage: 2. best; most likely to bring success or…. Learn more."
+        },
+        {
+          "title": "'Optimum' vs. 'Optimal' | Merriam-Webster",
+          "href": "https://www.merriam-webster.com/grammar/optimum-vs-optimal",
+          "snippet": "Optimal and optimum both mean “best or most effective,” as in “plants that grow tall under optimal conditions” and “for optimum …"
+        },
+        {
+          "title": "OPTIMAL Definition & Meaning | Dictionary.com",
+          "href": "https://www.dictionary.com/browse/optimal",
+          "snippet": "Something that's optimal is the best or most favorable for a given situation. Flowers? Check. Chocolates? Check. Dinner …"
+        },
+        {
+          "title": "Optimal - Definition, Meaning & Synonyms | Vocabulary.com",
+          "href": "https://www.vocabulary.com/dictionary/optimal",
+          "snippet": "Something that's optimal is the best or most favorable for a given situation. Flowers? Check. Chocolates? Check. Dinner …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "生活服务",
+    "subcategory": "AI游戏",
+    "audience": "general",
+    "utility_score": 3,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=生活服务 实用性=3 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Optimal Regret Lower Bounds in Matrix Games：OPTIMAL Definition & Meaning - Merriam-Webster 2 days ago · The meaning of OPTIMAL is most desirable or satisfactory : optimum. How to use optimal in 。付费，适合普通用户直接使用。",
+    "features": [
+      "实用工具"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_optimal-regret-lower-bounds-in-matrix-games",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Deneb-Vritra: Descriptions, Edges and Names Examined by Blocking Via Restoring Token Representations and Attention",
+    "title": "Deneb-Vritra: Descriptions, Edges and Names Examined by Blocking Via Restoring Token Representations and Attention",
+    "url": "https://arxiv.org/abs/2611.31139v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31139v1",
+    "description": "Laya is a 421M-parameter encoder that answers a question about a text in one pass: each answer option, written as a name plus a description, gets a marker token, and one score is read from the network at each marker. We first confirm that such models can follow an option's name when it contradicts the description; the question is where in the network this happens. We locate it. On 951 synthetic questions we move each name onto another option's description and count how often the model picks the ",
+    "authors": [
+      "Mohammed Nayeem Khan",
+      "Akhil P",
+      "Shahina Shaik"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "arxiv_id": "2611.31139v1",
+    "published_at": "2026-11-23T18:09:20Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_deneb-vritra-descriptions-edges-and-names-examined-by-blocking-via-restoring-tok",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Deneb - Wikipedia Deneb (/ ˈdɛnɛb /) is a blue supergiant star in the northern constellation of Cygnus. It is the brightest star in the constellation and the …Read more",
+        "Deneb: Declarative Visualization in Power BI | Deneb Deneb contains all libraries needed for your visual to work anywhere your Power BI report does, including publish to web, on …Read more",
+        "Deneb: Declarative Visualization in Power BI Deneb is a certified custom visual for Microsoft Power BI that lets creators build bespoke, interactive data visualizations using the …Read more"
+      ],
+      "top_results": [
+        {
+          "title": "Deneb - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Deneb",
+          "snippet": "Deneb (/ ˈdɛnɛb /) is a blue supergiant star in the northern constellation of Cygnus. It is the brightest star in the constellation and the …Read more"
+        },
+        {
+          "title": "Deneb: Declarative Visualization in Power BI | Deneb",
+          "href": "https://deneb.guide/",
+          "snippet": "Deneb contains all libraries needed for your visual to work anywhere your Power BI report does, including publish to web, on …Read more"
+        },
+        {
+          "title": "Deneb: Declarative Visualization in Power BI",
+          "href": "https://marketplace.microsoft.com/en-us/product/coacervolimited1596856650797.deneb",
+          "snippet": "Deneb is a certified custom visual for Microsoft Power BI that lets creators build bespoke, interactive data visualizations using the …Read more"
+        },
+        {
+          "title": "Deneb (Alpha Cygni): The Luminous Supergiant at the Swan's Tail",
+          "href": "https://www.star-facts.com/deneb/",
+          "snippet": "Dec 25, 2023 · Deneb, Alpha Cygni (α Cyg), is a class A supergiant located at an approximate distance of 2,615 light years from …Read more"
+        },
+        {
+          "title": "Introduction | Deneb",
+          "href": "https://deneb.guide/docs",
+          "snippet": "Deneb is a certified custom visual for Microsoft Power BI, which allows developers to use the declarative JSON syntax of the Vega or …Read more"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Deneb-Vritra: Descriptions, Edges and Names Examined by Blocking Via Restoring Token Representations and Attention：Deneb - Wikipedia Deneb (/ ˈdɛnɛb /) is a blue supergiant star in the northern constellation of Cygnus. It is the brightest star in the constellation 。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "API接口"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_deneb-vritra-descriptions-edges-and-names-examined-by-blocking-via-restoring-tok",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "SRCWDNet: Semantic-Relational Cross-Window Dual-Graph Network for Multi-Label Remote Sensing Scene Classification",
+    "title": "SRCWDNet: Semantic-Relational Cross-Window Dual-Graph Network for Multi-Label Remote Sensing Scene Classification",
+    "url": "https://arxiv.org/abs/2611.31135v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31135v1",
+    "description": "Multi-label remote sensing scene classification remains a challenging task due to complex spatial-spectral patterns, extreme class imbalance, and inter-label dependencies that are often insufficiently modeled. To address these challenges, we introduce a Semantic-Relational Cross-Window Dual-Graph Network (SRCWDNet), which integrates three key modules: (1) a Cross-Window Attention module that captures local and global visual context through learnable global tokens; (2) a Dual Label-Graph module t",
+    "authors": [
+      "Fareeha Amir"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "arxiv_id": "2611.31135v1",
+    "published_at": "2026-11-23T18:06:09Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_srcwdnet-semantic-relational-cross-window-dual-graph-network-for-multi-label-rem",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Google Übersetzer Übersetzen Sie Wörter, Sätze und Webseiten sofort zwischen über 100 Sprachen mit dem kostenlosen Google …",
+        "Google Translate - A Personal Interpreter on Your Phone or Co… Learn how to translate text, speech, images, documents, websites, and more with Google Translate.",
+        "Google Übersetzer – dein persönlicher Übersetzer auf dein… Hier erfährst du, wie du mit Google Übersetzer Text, gesprochene Sprache, Bilder, Dokumente, Websites und vieles …"
+      ],
+      "top_results": [
+        {
+          "title": "Google Übersetzer",
+          "href": "https://translate.google.com/?hl=de",
+          "snippet": "Übersetzen Sie Wörter, Sätze und Webseiten sofort zwischen über 100 Sprachen mit dem kostenlosen Google …"
+        },
+        {
+          "title": "Google Translate - A Personal Interpreter on Your Phone or Co…",
+          "href": "https://translate.google.com/about/",
+          "snippet": "Learn how to translate text, speech, images, documents, websites, and more with Google Translate."
+        },
+        {
+          "title": "Google Übersetzer – dein persönlicher Übersetzer auf dein…",
+          "href": "https://translate.google.com/intl/de/about/",
+          "snippet": "Hier erfährst du, wie du mit Google Übersetzer Text, gesprochene Sprache, Bilder, Dokumente, Websites und vieles …"
+        },
+        {
+          "title": "Unscramble ADKSJFLKDSJFKLDJASL - Unsc…",
+          "href": "https://www.wordunscrambler.net/?word=adksjflkdsjfkldjasl",
+          "snippet": "You can unscramble ADKSJFLKDSJFKLDJASL (AADDDFFJJJKKKLLLSSS) into 104 …"
+        },
+        {
+          "title": "Keysmash - Wikipedia",
+          "href": "https://en.m.wikipedia.org/wiki/Keysmash",
+          "snippet": "A keysmash (alternatively key smash, key mash or keyboard smash) is internet slang for the typing out of a random sequence …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "模型研究",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=2 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "教育学习"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "SRCWDNet: Semantic-Relational Cross-Window Dual-Graph Network for Multi-Label Remote Sensing Scene Classification：Google Übersetzer Übersetzen Sie Wörter, Sätze und Webseiten sofort zwischen über 100 Sprachen mit dem kostenlosen Google …。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动",
+      "本地运行",
+      "可视化"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_srcwdnet-semantic-relational-cross-window-dual-graph-network-for-multi-label-rem",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Serialization and the Character-System: Measuring Narrative Concentration in French Fiction (1800--1940)",
+    "title": "Serialization and the Character-System: Measuring Narrative Concentration in French Fiction (1800--1940)",
+    "url": "https://arxiv.org/abs/2611.31133v1",
+    "pdf_url": "https://arxiv.org/pdf/2611.31133v1",
+    "description": "Every novel divides a finite quantity of narrative attention among its characters, and whether the shape of that division, between a narrative organized around a single figure and one spread across a crowd, has a history is far less settled than the abundance of critical commentary on protagonists might suggest. We operationalize Woloch's notion of the character-system, the distribution of narrative attention across a novel's cast structured by the tension between \"the one\" and \"the many\", as th",
+    "authors": [
+      "Jean Barré",
+      "Antoine Bourgois",
+      "Thierry Poibeau"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "arxiv_id": "2611.31133v1",
+    "published_at": "2026-11-23T18:04:11Z",
+    "platform": [
+      "arxiv"
+    ],
+    "type": "paper",
+    "source": "arxiv-ai",
+    "id": "arxiv-ai_serialization-and-the-character-system-measuring-narrative-concentration-in-fren",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/arxiv.org",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "金融科技",
+    "subcategory": "金融工具",
+    "audience": "researcher",
+    "utility_score": 2,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=金融科技 实用性=2 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Serialization and the Character-System: Measuring Narrative Concentration in French Fiction (1800--1940)：every novel divides a finite quantity of narrative attention among its characters, and whether the shape of that division, between a narrative organiz。付费，面向研究人员和学术场景。",
+    "features": [
+      "实用工具"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "值得关注的工具",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "arxiv-ai_serialization-and-the-character-system-measuring-narrative-concentration-in-fren",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Claude-BugHunter",
+    "full_name": "elementalsouls/Claude-BugHunter",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "description": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+    "language": "Python",
+    "stars": 21515,
+    "forks": 2237,
+    "stars_in_period": 1826,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_claude-bughunter",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Claude by Anthropic | The AI for problem solvers What is Claude and how does it work? Claude is an artificial intelligence, trained by Anthropic using Constitutional AI to be safe, …",
+        "Sign in or create an account | Claude.ai Log in to Claude or create an account to start using the web app online. Hand off tasks, write, analyze, and code with Anthropic’s AI …",
+        "Claude | The AI assistant for work - Anthropic Claude is the AI assistant that gets work done. Hand off tasks, turn ideas into decks, spreadsheets and prototypes, and run …"
+      ],
+      "top_results": [
+        {
+          "title": "Claude by Anthropic | The AI for problem solvers",
+          "href": "https://claude.com/",
+          "snippet": "What is Claude and how does it work? Claude is an artificial intelligence, trained by Anthropic using Constitutional AI to be safe, …"
+        },
+        {
+          "title": "Sign in or create an account | Claude.ai",
+          "href": "https://claude.ai/",
+          "snippet": "Log in to Claude or create an account to start using the web app online. Hand off tasks, write, analyze, and code with Anthropic’s AI …"
+        },
+        {
+          "title": "Claude | The AI assistant for work - Anthropic",
+          "href": "https://claude.com/product/overview",
+          "snippet": "Claude is the AI assistant that gets work done. Hand off tasks, turn ideas into decks, spreadsheets and prototypes, and run …"
+        },
+        {
+          "title": "Sign in | Claude Platform - Anthropic",
+          "href": "https://platform.claude.com/login",
+          "snippet": "Create agents and applications with frontier Claude models and managed agent infrastructure."
+        },
+        {
+          "title": "Claude (AI) - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/Claude_(AI)",
+          "snippet": "Claude is a series of large language models (LLMs) developed by American software company Anthropic. Claude was released as an …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=6 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "企业团队"
+      ],
+      "attribute": [],
+      "tech": [
+        "Claude"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Claude-BugHunter：Claude by Anthropic | The AI for problem solvers What is Claude and how does it work? Claude is an artificial intelligence, trained by Anthropic using。付费，适合普通用户直接使用。",
+    "features": [
+      "协作功能"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_claude-bughunter",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "firecrawl",
+    "full_name": "firecrawl/firecrawl",
+    "url": "https://github.com/firecrawl/firecrawl",
+    "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
+    "language": "TypeScript",
+    "stars": 208970,
+    "forks": 10917,
+    "stars_in_period": 991,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_firecrawl",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Firecrawl | Knowledge Infrastructure for AI Agents Firecrawl offers various pricing plans, including a Scale plan that supports millions of pages. With features like batch scraping, …",
+        "Pricing | Firecrawl Usage-based pricing for Firecrawl. Search, scrape, crawl and interact with the web at scale, with a free tier, pay-as-you-go credits …",
+        "Firecrawl - GitHub 🔥 Firecrawl The API to search, scrape, and interact with the web at scale. Firecrawl is the context API for AI agents. 🔥 Open source and …"
+      ],
+      "top_results": [
+        {
+          "title": "Firecrawl | Knowledge Infrastructure for AI Agents",
+          "href": "https://www.firecrawl.dev/",
+          "snippet": "Firecrawl offers various pricing plans, including a Scale plan that supports millions of pages. With features like batch scraping, …"
+        },
+        {
+          "title": "Pricing | Firecrawl",
+          "href": "https://www.firecrawl.dev/pricing",
+          "snippet": "Usage-based pricing for Firecrawl. Search, scrape, crawl and interact with the web at scale, with a free tier, pay-as-you-go credits …"
+        },
+        {
+          "title": "Firecrawl - GitHub",
+          "href": "https://github.com/firecrawl/firecrawl",
+          "snippet": "🔥 Firecrawl The API to search, scrape, and interact with the web at scale. Firecrawl is the context API for AI agents. 🔥 Open source and …"
+        },
+        {
+          "title": "Dashboard | Firecrawl",
+          "href": "https://docs.firecrawl.dev/dashboard",
+          "snippet": "The Firecrawl dashboard is where you manage your account, test endpoints, and monitor usage. Below is a quick tour of each …"
+        },
+        {
+          "title": "Introduction | Firecrawl",
+          "href": "https://docs.firecrawl.dev/introduction",
+          "snippet": "Firecrawl is the context API for AI agents. Search, scrape, and interact with the live web to get clean Markdown or structured data."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=4 低于阈值",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [],
+      "attribute": [
+        "API服务"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "firecrawl：Firecrawl | Knowledge Infrastructure for AI Agents Firecrawl offers various pricing plans, including a Scale plan that supports millions of pages. Wit。付费，适合开发者集成到工作流。",
+    "features": [
+      "API接口"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_firecrawl",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "nginx",
+    "full_name": "nginx/nginx",
+    "url": "https://github.com/nginx/nginx",
+    "description": "The official NGINX Open Source repository.",
+    "language": "C",
+    "stars": 33226,
+    "forks": 8394,
+    "stars_in_period": 158,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_nginx",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Using NGINX as an AI Proxy – NGINX Community Blog Sep 22, 2025 · Using NJS opens many doors when it comes to extending NGINX to achieve AI use cases! And whilst the demo uses a Docker …",
+        "NGINX — AI Tool | Agentic AI For Good NGINX provides an event-driven, non-blocking architecture that can handle tens of thousands of concurrent inference requests on a single …",
+        "GitHub - MARUMDRS/nginx_agent: AI-powered CLI tool for generating … nginx_agent is a stylish, AI-powered CLI assistant that helps you generate, explain, edit, lint, and manage NGINX configuration files. It …"
+      ],
+      "top_results": [
+        {
+          "title": "Using NGINX as an AI Proxy – NGINX Community Blog",
+          "href": "https://blog.nginx.org/blog/using-nginx-as-an-ai-proxy",
+          "snippet": "Sep 22, 2025 · Using NJS opens many doors when it comes to extending NGINX to achieve AI use cases! And whilst the demo uses a Docker …"
+        },
+        {
+          "title": "NGINX — AI Tool | Agentic AI For Good",
+          "href": "https://agenticaiforgood.com/tools/nginx",
+          "snippet": "NGINX provides an event-driven, non-blocking architecture that can handle tens of thousands of concurrent inference requests on a single …"
+        },
+        {
+          "title": "GitHub - MARUMDRS/nginx_agent: AI-powered CLI tool for generating …",
+          "href": "https://github.com/MARUMDRS/nginx_agent",
+          "snippet": "nginx_agent is a stylish, AI-powered CLI assistant that helps you generate, explain, edit, lint, and manage NGINX configuration files. It …"
+        },
+        {
+          "title": "AI Tools for Generating Nginx Configuration Files 2026",
+          "href": "https://bestremotetools.com/ai-tools-for-generating-nginx-configuration-files-2026/",
+          "snippet": "Mar 22, 2026 · This guide compares AI tools for Nginx configuration, focusing on practical scenarios: reverse proxy setup, SSL …"
+        },
+        {
+          "title": "FREE AI-Powered NginX Configuration Generator - Context-driven AI",
+          "href": "https://workik.com/nginx-configuration-generator",
+          "snippet": "Streamline Nginx setup with AI: Create SSL, caching, and reverse proxy configurations effortlessly. Automate server management …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "其他",
+    "subcategory": "",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "free",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [
+        "开源"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "nginx：Using NGINX as an AI Proxy – NGINX Community Blog Sep 22, 2025 · Using NJS opens many doors when it comes to extending NGINX to achieve AI use cases! 。免费，适合普通用户直接使用。",
+    "features": [
+      "开源免费"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "免费使用，零成本上手；实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_nginx",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "diagram-design",
+    "full_name": "cathrynlavery/diagram-design",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+    "language": "HTML",
+    "stars": 72084,
+    "forks": 4809,
+    "stars_in_period": 802,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_diagram-design",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "Free AI Diagram Generator | Free.ai For up to ~20 nodes the AI gets it right on the first try. For 50+ node systems, generate the high-level diagram first, then recursively …",
+        "Diagram Design Diagram Design creates editorial-quality diagrams from your AI agent: 28 visual types, self-contained HTML + SVG, matched to your …",
+        "How to Use Diagram Design: AI Diagram Generator for Branded ... - t… Oct 13, 2026 · Diagram Design is an AI diagram generator for people who need publishable architecture diagrams, process maps, data …"
+      ],
+      "top_results": [
+        {
+          "title": "Free AI Diagram Generator | Free.ai",
+          "href": "https://free.ai/design/diagram/",
+          "snippet": "For up to ~20 nodes the AI gets it right on the first try. For 50+ node systems, generate the high-level diagram first, then recursively …"
+        },
+        {
+          "title": "Diagram Design",
+          "href": "https://diagramdesign.homes/",
+          "snippet": "Diagram Design creates editorial-quality diagrams from your AI agent: 28 visual types, self-contained HTML + SVG, matched to your …"
+        },
+        {
+          "title": "How to Use Diagram Design: AI Diagram Generator for Branded ... - t…",
+          "href": "https://tosea.ai/blog/how-to-use-diagram-design-ai-diagram-generator",
+          "snippet": "Oct 13, 2026 · Diagram Design is an AI diagram generator for people who need publishable architecture diagrams, process maps, data …"
+        },
+        {
+          "title": "AI Diagram Maker : Create Free Diagrams in Minutes - Design",
+          "href": "https://www.pixazo.ai/diagram/maker",
+          "snippet": "Create stunning Diagrams in minutes with Pixazo’s AI Diagram Generator. No design skills needed—just describe your idea and start …"
+        },
+        {
+          "title": "Create Professional Diagrams in Minutes with AI - Fast Diagram ...",
+          "href": "https://blocksandarrows.com/",
+          "snippet": "Customize AI-generated diagrams with brushes, shapes, and professional tools. Full editing capabilities when you need them. From mind …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "代码补全",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=6 低于阈值",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "设计工作"
+      ],
+      "attribute": [],
+      "tech": [
+        "Claude"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "diagram-design：Free AI Diagram Generator | Free.ai For up to ~20 nodes the AI gets it right on the first try. For 50+ node systems, generate the high-level diagram f。开源，适合普通用户直接使用。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_diagram-design",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "AFFiNE",
+    "full_name": "toeverything/AFFiNE",
+    "url": "https://github.com/toeverything/AFFiNE",
+    "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
+    "language": "TypeScript",
+    "stars": 78012,
+    "forks": 5698,
+    "stars_in_period": 584,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_affine",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Driving nails into queen palm trunks Jan 14, 2012 · Hi, Can you hammer nails into the trunk of queen palms in order to get vines to grow up their trunk, or will that kill the …Read more",
+        "Maximum documentable age for Sabal palmetto - DISCUSSING … Nov 29, 2009 · PalmTalk is sponsored by the International Palm Society. - an organization dedicated to learning everything about …Read more",
+        "Plant Answers Of the taller palm trees, the best choice for San Antonio is the California Fan Palm, Washingtonia filifera. This is the native palm of …Read more"
+      ],
+      "top_results": [
+        {
+          "title": "Driving nails into queen palm trunks",
+          "href": "https://www.palmtalk.org/topic/31495-driving-nails-into-queen-palm-trunks/",
+          "snippet": "Jan 14, 2012 · Hi, Can you hammer nails into the trunk of queen palms in order to get vines to grow up their trunk, or will that kill the …Read more"
+        },
+        {
+          "title": "Maximum documentable age for Sabal palmetto - DISCUSSING …",
+          "href": "https://www.palmtalk.org/topic/21105-maximum-documentable-age-for-sabal-palmetto/",
+          "snippet": "Nov 29, 2009 · PalmTalk is sponsored by the International Palm Society. - an organization dedicated to learning everything about …Read more"
+        },
+        {
+          "title": "Plant Answers",
+          "href": "https://www.plantanswers.com/garden_column/april04/3.htm",
+          "snippet": "Of the taller palm trees, the best choice for San Antonio is the California Fan Palm, Washingtonia filifera. This is the native palm of …Read more"
+        },
+        {
+          "title": "Plant Answers",
+          "href": "https://www.plantanswers.com/palms_for_texas.htm",
+          "snippet": "This feather palm is a Pindo Palm, Butia capitata, and has survived near zero degree temperatures in Midland, El Paso and Fort …Read more"
+        },
+        {
+          "title": "How to tidy a Bottle Palm base - PalmTalk",
+          "href": "https://www.palmtalk.org/topic/26727-how-to-tidy-a-bottle-palm-base/",
+          "snippet": "Jan 2, 2011 · PalmTalk is sponsored by the International Palm Society. - an organization dedicated to learning everything about and …Read more"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "办公效率",
+    "subcategory": "办公助手",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "paid",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "AFFiNE：Driving nails into queen palm trunks Jan 14, 2012 · Hi, Can you hammer nails into the trunk of queen palms in order to get vines to grow up their trun。付费，适合普通用户直接使用。",
+    "features": [
+      "AI驱动",
+      "开源免费"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_affine",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Ghost-Downloader-3",
+    "full_name": "XiaoYouChR/Ghost-Downloader-3",
+    "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
+    "description": "The only downloader you need. 下载器的集大成者。",
+    "language": "Python",
+    "stars": 17387,
+    "forks": 1052,
+    "stars_in_period": 1092,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_ghost-downloader-3",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "Ghost Official Site | Skeletá Out Now Ghost - Lachryma (Official Music Video) Ghost - Satanized (Official Music Video) Ghost - Peacefield (Official Audio) Ghost - Guiding …",
+        "Ghost: The best open source blog & newsletter platform Ghost is a powerful app for professional publishers to create, share, and grow a business around their content. It comes with modern …",
+        "Ghost (Swedish band) - Wikipedia Ghost is a Swedish rock band formed in Linköping, in 2006. The band released their debut album, Opus Eponymous, in 2010, which …"
+      ],
+      "top_results": [
+        {
+          "title": "Ghost Official Site | Skeletá Out Now",
+          "href": "https://ghost-official.com/",
+          "snippet": "Ghost - Lachryma (Official Music Video) Ghost - Satanized (Official Music Video) Ghost - Peacefield (Official Audio) Ghost - Guiding …"
+        },
+        {
+          "title": "Ghost: The best open source blog & newsletter platform",
+          "href": "https://ghost.org/",
+          "snippet": "Ghost is a powerful app for professional publishers to create, share, and grow a business around their content. It comes with modern …"
+        },
+        {
+          "title": "Ghost (Swedish band) - Wikipedia",
+          "href": "https://en.m.wikipedia.org/wiki/Ghost_(Swedish_band)",
+          "snippet": "Ghost is a Swedish rock band formed in Linköping, in 2006. The band released their debut album, Opus Eponymous, in 2010, which …"
+        },
+        {
+          "title": "GHOST® ENERGY – DRINKGHOST",
+          "href": "https://drinkghost.com/pages/energy",
+          "snippet": "FIND GHOST® ENERGY. The fully transparent, fully loaded, feel-good energy drink we've all been waiting for. Learn More. BUBBLICIOUS® …"
+        },
+        {
+          "title": "Ghost (1990 film) - Wikipedia",
+          "href": "https://en.m.wikipedia.org/wiki/Ghost_(1990_film)",
+          "snippet": "Ghost was theatrically released on July 13, 1990 by Paramount Pictures to commercial success. It grossed $505 million against a budget of …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "其他",
+    "subcategory": "",
+    "audience": "general",
+    "utility_score": 7,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Ghost-Downloader-3：Ghost Official Site | Skeletá Out Now Ghost - Lachryma (Official Music Video) Ghost - Satanized (Official Music Video) Ghost - Peacefield (Official Au。开源，适合普通用户直接使用。",
+    "features": [
+      "实用工具"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_ghost-downloader-3",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "plannotator",
+    "full_name": "backnotprop/plannotator",
+    "url": "https://github.com/backnotprop/plannotator",
+    "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+    "language": "TypeScript",
+    "stars": 14898,
+    "forks": 1437,
+    "stars_in_period": 1956,
+    "period": "weekly",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "weekly",
+    "source": "github-trending",
+    "id": "github-trending_plannotator",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Plannotator - Plan & Code Review for AI Coding Agents Free, open-source review tooling for Claude Code, OpenCode, Codex, Pi, and Droid. Review agent plans before they execute, annotate …Read more",
+        "Install Plannotator - Plannotator Oct 4, 2026 · Install, update, or remove Plannotator on macOS, Linux, WSL, or Windows, then finish setup for your coding agent.",
+        "Plannotator Inbox Plannotator's Claude Code mod and Pi extension and OpenCode plugin write to the Inbox on their own and wake the agent when you …Read more"
+      ],
+      "top_results": [
+        {
+          "title": "Plannotator - Plan & Code Review for AI Coding Agents",
+          "href": "https://plannotator.ai/",
+          "snippet": "Free, open-source review tooling for Claude Code, OpenCode, Codex, Pi, and Droid. Review agent plans before they execute, annotate …Read more"
+        },
+        {
+          "title": "Install Plannotator - Plannotator",
+          "href": "https://docs.plannotator.ai/open-source/start/installation",
+          "snippet": "Oct 4, 2026 · Install, update, or remove Plannotator on macOS, Linux, WSL, or Windows, then finish setup for your coding agent."
+        },
+        {
+          "title": "Plannotator Inbox",
+          "href": "https://plannotator.ai/inbox/",
+          "snippet": "Plannotator's Claude Code mod and Pi extension and OpenCode plugin write to the Inbox on their own and wake the agent when you …Read more"
+        },
+        {
+          "title": "Plannotator Documentation and Learning",
+          "href": "https://docs.plannotator.ai/",
+          "snippet": "Choose open-source Plannotator documentation, Workspaces, automation guides, planning templates, framework profiles, …Read more"
+        },
+        {
+          "title": "Plannotator OSS Documentation",
+          "href": "https://docs.plannotator.ai/open-source",
+          "snippet": "Nov 5, 2026 · Plannotator is an open-source, local feedback tool for coding agents. It opens plans, Markdown, HTML, local code …Read more"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "代码审查",
+    "audience": "developer",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=4 低于阈值",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "企业团队"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "plannotator：Plannotator - Plan & Code Review for AI Coding Agents Free, open-source review tooling for Claude Code, OpenCode, Codex, Pi, and Droid. Review agent p。开源，适合开发者集成到工作流。",
+    "features": [
+      "协作功能",
+      "CLI工具"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "完全开源，可自由部署和修改；有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_plannotator",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "HermesEnabler",
+    "full_name": "pookjw/HermesEnabler",
+    "url": "https://github.com/pookjw/HermesEnabler",
+    "description": "Enable Hermès Watch Faces on any Apple Watch devices",
+    "language": "Objective-C",
+    "stars": 2490,
+    "forks": 206,
+    "stars_in_period": 328,
+    "period": "weekly",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "weekly",
+    "source": "github-trending",
+    "id": "github-trending_hermesenabler",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "HermesEnabler: Hermès watch faces on any Apple Watch 3 days ago · Run Hermès watch faces on any Apple Watch by sideloading an open source watchOS app that patches MobileGestalt. …",
+        "HermesEnabler 2 Brings Hermès Watch Faces to watchOS 27 Nov 11, 2026 · HermesEnabler 2 is an open-source app that adds Hermès watch faces to watchOS 27.0 through 27.3 beta 1 and backs …",
+        "pookjw/HermesEnabler: Enable Hermès Watch Faces on any… 5 days ago · Windows uses WatchBridge, a community tool that prepares Developer Mode and installs an IPA containing both an iPhone …"
+      ],
+      "top_results": [
+        {
+          "title": "HermesEnabler: Hermès watch faces on any Apple Watch",
+          "href": "https://www.opensourcealternatives.to/item/hermesenabler",
+          "snippet": "3 days ago · Run Hermès watch faces on any Apple Watch by sideloading an open source watchOS app that patches MobileGestalt. …"
+        },
+        {
+          "title": "HermesEnabler 2 Brings Hermès Watch Faces to watchOS 27",
+          "href": "https://www.ithinkdiff.com/hermesenabler-2-hermes-watch-faces-watchos-27/",
+          "snippet": "Nov 11, 2026 · HermesEnabler 2 is an open-source app that adds Hermès watch faces to watchOS 27.0 through 27.3 beta 1 and backs …"
+        },
+        {
+          "title": "pookjw/HermesEnabler: Enable Hermès Watch Faces on any…",
+          "href": "https://bestgithubrepositories.com/pookjw/HermesEnabler",
+          "snippet": "5 days ago · Windows uses WatchBridge, a community tool that prepares Developer Mode and installs an IPA containing both an iPhone …"
+        },
+        {
+          "title": "Enable Hermès — iiiphone",
+          "href": "https://iiiphone.com/Hermes.html",
+          "snippet": "A concise guide to enabling Hermès watch faces on Apple Watch with HermesEnabler."
+        },
+        {
+          "title": "HermesEnabler IPA – Unlock Hermès Watch Faces",
+          "href": "https://onejailbreak.com/blog/hermesenabler-2-adds-hermes-faces-to-any-apple-watch/",
+          "snippet": "6 days ago · A new open-source tool called HermesEnabler lets regular Apple Watch owners unlock the exclusive Hermès watch faces that …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "其他",
+    "subcategory": "",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "HermesEnabler：HermesEnabler: Hermès watch faces on any Apple Watch 3 days ago · Run Hermès watch faces on any Apple Watch by sideloading an open source watchOS app 。开源，适合普通用户直接使用。",
+    "features": [
+      "实用工具"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_hermesenabler",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "sure",
+    "full_name": "we-promise/sure",
+    "url": "https://github.com/we-promise/sure",
+    "description": "The personal finance app for everyone (by everyone)",
+    "language": "Ruby",
+    "stars": 17780,
+    "forks": 1544,
+    "stars_in_period": 1567,
+    "period": "weekly",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "weekly",
+    "source": "github-trending",
+    "id": "github-trending_sure",
+    "_search": {
+      "result_count": 7,
+      "top_snippets": [
+        "SURE Definition & Meaning - Merriam-Webster 3 days ago · sure, certain, positive, cocksure mean having no doubt or uncertainty. sure usually stresses the subjective or intuitive …",
+        "SURE | English meaning - Cambridge Dictionary SURE definition: 1. certain; without any doubt: 2. certain or certainly: 3. to be very or too confident: . Learn more.",
+        "Customer & Partner Login | SurePayroll Payroll purpose-built for small businesses and households. Start today and get 6 months FREE."
+      ],
+      "top_results": [
+        {
+          "title": "SURE Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/sure",
+          "snippet": "3 days ago · sure, certain, positive, cocksure mean having no doubt or uncertainty. sure usually stresses the subjective or intuitive …"
+        },
+        {
+          "title": "SURE | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/sure",
+          "snippet": "SURE definition: 1. certain; without any doubt: 2. certain or certainly: 3. to be very or too confident: . Learn more."
+        },
+        {
+          "title": "Customer & Partner Login | SurePayroll",
+          "href": "https://www.surepayroll.com/login",
+          "snippet": "Payroll purpose-built for small businesses and households. Start today and get 6 months FREE."
+        },
+        {
+          "title": "SURE Synonyms: 230 Similar and Opposite Words | Merriam ...",
+          "href": "https://www.merriam-webster.com/thesaurus/sure",
+          "snippet": "4 days ago · Some common synonyms of sure are certain, cocksure, and positive. While all these words mean \"having no doubt or …"
+        },
+        {
+          "title": "SURE | definition in the Cambridge English Dictionary",
+          "href": "https://dictionary.cambridge.org/us/dictionary/english/sure",
+          "snippet": "SURE meaning: 1. certain; without any doubt: 2. certain or certainly: 3. to be very or too confident: . Learn more."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "金融科技",
+    "subcategory": "金融工具",
+    "audience": "general",
+    "utility_score": 6,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [
+        "个人开发者"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "sure：SURE Definition & Meaning - Merriam-Webster 3 days ago · sure, certain, positive, cocksure mean having no doubt or uncertainty. sure usually stresses 。开源，适合普通用户直接使用。",
+    "features": [
+      "实用工具"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；实用性良好，值得一试",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_sure",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "ffmpeg-skill",
+    "full_name": "kajisho5/ffmpeg-skill",
+    "url": "https://github.com/kajisho5/ffmpeg-skill",
+    "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+    "language": "Python",
+    "stars": 10700,
+    "forks": 920,
+    "stars_in_period": 2993,
+    "period": "weekly",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "weekly",
+    "source": "github-trending",
+    "id": "github-trending_ffmpeg-skill",
+    "_search": {
+      "result_count": 5,
+      "top_snippets": [
+        "FFmpeg Nov 10, 2026 · The FFmpeg CLI (we usually reffer to it as ffmpeg.c to avoid confusion) has speed-up improvements due to …",
+        "Download FFmpeg FFmpeg has always been a very experimental and developer-driven project. It is a key component in many multimedia …",
+        "FFmpeg - Wikipedia FFmpeg is a free and open-source software project consisting of a suite of libraries and programs for handling video, audio, and …"
+      ],
+      "top_results": [
+        {
+          "title": "FFmpeg",
+          "href": "https://ffmpeg.org/",
+          "snippet": "Nov 10, 2026 · The FFmpeg CLI (we usually reffer to it as ffmpeg.c to avoid confusion) has speed-up improvements due to …"
+        },
+        {
+          "title": "Download FFmpeg",
+          "href": "https://ffmpeg.org/download.html",
+          "snippet": "FFmpeg has always been a very experimental and developer-driven project. It is a key component in many multimedia …"
+        },
+        {
+          "title": "FFmpeg - Wikipedia",
+          "href": "https://en.wikipedia.org/wiki/FFmpeg",
+          "snippet": "FFmpeg is a free and open-source software project consisting of a suite of libraries and programs for handling video, audio, and …"
+        },
+        {
+          "title": "How to Install FFmpeg on Windows: A Step-by-Step Guide …",
+          "href": "https://www.wikihow.com/Install-FFmpeg-on-Windows",
+          "snippet": "Sep 2, 2026 · If you're used to regular graphical Windows programs, installing FFmpeg may seem complicated at …"
+        },
+        {
+          "title": "ffmpeg Documentation",
+          "href": "https://ffmpeg.org/ffmpeg.html",
+          "snippet": "ffmpeg is a universal media converter. It can read a wide variety of inputs - including live grabbing/recording devices - filter, and …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "general",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=4 低于阈值",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "视频生成"
+      ],
+      "scenario": [],
+      "attribute": [
+        "API服务"
+      ],
+      "tech": [
+        "Claude"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "ffmpeg-skill：FFmpeg Nov 10, 2026 · The FFmpeg CLI (we usually reffer to it as ffmpeg.c to avoid confusion) has speed-up improvements due to …。开源，适合普通用户直接使用。",
+    "features": [
+      "API接口",
+      "云端部署",
+      "本地运行"
+    ],
+    "best_for": "普通用户、AI爱好者，无需技术背景即可使用",
+    "notable": "完全开源，可自由部署和修改；有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_ffmpeg-skill",
+    "ai_relevance": "ai-core",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "plugins",
+    "full_name": "cursor/plugins",
+    "url": "https://github.com/cursor/plugins",
+    "description": "Cursor plugin specification and official plugins",
+    "language": "TypeScript",
+    "stars": 19233,
+    "forks": 2079,
+    "stars_in_period": 360,
+    "period": "daily",
+    "topics": [],
+    "platform": [
+      "github"
+    ],
+    "license": "",
+    "type": "github_project",
+    "_period": "daily",
+    "source": "github-trending",
+    "id": "github-trending_plugins",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "Plugins - Chrome Web Store Overview Control and manage your Chrome plugins Extension manager with shortcuts to Chrome plugins pages. When installed, it will …Read more",
+        "Microsoft Edge Add-ons Make Microsoft Edge your own with extensions and themes that help you personalise the browser and be more productive.",
+        "Search plugins - Modrinth Search and browse thousands of Minecraft plugins on Modrinth with instant, accurate search results. Our filters help you quickly find the …Read more"
+      ],
+      "top_results": [
+        {
+          "title": "Plugins - Chrome Web Store",
+          "href": "https://chromewebstore.google.com/detail/plugins/mmcblfncjaclajmegihojiekebofjcen",
+          "snippet": "Overview Control and manage your Chrome plugins Extension manager with shortcuts to Chrome plugins pages. When installed, it will …Read more"
+        },
+        {
+          "title": "Microsoft Edge Add-ons",
+          "href": "https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home",
+          "snippet": "Make Microsoft Edge your own with extensions and themes that help you personalise the browser and be more productive."
+        },
+        {
+          "title": "Search plugins - Modrinth",
+          "href": "https://modrinth.com/discover/plugins",
+          "snippet": "Search and browse thousands of Minecraft plugins on Modrinth with instant, accurate search results. Our filters help you quickly find the …Read more"
+        },
+        {
+          "title": "Free VST Plugins: Instruments & FX for Producers | Free Download",
+          "href": "https://www.pluginboutique.com/free-plugins",
+          "snippet": "A hand-picked library of free VST plugins covering instruments, FX, synths, drums and more. Compatible with every DAW. Download …Read more"
+        },
+        {
+          "title": "Chrome Web Store",
+          "href": "https://chromewebstore.google.com/",
+          "snippet": "Add new features to your browser and personalize your browsing experience."
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "其他",
+    "subcategory": "",
+    "audience": "developer",
+    "utility_score": 4,
+    "should_include": true,
+    "rejection_reason": "非AI工具: GitHub无明确AI信号",
+    "license_tier": "open-source",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [
+        "浏览器插件"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "plugins：Plugins - Chrome Web Store Overview Control and manage your Chrome plugins Extension manager with shortcuts to Chrome plugins pages. When installed, i。开源，适合开发者集成到工作流。",
+    "features": [
+      "插件/扩展系统"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "完全开源，可自由部署和修改；有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "github-trending_plugins",
+    "ai_relevance": "not-ai",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Show HN: Deep Research – Open-Source Customizable Reasoning Framework for Devs",
+    "title": "Show HN: Deep Research – Open-Source Customizable Reasoning Framework for Devs",
+    "url": "https://github.com/JigsawStack/deep-research",
+    "hn_url": "https://news.ycombinator.com/item?id=44153898",
+    "description": "Show HN: Deep Research – Open-Source Customizable Reasoning Framework for Devs",
+    "points": 7,
+    "num_comments": 0,
+    "author": "winzamark12",
+    "published_at": "2025-06-01T21:34:46Z",
+    "platform": [
+      "hackernews"
+    ],
+    "type": "news",
+    "source": "hackernews-ai",
+    "id": "hackernews-ai_show-hn-deep-research-open-source-customizable-reasoning-framework-for-devs",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 5,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=5 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [
+        "搜索"
+      ],
+      "scenario": [
+        "学术研究"
+      ],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Show HN: Deep Research – Open-Source Customizable Reasoning Framework for Devs：show hn: deep research – open-source customizable reasoning framework for devs。，适合开发者集成到工作流。",
+    "features": [
+      "开源免费",
+      "SDK集成"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "hackernews-ai_show-hn-deep-research-open-source-customizable-reasoning-framework-for-devs",
+    "ai_relevance": "ai-enabled",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Show HN: Persistent Mind Model – Portable AI Personas for Any LLM",
+    "title": "Show HN: Persistent Mind Model – Portable AI Personas for Any LLM",
+    "url": "https://github.com/scottonanski/persistent-mind-model",
+    "hn_url": "https://news.ycombinator.com/item?id=44870680",
+    "description": "Show HN: Persistent Mind Model – Portable AI Personas for Any LLM",
+    "points": 2,
+    "num_comments": 0,
+    "author": "HimTortons",
+    "published_at": "2025-08-11T23:33:27Z",
+    "platform": [
+      "hackernews"
+    ],
+    "type": "news",
+    "source": "hackernews-ai",
+    "id": "hackernews-ai_show-hn-persistent-mind-model-portable-ai-personas-for-any-llm",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "SHOW Definition & Meaning - Merriam-Webster 6 days ago · show, manifest, evidence, evince, demonstrate mean to reveal outwardly or make apparent. show is the …",
+        "SHOW | English meaning - Cambridge Dictionary SHOW definition: 1. to make it possible for something to be seen: 2. to record or express a number or measurement…. …",
+        "Show - definition of show by The Free Dictionary To display for sale, in exhibition, or in competition: showed her most recent paintings. c. To permit access to (a …"
+      ],
+      "top_results": [
+        {
+          "title": "SHOW Definition & Meaning - Merriam-Webster",
+          "href": "https://www.merriam-webster.com/dictionary/show",
+          "snippet": "6 days ago · show, manifest, evidence, evince, demonstrate mean to reveal outwardly or make apparent. show is the …"
+        },
+        {
+          "title": "SHOW | English meaning - Cambridge Dictionary",
+          "href": "https://dictionary.cambridge.org/dictionary/english/show",
+          "snippet": "SHOW definition: 1. to make it possible for something to be seen: 2. to record or express a number or measurement…. …"
+        },
+        {
+          "title": "Show - definition of show by The Free Dictionary",
+          "href": "https://www.thefreedictionary.com/show",
+          "snippet": "To display for sale, in exhibition, or in competition: showed her most recent paintings. c. To permit access to (a …"
+        },
+        {
+          "title": "Show - Wikipedia",
+          "href": "https://en.m.wikipedia.org/wiki/Show",
+          "snippet": "This disambiguation page lists articles associated with the title . If an internal link incorrectly led you here, you may wish to …"
+        },
+        {
+          "title": "Lenka - The Show (New Version) - YouTube",
+          "href": "https://m.youtube.com/watch?v=elsh3J5lJ6g",
+          "snippet": "Oct 25, 2009 · Lenka's official music video for 'The Show'. Click to listen to Lenka on Spotify: …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/github.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "学术研究",
+    "subcategory": "模型研究",
+    "audience": "researcher",
+    "utility_score": 4,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=学术研究 实用性=4 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Show HN: Persistent Mind Model – Portable AI Personas for Any LLM：SHOW Definition & Meaning - Merriam-Webster 6 days ago · show, manifest, evidence, evince, demonstrate mean to reveal outwardly or make apparent. show。，面向研究人员和学术场景。",
+    "features": [
+      "AI驱动"
+    ],
+    "best_for": "研究人员和学者，适合学术研究和论文工作",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "hackernews-ai_show-hn-persistent-mind-model-portable-ai-personas-for-any-llm",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+    "title": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+    "url": "https://finterm.ai/",
+    "hn_url": "https://news.ycombinator.com/item?id=48896257",
+    "description": "Show HN: Finterm.ai Bloomberg terminal for Claude Code",
+    "points": 6,
+    "num_comments": 0,
+    "author": "cheeseblubber",
+    "published_at": "2026-07-13T17:52:10Z",
+    "platform": [
+      "hackernews"
+    ],
+    "type": "news",
+    "source": "hackernews-ai",
+    "id": "hackernews-ai_show-hn-finterm-ai-bloomberg-terminal-for-claude-code",
+    "_search": {
+      "result_count": 0,
+      "top_snippets": [],
+      "has_official_site": false,
+      "popularity_tier": "cold"
+    },
+    "logo_url": "https://logo.clearbit.com/finterm.ai",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 5,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=5 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [],
+      "tech": [
+        "Claude"
+      ],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Show HN: Finterm.ai Bloomberg terminal for Claude Code：show hn: finterm.ai bloomberg terminal for claude code。，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "CLI工具"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "hackernews-ai_show-hn-finterm-ai-bloomberg-terminal-for-claude-code",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
+  },
+  {
+    "name": "Show HN: EasyFunctionCall – Converts OpenAPI specs to AI model func call params",
+    "title": "Show HN: EasyFunctionCall – Converts OpenAPI specs to AI model func call params",
+    "url": "https://easyfunctioncall.com",
+    "hn_url": "https://news.ycombinator.com/item?id=42560205",
+    "description": "Show HN: EasyFunctionCall – Converts OpenAPI specs to AI model func call params",
+    "points": 1,
+    "num_comments": 0,
+    "author": "numbbbbb",
+    "published_at": "2024-12-31T17:27:32Z",
+    "platform": [
+      "hackernews"
+    ],
+    "type": "news",
+    "source": "hackernews-ai",
+    "id": "hackernews-ai_show-hn-easyfunctioncall-converts-openapi-specs-to-ai-model-func-call-params",
+    "_search": {
+      "result_count": 8,
+      "top_snippets": [
+        "EasyFunctionCall: Converts OpenAPI/Swagger specs to AI functi… Jan 13, 2025 · What is EasyFunctionCall? EasyFunctionCall is a SaaS service that converts OpenAPI and Swagger specs into AI model …",
+        "EasyFunctionCall - Simplify API Integration with AI Models EasyFunctionCall is a SaaS service that converts OpenAPI and Swagger specs into AI model function call parameters, reducing complexity …",
+        "EasyFunctionCall - OpenAPI to AI Function Call Parameters - AiSpaces EasyFunctionCall is a web-based service that converts OpenAPI and Swagger API specifications into AI-ready function call …"
+      ],
+      "top_results": [
+        {
+          "title": "EasyFunctionCall: Converts OpenAPI/Swagger specs to AI functi…",
+          "href": "https://www.toolify.ai/tool/easyfunctioncall",
+          "snippet": "Jan 13, 2025 · What is EasyFunctionCall? EasyFunctionCall is a SaaS service that converts OpenAPI and Swagger specs into AI model …"
+        },
+        {
+          "title": "EasyFunctionCall - Simplify API Integration with AI Models",
+          "href": "https://easyfunctioncall.com/tool",
+          "snippet": "EasyFunctionCall is a SaaS service that converts OpenAPI and Swagger specs into AI model function call parameters, reducing complexity …"
+        },
+        {
+          "title": "EasyFunctionCall - OpenAPI to AI Function Call Parameters - AiSpaces",
+          "href": "https://aispaces.net/ai-tool/easyfunctioncall",
+          "snippet": "EasyFunctionCall is a web-based service that converts OpenAPI and Swagger API specifications into AI-ready function call …"
+        },
+        {
+          "title": "EasyFunctionCall Review: Pricing & Alternatives | WhatTheAI",
+          "href": "https://whattheai.tech/tools/easyfunctioncall",
+          "snippet": "Product Information What is EasyFunctionCall? EasyFunctionCall is a SaaS service that converts OpenAPI and Swagger specs into AI model …"
+        },
+        {
+          "title": "EasyFunctionCall - AI Developer Tool | TopAI.tools",
+          "href": "https://topai.tools/t/easyfunctioncall",
+          "snippet": "Utilize the intuitive dashboard in EasyFunctionCall to manage and optimize API function call parameters, improving the …"
+        }
+      ],
+      "has_official_site": true,
+      "popularity_tier": "hot"
+    },
+    "logo_url": "https://logo.clearbit.com/easyfunctioncall.com",
+    "likely_china": false,
+    "china_signals": [],
+    "category": "代码开发",
+    "subcategory": "开发辅助",
+    "audience": "developer",
+    "utility_score": 5,
+    "should_include": false,
+    "rejection_reason": "本地评估: 分类=代码开发 实用性=5 低于阈值",
+    "license_tier": "unknown",
+    "license_type": "",
+    "tags": {
+      "function": [],
+      "scenario": [],
+      "attribute": [
+        "API服务"
+      ],
+      "tech": [],
+      "quality": [
+        "新星"
+      ]
+    },
+    "ai_analysis": "Show HN: EasyFunctionCall – Converts OpenAPI specs to AI model func call params：EasyFunctionCall: Converts OpenAPI/Swagger specs to AI functi… Jan 13, 2025 · What is EasyFunctionCall? EasyFunctionCall is a SaaS service that conver。，适合开发者集成到工作流。",
+    "features": [
+      "AI驱动",
+      "API接口",
+      "数据导入导出"
+    ],
+    "best_for": "开发者和技术人员，适合集成到工作流中",
+    "notable": "有一定实用价值",
+    "ai_confidence": 0.6,
+    "is_china_tool": false,
+    "health_status": "unknown",
+    "tool_id": "hackernews-ai_show-hn-easyfunctioncall-converts-openapi-specs-to-ai-model-func-call-params",
+    "ai_relevance": "ai-powered",
+    "rejected_at": "2026-11-25T01:48:25.370044+00:00"
   }
 ]
